@@ -1,0 +1,7 @@
+{
+	"name": "Avantis.ClassVR",
+	"includePlatforms": [
+		"Android"
+	],
+	"excludePlatforms": []
+}
