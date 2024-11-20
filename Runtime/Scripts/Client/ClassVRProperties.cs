@@ -20,7 +20,7 @@ namespace ClassVR
     /// <summary>
     /// Utility class for getting device info from the ClassVR client
     /// </summary>
-    public class ClassVRProperties
+    public sealed class ClassVRProperties
     {
         public string DisplayName { get; private set; }
         public string Id { get; private set; }
@@ -33,13 +33,17 @@ namespace ClassVR
 
         const int CLASSVR_UNENROLLED_DEVICES = 18579;
 
+        // Singleton pattern with lazy evaluation
+        private static readonly Lazy<ClassVRProperties> lazy = new Lazy<ClassVRProperties>(() => new ClassVRProperties());
+        public static ClassVRProperties Instance { get { return lazy.Value; } }
+
         private AndroidJavaObject _contentResolver;
         private AndroidJavaObject _queryUri;
 
         /// <summary>
         /// Constructs and queries the ClassVR client to initialize properties.
         /// </summary>
-        public ClassVRProperties()
+        private ClassVRProperties()
         {
             // Get reference to ContentResolver
             var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
