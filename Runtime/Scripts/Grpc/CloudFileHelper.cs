@@ -33,13 +33,16 @@ namespace ClassVR
                 return -1;
             }
 
+            var orgId = ClassVRProperties.Instance.OrganizationInfo.Id;
+            Debug.LogFormat("Assigning '{0}' to Shared Cloud of Organization with ID '{1}'", filename, orgId);
+
             try
             {
                 // Construct a request using the organization ID the device is currently assigned to
                 var addFilesRequest = new AddCloudFilesRequest
                 {
                     Auth = auth,
-                    OrganizationId = ClassVRProperties.Instance.OrganizationInfo.Id,
+                    OrganizationId = orgId,
                     FileUrls = { downloadUrl }
                 };
 
@@ -50,15 +53,16 @@ namespace ClassVR
                 // Check the response for EntityIds
                 if(cloudFilesResponse.EntityIds.Count < 1)
                 {
-                    Debug.LogErrorFormat("Failed to add '{0}' to Shared Cloud", filename);
+                    Debug.LogErrorFormat("Failed to assign '{0}' to Shared Cloud of Organization with ID '{1}'", filename, orgId);
                     return -1;
                 }
 
+                Debug.LogFormat("'{0}' successfully added to Shared Cloud of Organization with ID '{1}'", filename, orgId);
                 return cloudFilesResponse.EntityIds[0];
             }
             catch (Exception ex)
             {
-                Debug.LogErrorFormat("Exception thrown while adding '{0}' to Shared Cloud", filename);
+                Debug.LogErrorFormat("Exception thrown while assigning '{0}' to Shared Cloud of Organization with ID '{1}'", filename, orgId);
                 Debug.LogException(ex);
                 return -1;
             }
@@ -140,6 +144,7 @@ namespace ClassVR
                     return null;
                 }
 
+                Debug.LogFormat("'{0}' uploaded successfully", filename);
                 return uploadManifest.DownloadUrl;
             }
             catch (Exception ex)
