@@ -1,10 +1,11 @@
 ﻿using Avn.Connect.V1;
-using Grpc.Net.Client;
 using System;
 using System.Threading.Tasks;
+using System.Net.Http;
 using System.Security.Cryptography;
 using UnityEngine;
-using UnityEngine.Networking;
+
+using Authorization = Avn.Connect.V1.Authorization;
 
 namespace ClassVR
 {
@@ -13,6 +14,8 @@ namespace ClassVR
     {
         // Maximum size in bytes that AVNFS will accept (5GB)
         private const long MaxSinglePartUploadSizeBytes = 5368709120;
+
+        private static readonly HttpClient httpClient = new HttpClient();
 
         /// <summary>
         /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is assigned to.
@@ -84,7 +87,6 @@ namespace ClassVR
                 //TODO: Check file doesn't exceed upload size limit (not currently possible as max array length is 2GB)
                 //TODO: enable streaming uploads
 
-
                 Debug.LogFormat("Uploading '{0}' to ClassVR", filename);
 
                 // Hash file contents
@@ -125,22 +127,29 @@ namespace ClassVR
                 };
                 var uploadManifest = await avnfs.GetPostManifestAsync(manifestRequest);
 
-                // Upload is done via HTTP, build a form with the required data
-                var formData = new WWWForm();
+                // Upload is done via a HTTP POST, construct a request with the required data
+                var request = new HttpRequestMessage();
+                request.Method = HttpMethod.Post;
+                request.RequestUri = new Uri(uploadManifest.UploadUrl);
+                request.Content = new ByteArrayContent(data);
                 foreach (var field in uploadManifest.HeaderFields)
                 {
-                    formData.AddField(field.Name, field.Value);
+                    // HTTPS headers are validated, so we have to assign the right ones to the request and content
+                    if(field.Name.StartsWith("cache", StringComparison.OrdinalIgnoreCase))
+                    {
+                        request.Headers.Add(field.Name, field.Value);
+                    }
+                    else
+                    {
+                        request.Content.Headers.Add(field.Name, field.Value);
+                    }
                 }
-                formData.AddBinaryData("file", data);
 
-                // Post the form to the upload URL
-                using var webRequest = UnityWebRequest.Post(uploadManifest.UploadUrl, formData);
-                await webRequest.SendWebRequest();
-
-                // Check upload success
-                if (webRequest.result != UnityWebRequest.Result.Success)
+                // Post the request
+                var response = await httpClient.SendAsync(request);
+                if (!response.IsSuccessStatusCode)
                 {
-                    Debug.LogError(webRequest.error);
+                    Debug.LogErrorFormat("Upload of '{0}' failed with code '{1}'", filename, response.StatusCode);
                     return null;
                 }
 
