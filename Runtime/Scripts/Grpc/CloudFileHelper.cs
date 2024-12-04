@@ -1,9 +1,10 @@
-﻿using Avn.Connect.V1;
-using System;
+﻿using System;
+using Avn.Connect.V1;
 using System.Threading.Tasks;
-using System.Net.Http;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Networking;
+using System.Collections;
 
 using Authorization = Avn.Connect.V1.Authorization;
 
@@ -15,7 +16,18 @@ namespace ClassVR
         // Maximum size in bytes that AVNFS will accept (5GB)
         private const long MaxSinglePartUploadSizeBytes = 5368709120;
 
-        private static readonly HttpClient httpClient = new HttpClient();
+        // Enable coroutines from static context - https://discussions.unity.com/t/c-coroutines-in-static-functions/475291/26
+        private class StaticMB : MonoBehaviour { }
+        private static StaticMB mbInstance;
+
+        private static void InitMonoBehaviour()
+        {
+            if (mbInstance == null)
+            {
+                var gameObject = new GameObject("ClassVRStatic");
+                mbInstance = gameObject.AddComponent<StaticMB>();
+            }
+        }
 
         /// <summary>
         /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is assigned to.
@@ -24,141 +36,229 @@ namespace ClassVR
         /// <param name="mediaType">The media (or MIME) type of the file.</param>
         /// <param name="data">The file contents as a byte array.</param>
         /// <param name="auth">The ClassVR Authentication to use for uploading.</param>
-        /// <param name="endpointServer">The endpoint to use for communication, either Alpha or Production. Defaults to Production if not provided.</param>
-        /// <returns>The Entity ID for the uploaded file, or -1 if operation failed.</returns>
-        public static async Task<int> UploadToSharedCloud(string filename, string mediaType, byte[] data, Authorization auth, EndpointServer endpointServer = EndpointServer.Production)
+        /// <param name="onComplete">Callback once the operation has completed. Bool parameter is true if the upload was successful, false otherwise.</param>
+        /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+        public static void UploadToSharedCloud(string filename, string mediaType, byte[] data, Authorization auth, Action<bool> onComplete, EndpointServer endpointServer = EndpointServer.Production)
         {
-            var downloadUrl = await UploadtoAVNFS(filename, mediaType, data, auth, endpointServer);
+            //TODO: make this return a task so it can be awaited
+            //TODO: Check file doesn't exceed upload size limit (not currently possible as max array length is 2GB and upload limit is 5GB)
+            //TODO: enable streaming uploads
+            //TODO: enable cancellation
 
-            // Check if upload succeeded
-            if (string.IsNullOrEmpty(downloadUrl))
-            {
-                return -1;
-            }
+            // Create a MonoBehaviour instance so we can run coroutines
+            InitMonoBehaviour();
+            mbInstance.StartCoroutine(UploadAndAddToSharedCloud(filename, mediaType, data, auth, endpointServer, onComplete));
 
-            var orgId = ClassVRProperties.Instance.OrganizationInfo.Id;
-            Debug.LogFormat("Assigning '{0}' to Shared Cloud of Organization with ID '{1}'", filename, orgId);
-
-            try
-            {
-                // Construct a request using the organization ID the device is currently assigned to
-                var addFilesRequest = new AddCloudFilesRequest
-                {
-                    Auth = auth,
-                    OrganizationId = orgId,
-                    FileUrls = { downloadUrl }
-                };
-
-                // Make the request
-                var avnCloud = new CloudService.CloudServiceClient(AvnCloudChannel.ChannelForServer(endpointServer));
-                var cloudFilesResponse = await avnCloud.AddCloudFilesAsync(addFilesRequest);
-
-                // Check the response for EntityIds
-                if(cloudFilesResponse.EntityIds.Count < 1)
-                {
-                    Debug.LogErrorFormat("Failed to assign '{0}' to Shared Cloud of Organization with ID '{1}'", filename, orgId);
-                    return -1;
-                }
-
-                Debug.LogFormat("'{0}' successfully added to Shared Cloud of Organization with ID '{1}'", filename, orgId);
-                return cloudFilesResponse.EntityIds[0];
-            }
-            catch (Exception ex)
-            {
-                Debug.LogErrorFormat("Exception thrown while assigning '{0}' to Shared Cloud of Organization with ID '{1}'", filename, orgId);
-                Debug.LogException(ex);
-                return -1;
-            }
+            // Ideally this method would be async, but the .net HttpClient doesn't work reliably for file uploads to Avantis cloud infrastructure
+            // UnityWebRequest is working but isn't awaitable, so needs to be run in a coroutine to prevent blocking the main thread
         }
 
-        /// <summary>
-        /// Uploads a file to AVNFS and returns the URL it can be accessed from.
-        /// </summary>
-        /// <param name="filename">The name and extension of the file.</param>
-        /// <param name="mediaType">The media (or MIME) type of the file.</param>
-        /// <param name="data">The file contents as a byte array.</param>
-        /// <param name="auth">The ClassVR Authentication to use for uploading.</param>
-        /// <param name="endpointServer">The endpoint to use for communication, either Alpha or Production. Defaults to Production if not provided.</param>
-        /// <returns>The URL where the file can be downloaded from, or null if upload failed.</returns>
-        public static async Task<string> UploadtoAVNFS(string filename, string mediaType, byte[] data, Authorization auth, EndpointServer endpointServer = EndpointServer.Production)
+        // Uploads the provided file to AVNFS and adds to the Shared Cloud area of the organization the device is registered to. Indicates success via the callback.
+        private static IEnumerator UploadAndAddToSharedCloud(
+            string filename,
+            string mediaType,
+            byte[] data,
+            Authorization auth,
+            EndpointServer endpointServer,
+            Action<bool> onComplete)
+        {
+            InitMonoBehaviour();
+
+            // Upload the file to AVNFS and get the URL to download the file
+            string downloadUrl = null;
+            yield return mbInstance.StartCoroutine(UploadToAvnfs(filename, mediaType, data, auth, endpointServer, (returnVal) => { downloadUrl = returnVal; }));
+
+            if (downloadUrl == null)
+            {
+                onComplete(false);
+                yield break;
+            }
+
+            // Assign the file to the Shared Cloud area of the organization the device is currently registered to
+            bool addFileSuccess = false;
+            yield return mbInstance.StartCoroutine(AddFileToSharedCloud(downloadUrl, auth, endpointServer, (returnVal) => { addFileSuccess = returnVal; }));
+            onComplete(addFileSuccess);
+        }
+
+        // Uploads the provided file to AVNFS and provides the URL it can be downloaded from via the callback
+        private static IEnumerator UploadToAvnfs(
+            string filename,
+            string mediaType,
+            byte[] data,
+            Authorization auth,
+            EndpointServer endpointServer,
+            Action<string> onComplete)
+        {
+            Debug.LogFormat("Uploading '{0}' to ClassVR", filename);
+
+            InitMonoBehaviour();
+
+            // Check whether the file has already been uploaded
+            var base64UrlHash = Base64UrlHash(data);
+            string existingUrl = null;
+            yield return mbInstance.StartCoroutine(CheckFileAlreadyUploaded(filename, mediaType, base64UrlHash, data.Length, endpointServer, (returnVal) => { existingUrl = returnVal; }));
+
+            if (!string.IsNullOrEmpty(existingUrl))
+            {
+                Debug.LogFormat("'{0}' has already been uploaded to ClassVR at {1}", filename, existingUrl);
+                onComplete(existingUrl);
+                yield break;
+            }
+
+            // Files are uploaded via HTTP POST (not a gRPC call), so request the necessary data to make the HTTP request
+            UploadManifest uploadManifest = null;
+            yield return mbInstance.StartCoroutine(GetUploadManifest(filename, mediaType, base64UrlHash, data.Length, auth, endpointServer, (returnVal) => { uploadManifest = returnVal; }));
+
+            if (uploadManifest == null)
+            {
+                Debug.LogErrorFormat("Failed to retrieve upload manifest for '{0}'. Aborting upload.", filename);
+                onComplete(null);
+                yield break;
+            }
+
+            // Construct the UnityWebRequest and send it
+            var webRequest = ConstructFileUploadWebRequest(uploadManifest, data);
+            if (webRequest == null)
+            {
+                Debug.LogErrorFormat("Failed to construct upload request for '{0}'", filename);
+                onComplete(null);
+                yield break;
+            }
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogErrorFormat("Upload of '{0}' failed with error '{1}'", filename, webRequest.error);
+                onComplete(null);
+                yield break;
+            }
+
+            Debug.LogFormat("'{0}' uploaded successfully", filename);
+            onComplete(uploadManifest.DownloadUrl);
+        }
+
+        // Assigns the file with the specified URL to the Shared Cloud of the ClassVR Organization that the device is registered to
+        private static IEnumerator AddFileToSharedCloud(
+            string downloadUrl,
+            Authorization auth,
+            EndpointServer endpointServer,
+            Action<bool> onComplete)
+        {
+            var orgId = ClassVRProperties.Instance.OrganizationInfo.Id;
+            Debug.LogFormat("Assigning '{0}' to Shared Cloud of Organization with ID '{1}'", downloadUrl, orgId);
+
+            // Construct a request using the organization ID the device is currently registered to
+            var addFilesRequest = new AddCloudFilesRequest
+            {
+                Auth = auth,
+                OrganizationId = orgId,
+                FileUrls = { downloadUrl }
+            };
+
+            // Make the request and yield until complete
+            var avnCloud = new CloudService.CloudServiceClient(AvnCloudChannel.ChannelForServer(endpointServer));
+            var cloudFilesTask = avnCloud.AddCloudFilesAsync(addFilesRequest).ResponseAsync;
+            while (!cloudFilesTask.IsCompleted) { yield return null; }
+
+            // Check the response for EntityIds
+            if (cloudFilesTask.Result.EntityIds.Count < 1)
+            {
+                Debug.LogErrorFormat("Failed to assign '{0}' to Shared Cloud of Organization with ID '{1}'", downloadUrl, orgId);
+                onComplete(false);
+                yield break;
+            }
+
+            Debug.LogFormat("'{0}' successfully added to Shared Cloud of Organization with ID '{1}'", downloadUrl, orgId);
+            onComplete(true);
+        }
+
+        // Hashes specified byte array using SHA265 then converts to Base64URL
+        private static string Base64UrlHash(byte[] data)
+        {
+            // Hash the array using SHA256
+            byte[] hash;
+            using (var sha256 = SHA256.Create())
+            {
+                hash = sha256.ComputeHash(data);
+            }
+
+            // Encode hash as Base64URL
+            return ToBase64Url(hash);
+        }
+
+        // Checks if the file has been uploaded to AVNFS and provides its URL in the callback if so, otherwise null
+        private static IEnumerator CheckFileAlreadyUploaded(
+            string filename,
+            string mediaType,
+            string base64UrlHash,
+            long sizeBytes,
+            EndpointServer endpointServer,
+            Action<string> onComplete)
+        {
+            // Construct a request to get the URL for file with specified hash
+            var fileSignature = new GetFileUrlRequest
+            {
+                Hash = base64UrlHash,
+                SizeBytes = sizeBytes,
+                MediaType = mediaType,
+                FileName = filename
+            };
+
+            // Send request and yield until complete
+            var avnfs = new AvnfsService.AvnfsServiceClient(AvnCloudChannel.ChannelForServer(endpointServer));
+            var getFileResponseTask = avnfs.GetFileUrlAsync(fileSignature).ResponseAsync;
+            while (!getFileResponseTask.IsCompleted) { yield return null; }
+
+            // If the request return a URL then the file has already been uploaded
+            if (getFileResponseTask.IsCompletedSuccessfully && getFileResponseTask.Result.HasUrl)
+            {
+                onComplete(getFileResponseTask.Result.Url);
+            }
+
+            onComplete(null);
+        }
+
+        // Gets the manifest required to upload a file to AVNFS and provides via the callback
+        private static IEnumerator GetUploadManifest(
+            string filename,
+            string mediaType,
+            string base64UrlHash,
+            long sizeBytes,
+            Authorization auth,
+            EndpointServer endpointServer,
+            Action<UploadManifest> onComplete)
+        {
+            // Request the data required to upload a file to AVNFS and yield until complete
+            var avnfs = new AvnfsService.AvnfsServiceClient(AvnCloudChannel.ChannelForServer(endpointServer));
+            var manifestRequest = new GetManifestRequest
+            {
+                Auth = auth,
+                FileName = filename,
+                Hash = base64UrlHash,
+                MediaType = mediaType,
+                SizeBytes = sizeBytes
+            };
+            var uploadManifestTask = avnfs.GetPostManifestAsync(manifestRequest).ResponseAsync;
+            while (!uploadManifestTask.IsCompleted) { yield return null; }
+            onComplete(uploadManifestTask.Result);
+        }
+
+        // Constructs a UnityWebRequest to upload the provided file to AVNFS
+        private static UnityWebRequest ConstructFileUploadWebRequest(UploadManifest uploadManifest, byte[] data)
         {
             try
             {
-                //TODO: Check file doesn't exceed upload size limit (not currently possible as max array length is 2GB)
-                //TODO: enable streaming uploads
-
-                Debug.LogFormat("Uploading '{0}' to ClassVR", filename);
-
-                // Hash file contents
-                byte[] hash;
-                using (var sha256 = SHA256.Create())
-                {
-                    hash = sha256.ComputeHash(data);
-                }
-
-                // Encode hash as Base64URL
-                var base64UrlHash = ToBase64Url(hash);
-
-                var fileSignature = new GetFileUrlRequest
-                {
-                    Hash = base64UrlHash,
-                    SizeBytes = data.Length,
-                    MediaType = mediaType,
-                    FileName = filename
-                };
-
-                // Check if file already exists
-                var avnfs = new AvnfsService.AvnfsServiceClient(AvnCloudChannel.ChannelForServer(endpointServer));
-                var getFileResponse = await avnfs.GetFileUrlAsync(fileSignature);
-                if(getFileResponse.HasUrl)
-                {
-                    Debug.LogFormat("'{0}' has already been uploaded to ClassVR at {1}", filename, getFileResponse.Url);
-                    return getFileResponse.Url;
-                }
-
-                // Request the URL to upload to
-                var manifestRequest = new GetManifestRequest
-                {
-                    Auth = auth,
-                    FileName = filename,
-                    Hash = base64UrlHash,
-                    MediaType = mediaType,
-                    SizeBytes = data.Length
-                };
-                var uploadManifest = await avnfs.GetPostManifestAsync(manifestRequest);
-
-                // Upload is done via a HTTP POST, construct a request with the required data
-                var request = new HttpRequestMessage();
-                request.Method = HttpMethod.Post;
-                request.RequestUri = new Uri(uploadManifest.UploadUrl);
-                request.Content = new ByteArrayContent(data);
+                // Build a UnityWebRequest to POST the file
+                var form = new WWWForm();
                 foreach (var field in uploadManifest.HeaderFields)
                 {
-                    // HTTPS headers are validated, so we have to assign the right ones to the request and content
-                    if(field.Name.StartsWith("cache", StringComparison.OrdinalIgnoreCase))
-                    {
-                        request.Headers.Add(field.Name, field.Value);
-                    }
-                    else
-                    {
-                        request.Content.Headers.Add(field.Name, field.Value);
-                    }
+                    form.AddField(field.Name, field.Value);
                 }
-
-                // Post the request
-                var response = await httpClient.SendAsync(request);
-                if (!response.IsSuccessStatusCode)
-                {
-                    Debug.LogErrorFormat("Upload of '{0}' failed with code '{1}'", filename, response.StatusCode);
-                    return null;
-                }
-
-                Debug.LogFormat("'{0}' uploaded successfully", filename);
-                return uploadManifest.DownloadUrl;
+                form.AddBinaryData("file", data);
+                return UnityWebRequest.Post(uploadManifest.UploadUrl, form);
             }
             catch (Exception ex)
             {
-                Debug.LogErrorFormat("Exception thrown while uploading '{0}'", filename);
                 Debug.LogException(ex);
                 return null;
             }
