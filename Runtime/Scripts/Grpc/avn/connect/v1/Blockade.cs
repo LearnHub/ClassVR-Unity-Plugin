@@ -43,24 +43,25 @@ namespace Avn.Connect.V1 {
             "KAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhgKC2xhbmd1YWdl",
             "X2lkGAIgASgJSACIAQFCDgoMX2xhbmd1YWdlX2lkIl0KHkdldFNreWJveFN0",
             "eWxlRmFtaWxpZXNSZXNwb25zZRI7CghmYW1pbGllcxgBIAMoCzIpLmF2bi5j",
-            "b25uZWN0LnYxLkJsb2NrYWRlU2t5Ym94U3R5bGVGYW1pbHkiswIKFUdlbmVy",
+            "b25uZWN0LnYxLkJsb2NrYWRlU2t5Ym94U3R5bGVGYW1pbHki1AIKFUdlbmVy",
             "YXRlU2t5Ym94UmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3Qu",
             "djEuQXV0aG9yaXphdGlvbhIXCg9za3lib3hfc3R5bGVfaWQYAiABKAUSDgoG",
             "cHJvbXB0GAMgASgJEhwKD25lZ2F0aXZlX3Byb21wdBgEIAEoCUgAiAEBEh4K",
             "EWNvbnRyb2xfaW1hZ2VfdXJsGAUgASgJSAGIAQESFgoOZW5oYW5jZV9wcm9t",
             "cHQYBiABKAgSGAoLbGFuZ3VhZ2VfaWQYByABKAlIAogBARIRCgRzZWVkGAgg",
-            "ASgFSAOIAQFCEgoQX25lZ2F0aXZlX3Byb21wdEIUChJfY29udHJvbF9pbWFn",
-            "ZV91cmxCDgoMX2xhbmd1YWdlX2lkQgcKBV9zZWVkIsUBChZHZW5lcmF0ZVNr",
-            "eWJveFJlc3BvbnNlEi0KBXN0YXRlGAEgASgOMh4uYXZuLmNvbm5lY3QudjEu",
-            "T3BlcmF0aW9uU3RhdGUSNgoNYWN0aXZpdHlfaW5mbxgCIAEoCzIaLmF2bi5j",
-            "b25uZWN0LnYxLkVudGl0eUluZm9IAIgBARIdChBwcm9ncmVzc19wZXJjZW50",
-            "GAMgASgFSAGIAQFCEAoOX2FjdGl2aXR5X2luZm9CEwoRX3Byb2dyZXNzX3Bl",
-            "cmNlbnQy7QEKD0Jsb2NrYWRlU2VydmljZRJhCg5HZW5lcmF0ZVNreWJveBIl",
-            "LmF2bi5jb25uZWN0LnYxLkdlbmVyYXRlU2t5Ym94UmVxdWVzdBomLmF2bi5j",
-            "b25uZWN0LnYxLkdlbmVyYXRlU2t5Ym94UmVzcG9uc2UwARJ3ChZHZXRTa3li",
-            "b3hTdHlsZUZhbWlsaWVzEi0uYXZuLmNvbm5lY3QudjEuR2V0U2t5Ym94U3R5",
-            "bGVGYW1pbGllc1JlcXVlc3QaLi5hdm4uY29ubmVjdC52MS5HZXRTa3lib3hT",
-            "dHlsZUZhbWlsaWVzUmVzcG9uc2ViBnByb3RvMw=="));
+            "ASgFSAOIAQESHwoXY29udGV4dF9vcmdhbml6YXRpb25faWQYCSABKAVCEgoQ",
+            "X25lZ2F0aXZlX3Byb21wdEIUChJfY29udHJvbF9pbWFnZV91cmxCDgoMX2xh",
+            "bmd1YWdlX2lkQgcKBV9zZWVkIsUBChZHZW5lcmF0ZVNreWJveFJlc3BvbnNl",
+            "Ei0KBXN0YXRlGAEgASgOMh4uYXZuLmNvbm5lY3QudjEuT3BlcmF0aW9uU3Rh",
+            "dGUSNgoNYWN0aXZpdHlfaW5mbxgCIAEoCzIaLmF2bi5jb25uZWN0LnYxLkVu",
+            "dGl0eUluZm9IAIgBARIdChBwcm9ncmVzc19wZXJjZW50GAMgASgFSAGIAQFC",
+            "EAoOX2FjdGl2aXR5X2luZm9CEwoRX3Byb2dyZXNzX3BlcmNlbnQy7QEKD0Js",
+            "b2NrYWRlU2VydmljZRJhCg5HZW5lcmF0ZVNreWJveBIlLmF2bi5jb25uZWN0",
+            "LnYxLkdlbmVyYXRlU2t5Ym94UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLkdl",
+            "bmVyYXRlU2t5Ym94UmVzcG9uc2UwARJ3ChZHZXRTa3lib3hTdHlsZUZhbWls",
+            "aWVzEi0uYXZuLmNvbm5lY3QudjEuR2V0U2t5Ym94U3R5bGVGYW1pbGllc1Jl",
+            "cXVlc3QaLi5hdm4uY29ubmVjdC52MS5HZXRTa3lib3hTdHlsZUZhbWlsaWVz",
+            "UmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -68,7 +69,7 @@ namespace Avn.Connect.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.BlockadeSkyboxStyle), global::Avn.Connect.V1.BlockadeSkyboxStyle.Parser, new[]{ "EntityId", "Name", "Description", "MaxPromptSize", "MaxNegativePromptSize", "PreviewUrl" }, new[]{ "Description", "PreviewUrl" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetSkyboxStyleFamiliesRequest), global::Avn.Connect.V1.GetSkyboxStyleFamiliesRequest.Parser, new[]{ "Auth", "LanguageId" }, new[]{ "LanguageId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetSkyboxStyleFamiliesResponse), global::Avn.Connect.V1.GetSkyboxStyleFamiliesResponse.Parser, new[]{ "Families" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GenerateSkyboxRequest), global::Avn.Connect.V1.GenerateSkyboxRequest.Parser, new[]{ "Auth", "SkyboxStyleId", "Prompt", "NegativePrompt", "ControlImageUrl", "EnhancePrompt", "LanguageId", "Seed" }, new[]{ "NegativePrompt", "ControlImageUrl", "LanguageId", "Seed" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GenerateSkyboxRequest), global::Avn.Connect.V1.GenerateSkyboxRequest.Parser, new[]{ "Auth", "SkyboxStyleId", "Prompt", "NegativePrompt", "ControlImageUrl", "EnhancePrompt", "LanguageId", "Seed", "ContextOrganizationId" }, new[]{ "NegativePrompt", "ControlImageUrl", "LanguageId", "Seed" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GenerateSkyboxResponse), global::Avn.Connect.V1.GenerateSkyboxResponse.Parser, new[]{ "State", "ActivityInfo", "ProgressPercent" }, new[]{ "ActivityInfo", "ProgressPercent" }, null, null, null)
           }));
     }
@@ -1254,6 +1255,7 @@ namespace Avn.Connect.V1 {
       enhancePrompt_ = other.enhancePrompt_;
       languageId_ = other.languageId_;
       seed_ = other.seed_;
+      contextOrganizationId_ = other.contextOrganizationId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1422,6 +1424,21 @@ namespace Avn.Connect.V1 {
       _hasBits0 &= ~1;
     }
 
+    /// <summary>Field number for the "context_organization_id" field.</summary>
+    public const int ContextOrganizationIdFieldNumber = 9;
+    private int contextOrganizationId_;
+    /// <summary>
+    /// License context to use independent of authorization
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ContextOrganizationId {
+      get { return contextOrganizationId_; }
+      set {
+        contextOrganizationId_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1445,6 +1462,7 @@ namespace Avn.Connect.V1 {
       if (EnhancePrompt != other.EnhancePrompt) return false;
       if (LanguageId != other.LanguageId) return false;
       if (Seed != other.Seed) return false;
+      if (ContextOrganizationId != other.ContextOrganizationId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1460,6 +1478,7 @@ namespace Avn.Connect.V1 {
       if (EnhancePrompt != false) hash ^= EnhancePrompt.GetHashCode();
       if (HasLanguageId) hash ^= LanguageId.GetHashCode();
       if (HasSeed) hash ^= Seed.GetHashCode();
+      if (ContextOrganizationId != 0) hash ^= ContextOrganizationId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1510,6 +1529,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(64);
         output.WriteInt32(Seed);
       }
+      if (ContextOrganizationId != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(ContextOrganizationId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1552,6 +1575,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(64);
         output.WriteInt32(Seed);
       }
+      if (ContextOrganizationId != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(ContextOrganizationId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1585,6 +1612,9 @@ namespace Avn.Connect.V1 {
       }
       if (HasSeed) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Seed);
+      }
+      if (ContextOrganizationId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContextOrganizationId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1624,6 +1654,9 @@ namespace Avn.Connect.V1 {
       }
       if (other.HasSeed) {
         Seed = other.Seed;
+      }
+      if (other.ContextOrganizationId != 0) {
+        ContextOrganizationId = other.ContextOrganizationId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1679,6 +1712,10 @@ namespace Avn.Connect.V1 {
             Seed = input.ReadInt32();
             break;
           }
+          case 72: {
+            ContextOrganizationId = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -1731,6 +1768,10 @@ namespace Avn.Connect.V1 {
           }
           case 64: {
             Seed = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            ContextOrganizationId = input.ReadInt32();
             break;
           }
         }

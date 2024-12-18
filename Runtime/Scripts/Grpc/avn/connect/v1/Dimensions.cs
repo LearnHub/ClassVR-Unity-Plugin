@@ -42,66 +42,72 @@ namespace Avn.Connect.V1 {
             "YXRpb25faWQYBiABKAVIBIgBAUIHCgVfYXV0aEIKCghfcGFzc19pZEITChFf",
             "cHJlZmVycmVkX2RvbWFpbkILCglfcmVmZXJyZXJCGgoYX2NvbnRleHRfb3Jn",
             "YW5pemF0aW9uX2lkIi8KF0NyZWF0ZURpbWVuc2lvblJlc3BvbnNlEhQKDGRp",
-            "bWVuc2lvbl9pZBgBIAEoCSKMAQoUSm9pbkRpbWVuc2lvblJlcXVlc3QSMQoG",
-            "Y2xpZW50GAEgASgLMiEuYXZuLmNvbm5lY3QudjEuQ2xpZW50Q3JlZGVudGlh",
-            "bHMSKwoEYXV0aBgCIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRp",
-            "b24SFAoMZGltZW5zaW9uX2lkGAMgASgJIqUDCg5EaW1lbnNpb25FdmVudBI0",
-            "CgZzdGF0dXMYASABKAsyHy5hdm4uY29ubmVjdC52MS5EaW1lbnNpb25TdGF0",
-            "dXNIAIgBARIwCgRpbmZvGAIgASgLMh0uYXZuLmNvbm5lY3QudjEuRGltZW5z",
-            "aW9uSW5mb0gBiAEBEjsKCmNvbm5lY3Rpb24YAyABKAsyIi5hdm4uY29ubmVj",
-            "dC52MS5Db25uZWN0aW9uSW5zdGFuY2VIAogBARI6Cglicm9hZGNhc3QYBCAB",
-            "KAsyIi5hdm4uY29ubmVjdC52MS5EaW1lbnNpb25Ccm9hZGNhc3RIA4gBARI1",
-            "CghwcmVzZW5jZRgFIAEoCzIeLmF2bi5jb25uZWN0LnYxLlByZXNlbmNlVXBk",
-            "YXRlSASIAQESMgoGbGVzc29uGAYgASgLMh0uYXZuLmNvbm5lY3QudjEuTGVz",
-            "c29uQ29udGV4dEgFiAEBQgkKB19zdGF0dXNCBwoFX2luZm9CDQoLX2Nvbm5l",
-            "Y3Rpb25CDAoKX2Jyb2FkY2FzdEILCglfcHJlc2VuY2VCCQoHX2xlc3NvbiJg",
-            "Cg9EaW1lbnNpb25TdGF0dXMSLQoFc3RhdGUYASABKA4yHi5hdm4uY29ubmVj",
+            "bWVuc2lvbl9pZBgBIAEoCSKLAQoTR2V0RGltZW5zaW9uUmVxdWVzdBIxCgZj",
+            "bGllbnQYASABKAsyIS5hdm4uY29ubmVjdC52MS5DbGllbnRDcmVkZW50aWFs",
+            "cxIrCgRhdXRoGAIgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlv",
+            "bhIUCgxkaW1lbnNpb25faWQYAyABKAkijAEKFEpvaW5EaW1lbnNpb25SZXF1",
+            "ZXN0EjEKBmNsaWVudBgBIAEoCzIhLmF2bi5jb25uZWN0LnYxLkNsaWVudENy",
+            "ZWRlbnRpYWxzEisKBGF1dGgYAiABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRo",
+            "b3JpemF0aW9uEhQKDGRpbWVuc2lvbl9pZBgDIAEoCSKlAwoORGltZW5zaW9u",
+            "RXZlbnQSNAoGc3RhdHVzGAEgASgLMh8uYXZuLmNvbm5lY3QudjEuRGltZW5z",
+            "aW9uU3RhdHVzSACIAQESMAoEaW5mbxgCIAEoCzIdLmF2bi5jb25uZWN0LnYx",
+            "LkRpbWVuc2lvbkluZm9IAYgBARI7Cgpjb25uZWN0aW9uGAMgASgLMiIuYXZu",
+            "LmNvbm5lY3QudjEuQ29ubmVjdGlvbkluc3RhbmNlSAKIAQESOgoJYnJvYWRj",
+            "YXN0GAQgASgLMiIuYXZuLmNvbm5lY3QudjEuRGltZW5zaW9uQnJvYWRjYXN0",
+            "SAOIAQESNQoIcHJlc2VuY2UYBSABKAsyHi5hdm4uY29ubmVjdC52MS5QcmVz",
+            "ZW5jZVVwZGF0ZUgEiAEBEjIKBmxlc3NvbhgGIAEoCzIdLmF2bi5jb25uZWN0",
+            "LnYxLkxlc3NvbkNvbnRleHRIBYgBAUIJCgdfc3RhdHVzQgcKBV9pbmZvQg0K",
+            "C19jb25uZWN0aW9uQgwKCl9icm9hZGNhc3RCCwoJX3ByZXNlbmNlQgkKB19s",
+            "ZXNzb24iYAoPRGltZW5zaW9uU3RhdHVzEi0KBXN0YXRlGAEgASgOMh4uYXZu",
+            "LmNvbm5lY3QudjEuT3BlcmF0aW9uU3RhdGUSEwoGZGV0YWlsGAIgASgJSACI",
+            "AQFCCQoHX2RldGFpbCLpAQoRRGltZW5zaW9uSW5zdGFuY2USKwoEaW5mbxgB",
+            "IAEoCzIdLmF2bi5jb25uZWN0LnYxLkRpbWVuc2lvbkluZm8SMQoHY29udGVu",
+            "dBgCIAEoCzIgLmF2bi5jb25uZWN0LnYxLkF2YWlsYWJsZUNvbnRlbnQSOwoL",
+            "cGVybWlzc2lvbnMYBCABKAsyJi5hdm4uY29ubmVjdC52MS5JbnRlcmFjdGlv",
+            "blBlcm1pc3Npb25zEjcKCGZlYXR1cmVzGAUgASgLMiUuYXZuLmNvbm5lY3Qu",
+            "djEuVXNlckludGVyZmFjZUZlYXR1cmVzIoQDCg1EaW1lbnNpb25JbmZvEgoK",
+            "AmlkGAEgASgJEgwKBG5hbWUYAiABKAkSKwoHY3JlYXRlZBgDIAEoCzIaLmdv",
+            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASNwoPZXhwaXJ5X3N0cmF0ZWd5GAQg",
+            "ASgOMh4uYXZuLmNvbm5lY3QudjEuRXhwaXJ5U3RyYXRlZ3kSDgoGZG9tYWlu",
+            "GAUgASgJEhQKB3Bhc3NfaWQYBiABKAlIAIgBARIzCg1hY2Nlc3NfbGltaXRz",
+            "GAcgASgLMhwuYXZuLmNvbm5lY3QudjEuQWNjZXNzTGltaXRzEi8KBm9yaWdp",
+            "bhgIIAEoCzIfLmF2bi5jb25uZWN0LnYxLkRpbWVuc2lvbk9yaWdpbhItCghs",
+            "aWNlbnNlcxgJIAMoCzIbLmF2bi5jb25uZWN0LnYxLkxpY2Vuc2VJbmZvEhoK",
+            "DWVudHJ5X21lc3NhZ2UYCiABKAlIAYgBAUIKCghfcGFzc19pZEIQCg5fZW50",
+            "cnlfbWVzc2FnZSKrAQoPRGltZW5zaW9uT3JpZ2luEhYKCWNsaWVudF9pZBgB",
+            "IAEoCUgAiAEBEhQKB3VzZXJfaWQYAiABKAVIAYgBARI8Cg9wYXJ0bmVyX3Nl",
+            "c3Npb24YAyABKAsyHi5hdm4uY29ubmVjdC52MS5QYXJ0bmVyU2Vzc2lvbkgC",
+            "iAEBQgwKCl9jbGllbnRfaWRCCgoIX3VzZXJfaWRCEgoQX3BhcnRuZXJfc2Vz",
+            "c2lvbiJnChJEaW1lbnNpb25Ccm9hZGNhc3QSDwoHbWVzc2FnZRgBIAEoCRIk",
+            "Chdhbm5vdW5jZXJfY29ubmVjdGlvbl9pZBgCIAEoCUgAiAEBQhoKGF9hbm5v",
+            "dW5jZXJfY29ubmVjdGlvbl9pZCKYAQoMQWNjZXNzTGltaXRzEhUKDXJvb21f",
+            "Y2FwYWNpdHkYASABKAUSGgoSZGltZW5zaW9uX2NhcGFjaXR5GAIgASgFEjwK",
+            "EmlkZW50aXR5X3Byb3ZpZGVycxgDIAMoDjIgLmF2bi5jb25uZWN0LnYxLklk",
+            "ZW50aXR5UHJvdmlkZXISFwoPZW1haWxfd2hpdGVsaXN0GAQgAygJIqwBChdT",
+            "ZXRMZXNzb25Db250ZXh0UmVxdWVzdBI6CgtjcmVkZW50aWFscxgBIAEoCzIl",
+            "LmF2bi5jb25uZWN0LnYxLkNvbm5lY3Rpb25DcmVkZW50aWFscxIUCgxkaW1l",
+            "bnNpb25faWQYAiABKAkSMwoHY29udGV4dBgDIAEoCzIdLmF2bi5jb25uZWN0",
+            "LnYxLkxlc3NvbkNvbnRleHRIAIgBAUIKCghfY29udGV4dCJpChhTZXRMZXNz",
+            "b25Db250ZXh0UmVzcG9uc2USLQoFc3RhdGUYASABKA4yHi5hdm4uY29ubmVj",
             "dC52MS5PcGVyYXRpb25TdGF0ZRITCgZkZXRhaWwYAiABKAlIAIgBAUIJCgdf",
-            "ZGV0YWlsIukBChFEaW1lbnNpb25JbnN0YW5jZRIrCgRpbmZvGAEgASgLMh0u",
-            "YXZuLmNvbm5lY3QudjEuRGltZW5zaW9uSW5mbxIxCgdjb250ZW50GAIgASgL",
-            "MiAuYXZuLmNvbm5lY3QudjEuQXZhaWxhYmxlQ29udGVudBI7CgtwZXJtaXNz",
-            "aW9ucxgEIAEoCzImLmF2bi5jb25uZWN0LnYxLkludGVyYWN0aW9uUGVybWlz",
-            "c2lvbnMSNwoIZmVhdHVyZXMYBSABKAsyJS5hdm4uY29ubmVjdC52MS5Vc2Vy",
-            "SW50ZXJmYWNlRmVhdHVyZXMihAMKDURpbWVuc2lvbkluZm8SCgoCaWQYASAB",
-            "KAkSDAoEbmFtZRgCIAEoCRIrCgdjcmVhdGVkGAMgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcBI3Cg9leHBpcnlfc3RyYXRlZ3kYBCABKA4yHi5h",
-            "dm4uY29ubmVjdC52MS5FeHBpcnlTdHJhdGVneRIOCgZkb21haW4YBSABKAkS",
-            "FAoHcGFzc19pZBgGIAEoCUgAiAEBEjMKDWFjY2Vzc19saW1pdHMYByABKAsy",
-            "HC5hdm4uY29ubmVjdC52MS5BY2Nlc3NMaW1pdHMSLwoGb3JpZ2luGAggASgL",
-            "Mh8uYXZuLmNvbm5lY3QudjEuRGltZW5zaW9uT3JpZ2luEi0KCGxpY2Vuc2Vz",
-            "GAkgAygLMhsuYXZuLmNvbm5lY3QudjEuTGljZW5zZUluZm8SGgoNZW50cnlf",
-            "bWVzc2FnZRgKIAEoCUgBiAEBQgoKCF9wYXNzX2lkQhAKDl9lbnRyeV9tZXNz",
-            "YWdlIqsBCg9EaW1lbnNpb25PcmlnaW4SFgoJY2xpZW50X2lkGAEgASgJSACI",
-            "AQESFAoHdXNlcl9pZBgCIAEoBUgBiAEBEjwKD3BhcnRuZXJfc2Vzc2lvbhgD",
-            "IAEoCzIeLmF2bi5jb25uZWN0LnYxLlBhcnRuZXJTZXNzaW9uSAKIAQFCDAoK",
-            "X2NsaWVudF9pZEIKCghfdXNlcl9pZEISChBfcGFydG5lcl9zZXNzaW9uImcK",
-            "EkRpbWVuc2lvbkJyb2FkY2FzdBIPCgdtZXNzYWdlGAEgASgJEiQKF2Fubm91",
-            "bmNlcl9jb25uZWN0aW9uX2lkGAIgASgJSACIAQFCGgoYX2Fubm91bmNlcl9j",
-            "b25uZWN0aW9uX2lkIpgBCgxBY2Nlc3NMaW1pdHMSFQoNcm9vbV9jYXBhY2l0",
-            "eRgBIAEoBRIaChJkaW1lbnNpb25fY2FwYWNpdHkYAiABKAUSPAoSaWRlbnRp",
-            "dHlfcHJvdmlkZXJzGAMgAygOMiAuYXZuLmNvbm5lY3QudjEuSWRlbnRpdHlQ",
-            "cm92aWRlchIXCg9lbWFpbF93aGl0ZWxpc3QYBCADKAkirAEKF1NldExlc3Nv",
-            "bkNvbnRleHRSZXF1ZXN0EjoKC2NyZWRlbnRpYWxzGAEgASgLMiUuYXZuLmNv",
-            "bm5lY3QudjEuQ29ubmVjdGlvbkNyZWRlbnRpYWxzEhQKDGRpbWVuc2lvbl9p",
-            "ZBgCIAEoCRIzCgdjb250ZXh0GAMgASgLMh0uYXZuLmNvbm5lY3QudjEuTGVz",
-            "c29uQ29udGV4dEgAiAEBQgoKCF9jb250ZXh0ImkKGFNldExlc3NvbkNvbnRl",
-            "eHRSZXNwb25zZRItCgVzdGF0ZRgBIAEoDjIeLmF2bi5jb25uZWN0LnYxLk9w",
-            "ZXJhdGlvblN0YXRlEhMKBmRldGFpbBgCIAEoCUgAiAEBQgkKB19kZXRhaWwq",
-            "dQoORXhwaXJ5U3RyYXRlZ3kSHwobRVhQSVJZX1NUUkFURUdZX1VOU1BFQ0lG",
-            "SUVEEAASIgoeRVhQSVJZX1NUUkFURUdZX0FOWV9DT05ORUNUSU9OEAESHgoa",
-            "RVhQSVJZX1NUUkFURUdZX09OTFlfT1dORVIQAjK2AgoQRGltZW5zaW9uU2Vy",
-            "dmljZRJiCg9DcmVhdGVEaW1lbnNpb24SJi5hdm4uY29ubmVjdC52MS5DcmVh",
-            "dGVEaW1lbnNpb25SZXF1ZXN0GicuYXZuLmNvbm5lY3QudjEuQ3JlYXRlRGlt",
-            "ZW5zaW9uUmVzcG9uc2USVwoNSm9pbkRpbWVuc2lvbhIkLmF2bi5jb25uZWN0",
-            "LnYxLkpvaW5EaW1lbnNpb25SZXF1ZXN0Gh4uYXZuLmNvbm5lY3QudjEuRGlt",
-            "ZW5zaW9uRXZlbnQwARJlChBTZXRMZXNzb25Db250ZXh0EicuYXZuLmNvbm5l",
-            "Y3QudjEuU2V0TGVzc29uQ29udGV4dFJlcXVlc3QaKC5hdm4uY29ubmVjdC52",
-            "MS5TZXRMZXNzb25Db250ZXh0UmVzcG9uc2ViBnByb3RvMw=="));
+            "ZGV0YWlsKnUKDkV4cGlyeVN0cmF0ZWd5Eh8KG0VYUElSWV9TVFJBVEVHWV9V",
+            "TlNQRUNJRklFRBAAEiIKHkVYUElSWV9TVFJBVEVHWV9BTllfQ09OTkVDVElP",
+            "ThABEh4KGkVYUElSWV9TVFJBVEVHWV9PTkxZX09XTkVSEAIyjgMKEERpbWVu",
+            "c2lvblNlcnZpY2USYgoPQ3JlYXRlRGltZW5zaW9uEiYuYXZuLmNvbm5lY3Qu",
+            "djEuQ3JlYXRlRGltZW5zaW9uUmVxdWVzdBonLmF2bi5jb25uZWN0LnYxLkNy",
+            "ZWF0ZURpbWVuc2lvblJlc3BvbnNlElYKDEdldERpbWVuc2lvbhIjLmF2bi5j",
+            "b25uZWN0LnYxLkdldERpbWVuc2lvblJlcXVlc3QaIS5hdm4uY29ubmVjdC52",
+            "MS5EaW1lbnNpb25JbnN0YW5jZRJXCg1Kb2luRGltZW5zaW9uEiQuYXZuLmNv",
+            "bm5lY3QudjEuSm9pbkRpbWVuc2lvblJlcXVlc3QaHi5hdm4uY29ubmVjdC52",
+            "MS5EaW1lbnNpb25FdmVudDABEmUKEFNldExlc3NvbkNvbnRleHQSJy5hdm4u",
+            "Y29ubmVjdC52MS5TZXRMZXNzb25Db250ZXh0UmVxdWVzdBooLmF2bi5jb25u",
+            "ZWN0LnYxLlNldExlc3NvbkNvbnRleHRSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.PresenceReflection.Descriptor, global::Avn.Connect.V1.ConnectionsReflection.Descriptor, global::Avn.Connect.V1.LessonContextReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, global::Avn.Connect.V1.PartnersReflection.Descriptor, global::Avn.Connect.V1.LicensesReflection.Descriptor, global::Avn.Connect.V1.InteractionPermissionsReflection.Descriptor, global::Avn.Connect.V1.FeaturesReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.ContentReflection.Descriptor, global::Avn.Connect.V1.ClientsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.ExpiryStrategy), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateDimensionRequest), global::Avn.Connect.V1.CreateDimensionRequest.Parser, new[]{ "Client", "Auth", "PassId", "PreferredDomain", "Referrer", "ContextOrganizationId" }, new[]{ "Auth", "PassId", "PreferredDomain", "Referrer", "ContextOrganizationId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateDimensionResponse), global::Avn.Connect.V1.CreateDimensionResponse.Parser, new[]{ "DimensionId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetDimensionRequest), global::Avn.Connect.V1.GetDimensionRequest.Parser, new[]{ "Client", "Auth", "DimensionId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.JoinDimensionRequest), global::Avn.Connect.V1.JoinDimensionRequest.Parser, new[]{ "Client", "Auth", "DimensionId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionEvent), global::Avn.Connect.V1.DimensionEvent.Parser, new[]{ "Status", "Info", "Connection", "Broadcast", "Presence", "Lesson" }, new[]{ "Status", "Info", "Connection", "Broadcast", "Presence", "Lesson" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionStatus), global::Avn.Connect.V1.DimensionStatus.Parser, new[]{ "State", "Detail" }, new[]{ "Detail" }, null, null, null),
@@ -804,6 +810,296 @@ namespace Avn.Connect.V1 {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetDimensionRequest : pb::IMessage<GetDimensionRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetDimensionRequest> _parser = new pb::MessageParser<GetDimensionRequest>(() => new GetDimensionRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetDimensionRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDimensionRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDimensionRequest(GetDimensionRequest other) : this() {
+      client_ = other.client_ != null ? other.client_.Clone() : null;
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+      dimensionId_ = other.dimensionId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetDimensionRequest Clone() {
+      return new GetDimensionRequest(this);
+    }
+
+    /// <summary>Field number for the "client" field.</summary>
+    public const int ClientFieldNumber = 1;
+    private global::Avn.Connect.V1.ClientCredentials client_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.ClientCredentials Client {
+      get { return client_; }
+      set {
+        client_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 2;
+    private global::Avn.Connect.V1.Authorization auth_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "dimension_id" field.</summary>
+    public const int DimensionIdFieldNumber = 3;
+    private string dimensionId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DimensionId {
+      get { return dimensionId_; }
+      set {
+        dimensionId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetDimensionRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetDimensionRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Client, other.Client)) return false;
+      if (!object.Equals(Auth, other.Auth)) return false;
+      if (DimensionId != other.DimensionId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (client_ != null) hash ^= Client.GetHashCode();
+      if (auth_ != null) hash ^= Auth.GetHashCode();
+      if (DimensionId.Length != 0) hash ^= DimensionId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (client_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Client);
+      }
+      if (auth_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Auth);
+      }
+      if (DimensionId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(DimensionId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (client_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Client);
+      }
+      if (auth_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Auth);
+      }
+      if (DimensionId.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(DimensionId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (client_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Client);
+      }
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
+      if (DimensionId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DimensionId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetDimensionRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.client_ != null) {
+        if (client_ == null) {
+          Client = new global::Avn.Connect.V1.ClientCredentials();
+        }
+        Client.MergeFrom(other.Client);
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
+      }
+      if (other.DimensionId.Length != 0) {
+        DimensionId = other.DimensionId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (client_ == null) {
+              Client = new global::Avn.Connect.V1.ClientCredentials();
+            }
+            input.ReadMessage(Client);
+            break;
+          }
+          case 18: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 26: {
+            DimensionId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (client_ == null) {
+              Client = new global::Avn.Connect.V1.ClientCredentials();
+            }
+            input.ReadMessage(Client);
+            break;
+          }
+          case 18: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 26: {
+            DimensionId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class JoinDimensionRequest : pb::IMessage<JoinDimensionRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -818,7 +1114,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1108,7 +1404,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1563,7 +1859,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1812,7 +2108,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2157,7 +2453,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2733,7 +3029,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3044,7 +3340,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3293,7 +3589,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3582,7 +3878,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3872,7 +4168,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Avn.Connect.V1.DimensionsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

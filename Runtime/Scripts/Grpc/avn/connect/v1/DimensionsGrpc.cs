@@ -50,6 +50,10 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.CreateDimensionResponse> __Marshaller_avn_connect_v1_CreateDimensionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.CreateDimensionResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetDimensionRequest> __Marshaller_avn_connect_v1_GetDimensionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetDimensionRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.DimensionInstance> __Marshaller_avn_connect_v1_DimensionInstance = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.DimensionInstance.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.JoinDimensionRequest> __Marshaller_avn_connect_v1_JoinDimensionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.JoinDimensionRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.DimensionEvent> __Marshaller_avn_connect_v1_DimensionEvent = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.DimensionEvent.Parser));
@@ -65,6 +69,14 @@ namespace Avn.Connect.V1 {
         "CreateDimension",
         __Marshaller_avn_connect_v1_CreateDimensionRequest,
         __Marshaller_avn_connect_v1_CreateDimensionResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetDimensionRequest, global::Avn.Connect.V1.DimensionInstance> __Method_GetDimension = new grpc::Method<global::Avn.Connect.V1.GetDimensionRequest, global::Avn.Connect.V1.DimensionInstance>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetDimension",
+        __Marshaller_avn_connect_v1_GetDimensionRequest,
+        __Marshaller_avn_connect_v1_DimensionInstance);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.JoinDimensionRequest, global::Avn.Connect.V1.DimensionEvent> __Method_JoinDimension = new grpc::Method<global::Avn.Connect.V1.JoinDimensionRequest, global::Avn.Connect.V1.DimensionEvent>(
@@ -134,6 +146,26 @@ namespace Avn.Connect.V1 {
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.CreateDimensionResponse> CreateDimensionAsync(global::Avn.Connect.V1.CreateDimensionRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateDimension, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.DimensionInstance GetDimension(global::Avn.Connect.V1.GetDimensionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDimension(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.DimensionInstance GetDimension(global::Avn.Connect.V1.GetDimensionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetDimension, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.DimensionInstance> GetDimensionAsync(global::Avn.Connect.V1.GetDimensionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetDimensionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.DimensionInstance> GetDimensionAsync(global::Avn.Connect.V1.GetDimensionRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetDimension, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::Avn.Connect.V1.DimensionEvent> JoinDimension(global::Avn.Connect.V1.JoinDimensionRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
