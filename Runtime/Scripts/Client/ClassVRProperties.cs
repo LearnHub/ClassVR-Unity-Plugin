@@ -30,6 +30,7 @@ namespace ClassVR
         // Safest defaults are just to use the current time so cached data will be invalidated
         public DateTime LastModified { get; private set; } = DateTime.Now;
         public ConnectInfo OrganizationInfo { get; private set; }
+        public string DeviceJWT { get; private set; }
 
         const int CLASSVR_UNENROLLED_DEVICES = 18579;
 
@@ -100,6 +101,12 @@ namespace ClassVR
                 if (!string.IsNullOrEmpty(DisplayName))
                 {
                     Debug.LogFormat("Found ClassVR device name '{0}'", DisplayName);
+                }
+
+                DeviceJWT = GetStringColumnFromCursor(cursor, "devicejwt");
+                if (!string.IsNullOrEmpty(DeviceJWT))
+                {
+                    Debug.LogFormat("Found ClassVR device JWT '{0}'", DeviceJWT);
                 }
 
                 var channelNameStr = GetStringColumnFromCursor(cursor, "channel");

@@ -38,12 +38,20 @@ namespace ClassVR
         /// <param name="auth">The ClassVR Authentication to use for uploading.</param>
         /// <param name="onComplete">Callback once the operation has completed. Bool parameter is true if the upload was successful, false otherwise.</param>
         /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
-        public static void UploadToSharedCloud(string filename, string mediaType, byte[] data, Authorization auth, Action<bool> onComplete, EndpointServer endpointServer = EndpointServer.Production)
+        public static void UploadToSharedCloud(string filename, string mediaType, byte[] data, Action<bool> onComplete, EndpointServer endpointServer = EndpointServer.Production)
         {
             //TODO: make this return a task so it can be awaited
             //TODO: Check file doesn't exceed upload size limit (not currently possible as max array length is 2GB and upload limit is 5GB)
             //TODO: enable streaming uploads
             //TODO: enable cancellation
+
+            // Use the device JWT for authentication
+            var auth = new Authorization { DeviceJwt = ClassVRProperties.Instance.DeviceJWT };
+            if(string.IsNullOrEmpty(auth.DeviceJwt))
+            {
+                Debug.LogError("Couldn't retreive device JWT for authorization. Upload to ClassVR failed.");
+                return;
+            }
 
             // Create a MonoBehaviour instance so we can run coroutines
             InitMonoBehaviour();
