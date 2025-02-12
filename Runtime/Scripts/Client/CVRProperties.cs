@@ -38,9 +38,6 @@ namespace ClassVR
         private static readonly Lazy<CVRProperties> lazy = new Lazy<CVRProperties>(() => new CVRProperties());
         public static CVRProperties Instance { get { return lazy.Value; } }
 
-        private AndroidJavaObject _contentResolver;
-        private AndroidJavaObject _queryUri;
-
         private AndroidJavaClass _javaCVRProperties;
 
         /// <summary>
