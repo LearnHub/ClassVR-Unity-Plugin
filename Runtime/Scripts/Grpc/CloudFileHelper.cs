@@ -30,8 +30,8 @@ namespace ClassVR
             //TODO: enable cancellation
 
             // Use the device JWT for authentication
-            var auth = new Authorization { DeviceJwt = ClassVRProperties.Instance.DeviceJWT };
-            if(string.IsNullOrEmpty(auth.DeviceJwt))
+            var auth = new Authorization { DeviceJwt = CVRProperties.Instance.DeviceJWT };
+            if (string.IsNullOrEmpty(auth.DeviceJwt))
             {
                 Debug.LogErrorFormat("Couldn't retreive device JWT for authorization. Upload of '{0}' to ClassVR failed.", filename);
                 return null;
@@ -117,7 +117,7 @@ namespace ClassVR
             Authorization auth,
             EndpointServer endpointServer)
         {
-            var orgId = ClassVRProperties.Instance.OrganizationInfo.Id;
+            var orgId = CVRProperties.Instance.OrganizationInfo.Id;
             Debug.LogFormat("Assigning '{0}' to Shared Cloud of Organization with ID '{1}'", downloadUrl, orgId);
 
             // Construct a request using the organization ID the device is currently registered to
