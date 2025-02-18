@@ -45,9 +45,10 @@ namespace ClassVR
         /// </summary>
         private CVRProperties()
         {
+#if (!UNITY_EDITOR && UNITY_ANDROID)
             // Get reference to the Java class used to request serialized properties
             _javaCVRProperties = new AndroidJavaClass("com.classvr.cvr_unity_java.CVRProperties");
-
+#endif
             Refresh();
         }
 
@@ -58,8 +59,9 @@ namespace ClassVR
         {
             Debug.Log("Refreshing ClassVR client properties");
 
+#if (!UNITY_EDITOR && UNITY_ANDROID)
             // Request json serialized data from Java plugin
-            var json = _javaCVRProperties.CallStatic<string>("GetClassVRProperties");
+            var json = _javaCVRProperties.CallStatic<string>("getClassVRProperties");
             // Deserialize using Unity's JsonUtility
             var props = JsonUtility.FromJson<SerializableCVRProperties>(json);
 
@@ -102,6 +104,7 @@ namespace ClassVR
             OrganizationInfo = props.OrgInfo;
             Debug.LogFormat("Found organization id '{0}'", OrganizationInfo.Id.ToString());
             Debug.LogFormat("Found organizationLastModified '{0}'", OrganizationInfo.LastModified.ToString());
+#endif
         }
     }
 
