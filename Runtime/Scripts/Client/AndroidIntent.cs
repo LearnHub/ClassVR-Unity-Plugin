@@ -45,7 +45,7 @@ namespace ClassVR
                 Package = intent.mComponent.mPackage
             };
             ContentUserHint = intent.mContentUserHint;
-            Data = intent.mData;
+            Data = intent.mData?.uriString;
             Extras = intent.mExtras;
             Flags = intent.mFlags;
             Package = intent.mPackage;
@@ -63,16 +63,45 @@ namespace ClassVR
                 public string mPackage;
             }
 
+            [Serializable]
+            public class SerializableData
+            {
+                public string uriString;
+            }
+
             public string mAction;
             public int mBroadcastQueueHint;
             public string[] mCategories;
             public SerializableComponent mComponent;
             public int mContentUserHint;
-            public string mData;
+            public SerializableData mData;
             public string mExtras;  // Extras is an arbitrary JSON object
             public int mFlags;
             public string mPackage;
             public string mType;
+        }
+
+        public override string ToString()
+        {
+            if(Action == null)
+            {
+                return "";
+            }
+
+#if (!UNITY_EDITOR && UNITY_ANDROID)
+            return "Action = " + Action +
+                " BroadcastQueueHint = " + BroadcastQueueHint +
+                " Categories = " + Categories?.ToString() +
+                " Component.Class = " + Component?.Class +
+                " Component.Package = " + Component?.Package +
+                " ContentUserHint = " + ContentUserHint +
+                " Data = " + Data +
+                " Extras = " + Extras +
+                " Flags = " + Flags +
+                " Package = " + Package +
+                " Type = " + Type;
+#endif
+            return "Unsupported platform, no intent data";
         }
     }
 }
