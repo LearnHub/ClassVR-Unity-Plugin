@@ -1,0 +1,1 @@
+Copy here custom_openxr_loader.aar generated from the PLUGIN folder (Android Studio build).

@@ -1,0 +1,25 @@
+{
+  "name": "com.avantis.openxr.tilttospin",
+  "version": "1.0.0",
+  "displayName": "Avantis Tilt-To-Spin",
+  "description": "Enables Avantis Tilt-To-Spin OpenXR Api Layer.",
+  "unity": "2023.1",
+  "unityRelease": "0f1",
+  "keywords": [
+    "xr",
+    "openxr",
+    "loader",
+    "custom"
+  ],
+  "author": {
+    "name": "Avantis",
+    "email": "support@yourcompany.com",
+    "url": "https://classvr.com"
+  },
+  "files": [
+    "Runtime",
+    "Plugins/Android"
+  ],
+  "dependencies": {
+  }
+}
