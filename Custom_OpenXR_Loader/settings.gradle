@@ -1,0 +1,2 @@
+rootProject.name = 'OpenXRHookPluginWrapper'
+include ':plugin'
