@@ -1,4 +1,4 @@
-# A Unity 6.1 (6000.1.8f1) Plugin that adds a new OpenXR Feature to enable the Tilt-To-Spin Explicit OpenXR API Layer
+# A Unity 6.1 Plugin that adds a new OpenXR Feature to enable the Tilt-To-Spin Explicit OpenXR API Layer
 
 Folder structure:
 
