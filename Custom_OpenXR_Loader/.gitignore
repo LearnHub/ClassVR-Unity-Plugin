@@ -1,0 +1,50 @@
+# === Android specific ===
+/.gradle/
+/build/
+/local.properties
+/.idea/
+/.cxx/
+/.externalNativeBuild/
+*.iml
+
+# === Unity build folders ===
+/Library/
+/Temp/
+/Obj/
+/Build/
+/Builds/
+/Logs/
+/MemoryCaptures/
+*.apk
+*.aab
+*.keystore
+
+# === Unity generated files ===
+/UserSettings/
+/*.csproj
+/*.sln
+/*.user
+/*.pidb
+/*.suo
+/*.unityproj
+
+# === Gradle cache and build artifacts ===
+**/build/
+**/.gradle/
+**/intermediates/
+**/generated/
+**/outputs/
+**/tmp/
+
+# === VSCode ===
+.vscode/
+
+# === Android Studio ===
+/captures/
+/.idea/
+/.gradle/
+/*.iml
+
+# === Misc ===
+.DS_Store
+Thumbs.db
