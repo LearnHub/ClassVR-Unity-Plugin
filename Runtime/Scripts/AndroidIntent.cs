@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace ClassVR
 {
+    /// <summary>
+    /// Utility class for getting data from the Android launch intent
+    /// </summary>
     public sealed class AndroidIntent
     {
         public class ComponentName
@@ -79,29 +82,6 @@ namespace ClassVR
             public int mFlags;
             public string mPackage;
             public string mType;
-        }
-
-        public override string ToString()
-        {
-            if(Action == null)
-            {
-                return "";
-            }
-
-#if (!UNITY_EDITOR && UNITY_ANDROID)
-            return "Action = " + Action +
-                " BroadcastQueueHint = " + BroadcastQueueHint +
-                " Categories = " + Categories?.ToString() +
-                " Component.Class = " + Component?.Class +
-                " Component.Package = " + Component?.Package +
-                " ContentUserHint = " + ContentUserHint +
-                " Data = " + Data +
-                " Extras = " + Extras +
-                " Flags = " + Flags +
-                " Package = " + Package +
-                " Type = " + Type;
-#endif
-            return "Unsupported platform, no intent data";
         }
     }
 }
