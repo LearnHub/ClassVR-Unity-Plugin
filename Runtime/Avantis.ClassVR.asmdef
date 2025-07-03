@@ -1,6 +1,6 @@
 {
     "name": "Avantis.ClassVR",
-    "rootNamespace": "",
+    "rootNamespace": "ClassVR",
     "references": [],
     "includePlatforms": [
         "Android",
