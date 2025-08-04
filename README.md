@@ -12,4 +12,7 @@ var headsetName = CVRProperties.Instance.DisplayName;
 
 // Read Android launch intent data
 var intentAction = AndroidIntent.Instance.Action;
+
+// Read the system locale
+var sysLocale = SystemProperties.GetSysLocale();
 ```
