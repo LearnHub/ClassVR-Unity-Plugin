@@ -5,7 +5,9 @@ using Grpc.Core;
 using UnityEngine;
 
 namespace ClassVR {
-  public class Analytics {
+  public static class Analytics {
+    private static ClientCredentials clientCredentials;
+
     public static async Task SendEvent(
       string actionId,
       string sourceId,
@@ -14,13 +16,15 @@ namespace ClassVR {
       // Construct a client - these are cheap and don't need to be cached
       var clientService = new ClientService.ClientServiceClient(AvnCloudChannel.Instance.ChannelForServer(endpointServer));
 
-      //TODO: cache client credentials
-      CreateClientCredentialsResponse clientCredentialsResponse;
-      try {
-        clientCredentialsResponse = await clientService.CreateClientCredentialsAsync(new CreateClientCredentialsRequest());
-      } catch (RpcException ex) {
-        Debug.LogError($"Analytics event send failed. Status code: {ex.Status.StatusCode}. Message: {ex.Status.Detail}");
-        return;
+      // Request and cache client credentials if not present
+      if (clientCredentials == null) {
+        try {
+          var clientCredentialsResponse = await clientService.CreateClientCredentialsAsync(new CreateClientCredentialsRequest());
+          clientCredentials = clientCredentialsResponse.ClientCredentials;
+        } catch (RpcException ex) {
+          Debug.LogError($"Analytics event send failed. Status code: {ex.Status.StatusCode}. Message: {ex.Status.Detail}");
+          return;
+        }
       }
 
       // Use the device JWT for auth
@@ -33,7 +37,7 @@ namespace ClassVR {
       }
 
       var request = new RecordActionRequest() {
-        Client = clientCredentialsResponse.ClientCredentials,
+        Client = clientCredentials,
         ActionId = actionId,
         SourceId = sourceId,
         HostId = Application.identifier,  // Package name
@@ -41,7 +45,7 @@ namespace ClassVR {
         Data = data
       };
       Debug.Log($"ADMDBG: sending record action");
-      Debug.Log($"ADMDBG: clientId = {clientCredentialsResponse.ClientCredentials.ClientId}");
+      Debug.Log($"ADMDBG: clientId = {clientCredentials.ClientId}");
       Debug.Log($"ADMDBG: ActionId = {actionId}");
       Debug.Log($"ADMDBG: SourceId = {sourceId}");
       Debug.Log($"ADMDBG: HostId = {Application.identifier}");
