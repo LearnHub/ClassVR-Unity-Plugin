@@ -46,25 +46,25 @@ namespace Avn.Connect.V1 {
             "aXphdGlvbhIWCg50cmFuc2xhdGlvbl9pZBgCIAEoCRIaChJzb3VyY2VfbGFu",
             "Z3VhZ2VfaWQYAyABKAkSGgoSdGFyZ2V0X2xhbmd1YWdlX2lkGAQgASgJIkUK",
             "GVRyYW5zbGF0aW9uTG9va3VwUmVzcG9uc2USEwoLc291cmNlX3RleHQYASAB",
-            "KAkSEwoLdGFyZ2V0X3RleHQYAiABKAkqlgEKEVRyYW5zbGF0aW9uRm9ybWF0",
+            "KAkSEwoLdGFyZ2V0X3RleHQYAiABKAkqtAEKEVRyYW5zbGF0aW9uRm9ybWF0",
             "EiAKHFRSQU5TTEFUSU9OX0ZPUk1BVF9VTkRFRklORUQQABIhCh1UUkFOU0xB",
             "VElPTl9GT1JNQVRfUExBSU5fVEVYVBABEh8KG1RSQU5TTEFUSU9OX0ZPUk1B",
-            "VF9NQVJLRE9XThACEhsKF1RSQU5TTEFUSU9OX0ZPUk1BVF9IVE1MEAMq4QIK",
-            "D1RyYW5zbGF0aW9uRmxhZxIcChhUUkFOU0xBVElPTl9GTEFHX1VOS05PV04Q",
-            "ABIdChlUUkFOU0xBVElPTl9GTEFHX0lTX0FWTkZTEAESJQohVFJBTlNMQVRJ",
-            "T05fRkxBR19JTkNMVURFX01FVEFEQVRBEAISIQodVFJBTlNMQVRJT05fRkxB",
-            "R19CTEFOS19TT1VSQ0UQFBIiCh5UUkFOU0xBVElPTl9GTEFHX1NBTUVfTEFO",
-            "R1VBR0UQFRIcChhUUkFOU0xBVElPTl9GTEFHX0RJQUxFQ1QQFhIjCh9UUkFO",
-            "U0xBVElPTl9GTEFHX05FVVRSQUxfU09VUkNFEBcSJAogVFJBTlNMQVRJT05f",
-            "RkxBR19PUklHSU5BTF9TT1VSQ0UQGBIaChZUUkFOU0xBVElPTl9GTEFHX0VS",
-            "Uk9SECgSHgoaVFJBTlNMQVRJT05fRkxBR19OT1RfRk9VTkQQKTKOAgoSVHJh",
-            "bnNsYXRpb25TZXJ2aWNlEk0KCVRyYW5zbGF0ZRIiLmF2bi5jb25uZWN0LnYx",
-            "LlRyYW5zbGF0aW9uUmVxdWVzdBocLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0",
-            "YWJsZRJdCgZMb29rdXASKC5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGlvbkxv",
-            "b2t1cFJlcXVlc3QaKS5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGlvbkxvb2t1",
-            "cFJlc3BvbnNlEkoKBlVwZGF0ZRIoLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0",
-            "aW9uVXBkYXRlUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJv",
-            "dG8z"));
+            "VF9NQVJLRE9XThACEhsKF1RSQU5TTEFUSU9OX0ZPUk1BVF9IVE1MEAMSHAoY",
+            "VFJBTlNMQVRJT05fRk9STUFUX1hMSUZGEAQq4QIKD1RyYW5zbGF0aW9uRmxh",
+            "ZxIcChhUUkFOU0xBVElPTl9GTEFHX1VOS05PV04QABIdChlUUkFOU0xBVElP",
+            "Tl9GTEFHX0lTX0FWTkZTEAESJQohVFJBTlNMQVRJT05fRkxBR19JTkNMVURF",
+            "X01FVEFEQVRBEAISIQodVFJBTlNMQVRJT05fRkxBR19CTEFOS19TT1VSQ0UQ",
+            "FBIiCh5UUkFOU0xBVElPTl9GTEFHX1NBTUVfTEFOR1VBR0UQFRIcChhUUkFO",
+            "U0xBVElPTl9GTEFHX0RJQUxFQ1QQFhIjCh9UUkFOU0xBVElPTl9GTEFHX05F",
+            "VVRSQUxfU09VUkNFEBcSJAogVFJBTlNMQVRJT05fRkxBR19PUklHSU5BTF9T",
+            "T1VSQ0UQGBIaChZUUkFOU0xBVElPTl9GTEFHX0VSUk9SECgSHgoaVFJBTlNM",
+            "QVRJT05fRkxBR19OT1RfRk9VTkQQKTKOAgoSVHJhbnNsYXRpb25TZXJ2aWNl",
+            "Ek0KCVRyYW5zbGF0ZRIiLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0aW9uUmVx",
+            "dWVzdBocLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0YWJsZRJdCgZMb29rdXAS",
+            "KC5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGlvbkxvb2t1cFJlcXVlc3QaKS5h",
+            "dm4uY29ubmVjdC52MS5UcmFuc2xhdGlvbkxvb2t1cFJlc3BvbnNlEkoKBlVw",
+            "ZGF0ZRIoLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0aW9uVXBkYXRlUmVxdWVz",
+            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.TranslationFormat), typeof(global::Avn.Connect.V1.TranslationFlag), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -85,12 +85,13 @@ namespace Avn.Connect.V1 {
     [pbr::OriginalName("TRANSLATION_FORMAT_PLAIN_TEXT")] PlainText = 1,
     [pbr::OriginalName("TRANSLATION_FORMAT_MARKDOWN")] Markdown = 2,
     [pbr::OriginalName("TRANSLATION_FORMAT_HTML")] Html = 3,
+    [pbr::OriginalName("TRANSLATION_FORMAT_XLIFF")] Xliff = 4,
   }
 
   public enum TranslationFlag {
     [pbr::OriginalName("TRANSLATION_FLAG_UNKNOWN")] Unknown = 0,
     /// <summary>
-    /// Is translation text a base64 AVNFS path? (not yet implemented)
+    /// Is translation `text` field an AVNFS path? (not yet implemented)
     /// </summary>
     [pbr::OriginalName("TRANSLATION_FLAG_IS_AVNFS")] IsAvnfs = 1,
     /// <summary>
