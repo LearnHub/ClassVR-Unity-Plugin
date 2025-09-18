@@ -14,7 +14,7 @@ Folder structure:
 ![preview](https://github.com/user-attachments/assets/a549c7aa-1ef1-4ec7-89c8-e1a53d4e4c21)
 
 - If enabled: bundles our "Custom_OpenXR_Loader" in the APK generation & moves Unity's openxr_loader.aar file in the Project's Assets/Plugins folder & excludes it from build.
-- If fisabled: excludes our "Custom_OpenXR_Loader" from build & includes Unity's openxr_loader.aar (Standard Khronos Loader).
+- If disabled: excludes our "Custom_OpenXR_Loader" from build & includes Unity's openxr_loader.aar (Standard Khronos Loader).
 
 ## Installation:
 - Grab the latest Release from the "Release" page.
