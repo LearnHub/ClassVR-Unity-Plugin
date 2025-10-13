@@ -3,7 +3,7 @@ using UnityEngine.Networking;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-namespace ClassVR.Networking {
+namespace ClassVR {
   // From https://gist.github.com/krzys-h/9062552e33dd7bd7fe4a6c12db109a1a
 
   /// <summary>
