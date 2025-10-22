@@ -1,5 +1,6 @@
 using System;
 using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using Avn.Connect.V1;
 using UnityEngine;
@@ -10,6 +11,19 @@ namespace ClassVR.AvnCloud {
   public static class FileUploader {
     // Maximum size in bytes that AVNFS will accept (5GB)
     private const long MaxSinglePartUploadSizeBytes = 5368709120;
+
+    /// <summary>
+    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is assigned to.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="data">The file contents as a string. This will be encoded using UTF8.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    public static async Task<string> UploadToSharedCloud(string filename, string mediaType, string data, EndpointServer endpointServer = EndpointServer.Production) {
+      byte[] byteData = Encoding.UTF8.GetBytes(data);
+      return await UploadToSharedCloud(filename, mediaType, byteData, endpointServer);
+    }
 
     /// <summary>
     /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is assigned to.
