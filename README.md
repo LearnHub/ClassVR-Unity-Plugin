@@ -24,4 +24,7 @@ var sysLocale = SystemProperties.GetSysLocale();
 _ = Analytics.SendEvent("example_action", "example_source");
 // Send an analytics event (and wait for it to complete)
 await Analytics.SendEvent("example_action", "example_source");
+
+// Upload a file to ClassVR Shared Cloud
+var url = await UploadToSharedCloud("example.txt", "text/plain", "example file contents");
 ```
