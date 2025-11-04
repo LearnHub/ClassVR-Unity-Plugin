@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace ClassVR {
   /// <summary>
-  /// Utility class for getting data from the Android launch intent
+  /// Represents the data from an Android intent
   /// </summary>
-  public sealed class AndroidIntent {
+  public class AndroidIntent {
     public class ComponentName {
       public string Class;
       public string Package;
@@ -23,21 +23,44 @@ namespace ClassVR {
     public string Type { get; private set; }
 
     private static readonly Lazy<AndroidIntent> lazy = new Lazy<AndroidIntent>(() => new AndroidIntent());
+    [Obsolete("Use IntentProvider instead.")]
     public static AndroidIntent Instance {
       get {
         return lazy.Value;
       }
     }
 
-    private AndroidJavaClass _javaAndroidIntent;
+    /// <summary>
+    /// Constructs an AndroidIntent from the provided serialized string.
+    /// </summary>
+    /// <param name="serializedIntent">A JSON serialized string containing the intent data.</param>
+    public AndroidIntent(string serializedIntent) {
+      DeserializeIntent(serializedIntent);
+    }
 
-    private AndroidIntent() {
-#if (!UNITY_EDITOR && UNITY_ANDROID)
-      _javaAndroidIntent = new AndroidJavaClass("com.classvr.cvr_unity_java.AndroidIntent");
+    /// <summary>
+    /// Constructs an AndroidIntent from the latest available intent.
+    /// </summary>
+    public AndroidIntent() {
+      var json = GetSerializedIntent();
+      DeserializeIntent(json);
+    }
 
-      var json = _javaAndroidIntent.CallStatic<string>("getIntentData");
+    private string GetSerializedIntent() {
+#if !UNITY_EDITOR && UNITY_ANDROID
+      var javaAndroidIntent = new AndroidJavaClass("com.classvr.cvr_unity_java.AndroidIntent");
+      return javaAndroidIntent.CallStatic<string>("getIntentData");
+#else
+      return null;
+#endif
+    }
 
-      var intent = JsonUtility.FromJson<SerializableIntent>(json);
+    void DeserializeIntent(string serializedIntent) {
+      if (string.IsNullOrEmpty(serializedIntent)) {
+        return;
+      }
+
+      var intent = JsonUtility.FromJson<SerializableIntent>(serializedIntent);
 
       Action = intent.mAction;
       BroadcastQueueHint = intent.mBroadcastQueueHint;
@@ -52,7 +75,6 @@ namespace ClassVR {
       Flags = intent.mFlags;
       Package = intent.mPackage;
       Type = intent.mType;
-#endif
     }
 
     [Serializable]
