@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.Layouts;
@@ -11,6 +12,8 @@ using UnityEngine.XR.OpenXR.Features;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEngine;
+
 #endif
 
 #if USE_INPUT_SYSTEM_POSE_CONTROL
@@ -27,11 +30,11 @@ namespace ClassVR.Device.Headset655 {
   [UnityEditor.XR.OpenXR.Features.OpenXRFeature(
       UiName = "ClassVR 655 Headset Profile",
       BuildTargetGroups = new[] { BuildTargetGroup.Android },
-      Company = "Avantis",
+      Company = "Avantis Education",
       Desc = "Allows for mapping input to the ClassVR 655 headset interaction profile.",
       DocumentationLink = "",
-      OpenxrExtensionStrings = "",
-      Version = "0.0.1",
+      OpenxrExtensionStrings = "XR_AVN_headset_input",
+      Version = "1.0.0",
       Category = UnityEditor.XR.OpenXR.Features.FeatureCategory.Interaction,
       FeatureId = featureId)]
 #endif
@@ -39,7 +42,7 @@ namespace ClassVR.Device.Headset655 {
     /// <summary>
     /// The feature id string. This is used to give the feature a well known id for reference.
     /// </summary>
-    public const string featureId = "com.avantis.openxr.feature.input.headset655";
+    public const string featureId = "com.avantis.openxr.input.headset655";
 
     /// <summary>
     /// An Input System device based on the ClassVrHeadset655 interaction profile defined by Avantis.
@@ -145,6 +148,7 @@ namespace ClassVR.Device.Headset655 {
     protected override bool OnInstanceCreate(ulong instance) {
       // Requires the Avantis headset input extension
       if (!OpenXRRuntime.IsExtensionEnabled(extensionString)) {
+        Debug.LogError($"[AvantisHeadset655] {extensionString} extension is not enabled.");
         return false;
       }
 
@@ -205,7 +209,7 @@ namespace ClassVR.Device.Headset655 {
             }
           },
           new ActionConfig() {
-            name = "select",
+            name = "selectButton",
             localizedName = "Select",
             type = ActionType.Binary,
             usages = new List<string>() { "SelectButton" },
@@ -217,7 +221,7 @@ namespace ClassVR.Device.Headset655 {
             }
           },
           new ActionConfig() {
-            name = "back",
+            name = "backButton",
             localizedName = "Back",
             type = ActionType.Binary,
             usages = new List<string>() { "Cancel" },
