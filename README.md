@@ -6,7 +6,7 @@ The ClassVR Unity Plugin provides utilities and assets to enable development for
 
 Unless you intend to make changes to the Plugin, please install via [OpenUPM](https://openupm.com/packages/com.avantis.classvr/). OpenUPM installation instructions are here - https://openupm.com/packages/com.avantis.classvr/#modal-manualinstallation.
 
-## Usage
+## API Usage
 
 ```
 using ClassVR;
@@ -32,7 +32,15 @@ await Analytics.SendEvent("example_action", "example_source");
 
 // Upload a file to ClassVR Shared Cloud
 var url = await UploadToSharedCloud("example.txt", "text/plain", "example file contents");
+
+// Disable tilt to spin - note this requires the ClassVR Tilt-To-Spin OpenXR feature (see below)
+var tiltToSpinFeature = OpenXRSettings.Instance.GetFeature<ClassVrTiltToSpinFeature>();
+tiltToSpinFeature.EnableTiltToSpin(false);
 ```
+
+## OpenXR Features
+
+This plugin provides the **ClassVR Tilt-To-Spin** feature, which can be enabled via XR Plugin-in Management. Further information on OpenXR Features can be found in the [Unity OpenXR Plugin docs](https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.15/manual/features.html).
 
 ## Intents and Deep Linking
 
