@@ -9,6 +9,7 @@
     "url": "https://www.classvr.com/"
   },
   "dependencies": {
-    "com.unity.xr.openxr": "1.15.1"
+    "com.unity.xr.openxr": "1.15.1",
+    "com.unity.inputsystem": "1.14.0"
   }
 }
