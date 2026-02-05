@@ -37,11 +37,6 @@ namespace ClassVR.OpenXR {
   ///   if (tiltToSpinFeature.EnableTiltToSpin(true)) {
   ///     Debug.Log("Tilt-to-spin enabled successfully!");
   ///   }
-  ///
-  ///   // Enable reset on recenter
-  ///   if (tiltToSpinFeature.IsModernExtensionEnabled) {
-  ///     tiltToSpinFeature.EnableResetOnRecenter(true);
-  ///   }
   /// }
   /// </code>
   /// </summary>
