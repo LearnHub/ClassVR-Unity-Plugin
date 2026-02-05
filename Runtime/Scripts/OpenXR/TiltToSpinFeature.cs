@@ -25,35 +25,29 @@ namespace ClassVR.OpenXR {
   /// <summary>
   /// Enables the Avantis Tilt-to-Spin extension for OpenXR.
   /// This feature converts head roll (tilt) into yaw rotation (spin) for VR navigation.
+  /// It is not recommended to use this class directly, use XR Plug-in Management in Project Settings instead.
   ///
   /// Usage Example:
   /// <code>
   /// // Get the feature instance
   /// var tiltToSpinFeature = OpenXRSettings.Instance.GetFeature&lt;ClassVrTiltToSpinFeature&gt;();
   ///
-  /// if (tiltToSpinFeature != null)
-  /// {
-  ///     // Enable tilt-to-spin functionality
-  ///     if (tiltToSpinFeature.EnableTiltToSpin(true))
-  ///     {
-  ///         Debug.Log("Tilt-to-spin enabled successfully!");
-  ///     }
+  /// if (tiltToSpinFeature != null) {
+  ///   // Enable tilt-to-spin functionality
+  ///   if (tiltToSpinFeature.EnableTiltToSpin(true)) {
+  ///     Debug.Log("Tilt-to-spin enabled successfully!");
+  ///   }
   ///
-  ///     // Enable reset on recenter (modern extension only)
-  ///     if (tiltToSpinFeature.IsModernExtensionEnabled)
-  ///     {
-  ///         tiltToSpinFeature.EnableResetOnRecenter(true);
-  ///     }
+  ///   // Enable reset on recenter
+  ///   if (tiltToSpinFeature.IsModernExtensionEnabled) {
+  ///     tiltToSpinFeature.EnableResetOnRecenter(true);
+  ///   }
   /// }
   /// </code>
   /// </summary>
   public class ClassVrTiltToSpinFeature : OpenXRFeature {
     // The extension string constant
     public const string ExtensionName = "XR_AVN_tilt_to_spin";
-
-    //// === Settings that will appear under the cog icon ===
-    //[SerializeField, Tooltip("Reset On Recenter")]
-    //private bool resetOnRecenter = false;
 
     // XrBool32 constants
     private const uint XR_TRUE = 1;
@@ -101,7 +95,7 @@ namespace ClassVR.OpenXR {
     protected override bool OnInstanceCreate(ulong xrInstanceHandle) {
       // Check the extension is enabled
       if (!OpenXRRuntime.IsExtensionEnabled(ExtensionName)) {
-        Debug.LogWarning($"[AvantisTiltToSpin] {ExtensionName} extension is not enabled.");
+        Debug.LogError($"[AvantisTiltToSpin] {ExtensionName} extension is not enabled.");
         return false;
       }
 
@@ -124,21 +118,22 @@ namespace ClassVR.OpenXR {
       result = getInstanceProcAddr(xrInstance, "xrEnableTiltToSpinAVN", ref funcPtr);
       if (result.IsSuccess() && funcPtr != IntPtr.Zero) {
         xrEnableTiltToSpinAVN = Marshal.GetDelegateForFunctionPointer<xrEnableTiltToSpinAVNDelegate>(funcPtr);
-        Debug.Log("[AvantisTiltToSpin] Successfully loaded xrEnableTiltToSpinAVN");
       } else {
-        Debug.LogWarning("[AvantisTiltToSpin] Failed to get xrEnableTiltToSpinAVN function pointer");
+        Debug.LogError("[AvantisTiltToSpin] Failed to get xrEnableTiltToSpinAVN function pointer");
+        return false;
       }
 
       // Get xrEnableResetOnRecenterTiltToSpinAVN
       funcPtr = IntPtr.Zero;
       result = getInstanceProcAddr(xrInstance, "xrEnableResetOnRecenterTiltToSpinAVN", ref funcPtr);
       if (result.IsSuccess() && funcPtr != IntPtr.Zero) {
-        xrEnableResetOnRecenterTiltToSpinAVN =
-            Marshal.GetDelegateForFunctionPointer<xrEnableResetOnRecenterTiltToSpinAVNDelegate>(funcPtr);
-        Debug.Log("[AvantisTiltToSpin] Successfully loaded xrEnableResetOnRecenterTiltToSpinAVN");
+        xrEnableResetOnRecenterTiltToSpinAVN = Marshal.GetDelegateForFunctionPointer<xrEnableResetOnRecenterTiltToSpinAVNDelegate>(funcPtr);
       } else {
         Debug.LogWarning("[AvantisTiltToSpin] Failed to get xrEnableResetOnRecenterTiltToSpinAVN function pointer");
       }
+
+      // Enable tilt to spin by default
+      EnableTiltToSpin(true);
 
       return xrEnableTiltToSpinAVN != null;
     }
@@ -158,6 +153,7 @@ namespace ClassVR.OpenXR {
     /// <summary>
     /// Enable or disable the tilt-to-spin functionality.
     /// When enabled, head roll is converted to yaw rotation.
+    /// Enabled by default.
     /// </summary>
     /// <param name="enable">True to enable tilt-to-spin, false to disable.</param>
     /// <returns>True if the operation succeeded, false otherwise.</returns>
