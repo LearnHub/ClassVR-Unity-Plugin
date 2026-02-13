@@ -7,8 +7,5 @@
   "author": {
     "name": "Avantis Education",
     "url": "https://www.classvr.com/"
-  },
-  "dependencies": {
-    "com.unity.xr.openxr": "1.15.1"
   }
 }

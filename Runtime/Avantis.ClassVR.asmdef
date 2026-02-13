@@ -1,9 +1,7 @@
 {
     "name": "Avantis.ClassVR",
     "rootNamespace": "ClassVR",
-    "references": [
-        "Unity.XR.OpenXR"
-    ],
+    "references": [],
     "includePlatforms": [
         "Android",
         "Editor"
