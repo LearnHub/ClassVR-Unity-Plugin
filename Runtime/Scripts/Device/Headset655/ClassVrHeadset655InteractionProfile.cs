@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
@@ -12,8 +12,6 @@ using UnityEngine.XR.OpenXR.Features;
 
 #if UNITY_EDITOR
 using UnityEditor;
-using UnityEngine;
-
 #endif
 
 #if USE_INPUT_SYSTEM_POSE_CONTROL
@@ -143,12 +141,13 @@ namespace ClassVR.Device.Headset655 {
     public const string volume_down = "/input/volume_down/click";
 
     private const string kDeviceLocalizedName = "ClassVR Headset 655 OpenXR";
+    private ClassVrHeadset655 headsetDevice;
 
     /// <inheritdoc/>
     protected override bool OnInstanceCreate(ulong instance) {
       // Requires the Avantis headset input extension
       if (!OpenXRRuntime.IsExtensionEnabled(extensionString)) {
-        Debug.LogError($"[AvantisHeadset655] {extensionString} extension is not enabled.");
+        Debug.LogError($"[ClassVR655] {extensionString} extension is not enabled at OnInstanceCreate time.");
         return false;
       }
 
@@ -169,6 +168,10 @@ namespace ClassVR.Device.Headset655 {
     /// Removes the <see cref="ClassVrHeadset655"/> layout from the Input System.
     /// </summary>
     protected override void UnregisterDeviceLayout() {
+      if (headsetDevice != null) {
+        InputSystem.RemoveDevice(headsetDevice);
+        headsetDevice = null;
+      }
       InputSystem.RemoveLayout(nameof(ClassVrHeadset655));
     }
 
@@ -182,6 +185,19 @@ namespace ClassVR.Device.Headset655 {
 
     /// <inheritdoc/>
     protected override void RegisterActionMapsWithRuntime() {
+      //TODO: determine whether manually creating the device is necessary
+      // Manually create the device since the layer intercepts the profile
+      // and the runtime won't report it
+      try {
+        headsetDevice = InputSystem.AddDevice<ClassVrHeadset655>(kDeviceLocalizedName);
+        if (headsetDevice != null) {
+        } else {
+          Debug.LogError($"[ClassVR655] Could not add ClassVrHeadset655 device.");
+        }
+      } catch (System.Exception ex) {
+        Debug.LogError($"[ClassVR655] Failed to add ClassVrHeadset655 device: {ex.Message}");
+      }
+
       ActionMapConfig actionMap = new ActionMapConfig() {
         name = "classvrheadset655",
         localizedName = kDeviceLocalizedName,
