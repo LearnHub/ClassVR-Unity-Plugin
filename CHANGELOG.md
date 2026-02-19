@@ -10,6 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Tilt to spin OpenXR feature with API to disable/enable at runtime
+- Optional JWT argument to FileUploader.UploadToSharedCloud that falls back to using CVRProperties (only available on Android)
+- FileUploader.UploadToSharedCloud overload which takes a filepath
+- Low-level (plumbing) class AvnfsUploader for file upload on Android via the AVNFS ContentProvider
+- ContentProviderClient for file retrieval on Android via URI from a ContentProvider
+
+### Changed
+
+- Upgraded CVR Unity Java Plugin to version 7
+- FileUploader.UploadToSharedCloud uses AVNFS ContentProvider for upload on Android, instead of gRPC + HTTP POST
 
 ## [1.5.0] - 2025-11-04
 
@@ -23,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgraded CVR Unity Java Plugin to version 6
 
 ### Deprecated
+
 - AndroidIntent.Instance is obsolete as it is no longer a singleton. Functionality remains unchanged for backwards compatibility.
 
 ## [1.4.0] - 2025-10-23
