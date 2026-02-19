@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace ClassVR {
   /// <summary>
+  /// WARNING: Do not use this class directly from Unity, use <see cref="FileUploader"/>.
   /// Uploads files to AVNFS via the on-device AVNFS ContentProvider (content://avnfs.com).
   /// Supports uploading byte arrays directly or streaming from file/content URIs.
   /// Note: This only uploads to AVNFS, but doesn't assign it to an organization.
-  /// Do not use this class directly from Unity, use <see cref="FileUploader"/>. 
   /// </summary>
   public static class AvnfsUploader {
     private const string JavaClassName = "com.classvr.cvr_unity_java.AvnfsUploadHelper";
