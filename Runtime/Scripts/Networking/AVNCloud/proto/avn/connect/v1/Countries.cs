@@ -36,16 +36,15 @@ namespace Avn.Connect.V1 {
             "CgdyZXN1bHRzGAEgAygLMjEuYXZuLmNvbm5lY3QudjEuR2V0Q291bnRyaWVz",
             "UmVzcG9uc2UuUmVzdWx0c0VudHJ5GkcKDFJlc3VsdHNFbnRyeRILCgNrZXkY",
             "ASABKAkSJgoFdmFsdWUYAiABKAsyFy5hdm4uY29ubmVjdC52MS5Db3VudHJ5",
-            "OgI4ASLnAQoHQ291bnRyeRISCgpjb3VudHJ5X2lkGAEgASgJEg4KBmFscGhh",
-            "MxgCIAEoCRIqCgRuYW1lGAMgASgLMhwuYXZuLmNvbm5lY3QudjEuVHJhbnNs",
-            "YXRhYmxlEhMKC25hdGl2ZV9uYW1lGAQgASgJEhsKE2RlZmF1bHRfbGFuZ3Vh",
-            "Z2VfaWQYBSABKAkSGQoRZGVmYXVsdF9sb2NhbGVfaWQYBiABKAkSHwoXZGVm",
-            "YXVsdF9vcmdhbml6YXRpb25faWQYByABKAUSEwoGdGFnX2lkGAggASgFSACI",
-            "AQFCCQoHX3RhZ19pZDK1AQoOQ291bnRyeVNlcnZpY2USSAoKR2V0Q291bnRy",
-            "eRIhLmF2bi5jb25uZWN0LnYxLkdldENvdW50cnlSZXF1ZXN0GhcuYXZuLmNv",
-            "bm5lY3QudjEuQ291bnRyeRJZCgxHZXRDb3VudHJpZXMSIy5hdm4uY29ubmVj",
-            "dC52MS5HZXRDb3VudHJpZXNSZXF1ZXN0GiQuYXZuLmNvbm5lY3QudjEuR2V0",
-            "Q291bnRyaWVzUmVzcG9uc2ViBnByb3RvMw=="));
+            "OgI4ASLOAQoHQ291bnRyeRISCgpjb3VudHJ5X2lkGAEgASgJEg4KBmFscGhh",
+            "MxgCIAEoCRIRCgRuYW1lGAMgASgJQgPAPgESEwoLbmF0aXZlX25hbWUYBCAB",
+            "KAkSGwoTZGVmYXVsdF9sYW5ndWFnZV9pZBgFIAEoCRIZChFkZWZhdWx0X2xv",
+            "Y2FsZV9pZBgGIAEoCRIfChdkZWZhdWx0X29yZ2FuaXphdGlvbl9pZBgHIAEo",
+            "BRITCgZ0YWdfaWQYCCABKAVIAIgBAUIJCgdfdGFnX2lkMrUBCg5Db3VudHJ5",
+            "U2VydmljZRJICgpHZXRDb3VudHJ5EiEuYXZuLmNvbm5lY3QudjEuR2V0Q291",
+            "bnRyeVJlcXVlc3QaFy5hdm4uY29ubmVjdC52MS5Db3VudHJ5ElkKDEdldENv",
+            "dW50cmllcxIjLmF2bi5jb25uZWN0LnYxLkdldENvdW50cmllc1JlcXVlc3Qa",
+            "JC5hdm4uY29ubmVjdC52MS5HZXRDb3VudHJpZXNSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -109,6 +108,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -121,6 +123,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "country_id" field.</summary>
     public const int CountryIdFieldNumber = 2;
     private string countryId_ = "";
+    /// <summary>
+    /// Country ID (ISO 3166-1 alpha-2)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CountryId {
@@ -133,6 +138,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 3;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -398,6 +406,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -410,6 +421,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 2;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -652,6 +666,9 @@ namespace Avn.Connect.V1 {
     private static readonly pbc::MapField<string, global::Avn.Connect.V1.Country>.Codec _map_results_codec
         = new pbc::MapField<string, global::Avn.Connect.V1.Country>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForMessage(18, global::Avn.Connect.V1.Country.Parser), 10);
     private readonly pbc::MapField<string, global::Avn.Connect.V1.Country> results_ = new pbc::MapField<string, global::Avn.Connect.V1.Country>();
+    /// <summary>
+    /// Map of all supported countries
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, global::Avn.Connect.V1.Country> Results {
@@ -828,7 +845,7 @@ namespace Avn.Connect.V1 {
       _hasBits0 = other._hasBits0;
       countryId_ = other.countryId_;
       alpha3_ = other.alpha3_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
+      name_ = other.name_;
       nativeName_ = other.nativeName_;
       defaultLanguageId_ = other.defaultLanguageId_;
       defaultLocaleId_ = other.defaultLocaleId_;
@@ -875,16 +892,16 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 3;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
     /// <summary>
     /// Name translated into request language
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -906,6 +923,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "default_language_id" field.</summary>
     public const int DefaultLanguageIdFieldNumber = 5;
     private string defaultLanguageId_ = "";
+    /// <summary>
+    /// Most popular language used by this country
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DefaultLanguageId {
@@ -918,6 +938,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "default_locale_id" field.</summary>
     public const int DefaultLocaleIdFieldNumber = 6;
     private string defaultLocaleId_ = "";
+    /// <summary>
+    /// Default locale for presenting information
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DefaultLocaleId {
@@ -930,6 +953,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "default_organization_id" field.</summary>
     public const int DefaultOrganizationIdFieldNumber = 7;
     private int defaultOrganizationId_;
+    /// <summary>
+    /// Parent organization to use when creating regional organizations
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int DefaultOrganizationId {
@@ -944,6 +970,9 @@ namespace Avn.Connect.V1 {
     private readonly static int TagIdDefaultValue = 0;
 
     private int tagId_;
+    /// <summary>
+    /// Country tag that matches this country used to annotate resources
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TagId {
@@ -983,7 +1012,7 @@ namespace Avn.Connect.V1 {
       }
       if (CountryId != other.CountryId) return false;
       if (Alpha3 != other.Alpha3) return false;
-      if (!object.Equals(Name, other.Name)) return false;
+      if (Name != other.Name) return false;
       if (NativeName != other.NativeName) return false;
       if (DefaultLanguageId != other.DefaultLanguageId) return false;
       if (DefaultLocaleId != other.DefaultLocaleId) return false;
@@ -998,7 +1027,7 @@ namespace Avn.Connect.V1 {
       int hash = 1;
       if (CountryId.Length != 0) hash ^= CountryId.GetHashCode();
       if (Alpha3.Length != 0) hash ^= Alpha3.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (NativeName.Length != 0) hash ^= NativeName.GetHashCode();
       if (DefaultLanguageId.Length != 0) hash ^= DefaultLanguageId.GetHashCode();
       if (DefaultLocaleId.Length != 0) hash ^= DefaultLocaleId.GetHashCode();
@@ -1030,9 +1059,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(18);
         output.WriteString(Alpha3);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (NativeName.Length != 0) {
         output.WriteRawTag(34);
@@ -1072,9 +1101,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(18);
         output.WriteString(Alpha3);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (NativeName.Length != 0) {
         output.WriteRawTag(34);
@@ -1112,8 +1141,8 @@ namespace Avn.Connect.V1 {
       if (Alpha3.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Alpha3);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (NativeName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(NativeName);
@@ -1148,11 +1177,8 @@ namespace Avn.Connect.V1 {
       if (other.Alpha3.Length != 0) {
         Alpha3 = other.Alpha3;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       if (other.NativeName.Length != 0) {
         NativeName = other.NativeName;
@@ -1197,10 +1223,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 26: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 34: {
@@ -1251,10 +1274,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 26: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 34: {

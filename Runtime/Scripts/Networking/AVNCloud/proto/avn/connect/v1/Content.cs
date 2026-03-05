@@ -122,6 +122,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -426,6 +429,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -450,6 +456,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "icon_url" field.</summary>
     public const int IconUrlFieldNumber = 3;
     private string iconUrl_ = "";
+    /// <summary>
+    /// Icon to use for the entity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IconUrl {
@@ -819,6 +828,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -843,6 +855,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "icon_url" field.</summary>
     public const int IconUrlFieldNumber = 3;
     private string iconUrl_ = "";
+    /// <summary>
+    /// Icon to use for the entity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IconUrl {
@@ -1473,6 +1488,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {

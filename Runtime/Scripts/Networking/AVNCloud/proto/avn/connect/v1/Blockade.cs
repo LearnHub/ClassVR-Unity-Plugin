@@ -30,38 +30,36 @@ namespace Avn.Connect.V1 {
             "dGlvbi5wcm90bxodYXZuL2Nvbm5lY3QvdjEvZW50aXRpZXMucHJvdG8aGmF2",
             "bi9jb25uZWN0L3YxL21lZGlhLnByb3RvGiFhdm4vY29ubmVjdC92MS90cmFu",
             "c2xhdGlvbnMucHJvdG8aH2F2bi9jb25uZWN0L3YxL29wZXJhdGlvbnMucHJv",
-            "dG8ijwEKGUJsb2NrYWRlU2t5Ym94U3R5bGVGYW1pbHkSEQoJZW50aXR5X2lk",
-            "GAEgASgFEioKBG5hbWUYAiABKAsyHC5hdm4uY29ubmVjdC52MS5UcmFuc2xh",
-            "dGFibGUSMwoGc3R5bGVzGAMgAygLMiMuYXZuLmNvbm5lY3QudjEuQmxvY2th",
-            "ZGVTa3lib3hTdHlsZSKBAgoTQmxvY2thZGVTa3lib3hTdHlsZRIRCgllbnRp",
-            "dHlfaWQYASABKAUSKgoEbmFtZRgCIAEoCzIcLmF2bi5jb25uZWN0LnYxLlRy",
-            "YW5zbGF0YWJsZRI2CgtkZXNjcmlwdGlvbhgDIAEoCzIcLmF2bi5jb25uZWN0",
-            "LnYxLlRyYW5zbGF0YWJsZUgAiAEBEhcKD21heF9wcm9tcHRfc2l6ZRgEIAEo",
-            "BRIgChhtYXhfbmVnYXRpdmVfcHJvbXB0X3NpemUYBSABKAUSGAoLcHJldmll",
-            "d191cmwYBiABKAlIAYgBAUIOCgxfZGVzY3JpcHRpb25CDgoMX3ByZXZpZXdf",
-            "dXJsIoABCh1HZXRTa3lib3hTdHlsZUZhbWlsaWVzUmVxdWVzdBIrCgRhdXRo",
-            "GAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIyCgl0cmFu",
-            "c2xhdGUYAiABKAsyHy5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGlvblNwZWMi",
-            "XQoeR2V0U2t5Ym94U3R5bGVGYW1pbGllc1Jlc3BvbnNlEjsKCGZhbWlsaWVz",
-            "GAEgAygLMikuYXZuLmNvbm5lY3QudjEuQmxvY2thZGVTa3lib3hTdHlsZUZh",
-            "bWlseSLUAgoVR2VuZXJhdGVTa3lib3hSZXF1ZXN0EisKBGF1dGgYASABKAsy",
-            "HS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhcKD3NreWJveF9zdHls",
-            "ZV9pZBgCIAEoBRIOCgZwcm9tcHQYAyABKAkSHAoPbmVnYXRpdmVfcHJvbXB0",
-            "GAQgASgJSACIAQESHgoRY29udHJvbF9pbWFnZV91cmwYBSABKAlIAYgBARIW",
-            "Cg5lbmhhbmNlX3Byb21wdBgGIAEoCBIYCgtsYW5ndWFnZV9pZBgHIAEoCUgC",
-            "iAEBEhEKBHNlZWQYCCABKAVIA4gBARIfChdjb250ZXh0X29yZ2FuaXphdGlv",
-            "bl9pZBgJIAEoBUISChBfbmVnYXRpdmVfcHJvbXB0QhQKEl9jb250cm9sX2lt",
-            "YWdlX3VybEIOCgxfbGFuZ3VhZ2VfaWRCBwoFX3NlZWQixQEKFkdlbmVyYXRl",
-            "U2t5Ym94UmVzcG9uc2USLQoFc3RhdGUYASABKA4yHi5hdm4uY29ubmVjdC52",
-            "MS5PcGVyYXRpb25TdGF0ZRI2Cg1hY3Rpdml0eV9pbmZvGAIgASgLMhouYXZu",
-            "LmNvbm5lY3QudjEuRW50aXR5SW5mb0gAiAEBEh0KEHByb2dyZXNzX3BlcmNl",
-            "bnQYAyABKAVIAYgBAUIQCg5fYWN0aXZpdHlfaW5mb0ITChFfcHJvZ3Jlc3Nf",
-            "cGVyY2VudDLtAQoPQmxvY2thZGVTZXJ2aWNlEmEKDkdlbmVyYXRlU2t5Ym94",
-            "EiUuYXZuLmNvbm5lY3QudjEuR2VuZXJhdGVTa3lib3hSZXF1ZXN0GiYuYXZu",
-            "LmNvbm5lY3QudjEuR2VuZXJhdGVTa3lib3hSZXNwb25zZTABEncKFkdldFNr",
-            "eWJveFN0eWxlRmFtaWxpZXMSLS5hdm4uY29ubmVjdC52MS5HZXRTa3lib3hT",
-            "dHlsZUZhbWlsaWVzUmVxdWVzdBouLmF2bi5jb25uZWN0LnYxLkdldFNreWJv",
-            "eFN0eWxlRmFtaWxpZXNSZXNwb25zZWIGcHJvdG8z"));
+            "dG8idgoZQmxvY2thZGVTa3lib3hTdHlsZUZhbWlseRIRCgllbnRpdHlfaWQY",
+            "ASABKAUSEQoEbmFtZRgCIAEoCUIDwD4BEjMKBnN0eWxlcxgDIAMoCzIjLmF2",
+            "bi5jb25uZWN0LnYxLkJsb2NrYWRlU2t5Ym94U3R5bGUizwEKE0Jsb2NrYWRl",
+            "U2t5Ym94U3R5bGUSEQoJZW50aXR5X2lkGAEgASgFEhEKBG5hbWUYAiABKAlC",
+            "A8A+ARIdCgtkZXNjcmlwdGlvbhgDIAEoCUIDwD4BSACIAQESFwoPbWF4X3By",
+            "b21wdF9zaXplGAQgASgFEiAKGG1heF9uZWdhdGl2ZV9wcm9tcHRfc2l6ZRgF",
+            "IAEoBRIYCgtwcmV2aWV3X3VybBgGIAEoCUgBiAEBQg4KDF9kZXNjcmlwdGlv",
+            "bkIOCgxfcHJldmlld191cmwigAEKHUdldFNreWJveFN0eWxlRmFtaWxpZXNS",
+            "ZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3Jp",
+            "emF0aW9uEjIKCXRyYW5zbGF0ZRgCIAEoCzIfLmF2bi5jb25uZWN0LnYxLlRy",
+            "YW5zbGF0aW9uU3BlYyJdCh5HZXRTa3lib3hTdHlsZUZhbWlsaWVzUmVzcG9u",
+            "c2USOwoIZmFtaWxpZXMYASADKAsyKS5hdm4uY29ubmVjdC52MS5CbG9ja2Fk",
+            "ZVNreWJveFN0eWxlRmFtaWx5ItQCChVHZW5lcmF0ZVNreWJveFJlcXVlc3QS",
+            "KwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24S",
+            "FwoPc2t5Ym94X3N0eWxlX2lkGAIgASgFEg4KBnByb21wdBgDIAEoCRIcCg9u",
+            "ZWdhdGl2ZV9wcm9tcHQYBCABKAlIAIgBARIeChFjb250cm9sX2ltYWdlX3Vy",
+            "bBgFIAEoCUgBiAEBEhYKDmVuaGFuY2VfcHJvbXB0GAYgASgIEhgKC2xhbmd1",
+            "YWdlX2lkGAcgASgJSAKIAQESEQoEc2VlZBgIIAEoBUgDiAEBEh8KF2NvbnRl",
+            "eHRfb3JnYW5pemF0aW9uX2lkGAkgASgFQhIKEF9uZWdhdGl2ZV9wcm9tcHRC",
+            "FAoSX2NvbnRyb2xfaW1hZ2VfdXJsQg4KDF9sYW5ndWFnZV9pZEIHCgVfc2Vl",
+            "ZCLFAQoWR2VuZXJhdGVTa3lib3hSZXNwb25zZRItCgVzdGF0ZRgBIAEoDjIe",
+            "LmF2bi5jb25uZWN0LnYxLk9wZXJhdGlvblN0YXRlEjYKDWFjdGl2aXR5X2lu",
+            "Zm8YAiABKAsyGi5hdm4uY29ubmVjdC52MS5FbnRpdHlJbmZvSACIAQESHQoQ",
+            "cHJvZ3Jlc3NfcGVyY2VudBgDIAEoBUgBiAEBQhAKDl9hY3Rpdml0eV9pbmZv",
+            "QhMKEV9wcm9ncmVzc19wZXJjZW50Mu0BCg9CbG9ja2FkZVNlcnZpY2USYQoO",
+            "R2VuZXJhdGVTa3lib3gSJS5hdm4uY29ubmVjdC52MS5HZW5lcmF0ZVNreWJv",
+            "eFJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5HZW5lcmF0ZVNreWJveFJlc3Bv",
+            "bnNlMAESdwoWR2V0U2t5Ym94U3R5bGVGYW1pbGllcxItLmF2bi5jb25uZWN0",
+            "LnYxLkdldFNreWJveFN0eWxlRmFtaWxpZXNSZXF1ZXN0Gi4uYXZuLmNvbm5l",
+            "Y3QudjEuR2V0U2t5Ym94U3R5bGVGYW1pbGllc1Jlc3BvbnNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -113,7 +111,7 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BlockadeSkyboxStyleFamily(BlockadeSkyboxStyleFamily other) : this() {
       entityId_ = other.entityId_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
+      name_ = other.name_;
       styles_ = other.styles_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -138,13 +136,13 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -175,7 +173,7 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (EntityId != other.EntityId) return false;
-      if (!object.Equals(Name, other.Name)) return false;
+      if (Name != other.Name) return false;
       if(!styles_.Equals(other.styles_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -185,7 +183,7 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       hash ^= styles_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -209,9 +207,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       styles_.WriteTo(output, _repeated_styles_codec);
       if (_unknownFields != null) {
@@ -228,9 +226,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       styles_.WriteTo(ref output, _repeated_styles_codec);
       if (_unknownFields != null) {
@@ -246,8 +244,8 @@ namespace Avn.Connect.V1 {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       size += styles_.CalculateSize(_repeated_styles_codec);
       if (_unknownFields != null) {
@@ -265,11 +263,8 @@ namespace Avn.Connect.V1 {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       styles_.Add(other.styles_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -296,10 +291,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -330,10 +322,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -383,8 +372,8 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BlockadeSkyboxStyle(BlockadeSkyboxStyle other) : this() {
       entityId_ = other.entityId_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
-      description_ = other.description_ != null ? other.description_.Clone() : null;
+      name_ = other.name_;
+      description_ = other.description_;
       maxPromptSize_ = other.maxPromptSize_;
       maxNegativePromptSize_ = other.maxNegativePromptSize_;
       previewUrl_ = other.previewUrl_;
@@ -411,26 +400,40 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 3;
-    private global::Avn.Connect.V1.Translatable description_;
+    private readonly static string DescriptionDefaultValue = "";
+
+    private string description_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Description {
-      get { return description_; }
+    public string Description {
+      get { return description_ ?? DescriptionDefaultValue; }
       set {
-        description_ = value;
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+    /// <summary>Gets whether the "description" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDescription {
+      get { return description_ != null; }
+    }
+    /// <summary>Clears the value of the "description" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDescription() {
+      description_ = null;
     }
 
     /// <summary>Field number for the "max_prompt_size" field.</summary>
@@ -499,8 +502,8 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (EntityId != other.EntityId) return false;
-      if (!object.Equals(Name, other.Name)) return false;
-      if (!object.Equals(Description, other.Description)) return false;
+      if (Name != other.Name) return false;
+      if (Description != other.Description) return false;
       if (MaxPromptSize != other.MaxPromptSize) return false;
       if (MaxNegativePromptSize != other.MaxNegativePromptSize) return false;
       if (PreviewUrl != other.PreviewUrl) return false;
@@ -512,8 +515,8 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
-      if (description_ != null) hash ^= Description.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (HasDescription) hash ^= Description.GetHashCode();
       if (MaxPromptSize != 0) hash ^= MaxPromptSize.GetHashCode();
       if (MaxNegativePromptSize != 0) hash ^= MaxNegativePromptSize.GetHashCode();
       if (HasPreviewUrl) hash ^= PreviewUrl.GetHashCode();
@@ -539,13 +542,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
-      if (description_ != null) {
+      if (HasDescription) {
         output.WriteRawTag(26);
-        output.WriteMessage(Description);
+        output.WriteString(Description);
       }
       if (MaxPromptSize != 0) {
         output.WriteRawTag(32);
@@ -573,13 +576,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
-      if (description_ != null) {
+      if (HasDescription) {
         output.WriteRawTag(26);
-        output.WriteMessage(Description);
+        output.WriteString(Description);
       }
       if (MaxPromptSize != 0) {
         output.WriteRawTag(32);
@@ -606,11 +609,11 @@ namespace Avn.Connect.V1 {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
-      if (description_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Description);
+      if (HasDescription) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       if (MaxPromptSize != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxPromptSize);
@@ -636,17 +639,11 @@ namespace Avn.Connect.V1 {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
-      if (other.description_ != null) {
-        if (description_ == null) {
-          Description = new global::Avn.Connect.V1.Translatable();
-        }
-        Description.MergeFrom(other.Description);
+      if (other.HasDescription) {
+        Description = other.Description;
       }
       if (other.MaxPromptSize != 0) {
         MaxPromptSize = other.MaxPromptSize;
@@ -681,17 +678,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
-            if (description_ == null) {
-              Description = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Description);
+            Description = input.ReadString();
             break;
           }
           case 32: {
@@ -730,17 +721,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
-            if (description_ == null) {
-              Description = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Description);
+            Description = input.ReadString();
             break;
           }
           case 32: {
@@ -811,6 +796,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -823,6 +811,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 2;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -1260,6 +1251,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {

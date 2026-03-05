@@ -28,39 +28,40 @@ namespace Avn.Connect.V1 {
             "bmVjdC52MRobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvGh9nb29nbGUv",
             "cHJvdG9idWYvdGltZXN0YW1wLnByb3RvGiJhdm4vY29ubmVjdC92MS9hdXRo",
             "b3JpemF0aW9uLnByb3RvGh9hdm4vY29ubmVjdC92MS9vcGVyYXRpb25zLnBy",
-            "b3RvGh1hdm4vY29ubmVjdC92MS9lbnRpdGllcy5wcm90byJZChdKb2luT3Jn",
-            "YW5pemF0aW9uUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3Qu",
-            "djEuQXV0aG9yaXphdGlvbhIRCglqb2luX2NvZGUYAiABKAkiGgoYSm9pbk9y",
-            "Z2FuaXphdGlvblJlc3BvbnNlIoUBChlDcmVhdGVPcmdhbml6YXRpb25SZXF1",
-            "ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0",
-            "aW9uEjsKEW9yZ2FuaXphdGlvbl9zcGVjGAIgASgLMiAuYXZuLmNvbm5lY3Qu",
-            "djEuT3JnYW5pemF0aW9uU3BlYyJQChpDcmVhdGVPcmdhbml6YXRpb25SZXNw",
-            "b25zZRIyCgxvcmdhbml6YXRpb24YASABKAsyHC5hdm4uY29ubmVjdC52MS5P",
-            "cmdhbml6YXRpb24ipAMKDE9yZ2FuaXphdGlvbhIXCg9vcmdhbml6YXRpb25f",
-            "aWQYASABKAUSDQoFZW1haWwYAiABKAkSDAoEbmFtZRgDIAEoCRIPCgdhZGRy",
-            "ZXNzGAQgASgJEhAKCHBvc3Rjb2RlGAUgASgJEg0KBXBob25lGAYgASgJEhAK",
-            "CHRpbWV6b25lGAcgASgJEhMKC2xhbmd1YWdlX2lkGAggASgJEg8KB2RlbGV0",
-            "ZWQYCSABKAgSMAoHY3JlYXRlZBgKIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
-            "aW1lc3RhbXBIAIgBARIwCgd1cGRhdGVkGAsgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcEgBiAEBEh4KEWVucm9sbG1lbnRfc2VjcmV0GAwgASgJ",
-            "SAKIAQESDAoEY2l0eRgNIAEoCRINCgVzdGF0ZRgOIAEoCRISCgpjb3VudHJ5",
-            "X2lkGA8gASgJEhEKCXB1Ymxpc2hlchgQIAEoCEIKCghfY3JlYXRlZEIKCghf",
-            "dXBkYXRlZEIUChJfZW5yb2xsbWVudF9zZWNyZXQitAEKEE9yZ2FuaXphdGlv",
-            "blNwZWMSDAoEbmFtZRgBIAEoCRIPCgdhZGRyZXNzGAIgASgJEgwKBGNpdHkY",
-            "AyABKAkSDQoFc3RhdGUYBCABKAkSEAoIcG9zdGNvZGUYBSABKAkSEgoKY291",
-            "bnRyeV9pZBgGIAEoCRINCgVwaG9uZRgHIAEoCRIRCglwYXJlbnRfaWQYCCAB",
-            "KAUSEgoFZW1haWwYCSABKAlIAIgBAUIICgZfZW1haWwykQMKE09yZ2FuaXph",
-            "dGlvblNlcnZpY2USUQoPR2V0T3JnYW5pemF0aW9uEiAuYXZuLmNvbm5lY3Qu",
-            "djEuR2V0RW50aXR5UmVxdWVzdBocLmF2bi5jb25uZWN0LnYxLk9yZ2FuaXph",
-            "dGlvbhJlChBKb2luT3JnYW5pemF0aW9uEicuYXZuLmNvbm5lY3QudjEuSm9p",
-            "bk9yZ2FuaXphdGlvblJlcXVlc3QaKC5hdm4uY29ubmVjdC52MS5Kb2luT3Jn",
-            "YW5pemF0aW9uUmVzcG9uc2USawoSQ3JlYXRlT3JnYW5pemF0aW9uEikuYXZu",
-            "LmNvbm5lY3QudjEuQ3JlYXRlT3JnYW5pemF0aW9uUmVxdWVzdBoqLmF2bi5j",
-            "b25uZWN0LnYxLkNyZWF0ZU9yZ2FuaXphdGlvblJlc3BvbnNlElMKDVNldFBy",
-            "b3BlcnRpZXMSKi5hdm4uY29ubmVjdC52MS5TZXRFbnRpdHlQcm9wZXJ0aWVz",
-            "UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJvdG8z"));
+            "b3RvGh1hdm4vY29ubmVjdC92MS9lbnRpdGllcy5wcm90bxofYXZuL2Nvbm5l",
+            "Y3QvdjEvcHJvcGVydGllcy5wcm90byJZChdKb2luT3JnYW5pemF0aW9uUmVx",
+            "dWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXph",
+            "dGlvbhIRCglqb2luX2NvZGUYAiABKAkiGgoYSm9pbk9yZ2FuaXphdGlvblJl",
+            "c3BvbnNlIoUBChlDcmVhdGVPcmdhbml6YXRpb25SZXF1ZXN0EisKBGF1dGgY",
+            "ASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEjsKEW9yZ2Fu",
+            "aXphdGlvbl9zcGVjGAIgASgLMiAuYXZuLmNvbm5lY3QudjEuT3JnYW5pemF0",
+            "aW9uU3BlYyJQChpDcmVhdGVPcmdhbml6YXRpb25SZXNwb25zZRIyCgxvcmdh",
+            "bml6YXRpb24YASABKAsyHC5hdm4uY29ubmVjdC52MS5Pcmdhbml6YXRpb24i",
+            "pAMKDE9yZ2FuaXphdGlvbhIXCg9vcmdhbml6YXRpb25faWQYASABKAUSDQoF",
+            "ZW1haWwYAiABKAkSDAoEbmFtZRgDIAEoCRIPCgdhZGRyZXNzGAQgASgJEhAK",
+            "CHBvc3Rjb2RlGAUgASgJEg0KBXBob25lGAYgASgJEhAKCHRpbWV6b25lGAcg",
+            "ASgJEhMKC2xhbmd1YWdlX2lkGAggASgJEg8KB2RlbGV0ZWQYCSABKAgSMAoH",
+            "Y3JlYXRlZBgKIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAIgB",
+            "ARIwCgd1cGRhdGVkGAsgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cEgBiAEBEh4KEWVucm9sbG1lbnRfc2VjcmV0GAwgASgJSAKIAQESDAoEY2l0",
+            "eRgNIAEoCRINCgVzdGF0ZRgOIAEoCRISCgpjb3VudHJ5X2lkGA8gASgJEhEK",
+            "CXB1Ymxpc2hlchgQIAEoCEIKCghfY3JlYXRlZEIKCghfdXBkYXRlZEIUChJf",
+            "ZW5yb2xsbWVudF9zZWNyZXQitAEKEE9yZ2FuaXphdGlvblNwZWMSDAoEbmFt",
+            "ZRgBIAEoCRIPCgdhZGRyZXNzGAIgASgJEgwKBGNpdHkYAyABKAkSDQoFc3Rh",
+            "dGUYBCABKAkSEAoIcG9zdGNvZGUYBSABKAkSEgoKY291bnRyeV9pZBgGIAEo",
+            "CRINCgVwaG9uZRgHIAEoCRIRCglwYXJlbnRfaWQYCCABKAUSEgoFZW1haWwY",
+            "CSABKAlIAIgBAUIICgZfZW1haWwykQMKE09yZ2FuaXphdGlvblNlcnZpY2US",
+            "UQoPR2V0T3JnYW5pemF0aW9uEiAuYXZuLmNvbm5lY3QudjEuR2V0RW50aXR5",
+            "UmVxdWVzdBocLmF2bi5jb25uZWN0LnYxLk9yZ2FuaXphdGlvbhJlChBKb2lu",
+            "T3JnYW5pemF0aW9uEicuYXZuLmNvbm5lY3QudjEuSm9pbk9yZ2FuaXphdGlv",
+            "blJlcXVlc3QaKC5hdm4uY29ubmVjdC52MS5Kb2luT3JnYW5pemF0aW9uUmVz",
+            "cG9uc2USawoSQ3JlYXRlT3JnYW5pemF0aW9uEikuYXZuLmNvbm5lY3QudjEu",
+            "Q3JlYXRlT3JnYW5pemF0aW9uUmVxdWVzdBoqLmF2bi5jb25uZWN0LnYxLkNy",
+            "ZWF0ZU9yZ2FuaXphdGlvblJlc3BvbnNlElMKDVNldFByb3BlcnRpZXMSKi5h",
+            "dm4uY29ubmVjdC52MS5TZXRFbnRpdHlQcm9wZXJ0aWVzUmVxdWVzdBoWLmdv",
+            "b2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.JoinOrganizationRequest), global::Avn.Connect.V1.JoinOrganizationRequest.Parser, new[]{ "Auth", "JoinCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.JoinOrganizationResponse), global::Avn.Connect.V1.JoinOrganizationResponse.Parser, null, null, null, null, null),
@@ -123,6 +124,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -135,6 +139,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "join_code" field.</summary>
     public const int JoinCodeFieldNumber = 2;
     private string joinCode_ = "";
+    /// <summary>
+    /// Secret join code to permit user to join an organization
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string JoinCode {
@@ -528,6 +535,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -540,6 +550,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "organization_spec" field.</summary>
     public const int OrganizationSpecFieldNumber = 2;
     private global::Avn.Connect.V1.OrganizationSpec organizationSpec_;
+    /// <summary>
+    /// Initial information for creating an organization
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.OrganizationSpec OrganizationSpec {
@@ -780,6 +793,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "organization" field.</summary>
     public const int OrganizationFieldNumber = 1;
     private global::Avn.Connect.V1.Organization organization_;
+    /// <summary>
+    /// Newly created organization
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Organization Organization {
@@ -1002,6 +1018,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 1;
     private int organizationId_;
+    /// <summary>
+    /// Unique organization ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -1014,6 +1033,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "email" field.</summary>
     public const int EmailFieldNumber = 2;
     private string email_ = "";
+    /// <summary>
+    /// Contact email address
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Email {
@@ -1026,6 +1048,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 3;
     private string name_ = "";
+    /// <summary>
+    /// Display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -1038,6 +1063,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "address" field.</summary>
     public const int AddressFieldNumber = 4;
     private string address_ = "";
+    /// <summary>
+    /// Postal address
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Address {
@@ -1050,6 +1078,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "postcode" field.</summary>
     public const int PostcodeFieldNumber = 5;
     private string postcode_ = "";
+    /// <summary>
+    /// Post or ZIP code
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Postcode {
@@ -1062,6 +1093,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "phone" field.</summary>
     public const int PhoneFieldNumber = 6;
     private string phone_ = "";
+    /// <summary>
+    /// Primary contact phone number
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Phone {
@@ -1074,6 +1108,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "timezone" field.</summary>
     public const int TimezoneFieldNumber = 7;
     private string timezone_ = "";
+    /// <summary>
+    /// Local timezone
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Timezone {
@@ -1086,6 +1123,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "language_id" field.</summary>
     public const int LanguageIdFieldNumber = 8;
     private string languageId_ = "";
+    /// <summary>
+    /// Default language ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LanguageId {
@@ -1098,6 +1138,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "deleted" field.</summary>
     public const int DeletedFieldNumber = 9;
     private bool deleted_;
+    /// <summary>
+    /// Has this organization been deleted?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Deleted {
@@ -1110,6 +1153,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "created" field.</summary>
     public const int CreatedFieldNumber = 10;
     private global::Google.Protobuf.WellKnownTypes.Timestamp created_;
+    /// <summary>
+    /// When the organization was created
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
@@ -1122,6 +1168,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "updated" field.</summary>
     public const int UpdatedFieldNumber = 11;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    /// <summary>
+    /// When the organization was last modified
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
@@ -1136,6 +1185,9 @@ namespace Avn.Connect.V1 {
     private readonly static string EnrollmentSecretDefaultValue = "";
 
     private string enrollmentSecret_;
+    /// <summary>
+    /// Secret to use for device enrollment
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string EnrollmentSecret {
@@ -1160,6 +1212,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "city" field.</summary>
     public const int CityFieldNumber = 13;
     private string city_ = "";
+    /// <summary>
+    /// city
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string City {
@@ -1172,6 +1227,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 14;
     private string state_ = "";
+    /// <summary>
+    /// State or province
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string State {
@@ -1184,6 +1242,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "country_id" field.</summary>
     public const int CountryIdFieldNumber = 15;
     private string countryId_ = "";
+    /// <summary>
+    /// Country
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CountryId {
@@ -1196,6 +1257,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "publisher" field.</summary>
     public const int PublisherFieldNumber = 16;
     private bool publisher_;
+    /// <summary>
+    /// Is this organization an approved publisher?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Publisher {
@@ -1783,6 +1847,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 1;
     private string name_ = "";
+    /// <summary>
+    /// Display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -1795,6 +1862,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "address" field.</summary>
     public const int AddressFieldNumber = 2;
     private string address_ = "";
+    /// <summary>
+    /// Postal address
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Address {
@@ -1867,6 +1937,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "parent_id" field.</summary>
     public const int ParentIdFieldNumber = 8;
     private int parentId_;
+    /// <summary>
+    /// Parent organization ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ParentId {
@@ -1881,6 +1954,9 @@ namespace Avn.Connect.V1 {
     private readonly static string EmailDefaultValue = "";
 
     private string email_;
+    /// <summary>
+    /// Contact email address
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Email {

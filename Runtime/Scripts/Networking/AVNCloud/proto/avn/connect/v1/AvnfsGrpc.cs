@@ -128,7 +128,7 @@ namespace Avn.Connect.V1 {
       }
 
       /// <summary>
-      /// Verify file exists and return URL if it does
+      /// Verify file exists in AVNFS and return URL if it does
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -141,7 +141,7 @@ namespace Avn.Connect.V1 {
         return GetFileUrl(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Verify file exists and return URL if it does
+      /// Verify file exists in AVNFS and return URL if it does
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -152,7 +152,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetFileUrl, null, options, request);
       }
       /// <summary>
-      /// Verify file exists and return URL if it does
+      /// Verify file exists in AVNFS and return URL if it does
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -165,7 +165,7 @@ namespace Avn.Connect.V1 {
         return GetFileUrlAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Verify file exists and return URL if it does
+      /// Verify file exists in AVNFS and return URL if it does
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -176,8 +176,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetFileUrl, null, options, request);
       }
       /// <summary>
-      /// DISABLED UNTIL METADATA ISSUES CAN BE RESOLVED S3_PUT_INSECURE
-      ///rpc GetPutManifest(GetManifestRequest) returns (UploadManifest);
+      /// Get all the information required to HTTP POST a file to AVNFS
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -190,8 +189,7 @@ namespace Avn.Connect.V1 {
         return GetPostManifest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// DISABLED UNTIL METADATA ISSUES CAN BE RESOLVED S3_PUT_INSECURE
-      ///rpc GetPutManifest(GetManifestRequest) returns (UploadManifest);
+      /// Get all the information required to HTTP POST a file to AVNFS
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -202,8 +200,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetPostManifest, null, options, request);
       }
       /// <summary>
-      /// DISABLED UNTIL METADATA ISSUES CAN BE RESOLVED S3_PUT_INSECURE
-      ///rpc GetPutManifest(GetManifestRequest) returns (UploadManifest);
+      /// Get all the information required to HTTP POST a file to AVNFS
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -216,8 +213,7 @@ namespace Avn.Connect.V1 {
         return GetPostManifestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// DISABLED UNTIL METADATA ISSUES CAN BE RESOLVED S3_PUT_INSECURE
-      ///rpc GetPutManifest(GetManifestRequest) returns (UploadManifest);
+      /// Get all the information required to HTTP POST a file to AVNFS
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -275,21 +271,53 @@ namespace Avn.Connect.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ImportUrl, null, options, request);
       }
+      /// <summary>
+      /// Get alternative servers for downloading AVNFS files
+      /// These should be used in preference to avnfs.com when available
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.GetAltServersResponse GetAltServers(global::Avn.Connect.V1.GetAltServersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAltServers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get alternative servers for downloading AVNFS files
+      /// These should be used in preference to avnfs.com when available
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.GetAltServersResponse GetAltServers(global::Avn.Connect.V1.GetAltServersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAltServers, null, options, request);
       }
+      /// <summary>
+      /// Get alternative servers for downloading AVNFS files
+      /// These should be used in preference to avnfs.com when available
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetAltServersResponse> GetAltServersAsync(global::Avn.Connect.V1.GetAltServersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAltServersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get alternative servers for downloading AVNFS files
+      /// These should be used in preference to avnfs.com when available
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetAltServersResponse> GetAltServersAsync(global::Avn.Connect.V1.GetAltServersRequest request, grpc::CallOptions options)
       {

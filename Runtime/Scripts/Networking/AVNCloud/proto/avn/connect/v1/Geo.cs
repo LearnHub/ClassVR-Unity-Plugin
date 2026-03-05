@@ -167,6 +167,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -179,6 +182,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "place_id" field.</summary>
     public const int PlaceIdFieldNumber = 2;
     private string placeId_ = "";
+    /// <summary>
+    /// Unique place ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PlaceId {
@@ -191,6 +197,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 3;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -461,6 +470,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "place" field.</summary>
     public const int PlaceFieldNumber = 1;
     private global::Avn.Connect.V1.GeoPlace place_;
+    /// <summary>
+    /// Resolved geographic place
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.GeoPlace Place {
@@ -474,7 +486,7 @@ namespace Avn.Connect.V1 {
     public const int AddressFieldNumber = 2;
     private global::Avn.Connect.V1.GeoAddress address_;
     /// <summary>
-    /// Heuristically composed ClassConnect fields
+    /// Heuristically composed ClassConnect database fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -505,6 +517,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.GeoContact> _repeated_emails_codec
         = pb::FieldCodec.ForMessage(34, global::Avn.Connect.V1.GeoContact.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.GeoContact> emails_ = new pbc::RepeatedField<global::Avn.Connect.V1.GeoContact>();
+    /// <summary>
+    /// Emails associated with place
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.GeoContact> Emails {
@@ -516,6 +531,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.GeoContact> _repeated_faxes_codec
         = pb::FieldCodec.ForMessage(42, global::Avn.Connect.V1.GeoContact.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.GeoContact> faxes_ = new pbc::RepeatedField<global::Avn.Connect.V1.GeoContact>();
+    /// <summary>
+    /// Fax numbers associated with place
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.GeoContact> Faxes {
@@ -527,6 +545,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.GeoContact> _repeated_phones_codec
         = pb::FieldCodec.ForMessage(50, global::Avn.Connect.V1.GeoContact.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.GeoContact> phones_ = new pbc::RepeatedField<global::Avn.Connect.V1.GeoContact>();
+    /// <summary>
+    /// Phone number associated with place
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.GeoContact> Phones {
@@ -538,6 +559,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.GeoContact> _repeated_websites_codec
         = pb::FieldCodec.ForMessage(58, global::Avn.Connect.V1.GeoContact.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.GeoContact> websites_ = new pbc::RepeatedField<global::Avn.Connect.V1.GeoContact>();
+    /// <summary>
+    /// Websites associated with place
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.GeoContact> Websites {
@@ -871,6 +895,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -957,6 +984,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 6;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -1294,6 +1324,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.GeoPlace> _repeated_results_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.GeoPlace.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.GeoPlace> results_ = new pbc::RepeatedField<global::Avn.Connect.V1.GeoPlace>();
+    /// <summary>
+    /// Matching places
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.GeoPlace> Results {
@@ -1482,6 +1515,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "place_id" field.</summary>
     public const int PlaceIdFieldNumber = 1;
     private string placeId_ = "";
+    /// <summary>
+    /// Unique place ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PlaceId {
@@ -1494,6 +1530,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "title" field.</summary>
     public const int TitleFieldNumber = 2;
     private string title_ = "";
+    /// <summary>
+    /// Display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Title {
@@ -1506,6 +1545,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "place_type" field.</summary>
     public const int PlaceTypeFieldNumber = 3;
     private global::Avn.Connect.V1.GeoPlaceType placeType_ = global::Avn.Connect.V1.GeoPlaceType.Unspecified;
+    /// <summary>
+    /// Type of place
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.GeoPlaceType PlaceType {
@@ -1518,6 +1560,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "position" field.</summary>
     public const int PositionFieldNumber = 7;
     private global::Avn.Connect.V1.GeoLocation position_;
+    /// <summary>
+    /// Geographic location on the Earth
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.GeoLocation Position {
@@ -1943,6 +1988,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "post_code" field.</summary>
     public const int PostCodeFieldNumber = 12;
     private string postCode_ = "";
+    /// <summary>
+    /// Post or zip code
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PostCode {
@@ -1955,6 +2003,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "country_id" field.</summary>
     public const int CountryIdFieldNumber = 13;
     private string countryId_ = "";
+    /// <summary>
+    /// Country ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CountryId {
@@ -2495,6 +2546,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "country_id" field.</summary>
     public const int CountryIdFieldNumber = 5;
     private string countryId_ = "";
+    /// <summary>
+    /// Country ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CountryId {
@@ -2741,6 +2795,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Annotated contact information (email, mobile, fax, etc...)
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GeoContact : pb::IMessage<GeoContact>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2790,6 +2847,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "label" field.</summary>
     public const int LabelFieldNumber = 1;
     private string label_ = "";
+    /// <summary>
+    /// Display label for contact information
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Label {
@@ -2802,6 +2862,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 2;
     private string value_ = "";
+    /// <summary>
+    /// Contact information
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Value {
@@ -3025,6 +3088,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "lon" field.</summary>
     public const int LonFieldNumber = 1;
     private float lon_;
+    /// <summary>
+    /// Longitude (degrees)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float Lon {
@@ -3037,6 +3103,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "lat" field.</summary>
     public const int LatFieldNumber = 2;
     private float lat_;
+    /// <summary>
+    /// Latitude (degrees)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float Lat {
@@ -3211,6 +3280,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Rectangular boundary
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GeoBounds : pb::IMessage<GeoBounds>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3260,6 +3332,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "sw" field.</summary>
     public const int SwFieldNumber = 1;
     private global::Avn.Connect.V1.GeoLocation sw_;
+    /// <summary>
+    /// South-west corner of boundary
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.GeoLocation Sw {
@@ -3272,6 +3347,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "ne" field.</summary>
     public const int NeFieldNumber = 2;
     private global::Avn.Connect.V1.GeoLocation ne_;
+    /// <summary>
+    /// North-east corner of boundary
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.GeoLocation Ne {

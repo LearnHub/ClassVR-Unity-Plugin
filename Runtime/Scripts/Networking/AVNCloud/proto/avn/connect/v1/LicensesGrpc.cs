@@ -48,15 +48,25 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetUserLicensesRequest> __Marshaller_avn_connect_v1_GetUserLicensesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetUserLicensesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetUserLicensesResponse> __Marshaller_avn_connect_v1_GetUserLicensesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetUserLicensesResponse.Parser));
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetLicensesResponse> __Marshaller_avn_connect_v1_GetLicensesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetLicensesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetOrganizationLicensesRequest> __Marshaller_avn_connect_v1_GetOrganizationLicensesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetOrganizationLicensesRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Avn.Connect.V1.GetUserLicensesRequest, global::Avn.Connect.V1.GetUserLicensesResponse> __Method_GetUserLicenses = new grpc::Method<global::Avn.Connect.V1.GetUserLicensesRequest, global::Avn.Connect.V1.GetUserLicensesResponse>(
+    static readonly grpc::Method<global::Avn.Connect.V1.GetUserLicensesRequest, global::Avn.Connect.V1.GetLicensesResponse> __Method_GetUserLicenses = new grpc::Method<global::Avn.Connect.V1.GetUserLicensesRequest, global::Avn.Connect.V1.GetLicensesResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetUserLicenses",
         __Marshaller_avn_connect_v1_GetUserLicensesRequest,
-        __Marshaller_avn_connect_v1_GetUserLicensesResponse);
+        __Marshaller_avn_connect_v1_GetLicensesResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetOrganizationLicensesRequest, global::Avn.Connect.V1.GetLicensesResponse> __Method_GetOrganizationLicenses = new grpc::Method<global::Avn.Connect.V1.GetOrganizationLicensesRequest, global::Avn.Connect.V1.GetLicensesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetOrganizationLicenses",
+        __Marshaller_avn_connect_v1_GetOrganizationLicensesRequest,
+        __Marshaller_avn_connect_v1_GetLicensesResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -91,25 +101,101 @@ namespace Avn.Connect.V1 {
       {
       }
 
+      /// <summary>
+      /// Get all licenses available to the given user based on their direct organization memberships
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.GetUserLicensesResponse GetUserLicenses(global::Avn.Connect.V1.GetUserLicensesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Avn.Connect.V1.GetLicensesResponse GetUserLicenses(global::Avn.Connect.V1.GetUserLicensesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetUserLicenses(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get all licenses available to the given user based on their direct organization memberships
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.GetUserLicensesResponse GetUserLicenses(global::Avn.Connect.V1.GetUserLicensesRequest request, grpc::CallOptions options)
+      public virtual global::Avn.Connect.V1.GetLicensesResponse GetUserLicenses(global::Avn.Connect.V1.GetUserLicensesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetUserLicenses, null, options, request);
       }
+      /// <summary>
+      /// Get all licenses available to the given user based on their direct organization memberships
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetUserLicensesResponse> GetUserLicensesAsync(global::Avn.Connect.V1.GetUserLicensesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetLicensesResponse> GetUserLicensesAsync(global::Avn.Connect.V1.GetUserLicensesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetUserLicensesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get all licenses available to the given user based on their direct organization memberships
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetUserLicensesResponse> GetUserLicensesAsync(global::Avn.Connect.V1.GetUserLicensesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetLicensesResponse> GetUserLicensesAsync(global::Avn.Connect.V1.GetUserLicensesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetUserLicenses, null, options, request);
+      }
+      /// <summary>
+      /// Get all licenses available to the given organization
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetLicensesResponse GetOrganizationLicenses(global::Avn.Connect.V1.GetOrganizationLicensesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetOrganizationLicenses(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all licenses available to the given organization
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetLicensesResponse GetOrganizationLicenses(global::Avn.Connect.V1.GetOrganizationLicensesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetOrganizationLicenses, null, options, request);
+      }
+      /// <summary>
+      /// Get all licenses available to the given organization
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetLicensesResponse> GetOrganizationLicensesAsync(global::Avn.Connect.V1.GetOrganizationLicensesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetOrganizationLicensesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get all licenses available to the given organization
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetLicensesResponse> GetOrganizationLicensesAsync(global::Avn.Connect.V1.GetOrganizationLicensesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetOrganizationLicenses, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

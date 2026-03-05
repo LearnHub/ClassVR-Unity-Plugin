@@ -178,6 +178,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "icon_url" field.</summary>
     public const int IconUrlFieldNumber = 5;
     private string iconUrl_ = "";
+    /// <summary>
+    /// Icon to use for the room
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IconUrl {
@@ -226,6 +229,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "created" field.</summary>
     public const int CreatedFieldNumber = 9;
     private global::Google.Protobuf.WellKnownTypes.Timestamp created_;
+    /// <summary>
+    /// When the room was created
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
