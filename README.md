@@ -46,9 +46,17 @@ var tiltToSpinFeature = OpenXRSettings.Instance.GetFeature<ClassVrTiltToSpinFeat
 tiltToSpinFeature.EnableTiltToSpin(false);
 ```
 
-## OpenXR Features
+## OpenXR Integration
 
-This plugin provides the **ClassVR Tilt-To-Spin** feature, which can be enabled via XR Plugin-in Management. Further information on OpenXR Features can be found in the [Unity OpenXR Plugin docs](https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.15/manual/features.html).
+### OpenXR Features
+
+This plugin provides the **ClassVR Tilt-To-Spin** feature, which can be enabled via XR Plug-in Management. Further information on OpenXR Features can be found in the [Unity OpenXR Plugin docs](https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.3/manual/features.html).
+
+### OpenXR Interaction Profiles
+
+This plugin provides Unity support for the **ClassVR 655 Headset interaction profile**, which can be enabled via XR Plug-in Management. One enabled, interaction paths are available to the Unity Input System. Note that this interaction profile only includes inputs on the headset itself, for controllers please use the Oculus Touch Controller Profile.
+
+Further information on OpenXR Interaction Profiles can be found in the [Unity OpenXR Plugin docs](https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.3/manual/input.html).
 
 ## ClassVR File Download/Upload
 
