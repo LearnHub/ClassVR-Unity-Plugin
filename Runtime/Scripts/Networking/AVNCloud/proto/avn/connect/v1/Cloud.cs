@@ -29,71 +29,72 @@ namespace Avn.Connect.V1 {
             "L3RpbWVzdGFtcC5wcm90bxoiYXZuL2Nvbm5lY3QvdjEvYXV0aG9yaXphdGlv",
             "bi5wcm90bxoZYXZuL2Nvbm5lY3QvdjEvdGFncy5wcm90bxodYXZuL2Nvbm5l",
             "Y3QvdjEvZW50aXRpZXMucHJvdG8aH2F2bi9jb25uZWN0L3YxL2FjdGl2aXRp",
-            "ZXMucHJvdG8aGmF2bi9jb25uZWN0L3YxL21lZGlhLnByb3RvIrQDCglDbG91",
-            "ZEZpbGUSEQoJZW50aXR5X2lkGAEgASgFEhkKD29yZ2FuaXphdGlvbl9pZBgC",
-            "IAEoBUgAEhEKB3VzZXJfaWQYAyABKAVIABIQCghmaWxlX3VybBgEIAEoCRIr",
-            "Cgd1cGRhdGVkGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIM",
-            "CgR0YWdzGAYgAygFEhMKC3ByZXZpZXdfdXJsGAcgASgJEhEKCWxlZ2FjeV9p",
-            "ZBgKIAEoCRIWCgl1c2VyX25hbWUYCyABKAlIAYgBARIYCgtkZXZpY2VfbmFt",
-            "ZRgMIAEoCUgCiAEBEhUKCHBsYWNlX2lkGA0gASgFSAOIAQESFgoJZmlsZV9u",
-            "YW1lGA4gASgJSASIAQESFwoKbWVkaWFfdHlwZRgPIAEoCUgFiAEBEhcKCnNp",
-            "emVfYnl0ZXMYECABKANIBogBAUIHCgVvd25lckIMCgpfdXNlcl9uYW1lQg4K",
-            "DF9kZXZpY2VfbmFtZUILCglfcGxhY2VfaWRCDAoKX2ZpbGVfbmFtZUINCgtf",
-            "bWVkaWFfdHlwZUINCgtfc2l6ZV9ieXRlcyKlAQoUR2V0Q2xvdWRGaWxlc1Jl",
-            "cXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6",
-            "YXRpb24SEgoKZW50aXR5X2lkcxgCIAMoBRI4CgxwcmV2aWV3X3NwZWMYAyAB",
-            "KAsyIi5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVJbWFnZVNwZWMSEgoKbGVn",
-            "YWN5X2lkcxgKIAMoCSJDChVHZXRDbG91ZEZpbGVzUmVzcG9uc2USKgoHcmVz",
-            "dWx0cxgBIAMoCzIZLmF2bi5jb25uZWN0LnYxLkNsb3VkRmlsZSKNAQoUQWRk",
-            "Q2xvdWRGaWxlc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0",
-            "LnYxLkF1dGhvcml6YXRpb24SGQoPb3JnYW5pemF0aW9uX2lkGAIgASgFSAAS",
-            "EQoHdXNlcl9pZBgDIAEoBUgAEhEKCWZpbGVfdXJscxgEIAMoCUIHCgVvd25l",
-            "ciI/ChVBZGRDbG91ZEZpbGVzUmVzcG9uc2USEgoKZW50aXR5X2lkcxgBIAMo",
-            "BRISCgpsZWdhY3lfaWRzGAogAygJIm4KF1JlbW92ZUNsb3VkRmlsZXNSZXF1",
-            "ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0",
-            "aW9uEhIKCmVudGl0eV9pZHMYAiADKAUSEgoKbGVnYWN5X2lkcxgKIAMoCSK8",
-            "BAoXU2VhcmNoQ2xvdWRGaWxlc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2",
-            "bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SGQoPb3JnYW5pemF0aW9uX2lk",
-            "GAIgASgFSAASEQoHdXNlcl9pZBgDIAEoBUgAEjQKC3RleHRfc2VhcmNoGAQg",
-            "ASgLMhouYXZuLmNvbm5lY3QudjEuVGV4dFNlYXJjaEgBiAEBEi4KC3RhZ19m",
-            "aWx0ZXJzGAUgAygLMhkuYXZuLmNvbm5lY3QudjEuVGFnRmlsdGVyEhoKEmZp",
-            "bHRlcl9tZWRpYV90eXBlcxgGIAMoCRIuCgVhZnRlchgHIAEoCzIaLmdvb2ds",
-            "ZS5wcm90b2J1Zi5UaW1lc3RhbXBIAogBARIvCgZiZWZvcmUYCCABKAsyGi5n",
-            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wSAOIAQESLQoIb3JkZXJfYnkYCSAD",
-            "KAsyGy5hdm4uY29ubmVjdC52MS5PcmRlckNsYXVzZRIWCglwYWdlX3NpemUY",
-            "CyABKAVIBIgBARIXCgpwYWdlX3Rva2VuGAwgASgJSAWIAQESOAoMcHJldmll",
-            "d19zcGVjGA0gASgLMiIuYXZuLmNvbm5lY3QudjEuVHJhbnNjb2RlSW1hZ2VT",
-            "cGVjQgcKBW93bmVyQg4KDF90ZXh0X3NlYXJjaEIICgZfYWZ0ZXJCCQoHX2Jl",
-            "Zm9yZUIMCgpfcGFnZV9zaXplQg0KC19wYWdlX3Rva2VuIngKGFNlYXJjaENs",
-            "b3VkRmlsZXNSZXNwb25zZRIqCgdyZXN1bHRzGAEgAygLMhkuYXZuLmNvbm5l",
-            "Y3QudjEuQ2xvdWRGaWxlEhwKD25leHRfcGFnZV90b2tlbhgCIAEoCUgAiAEB",
-            "QhIKEF9uZXh0X3BhZ2VfdG9rZW4ifAoWR2V0Q2xvdWRTdW1tYXJ5UmVxdWVz",
-            "dBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlv",
-            "bhIZCg9vcmdhbml6YXRpb25faWQYAiABKAVIABIRCgd1c2VyX2lkGAMgASgF",
-            "SABCBwoFb3duZXIi0wEKF0dldENsb3VkU3VtbWFyeVJlc3BvbnNlEhMKC3Rv",
-            "dGFsX2NvdW50GAEgASgFEhMKC3RvdGFsX2J5dGVzGAIgASgDEhYKDmNhcGFj",
-            "aXR5X2J5dGVzGAMgASgDEi8KBm9sZGVzdBgEIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXBIAIgBARIvCgZuZXdlc3QYBSABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuVGltZXN0YW1wSAGIAQFCCQoHX29sZGVzdEIJCgdfbmV3ZXN0",
-            "MssFCgxDbG91ZFNlcnZpY2USXAoNR2V0Q2xvdWRGaWxlcxIkLmF2bi5jb25u",
-            "ZWN0LnYxLkdldENsb3VkRmlsZXNSZXF1ZXN0GiUuYXZuLmNvbm5lY3QudjEu",
-            "R2V0Q2xvdWRGaWxlc1Jlc3BvbnNlElwKDUFkZENsb3VkRmlsZXMSJC5hdm4u",
-            "Y29ubmVjdC52MS5BZGRDbG91ZEZpbGVzUmVxdWVzdBolLmF2bi5jb25uZWN0",
-            "LnYxLkFkZENsb3VkRmlsZXNSZXNwb25zZRJTChBSZW1vdmVDbG91ZEZpbGVz",
-            "EicuYXZuLmNvbm5lY3QudjEuUmVtb3ZlQ2xvdWRGaWxlc1JlcXVlc3QaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkSQQoHQWRkVGFncxIeLmF2bi5jb25uZWN0",
-            "LnYxLkFkZFRhZ3NSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkcK",
-            "ClJlbW92ZVRhZ3MSIS5hdm4uY29ubmVjdC52MS5SZW1vdmVUYWdzUmVxdWVz",
-            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJlChBTZWFyY2hDbG91ZEZpbGVz",
-            "EicuYXZuLmNvbm5lY3QudjEuU2VhcmNoQ2xvdWRGaWxlc1JlcXVlc3QaKC5h",
-            "dm4uY29ubmVjdC52MS5TZWFyY2hDbG91ZEZpbGVzUmVzcG9uc2USYgoPR2V0",
-            "Q2xvdWRTdW1tYXJ5EiYuYXZuLmNvbm5lY3QudjEuR2V0Q2xvdWRTdW1tYXJ5",
-            "UmVxdWVzdBonLmF2bi5jb25uZWN0LnYxLkdldENsb3VkU3VtbWFyeVJlc3Bv",
-            "bnNlElMKDVNldFByb3BlcnRpZXMSKi5hdm4uY29ubmVjdC52MS5TZXRFbnRp",
-            "dHlQcm9wZXJ0aWVzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eWIG",
-            "cHJvdG8z"));
+            "ZXMucHJvdG8aGmF2bi9jb25uZWN0L3YxL21lZGlhLnByb3RvGhthdm4vY29u",
+            "bmVjdC92MS9zZWFyY2gucHJvdG8aH2F2bi9jb25uZWN0L3YxL3Byb3BlcnRp",
+            "ZXMucHJvdG8itAMKCUNsb3VkRmlsZRIRCgllbnRpdHlfaWQYASABKAUSGQoP",
+            "b3JnYW5pemF0aW9uX2lkGAIgASgFSAASEQoHdXNlcl9pZBgDIAEoBUgAEhAK",
+            "CGZpbGVfdXJsGAQgASgJEisKB3VwZGF0ZWQYBSABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wEgwKBHRhZ3MYBiADKAUSEwoLcHJldmlld191cmwY",
+            "ByABKAkSEQoJbGVnYWN5X2lkGAogASgJEhYKCXVzZXJfbmFtZRgLIAEoCUgB",
+            "iAEBEhgKC2RldmljZV9uYW1lGAwgASgJSAKIAQESFQoIcGxhY2VfaWQYDSAB",
+            "KAVIA4gBARIWCglmaWxlX25hbWUYDiABKAlIBIgBARIXCgptZWRpYV90eXBl",
+            "GA8gASgJSAWIAQESFwoKc2l6ZV9ieXRlcxgQIAEoA0gGiAEBQgcKBW93bmVy",
+            "QgwKCl91c2VyX25hbWVCDgoMX2RldmljZV9uYW1lQgsKCV9wbGFjZV9pZEIM",
+            "CgpfZmlsZV9uYW1lQg0KC19tZWRpYV90eXBlQg0KC19zaXplX2J5dGVzIqUB",
+            "ChRHZXRDbG91ZEZpbGVzUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNv",
+            "bm5lY3QudjEuQXV0aG9yaXphdGlvbhISCgplbnRpdHlfaWRzGAIgAygFEjgK",
+            "DHByZXZpZXdfc3BlYxgDIAEoCzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29k",
+            "ZUltYWdlU3BlYxISCgpsZWdhY3lfaWRzGAogAygJIkMKFUdldENsb3VkRmls",
+            "ZXNSZXNwb25zZRIqCgdyZXN1bHRzGAEgAygLMhkuYXZuLmNvbm5lY3QudjEu",
+            "Q2xvdWRGaWxlIo0BChRBZGRDbG91ZEZpbGVzUmVxdWVzdBIrCgRhdXRoGAEg",
+            "ASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIZCg9vcmdhbml6",
+            "YXRpb25faWQYAiABKAVIABIRCgd1c2VyX2lkGAMgASgFSAASEQoJZmlsZV91",
+            "cmxzGAQgAygJQgcKBW93bmVyIj8KFUFkZENsb3VkRmlsZXNSZXNwb25zZRIS",
+            "CgplbnRpdHlfaWRzGAEgAygFEhIKCmxlZ2FjeV9pZHMYCiADKAkibgoXUmVt",
+            "b3ZlQ2xvdWRGaWxlc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25u",
+            "ZWN0LnYxLkF1dGhvcml6YXRpb24SEgoKZW50aXR5X2lkcxgCIAMoBRISCgps",
+            "ZWdhY3lfaWRzGAogAygJIrwEChdTZWFyY2hDbG91ZEZpbGVzUmVxdWVzdBIr",
+            "CgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIZ",
+            "Cg9vcmdhbml6YXRpb25faWQYAiABKAVIABIRCgd1c2VyX2lkGAMgASgFSAAS",
+            "NAoLdGV4dF9zZWFyY2gYBCABKAsyGi5hdm4uY29ubmVjdC52MS5UZXh0U2Vh",
+            "cmNoSAGIAQESLgoLdGFnX2ZpbHRlcnMYBSADKAsyGS5hdm4uY29ubmVjdC52",
+            "MS5UYWdGaWx0ZXISGgoSZmlsdGVyX21lZGlhX3R5cGVzGAYgAygJEi4KBWFm",
+            "dGVyGAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgCiAEBEi8K",
+            "BmJlZm9yZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIA4gB",
+            "ARItCghvcmRlcl9ieRgJIAMoCzIbLmF2bi5jb25uZWN0LnYxLk9yZGVyQ2xh",
+            "dXNlEhYKCXBhZ2Vfc2l6ZRgLIAEoBUgEiAEBEhcKCnBhZ2VfdG9rZW4YDCAB",
+            "KAlIBYgBARI4CgxwcmV2aWV3X3NwZWMYDSABKAsyIi5hdm4uY29ubmVjdC52",
+            "MS5UcmFuc2NvZGVJbWFnZVNwZWNCBwoFb3duZXJCDgoMX3RleHRfc2VhcmNo",
+            "QggKBl9hZnRlckIJCgdfYmVmb3JlQgwKCl9wYWdlX3NpemVCDQoLX3BhZ2Vf",
+            "dG9rZW4ieAoYU2VhcmNoQ2xvdWRGaWxlc1Jlc3BvbnNlEioKB3Jlc3VsdHMY",
+            "ASADKAsyGS5hdm4uY29ubmVjdC52MS5DbG91ZEZpbGUSHAoPbmV4dF9wYWdl",
+            "X3Rva2VuGAIgASgJSACIAQFCEgoQX25leHRfcGFnZV90b2tlbiJ8ChZHZXRD",
+            "bG91ZFN1bW1hcnlSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVj",
+            "dC52MS5BdXRob3JpemF0aW9uEhkKD29yZ2FuaXphdGlvbl9pZBgCIAEoBUgA",
+            "EhEKB3VzZXJfaWQYAyABKAVIAEIHCgVvd25lciLTAQoXR2V0Q2xvdWRTdW1t",
+            "YXJ5UmVzcG9uc2USEwoLdG90YWxfY291bnQYASABKAUSEwoLdG90YWxfYnl0",
+            "ZXMYAiABKAMSFgoOY2FwYWNpdHlfYnl0ZXMYAyABKAMSLwoGb2xkZXN0GAQg",
+            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgAiAEBEi8KBm5ld2Vz",
+            "dBgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAYgBAUIJCgdf",
+            "b2xkZXN0QgkKB19uZXdlc3QyywUKDENsb3VkU2VydmljZRJcCg1HZXRDbG91",
+            "ZEZpbGVzEiQuYXZuLmNvbm5lY3QudjEuR2V0Q2xvdWRGaWxlc1JlcXVlc3Qa",
+            "JS5hdm4uY29ubmVjdC52MS5HZXRDbG91ZEZpbGVzUmVzcG9uc2USXAoNQWRk",
+            "Q2xvdWRGaWxlcxIkLmF2bi5jb25uZWN0LnYxLkFkZENsb3VkRmlsZXNSZXF1",
+            "ZXN0GiUuYXZuLmNvbm5lY3QudjEuQWRkQ2xvdWRGaWxlc1Jlc3BvbnNlElMK",
+            "EFJlbW92ZUNsb3VkRmlsZXMSJy5hdm4uY29ubmVjdC52MS5SZW1vdmVDbG91",
+            "ZEZpbGVzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJBCgdBZGRU",
+            "YWdzEh4uYXZuLmNvbm5lY3QudjEuQWRkVGFnc1JlcXVlc3QaFi5nb29nbGUu",
+            "cHJvdG9idWYuRW1wdHkSRwoKUmVtb3ZlVGFncxIhLmF2bi5jb25uZWN0LnYx",
+            "LlJlbW92ZVRhZ3NSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EmUK",
+            "EFNlYXJjaENsb3VkRmlsZXMSJy5hdm4uY29ubmVjdC52MS5TZWFyY2hDbG91",
+            "ZEZpbGVzUmVxdWVzdBooLmF2bi5jb25uZWN0LnYxLlNlYXJjaENsb3VkRmls",
+            "ZXNSZXNwb25zZRJiCg9HZXRDbG91ZFN1bW1hcnkSJi5hdm4uY29ubmVjdC52",
+            "MS5HZXRDbG91ZFN1bW1hcnlSZXF1ZXN0GicuYXZuLmNvbm5lY3QudjEuR2V0",
+            "Q2xvdWRTdW1tYXJ5UmVzcG9uc2USUwoNU2V0UHJvcGVydGllcxIqLmF2bi5j",
+            "b25uZWN0LnYxLlNldEVudGl0eVByb3BlcnRpZXNSZXF1ZXN0GhYuZ29vZ2xl",
+            "LnByb3RvYnVmLkVtcHR5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.ActivitiesReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.ActivitiesReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, global::Avn.Connect.V1.SearchReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CloudFile), global::Avn.Connect.V1.CloudFile.Parser, new[]{ "EntityId", "OrganizationId", "UserId", "FileUrl", "Updated", "Tags", "PreviewUrl", "LegacyId", "UserName", "DeviceName", "PlaceId", "FileName", "MediaType", "SizeBytes" }, new[]{ "Owner", "UserName", "DeviceName", "PlaceId", "FileName", "MediaType", "SizeBytes" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCloudFilesRequest), global::Avn.Connect.V1.GetCloudFilesRequest.Parser, new[]{ "Auth", "EntityIds", "PreviewSpec", "LegacyIds" }, null, null, null, null),
@@ -181,6 +182,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
     private int entityId_;
+    /// <summary>
+    /// Unique cloud file ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -192,6 +196,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 2;
+    /// <summary>
+    /// Organization owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -218,6 +225,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 3;
+    /// <summary>
+    /// User owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -246,7 +256,7 @@ namespace Avn.Connect.V1 {
     public const int FileUrlFieldNumber = 4;
     private string fileUrl_ = "";
     /// <summary>
-    /// AVNFS URL
+    /// AVNFS URL of cloud file
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -260,6 +270,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "updated" field.</summary>
     public const int UpdatedFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    /// <summary>
+    /// When file was last modified
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
@@ -274,6 +287,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_tags_codec
         = pb::FieldCodec.ForInt32(50);
     private readonly pbc::RepeatedField<int> tags_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Tags associated with this file
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> Tags {
@@ -284,6 +300,7 @@ namespace Avn.Connect.V1 {
     public const int PreviewUrlFieldNumber = 7;
     private string previewUrl_ = "";
     /// <summary>
+    /// Preview to use for the cloud file
     /// In future this should be based on an image request spec in the request
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1002,6 +1019,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1016,6 +1036,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_entityIds_codec
         = pb::FieldCodec.ForInt32(18);
     private readonly pbc::RepeatedField<int> entityIds_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Cloud file IDs
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> EntityIds {
@@ -1025,6 +1048,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "preview_spec" field.</summary>
     public const int PreviewSpecFieldNumber = 3;
     private global::Avn.Connect.V1.TranscodeImageSpec previewSpec_;
+    /// <summary>
+    /// Preview transcoding instructions. No preview is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranscodeImageSpec PreviewSpec {
@@ -1308,6 +1334,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.CloudFile> _repeated_results_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.CloudFile.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.CloudFile> results_ = new pbc::RepeatedField<global::Avn.Connect.V1.CloudFile>();
+    /// <summary>
+    /// Cloud files that match the given ID list
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.CloudFile> Results {
@@ -1503,6 +1532,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1514,6 +1546,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 2;
+    /// <summary>
+    /// Organization owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -1540,6 +1575,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 3;
+    /// <summary>
+    /// User owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -1569,6 +1607,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_fileUrls_codec
         = pb::FieldCodec.ForString(34);
     private readonly pbc::RepeatedField<string> fileUrls_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// List of AVNFS file URLs to add
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> FileUrls {
@@ -1864,6 +1905,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_entityIds_codec
         = pb::FieldCodec.ForInt32(10);
     private readonly pbc::RepeatedField<int> entityIds_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// IDs of files added
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> EntityIds {
@@ -2081,6 +2125,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -2095,6 +2142,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_entityIds_codec
         = pb::FieldCodec.ForInt32(18);
     private readonly pbc::RepeatedField<int> entityIds_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Cloud file IDs to remove
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> EntityIds {
@@ -2360,6 +2410,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -2371,6 +2424,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 2;
+    /// <summary>
+    /// Organization owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -2397,6 +2453,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 3;
+    /// <summary>
+    /// User owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -2455,6 +2514,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_filterMediaTypes_codec
         = pb::FieldCodec.ForString(50);
     private readonly pbc::RepeatedField<string> filterMediaTypes_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Filter results by media type
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> FilterMediaTypes {
@@ -2464,6 +2526,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "after" field.</summary>
     public const int AfterFieldNumber = 7;
     private global::Google.Protobuf.WellKnownTypes.Timestamp after_;
+    /// <summary>
+    /// Filter for files added after this time
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp After {
@@ -2476,6 +2541,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "before" field.</summary>
     public const int BeforeFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Timestamp before_;
+    /// <summary>
+    /// Filter for files added before this time
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Before {
@@ -2504,6 +2572,9 @@ namespace Avn.Connect.V1 {
     private readonly static int PageSizeDefaultValue = 0;
 
     private int pageSize_;
+    /// <summary>
+    /// Maximum number of results to return
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PageSize {
@@ -2531,6 +2602,9 @@ namespace Avn.Connect.V1 {
     private readonly static string PageTokenDefaultValue = "";
 
     private string pageToken_;
+    /// <summary>
+    /// Start point from a previous paged search
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PageToken {
@@ -2555,6 +2629,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "preview_spec" field.</summary>
     public const int PreviewSpecFieldNumber = 13;
     private global::Avn.Connect.V1.TranscodeImageSpec previewSpec_;
+    /// <summary>
+    /// Preview transcoding instructions. No preview is returned if this is not defined.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranscodeImageSpec PreviewSpec {
@@ -3061,6 +3138,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.CloudFile> _repeated_results_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.CloudFile.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.CloudFile> results_ = new pbc::RepeatedField<global::Avn.Connect.V1.CloudFile>();
+    /// <summary>
+    /// Search results
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.CloudFile> Results {
@@ -3072,6 +3152,9 @@ namespace Avn.Connect.V1 {
     private readonly static string NextPageTokenDefaultValue = "";
 
     private string nextPageToken_;
+    /// <summary>
+    /// Token to use to get more pages of results or unset if no more results are available
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string NextPageToken {
@@ -3305,6 +3388,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -3316,6 +3402,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 2;
+    /// <summary>
+    /// Organization owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -3342,6 +3431,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 3;
+    /// <summary>
+    /// User owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -3642,6 +3734,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "total_count" field.</summary>
     public const int TotalCountFieldNumber = 1;
     private int totalCount_;
+    /// <summary>
+    /// Total number of files in owner's cloud
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TotalCount {
@@ -3654,6 +3749,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "total_bytes" field.</summary>
     public const int TotalBytesFieldNumber = 2;
     private long totalBytes_;
+    /// <summary>
+    /// Total bytes stored in owner's cloud
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TotalBytes {
@@ -3666,6 +3764,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "capacity_bytes" field.</summary>
     public const int CapacityBytesFieldNumber = 3;
     private long capacityBytes_;
+    /// <summary>
+    /// Total capacity of owner's cloud
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long CapacityBytes {
@@ -3678,6 +3779,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "oldest" field.</summary>
     public const int OldestFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp oldest_;
+    /// <summary>
+    /// Timestamp of oldest file in cloud
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Oldest {
@@ -3690,6 +3794,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "newest" field.</summary>
     public const int NewestFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp newest_;
+    /// <summary>
+    /// Timestamp of newest file in cloud
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Newest {

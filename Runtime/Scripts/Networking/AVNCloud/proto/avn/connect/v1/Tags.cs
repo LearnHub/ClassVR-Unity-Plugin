@@ -26,59 +26,59 @@ namespace Avn.Connect.V1 {
           string.Concat(
             "Chlhdm4vY29ubmVjdC92MS90YWdzLnByb3RvEg5hdm4uY29ubmVjdC52MRoi",
             "YXZuL2Nvbm5lY3QvdjEvYXV0aG9yaXphdGlvbi5wcm90bxohYXZuL2Nvbm5l",
-            "Y3QvdjEvdHJhbnNsYXRpb25zLnByb3RvIn4KA1RhZxIOCgZ0YWdfaWQYASAB",
-            "KAUSKgoEbmFtZRgCIAEoCzIcLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0YWJs",
-            "ZRIUCgx0YWdfZ3JvdXBfaWQYAyABKAUSEgoKc29ydF9vcmRlchgEIAEoBRIR",
-            "CgloZXhfY29sb3IYBSABKAkihAEKCFRhZ0dyb3VwEhQKDHRhZ19ncm91cF9p",
-            "ZBgBIAEoBRIqCgRuYW1lGAIgASgLMhwuYXZuLmNvbm5lY3QudjEuVHJhbnNs",
-            "YXRhYmxlEhMKC2xhbmd1YWdlX2lkGAMgASgJEiEKBHRhZ3MYBCADKAsyEy5h",
-            "dm4uY29ubmVjdC52MS5UYWciVQoOR2V0VGFnc1JlcXVlc3QSDwoHdGFnX2lk",
-            "cxgBIAMoBRIyCgl0cmFuc2xhdGUYAiABKAsyHy5hdm4uY29ubmVjdC52MS5U",
-            "cmFuc2xhdGlvblNwZWMiNAoPR2V0VGFnc1Jlc3BvbnNlEiEKBHRhZ3MYASAD",
-            "KAsyEy5hdm4uY29ubmVjdC52MS5UYWciXgoSR2V0VGFnR3JvdXBSZXF1ZXN0",
-            "EhQKDHRhZ19ncm91cF9pZBgBIAEoBRIyCgl0cmFuc2xhdGUYAiABKAsyHy5h",
-            "dm4uY29ubmVjdC52MS5UcmFuc2xhdGlvblNwZWMiQgoTR2V0VGFnR3JvdXBS",
-            "ZXNwb25zZRIrCgl0YWdfZ3JvdXAYASABKAsyGC5hdm4uY29ubmVjdC52MS5U",
-            "YWdHcm91cCKEAQoOQWRkVGFnc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2",
-            "bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgF",
-            "EgwKBHRhZ3MYAyADKAUSFgoJbGVnYWN5X2lkGAogASgJSACIAQFCDAoKX2xl",
-            "Z2FjeV9pZCKHAQoRUmVtb3ZlVGFnc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzId",
-            "LmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIg",
-            "ASgFEgwKBHRhZ3MYAyADKAUSFgoJbGVnYWN5X2lkGAogASgJSACIAQFCDAoK",
-            "X2xlZ2FjeV9pZCJQCglUYWdGaWx0ZXISNQoJY29uZGl0aW9uGAEgASgOMiIu",
-            "YXZuLmNvbm5lY3QudjEuVGFnRmlsdGVyQ29uZGl0aW9uEgwKBHRhZ3MYAiAD",
-            "KAUqqgEKElRhZ0ZpbHRlckNvbmRpdGlvbhIkCiBUQUdfRklMVEVSX0NPTkRJ",
-            "VElPTl9VTlNQRUNJRklFRBAAEiMKH1RBR19GSUxURVJfQ09ORElUSU9OX0hB",
-            "U19BTllfT0YQARIjCh9UQUdfRklMVEVSX0NPTkRJVElPTl9IQVNfQUxMX09G",
-            "EAISJAogVEFHX0ZJTFRFUl9DT05ESVRJT05fSEFTX05PTkVfT0YQAyqPAQoK",
-            "VGFnR3JvdXBJZBIYChRUQUdfR1JPVVBfSURfVU5LTk9XThAAEhgKFFRBR19H",
-            "Uk9VUF9JRF9TVUJKRUNUEAESGgoWVEFHX0dST1VQX0lEX0FHRV9SQU5HRRAC",
-            "EhkKFVRBR19HUk9VUF9JRF9QTEFURk9STRAKEhYKElRBR19HUk9VUF9JRF9N",
-            "RURJQRAcKpQHCgVUYWdJZBISCg5UQUdfSURfVU5LTk9XThAAEhcKElRBR19J",
-            "RF9FRFVWRVJTRV9BSRC5FRIYChNUQUdfSURfQUlfR0VORVJBVEVEELsVEhUK",
-            "EFRBR19JRF9TS1lCT1hfQUkQuhUSGAoTVEFHX0lEX0NMQVNTX0NBTlZBUxDa",
-            "FRIZChRUQUdfSURfTk9UX0JST1dTQUJMRRD7EhIVChBUQUdfSURfTkFWSUdB",
-            "QkxFEPsUEhQKD1RBR19JRF9DT1NQQUNFUxC3FRIVChBUQUdfSURfVEhJTkdM",
-            "SU5LELYVEhoKFVRBR19JRF9TSElNX0NPTlRBSU5FUhDrFRIQCgtUQUdfSURf",
-            "RkxBVBCbFRIfChpUQUdfSURfRVFVSVJFQ1RBTkdVTEFSXzM2MBC7EhIfChpU",
-            "QUdfSURfRVFVSVJFQ1RBTkdVTEFSXzE4MBD2ExITCg5UQUdfSURfQ1VCRU1B",
-            "UBDFEhIYChNUQUdfSURfU1RFUkVPX1RCX0xSELoSEhYKEVRBR19JRF9TVEVS",
-            "RU9fU0JTELwSEg4KCVRBR19JRF9BUhC/EhIOCglUQUdfSURfVlIQvhISFwoS",
-            "VEFHX0lEX1NDRU5FX0dVSURFEOAUEhcKElRBR19JRF9MRVNTT05fUExBThDE",
-            "EhIVChBUQUdfSURfV09SS1NIRUVUEMMSEhQKD1RBR19JRF9BTklNQVRFRBC1",
-            "FBIXChJUQUdfSURfSU5URVJBQ1RJVkUQiRUSEQoMVEFHX0lEX1NDRU5FEMcS",
-            "EhIKDVRBR19JRF9BVkFUQVIQ6hQSEQoMVEFHX0lEX01PREVMEMYSEhEKDFRB",
-            "R19JRF9BVURJTxDfFBIRCgxUQUdfSURfSU1BR0UQyBISEQoMVEFHX0lEX1ZJ",
-            "REVPEMkSEhEKDFRBR19JRF9UT1BJQxC1FRIVChBUQUdfSURfVEhSRUVfRE9G",
-            "ENgVEhMKDlRBR19JRF9TSVhfRE9GENkVEhwKGFRBR19JRF9BR0VfUkFOR0Vf",
-            "VU5ERVJfNRAREhsKF1RBR19JRF9BR0VfUkFOR0VfNV9UT183EBISHAoYVEFH",
-            "X0lEX0FHRV9SQU5HRV83X1RPXzExEBMSHQoZVEFHX0lEX0FHRV9SQU5HRV8x",
-            "MV9UT18xNBAUEh0KGVRBR19JRF9BR0VfUkFOR0VfMTRfVE9fMTYQFRIcChhU",
-            "QUdfSURfQUdFX1JBTkdFX09WRVJfMTYQFjKwAQoKVGFnU2VydmljZRJKCgdH",
-            "ZXRUYWdzEh4uYXZuLmNvbm5lY3QudjEuR2V0VGFnc1JlcXVlc3QaHy5hdm4u",
-            "Y29ubmVjdC52MS5HZXRUYWdzUmVzcG9uc2USVgoLR2V0VGFnR3JvdXASIi5h",
-            "dm4uY29ubmVjdC52MS5HZXRUYWdHcm91cFJlcXVlc3QaIy5hdm4uY29ubmVj",
-            "dC52MS5HZXRUYWdHcm91cFJlc3BvbnNlYgZwcm90bzM="));
+            "Y3QvdjEvdHJhbnNsYXRpb25zLnByb3RvImUKA1RhZxIOCgZ0YWdfaWQYASAB",
+            "KAUSEQoEbmFtZRgCIAEoCUIDwD4BEhQKDHRhZ19ncm91cF9pZBgDIAEoBRIS",
+            "Cgpzb3J0X29yZGVyGAQgASgFEhEKCWhleF9jb2xvchgFIAEoCSJrCghUYWdH",
+            "cm91cBIUCgx0YWdfZ3JvdXBfaWQYASABKAUSEQoEbmFtZRgCIAEoCUIDwD4B",
+            "EhMKC2xhbmd1YWdlX2lkGAMgASgJEiEKBHRhZ3MYBCADKAsyEy5hdm4uY29u",
+            "bmVjdC52MS5UYWciVQoOR2V0VGFnc1JlcXVlc3QSDwoHdGFnX2lkcxgBIAMo",
+            "BRIyCgl0cmFuc2xhdGUYAiABKAsyHy5hdm4uY29ubmVjdC52MS5UcmFuc2xh",
+            "dGlvblNwZWMiNAoPR2V0VGFnc1Jlc3BvbnNlEiEKBHRhZ3MYASADKAsyEy5h",
+            "dm4uY29ubmVjdC52MS5UYWciXgoSR2V0VGFnR3JvdXBSZXF1ZXN0EhQKDHRh",
+            "Z19ncm91cF9pZBgBIAEoBRIyCgl0cmFuc2xhdGUYAiABKAsyHy5hdm4uY29u",
+            "bmVjdC52MS5UcmFuc2xhdGlvblNwZWMiQgoTR2V0VGFnR3JvdXBSZXNwb25z",
+            "ZRIrCgl0YWdfZ3JvdXAYASABKAsyGC5hdm4uY29ubmVjdC52MS5UYWdHcm91",
+            "cCKEAQoOQWRkVGFnc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25u",
+            "ZWN0LnYxLkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgFEgwKBHRh",
+            "Z3MYAyADKAUSFgoJbGVnYWN5X2lkGAogASgJSACIAQFCDAoKX2xlZ2FjeV9p",
+            "ZCKHAQoRUmVtb3ZlVGFnc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5j",
+            "b25uZWN0LnYxLkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgFEgwK",
+            "BHRhZ3MYAyADKAUSFgoJbGVnYWN5X2lkGAogASgJSACIAQFCDAoKX2xlZ2Fj",
+            "eV9pZCJQCglUYWdGaWx0ZXISNQoJY29uZGl0aW9uGAEgASgOMiIuYXZuLmNv",
+            "bm5lY3QudjEuVGFnRmlsdGVyQ29uZGl0aW9uEgwKBHRhZ3MYAiADKAUqqgEK",
+            "ElRhZ0ZpbHRlckNvbmRpdGlvbhIkCiBUQUdfRklMVEVSX0NPTkRJVElPTl9V",
+            "TlNQRUNJRklFRBAAEiMKH1RBR19GSUxURVJfQ09ORElUSU9OX0hBU19BTllf",
+            "T0YQARIjCh9UQUdfRklMVEVSX0NPTkRJVElPTl9IQVNfQUxMX09GEAISJAog",
+            "VEFHX0ZJTFRFUl9DT05ESVRJT05fSEFTX05PTkVfT0YQAyqsAQoKVGFnR3Jv",
+            "dXBJZBIYChRUQUdfR1JPVVBfSURfVU5LTk9XThAAEhgKFFRBR19HUk9VUF9J",
+            "RF9TVUJKRUNUEAESGgoWVEFHX0dST1VQX0lEX0FHRV9SQU5HRRACEhkKFVRB",
+            "R19HUk9VUF9JRF9QTEFURk9STRAKEhYKElRBR19HUk9VUF9JRF9NRURJQRAc",
+            "EhsKF1RBR19HUk9VUF9JRF9ERVBSRUNBVEVEEE4qrAcKBVRhZ0lkEhIKDlRB",
+            "R19JRF9VTktOT1dOEAASFwoSVEFHX0lEX0VEVVZFUlNFX0FJELkVEhgKE1RB",
+            "R19JRF9BSV9HRU5FUkFURUQQuxUSFQoQVEFHX0lEX1NLWUJPWF9BSRC6FRIY",
+            "ChNUQUdfSURfQ0xBU1NfQ0FOVkFTENoVEhkKFFRBR19JRF9OT1RfQlJPV1NB",
+            "QkxFEPsSEhUKEFRBR19JRF9OQVZJR0FCTEUQ+xQSFAoPVEFHX0lEX0NPU1BB",
+            "Q0VTELcVEhUKEFRBR19JRF9USElOR0xJTksQthUSGgoVVEFHX0lEX1NISU1f",
+            "Q09OVEFJTkVSEOsVEhAKC1RBR19JRF9GTEFUEJsVEh8KGlRBR19JRF9FUVVJ",
+            "UkVDVEFOR1VMQVJfMzYwELsSEh8KGlRBR19JRF9FUVVJUkVDVEFOR1VMQVJf",
+            "MTgwEPYTEhMKDlRBR19JRF9DVUJFTUFQEMUSEhgKE1RBR19JRF9TVEVSRU9f",
+            "VEJfTFIQuhISFgoRVEFHX0lEX1NURVJFT19TQlMQvBISDgoJVEFHX0lEX0FS",
+            "EL8SEg4KCVRBR19JRF9WUhC+EhIXChJUQUdfSURfU0NFTkVfR1VJREUQ4BQS",
+            "FwoSVEFHX0lEX0xFU1NPTl9QTEFOEMQSEhUKEFRBR19JRF9XT1JLU0hFRVQQ",
+            "wxISFAoPVEFHX0lEX0FOSU1BVEVEELUUEhcKElRBR19JRF9JTlRFUkFDVElW",
+            "RRCJFRIRCgxUQUdfSURfU0NFTkUQxxISEgoNVEFHX0lEX0FWQVRBUhDqFBIR",
+            "CgxUQUdfSURfTU9ERUwQxhISEQoMVEFHX0lEX0FVRElPEN8UEhEKDFRBR19J",
+            "RF9JTUFHRRDIEhIRCgxUQUdfSURfVklERU8QyRISEQoMVEFHX0lEX1RPUElD",
+            "ELUVEhUKEFRBR19JRF9USFJFRV9ET0YQ2BUSEwoOVEFHX0lEX1NJWF9ET0YQ",
+            "2RUSFgoRVEFHX0lEX0VYUExPREFCTEUQ7BUSHAoYVEFHX0lEX0FHRV9SQU5H",
+            "RV9VTkRFUl81EBESGwoXVEFHX0lEX0FHRV9SQU5HRV81X1RPXzcQEhIcChhU",
+            "QUdfSURfQUdFX1JBTkdFXzdfVE9fMTEQExIdChlUQUdfSURfQUdFX1JBTkdF",
+            "XzExX1RPXzE0EBQSHQoZVEFHX0lEX0FHRV9SQU5HRV8xNF9UT18xNhAVEhwK",
+            "GFRBR19JRF9BR0VfUkFOR0VfT1ZFUl8xNhAWMrABCgpUYWdTZXJ2aWNlEkoK",
+            "B0dldFRhZ3MSHi5hdm4uY29ubmVjdC52MS5HZXRUYWdzUmVxdWVzdBofLmF2",
+            "bi5jb25uZWN0LnYxLkdldFRhZ3NSZXNwb25zZRJWCgtHZXRUYWdHcm91cBIi",
+            "LmF2bi5jb25uZWN0LnYxLkdldFRhZ0dyb3VwUmVxdWVzdBojLmF2bi5jb25u",
+            "ZWN0LnYxLkdldFRhZ0dyb3VwUmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.TagFilterCondition), typeof(global::Avn.Connect.V1.TagGroupId), typeof(global::Avn.Connect.V1.TagId), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -99,61 +99,144 @@ namespace Avn.Connect.V1 {
   #region Enums
   public enum TagFilterCondition {
     [pbr::OriginalName("TAG_FILTER_CONDITION_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// Entity has any of the tags
+    /// </summary>
     [pbr::OriginalName("TAG_FILTER_CONDITION_HAS_ANY_OF")] HasAnyOf = 1,
+    /// <summary>
+    /// Entity has all of the tags
+    /// </summary>
     [pbr::OriginalName("TAG_FILTER_CONDITION_HAS_ALL_OF")] HasAllOf = 2,
+    /// <summary>
+    /// Entity has none of the tags
+    /// </summary>
     [pbr::OriginalName("TAG_FILTER_CONDITION_HAS_NONE_OF")] HasNoneOf = 3,
   }
 
   public enum TagGroupId {
     [pbr::OriginalName("TAG_GROUP_ID_UNKNOWN")] Unknown = 0,
+    /// <summary>
+    /// Curriculum subject
+    /// </summary>
     [pbr::OriginalName("TAG_GROUP_ID_SUBJECT")] Subject = 1,
+    /// <summary>
+    /// Target age range
+    /// </summary>
     [pbr::OriginalName("TAG_GROUP_ID_AGE_RANGE")] AgeRange = 2,
+    /// <summary>
+    /// Supported platform
+    /// </summary>
     [pbr::OriginalName("TAG_GROUP_ID_PLATFORM")] Platform = 10,
+    /// <summary>
+    /// Resource media type
+    /// </summary>
     [pbr::OriginalName("TAG_GROUP_ID_MEDIA")] Media = 28,
+    /// <summary>
+    /// Deprecated tags
+    /// </summary>
+    [pbr::OriginalName("TAG_GROUP_ID_DEPRECATED")] Deprecated = 78,
   }
 
   public enum TagId {
     [pbr::OriginalName("TAG_ID_UNKNOWN")] Unknown = 0,
     /// <summary>
-    /// Information
+    /// Resource generated by Eduverse AI
     /// </summary>
     [pbr::OriginalName("TAG_ID_EDUVERSE_AI")] EduverseAi = 2745,
+    /// <summary>
+    /// Resource is AI generated
+    /// </summary>
     [pbr::OriginalName("TAG_ID_AI_GENERATED")] AiGenerated = 2747,
+    /// <summary>
+    /// Resource generated by Skybox AI
+    /// </summary>
     [pbr::OriginalName("TAG_ID_SKYBOX_AI")] SkyboxAi = 2746,
+    /// <summary>
+    /// Resource created in ClassCanvas
+    /// </summary>
     [pbr::OriginalName("TAG_ID_CLASS_CANVAS")] ClassCanvas = 2778,
+    /// <summary>
+    /// Resource should not be browseable
+    /// </summary>
     [pbr::OriginalName("TAG_ID_NOT_BROWSABLE")] NotBrowsable = 2427,
+    /// <summary>
+    /// Resource is for navigation to other resources
+    /// </summary>
     [pbr::OriginalName("TAG_ID_NAVIGABLE")] Navigable = 2683,
+    /// <summary>
+    /// CoSpaces resource
+    /// </summary>
     [pbr::OriginalName("TAG_ID_COSPACES")] Cospaces = 2743,
+    /// <summary>
+    /// ThingLink resource
+    /// </summary>
     [pbr::OriginalName("TAG_ID_THINGLINK")] Thinglink = 2742,
+    /// <summary>
+    /// A collection the only exists to contain the child entities
+    /// </summary>
     [pbr::OriginalName("TAG_ID_SHIM_CONTAINER")] ShimContainer = 2795,
     /// <summary>
-    /// Media
+    /// 2D resource
     /// </summary>
     [pbr::OriginalName("TAG_ID_FLAT")] Flat = 2715,
+    /// <summary>
+    /// 360 equirectangular resource
+    /// </summary>
     [pbr::OriginalName("TAG_ID_EQUIRECTANGULAR_360")] Equirectangular360 = 2363,
+    /// <summary>
+    /// 180 equirectangular resource
+    /// </summary>
     [pbr::OriginalName("TAG_ID_EQUIRECTANGULAR_180")] Equirectangular180 = 2550,
+    /// <summary>
+    /// 360 resource arranged in a cubmap format
+    /// </summary>
     [pbr::OriginalName("TAG_ID_CUBEMAP")] Cubemap = 2373,
+    /// <summary>
+    /// Stereo resource top-bottom maps to left-right
+    /// </summary>
     [pbr::OriginalName("TAG_ID_STEREO_TB_LR")] StereoTbLr = 2362,
+    /// <summary>
+    /// Stereo resource left and right images are side-by-side
+    /// </summary>
     [pbr::OriginalName("TAG_ID_STEREO_SBS")] StereoSbs = 2364,
+    /// <summary>
+    /// Augmented reality
+    /// </summary>
     [pbr::OriginalName("TAG_ID_AR")] Ar = 2367,
+    /// <summary>
+    /// Virtual reality
+    /// </summary>
     [pbr::OriginalName("TAG_ID_VR")] Vr = 2366,
     [pbr::OriginalName("TAG_ID_SCENE_GUIDE")] SceneGuide = 2656,
     [pbr::OriginalName("TAG_ID_LESSON_PLAN")] LessonPlan = 2372,
     [pbr::OriginalName("TAG_ID_WORKSHEET")] Worksheet = 2371,
     [pbr::OriginalName("TAG_ID_ANIMATED")] Animated = 2613,
     [pbr::OriginalName("TAG_ID_INTERACTIVE")] Interactive = 2697,
+    /// <summary>
+    /// Explorable 3D scene
+    /// </summary>
     [pbr::OriginalName("TAG_ID_SCENE")] Scene = 2375,
+    /// <summary>
+    /// 3D avatar
+    /// </summary>
     [pbr::OriginalName("TAG_ID_AVATAR")] Avatar = 2666,
+    /// <summary>
+    /// 3D model
+    /// </summary>
     [pbr::OriginalName("TAG_ID_MODEL")] Model = 2374,
     [pbr::OriginalName("TAG_ID_AUDIO")] Audio = 2655,
     [pbr::OriginalName("TAG_ID_IMAGE")] Image = 2376,
     [pbr::OriginalName("TAG_ID_VIDEO")] Video = 2377,
     [pbr::OriginalName("TAG_ID_TOPIC")] Topic = 2741,
-    [pbr::OriginalName("TAG_ID_THREE_DOF")] ThreeDof = 2776,
-    [pbr::OriginalName("TAG_ID_SIX_DOF")] SixDof = 2777,
     /// <summary>
-    /// Age Ranges
+    /// Only supported on 3DoF devices
     /// </summary>
+    [pbr::OriginalName("TAG_ID_THREE_DOF")] ThreeDof = 2776,
+    /// <summary>
+    /// Only supported on 6DoF devices
+    /// </summary>
+    [pbr::OriginalName("TAG_ID_SIX_DOF")] SixDof = 2777,
+    [pbr::OriginalName("TAG_ID_EXPLODABLE")] Explodable = 2796,
     [pbr::OriginalName("TAG_ID_AGE_RANGE_UNDER_5")] AgeRangeUnder5 = 17,
     [pbr::OriginalName("TAG_ID_AGE_RANGE_5_TO_7")] AgeRange5To7 = 18,
     [pbr::OriginalName("TAG_ID_AGE_RANGE_7_TO_11")] AgeRange7To11 = 19,
@@ -201,7 +284,7 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Tag(Tag other) : this() {
       tagId_ = other.tagId_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
+      name_ = other.name_;
       tagGroupId_ = other.tagGroupId_;
       sortOrder_ = other.sortOrder_;
       hexColor_ = other.hexColor_;
@@ -217,6 +300,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "tag_id" field.</summary>
     public const int TagIdFieldNumber = 1;
     private int tagId_;
+    /// <summary>
+    /// Tag ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TagId {
@@ -228,19 +314,25 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
+    /// <summary>
+    /// Tag name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "tag_group_id" field.</summary>
     public const int TagGroupIdFieldNumber = 3;
     private int tagGroupId_;
+    /// <summary>
+    /// Tag group ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TagGroupId {
@@ -253,6 +345,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "sort_order" field.</summary>
     public const int SortOrderFieldNumber = 4;
     private int sortOrder_;
+    /// <summary>
+    /// Sort order within the tag group
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int SortOrder {
@@ -265,6 +360,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "hex_color" field.</summary>
     public const int HexColorFieldNumber = 5;
     private string hexColor_ = "";
+    /// <summary>
+    /// Display color
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string HexColor {
@@ -290,7 +388,7 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (TagId != other.TagId) return false;
-      if (!object.Equals(Name, other.Name)) return false;
+      if (Name != other.Name) return false;
       if (TagGroupId != other.TagGroupId) return false;
       if (SortOrder != other.SortOrder) return false;
       if (HexColor != other.HexColor) return false;
@@ -302,7 +400,7 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (TagId != 0) hash ^= TagId.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (TagGroupId != 0) hash ^= TagGroupId.GetHashCode();
       if (SortOrder != 0) hash ^= SortOrder.GetHashCode();
       if (HexColor.Length != 0) hash ^= HexColor.GetHashCode();
@@ -328,9 +426,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(TagId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (TagGroupId != 0) {
         output.WriteRawTag(24);
@@ -358,9 +456,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(TagId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (TagGroupId != 0) {
         output.WriteRawTag(24);
@@ -387,8 +485,8 @@ namespace Avn.Connect.V1 {
       if (TagId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TagId);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (TagGroupId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TagGroupId);
@@ -414,11 +512,8 @@ namespace Avn.Connect.V1 {
       if (other.TagId != 0) {
         TagId = other.TagId;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       if (other.TagGroupId != 0) {
         TagGroupId = other.TagGroupId;
@@ -453,10 +548,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 24: {
@@ -495,10 +587,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 24: {
@@ -556,7 +645,7 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TagGroup(TagGroup other) : this() {
       tagGroupId_ = other.tagGroupId_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
+      name_ = other.name_;
       languageId_ = other.languageId_;
       tags_ = other.tags_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -571,6 +660,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "tag_group_id" field.</summary>
     public const int TagGroupIdFieldNumber = 1;
     private int tagGroupId_;
+    /// <summary>
+    /// Tag group ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TagGroupId {
@@ -582,19 +674,25 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
+    /// <summary>
+    /// Tag group display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "language_id" field.</summary>
     public const int LanguageIdFieldNumber = 3;
     private string languageId_ = "";
+    /// <summary>
+    /// Language of the tag group name and the name of tags in the group
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LanguageId {
@@ -609,6 +707,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.Tag> _repeated_tags_codec
         = pb::FieldCodec.ForMessage(34, global::Avn.Connect.V1.Tag.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.Tag> tags_ = new pbc::RepeatedField<global::Avn.Connect.V1.Tag>();
+    /// <summary>
+    /// Tags in this group
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.Tag> Tags {
@@ -631,7 +732,7 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (TagGroupId != other.TagGroupId) return false;
-      if (!object.Equals(Name, other.Name)) return false;
+      if (Name != other.Name) return false;
       if (LanguageId != other.LanguageId) return false;
       if(!tags_.Equals(other.tags_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -642,7 +743,7 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (TagGroupId != 0) hash ^= TagGroupId.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (LanguageId.Length != 0) hash ^= LanguageId.GetHashCode();
       hash ^= tags_.GetHashCode();
       if (_unknownFields != null) {
@@ -667,9 +768,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(TagGroupId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (LanguageId.Length != 0) {
         output.WriteRawTag(26);
@@ -690,9 +791,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(TagGroupId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (LanguageId.Length != 0) {
         output.WriteRawTag(26);
@@ -712,8 +813,8 @@ namespace Avn.Connect.V1 {
       if (TagGroupId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TagGroupId);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (LanguageId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LanguageId);
@@ -734,11 +835,8 @@ namespace Avn.Connect.V1 {
       if (other.TagGroupId != 0) {
         TagGroupId = other.TagGroupId;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       if (other.LanguageId.Length != 0) {
         LanguageId = other.LanguageId;
@@ -768,10 +866,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -806,10 +901,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -878,6 +970,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_tagIds_codec
         = pb::FieldCodec.ForInt32(10);
     private readonly pbc::RepeatedField<int> tagIds_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Tag IDs to fetch
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> TagIds {
@@ -887,6 +982,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 2;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -1112,6 +1210,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.Tag> _repeated_tags_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.Tag.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.Tag> tags_ = new pbc::RepeatedField<global::Avn.Connect.V1.Tag>();
+    /// <summary>
+    /// Search results
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.Tag> Tags {
@@ -1298,6 +1399,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "tag_group_id" field.</summary>
     public const int TagGroupIdFieldNumber = 1;
     private int tagGroupId_;
+    /// <summary>
+    /// Tag group ID to fetch
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TagGroupId {
@@ -1310,6 +1414,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 2;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -1541,6 +1648,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "tag_group" field.</summary>
     public const int TagGroupFieldNumber = 1;
     private global::Avn.Connect.V1.TagGroup tagGroup_;
+    /// <summary>
+    /// Search result
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TagGroup TagGroup {
@@ -1751,6 +1861,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1763,6 +1876,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 2;
     private int entityId_;
+    /// <summary>
+    /// Entity to add the tags to
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -1777,6 +1893,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_tags_codec
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> tags_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Tags to add to the entity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> Tags {
@@ -2077,6 +2196,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -2089,6 +2211,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 2;
     private int entityId_;
+    /// <summary>
+    /// Entity to remove the tags from
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -2103,6 +2228,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_tags_codec
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> tags_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Tags to remove from the entity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> Tags {
@@ -2401,6 +2529,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "condition" field.</summary>
     public const int ConditionFieldNumber = 1;
     private global::Avn.Connect.V1.TagFilterCondition condition_ = global::Avn.Connect.V1.TagFilterCondition.Unspecified;
+    /// <summary>
+    /// Condition to use when filtering
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TagFilterCondition Condition {
@@ -2415,6 +2546,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_tags_codec
         = pb::FieldCodec.ForInt32(18);
     private readonly pbc::RepeatedField<int> tags_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Tag IDs to filter against
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> Tags {

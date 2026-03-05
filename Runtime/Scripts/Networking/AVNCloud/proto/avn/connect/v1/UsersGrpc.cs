@@ -8,6 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Avn.Connect.V1 {
+  /// <summary>
+  /// Eduverse user management services
+  /// </summary>
   public static partial class UserService
   {
     static readonly string __ServiceName = "avn.connect.v1.UserService";
@@ -127,21 +130,49 @@ namespace Avn.Connect.V1 {
       {
       }
 
+      /// <summary>
+      /// Get user by ID or the authenticating user if the requested ID is zero
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.User GetUser(global::Avn.Connect.V1.GetEntityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get user by ID or the authenticating user if the requested ID is zero
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.User GetUser(global::Avn.Connect.V1.GetEntityRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetUser, null, options, request);
       }
+      /// <summary>
+      /// Get user by ID or the authenticating user if the requested ID is zero
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.User> GetUserAsync(global::Avn.Connect.V1.GetEntityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get user by ID or the authenticating user if the requested ID is zero
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.User> GetUserAsync(global::Avn.Connect.V1.GetEntityRequest request, grpc::CallOptions options)
       {

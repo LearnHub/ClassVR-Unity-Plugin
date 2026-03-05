@@ -280,7 +280,8 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetChannels, null, options, request);
       }
       /// <summary>
-      /// Get all published profiles in the given set of channels
+      /// Get all published profiles in the given set of channels.
+      /// All the profiles will belong to the channel, but the categories within those profiles may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -293,7 +294,8 @@ namespace Avn.Connect.V1 {
         return GetProfiles(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published profiles in the given set of channels
+      /// Get all published profiles in the given set of channels.
+      /// All the profiles will belong to the channel, but the categories within those profiles may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -304,7 +306,8 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetProfiles, null, options, request);
       }
       /// <summary>
-      /// Get all published profiles in the given set of channels
+      /// Get all published profiles in the given set of channels.
+      /// All the profiles will belong to the channel, but the categories within those profiles may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -317,7 +320,8 @@ namespace Avn.Connect.V1 {
         return GetProfilesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published profiles in the given set of channels
+      /// Get all published profiles in the given set of channels.
+      /// All the profiles will belong to the channel, but the categories within those profiles may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -329,6 +333,7 @@ namespace Avn.Connect.V1 {
       }
       /// <summary>
       /// Get all published categories in the given set of channels
+      /// All the categories will belong to the channel, but the activities within those categories may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -342,6 +347,7 @@ namespace Avn.Connect.V1 {
       }
       /// <summary>
       /// Get all published categories in the given set of channels
+      /// All the categories will belong to the channel, but the activities within those categories may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -353,6 +359,7 @@ namespace Avn.Connect.V1 {
       }
       /// <summary>
       /// Get all published categories in the given set of channels
+      /// All the categories will belong to the channel, but the activities within those categories may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -366,6 +373,7 @@ namespace Avn.Connect.V1 {
       }
       /// <summary>
       /// Get all published categories in the given set of channels
+      /// All the categories will belong to the channel, but the activities within those categories may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -376,7 +384,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetCategories, null, options, request);
       }
       /// <summary>
-      /// Get all published activities in the given set of channels
+      /// Get all published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -389,7 +397,7 @@ namespace Avn.Connect.V1 {
         return GetActivities(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published activities in the given set of channels
+      /// Get all published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -400,7 +408,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetActivities, null, options, request);
       }
       /// <summary>
-      /// Get all published activities in the given set of channels
+      /// Get all published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -413,7 +421,7 @@ namespace Avn.Connect.V1 {
         return GetActivitiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published activities in the given set of channels
+      /// Get all published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

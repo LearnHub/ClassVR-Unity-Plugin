@@ -26,184 +26,108 @@ namespace Avn.Connect.V1 {
           string.Concat(
             "Ch1hdm4vY29ubmVjdC92MS9lbnRpdGllcy5wcm90bxIOYXZuLmNvbm5lY3Qu",
             "djEaH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aImF2bi9jb25u",
-            "ZWN0L3YxL2F1dGhvcml6YXRpb24ucHJvdG8aGWF2bi9jb25uZWN0L3YxL3Rh",
-            "Z3MucHJvdG8aIWF2bi9jb25uZWN0L3YxL3RyYW5zbGF0aW9ucy5wcm90bxoa",
-            "YXZuL2Nvbm5lY3QvdjEvbWVkaWEucHJvdG8iuQQKCkVudGl0eUluZm8SEQoJ",
-            "ZW50aXR5X2lkGAEgASgFEioKBG5hbWUYAiABKAsyHC5hdm4uY29ubmVjdC52",
-            "MS5UcmFuc2xhdGFibGUSKwoHdXBkYXRlZBgDIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5UaW1lc3RhbXASEAoIaWNvbl91cmwYBCABKAkSEwoLcHJldmlld191",
-            "cmwYBSABKAkSFAoHY29udGV4dBgGIAEoCUgBiAEBEgwKBHRhZ3MYByADKAUS",
-            "MgoJcHVibGlzaGVkGAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cEgCiAEBEjEKCGZlYXR1cmVkGAkgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
-            "bWVzdGFtcEgDiAEBEhkKD29yZ2FuaXphdGlvbl9pZBgKIAEoBUgAEhEKB3Vz",
-            "ZXJfaWQYCyABKAVIABIRCglhdmFpbGFibGUYFCABKAgSFQoIYXNzZXRfaWQY",
-            "FSABKAlIBIgBARIXCgpzaXplX2J5dGVzGBYgASgDSAWIAQESFwoKaXRlbV9j",
-            "b3VudBgeIAEoBUgGiAEBEhgKC3RyYWNrX2NvdW50GB8gASgFSAeIAQFCBwoF",
-            "b3duZXJCCgoIX2NvbnRleHRCDAoKX3B1Ymxpc2hlZEILCglfZmVhdHVyZWRC",
-            "CwoJX2Fzc2V0X2lkQg0KC19zaXplX2J5dGVzQg0KC19pdGVtX2NvdW50Qg4K",
-            "DF90cmFja19jb3VudCKgAgoQR2V0RW50aXR5UmVxdWVzdBIrCgRhdXRoGAEg",
-            "ASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIRCgllbnRpdHlf",
-            "aWQYAiABKAUSMgoJdHJhbnNsYXRlGAMgASgLMh8uYXZuLmNvbm5lY3QudjEu",
-            "VHJhbnNsYXRpb25TcGVjEjoKCWljb25fc3BlYxgEIAEoCzIiLmF2bi5jb25u",
-            "ZWN0LnYxLlRyYW5zY29kZUltYWdlU3BlY0gAiAEBEj0KDHByZXZpZXdfc3Bl",
-            "YxgFIAEoCzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdlU3BlY0gB",
-            "iAEBQgwKCl9pY29uX3NwZWNCDwoNX3ByZXZpZXdfc3BlYyKeAQoTQ3JlYXRl",
-            "RW50aXR5UmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEu",
-            "QXV0aG9yaXphdGlvbhIcCg9vcmdhbml6YXRpb25faWQYAiABKAVIAIgBARIY",
-            "CgtsYW5ndWFnZV9pZBgDIAEoCUgBiAEBQhIKEF9vcmdhbml6YXRpb25faWRC",
-            "DgoMX2xhbmd1YWdlX2lkIikKFENyZWF0ZUVudGl0eVJlc3BvbnNlEhEKCWVu",
-            "dGl0eV9pZBgBIAEoBSJVChNEZWxldGVFbnRpdHlSZXF1ZXN0EisKBGF1dGgY",
-            "ASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhEKCWVudGl0",
-            "eV9pZBgCIAEoBSKYAQoRQ29weUVudGl0eVJlcXVlc3QSKwoEYXV0aBgBIAEo",
-            "CzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SHAoPb3JnYW5pemF0",
-            "aW9uX2lkGAIgASgFSACIAQESFgoJdGFyZ2V0X2lkGAMgASgFSAGIAQFCEgoQ",
-            "X29yZ2FuaXphdGlvbl9pZEIMCgpfdGFyZ2V0X2lkIp8EChVFbnRpdHlJbmZv",
-            "TGlzdFJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1",
-            "dGhvcml6YXRpb24SEgoKZW50aXR5X2lkcxgCIAMoBRIyCgl0cmFuc2xhdGUY",
-            "AyABKAsyHy5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGlvblNwZWMSNAoLdGV4",
-            "dF9zZWFyY2gYBCABKAsyGi5hdm4uY29ubmVjdC52MS5UZXh0U2VhcmNoSACI",
-            "AQESLgoLdGFnX2ZpbHRlcnMYBSADKAsyGS5hdm4uY29ubmVjdC52MS5UYWdG",
-            "aWx0ZXISLQoIb3JkZXJfYnkYByADKAsyGy5hdm4uY29ubmVjdC52MS5PcmRl",
-            "ckNsYXVzZRIWCglwYWdlX3NpemUYCCABKAVIAYgBARIXCgpwYWdlX3Rva2Vu",
-            "GAkgASgJSAKIAQESOgoJaWNvbl9zcGVjGAogASgLMiIuYXZuLmNvbm5lY3Qu",
-            "djEuVHJhbnNjb2RlSW1hZ2VTcGVjSAOIAQESPQoMcHJldmlld19zcGVjGAsg",
-            "ASgLMiIuYXZuLmNvbm5lY3QudjEuVHJhbnNjb2RlSW1hZ2VTcGVjSASIAQFC",
-            "DgoMX3RleHRfc2VhcmNoQgwKCl9wYWdlX3NpemVCDQoLX3BhZ2VfdG9rZW5C",
-            "DAoKX2ljb25fc3BlY0IPCg1fcHJldmlld19zcGVjSgQIBhAHIncKFkVudGl0",
-            "eUluZm9MaXN0UmVzcG9uc2USKwoHcmVzdWx0cxgBIAMoCzIaLmF2bi5jb25u",
-            "ZWN0LnYxLkVudGl0eUluZm8SHAoPbmV4dF9wYWdlX3Rva2VuGAIgASgJSACI",
-            "AQFCEgoQX25leHRfcGFnZV90b2tlbiKbAQoSQWRkQ2hpbGRyZW5SZXF1ZXN0",
-            "EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9u",
-            "EhEKCXBhcmVudF9pZBgCIAEoBRIRCgljaGlsZF9pZHMYAyADKAUSHQoQcmVw",
-            "bGFjZV9leGlzdGluZxgEIAEoCEgAiAEBQhMKEV9yZXBsYWNlX2V4aXN0aW5n",
-            "ImoKFVJlbW92ZUNoaWxkcmVuUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZu",
-            "LmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIRCglwYXJlbnRfaWQYAiABKAUS",
-            "EQoJY2hpbGRfaWRzGAMgAygFIk4KDkVudGl0eU1ldGFkYXRhEhEKCWVudGl0",
-            "eV9pZBgBIAEoBRILCgNrZXkYAiABKAkSEgoFdmFsdWUYAyABKAlIAIgBAUII",
-            "CgZfdmFsdWUicAoPTWV0YWRhdGFSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5h",
-            "dm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEjAKCG1ldGFkYXRhGAIgASgL",
-            "Mh4uYXZuLmNvbm5lY3QudjEuRW50aXR5TWV0YWRhdGEiRgoTR2V0TWV0YWRh",
-            "dGFSZXNwb25zZRIvCgdyZXN1bHRzGAEgAygLMh4uYXZuLmNvbm5lY3QudjEu",
-            "RW50aXR5TWV0YWRhdGEimgEKGlNldEVudGl0eVByb3BlcnRpZXNSZXF1ZXN0",
-            "EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9u",
-            "EhEKCWVudGl0eV9pZBgCIAEoBRI8Cg9wcm9wZXJ0eV9zdGF0ZXMYAyADKAsy",
-            "Iy5hdm4uY29ubmVjdC52MS5FbnRpdHlQcm9wZXJ0eVN0YXRlIvkBChNFbnRp",
-            "dHlQcm9wZXJ0eVN0YXRlEjAKCHByb3BlcnR5GAMgASgOMh4uYXZuLmNvbm5l",
-            "Y3QudjEuRW50aXR5UHJvcGVydHkSDgoEYm9vbBgEIAEoCEgAEg8KBWludDMy",
-            "GAUgASgFSAASDwoFaW50NjQYBiABKANIABIPCgVmbG9hdBgHIAEoAkgAEhAK",
-            "BmRvdWJsZRgIIAEoAUgAEhAKBnN0cmluZxgJIAEoCUgAEg8KBWJ5dGVzGAog",
-            "ASgMSAASLwoJdGltZXN0YW1wGAsgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
-            "bWVzdGFtcEgAQgcKBXN0YXRlIn8KClRleHRTZWFyY2gSDAoEdGV4dBgBIAEo",
-            "CRIyCgpwcm9wZXJ0aWVzGAIgAygOMh4uYXZuLmNvbm5lY3QudjEuRW50aXR5",
-            "UHJvcGVydHkSLwoKY29uZGl0aW9ucxgDIAMoDjIbLmF2bi5jb25uZWN0LnYx",
-            "LlNlYXJjaEZsYWdzIoIBCgtPcmRlckNsYXVzZRIwCghwcm9wZXJ0eRgHIAEo",
-            "DjIeLmF2bi5jb25uZWN0LnYxLkVudGl0eVByb3BlcnR5EjIKCnNvcnRfb3Jk",
-            "ZXIYCCABKA4yGS5hdm4uY29ubmVjdC52MS5Tb3J0T3JkZXJIAIgBAUINCgtf",
-            "c29ydF9vcmRlcipJCgtTZWFyY2hGbGFncxIcChhTRUFSQ0hfRkxBR1NfVU5T",
-            "UEVDSUZJRUQQABIcChhTRUFSQ0hfRkxBR1NfRVhBQ1RfTUFUQ0gQASpQCglT",
-            "b3J0T3JkZXISGgoWU09SVF9PUkRFUl9VTlNQRUNJRklFRBAAEhIKDlNPUlRf",
-            "T1JERVJfQVNDEAESEwoPU09SVF9PUkRFUl9ERVNDEAIq5QcKDkVudGl0eVBy",
-            "b3BlcnR5Eh8KG0VOVElUWV9QUk9QRVJUWV9VTlNQRUNJRklFRBAAEhYKEkVO",
-            "VElUWV9QUk9QRVJUWV9JRBABEhgKFEVOVElUWV9QUk9QRVJUWV9OQU1FEAIS",
-            "HwobRU5USVRZX1BST1BFUlRZX0RFU0NSSVBUSU9OEAMSGwoXRU5USVRZX1BS",
-            "T1BFUlRZX0NSRUFURUQQBBIbChdFTlRJVFlfUFJPUEVSVFlfVVBEQVRFRBAF",
-            "EhgKFEVOVElUWV9QUk9QRVJUWV9TSVpFEAYSHgoaRU5USVRZX1BST1BFUlRZ",
-            "X1NPUlRfT1JERVIQBxIcChhFTlRJVFlfUFJPUEVSVFlfSUNPTl9VUkwQCBIg",
-            "ChxFTlRJVFlfUFJPUEVSVFlfSU5TVFJVQ1RJT05TEAkSGwoXRU5USVRZX1BS",
-            "T1BFUlRZX0NPTlRFWFQQChIcChhFTlRJVFlfUFJPUEVSVFlfQVNTRVRfSUQQ",
-            "CxIfChtFTlRJVFlfUFJPUEVSVFlfTEFOR1VBR0VfSUQQDBIdChlFTlRJVFlf",
-            "UFJPUEVSVFlfUFVCTElTSEVEEA0SHQoZRU5USVRZX1BST1BFUlRZX0FWQUlM",
-            "QUJMRRAOEhwKGEVOVElUWV9QUk9QRVJUWV9GRUFUVVJFRBAPEh8KG0VOVElU",
-            "WV9QUk9QRVJUWV9NQUNfQUREUkVTUxAQEh4KGkVOVElUWV9QUk9QRVJUWV9T",
-            "V19WRVJTSU9OEBESHAoYRU5USVRZX1BST1BFUlRZX0hPU1ROQU1FEBISHAoY",
-            "RU5USVRZX1BST1BFUlRZX1BMQVRGT1JNEBMSHAoYRU5USVRZX1BST1BFUlRZ",
-            "X0FQUFJPVkVEEBQSHAoYRU5USVRZX1BST1BFUlRZX0ZJTEVOQU1FEBUSHgoa",
-            "RU5USVRZX1BST1BFUlRZX0lURU1fQ09VTlQQFhIfChtFTlRJVFlfUFJPUEVS",
-            "VFlfVFJBQ0tfQ09VTlQQFxIYChRFTlRJVFlfUFJPUEVSVFlfVEFHUxAYEhsK",
-            "F0VOVElUWV9QUk9QRVJUWV9BRERSRVNTEBkSGAoURU5USVRZX1BST1BFUlRZ",
-            "X0NJVFkQGhIZChVFTlRJVFlfUFJPUEVSVFlfU1RBVEUQGxIcChhFTlRJVFlf",
-            "UFJPUEVSVFlfUE9TVENPREUQHBIZChVFTlRJVFlfUFJPUEVSVFlfUEhPTkUQ",
-            "HRIZChVFTlRJVFlfUFJPUEVSVFlfRU1BSUwQHhIcChhFTlRJVFlfUFJPUEVS",
-            "VFlfS0VZV09SRFMQHxIbChdFTlRJVFlfUFJPUEVSVFlfU1VNTUFSWRAgYgZw",
-            "cm90bzM="));
+            "ZWN0L3YxL2F1dGhvcml6YXRpb24ucHJvdG8aGmF2bi9jb25uZWN0L3YxL21l",
+            "ZGlhLnByb3RvGh1hdm4vY29ubmVjdC92MS9tZXRhZGF0YS5wcm90bxofYXZu",
+            "L2Nvbm5lY3QvdjEvcHJvcGVydGllcy5wcm90bxobYXZuL2Nvbm5lY3QvdjEv",
+            "c2VhcmNoLnByb3RvGhlhdm4vY29ubmVjdC92MS90YWdzLnByb3RvGiFhdm4v",
+            "Y29ubmVjdC92MS90cmFuc2xhdGlvbnMucHJvdG8i0gQKCkVudGl0eUluZm8S",
+            "EQoJZW50aXR5X2lkGAEgASgFEhEKBG5hbWUYAiABKAlCA8A+ARIrCgd1cGRh",
+            "dGVkGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIQCghpY29u",
+            "X3VybBgEIAEoCRITCgtwcmV2aWV3X3VybBgFIAEoCRIUCgdjb250ZXh0GAYg",
+            "ASgJSAGIAQESDAoEdGFncxgHIAMoBRIyCglwdWJsaXNoZWQYCCABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wSAKIAQESMQoIZmVhdHVyZWQYCSAB",
+            "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wSAOIAQESGQoPb3JnYW5p",
+            "emF0aW9uX2lkGAogASgFSAASEQoHdXNlcl9pZBgLIAEoBUgAEhwKD3NlYXJj",
+            "aF9kaXN0YW5jZRgMIAEoAkgEiAEBEhEKCWF2YWlsYWJsZRgUIAEoCBIVCghh",
+            "c3NldF9pZBgVIAEoCUgFiAEBEhcKCnNpemVfYnl0ZXMYFiABKANIBogBARIX",
+            "CgppdGVtX2NvdW50GB4gASgFSAeIAQESGAoLdHJhY2tfY291bnQYHyABKAVI",
+            "CIgBAUIHCgVvd25lckIKCghfY29udGV4dEIMCgpfcHVibGlzaGVkQgsKCV9m",
+            "ZWF0dXJlZEISChBfc2VhcmNoX2Rpc3RhbmNlQgsKCV9hc3NldF9pZEINCgtf",
+            "c2l6ZV9ieXRlc0INCgtfaXRlbV9jb3VudEIOCgxfdHJhY2tfY291bnQioAIK",
+            "EEdldEVudGl0eVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0",
+            "LnYxLkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgFEjIKCXRyYW5z",
+            "bGF0ZRgDIAEoCzIfLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0aW9uU3BlYxI6",
+            "CglpY29uX3NwZWMYBCABKAsyIi5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVJ",
+            "bWFnZVNwZWNIAIgBARI9CgxwcmV2aWV3X3NwZWMYBSABKAsyIi5hdm4uY29u",
+            "bmVjdC52MS5UcmFuc2NvZGVJbWFnZVNwZWNIAYgBAUIMCgpfaWNvbl9zcGVj",
+            "Qg8KDV9wcmV2aWV3X3NwZWMingEKE0NyZWF0ZUVudGl0eVJlcXVlc3QSKwoE",
+            "YXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SHAoP",
+            "b3JnYW5pemF0aW9uX2lkGAIgASgFSACIAQESGAoLbGFuZ3VhZ2VfaWQYAyAB",
+            "KAlIAYgBAUISChBfb3JnYW5pemF0aW9uX2lkQg4KDF9sYW5ndWFnZV9pZCIp",
+            "ChRDcmVhdGVFbnRpdHlSZXNwb25zZRIRCgllbnRpdHlfaWQYASABKAUiVQoT",
+            "RGVsZXRlRW50aXR5UmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5l",
+            "Y3QudjEuQXV0aG9yaXphdGlvbhIRCgllbnRpdHlfaWQYAiABKAUibAoRQ29w",
+            "eUVudGl0eVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYx",
+            "LkF1dGhvcml6YXRpb24SFwoPb3JnYW5pemF0aW9uX2lkGAIgASgFEhEKCXRh",
+            "cmdldF9pZBgDIAEoBSLlBAoVRW50aXR5SW5mb0xpc3RSZXF1ZXN0EisKBGF1",
+            "dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhIKCmVu",
+            "dGl0eV9pZHMYAiADKAUSMgoJdHJhbnNsYXRlGAMgASgLMh8uYXZuLmNvbm5l",
+            "Y3QudjEuVHJhbnNsYXRpb25TcGVjEjQKC3RleHRfc2VhcmNoGAQgASgLMhou",
+            "YXZuLmNvbm5lY3QudjEuVGV4dFNlYXJjaEgAiAEBEi4KC3RhZ19maWx0ZXJz",
+            "GAUgAygLMhkuYXZuLmNvbm5lY3QudjEuVGFnRmlsdGVyEi0KCG9yZGVyX2J5",
+            "GAcgAygLMhsuYXZuLmNvbm5lY3QudjEuT3JkZXJDbGF1c2USFgoJcGFnZV9z",
+            "aXplGAggASgFSAGIAQESFwoKcGFnZV90b2tlbhgJIAEoCUgCiAEBEjoKCWlj",
+            "b25fc3BlYxgKIAEoCzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdl",
+            "U3BlY0gDiAEBEj0KDHByZXZpZXdfc3BlYxgLIAEoCzIiLmF2bi5jb25uZWN0",
+            "LnYxLlRyYW5zY29kZUltYWdlU3BlY0gEiAEBEiYKGXNlYXJjaF9kaXN0YW5j",
+            "ZV90aHJlc2hvbGQYDCABKAJIBYgBAUIOCgxfdGV4dF9zZWFyY2hCDAoKX3Bh",
+            "Z2Vfc2l6ZUINCgtfcGFnZV90b2tlbkIMCgpfaWNvbl9zcGVjQg8KDV9wcmV2",
+            "aWV3X3NwZWNCHAoaX3NlYXJjaF9kaXN0YW5jZV90aHJlc2hvbGRKBAgGEAci",
+            "dwoWRW50aXR5SW5mb0xpc3RSZXNwb25zZRIrCgdyZXN1bHRzGAEgAygLMhou",
+            "YXZuLmNvbm5lY3QudjEuRW50aXR5SW5mbxIcCg9uZXh0X3BhZ2VfdG9rZW4Y",
+            "AiABKAlIAIgBAUISChBfbmV4dF9wYWdlX3Rva2VuIpsBChJBZGRDaGlsZHJl",
+            "blJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhv",
+            "cml6YXRpb24SEQoJcGFyZW50X2lkGAIgASgFEhEKCWNoaWxkX2lkcxgDIAMo",
+            "BRIdChByZXBsYWNlX2V4aXN0aW5nGAQgASgISACIAQFCEwoRX3JlcGxhY2Vf",
+            "ZXhpc3RpbmciagoVUmVtb3ZlQ2hpbGRyZW5SZXF1ZXN0EisKBGF1dGgYASAB",
+            "KAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhEKCXBhcmVudF9p",
+            "ZBgCIAEoBRIRCgljaGlsZF9pZHMYAyADKAUqdgoKRW50aXR5VHlwZRIbChdF",
+            "TlRJVFlfVFlQRV9VTlNQRUNJRklFRBAAEhgKFEVOVElUWV9UWVBFX0FDVElW",
+            "SVRZEAESGAoURU5USVRZX1RZUEVfQ0FURUdPUlkQAhIXChNFTlRJVFlfVFlQ",
+            "RV9QUk9GSUxFEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.SearchFlags), typeof(global::Avn.Connect.V1.SortOrder), typeof(global::Avn.Connect.V1.EntityProperty), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfo), global::Avn.Connect.V1.EntityInfo.Parser, new[]{ "EntityId", "Name", "Updated", "IconUrl", "PreviewUrl", "Context", "Tags", "Published", "Featured", "OrganizationId", "UserId", "Available", "AssetId", "SizeBytes", "ItemCount", "TrackCount" }, new[]{ "Owner", "Context", "Published", "Featured", "AssetId", "SizeBytes", "ItemCount", "TrackCount" }, null, null, null),
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, global::Avn.Connect.V1.MetadataReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, global::Avn.Connect.V1.SearchReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.EntityType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfo), global::Avn.Connect.V1.EntityInfo.Parser, new[]{ "EntityId", "Name", "Updated", "IconUrl", "PreviewUrl", "Context", "Tags", "Published", "Featured", "OrganizationId", "UserId", "SearchDistance", "Available", "AssetId", "SizeBytes", "ItemCount", "TrackCount" }, new[]{ "Owner", "Context", "Published", "Featured", "SearchDistance", "AssetId", "SizeBytes", "ItemCount", "TrackCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetEntityRequest), global::Avn.Connect.V1.GetEntityRequest.Parser, new[]{ "Auth", "EntityId", "Translate", "IconSpec", "PreviewSpec" }, new[]{ "IconSpec", "PreviewSpec" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateEntityRequest), global::Avn.Connect.V1.CreateEntityRequest.Parser, new[]{ "Auth", "OrganizationId", "LanguageId" }, new[]{ "OrganizationId", "LanguageId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateEntityResponse), global::Avn.Connect.V1.CreateEntityResponse.Parser, new[]{ "EntityId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DeleteEntityRequest), global::Avn.Connect.V1.DeleteEntityRequest.Parser, new[]{ "Auth", "EntityId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CopyEntityRequest), global::Avn.Connect.V1.CopyEntityRequest.Parser, new[]{ "Auth", "OrganizationId", "TargetId" }, new[]{ "OrganizationId", "TargetId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfoListRequest), global::Avn.Connect.V1.EntityInfoListRequest.Parser, new[]{ "Auth", "EntityIds", "Translate", "TextSearch", "TagFilters", "OrderBy", "PageSize", "PageToken", "IconSpec", "PreviewSpec" }, new[]{ "TextSearch", "PageSize", "PageToken", "IconSpec", "PreviewSpec" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CopyEntityRequest), global::Avn.Connect.V1.CopyEntityRequest.Parser, new[]{ "Auth", "OrganizationId", "TargetId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfoListRequest), global::Avn.Connect.V1.EntityInfoListRequest.Parser, new[]{ "Auth", "EntityIds", "Translate", "TextSearch", "TagFilters", "OrderBy", "PageSize", "PageToken", "IconSpec", "PreviewSpec", "SearchDistanceThreshold" }, new[]{ "TextSearch", "PageSize", "PageToken", "IconSpec", "PreviewSpec", "SearchDistanceThreshold" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfoListResponse), global::Avn.Connect.V1.EntityInfoListResponse.Parser, new[]{ "Results", "NextPageToken" }, new[]{ "NextPageToken" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AddChildrenRequest), global::Avn.Connect.V1.AddChildrenRequest.Parser, new[]{ "Auth", "ParentId", "ChildIds", "ReplaceExisting" }, new[]{ "ReplaceExisting" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.RemoveChildrenRequest), global::Avn.Connect.V1.RemoveChildrenRequest.Parser, new[]{ "Auth", "ParentId", "ChildIds" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityMetadata), global::Avn.Connect.V1.EntityMetadata.Parser, new[]{ "EntityId", "Key", "Value" }, new[]{ "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MetadataRequest), global::Avn.Connect.V1.MetadataRequest.Parser, new[]{ "Auth", "Metadata" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMetadataResponse), global::Avn.Connect.V1.GetMetadataResponse.Parser, new[]{ "Results" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SetEntityPropertiesRequest), global::Avn.Connect.V1.SetEntityPropertiesRequest.Parser, new[]{ "Auth", "EntityId", "PropertyStates" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityPropertyState), global::Avn.Connect.V1.EntityPropertyState.Parser, new[]{ "Property", "Bool", "Int32", "Int64", "Float", "Double", "String", "Bytes", "Timestamp" }, new[]{ "State" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.TextSearch), global::Avn.Connect.V1.TextSearch.Parser, new[]{ "Text", "Properties", "Conditions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.OrderClause), global::Avn.Connect.V1.OrderClause.Parser, new[]{ "Property", "SortOrder" }, new[]{ "SortOrder" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.RemoveChildrenRequest), global::Avn.Connect.V1.RemoveChildrenRequest.Parser, new[]{ "Auth", "ParentId", "ChildIds" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Enums
-  public enum SearchFlags {
-    [pbr::OriginalName("SEARCH_FLAGS_UNSPECIFIED")] Unspecified = 0,
-    [pbr::OriginalName("SEARCH_FLAGS_EXACT_MATCH")] ExactMatch = 1,
-  }
-
-  public enum SortOrder {
-    [pbr::OriginalName("SORT_ORDER_UNSPECIFIED")] Unspecified = 0,
-    [pbr::OriginalName("SORT_ORDER_ASC")] Asc = 1,
-    [pbr::OriginalName("SORT_ORDER_DESC")] Desc = 2,
-  }
-
-  public enum EntityProperty {
-    [pbr::OriginalName("ENTITY_PROPERTY_UNSPECIFIED")] Unspecified = 0,
-    [pbr::OriginalName("ENTITY_PROPERTY_ID")] Id = 1,
-    [pbr::OriginalName("ENTITY_PROPERTY_NAME")] Name = 2,
-    [pbr::OriginalName("ENTITY_PROPERTY_DESCRIPTION")] Description = 3,
-    [pbr::OriginalName("ENTITY_PROPERTY_CREATED")] Created = 4,
-    [pbr::OriginalName("ENTITY_PROPERTY_UPDATED")] Updated = 5,
-    [pbr::OriginalName("ENTITY_PROPERTY_SIZE")] Size = 6,
-    [pbr::OriginalName("ENTITY_PROPERTY_SORT_ORDER")] SortOrder = 7,
-    [pbr::OriginalName("ENTITY_PROPERTY_ICON_URL")] IconUrl = 8,
-    [pbr::OriginalName("ENTITY_PROPERTY_INSTRUCTIONS")] Instructions = 9,
-    [pbr::OriginalName("ENTITY_PROPERTY_CONTEXT")] Context = 10,
-    [pbr::OriginalName("ENTITY_PROPERTY_ASSET_ID")] AssetId = 11,
-    [pbr::OriginalName("ENTITY_PROPERTY_LANGUAGE_ID")] LanguageId = 12,
-    [pbr::OriginalName("ENTITY_PROPERTY_PUBLISHED")] Published = 13,
-    [pbr::OriginalName("ENTITY_PROPERTY_AVAILABLE")] Available = 14,
-    [pbr::OriginalName("ENTITY_PROPERTY_FEATURED")] Featured = 15,
-    [pbr::OriginalName("ENTITY_PROPERTY_MAC_ADDRESS")] MacAddress = 16,
-    [pbr::OriginalName("ENTITY_PROPERTY_SW_VERSION")] SwVersion = 17,
-    [pbr::OriginalName("ENTITY_PROPERTY_HOSTNAME")] Hostname = 18,
-    [pbr::OriginalName("ENTITY_PROPERTY_PLATFORM")] Platform = 19,
-    [pbr::OriginalName("ENTITY_PROPERTY_APPROVED")] Approved = 20,
-    [pbr::OriginalName("ENTITY_PROPERTY_FILENAME")] Filename = 21,
-    [pbr::OriginalName("ENTITY_PROPERTY_ITEM_COUNT")] ItemCount = 22,
-    [pbr::OriginalName("ENTITY_PROPERTY_TRACK_COUNT")] TrackCount = 23,
-    [pbr::OriginalName("ENTITY_PROPERTY_TAGS")] Tags = 24,
-    [pbr::OriginalName("ENTITY_PROPERTY_ADDRESS")] Address = 25,
-    [pbr::OriginalName("ENTITY_PROPERTY_CITY")] City = 26,
-    [pbr::OriginalName("ENTITY_PROPERTY_STATE")] State = 27,
-    [pbr::OriginalName("ENTITY_PROPERTY_POSTCODE")] Postcode = 28,
-    [pbr::OriginalName("ENTITY_PROPERTY_PHONE")] Phone = 29,
-    [pbr::OriginalName("ENTITY_PROPERTY_EMAIL")] Email = 30,
-    [pbr::OriginalName("ENTITY_PROPERTY_KEYWORDS")] Keywords = 31,
-    [pbr::OriginalName("ENTITY_PROPERTY_SUMMARY")] Summary = 32,
+  /// <summary>
+  /// Content entity types
+  /// </summary>
+  public enum EntityType {
+    [pbr::OriginalName("ENTITY_TYPE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// Activity
+    /// </summary>
+    [pbr::OriginalName("ENTITY_TYPE_ACTIVITY")] Activity = 1,
+    /// <summary>
+    /// Category
+    /// </summary>
+    [pbr::OriginalName("ENTITY_TYPE_CATEGORY")] Category = 2,
+    /// <summary>
+    /// Profile
+    /// </summary>
+    [pbr::OriginalName("ENTITY_TYPE_PROFILE")] Profile = 3,
   }
 
   #endregion
 
   #region Messages
   /// <summary>
-  /// Common info for channels, profiles, categories, and activities
+  /// Common summary info for channels, profiles, categories, activities, cloud files, and devices
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EntityInfo : pb::IMessage<EntityInfo>
@@ -243,7 +167,7 @@ namespace Avn.Connect.V1 {
     public EntityInfo(EntityInfo other) : this() {
       _hasBits0 = other._hasBits0;
       entityId_ = other.entityId_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
+      name_ = other.name_;
       updated_ = other.updated_ != null ? other.updated_.Clone() : null;
       iconUrl_ = other.iconUrl_;
       previewUrl_ = other.previewUrl_;
@@ -251,6 +175,7 @@ namespace Avn.Connect.V1 {
       tags_ = other.tags_.Clone();
       published_ = other.published_ != null ? other.published_.Clone() : null;
       featured_ = other.featured_ != null ? other.featured_.Clone() : null;
+      searchDistance_ = other.searchDistance_;
       available_ = other.available_;
       assetId_ = other.assetId_;
       sizeBytes_ = other.sizeBytes_;
@@ -277,6 +202,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
     private int entityId_;
+    /// <summary>
+    /// Entity ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -288,19 +216,25 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
+    /// <summary>
+    /// Entity name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "updated" field.</summary>
     public const int UpdatedFieldNumber = 3;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    /// <summary>
+    /// When entity last updated
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
@@ -313,6 +247,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "icon_url" field.</summary>
     public const int IconUrlFieldNumber = 4;
     private string iconUrl_ = "";
+    /// <summary>
+    /// Icon to use for the entity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IconUrl {
@@ -325,6 +262,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "preview_url" field.</summary>
     public const int PreviewUrlFieldNumber = 5;
     private string previewUrl_ = "";
+    /// <summary>
+    /// Preview to use for the entity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PreviewUrl {
@@ -368,6 +308,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_tags_codec
         = pb::FieldCodec.ForInt32(58);
     private readonly pbc::RepeatedField<int> tags_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Tags assigned to this entity, see tags.proto for examples
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> Tags {
@@ -377,6 +320,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "published" field.</summary>
     public const int PublishedFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Timestamp published_;
+    /// <summary>
+    /// When entity was published
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Published {
@@ -389,6 +335,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "featured" field.</summary>
     public const int FeaturedFieldNumber = 9;
     private global::Google.Protobuf.WellKnownTypes.Timestamp featured_;
+    /// <summary>
+    /// When entity was featured
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Featured {
@@ -400,6 +349,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 10;
+    /// <summary>
+    /// Organization owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -426,6 +378,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 11;
+    /// <summary>
+    /// User owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -450,9 +405,42 @@ namespace Avn.Connect.V1 {
       }
     }
 
+    /// <summary>Field number for the "search_distance" field.</summary>
+    public const int SearchDistanceFieldNumber = 12;
+    private readonly static float SearchDistanceDefaultValue = 0F;
+
+    private float searchDistance_;
+    /// <summary>
+    /// Search relevance (natural language search only)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float SearchDistance {
+      get { if ((_hasBits0 & 1) != 0) { return searchDistance_; } else { return SearchDistanceDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        searchDistance_ = value;
+      }
+    }
+    /// <summary>Gets whether the "search_distance" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSearchDistance {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "search_distance" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSearchDistance() {
+      _hasBits0 &= ~1;
+    }
+
     /// <summary>Field number for the "available" field.</summary>
     public const int AvailableFieldNumber = 20;
     private bool available_;
+    /// <summary>
+    /// Is the activity available, e.g. licensed?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Available {
@@ -467,6 +455,9 @@ namespace Avn.Connect.V1 {
     private readonly static string AssetIdDefaultValue = "";
 
     private string assetId_;
+    /// <summary>
+    /// Activity asset ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AssetId {
@@ -493,12 +484,15 @@ namespace Avn.Connect.V1 {
     private readonly static long SizeBytesDefaultValue = 0L;
 
     private long sizeBytes_;
+    /// <summary>
+    /// Activity size in bytes
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long SizeBytes {
-      get { if ((_hasBits0 & 1) != 0) { return sizeBytes_; } else { return SizeBytesDefaultValue; } }
+      get { if ((_hasBits0 & 2) != 0) { return sizeBytes_; } else { return SizeBytesDefaultValue; } }
       set {
-        _hasBits0 |= 1;
+        _hasBits0 |= 2;
         sizeBytes_ = value;
       }
     }
@@ -506,13 +500,13 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSizeBytes {
-      get { return (_hasBits0 & 1) != 0; }
+      get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "size_bytes" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSizeBytes() {
-      _hasBits0 &= ~1;
+      _hasBits0 &= ~2;
     }
 
     /// <summary>Field number for the "item_count" field.</summary>
@@ -520,12 +514,15 @@ namespace Avn.Connect.V1 {
     private readonly static int ItemCountDefaultValue = 0;
 
     private int itemCount_;
+    /// <summary>
+    /// Number of child entities
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ItemCount {
-      get { if ((_hasBits0 & 2) != 0) { return itemCount_; } else { return ItemCountDefaultValue; } }
+      get { if ((_hasBits0 & 4) != 0) { return itemCount_; } else { return ItemCountDefaultValue; } }
       set {
-        _hasBits0 |= 2;
+        _hasBits0 |= 4;
         itemCount_ = value;
       }
     }
@@ -533,13 +530,13 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasItemCount {
-      get { return (_hasBits0 & 2) != 0; }
+      get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "item_count" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearItemCount() {
-      _hasBits0 &= ~2;
+      _hasBits0 &= ~4;
     }
 
     /// <summary>Field number for the "track_count" field.</summary>
@@ -547,12 +544,15 @@ namespace Avn.Connect.V1 {
     private readonly static int TrackCountDefaultValue = 0;
 
     private int trackCount_;
+    /// <summary>
+    /// Number of child tracks (a subset of entities) for display purposes
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TrackCount {
-      get { if ((_hasBits0 & 4) != 0) { return trackCount_; } else { return TrackCountDefaultValue; } }
+      get { if ((_hasBits0 & 8) != 0) { return trackCount_; } else { return TrackCountDefaultValue; } }
       set {
-        _hasBits0 |= 4;
+        _hasBits0 |= 8;
         trackCount_ = value;
       }
     }
@@ -560,13 +560,13 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTrackCount {
-      get { return (_hasBits0 & 4) != 0; }
+      get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "track_count" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTrackCount() {
-      _hasBits0 &= ~4;
+      _hasBits0 &= ~8;
     }
 
     private object owner_;
@@ -606,7 +606,7 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (EntityId != other.EntityId) return false;
-      if (!object.Equals(Name, other.Name)) return false;
+      if (Name != other.Name) return false;
       if (!object.Equals(Updated, other.Updated)) return false;
       if (IconUrl != other.IconUrl) return false;
       if (PreviewUrl != other.PreviewUrl) return false;
@@ -616,6 +616,7 @@ namespace Avn.Connect.V1 {
       if (!object.Equals(Featured, other.Featured)) return false;
       if (OrganizationId != other.OrganizationId) return false;
       if (UserId != other.UserId) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SearchDistance, other.SearchDistance)) return false;
       if (Available != other.Available) return false;
       if (AssetId != other.AssetId) return false;
       if (SizeBytes != other.SizeBytes) return false;
@@ -630,7 +631,7 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (updated_ != null) hash ^= Updated.GetHashCode();
       if (IconUrl.Length != 0) hash ^= IconUrl.GetHashCode();
       if (PreviewUrl.Length != 0) hash ^= PreviewUrl.GetHashCode();
@@ -640,6 +641,7 @@ namespace Avn.Connect.V1 {
       if (featured_ != null) hash ^= Featured.GetHashCode();
       if (HasOrganizationId) hash ^= OrganizationId.GetHashCode();
       if (HasUserId) hash ^= UserId.GetHashCode();
+      if (HasSearchDistance) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SearchDistance);
       if (Available != false) hash ^= Available.GetHashCode();
       if (HasAssetId) hash ^= AssetId.GetHashCode();
       if (HasSizeBytes) hash ^= SizeBytes.GetHashCode();
@@ -668,9 +670,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (updated_ != null) {
         output.WriteRawTag(26);
@@ -704,6 +706,10 @@ namespace Avn.Connect.V1 {
       if (HasUserId) {
         output.WriteRawTag(88);
         output.WriteInt32(UserId);
+      }
+      if (HasSearchDistance) {
+        output.WriteRawTag(101);
+        output.WriteFloat(SearchDistance);
       }
       if (Available != false) {
         output.WriteRawTag(160, 1);
@@ -739,9 +745,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (updated_ != null) {
         output.WriteRawTag(26);
@@ -776,6 +782,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(88);
         output.WriteInt32(UserId);
       }
+      if (HasSearchDistance) {
+        output.WriteRawTag(101);
+        output.WriteFloat(SearchDistance);
+      }
       if (Available != false) {
         output.WriteRawTag(160, 1);
         output.WriteBool(Available);
@@ -809,8 +819,8 @@ namespace Avn.Connect.V1 {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (updated_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Updated);
@@ -836,6 +846,9 @@ namespace Avn.Connect.V1 {
       }
       if (HasUserId) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+      }
+      if (HasSearchDistance) {
+        size += 1 + 4;
       }
       if (Available != false) {
         size += 2 + 1;
@@ -867,11 +880,8 @@ namespace Avn.Connect.V1 {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       if (other.updated_ != null) {
         if (updated_ == null) {
@@ -900,6 +910,9 @@ namespace Avn.Connect.V1 {
           Featured = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         Featured.MergeFrom(other.Featured);
+      }
+      if (other.HasSearchDistance) {
+        SearchDistance = other.SearchDistance;
       }
       if (other.Available != false) {
         Available = other.Available;
@@ -949,10 +962,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -1001,6 +1011,10 @@ namespace Avn.Connect.V1 {
             UserId = input.ReadInt32();
             break;
           }
+          case 101: {
+            SearchDistance = input.ReadFloat();
+            break;
+          }
           case 160: {
             Available = input.ReadBool();
             break;
@@ -1045,10 +1059,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -1097,6 +1108,10 @@ namespace Avn.Connect.V1 {
             UserId = input.ReadInt32();
             break;
           }
+          case 101: {
+            SearchDistance = input.ReadFloat();
+            break;
+          }
           case 160: {
             Available = input.ReadBool();
             break;
@@ -1124,6 +1139,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Common request signatures for entity types
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetEntityRequest : pb::IMessage<GetEntityRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1176,6 +1194,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1188,6 +1209,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 2;
     private int entityId_;
+    /// <summary>
+    /// Requested entity ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -1200,6 +1224,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 3;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -1212,6 +1239,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "icon_spec" field.</summary>
     public const int IconSpecFieldNumber = 4;
     private global::Avn.Connect.V1.TranscodeImageSpec iconSpec_;
+    /// <summary>
+    /// Icon transcoding instructions. No icon is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranscodeImageSpec IconSpec {
@@ -1224,6 +1254,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "preview_spec" field.</summary>
     public const int PreviewSpecFieldNumber = 5;
     private global::Avn.Connect.V1.TranscodeImageSpec previewSpec_;
+    /// <summary>
+    /// Preview transcoding instructions. No preview is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranscodeImageSpec PreviewSpec {
@@ -1506,6 +1539,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Common request for entity creation
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CreateEntityRequest : pb::IMessage<CreateEntityRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1558,6 +1594,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1824,6 +1863,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Common response for entity creation
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CreateEntityResponse : pb::IMessage<CreateEntityResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1872,6 +1914,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
     private int entityId_;
+    /// <summary>
+    /// ID of the new entity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -2022,6 +2067,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Common request for entity deletion
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DeleteEntityRequest : pb::IMessage<DeleteEntityRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2071,6 +2119,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -2083,6 +2134,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 2;
     private int entityId_;
+    /// <summary>
+    /// ID of entity to delete
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -2266,6 +2320,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Common request for entity copying
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CopyEntityRequest : pb::IMessage<CopyEntityRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2274,7 +2331,6 @@ namespace Avn.Connect.V1 {
   {
     private static readonly pb::MessageParser<CopyEntityRequest> _parser = new pb::MessageParser<CopyEntityRequest>(() => new CopyEntityRequest());
     private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CopyEntityRequest> Parser { get { return _parser; } }
@@ -2302,7 +2358,6 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CopyEntityRequest(CopyEntityRequest other) : this() {
-      _hasBits0 = other._hasBits0;
       auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       organizationId_ = other.organizationId_;
       targetId_ = other.targetId_;
@@ -2318,6 +2373,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -2329,38 +2387,21 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 2;
-    private readonly static int OrganizationIdDefaultValue = 0;
-
     private int organizationId_;
     /// <summary>
-    /// Entities with no organization belong to the creating user by default
+    /// Organization to copy entity into
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
-      get { if ((_hasBits0 & 1) != 0) { return organizationId_; } else { return OrganizationIdDefaultValue; } }
+      get { return organizationId_; }
       set {
-        _hasBits0 |= 1;
         organizationId_ = value;
       }
-    }
-    /// <summary>Gets whether the "organization_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasOrganizationId {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "organization_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearOrganizationId() {
-      _hasBits0 &= ~1;
     }
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 3;
-    private readonly static int TargetIdDefaultValue = 0;
-
     private int targetId_;
     /// <summary>
     /// Target entity to copy
@@ -2368,23 +2409,10 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TargetId {
-      get { if ((_hasBits0 & 2) != 0) { return targetId_; } else { return TargetIdDefaultValue; } }
+      get { return targetId_; }
       set {
-        _hasBits0 |= 2;
         targetId_ = value;
       }
-    }
-    /// <summary>Gets whether the "target_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasTargetId {
-      get { return (_hasBits0 & 2) != 0; }
-    }
-    /// <summary>Clears the value of the "target_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearTargetId() {
-      _hasBits0 &= ~2;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2413,8 +2441,8 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (auth_ != null) hash ^= Auth.GetHashCode();
-      if (HasOrganizationId) hash ^= OrganizationId.GetHashCode();
-      if (HasTargetId) hash ^= TargetId.GetHashCode();
+      if (OrganizationId != 0) hash ^= OrganizationId.GetHashCode();
+      if (TargetId != 0) hash ^= TargetId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2437,11 +2465,11 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(10);
         output.WriteMessage(Auth);
       }
-      if (HasOrganizationId) {
+      if (OrganizationId != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(OrganizationId);
       }
-      if (HasTargetId) {
+      if (TargetId != 0) {
         output.WriteRawTag(24);
         output.WriteInt32(TargetId);
       }
@@ -2459,11 +2487,11 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(10);
         output.WriteMessage(Auth);
       }
-      if (HasOrganizationId) {
+      if (OrganizationId != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(OrganizationId);
       }
-      if (HasTargetId) {
+      if (TargetId != 0) {
         output.WriteRawTag(24);
         output.WriteInt32(TargetId);
       }
@@ -2480,10 +2508,10 @@ namespace Avn.Connect.V1 {
       if (auth_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
       }
-      if (HasOrganizationId) {
+      if (OrganizationId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(OrganizationId);
       }
-      if (HasTargetId) {
+      if (TargetId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TargetId);
       }
       if (_unknownFields != null) {
@@ -2504,10 +2532,10 @@ namespace Avn.Connect.V1 {
         }
         Auth.MergeFrom(other.Auth);
       }
-      if (other.HasOrganizationId) {
+      if (other.OrganizationId != 0) {
         OrganizationId = other.OrganizationId;
       }
-      if (other.HasTargetId) {
+      if (other.TargetId != 0) {
         TargetId = other.TargetId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2586,7 +2614,7 @@ namespace Avn.Connect.V1 {
   }
 
   /// <summary>
-  /// Common request for entity lists
+  /// Common request for entity listing
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class EntityInfoListRequest : pb::IMessage<EntityInfoListRequest>
@@ -2635,6 +2663,7 @@ namespace Avn.Connect.V1 {
       pageToken_ = other.pageToken_;
       iconSpec_ = other.iconSpec_ != null ? other.iconSpec_.Clone() : null;
       previewSpec_ = other.previewSpec_ != null ? other.previewSpec_.Clone() : null;
+      searchDistanceThreshold_ = other.searchDistanceThreshold_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2647,6 +2676,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -2662,7 +2694,7 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForInt32(18);
     private readonly pbc::RepeatedField<int> entityIds_ = new pbc::RepeatedField<int>();
     /// <summary>
-    /// IDs of container elements (e.g. categories) or owner organizations (i.e. channels)
+    /// IDs of container elements (e.g. categories) or owner organizations to search
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2673,6 +2705,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "translate" field.</summary>
     public const int TranslateFieldNumber = 3;
     private global::Avn.Connect.V1.TranslationSpec translate_;
+    /// <summary>
+    /// Translation instructions. The original text is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranslationSpec Translate {
@@ -2730,6 +2765,9 @@ namespace Avn.Connect.V1 {
     private readonly static int PageSizeDefaultValue = 0;
 
     private int pageSize_;
+    /// <summary>
+    /// Maximum number of results to return. Defaults to 30 if unset and the maximum value is 128.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PageSize {
@@ -2757,6 +2795,9 @@ namespace Avn.Connect.V1 {
     private readonly static string PageTokenDefaultValue = "";
 
     private string pageToken_;
+    /// <summary>
+    /// Start point from a previous paged search
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PageToken {
@@ -2781,6 +2822,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "icon_spec" field.</summary>
     public const int IconSpecFieldNumber = 10;
     private global::Avn.Connect.V1.TranscodeImageSpec iconSpec_;
+    /// <summary>
+    /// Icon transcoding instructions. No icon is returned if this in unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranscodeImageSpec IconSpec {
@@ -2793,6 +2837,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "preview_spec" field.</summary>
     public const int PreviewSpecFieldNumber = 11;
     private global::Avn.Connect.V1.TranscodeImageSpec previewSpec_;
+    /// <summary>
+    /// Preview transcoding instructions. No preview is returned if this is unset.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranscodeImageSpec PreviewSpec {
@@ -2800,6 +2847,36 @@ namespace Avn.Connect.V1 {
       set {
         previewSpec_ = value;
       }
+    }
+
+    /// <summary>Field number for the "search_distance_threshold" field.</summary>
+    public const int SearchDistanceThresholdFieldNumber = 12;
+    private readonly static float SearchDistanceThresholdDefaultValue = 0F;
+
+    private float searchDistanceThreshold_;
+    /// <summary>
+    /// Cutoff for vector search results
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float SearchDistanceThreshold {
+      get { if ((_hasBits0 & 2) != 0) { return searchDistanceThreshold_; } else { return SearchDistanceThresholdDefaultValue; } }
+      set {
+        _hasBits0 |= 2;
+        searchDistanceThreshold_ = value;
+      }
+    }
+    /// <summary>Gets whether the "search_distance_threshold" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSearchDistanceThreshold {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "search_distance_threshold" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSearchDistanceThreshold() {
+      _hasBits0 &= ~2;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2827,6 +2904,7 @@ namespace Avn.Connect.V1 {
       if (PageToken != other.PageToken) return false;
       if (!object.Equals(IconSpec, other.IconSpec)) return false;
       if (!object.Equals(PreviewSpec, other.PreviewSpec)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SearchDistanceThreshold, other.SearchDistanceThreshold)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2844,6 +2922,7 @@ namespace Avn.Connect.V1 {
       if (HasPageToken) hash ^= PageToken.GetHashCode();
       if (iconSpec_ != null) hash ^= IconSpec.GetHashCode();
       if (previewSpec_ != null) hash ^= PreviewSpec.GetHashCode();
+      if (HasSearchDistanceThreshold) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SearchDistanceThreshold);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2893,6 +2972,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(90);
         output.WriteMessage(PreviewSpec);
       }
+      if (HasSearchDistanceThreshold) {
+        output.WriteRawTag(101);
+        output.WriteFloat(SearchDistanceThreshold);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2934,6 +3017,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(90);
         output.WriteMessage(PreviewSpec);
       }
+      if (HasSearchDistanceThreshold) {
+        output.WriteRawTag(101);
+        output.WriteFloat(SearchDistanceThreshold);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2967,6 +3054,9 @@ namespace Avn.Connect.V1 {
       }
       if (previewSpec_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PreviewSpec);
+      }
+      if (HasSearchDistanceThreshold) {
+        size += 1 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3018,6 +3108,9 @@ namespace Avn.Connect.V1 {
           PreviewSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
         }
         PreviewSpec.MergeFrom(other.PreviewSpec);
+      }
+      if (other.HasSearchDistanceThreshold) {
+        SearchDistanceThreshold = other.SearchDistanceThreshold;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3092,6 +3185,10 @@ namespace Avn.Connect.V1 {
               PreviewSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
             }
             input.ReadMessage(PreviewSpec);
+            break;
+          }
+          case 101: {
+            SearchDistanceThreshold = input.ReadFloat();
             break;
           }
         }
@@ -3169,6 +3266,10 @@ namespace Avn.Connect.V1 {
             input.ReadMessage(PreviewSpec);
             break;
           }
+          case 101: {
+            SearchDistanceThreshold = input.ReadFloat();
+            break;
+          }
         }
       }
     }
@@ -3230,6 +3331,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.EntityInfo> _repeated_results_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.EntityInfo.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.EntityInfo> results_ = new pbc::RepeatedField<global::Avn.Connect.V1.EntityInfo>();
+    /// <summary>
+    /// Search results
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.EntityInfo> Results {
@@ -3241,6 +3345,9 @@ namespace Avn.Connect.V1 {
     private readonly static string NextPageTokenDefaultValue = "";
 
     private string nextPageToken_;
+    /// <summary>
+    /// Token to use to get more pages of results or unset if no more results are available
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string NextPageToken {
@@ -3417,6 +3524,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Common request for adding child entities to collections
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AddChildrenRequest : pb::IMessage<AddChildrenRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3470,6 +3580,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -3482,6 +3595,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "parent_id" field.</summary>
     public const int ParentIdFieldNumber = 2;
     private int parentId_;
+    /// <summary>
+    /// ID of the parent
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ParentId {
@@ -3496,6 +3612,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_childIds_codec
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> childIds_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// IDs of the children to add
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> ChildIds {
@@ -3507,6 +3626,9 @@ namespace Avn.Connect.V1 {
     private readonly static bool ReplaceExistingDefaultValue = false;
 
     private bool replaceExisting_;
+    /// <summary>
+    /// Should all existing children be replaced? The default is false.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ReplaceExisting {
@@ -3743,6 +3865,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// Common request for removing child entities from collections
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RemoveChildrenRequest : pb::IMessage<RemoveChildrenRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3793,6 +3918,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -3805,6 +3933,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "parent_id" field.</summary>
     public const int ParentIdFieldNumber = 2;
     private int parentId_;
+    /// <summary>
+    /// ID of the parent
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ParentId {
@@ -3819,6 +3950,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_childIds_codec
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> childIds_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// IDS of the children to remove
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> ChildIds {
@@ -4006,2167 +4140,6 @@ namespace Avn.Connect.V1 {
           case 26:
           case 24: {
             childIds_.AddEntriesFrom(ref input, _repeated_childIds_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class EntityMetadata : pb::IMessage<EntityMetadata>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<EntityMetadata> _parser = new pb::MessageParser<EntityMetadata>(() => new EntityMetadata());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<EntityMetadata> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.EntitiesReflection.Descriptor.MessageTypes[10]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityMetadata() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityMetadata(EntityMetadata other) : this() {
-      entityId_ = other.entityId_;
-      key_ = other.key_;
-      value_ = other.value_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityMetadata Clone() {
-      return new EntityMetadata(this);
-    }
-
-    /// <summary>Field number for the "entity_id" field.</summary>
-    public const int EntityIdFieldNumber = 1;
-    private int entityId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int EntityId {
-      get { return entityId_; }
-      set {
-        entityId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "key" field.</summary>
-    public const int KeyFieldNumber = 2;
-    private string key_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Key {
-      get { return key_; }
-      set {
-        key_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "value" field.</summary>
-    public const int ValueFieldNumber = 3;
-    private readonly static string ValueDefaultValue = "";
-
-    private string value_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Value {
-      get { return value_ ?? ValueDefaultValue; }
-      set {
-        value_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-    /// <summary>Gets whether the "value" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasValue {
-      get { return value_ != null; }
-    }
-    /// <summary>Clears the value of the "value" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearValue() {
-      value_ = null;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as EntityMetadata);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(EntityMetadata other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (EntityId != other.EntityId) return false;
-      if (Key != other.Key) return false;
-      if (Value != other.Value) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (Key.Length != 0) hash ^= Key.GetHashCode();
-      if (HasValue) hash ^= Value.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (EntityId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(EntityId);
-      }
-      if (Key.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Key);
-      }
-      if (HasValue) {
-        output.WriteRawTag(26);
-        output.WriteString(Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (EntityId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(EntityId);
-      }
-      if (Key.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Key);
-      }
-      if (HasValue) {
-        output.WriteRawTag(26);
-        output.WriteString(Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (EntityId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
-      }
-      if (Key.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Key);
-      }
-      if (HasValue) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(EntityMetadata other) {
-      if (other == null) {
-        return;
-      }
-      if (other.EntityId != 0) {
-        EntityId = other.EntityId;
-      }
-      if (other.Key.Length != 0) {
-        Key = other.Key;
-      }
-      if (other.HasValue) {
-        Value = other.Value;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            EntityId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Key = input.ReadString();
-            break;
-          }
-          case 26: {
-            Value = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            EntityId = input.ReadInt32();
-            break;
-          }
-          case 18: {
-            Key = input.ReadString();
-            break;
-          }
-          case 26: {
-            Value = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class MetadataRequest : pb::IMessage<MetadataRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<MetadataRequest> _parser = new pb::MessageParser<MetadataRequest>(() => new MetadataRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<MetadataRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.EntitiesReflection.Descriptor.MessageTypes[11]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MetadataRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MetadataRequest(MetadataRequest other) : this() {
-      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
-      metadata_ = other.metadata_ != null ? other.metadata_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public MetadataRequest Clone() {
-      return new MetadataRequest(this);
-    }
-
-    /// <summary>Field number for the "auth" field.</summary>
-    public const int AuthFieldNumber = 1;
-    private global::Avn.Connect.V1.Authorization auth_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Authorization Auth {
-      get { return auth_; }
-      set {
-        auth_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "metadata" field.</summary>
-    public const int MetadataFieldNumber = 2;
-    private global::Avn.Connect.V1.EntityMetadata metadata_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.EntityMetadata Metadata {
-      get { return metadata_; }
-      set {
-        metadata_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as MetadataRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(MetadataRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Auth, other.Auth)) return false;
-      if (!object.Equals(Metadata, other.Metadata)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (auth_ != null) hash ^= Auth.GetHashCode();
-      if (metadata_ != null) hash ^= Metadata.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (auth_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Auth);
-      }
-      if (metadata_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Metadata);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (auth_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Auth);
-      }
-      if (metadata_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Metadata);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (auth_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
-      }
-      if (metadata_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Metadata);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(MetadataRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.auth_ != null) {
-        if (auth_ == null) {
-          Auth = new global::Avn.Connect.V1.Authorization();
-        }
-        Auth.MergeFrom(other.Auth);
-      }
-      if (other.metadata_ != null) {
-        if (metadata_ == null) {
-          Metadata = new global::Avn.Connect.V1.EntityMetadata();
-        }
-        Metadata.MergeFrom(other.Metadata);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (auth_ == null) {
-              Auth = new global::Avn.Connect.V1.Authorization();
-            }
-            input.ReadMessage(Auth);
-            break;
-          }
-          case 18: {
-            if (metadata_ == null) {
-              Metadata = new global::Avn.Connect.V1.EntityMetadata();
-            }
-            input.ReadMessage(Metadata);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (auth_ == null) {
-              Auth = new global::Avn.Connect.V1.Authorization();
-            }
-            input.ReadMessage(Auth);
-            break;
-          }
-          case 18: {
-            if (metadata_ == null) {
-              Metadata = new global::Avn.Connect.V1.EntityMetadata();
-            }
-            input.ReadMessage(Metadata);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class GetMetadataResponse : pb::IMessage<GetMetadataResponse>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<GetMetadataResponse> _parser = new pb::MessageParser<GetMetadataResponse>(() => new GetMetadataResponse());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetMetadataResponse> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.EntitiesReflection.Descriptor.MessageTypes[12]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetMetadataResponse() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetMetadataResponse(GetMetadataResponse other) : this() {
-      results_ = other.results_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetMetadataResponse Clone() {
-      return new GetMetadataResponse(this);
-    }
-
-    /// <summary>Field number for the "results" field.</summary>
-    public const int ResultsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Avn.Connect.V1.EntityMetadata> _repeated_results_codec
-        = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.EntityMetadata.Parser);
-    private readonly pbc::RepeatedField<global::Avn.Connect.V1.EntityMetadata> results_ = new pbc::RepeatedField<global::Avn.Connect.V1.EntityMetadata>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Avn.Connect.V1.EntityMetadata> Results {
-      get { return results_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as GetMetadataResponse);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetMetadataResponse other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!results_.Equals(other.results_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= results_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      results_.WriteTo(output, _repeated_results_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      results_.WriteTo(ref output, _repeated_results_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      size += results_.CalculateSize(_repeated_results_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetMetadataResponse other) {
-      if (other == null) {
-        return;
-      }
-      results_.Add(other.results_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            results_.AddEntriesFrom(input, _repeated_results_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            results_.AddEntriesFrom(ref input, _repeated_results_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// Generic pattern for entity property setting
-  /// </summary>
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class SetEntityPropertiesRequest : pb::IMessage<SetEntityPropertiesRequest>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<SetEntityPropertiesRequest> _parser = new pb::MessageParser<SetEntityPropertiesRequest>(() => new SetEntityPropertiesRequest());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<SetEntityPropertiesRequest> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.EntitiesReflection.Descriptor.MessageTypes[13]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SetEntityPropertiesRequest() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SetEntityPropertiesRequest(SetEntityPropertiesRequest other) : this() {
-      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
-      entityId_ = other.entityId_;
-      propertyStates_ = other.propertyStates_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SetEntityPropertiesRequest Clone() {
-      return new SetEntityPropertiesRequest(this);
-    }
-
-    /// <summary>Field number for the "auth" field.</summary>
-    public const int AuthFieldNumber = 1;
-    private global::Avn.Connect.V1.Authorization auth_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Authorization Auth {
-      get { return auth_; }
-      set {
-        auth_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "entity_id" field.</summary>
-    public const int EntityIdFieldNumber = 2;
-    private int entityId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int EntityId {
-      get { return entityId_; }
-      set {
-        entityId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "property_states" field.</summary>
-    public const int PropertyStatesFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Avn.Connect.V1.EntityPropertyState> _repeated_propertyStates_codec
-        = pb::FieldCodec.ForMessage(26, global::Avn.Connect.V1.EntityPropertyState.Parser);
-    private readonly pbc::RepeatedField<global::Avn.Connect.V1.EntityPropertyState> propertyStates_ = new pbc::RepeatedField<global::Avn.Connect.V1.EntityPropertyState>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Avn.Connect.V1.EntityPropertyState> PropertyStates {
-      get { return propertyStates_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as SetEntityPropertiesRequest);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(SetEntityPropertiesRequest other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Auth, other.Auth)) return false;
-      if (EntityId != other.EntityId) return false;
-      if(!propertyStates_.Equals(other.propertyStates_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (auth_ != null) hash ^= Auth.GetHashCode();
-      if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      hash ^= propertyStates_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (auth_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Auth);
-      }
-      if (EntityId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(EntityId);
-      }
-      propertyStates_.WriteTo(output, _repeated_propertyStates_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (auth_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Auth);
-      }
-      if (EntityId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(EntityId);
-      }
-      propertyStates_.WriteTo(ref output, _repeated_propertyStates_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (auth_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
-      }
-      if (EntityId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
-      }
-      size += propertyStates_.CalculateSize(_repeated_propertyStates_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(SetEntityPropertiesRequest other) {
-      if (other == null) {
-        return;
-      }
-      if (other.auth_ != null) {
-        if (auth_ == null) {
-          Auth = new global::Avn.Connect.V1.Authorization();
-        }
-        Auth.MergeFrom(other.Auth);
-      }
-      if (other.EntityId != 0) {
-        EntityId = other.EntityId;
-      }
-      propertyStates_.Add(other.propertyStates_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (auth_ == null) {
-              Auth = new global::Avn.Connect.V1.Authorization();
-            }
-            input.ReadMessage(Auth);
-            break;
-          }
-          case 16: {
-            EntityId = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            propertyStates_.AddEntriesFrom(input, _repeated_propertyStates_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (auth_ == null) {
-              Auth = new global::Avn.Connect.V1.Authorization();
-            }
-            input.ReadMessage(Auth);
-            break;
-          }
-          case 16: {
-            EntityId = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            propertyStates_.AddEntriesFrom(ref input, _repeated_propertyStates_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class EntityPropertyState : pb::IMessage<EntityPropertyState>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<EntityPropertyState> _parser = new pb::MessageParser<EntityPropertyState>(() => new EntityPropertyState());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<EntityPropertyState> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.EntitiesReflection.Descriptor.MessageTypes[14]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityPropertyState() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityPropertyState(EntityPropertyState other) : this() {
-      property_ = other.property_;
-      switch (other.StateCase) {
-        case StateOneofCase.Bool:
-          Bool = other.Bool;
-          break;
-        case StateOneofCase.Int32:
-          Int32 = other.Int32;
-          break;
-        case StateOneofCase.Int64:
-          Int64 = other.Int64;
-          break;
-        case StateOneofCase.Float:
-          Float = other.Float;
-          break;
-        case StateOneofCase.Double:
-          Double = other.Double;
-          break;
-        case StateOneofCase.String:
-          String = other.String;
-          break;
-        case StateOneofCase.Bytes:
-          Bytes = other.Bytes;
-          break;
-        case StateOneofCase.Timestamp:
-          Timestamp = other.Timestamp.Clone();
-          break;
-      }
-
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public EntityPropertyState Clone() {
-      return new EntityPropertyState(this);
-    }
-
-    /// <summary>Field number for the "property" field.</summary>
-    public const int PropertyFieldNumber = 3;
-    private global::Avn.Connect.V1.EntityProperty property_ = global::Avn.Connect.V1.EntityProperty.Unspecified;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.EntityProperty Property {
-      get { return property_; }
-      set {
-        property_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "bool" field.</summary>
-    public const int BoolFieldNumber = 4;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Bool {
-      get { return HasBool ? (bool) state_ : false; }
-      set {
-        state_ = value;
-        stateCase_ = StateOneofCase.Bool;
-      }
-    }
-    /// <summary>Gets whether the "bool" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasBool {
-      get { return stateCase_ == StateOneofCase.Bool; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "bool" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearBool() {
-      if (HasBool) {
-        ClearState();
-      }
-    }
-
-    /// <summary>Field number for the "int32" field.</summary>
-    public const int Int32FieldNumber = 5;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Int32 {
-      get { return HasInt32 ? (int) state_ : 0; }
-      set {
-        state_ = value;
-        stateCase_ = StateOneofCase.Int32;
-      }
-    }
-    /// <summary>Gets whether the "int32" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasInt32 {
-      get { return stateCase_ == StateOneofCase.Int32; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "int32" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearInt32() {
-      if (HasInt32) {
-        ClearState();
-      }
-    }
-
-    /// <summary>Field number for the "int64" field.</summary>
-    public const int Int64FieldNumber = 6;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long Int64 {
-      get { return HasInt64 ? (long) state_ : 0L; }
-      set {
-        state_ = value;
-        stateCase_ = StateOneofCase.Int64;
-      }
-    }
-    /// <summary>Gets whether the "int64" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasInt64 {
-      get { return stateCase_ == StateOneofCase.Int64; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "int64" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearInt64() {
-      if (HasInt64) {
-        ClearState();
-      }
-    }
-
-    /// <summary>Field number for the "float" field.</summary>
-    public const int FloatFieldNumber = 7;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Float {
-      get { return HasFloat ? (float) state_ : 0F; }
-      set {
-        state_ = value;
-        stateCase_ = StateOneofCase.Float;
-      }
-    }
-    /// <summary>Gets whether the "float" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasFloat {
-      get { return stateCase_ == StateOneofCase.Float; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "float" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearFloat() {
-      if (HasFloat) {
-        ClearState();
-      }
-    }
-
-    /// <summary>Field number for the "double" field.</summary>
-    public const int DoubleFieldNumber = 8;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public double Double {
-      get { return HasDouble ? (double) state_ : 0D; }
-      set {
-        state_ = value;
-        stateCase_ = StateOneofCase.Double;
-      }
-    }
-    /// <summary>Gets whether the "double" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasDouble {
-      get { return stateCase_ == StateOneofCase.Double; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "double" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearDouble() {
-      if (HasDouble) {
-        ClearState();
-      }
-    }
-
-    /// <summary>Field number for the "string" field.</summary>
-    public const int StringFieldNumber = 9;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string String {
-      get { return HasString ? (string) state_ : ""; }
-      set {
-        state_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-        stateCase_ = StateOneofCase.String;
-      }
-    }
-    /// <summary>Gets whether the "string" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasString {
-      get { return stateCase_ == StateOneofCase.String; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "string" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearString() {
-      if (HasString) {
-        ClearState();
-      }
-    }
-
-    /// <summary>Field number for the "bytes" field.</summary>
-    public const int BytesFieldNumber = 10;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pb::ByteString Bytes {
-      get { return HasBytes ? (pb::ByteString) state_ : pb::ByteString.Empty; }
-      set {
-        state_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-        stateCase_ = StateOneofCase.Bytes;
-      }
-    }
-    /// <summary>Gets whether the "bytes" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasBytes {
-      get { return stateCase_ == StateOneofCase.Bytes; }
-    }
-    /// <summary> Clears the value of the oneof if it's currently set to "bytes" </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearBytes() {
-      if (HasBytes) {
-        ClearState();
-      }
-    }
-
-    /// <summary>Field number for the "timestamp" field.</summary>
-    public const int TimestampFieldNumber = 11;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
-      get { return stateCase_ == StateOneofCase.Timestamp ? (global::Google.Protobuf.WellKnownTypes.Timestamp) state_ : null; }
-      set {
-        state_ = value;
-        stateCase_ = value == null ? StateOneofCase.None : StateOneofCase.Timestamp;
-      }
-    }
-
-    private object state_;
-    /// <summary>Enum of possible cases for the "state" oneof.</summary>
-    public enum StateOneofCase {
-      None = 0,
-      Bool = 4,
-      Int32 = 5,
-      Int64 = 6,
-      Float = 7,
-      Double = 8,
-      String = 9,
-      Bytes = 10,
-      Timestamp = 11,
-    }
-    private StateOneofCase stateCase_ = StateOneofCase.None;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public StateOneofCase StateCase {
-      get { return stateCase_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearState() {
-      stateCase_ = StateOneofCase.None;
-      state_ = null;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as EntityPropertyState);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(EntityPropertyState other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Property != other.Property) return false;
-      if (Bool != other.Bool) return false;
-      if (Int32 != other.Int32) return false;
-      if (Int64 != other.Int64) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Float, other.Float)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Double, other.Double)) return false;
-      if (String != other.String) return false;
-      if (Bytes != other.Bytes) return false;
-      if (!object.Equals(Timestamp, other.Timestamp)) return false;
-      if (StateCase != other.StateCase) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Property != global::Avn.Connect.V1.EntityProperty.Unspecified) hash ^= Property.GetHashCode();
-      if (HasBool) hash ^= Bool.GetHashCode();
-      if (HasInt32) hash ^= Int32.GetHashCode();
-      if (HasInt64) hash ^= Int64.GetHashCode();
-      if (HasFloat) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Float);
-      if (HasDouble) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Double);
-      if (HasString) hash ^= String.GetHashCode();
-      if (HasBytes) hash ^= Bytes.GetHashCode();
-      if (stateCase_ == StateOneofCase.Timestamp) hash ^= Timestamp.GetHashCode();
-      hash ^= (int) stateCase_;
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Property != global::Avn.Connect.V1.EntityProperty.Unspecified) {
-        output.WriteRawTag(24);
-        output.WriteEnum((int) Property);
-      }
-      if (HasBool) {
-        output.WriteRawTag(32);
-        output.WriteBool(Bool);
-      }
-      if (HasInt32) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Int32);
-      }
-      if (HasInt64) {
-        output.WriteRawTag(48);
-        output.WriteInt64(Int64);
-      }
-      if (HasFloat) {
-        output.WriteRawTag(61);
-        output.WriteFloat(Float);
-      }
-      if (HasDouble) {
-        output.WriteRawTag(65);
-        output.WriteDouble(Double);
-      }
-      if (HasString) {
-        output.WriteRawTag(74);
-        output.WriteString(String);
-      }
-      if (HasBytes) {
-        output.WriteRawTag(82);
-        output.WriteBytes(Bytes);
-      }
-      if (stateCase_ == StateOneofCase.Timestamp) {
-        output.WriteRawTag(90);
-        output.WriteMessage(Timestamp);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Property != global::Avn.Connect.V1.EntityProperty.Unspecified) {
-        output.WriteRawTag(24);
-        output.WriteEnum((int) Property);
-      }
-      if (HasBool) {
-        output.WriteRawTag(32);
-        output.WriteBool(Bool);
-      }
-      if (HasInt32) {
-        output.WriteRawTag(40);
-        output.WriteInt32(Int32);
-      }
-      if (HasInt64) {
-        output.WriteRawTag(48);
-        output.WriteInt64(Int64);
-      }
-      if (HasFloat) {
-        output.WriteRawTag(61);
-        output.WriteFloat(Float);
-      }
-      if (HasDouble) {
-        output.WriteRawTag(65);
-        output.WriteDouble(Double);
-      }
-      if (HasString) {
-        output.WriteRawTag(74);
-        output.WriteString(String);
-      }
-      if (HasBytes) {
-        output.WriteRawTag(82);
-        output.WriteBytes(Bytes);
-      }
-      if (stateCase_ == StateOneofCase.Timestamp) {
-        output.WriteRawTag(90);
-        output.WriteMessage(Timestamp);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Property != global::Avn.Connect.V1.EntityProperty.Unspecified) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Property);
-      }
-      if (HasBool) {
-        size += 1 + 1;
-      }
-      if (HasInt32) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Int32);
-      }
-      if (HasInt64) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Int64);
-      }
-      if (HasFloat) {
-        size += 1 + 4;
-      }
-      if (HasDouble) {
-        size += 1 + 8;
-      }
-      if (HasString) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(String);
-      }
-      if (HasBytes) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Bytes);
-      }
-      if (stateCase_ == StateOneofCase.Timestamp) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Timestamp);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(EntityPropertyState other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Property != global::Avn.Connect.V1.EntityProperty.Unspecified) {
-        Property = other.Property;
-      }
-      switch (other.StateCase) {
-        case StateOneofCase.Bool:
-          Bool = other.Bool;
-          break;
-        case StateOneofCase.Int32:
-          Int32 = other.Int32;
-          break;
-        case StateOneofCase.Int64:
-          Int64 = other.Int64;
-          break;
-        case StateOneofCase.Float:
-          Float = other.Float;
-          break;
-        case StateOneofCase.Double:
-          Double = other.Double;
-          break;
-        case StateOneofCase.String:
-          String = other.String;
-          break;
-        case StateOneofCase.Bytes:
-          Bytes = other.Bytes;
-          break;
-        case StateOneofCase.Timestamp:
-          if (Timestamp == null) {
-            Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-          }
-          Timestamp.MergeFrom(other.Timestamp);
-          break;
-      }
-
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 24: {
-            Property = (global::Avn.Connect.V1.EntityProperty) input.ReadEnum();
-            break;
-          }
-          case 32: {
-            Bool = input.ReadBool();
-            break;
-          }
-          case 40: {
-            Int32 = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            Int64 = input.ReadInt64();
-            break;
-          }
-          case 61: {
-            Float = input.ReadFloat();
-            break;
-          }
-          case 65: {
-            Double = input.ReadDouble();
-            break;
-          }
-          case 74: {
-            String = input.ReadString();
-            break;
-          }
-          case 82: {
-            Bytes = input.ReadBytes();
-            break;
-          }
-          case 90: {
-            global::Google.Protobuf.WellKnownTypes.Timestamp subBuilder = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            if (stateCase_ == StateOneofCase.Timestamp) {
-              subBuilder.MergeFrom(Timestamp);
-            }
-            input.ReadMessage(subBuilder);
-            Timestamp = subBuilder;
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 24: {
-            Property = (global::Avn.Connect.V1.EntityProperty) input.ReadEnum();
-            break;
-          }
-          case 32: {
-            Bool = input.ReadBool();
-            break;
-          }
-          case 40: {
-            Int32 = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            Int64 = input.ReadInt64();
-            break;
-          }
-          case 61: {
-            Float = input.ReadFloat();
-            break;
-          }
-          case 65: {
-            Double = input.ReadDouble();
-            break;
-          }
-          case 74: {
-            String = input.ReadString();
-            break;
-          }
-          case 82: {
-            Bytes = input.ReadBytes();
-            break;
-          }
-          case 90: {
-            global::Google.Protobuf.WellKnownTypes.Timestamp subBuilder = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            if (stateCase_ == StateOneofCase.Timestamp) {
-              subBuilder.MergeFrom(Timestamp);
-            }
-            input.ReadMessage(subBuilder);
-            Timestamp = subBuilder;
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class TextSearch : pb::IMessage<TextSearch>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<TextSearch> _parser = new pb::MessageParser<TextSearch>(() => new TextSearch());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<TextSearch> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.EntitiesReflection.Descriptor.MessageTypes[15]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TextSearch() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TextSearch(TextSearch other) : this() {
-      text_ = other.text_;
-      properties_ = other.properties_.Clone();
-      conditions_ = other.conditions_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TextSearch Clone() {
-      return new TextSearch(this);
-    }
-
-    /// <summary>Field number for the "text" field.</summary>
-    public const int TextFieldNumber = 1;
-    private string text_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Text {
-      get { return text_; }
-      set {
-        text_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "properties" field.</summary>
-    public const int PropertiesFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Avn.Connect.V1.EntityProperty> _repeated_properties_codec
-        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::Avn.Connect.V1.EntityProperty) x);
-    private readonly pbc::RepeatedField<global::Avn.Connect.V1.EntityProperty> properties_ = new pbc::RepeatedField<global::Avn.Connect.V1.EntityProperty>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Avn.Connect.V1.EntityProperty> Properties {
-      get { return properties_; }
-    }
-
-    /// <summary>Field number for the "conditions" field.</summary>
-    public const int ConditionsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Avn.Connect.V1.SearchFlags> _repeated_conditions_codec
-        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::Avn.Connect.V1.SearchFlags) x);
-    private readonly pbc::RepeatedField<global::Avn.Connect.V1.SearchFlags> conditions_ = new pbc::RepeatedField<global::Avn.Connect.V1.SearchFlags>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Avn.Connect.V1.SearchFlags> Conditions {
-      get { return conditions_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as TextSearch);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(TextSearch other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Text != other.Text) return false;
-      if(!properties_.Equals(other.properties_)) return false;
-      if(!conditions_.Equals(other.conditions_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Text.Length != 0) hash ^= Text.GetHashCode();
-      hash ^= properties_.GetHashCode();
-      hash ^= conditions_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Text.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Text);
-      }
-      properties_.WriteTo(output, _repeated_properties_codec);
-      conditions_.WriteTo(output, _repeated_conditions_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Text.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(Text);
-      }
-      properties_.WriteTo(ref output, _repeated_properties_codec);
-      conditions_.WriteTo(ref output, _repeated_conditions_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Text.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
-      }
-      size += properties_.CalculateSize(_repeated_properties_codec);
-      size += conditions_.CalculateSize(_repeated_conditions_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(TextSearch other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Text.Length != 0) {
-        Text = other.Text;
-      }
-      properties_.Add(other.properties_);
-      conditions_.Add(other.conditions_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            Text = input.ReadString();
-            break;
-          }
-          case 18:
-          case 16: {
-            properties_.AddEntriesFrom(input, _repeated_properties_codec);
-            break;
-          }
-          case 26:
-          case 24: {
-            conditions_.AddEntriesFrom(input, _repeated_conditions_codec);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            Text = input.ReadString();
-            break;
-          }
-          case 18:
-          case 16: {
-            properties_.AddEntriesFrom(ref input, _repeated_properties_codec);
-            break;
-          }
-          case 26:
-          case 24: {
-            conditions_.AddEntriesFrom(ref input, _repeated_conditions_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class OrderClause : pb::IMessage<OrderClause>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<OrderClause> _parser = new pb::MessageParser<OrderClause>(() => new OrderClause());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<OrderClause> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.EntitiesReflection.Descriptor.MessageTypes[16]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public OrderClause() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public OrderClause(OrderClause other) : this() {
-      _hasBits0 = other._hasBits0;
-      property_ = other.property_;
-      sortOrder_ = other.sortOrder_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public OrderClause Clone() {
-      return new OrderClause(this);
-    }
-
-    /// <summary>Field number for the "property" field.</summary>
-    public const int PropertyFieldNumber = 7;
-    private global::Avn.Connect.V1.EntityProperty property_ = global::Avn.Connect.V1.EntityProperty.Unspecified;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.EntityProperty Property {
-      get { return property_; }
-      set {
-        property_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "sort_order" field.</summary>
-    public const int SortOrderFieldNumber = 8;
-    private readonly static global::Avn.Connect.V1.SortOrder SortOrderDefaultValue = global::Avn.Connect.V1.SortOrder.Unspecified;
-
-    private global::Avn.Connect.V1.SortOrder sortOrder_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.SortOrder SortOrder {
-      get { if ((_hasBits0 & 1) != 0) { return sortOrder_; } else { return SortOrderDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        sortOrder_ = value;
-      }
-    }
-    /// <summary>Gets whether the "sort_order" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasSortOrder {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "sort_order" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearSortOrder() {
-      _hasBits0 &= ~1;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as OrderClause);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(OrderClause other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Property != other.Property) return false;
-      if (SortOrder != other.SortOrder) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Property != global::Avn.Connect.V1.EntityProperty.Unspecified) hash ^= Property.GetHashCode();
-      if (HasSortOrder) hash ^= SortOrder.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Property != global::Avn.Connect.V1.EntityProperty.Unspecified) {
-        output.WriteRawTag(56);
-        output.WriteEnum((int) Property);
-      }
-      if (HasSortOrder) {
-        output.WriteRawTag(64);
-        output.WriteEnum((int) SortOrder);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Property != global::Avn.Connect.V1.EntityProperty.Unspecified) {
-        output.WriteRawTag(56);
-        output.WriteEnum((int) Property);
-      }
-      if (HasSortOrder) {
-        output.WriteRawTag(64);
-        output.WriteEnum((int) SortOrder);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Property != global::Avn.Connect.V1.EntityProperty.Unspecified) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Property);
-      }
-      if (HasSortOrder) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SortOrder);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(OrderClause other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Property != global::Avn.Connect.V1.EntityProperty.Unspecified) {
-        Property = other.Property;
-      }
-      if (other.HasSortOrder) {
-        SortOrder = other.SortOrder;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 56: {
-            Property = (global::Avn.Connect.V1.EntityProperty) input.ReadEnum();
-            break;
-          }
-          case 64: {
-            SortOrder = (global::Avn.Connect.V1.SortOrder) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-      if ((tag & 7) == 4) {
-        // Abort on any end group tag.
-        return;
-      }
-      switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 56: {
-            Property = (global::Avn.Connect.V1.EntityProperty) input.ReadEnum();
-            break;
-          }
-          case 64: {
-            SortOrder = (global::Avn.Connect.V1.SortOrder) input.ReadEnum();
             break;
           }
         }

@@ -25,16 +25,16 @@ namespace Avn.Connect.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chphdm4vY29ubmVjdC92MS9yb2xlcy5wcm90bxIOYXZuLmNvbm5lY3QudjEi",
-            "NAoEUm9sZRIPCgdyb2xlX2lkGAEgASgFEgwKBG5hbWUYAiABKAkSDQoFbGV2",
-            "ZWwYAyABKAUiEQoPR2V0Um9sZXNSZXF1ZXN0IjcKEEdldFJvbGVzUmVzcG9u",
-            "c2USIwoFcm9sZXMYASADKAsyFC5hdm4uY29ubmVjdC52MS5Sb2xlMlwKC1Jv",
-            "bGVTZXJ2aWNlEk0KCEdldFJvbGVzEh8uYXZuLmNvbm5lY3QudjEuR2V0Um9s",
-            "ZXNSZXF1ZXN0GiAuYXZuLmNvbm5lY3QudjEuR2V0Um9sZXNSZXNwb25zZWIG",
-            "cHJvdG8z"));
+            "TAoEUm9sZRIPCgdyb2xlX2lkGAEgASgFEgwKBG5hbWUYAiABKAkSDQoFbGV2",
+            "ZWwYAyABKAUSFgoOcGVybWlzc2lvbl9pZHMYBCADKAkiEQoPR2V0Um9sZXNS",
+            "ZXF1ZXN0IjcKEEdldFJvbGVzUmVzcG9uc2USIwoFcm9sZXMYASADKAsyFC5h",
+            "dm4uY29ubmVjdC52MS5Sb2xlMlwKC1JvbGVTZXJ2aWNlEk0KCEdldFJvbGVz",
+            "Eh8uYXZuLmNvbm5lY3QudjEuR2V0Um9sZXNSZXF1ZXN0GiAuYXZuLmNvbm5l",
+            "Y3QudjEuR2V0Um9sZXNSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Role), global::Avn.Connect.V1.Role.Parser, new[]{ "RoleId", "Name", "Level" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Role), global::Avn.Connect.V1.Role.Parser, new[]{ "RoleId", "Name", "Level", "PermissionIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetRolesRequest), global::Avn.Connect.V1.GetRolesRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetRolesResponse), global::Avn.Connect.V1.GetRolesResponse.Parser, new[]{ "Roles" }, null, null, null, null)
           }));
@@ -81,6 +81,7 @@ namespace Avn.Connect.V1 {
       roleId_ = other.roleId_;
       name_ = other.name_;
       level_ = other.level_;
+      permissionIds_ = other.permissionIds_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -93,6 +94,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "role_id" field.</summary>
     public const int RoleIdFieldNumber = 1;
     private int roleId_;
+    /// <summary>
+    /// Unique role ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int RoleId {
@@ -105,6 +109,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// Role display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -117,6 +124,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "level" field.</summary>
     public const int LevelFieldNumber = 3;
     private int level_;
+    /// <summary>
+    /// Role security level (higher values have more permissions)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Level {
@@ -124,6 +134,20 @@ namespace Avn.Connect.V1 {
       set {
         level_ = value;
       }
+    }
+
+    /// <summary>Field number for the "permission_ids" field.</summary>
+    public const int PermissionIdsFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _repeated_permissionIds_codec
+        = pb::FieldCodec.ForString(34);
+    private readonly pbc::RepeatedField<string> permissionIds_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Permission IDs associated with this role
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> PermissionIds {
+      get { return permissionIds_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -144,6 +168,7 @@ namespace Avn.Connect.V1 {
       if (RoleId != other.RoleId) return false;
       if (Name != other.Name) return false;
       if (Level != other.Level) return false;
+      if(!permissionIds_.Equals(other.permissionIds_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -154,6 +179,7 @@ namespace Avn.Connect.V1 {
       if (RoleId != 0) hash ^= RoleId.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Level != 0) hash ^= Level.GetHashCode();
+      hash ^= permissionIds_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -184,6 +210,7 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(24);
         output.WriteInt32(Level);
       }
+      permissionIds_.WriteTo(output, _repeated_permissionIds_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -206,6 +233,7 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(24);
         output.WriteInt32(Level);
       }
+      permissionIds_.WriteTo(ref output, _repeated_permissionIds_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -225,6 +253,7 @@ namespace Avn.Connect.V1 {
       if (Level != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Level);
       }
+      size += permissionIds_.CalculateSize(_repeated_permissionIds_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -246,6 +275,7 @@ namespace Avn.Connect.V1 {
       if (other.Level != 0) {
         Level = other.Level;
       }
+      permissionIds_.Add(other.permissionIds_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -277,6 +307,10 @@ namespace Avn.Connect.V1 {
             Level = input.ReadInt32();
             break;
           }
+          case 34: {
+            permissionIds_.AddEntriesFrom(input, _repeated_permissionIds_codec);
+            break;
+          }
         }
       }
     #endif
@@ -306,6 +340,10 @@ namespace Avn.Connect.V1 {
           }
           case 24: {
             Level = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            permissionIds_.AddEntriesFrom(ref input, _repeated_permissionIds_codec);
             break;
           }
         }
@@ -526,6 +564,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.Role> _repeated_roles_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.Role.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.Role> roles_ = new pbc::RepeatedField<global::Avn.Connect.V1.Role>();
+    /// <summary>
+    /// All roles
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.Role> Roles {

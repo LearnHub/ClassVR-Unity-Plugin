@@ -30,36 +30,34 @@ namespace Avn.Connect.V1 {
             "dGlvbi5wcm90bxofYXZuL2Nvbm5lY3QvdjEvY2F0ZWdvcmllcy5wcm90bxof",
             "YXZuL2Nvbm5lY3QvdjEvYWN0aXZpdGllcy5wcm90bxodYXZuL2Nvbm5lY3Qv",
             "djEvZW50aXRpZXMucHJvdG8aIWF2bi9jb25uZWN0L3YxL3RyYW5zbGF0aW9u",
-            "cy5wcm90bxoZYXZuL2Nvbm5lY3QvdjEvdGFncy5wcm90byKxBQoHUHJvZmls",
-            "ZRIRCgllbnRpdHlfaWQYASABKAUSKgoEbmFtZRgCIAEoCzIcLmF2bi5jb25u",
-            "ZWN0LnYxLlRyYW5zbGF0YWJsZRIQCghpY29uX3VybBgDIAEoCRITCgtwcmV2",
-            "aWV3X3VybBgEIAEoCRIrCgd1cGRhdGVkGAUgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcBIyCgdzdW1tYXJ5GBYgASgLMhwuYXZuLmNvbm5lY3Qu",
-            "djEuVHJhbnNsYXRhYmxlSAGIAQESNgoLZGVzY3JpcHRpb24YBiABKAsyHC5h",
-            "dm4uY29ubmVjdC52MS5UcmFuc2xhdGFibGVIAogBARI3CgxpbnN0cnVjdGlv",
-            "bnMYByABKAsyHC5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGFibGVIA4gBARIz",
-            "CghrZXl3b3JkcxgVIAEoCzIcLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0YWJs",
-            "ZUgEiAEBEhMKC2xhbmd1YWdlX2lkGAggASgJEgwKBHRhZ3MYCSADKAUSMgoJ",
-            "cHVibGlzaGVkGAogASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgF",
-            "iAEBEjEKCGZlYXR1cmVkGAsgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
-            "dGFtcEgGiAEBEhkKD29yZ2FuaXphdGlvbl9pZBgMIAEoBUgAEhEKB3VzZXJf",
-            "aWQYDSABKAVIABIPCgdkZWxldGVkGA4gASgIEhIKCml0ZW1fY291bnQYDyAB",
-            "KAVCBwoFb3duZXJCCgoIX3N1bW1hcnlCDgoMX2Rlc2NyaXB0aW9uQg8KDV9p",
-            "bnN0cnVjdGlvbnNCCwoJX2tleXdvcmRzQgwKCl9wdWJsaXNoZWRCCwoJX2Zl",
-            "YXR1cmVkMvoDCg5Qcm9maWxlU2VydmljZRJHCgpHZXRQcm9maWxlEiAuYXZu",
-            "LmNvbm5lY3QudjEuR2V0RW50aXR5UmVxdWVzdBoXLmF2bi5jb25uZWN0LnYx",
-            "LlByb2ZpbGUSXgoNR2V0Q2F0ZWdvcmllcxIlLmF2bi5jb25uZWN0LnYxLkVu",
-            "dGl0eUluZm9MaXN0UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLkVudGl0eUlu",
-            "Zm9MaXN0UmVzcG9uc2USXgoNR2V0QWN0aXZpdGllcxIlLmF2bi5jb25uZWN0",
-            "LnYxLkVudGl0eUluZm9MaXN0UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLkVu",
-            "dGl0eUluZm9MaXN0UmVzcG9uc2USQQoHQWRkVGFncxIeLmF2bi5jb25uZWN0",
-            "LnYxLkFkZFRhZ3NSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkcK",
-            "ClJlbW92ZVRhZ3MSIS5hdm4uY29ubmVjdC52MS5SZW1vdmVUYWdzUmVxdWVz",
-            "dBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJTCg1TZXRQcm9wZXJ0aWVzEiou",
-            "YXZuLmNvbm5lY3QudjEuU2V0RW50aXR5UHJvcGVydGllc1JlcXVlc3QaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHliBnByb3RvMw=="));
+            "cy5wcm90bxoZYXZuL2Nvbm5lY3QvdjEvdGFncy5wcm90bxofYXZuL2Nvbm5l",
+            "Y3QvdjEvcHJvcGVydGllcy5wcm90byK0BAoHUHJvZmlsZRIRCgllbnRpdHlf",
+            "aWQYASABKAUSEQoEbmFtZRgCIAEoCUIDwD4BEhAKCGljb25fdXJsGAMgASgJ",
+            "EhMKC3ByZXZpZXdfdXJsGAQgASgJEisKB3VwZGF0ZWQYBSABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEhkKB3N1bW1hcnkYFiABKAlCA8A+AUgB",
+            "iAEBEh0KC2Rlc2NyaXB0aW9uGAYgASgJQgPAPgFIAogBARIeCgxpbnN0cnVj",
+            "dGlvbnMYByABKAlCA8A+AUgDiAEBEhoKCGtleXdvcmRzGBUgASgJQgPAPgFI",
+            "BIgBARITCgtsYW5ndWFnZV9pZBgIIAEoCRIMCgR0YWdzGAkgAygFEjIKCXB1",
+            "Ymxpc2hlZBgKIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIBYgB",
+            "ARIxCghmZWF0dXJlZBgLIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXBIBogBARIZCg9vcmdhbml6YXRpb25faWQYDCABKAVIABIRCgd1c2VyX2lk",
+            "GA0gASgFSAASDwoHZGVsZXRlZBgOIAEoCBISCgppdGVtX2NvdW50GA8gASgF",
+            "QgcKBW93bmVyQgoKCF9zdW1tYXJ5Qg4KDF9kZXNjcmlwdGlvbkIPCg1faW5z",
+            "dHJ1Y3Rpb25zQgsKCV9rZXl3b3Jkc0IMCgpfcHVibGlzaGVkQgsKCV9mZWF0",
+            "dXJlZDL6AwoOUHJvZmlsZVNlcnZpY2USRwoKR2V0UHJvZmlsZRIgLmF2bi5j",
+            "b25uZWN0LnYxLkdldEVudGl0eVJlcXVlc3QaFy5hdm4uY29ubmVjdC52MS5Q",
+            "cm9maWxlEl4KDUdldENhdGVnb3JpZXMSJS5hdm4uY29ubmVjdC52MS5FbnRp",
+            "dHlJbmZvTGlzdFJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5FbnRpdHlJbmZv",
+            "TGlzdFJlc3BvbnNlEl4KDUdldEFjdGl2aXRpZXMSJS5hdm4uY29ubmVjdC52",
+            "MS5FbnRpdHlJbmZvTGlzdFJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5FbnRp",
+            "dHlJbmZvTGlzdFJlc3BvbnNlEkEKB0FkZFRhZ3MSHi5hdm4uY29ubmVjdC52",
+            "MS5BZGRUYWdzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJHCgpS",
+            "ZW1vdmVUYWdzEiEuYXZuLmNvbm5lY3QudjEuUmVtb3ZlVGFnc1JlcXVlc3Qa",
+            "Fi5nb29nbGUucHJvdG9idWYuRW1wdHkSUwoNU2V0UHJvcGVydGllcxIqLmF2",
+            "bi5jb25uZWN0LnYxLlNldEVudGl0eVByb3BlcnRpZXNSZXF1ZXN0GhYuZ29v",
+            "Z2xlLnByb3RvYnVmLkVtcHR5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.CategoriesReflection.Descriptor, global::Avn.Connect.V1.ActivitiesReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.CategoriesReflection.Descriptor, global::Avn.Connect.V1.ActivitiesReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Profile), global::Avn.Connect.V1.Profile.Parser, new[]{ "EntityId", "Name", "IconUrl", "PreviewUrl", "Updated", "Summary", "Description", "Instructions", "Keywords", "LanguageId", "Tags", "Published", "Featured", "OrganizationId", "UserId", "Deleted", "ItemCount" }, new[]{ "Owner", "Summary", "Description", "Instructions", "Keywords", "Published", "Featured" }, null, null, null)
           }));
@@ -104,14 +102,14 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Profile(Profile other) : this() {
       entityId_ = other.entityId_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
+      name_ = other.name_;
       iconUrl_ = other.iconUrl_;
       previewUrl_ = other.previewUrl_;
       updated_ = other.updated_ != null ? other.updated_.Clone() : null;
-      summary_ = other.summary_ != null ? other.summary_.Clone() : null;
-      description_ = other.description_ != null ? other.description_.Clone() : null;
-      instructions_ = other.instructions_ != null ? other.instructions_.Clone() : null;
-      keywords_ = other.keywords_ != null ? other.keywords_.Clone() : null;
+      summary_ = other.summary_;
+      description_ = other.description_;
+      instructions_ = other.instructions_;
+      keywords_ = other.keywords_;
       languageId_ = other.languageId_;
       tags_ = other.tags_.Clone();
       published_ = other.published_ != null ? other.published_.Clone() : null;
@@ -139,6 +137,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
     private int entityId_;
+    /// <summary>
+    /// Unique profile ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -150,19 +151,25 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
+    /// <summary>
+    /// Profile name stored in plain text format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "icon_url" field.</summary>
     public const int IconUrlFieldNumber = 3;
     private string iconUrl_ = "";
+    /// <summary>
+    /// Icon to use for the profile
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IconUrl {
@@ -175,6 +182,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "preview_url" field.</summary>
     public const int PreviewUrlFieldNumber = 4;
     private string previewUrl_ = "";
+    /// <summary>
+    /// Preview to use for the preview
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PreviewUrl {
@@ -187,6 +197,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "updated" field.</summary>
     public const int UpdatedFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    /// <summary>
+    /// When profile last updated
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
@@ -198,55 +211,126 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "summary" field.</summary>
     public const int SummaryFieldNumber = 22;
-    private global::Avn.Connect.V1.Translatable summary_;
+    private readonly static string SummaryDefaultValue = "";
+
+    private string summary_;
+    /// <summary>
+    /// Profile summary stored in markdown format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Summary {
-      get { return summary_; }
+    public string Summary {
+      get { return summary_ ?? SummaryDefaultValue; }
       set {
-        summary_ = value;
+        summary_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+    /// <summary>Gets whether the "summary" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSummary {
+      get { return summary_ != null; }
+    }
+    /// <summary>Clears the value of the "summary" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSummary() {
+      summary_ = null;
     }
 
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 6;
-    private global::Avn.Connect.V1.Translatable description_;
+    private readonly static string DescriptionDefaultValue = "";
+
+    private string description_;
+    /// <summary>
+    /// Profile description stored in markdown format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Description {
-      get { return description_; }
+    public string Description {
+      get { return description_ ?? DescriptionDefaultValue; }
       set {
-        description_ = value;
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+    /// <summary>Gets whether the "description" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDescription {
+      get { return description_ != null; }
+    }
+    /// <summary>Clears the value of the "description" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDescription() {
+      description_ = null;
     }
 
     /// <summary>Field number for the "instructions" field.</summary>
     public const int InstructionsFieldNumber = 7;
-    private global::Avn.Connect.V1.Translatable instructions_;
+    private readonly static string InstructionsDefaultValue = "";
+
+    private string instructions_;
+    /// <summary>
+    /// Profile instructions stored in markdown format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Instructions {
-      get { return instructions_; }
+    public string Instructions {
+      get { return instructions_ ?? InstructionsDefaultValue; }
       set {
-        instructions_ = value;
+        instructions_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+    /// <summary>Gets whether the "instructions" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasInstructions {
+      get { return instructions_ != null; }
+    }
+    /// <summary>Clears the value of the "instructions" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearInstructions() {
+      instructions_ = null;
     }
 
     /// <summary>Field number for the "keywords" field.</summary>
     public const int KeywordsFieldNumber = 21;
-    private global::Avn.Connect.V1.Translatable keywords_;
+    private readonly static string KeywordsDefaultValue = "";
+
+    private string keywords_;
+    /// <summary>
+    /// Profile keywords
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Keywords {
-      get { return keywords_; }
+    public string Keywords {
+      get { return keywords_ ?? KeywordsDefaultValue; }
       set {
-        keywords_ = value;
+        keywords_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+    /// <summary>Gets whether the "keywords" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasKeywords {
+      get { return keywords_ != null; }
+    }
+    /// <summary>Clears the value of the "keywords" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearKeywords() {
+      keywords_ = null;
     }
 
     /// <summary>Field number for the "language_id" field.</summary>
     public const int LanguageIdFieldNumber = 8;
     private string languageId_ = "";
+    /// <summary>
+    /// Content language
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LanguageId {
@@ -261,6 +345,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_tags_codec
         = pb::FieldCodec.ForInt32(74);
     private readonly pbc::RepeatedField<int> tags_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Content tags
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> Tags {
@@ -270,6 +357,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "published" field.</summary>
     public const int PublishedFieldNumber = 10;
     private global::Google.Protobuf.WellKnownTypes.Timestamp published_;
+    /// <summary>
+    /// When profile was published or unset if not published
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Published {
@@ -282,6 +372,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "featured" field.</summary>
     public const int FeaturedFieldNumber = 11;
     private global::Google.Protobuf.WellKnownTypes.Timestamp featured_;
+    /// <summary>
+    /// When profile was featured or unset if not featured
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Featured {
@@ -293,6 +386,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 12;
+    /// <summary>
+    /// Organization owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -319,6 +415,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 13;
+    /// <summary>
+    /// User owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -346,6 +445,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "deleted" field.</summary>
     public const int DeletedFieldNumber = 14;
     private bool deleted_;
+    /// <summary>
+    /// Has this profile been deleted?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Deleted {
@@ -358,6 +460,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "item_count" field.</summary>
     public const int ItemCountFieldNumber = 15;
     private int itemCount_;
+    /// <summary>
+    /// Number of categories in this profile
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int ItemCount {
@@ -404,14 +509,14 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (EntityId != other.EntityId) return false;
-      if (!object.Equals(Name, other.Name)) return false;
+      if (Name != other.Name) return false;
       if (IconUrl != other.IconUrl) return false;
       if (PreviewUrl != other.PreviewUrl) return false;
       if (!object.Equals(Updated, other.Updated)) return false;
-      if (!object.Equals(Summary, other.Summary)) return false;
-      if (!object.Equals(Description, other.Description)) return false;
-      if (!object.Equals(Instructions, other.Instructions)) return false;
-      if (!object.Equals(Keywords, other.Keywords)) return false;
+      if (Summary != other.Summary) return false;
+      if (Description != other.Description) return false;
+      if (Instructions != other.Instructions) return false;
+      if (Keywords != other.Keywords) return false;
       if (LanguageId != other.LanguageId) return false;
       if(!tags_.Equals(other.tags_)) return false;
       if (!object.Equals(Published, other.Published)) return false;
@@ -429,14 +534,14 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (IconUrl.Length != 0) hash ^= IconUrl.GetHashCode();
       if (PreviewUrl.Length != 0) hash ^= PreviewUrl.GetHashCode();
       if (updated_ != null) hash ^= Updated.GetHashCode();
-      if (summary_ != null) hash ^= Summary.GetHashCode();
-      if (description_ != null) hash ^= Description.GetHashCode();
-      if (instructions_ != null) hash ^= Instructions.GetHashCode();
-      if (keywords_ != null) hash ^= Keywords.GetHashCode();
+      if (HasSummary) hash ^= Summary.GetHashCode();
+      if (HasDescription) hash ^= Description.GetHashCode();
+      if (HasInstructions) hash ^= Instructions.GetHashCode();
+      if (HasKeywords) hash ^= Keywords.GetHashCode();
       if (LanguageId.Length != 0) hash ^= LanguageId.GetHashCode();
       hash ^= tags_.GetHashCode();
       if (published_ != null) hash ^= Published.GetHashCode();
@@ -468,9 +573,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (IconUrl.Length != 0) {
         output.WriteRawTag(26);
@@ -484,13 +589,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Updated);
       }
-      if (description_ != null) {
+      if (HasDescription) {
         output.WriteRawTag(50);
-        output.WriteMessage(Description);
+        output.WriteString(Description);
       }
-      if (instructions_ != null) {
+      if (HasInstructions) {
         output.WriteRawTag(58);
-        output.WriteMessage(Instructions);
+        output.WriteString(Instructions);
       }
       if (LanguageId.Length != 0) {
         output.WriteRawTag(66);
@@ -521,13 +626,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(120);
         output.WriteInt32(ItemCount);
       }
-      if (keywords_ != null) {
+      if (HasKeywords) {
         output.WriteRawTag(170, 1);
-        output.WriteMessage(Keywords);
+        output.WriteString(Keywords);
       }
-      if (summary_ != null) {
+      if (HasSummary) {
         output.WriteRawTag(178, 1);
-        output.WriteMessage(Summary);
+        output.WriteString(Summary);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -543,9 +648,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (IconUrl.Length != 0) {
         output.WriteRawTag(26);
@@ -559,13 +664,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Updated);
       }
-      if (description_ != null) {
+      if (HasDescription) {
         output.WriteRawTag(50);
-        output.WriteMessage(Description);
+        output.WriteString(Description);
       }
-      if (instructions_ != null) {
+      if (HasInstructions) {
         output.WriteRawTag(58);
-        output.WriteMessage(Instructions);
+        output.WriteString(Instructions);
       }
       if (LanguageId.Length != 0) {
         output.WriteRawTag(66);
@@ -596,13 +701,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(120);
         output.WriteInt32(ItemCount);
       }
-      if (keywords_ != null) {
+      if (HasKeywords) {
         output.WriteRawTag(170, 1);
-        output.WriteMessage(Keywords);
+        output.WriteString(Keywords);
       }
-      if (summary_ != null) {
+      if (HasSummary) {
         output.WriteRawTag(178, 1);
-        output.WriteMessage(Summary);
+        output.WriteString(Summary);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -617,8 +722,8 @@ namespace Avn.Connect.V1 {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (IconUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IconUrl);
@@ -629,17 +734,17 @@ namespace Avn.Connect.V1 {
       if (updated_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Updated);
       }
-      if (summary_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Summary);
+      if (HasSummary) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Summary);
       }
-      if (description_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Description);
+      if (HasDescription) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
-      if (instructions_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Instructions);
+      if (HasInstructions) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Instructions);
       }
-      if (keywords_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Keywords);
+      if (HasKeywords) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Keywords);
       }
       if (LanguageId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LanguageId);
@@ -678,11 +783,8 @@ namespace Avn.Connect.V1 {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       if (other.IconUrl.Length != 0) {
         IconUrl = other.IconUrl;
@@ -696,29 +798,17 @@ namespace Avn.Connect.V1 {
         }
         Updated.MergeFrom(other.Updated);
       }
-      if (other.summary_ != null) {
-        if (summary_ == null) {
-          Summary = new global::Avn.Connect.V1.Translatable();
-        }
-        Summary.MergeFrom(other.Summary);
+      if (other.HasSummary) {
+        Summary = other.Summary;
       }
-      if (other.description_ != null) {
-        if (description_ == null) {
-          Description = new global::Avn.Connect.V1.Translatable();
-        }
-        Description.MergeFrom(other.Description);
+      if (other.HasDescription) {
+        Description = other.Description;
       }
-      if (other.instructions_ != null) {
-        if (instructions_ == null) {
-          Instructions = new global::Avn.Connect.V1.Translatable();
-        }
-        Instructions.MergeFrom(other.Instructions);
+      if (other.HasInstructions) {
+        Instructions = other.Instructions;
       }
-      if (other.keywords_ != null) {
-        if (keywords_ == null) {
-          Keywords = new global::Avn.Connect.V1.Translatable();
-        }
-        Keywords.MergeFrom(other.Keywords);
+      if (other.HasKeywords) {
+        Keywords = other.Keywords;
       }
       if (other.LanguageId.Length != 0) {
         LanguageId = other.LanguageId;
@@ -775,10 +865,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -797,17 +884,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 50: {
-            if (description_ == null) {
-              Description = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Description);
+            Description = input.ReadString();
             break;
           }
           case 58: {
-            if (instructions_ == null) {
-              Instructions = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Instructions);
+            Instructions = input.ReadString();
             break;
           }
           case 66: {
@@ -850,17 +931,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 170: {
-            if (keywords_ == null) {
-              Keywords = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Keywords);
+            Keywords = input.ReadString();
             break;
           }
           case 178: {
-            if (summary_ == null) {
-              Summary = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Summary);
+            Summary = input.ReadString();
             break;
           }
         }
@@ -887,10 +962,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -909,17 +981,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 50: {
-            if (description_ == null) {
-              Description = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Description);
+            Description = input.ReadString();
             break;
           }
           case 58: {
-            if (instructions_ == null) {
-              Instructions = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Instructions);
+            Instructions = input.ReadString();
             break;
           }
           case 66: {
@@ -962,17 +1028,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 170: {
-            if (keywords_ == null) {
-              Keywords = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Keywords);
+            Keywords = input.ReadString();
             break;
           }
           case 178: {
-            if (summary_ == null) {
-              Summary = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Summary);
+            Summary = input.ReadString();
             break;
           }
         }

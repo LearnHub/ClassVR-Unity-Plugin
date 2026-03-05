@@ -56,9 +56,21 @@ namespace Avn.Connect.V1 {
   #region Enums
   public enum ConnectionStatus {
     [pbr::OriginalName("CONNECTION_STATUS_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// Connection is not authenticated
+    /// </summary>
     [pbr::OriginalName("CONNECTION_STATUS_ANONYMOUS")] Anonymous = 1,
+    /// <summary>
+    /// Connection is authenticated
+    /// </summary>
     [pbr::OriginalName("CONNECTION_STATUS_AUTHENTICATED")] Authenticated = 2,
+    /// <summary>
+    /// Connection is an administrator of this dimension
+    /// </summary>
     [pbr::OriginalName("CONNECTION_STATUS_ADMIN")] Admin = 3,
+    /// <summary>
+    /// Connection is the owner of this dimension
+    /// </summary>
     [pbr::OriginalName("CONNECTION_STATUS_OWNER")] Owner = 4,
   }
 
@@ -119,6 +131,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "credentials" field.</summary>
     public const int CredentialsFieldNumber = 1;
     private global::Avn.Connect.V1.ConnectionCredentials credentials_;
+    /// <summary>
+    /// Dimension connection credentials
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ConnectionCredentials Credentials {
@@ -131,6 +146,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "client_id" field.</summary>
     public const int ClientIdFieldNumber = 2;
     private string clientId_ = "";
+    /// <summary>
+    /// Client ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClientId {
@@ -143,6 +161,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "user" field.</summary>
     public const int UserFieldNumber = 3;
     private global::Avn.Connect.V1.User user_;
+    /// <summary>
+    /// Eduverse user (if authenticated)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.User User {
@@ -170,6 +191,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "content" field.</summary>
     public const int ContentFieldNumber = 7;
     private global::Avn.Connect.V1.AvailableContent content_;
+    /// <summary>
+    /// Content available though this dimension
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.AvailableContent Content {
@@ -182,6 +206,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "permissions" field.</summary>
     public const int PermissionsFieldNumber = 8;
     private global::Avn.Connect.V1.InteractionPermissions permissions_;
+    /// <summary>
+    /// User-specific permissions within this dimension
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.InteractionPermissions Permissions {
@@ -194,6 +221,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "features" field.</summary>
     public const int FeaturesFieldNumber = 9;
     private global::Avn.Connect.V1.UserInterfaceFeatures features_;
+    /// <summary>
+    /// Recommended user interface features for this use
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.UserInterfaceFeatures Features {
@@ -533,6 +563,9 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// ConnectionCredentials are temporary credentials issued when a user joins a dimension
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConnectionCredentials : pb::IMessage<ConnectionCredentials>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -583,6 +616,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "connection_id" field.</summary>
     public const int ConnectionIdFieldNumber = 1;
     private string connectionId_ = "";
+    /// <summary>
+    /// Unqiue connection ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ConnectionId {
@@ -595,6 +631,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "connection_secret" field.</summary>
     public const int ConnectionSecretFieldNumber = 2;
     private string connectionSecret_ = "";
+    /// <summary>
+    /// Connection secret for authentication
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ConnectionSecret {
@@ -607,6 +646,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "dimension_id" field.</summary>
     public const int DimensionIdFieldNumber = 3;
     private string dimensionId_ = "";
+    /// <summary>
+    /// ID of the dimension joined
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DimensionId {

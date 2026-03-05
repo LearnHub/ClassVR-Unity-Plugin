@@ -27,47 +27,44 @@ namespace Avn.Connect.V1 {
             "Ch9hdm4vY29ubmVjdC92MS9hY3Rpdml0aWVzLnByb3RvEg5hdm4uY29ubmVj",
             "dC52MRobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvGh9nb29nbGUvcHJv",
             "dG9idWYvdGltZXN0YW1wLnByb3RvGiJhdm4vY29ubmVjdC92MS9hdXRob3Jp",
-            "emF0aW9uLnByb3RvGh1hdm4vY29ubmVjdC92MS9lbnRpdGllcy5wcm90bxoh",
-            "YXZuL2Nvbm5lY3QvdjEvdHJhbnNsYXRpb25zLnByb3RvGhlhdm4vY29ubmVj",
-            "dC92MS90YWdzLnByb3RvGh1hdm4vY29ubmVjdC92MS9wYWNrYWdlcy5wcm90",
-            "byK5BwoIQWN0aXZpdHkSEQoJZW50aXR5X2lkGAEgASgFEioKBG5hbWUYAiAB",
-            "KAsyHC5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGFibGUSEAoIaWNvbl91cmwY",
-            "AyABKAkSEwoLcHJldmlld191cmwYBCABKAkSKwoHdXBkYXRlZBgFIAEoCzIa",
-            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASMgoHc3VtbWFyeRgWIAEoCzIc",
-            "LmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0YWJsZUgBiAEBEjYKC2Rlc2NyaXB0",
-            "aW9uGAYgASgLMhwuYXZuLmNvbm5lY3QudjEuVHJhbnNsYXRhYmxlSAKIAQES",
-            "NwoMaW5zdHJ1Y3Rpb25zGAcgASgLMhwuYXZuLmNvbm5lY3QudjEuVHJhbnNs",
-            "YXRhYmxlSAOIAQESMwoIa2V5d29yZHMYFSABKAsyHC5hdm4uY29ubmVjdC52",
-            "MS5UcmFuc2xhdGFibGVIBIgBARITCgtsYW5ndWFnZV9pZBgIIAEoCRIMCgR0",
-            "YWdzGAkgAygFEjIKCXB1Ymxpc2hlZBgKIAEoCzIaLmdvb2dsZS5wcm90b2J1",
-            "Zi5UaW1lc3RhbXBIBYgBARIxCghmZWF0dXJlZBgLIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5UaW1lc3RhbXBIBogBARIZCg9vcmdhbml6YXRpb25faWQYDCAB",
-            "KAVIABIRCgd1c2VyX2lkGA0gASgFSAASDwoHZGVsZXRlZBgOIAEoCBIRCglh",
-            "dmFpbGFibGUYDyABKAgSEAoIYXNzZXRfaWQYECABKAkSFAoHY29udGV4dBgR",
-            "IAEoCUgHiAEBEhcKD3NjcmVlbnNob3RfdXJscxgSIAMoCRIXCgpzaXplX2J5",
-            "dGVzGBMgASgDSAiIAQESKgoEdHlwZRgUIAEoDjIcLmF2bi5jb25uZWN0LnYx",
-            "LkFjdGl2aXR5VHlwZRIQCgN1cmwYHyABKAlICYgBARIRCglmaWxlX3VybHMY",
-            "ICADKAkSOAoQYW5kcm9pZF9wYWNrYWdlcxghIAMoCzIeLmF2bi5jb25uZWN0",
-            "LnYxLkFuZHJvaWRQYWNrYWdlQgcKBW93bmVyQgoKCF9zdW1tYXJ5Qg4KDF9k",
-            "ZXNjcmlwdGlvbkIPCg1faW5zdHJ1Y3Rpb25zQgsKCV9rZXl3b3Jkc0IMCgpf",
-            "cHVibGlzaGVkQgsKCV9mZWF0dXJlZEIKCghfY29udGV4dEINCgtfc2l6ZV9i",
-            "eXRlc0IGCgRfdXJsIswBChVDcmVhdGVBY3Rpdml0eVJlcXVlc3QSKwoEYXV0",
-            "aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SHAoPb3Jn",
-            "YW5pemF0aW9uX2lkGAIgASgFSACIAQESGAoLbGFuZ3VhZ2VfaWQYAyABKAlI",
-            "AYgBARIqCgR0eXBlGAQgASgOMhwuYXZuLmNvbm5lY3QudjEuQWN0aXZpdHlU",
-            "eXBlQhIKEF9vcmdhbml6YXRpb25faWRCDgoMX2xhbmd1YWdlX2lkItUBChdB",
-            "ZGRBY3Rpdml0eUZpbGVzUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNv",
-            "bm5lY3QudjEuQXV0aG9yaXphdGlvbhIRCgllbnRpdHlfaWQYAiABKAUSEQoJ",
-            "ZmlsZV91cmxzGAMgAygJEjMKCWZpbGVfdHlwZRgEIAEoDjIgLmF2bi5jb25u",
-            "ZWN0LnYxLkFjdGl2aXR5RmlsZVR5cGUSHQoQcmVwbGFjZV9leGlzdGluZxgF",
-            "IAEoCEgAiAEBQhMKEV9yZXBsYWNlX2V4aXN0aW5nIqQBChpSZW1vdmVBY3Rp",
-            "dml0eUZpbGVzUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3Qu",
-            "djEuQXV0aG9yaXphdGlvbhIRCgllbnRpdHlfaWQYAiABKAUSEQoJZmlsZV91",
-            "cmxzGAMgAygJEjMKCWZpbGVfdHlwZRgEIAEoDjIgLmF2bi5jb25uZWN0LnYx",
-            "LkFjdGl2aXR5RmlsZVR5cGUqjQEKDEFjdGl2aXR5VHlwZRIdChlBQ1RJVklU",
-            "WV9UWVBFX1VOU1BFQ0lGSUVEEAASFgoSQUNUSVZJVFlfVFlQRV9GSUxFEAES",
-            "FQoRQUNUSVZJVFlfVFlQRV9VUkwQAhIVChFBQ1RJVklUWV9UWVBFX0FQUBAD",
-            "EhgKFEFDVElWSVRZX1RZUEVfRk9MREVSEAQqmQEKEEFjdGl2aXR5RmlsZVR5",
+            "emF0aW9uLnByb3RvGh1hdm4vY29ubmVjdC92MS9lbnRpdGllcy5wcm90bxod",
+            "YXZuL2Nvbm5lY3QvdjEvbWV0YWRhdGEucHJvdG8aIWF2bi9jb25uZWN0L3Yx",
+            "L3RyYW5zbGF0aW9ucy5wcm90bxoZYXZuL2Nvbm5lY3QvdjEvdGFncy5wcm90",
+            "bxodYXZuL2Nvbm5lY3QvdjEvcGFja2FnZXMucHJvdG8aH2F2bi9jb25uZWN0",
+            "L3YxL3Byb3BlcnRpZXMucHJvdG8i7gUKCEFjdGl2aXR5EhEKCWVudGl0eV9p",
+            "ZBgBIAEoBRIRCgRuYW1lGAIgASgJQgPAPgESEAoIaWNvbl91cmwYAyABKAkS",
+            "EwoLcHJldmlld191cmwYBCABKAkSKwoHdXBkYXRlZBgFIAEoCzIaLmdvb2ds",
+            "ZS5wcm90b2J1Zi5UaW1lc3RhbXASFAoHc3VtbWFyeRgWIAEoCUIDwD4BEhgK",
+            "C2Rlc2NyaXB0aW9uGAYgASgJQgPAPgESGQoMaW5zdHJ1Y3Rpb25zGAcgASgJ",
+            "QgPAPgESFQoIa2V5d29yZHMYFSABKAlCA8A+ARITCgtsYW5ndWFnZV9pZBgI",
+            "IAEoCRIMCgR0YWdzGAkgAygFEjIKCXB1Ymxpc2hlZBgKIAEoCzIaLmdvb2ds",
+            "ZS5wcm90b2J1Zi5UaW1lc3RhbXBIAYgBARIxCghmZWF0dXJlZBgLIAEoCzIa",
+            "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAogBARIZCg9vcmdhbml6YXRp",
+            "b25faWQYDCABKAVIABIRCgd1c2VyX2lkGA0gASgFSAASDwoHZGVsZXRlZBgO",
+            "IAEoCBIRCglhdmFpbGFibGUYDyABKAgSEAoIYXNzZXRfaWQYECABKAkSFAoH",
+            "Y29udGV4dBgRIAEoCUgDiAEBEhcKD3NjcmVlbnNob3RfdXJscxgSIAMoCRIX",
+            "CgpzaXplX2J5dGVzGBMgASgDSASIAQESKgoEdHlwZRgUIAEoDjIcLmF2bi5j",
+            "b25uZWN0LnYxLkFjdGl2aXR5VHlwZRIQCgN1cmwYHyABKAlIBYgBARIRCglm",
+            "aWxlX3VybHMYICADKAkSOAoQYW5kcm9pZF9wYWNrYWdlcxghIAMoCzIeLmF2",
+            "bi5jb25uZWN0LnYxLkFuZHJvaWRQYWNrYWdlQgcKBW93bmVyQgwKCl9wdWJs",
+            "aXNoZWRCCwoJX2ZlYXR1cmVkQgoKCF9jb250ZXh0Qg0KC19zaXplX2J5dGVz",
+            "QgYKBF91cmwizAEKFUNyZWF0ZUFjdGl2aXR5UmVxdWVzdBIrCgRhdXRoGAEg",
+            "ASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIcCg9vcmdhbml6",
+            "YXRpb25faWQYAiABKAVIAIgBARIYCgtsYW5ndWFnZV9pZBgDIAEoCUgBiAEB",
+            "EioKBHR5cGUYBCABKA4yHC5hdm4uY29ubmVjdC52MS5BY3Rpdml0eVR5cGVC",
+            "EgoQX29yZ2FuaXphdGlvbl9pZEIOCgxfbGFuZ3VhZ2VfaWQi1QEKF0FkZEFj",
+            "dGl2aXR5RmlsZXNSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVj",
+            "dC52MS5BdXRob3JpemF0aW9uEhEKCWVudGl0eV9pZBgCIAEoBRIRCglmaWxl",
+            "X3VybHMYAyADKAkSMwoJZmlsZV90eXBlGAQgASgOMiAuYXZuLmNvbm5lY3Qu",
+            "djEuQWN0aXZpdHlGaWxlVHlwZRIdChByZXBsYWNlX2V4aXN0aW5nGAUgASgI",
+            "SACIAQFCEwoRX3JlcGxhY2VfZXhpc3RpbmcipAEKGlJlbW92ZUFjdGl2aXR5",
+            "RmlsZXNSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5B",
+            "dXRob3JpemF0aW9uEhEKCWVudGl0eV9pZBgCIAEoBRIRCglmaWxlX3VybHMY",
+            "AyADKAkSMwoJZmlsZV90eXBlGAQgASgOMiAuYXZuLmNvbm5lY3QudjEuQWN0",
+            "aXZpdHlGaWxlVHlwZSqRAQoMQWN0aXZpdHlUeXBlEh0KGUFDVElWSVRZX1RZ",
+            "UEVfVU5TUEVDSUZJRUQQABIWChJBQ1RJVklUWV9UWVBFX0ZJTEUQARIVChFB",
+            "Q1RJVklUWV9UWVBFX1VSTBACEhUKEUFDVElWSVRZX1RZUEVfQVBQEAMSHAoU",
+            "QUNUSVZJVFlfVFlQRV9GT0xERVIQBBoCCAEqmQEKEEFjdGl2aXR5RmlsZVR5",
             "cGUSIgoeQUNUSVZJVFlfRklMRV9UWVBFX1VOU1BFQ0lGSUVEEAASHgoaQUNU",
             "SVZJVFlfRklMRV9UWVBFX0NPTlRFTlQQARIhCh1BQ1RJVklUWV9GSUxFX1RZ",
             "UEVfU0NSRUVOU0hPVBACEh4KGkFDVElWSVRZX0ZJTEVfVFlQRV9QQUNLQUdF",
@@ -97,9 +94,9 @@ namespace Avn.Connect.V1 {
             "cGVydGllcxIqLmF2bi5jb25uZWN0LnYxLlNldEVudGl0eVByb3BlcnRpZXNS",
             "ZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.PackagesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.MetadataReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.PackagesReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.ActivityType), typeof(global::Avn.Connect.V1.ActivityFileType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Activity), global::Avn.Connect.V1.Activity.Parser, new[]{ "EntityId", "Name", "IconUrl", "PreviewUrl", "Updated", "Summary", "Description", "Instructions", "Keywords", "LanguageId", "Tags", "Published", "Featured", "OrganizationId", "UserId", "Deleted", "Available", "AssetId", "Context", "ScreenshotUrls", "SizeBytes", "Type", "Url", "FileUrls", "AndroidPackages" }, new[]{ "Owner", "Summary", "Description", "Instructions", "Keywords", "Published", "Featured", "Context", "SizeBytes", "Url" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Activity), global::Avn.Connect.V1.Activity.Parser, new[]{ "EntityId", "Name", "IconUrl", "PreviewUrl", "Updated", "Summary", "Description", "Instructions", "Keywords", "LanguageId", "Tags", "Published", "Featured", "OrganizationId", "UserId", "Deleted", "Available", "AssetId", "Context", "ScreenshotUrls", "SizeBytes", "Type", "Url", "FileUrls", "AndroidPackages" }, new[]{ "Owner", "Published", "Featured", "Context", "SizeBytes", "Url" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateActivityRequest), global::Avn.Connect.V1.CreateActivityRequest.Parser, new[]{ "Auth", "OrganizationId", "LanguageId", "Type" }, new[]{ "OrganizationId", "LanguageId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AddActivityFilesRequest), global::Avn.Connect.V1.AddActivityFilesRequest.Parser, new[]{ "Auth", "EntityId", "FileUrls", "FileType", "ReplaceExisting" }, new[]{ "ReplaceExisting" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.RemoveActivityFilesRequest), global::Avn.Connect.V1.RemoveActivityFilesRequest.Parser, new[]{ "Auth", "EntityId", "FileUrls", "FileType" }, null, null, null, null)
@@ -109,18 +106,46 @@ namespace Avn.Connect.V1 {
 
   }
   #region Enums
+  /// <summary>
+  /// Activity types
+  /// </summary>
   public enum ActivityType {
     [pbr::OriginalName("ACTIVITY_TYPE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// A file type activity
+    /// </summary>
     [pbr::OriginalName("ACTIVITY_TYPE_FILE")] File = 1,
+    /// <summary>
+    /// A URL type activity
+    /// </summary>
     [pbr::OriginalName("ACTIVITY_TYPE_URL")] Url = 2,
+    /// <summary>
+    /// An app type activity
+    /// </summary>
     [pbr::OriginalName("ACTIVITY_TYPE_APP")] App = 3,
+    /// <summary>
+    /// A folder type activity 
+    /// </summary>
+    [global::System.ObsoleteAttribute]
     [pbr::OriginalName("ACTIVITY_TYPE_FOLDER")] Folder = 4,
   }
 
+  /// <summary>
+  /// Activity file types
+  /// </summary>
   public enum ActivityFileType {
     [pbr::OriginalName("ACTIVITY_FILE_TYPE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// Content data file
+    /// </summary>
     [pbr::OriginalName("ACTIVITY_FILE_TYPE_CONTENT")] Content = 1,
+    /// <summary>
+    /// Screenshot date file
+    /// </summary>
     [pbr::OriginalName("ACTIVITY_FILE_TYPE_SCREENSHOT")] Screenshot = 2,
+    /// <summary>
+    /// Activity package data file
+    /// </summary>
     [pbr::OriginalName("ACTIVITY_FILE_TYPE_PACKAGE")] Package = 3,
   }
 
@@ -165,14 +190,14 @@ namespace Avn.Connect.V1 {
     public Activity(Activity other) : this() {
       _hasBits0 = other._hasBits0;
       entityId_ = other.entityId_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
+      name_ = other.name_;
       iconUrl_ = other.iconUrl_;
       previewUrl_ = other.previewUrl_;
       updated_ = other.updated_ != null ? other.updated_.Clone() : null;
-      summary_ = other.summary_ != null ? other.summary_.Clone() : null;
-      description_ = other.description_ != null ? other.description_.Clone() : null;
-      instructions_ = other.instructions_ != null ? other.instructions_.Clone() : null;
-      keywords_ = other.keywords_ != null ? other.keywords_.Clone() : null;
+      summary_ = other.summary_;
+      description_ = other.description_;
+      instructions_ = other.instructions_;
+      keywords_ = other.keywords_;
       languageId_ = other.languageId_;
       tags_ = other.tags_.Clone();
       published_ = other.published_ != null ? other.published_.Clone() : null;
@@ -208,6 +233,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
     private int entityId_;
+    /// <summary>
+    /// Unique activity ID 
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -219,19 +247,25 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
+    /// <summary>
+    /// Activity name stored in plain text format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "icon_url" field.</summary>
     public const int IconUrlFieldNumber = 3;
     private string iconUrl_ = "";
+    /// <summary>
+    /// Icon to use for the activity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IconUrl {
@@ -244,6 +278,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "preview_url" field.</summary>
     public const int PreviewUrlFieldNumber = 4;
     private string previewUrl_ = "";
+    /// <summary>
+    /// Preview to use for the activity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PreviewUrl {
@@ -256,6 +293,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "updated" field.</summary>
     public const int UpdatedFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    /// <summary>
+    /// When activity last updated
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
@@ -267,55 +307,70 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "summary" field.</summary>
     public const int SummaryFieldNumber = 22;
-    private global::Avn.Connect.V1.Translatable summary_;
+    private string summary_ = "";
+    /// <summary>
+    /// Activity summary stored in markdown format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Summary {
+    public string Summary {
       get { return summary_; }
       set {
-        summary_ = value;
+        summary_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 6;
-    private global::Avn.Connect.V1.Translatable description_;
+    private string description_ = "";
+    /// <summary>
+    /// Activity description stored in markdown format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Description {
+    public string Description {
       get { return description_; }
       set {
-        description_ = value;
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "instructions" field.</summary>
     public const int InstructionsFieldNumber = 7;
-    private global::Avn.Connect.V1.Translatable instructions_;
+    private string instructions_ = "";
+    /// <summary>
+    /// Activity instructions stored in markdown format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Instructions {
+    public string Instructions {
       get { return instructions_; }
       set {
-        instructions_ = value;
+        instructions_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "keywords" field.</summary>
     public const int KeywordsFieldNumber = 21;
-    private global::Avn.Connect.V1.Translatable keywords_;
+    private string keywords_ = "";
+    /// <summary>
+    /// Activity keywords
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Keywords {
+    public string Keywords {
       get { return keywords_; }
       set {
-        keywords_ = value;
+        keywords_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "language_id" field.</summary>
     public const int LanguageIdFieldNumber = 8;
     private string languageId_ = "";
+    /// <summary>
+    /// Content language
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LanguageId {
@@ -330,6 +385,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<int> _repeated_tags_codec
         = pb::FieldCodec.ForInt32(74);
     private readonly pbc::RepeatedField<int> tags_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// Content tags
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> Tags {
@@ -339,6 +397,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "published" field.</summary>
     public const int PublishedFieldNumber = 10;
     private global::Google.Protobuf.WellKnownTypes.Timestamp published_;
+    /// <summary>
+    /// When activity was published or unset if not published
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Published {
@@ -351,6 +412,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "featured" field.</summary>
     public const int FeaturedFieldNumber = 11;
     private global::Google.Protobuf.WellKnownTypes.Timestamp featured_;
+    /// <summary>
+    /// When activity was featured or unset if not featured
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Featured {
@@ -362,6 +426,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 12;
+    /// <summary>
+    /// Organization owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -388,6 +455,9 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 13;
+    /// <summary>
+    /// User owner (if not zero)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -415,6 +485,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "deleted" field.</summary>
     public const int DeletedFieldNumber = 14;
     private bool deleted_;
+    /// <summary>
+    /// Has this activity been deleted?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Deleted {
@@ -427,6 +500,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "available" field.</summary>
     public const int AvailableFieldNumber = 15;
     private bool available_;
+    /// <summary>
+    /// Is this activity availabe, e.g. licensed?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Available {
@@ -439,6 +515,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "asset_id" field.</summary>
     public const int AssetIdFieldNumber = 16;
     private string assetId_ = "";
+    /// <summary>
+    /// Asset ID for the activity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AssetId {
@@ -453,6 +532,9 @@ namespace Avn.Connect.V1 {
     private readonly static string ContextDefaultValue = "";
 
     private string context_;
+    /// <summary>
+    /// An indication of the origin of the activity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Context {
@@ -479,6 +561,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_screenshotUrls_codec
         = pb::FieldCodec.ForString(146);
     private readonly pbc::RepeatedField<string> screenshotUrls_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// An array of screenshot URLs
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> ScreenshotUrls {
@@ -490,6 +575,9 @@ namespace Avn.Connect.V1 {
     private readonly static long SizeBytesDefaultValue = 0L;
 
     private long sizeBytes_;
+    /// <summary>
+    /// Size of activity in bytes (estimated)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long SizeBytes {
@@ -515,6 +603,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 20;
     private global::Avn.Connect.V1.ActivityType type_ = global::Avn.Connect.V1.ActivityType.Unspecified;
+    /// <summary>
+    /// Type of the activity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ActivityType Type {
@@ -530,7 +621,7 @@ namespace Avn.Connect.V1 {
 
     private string url_;
     /// <summary>
-    /// ACTIVITY_TYPE_URL properties
+    /// Content URL (ACTIVITY_TYPE_URL only)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -559,7 +650,7 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForString(258);
     private readonly pbc::RepeatedField<string> fileUrls_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// ACTIVITY_TYPE_FILE properties
+    /// Array of data files (ACTIVITY_TYPE_FILE only)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -573,7 +664,7 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForMessage(266, global::Avn.Connect.V1.AndroidPackage.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.AndroidPackage> androidPackages_ = new pbc::RepeatedField<global::Avn.Connect.V1.AndroidPackage>();
     /// <summary>
-    /// ACTIVITY_TYPE_APP properties
+    /// Array of android package definitions (ACTIVITY_TYPE_APP only)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -618,14 +709,14 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (EntityId != other.EntityId) return false;
-      if (!object.Equals(Name, other.Name)) return false;
+      if (Name != other.Name) return false;
       if (IconUrl != other.IconUrl) return false;
       if (PreviewUrl != other.PreviewUrl) return false;
       if (!object.Equals(Updated, other.Updated)) return false;
-      if (!object.Equals(Summary, other.Summary)) return false;
-      if (!object.Equals(Description, other.Description)) return false;
-      if (!object.Equals(Instructions, other.Instructions)) return false;
-      if (!object.Equals(Keywords, other.Keywords)) return false;
+      if (Summary != other.Summary) return false;
+      if (Description != other.Description) return false;
+      if (Instructions != other.Instructions) return false;
+      if (Keywords != other.Keywords) return false;
       if (LanguageId != other.LanguageId) return false;
       if(!tags_.Equals(other.tags_)) return false;
       if (!object.Equals(Published, other.Published)) return false;
@@ -651,14 +742,14 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (IconUrl.Length != 0) hash ^= IconUrl.GetHashCode();
       if (PreviewUrl.Length != 0) hash ^= PreviewUrl.GetHashCode();
       if (updated_ != null) hash ^= Updated.GetHashCode();
-      if (summary_ != null) hash ^= Summary.GetHashCode();
-      if (description_ != null) hash ^= Description.GetHashCode();
-      if (instructions_ != null) hash ^= Instructions.GetHashCode();
-      if (keywords_ != null) hash ^= Keywords.GetHashCode();
+      if (Summary.Length != 0) hash ^= Summary.GetHashCode();
+      if (Description.Length != 0) hash ^= Description.GetHashCode();
+      if (Instructions.Length != 0) hash ^= Instructions.GetHashCode();
+      if (Keywords.Length != 0) hash ^= Keywords.GetHashCode();
       if (LanguageId.Length != 0) hash ^= LanguageId.GetHashCode();
       hash ^= tags_.GetHashCode();
       if (published_ != null) hash ^= Published.GetHashCode();
@@ -698,9 +789,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (IconUrl.Length != 0) {
         output.WriteRawTag(26);
@@ -714,13 +805,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Updated);
       }
-      if (description_ != null) {
+      if (Description.Length != 0) {
         output.WriteRawTag(50);
-        output.WriteMessage(Description);
+        output.WriteString(Description);
       }
-      if (instructions_ != null) {
+      if (Instructions.Length != 0) {
         output.WriteRawTag(58);
-        output.WriteMessage(Instructions);
+        output.WriteString(Instructions);
       }
       if (LanguageId.Length != 0) {
         output.WriteRawTag(66);
@@ -768,13 +859,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(160, 1);
         output.WriteEnum((int) Type);
       }
-      if (keywords_ != null) {
+      if (Keywords.Length != 0) {
         output.WriteRawTag(170, 1);
-        output.WriteMessage(Keywords);
+        output.WriteString(Keywords);
       }
-      if (summary_ != null) {
+      if (Summary.Length != 0) {
         output.WriteRawTag(178, 1);
-        output.WriteMessage(Summary);
+        output.WriteString(Summary);
       }
       if (HasUrl) {
         output.WriteRawTag(250, 1);
@@ -796,9 +887,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (IconUrl.Length != 0) {
         output.WriteRawTag(26);
@@ -812,13 +903,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Updated);
       }
-      if (description_ != null) {
+      if (Description.Length != 0) {
         output.WriteRawTag(50);
-        output.WriteMessage(Description);
+        output.WriteString(Description);
       }
-      if (instructions_ != null) {
+      if (Instructions.Length != 0) {
         output.WriteRawTag(58);
-        output.WriteMessage(Instructions);
+        output.WriteString(Instructions);
       }
       if (LanguageId.Length != 0) {
         output.WriteRawTag(66);
@@ -866,13 +957,13 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(160, 1);
         output.WriteEnum((int) Type);
       }
-      if (keywords_ != null) {
+      if (Keywords.Length != 0) {
         output.WriteRawTag(170, 1);
-        output.WriteMessage(Keywords);
+        output.WriteString(Keywords);
       }
-      if (summary_ != null) {
+      if (Summary.Length != 0) {
         output.WriteRawTag(178, 1);
-        output.WriteMessage(Summary);
+        output.WriteString(Summary);
       }
       if (HasUrl) {
         output.WriteRawTag(250, 1);
@@ -893,8 +984,8 @@ namespace Avn.Connect.V1 {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (IconUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IconUrl);
@@ -905,17 +996,17 @@ namespace Avn.Connect.V1 {
       if (updated_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Updated);
       }
-      if (summary_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Summary);
+      if (Summary.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Summary);
       }
-      if (description_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Description);
+      if (Description.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
-      if (instructions_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Instructions);
+      if (Instructions.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Instructions);
       }
-      if (keywords_ != null) {
-        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Keywords);
+      if (Keywords.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Keywords);
       }
       if (LanguageId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LanguageId);
@@ -972,11 +1063,8 @@ namespace Avn.Connect.V1 {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       if (other.IconUrl.Length != 0) {
         IconUrl = other.IconUrl;
@@ -990,29 +1078,17 @@ namespace Avn.Connect.V1 {
         }
         Updated.MergeFrom(other.Updated);
       }
-      if (other.summary_ != null) {
-        if (summary_ == null) {
-          Summary = new global::Avn.Connect.V1.Translatable();
-        }
-        Summary.MergeFrom(other.Summary);
+      if (other.Summary.Length != 0) {
+        Summary = other.Summary;
       }
-      if (other.description_ != null) {
-        if (description_ == null) {
-          Description = new global::Avn.Connect.V1.Translatable();
-        }
-        Description.MergeFrom(other.Description);
+      if (other.Description.Length != 0) {
+        Description = other.Description;
       }
-      if (other.instructions_ != null) {
-        if (instructions_ == null) {
-          Instructions = new global::Avn.Connect.V1.Translatable();
-        }
-        Instructions.MergeFrom(other.Instructions);
+      if (other.Instructions.Length != 0) {
+        Instructions = other.Instructions;
       }
-      if (other.keywords_ != null) {
-        if (keywords_ == null) {
-          Keywords = new global::Avn.Connect.V1.Translatable();
-        }
-        Keywords.MergeFrom(other.Keywords);
+      if (other.Keywords.Length != 0) {
+        Keywords = other.Keywords;
       }
       if (other.LanguageId.Length != 0) {
         LanguageId = other.LanguageId;
@@ -1087,10 +1163,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -1109,17 +1182,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 50: {
-            if (description_ == null) {
-              Description = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Description);
+            Description = input.ReadString();
             break;
           }
           case 58: {
-            if (instructions_ == null) {
-              Instructions = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Instructions);
+            Instructions = input.ReadString();
             break;
           }
           case 66: {
@@ -1182,17 +1249,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 170: {
-            if (keywords_ == null) {
-              Keywords = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Keywords);
+            Keywords = input.ReadString();
             break;
           }
           case 178: {
-            if (summary_ == null) {
-              Summary = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Summary);
+            Summary = input.ReadString();
             break;
           }
           case 250: {
@@ -1231,10 +1292,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -1253,17 +1311,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 50: {
-            if (description_ == null) {
-              Description = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Description);
+            Description = input.ReadString();
             break;
           }
           case 58: {
-            if (instructions_ == null) {
-              Instructions = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Instructions);
+            Instructions = input.ReadString();
             break;
           }
           case 66: {
@@ -1326,17 +1378,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 170: {
-            if (keywords_ == null) {
-              Keywords = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Keywords);
+            Keywords = input.ReadString();
             break;
           }
           case 178: {
-            if (summary_ == null) {
-              Summary = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Summary);
+            Summary = input.ReadString();
             break;
           }
           case 250: {
@@ -1414,6 +1460,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1773,6 +1822,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1785,6 +1837,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 2;
     private int entityId_;
+    /// <summary>
+    /// Activity to modify
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -1799,6 +1854,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_fileUrls_codec
         = pb::FieldCodec.ForString(26);
     private readonly pbc::RepeatedField<string> fileUrls_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Files to add to activity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> FileUrls {
@@ -1808,6 +1866,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "file_type" field.</summary>
     public const int FileTypeFieldNumber = 4;
     private global::Avn.Connect.V1.ActivityFileType fileType_ = global::Avn.Connect.V1.ActivityFileType.Unspecified;
+    /// <summary>
+    /// File types to add to
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ActivityFileType FileType {
@@ -1823,7 +1884,7 @@ namespace Avn.Connect.V1 {
 
     private bool replaceExisting_;
     /// <summary>
-    /// Replace all existing files?
+    /// Replace all existing files of target type? The default is false
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2134,6 +2195,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -2146,6 +2210,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 2;
     private int entityId_;
+    /// <summary>
+    /// Activity to modify
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -2160,6 +2227,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_fileUrls_codec
         = pb::FieldCodec.ForString(26);
     private readonly pbc::RepeatedField<string> fileUrls_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Files to remove from activity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> FileUrls {
@@ -2169,6 +2239,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "file_type" field.</summary>
     public const int FileTypeFieldNumber = 4;
     private global::Avn.Connect.V1.ActivityFileType fileType_ = global::Avn.Connect.V1.ActivityFileType.Unspecified;
+    /// <summary>
+    /// File types to remove from
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ActivityFileType FileType {

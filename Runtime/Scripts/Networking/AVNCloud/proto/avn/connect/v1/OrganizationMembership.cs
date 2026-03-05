@@ -39,6 +39,9 @@ namespace Avn.Connect.V1 {
 
   }
   #region Messages
+  /// <summary>
+  /// Users can belong to one or more organization
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OrganizationMembership : pb::IMessage<OrganizationMembership>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -90,6 +93,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 1;
     private int userId_;
+    /// <summary>
+    /// User ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -102,6 +108,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 2;
     private int organizationId_;
+    /// <summary>
+    /// Organization ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -114,6 +123,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "role_id" field.</summary>
     public const int RoleIdFieldNumber = 3;
     private int roleId_;
+    /// <summary>
+    /// Role ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int RoleId {
@@ -128,6 +140,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_additionalPermissions_codec
         = pb::FieldCodec.ForString(34);
     private readonly pbc::RepeatedField<string> additionalPermissions_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Any permissions in addition to those granted by the role
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> AdditionalPermissions {

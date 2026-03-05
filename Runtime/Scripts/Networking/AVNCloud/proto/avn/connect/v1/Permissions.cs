@@ -28,22 +28,28 @@ namespace Avn.Connect.V1 {
             "Y3QudjEaImF2bi9jb25uZWN0L3YxL2F1dGhvcml6YXRpb24ucHJvdG8idgoK",
             "UGVybWlzc2lvbhIVCg1wZXJtaXNzaW9uX2lkGAEgASgJEgwKBG5hbWUYAiAB",
             "KAkSLgoFc2NvcGUYAyABKA4yHy5hdm4uY29ubmVjdC52MS5QZXJtaXNzaW9u",
-            "U2NvcGUSEwoLZGVzY3JpcHRpb24YBCABKAkirQEKEklzUGVybWl0dGVkUmVx",
-            "dWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXph",
-            "dGlvbhIWCg5wZXJtaXNzaW9uc19pZBgCIAEoCRIUCgd1c2VyX2lkGAMgASgF",
-            "SACIAQESHAoPb3JnYW5pemF0aW9uX2lkGAQgASgFSAGIAQFCCgoIX3VzZXJf",
-            "aWRCEgoQX29yZ2FuaXphdGlvbl9pZCIkChNJc1Blcm1pdHRlZFJlc3BvbnNl",
-            "Eg0KBXZhbHVlGAEgASgIKo0BCg9QZXJtaXNzaW9uU2NvcGUSIAocUEVSTUlT",
-            "U0lPTl9TQ09QRV9VTlNQRUNJRklFRBAAEhsKF1BFUk1JU1NJT05fU0NPUEVf",
-            "R0xPQkFMEAESHgoaUEVSTUlTU0lPTl9TQ09QRV9JTkhFUklURUQQAhIbChdQ",
-            "RVJNSVNTSU9OX1NDT1BFX0JSQU5DSBADMmsKEVBlcm1pc3Npb25TZXJ2aWNl",
-            "ElYKC0lzUGVybWl0dGVkEiIuYXZuLmNvbm5lY3QudjEuSXNQZXJtaXR0ZWRS",
-            "ZXF1ZXN0GiMuYXZuLmNvbm5lY3QudjEuSXNQZXJtaXR0ZWRSZXNwb25zZWIG",
-            "cHJvdG8z"));
+            "U2NvcGUSEwoLZGVzY3JpcHRpb24YBCABKAkiFwoVR2V0UGVybWlzc2lvbnNS",
+            "ZXF1ZXN0IkkKFkdldFBlcm1pc3Npb25zUmVzcG9uc2USLwoLcGVybWlzc2lv",
+            "bnMYASADKAsyGi5hdm4uY29ubmVjdC52MS5QZXJtaXNzaW9uIq0BChJJc1Bl",
+            "cm1pdHRlZFJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYx",
+            "LkF1dGhvcml6YXRpb24SFgoOcGVybWlzc2lvbnNfaWQYAiABKAkSFAoHdXNl",
+            "cl9pZBgDIAEoBUgAiAEBEhwKD29yZ2FuaXphdGlvbl9pZBgEIAEoBUgBiAEB",
+            "QgoKCF91c2VyX2lkQhIKEF9vcmdhbml6YXRpb25faWQiJAoTSXNQZXJtaXR0",
+            "ZWRSZXNwb25zZRINCgV2YWx1ZRgBIAEoCCqNAQoPUGVybWlzc2lvblNjb3Bl",
+            "EiAKHFBFUk1JU1NJT05fU0NPUEVfVU5TUEVDSUZJRUQQABIbChdQRVJNSVNT",
+            "SU9OX1NDT1BFX0dMT0JBTBABEh4KGlBFUk1JU1NJT05fU0NPUEVfSU5IRVJJ",
+            "VEVEEAISGwoXUEVSTUlTU0lPTl9TQ09QRV9CUkFOQ0gQAzLMAQoRUGVybWlz",
+            "c2lvblNlcnZpY2USXwoOR2V0UGVybWlzc2lvbnMSJS5hdm4uY29ubmVjdC52",
+            "MS5HZXRQZXJtaXNzaW9uc1JlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5HZXRQ",
+            "ZXJtaXNzaW9uc1Jlc3BvbnNlElYKC0lzUGVybWl0dGVkEiIuYXZuLmNvbm5l",
+            "Y3QudjEuSXNQZXJtaXR0ZWRSZXF1ZXN0GiMuYXZuLmNvbm5lY3QudjEuSXNQ",
+            "ZXJtaXR0ZWRSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.PermissionScope), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Permission), global::Avn.Connect.V1.Permission.Parser, new[]{ "PermissionId", "Name", "Scope", "Description" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetPermissionsRequest), global::Avn.Connect.V1.GetPermissionsRequest.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetPermissionsResponse), global::Avn.Connect.V1.GetPermissionsResponse.Parser, new[]{ "Permissions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.IsPermittedRequest), global::Avn.Connect.V1.IsPermittedRequest.Parser, new[]{ "Auth", "PermissionsId", "UserId", "OrganizationId" }, new[]{ "UserId", "OrganizationId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.IsPermittedResponse), global::Avn.Connect.V1.IsPermittedResponse.Parser, new[]{ "Value" }, null, null, null, null)
           }));
@@ -54,8 +60,17 @@ namespace Avn.Connect.V1 {
   #region Enums
   public enum PermissionScope {
     [pbr::OriginalName("PERMISSION_SCOPE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// GLOBAL permissions apply everywhere regardless of organization
+    /// </summary>
     [pbr::OriginalName("PERMISSION_SCOPE_GLOBAL")] Global = 1,
+    /// <summary>
+    /// IHERITED permissions flow from parent-to-child, e.g. granting an admin editing rights over subordinate organizations.
+    /// </summary>
     [pbr::OriginalName("PERMISSION_SCOPE_INHERITED")] Inherited = 2,
+    /// <summary>
+    /// BRANCH permissions also flow from parent-to-child and child-to-parent, e.g. granting an organization member permission to view the name of the organization's parent.
+    /// </summary>
     [pbr::OriginalName("PERMISSION_SCOPE_BRANCH")] Branch = 3,
   }
 
@@ -113,6 +128,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "permission_id" field.</summary>
     public const int PermissionIdFieldNumber = 1;
     private string permissionId_ = "";
+    /// <summary>
+    /// Unique ID of the permission
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PermissionId {
@@ -125,6 +143,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// Display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -137,6 +158,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "scope" field.</summary>
     public const int ScopeFieldNumber = 3;
     private global::Avn.Connect.V1.PermissionScope scope_ = global::Avn.Connect.V1.PermissionScope.Unspecified;
+    /// <summary>
+    /// Scope of the permission
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.PermissionScope Scope {
@@ -149,6 +173,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 4;
     private string description_ = "";
+    /// <summary>
+    /// A display-friendly description of the permission
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
@@ -372,6 +399,357 @@ namespace Avn.Connect.V1 {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetPermissionsRequest : pb::IMessage<GetPermissionsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetPermissionsRequest> _parser = new pb::MessageParser<GetPermissionsRequest>(() => new GetPermissionsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetPermissionsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.PermissionsReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPermissionsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPermissionsRequest(GetPermissionsRequest other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPermissionsRequest Clone() {
+      return new GetPermissionsRequest(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetPermissionsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetPermissionsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetPermissionsRequest other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetPermissionsResponse : pb::IMessage<GetPermissionsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetPermissionsResponse> _parser = new pb::MessageParser<GetPermissionsResponse>(() => new GetPermissionsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetPermissionsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.PermissionsReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPermissionsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPermissionsResponse(GetPermissionsResponse other) : this() {
+      permissions_ = other.permissions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetPermissionsResponse Clone() {
+      return new GetPermissionsResponse(this);
+    }
+
+    /// <summary>Field number for the "permissions" field.</summary>
+    public const int PermissionsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Avn.Connect.V1.Permission> _repeated_permissions_codec
+        = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.Permission.Parser);
+    private readonly pbc::RepeatedField<global::Avn.Connect.V1.Permission> permissions_ = new pbc::RepeatedField<global::Avn.Connect.V1.Permission>();
+    /// <summary>
+    /// All permissions
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Avn.Connect.V1.Permission> Permissions {
+      get { return permissions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetPermissionsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetPermissionsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!permissions_.Equals(other.permissions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= permissions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      permissions_.WriteTo(output, _repeated_permissions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      permissions_.WriteTo(ref output, _repeated_permissions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += permissions_.CalculateSize(_repeated_permissions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetPermissionsResponse other) {
+      if (other == null) {
+        return;
+      }
+      permissions_.Add(other.permissions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            permissions_.AddEntriesFrom(input, _repeated_permissions_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            permissions_.AddEntriesFrom(ref input, _repeated_permissions_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IsPermittedRequest : pb::IMessage<IsPermittedRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -387,7 +765,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.PermissionsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Avn.Connect.V1.PermissionsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -424,6 +802,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -454,7 +835,7 @@ namespace Avn.Connect.V1 {
 
     private int userId_;
     /// <summary>
-    /// The user under test (unset to use the ID of the authorizing user)
+    /// The user to test or unset to use the ID of the authorizing user
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -745,7 +1126,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.PermissionsReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Avn.Connect.V1.PermissionsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -778,6 +1159,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
     private bool value_;
+    /// <summary>
+    /// True if the user has the permission
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Value {

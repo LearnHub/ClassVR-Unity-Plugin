@@ -75,6 +75,10 @@ namespace Avn.Connect.V1 {
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetMediaDeviceSpecsRequest> __Marshaller_avn_connect_v1_GetMediaDeviceSpecsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetMediaDeviceSpecsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetMediaDeviceSpecsResponse> __Marshaller_avn_connect_v1_GetMediaDeviceSpecsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetMediaDeviceSpecsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetMediaSpectrumRequest> __Marshaller_avn_connect_v1_GetMediaSpectrumRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetMediaSpectrumRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetMediaSpectrumResponse> __Marshaller_avn_connect_v1_GetMediaSpectrumResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetMediaSpectrumResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.GetPreviewImageRequest, global::Avn.Connect.V1.GetPreviewImageResponse> __Method_GetPreviewImage = new grpc::Method<global::Avn.Connect.V1.GetPreviewImageRequest, global::Avn.Connect.V1.GetPreviewImageResponse>(
@@ -139,6 +143,14 @@ namespace Avn.Connect.V1 {
         "GetMediaDeviceSpecs",
         __Marshaller_avn_connect_v1_GetMediaDeviceSpecsRequest,
         __Marshaller_avn_connect_v1_GetMediaDeviceSpecsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetMediaSpectrumRequest, global::Avn.Connect.V1.GetMediaSpectrumResponse> __Method_GetMediaSpectrum = new grpc::Method<global::Avn.Connect.V1.GetMediaSpectrumRequest, global::Avn.Connect.V1.GetMediaSpectrumResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMediaSpectrum",
+        __Marshaller_avn_connect_v1_GetMediaSpectrumRequest,
+        __Marshaller_avn_connect_v1_GetMediaSpectrumResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -222,7 +234,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetPreviewImage, null, options, request);
       }
       /// <summary>
-      /// Metadata functions
+      /// Get image metadata
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -235,7 +247,7 @@ namespace Avn.Connect.V1 {
         return GetImageMetadata(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Metadata functions
+      /// Get image metadata
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -246,7 +258,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetImageMetadata, null, options, request);
       }
       /// <summary>
-      /// Metadata functions
+      /// Get image metadata
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -259,7 +271,7 @@ namespace Avn.Connect.V1 {
         return GetImageMetadataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Metadata functions
+      /// Get image metadata
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -269,48 +281,104 @@ namespace Avn.Connect.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetImageMetadata, null, options, request);
       }
+      /// <summary>
+      /// Get video metadata
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.GetVideoMetadataResponse GetVideoMetadata(global::Avn.Connect.V1.GetMetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetVideoMetadata(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get video metadata
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.GetVideoMetadataResponse GetVideoMetadata(global::Avn.Connect.V1.GetMetadataRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetVideoMetadata, null, options, request);
       }
+      /// <summary>
+      /// Get video metadata
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetVideoMetadataResponse> GetVideoMetadataAsync(global::Avn.Connect.V1.GetMetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetVideoMetadataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get video metadata
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetVideoMetadataResponse> GetVideoMetadataAsync(global::Avn.Connect.V1.GetMetadataRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetVideoMetadata, null, options, request);
       }
+      /// <summary>
+      /// Check media compatibility with specific device profiles
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.CheckMediaCompatibilityResponse CheckMediaCompatibility(global::Avn.Connect.V1.CheckMediaCompatibilityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CheckMediaCompatibility(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Check media compatibility with specific device profiles
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.CheckMediaCompatibilityResponse CheckMediaCompatibility(global::Avn.Connect.V1.CheckMediaCompatibilityRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CheckMediaCompatibility, null, options, request);
       }
+      /// <summary>
+      /// Check media compatibility with specific device profiles
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.CheckMediaCompatibilityResponse> CheckMediaCompatibilityAsync(global::Avn.Connect.V1.CheckMediaCompatibilityRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CheckMediaCompatibilityAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Check media compatibility with specific device profiles
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.CheckMediaCompatibilityResponse> CheckMediaCompatibilityAsync(global::Avn.Connect.V1.CheckMediaCompatibilityRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CheckMediaCompatibility, null, options, request);
       }
       /// <summary>
-      /// Transcoding functions
+      /// Transcode an image
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -323,7 +391,7 @@ namespace Avn.Connect.V1 {
         return TranscodeImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Transcoding functions
+      /// Transcode an image
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -334,7 +402,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_TranscodeImage, null, options, request);
       }
       /// <summary>
-      /// Transcoding functions
+      /// Transcode an image
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -347,7 +415,7 @@ namespace Avn.Connect.V1 {
         return TranscodeImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Transcoding functions
+      /// Transcode an image
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -357,11 +425,25 @@ namespace Avn.Connect.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_TranscodeImage, null, options, request);
       }
+      /// <summary>
+      /// Transcode a video
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::Avn.Connect.V1.TranscodeVideoResponse> TranscodeVideo(global::Avn.Connect.V1.TranscodeVideoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return TranscodeVideo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Transcode a video
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncServerStreamingCall<global::Avn.Connect.V1.TranscodeVideoResponse> TranscodeVideo(global::Avn.Connect.V1.TranscodeVideoRequest request, grpc::CallOptions options)
       {
@@ -462,6 +544,54 @@ namespace Avn.Connect.V1 {
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetMediaDeviceSpecsResponse> GetMediaDeviceSpecsAsync(global::Avn.Connect.V1.GetMediaDeviceSpecsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetMediaDeviceSpecs, null, options, request);
+      }
+      /// <summary>
+      /// Audio analysis
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetMediaSpectrumResponse GetMediaSpectrum(global::Avn.Connect.V1.GetMediaSpectrumRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMediaSpectrum(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Audio analysis
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetMediaSpectrumResponse GetMediaSpectrum(global::Avn.Connect.V1.GetMediaSpectrumRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMediaSpectrum, null, options, request);
+      }
+      /// <summary>
+      /// Audio analysis
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetMediaSpectrumResponse> GetMediaSpectrumAsync(global::Avn.Connect.V1.GetMediaSpectrumRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMediaSpectrumAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Audio analysis
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetMediaSpectrumResponse> GetMediaSpectrumAsync(global::Avn.Connect.V1.GetMediaSpectrumRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMediaSpectrum, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
