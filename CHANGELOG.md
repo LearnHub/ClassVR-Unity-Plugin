@@ -5,68 +5,69 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## \[Unreleased]
 
 ### Added
 
-- Tilt to spin OpenXR feature with API to disable/enable at runtime
-- Optional JWT argument to FileUploader.UploadToSharedCloud that falls back to using CVRProperties (only available on Android)
-- FileUploader.UploadToSharedCloud overload which takes a filepath
-- Low-level (plumbing) class AvnfsUploader for file upload on Android via the AVNFS ContentProvider
-- ContentProviderClient for file retrieval on Android via URI from a ContentProvider
+* Tilt to spin OpenXR feature with API to disable/enable at runtime
+* Optional JWT argument to FileUploader.UploadToSharedCloud that falls back to using CVRProperties (only available on Android)
+* FileUploader.UploadToSharedCloud overload which takes a filepath
+* Low-level (plumbing) class AvnfsUploader for file upload on Android via the AVNFS ContentProvider
+* ContentProviderClient for file retrieval on Android via URI from a ContentProvider
 
 ### Changed
 
-- Upgraded CVR Unity Java Plugin to version 7
-- FileUploader.UploadToSharedCloud uses AVNFS ContentProvider for upload on Android, instead of gRPC + HTTP POST
+* Upgraded CVR Unity Java Plugin to version 7
+* FileUploader.UploadToSharedCloud uses AVNFS ContentProvider for upload on Android, instead of gRPC + HTTP POST
+* Regenerated C# gRPC client for AVNCloud
 
-## [1.5.0] - 2025-11-04
+## \[1.5.0] - 2025-11-04
 
 ### Added
 
-- IntentProvider class with event for receiving new intents
-- DeepLinkActivity which notifies when it receives new intents
+* IntentProvider class with event for receiving new intents
+* DeepLinkActivity which notifies when it receives new intents
 
 ### Changed
 
-- Upgraded CVR Unity Java Plugin to version 6
+* Upgraded CVR Unity Java Plugin to version 6
 
 ### Deprecated
 
-- AndroidIntent.Instance is obsolete as it is no longer a singleton. Functionality remains unchanged for backwards compatibility.
+* AndroidIntent.Instance is obsolete as it is no longer a singleton. Functionality remains unchanged for backwards compatibility.
 
-## [1.4.0] - 2025-10-23
-
-### Added
-
-- Methods for uploading files to the ClassVR Shared Cloud area for the current organisation
-
-## [1.3.0] - 2025-09-16
+## \[1.4.0] - 2025-10-23
 
 ### Added
 
-- Updated AVNCloud gRPC clients to add XLIFF translation support
+* Methods for uploading files to the ClassVR Shared Cloud area for the current organisation
 
-## [1.2.0] - 2025-08-13
-
-### Added
-
-- API for logging analytics events to AVN Cloud
-
-## [1.1.0] - 2025-08-04
+## \[1.3.0] - 2025-09-16
 
 ### Added
 
-- API for querying the system locale
+* Updated AVNCloud gRPC clients to add XLIFF translation support
+
+## \[1.2.0] - 2025-08-13
+
+### Added
+
+* API for logging analytics events to AVN Cloud
+
+## \[1.1.0] - 2025-08-04
+
+### Added
+
+* API for querying the system locale
 
 ### Changed
 
-- CVR Unity Java Plugin to version 5
+* CVR Unity Java Plugin to version 5
 
-## [1.0.0] - 2025-07-03
+## \[1.0.0] - 2025-07-03
 
 ### Added
 
-- Unity package layout
-- API for querying ClassVR device properties
-- API for querying the Android launch Intent
+* Unity package layout
+* API for querying ClassVR device properties
+* API for querying the Android launch Intent
