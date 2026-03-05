@@ -28,48 +28,49 @@ namespace Avn.Connect.V1 {
             "MRofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxocZ29vZ2xlL3By",
             "b3RvYnVmL3N0cnVjdC5wcm90bxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnBy",
             "b3RvGh1hdm4vY29ubmVjdC92MS9lbnRpdGllcy5wcm90bxoiYXZuL2Nvbm5l",
-            "Y3QvdjEvYXV0aG9yaXphdGlvbi5wcm90byJUChFDbGllbnRDcmVkZW50aWFs",
-            "cxIRCgljbGllbnRfaWQYASABKAkSGgoNY2xpZW50X3NlY3JldBgCIAEoCUgA",
-            "iAEBQhAKDl9jbGllbnRfc2VjcmV0Iu8BChNSZWNvcmRBY3Rpb25SZXF1ZXN0",
-            "EjEKBmNsaWVudBgBIAEoCzIhLmF2bi5jb25uZWN0LnYxLkNsaWVudENyZWRl",
-            "bnRpYWxzEhEKCWFjdGlvbl9pZBgCIAEoCRIRCglzb3VyY2VfaWQYAyABKAkS",
-            "DwoHaG9zdF9pZBgGIAEoCRIqCgRkYXRhGAQgASgLMhcuZ29vZ2xlLnByb3Rv",
-            "YnVmLlN0cnVjdEgAiAEBEjAKBGF1dGgYBSABKAsyHS5hdm4uY29ubmVjdC52",
-            "MS5BdXRob3JpemF0aW9uSAGIAQFCBwoFX2RhdGFCBwoFX2F1dGgi2QEKFVJl",
-            "Y29yZEZlZWRiYWNrUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5l",
-            "Y3QudjEuQXV0aG9yaXphdGlvbhITCgtmZWVkYmFja19pZBgCIAEoCRIXCg9m",
-            "ZWVkYmFja19yZWFzb24YAyABKAkSHAoPZmVlZGJhY2tfZGV0YWlsGAQgASgJ",
-            "SACIAQESKgoEZGF0YRgFIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RI",
-            "AYgBAUISChBfZmVlZGJhY2tfZGV0YWlsQgcKBV9kYXRhIp0BCh5DcmVhdGVD",
-            "bGllbnRDcmVkZW50aWFsc1JlcXVlc3QSEwoGcHJlZml4GAEgASgJSACIAQES",
-            "FAoHcG9zdGZpeBgCIAEoCUgBiAEBEjkKDGNsaWVudF9zdGF0ZRgDIAMoCzIj",
-            "LmF2bi5jb25uZWN0LnYxLkVudGl0eVByb3BlcnR5U3RhdGVCCQoHX3ByZWZp",
-            "eEIKCghfcG9zdGZpeCJgCh9DcmVhdGVDbGllbnRDcmVkZW50aWFsc1Jlc3Bv",
-            "bnNlEj0KEmNsaWVudF9jcmVkZW50aWFscxgBIAEoCzIhLmF2bi5jb25uZWN0",
-            "LnYxLkNsaWVudENyZWRlbnRpYWxzIoIBChBMaWdodGhvdXNlU2VydmVyEhUK",
-            "DWxpZ2h0aG91c2VfaWQYASABKAkSEgoKd2FuQWRkcmVzcxgCIAEoCRITCgt3",
-            "YW5Ib3N0bmFtZRgDIAEoCRIuCgpyZWdpc3RlcmVkGAQgASgLMhouZ29vZ2xl",
-            "LnByb3RvYnVmLlRpbWVzdGFtcCJUCh9SZWdpc3RlckxpZ2h0aG91c2VTZXJ2",
-            "ZXJSZXF1ZXN0EjEKBmNsaWVudBgBIAEoCzIhLmF2bi5jb25uZWN0LnYxLkNs",
-            "aWVudENyZWRlbnRpYWxzIlQKIFJlZ2lzdGVyTGlnaHRob3VzZVNlcnZlclJl",
-            "c3BvbnNlEjAKBnNlcnZlchgBIAEoCzIgLmF2bi5jb25uZWN0LnYxLkxpZ2h0",
-            "aG91c2VTZXJ2ZXIiHQobR2V0TGlnaHRob3VzZVNlcnZlcnNSZXF1ZXN0IlEK",
-            "HEdldExpZ2h0aG91c2VTZXJ2ZXJzUmVzcG9uc2USMQoHc2VydmVycxgBIAMo",
-            "CzIgLmF2bi5jb25uZWN0LnYxLkxpZ2h0aG91c2VTZXJ2ZXIymwQKDUNsaWVu",
-            "dFNlcnZpY2USegoXQ3JlYXRlQ2xpZW50Q3JlZGVudGlhbHMSLi5hdm4uY29u",
-            "bmVjdC52MS5DcmVhdGVDbGllbnRDcmVkZW50aWFsc1JlcXVlc3QaLy5hdm4u",
-            "Y29ubmVjdC52MS5DcmVhdGVDbGllbnRDcmVkZW50aWFsc1Jlc3BvbnNlEksK",
-            "DFJlY29yZEFjdGlvbhIjLmF2bi5jb25uZWN0LnYxLlJlY29yZEFjdGlvblJl",
-            "cXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSTwoOUmVjb3JkRmVlZGJh",
-            "Y2sSJS5hdm4uY29ubmVjdC52MS5SZWNvcmRGZWVkYmFja1JlcXVlc3QaFi5n",
-            "b29nbGUucHJvdG9idWYuRW1wdHkSfQoYUmVnaXN0ZXJMaWdodGhvdXNlU2Vy",
-            "dmVyEi8uYXZuLmNvbm5lY3QudjEuUmVnaXN0ZXJMaWdodGhvdXNlU2VydmVy",
-            "UmVxdWVzdBowLmF2bi5jb25uZWN0LnYxLlJlZ2lzdGVyTGlnaHRob3VzZVNl",
-            "cnZlclJlc3BvbnNlEnEKFEdldExpZ2h0aG91c2VTZXJ2ZXJzEisuYXZuLmNv",
-            "bm5lY3QudjEuR2V0TGlnaHRob3VzZVNlcnZlcnNSZXF1ZXN0GiwuYXZuLmNv",
-            "bm5lY3QudjEuR2V0TGlnaHRob3VzZVNlcnZlcnNSZXNwb25zZWIGcHJvdG8z"));
+            "Y3QvdjEvYXV0aG9yaXphdGlvbi5wcm90bxofYXZuL2Nvbm5lY3QvdjEvcHJv",
+            "cGVydGllcy5wcm90byJUChFDbGllbnRDcmVkZW50aWFscxIRCgljbGllbnRf",
+            "aWQYASABKAkSGgoNY2xpZW50X3NlY3JldBgCIAEoCUgAiAEBQhAKDl9jbGll",
+            "bnRfc2VjcmV0Iu8BChNSZWNvcmRBY3Rpb25SZXF1ZXN0EjEKBmNsaWVudBgB",
+            "IAEoCzIhLmF2bi5jb25uZWN0LnYxLkNsaWVudENyZWRlbnRpYWxzEhEKCWFj",
+            "dGlvbl9pZBgCIAEoCRIRCglzb3VyY2VfaWQYAyABKAkSDwoHaG9zdF9pZBgG",
+            "IAEoCRIqCgRkYXRhGAQgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdEgA",
+            "iAEBEjAKBGF1dGgYBSABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0",
+            "aW9uSAGIAQFCBwoFX2RhdGFCBwoFX2F1dGgi2QEKFVJlY29yZEZlZWRiYWNr",
+            "UmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9y",
+            "aXphdGlvbhITCgtmZWVkYmFja19pZBgCIAEoCRIXCg9mZWVkYmFja19yZWFz",
+            "b24YAyABKAkSHAoPZmVlZGJhY2tfZGV0YWlsGAQgASgJSACIAQESKgoEZGF0",
+            "YRgFIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RIAYgBAUISChBfZmVl",
+            "ZGJhY2tfZGV0YWlsQgcKBV9kYXRhIp0BCh5DcmVhdGVDbGllbnRDcmVkZW50",
+            "aWFsc1JlcXVlc3QSEwoGcHJlZml4GAEgASgJSACIAQESFAoHcG9zdGZpeBgC",
+            "IAEoCUgBiAEBEjkKDGNsaWVudF9zdGF0ZRgDIAMoCzIjLmF2bi5jb25uZWN0",
+            "LnYxLkVudGl0eVByb3BlcnR5U3RhdGVCCQoHX3ByZWZpeEIKCghfcG9zdGZp",
+            "eCJgCh9DcmVhdGVDbGllbnRDcmVkZW50aWFsc1Jlc3BvbnNlEj0KEmNsaWVu",
+            "dF9jcmVkZW50aWFscxgBIAEoCzIhLmF2bi5jb25uZWN0LnYxLkNsaWVudENy",
+            "ZWRlbnRpYWxzIoIBChBMaWdodGhvdXNlU2VydmVyEhUKDWxpZ2h0aG91c2Vf",
+            "aWQYASABKAkSEgoKd2FuQWRkcmVzcxgCIAEoCRITCgt3YW5Ib3N0bmFtZRgD",
+            "IAEoCRIuCgpyZWdpc3RlcmVkGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRp",
+            "bWVzdGFtcCJUCh9SZWdpc3RlckxpZ2h0aG91c2VTZXJ2ZXJSZXF1ZXN0EjEK",
+            "BmNsaWVudBgBIAEoCzIhLmF2bi5jb25uZWN0LnYxLkNsaWVudENyZWRlbnRp",
+            "YWxzIlQKIFJlZ2lzdGVyTGlnaHRob3VzZVNlcnZlclJlc3BvbnNlEjAKBnNl",
+            "cnZlchgBIAEoCzIgLmF2bi5jb25uZWN0LnYxLkxpZ2h0aG91c2VTZXJ2ZXIi",
+            "HQobR2V0TGlnaHRob3VzZVNlcnZlcnNSZXF1ZXN0IlEKHEdldExpZ2h0aG91",
+            "c2VTZXJ2ZXJzUmVzcG9uc2USMQoHc2VydmVycxgBIAMoCzIgLmF2bi5jb25u",
+            "ZWN0LnYxLkxpZ2h0aG91c2VTZXJ2ZXIymwQKDUNsaWVudFNlcnZpY2USegoX",
+            "Q3JlYXRlQ2xpZW50Q3JlZGVudGlhbHMSLi5hdm4uY29ubmVjdC52MS5DcmVh",
+            "dGVDbGllbnRDcmVkZW50aWFsc1JlcXVlc3QaLy5hdm4uY29ubmVjdC52MS5D",
+            "cmVhdGVDbGllbnRDcmVkZW50aWFsc1Jlc3BvbnNlEksKDFJlY29yZEFjdGlv",
+            "bhIjLmF2bi5jb25uZWN0LnYxLlJlY29yZEFjdGlvblJlcXVlc3QaFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkSTwoOUmVjb3JkRmVlZGJhY2sSJS5hdm4uY29u",
+            "bmVjdC52MS5SZWNvcmRGZWVkYmFja1JlcXVlc3QaFi5nb29nbGUucHJvdG9i",
+            "dWYuRW1wdHkSfQoYUmVnaXN0ZXJMaWdodGhvdXNlU2VydmVyEi8uYXZuLmNv",
+            "bm5lY3QudjEuUmVnaXN0ZXJMaWdodGhvdXNlU2VydmVyUmVxdWVzdBowLmF2",
+            "bi5jb25uZWN0LnYxLlJlZ2lzdGVyTGlnaHRob3VzZVNlcnZlclJlc3BvbnNl",
+            "EnEKFEdldExpZ2h0aG91c2VTZXJ2ZXJzEisuYXZuLmNvbm5lY3QudjEuR2V0",
+            "TGlnaHRob3VzZVNlcnZlcnNSZXF1ZXN0GiwuYXZuLmNvbm5lY3QudjEuR2V0",
+            "TGlnaHRob3VzZVNlcnZlcnNSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.ClientCredentials), global::Avn.Connect.V1.ClientCredentials.Parser, new[]{ "ClientId", "ClientSecret" }, new[]{ "ClientSecret" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.RecordActionRequest), global::Avn.Connect.V1.RecordActionRequest.Parser, new[]{ "Client", "ActionId", "SourceId", "HostId", "Data", "Auth" }, new[]{ "Data", "Auth" }, null, null, null),
@@ -87,6 +88,9 @@ namespace Avn.Connect.V1 {
 
   }
   #region Messages
+  /// <summary>
+  /// Clients are issued temporary credentials for accessing services
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClientCredentials : pb::IMessage<ClientCredentials>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -136,6 +140,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "client_id" field.</summary>
     public const int ClientIdFieldNumber = 1;
     private string clientId_ = "";
+    /// <summary>
+    /// Unique ID of client
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClientId {
@@ -150,6 +157,9 @@ namespace Avn.Connect.V1 {
     private readonly static string ClientSecretDefaultValue = "";
 
     private string clientSecret_;
+    /// <summary>
+    /// Private client secret for authentication
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClientSecret {
@@ -389,6 +399,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "client" field.</summary>
     public const int ClientFieldNumber = 1;
     private global::Avn.Connect.V1.ClientCredentials client_;
+    /// <summary>
+    /// Client ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ClientCredentials Client {
@@ -813,6 +826,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1204,7 +1220,7 @@ namespace Avn.Connect.V1 {
 
     private string prefix_;
     /// <summary>
-    /// Useful for user-friendly naming
+    /// Useful for user-friendly naming by prefixing
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1232,6 +1248,9 @@ namespace Avn.Connect.V1 {
     private readonly static string PostfixDefaultValue = "";
 
     private string postfix_;
+    /// <summary>
+    /// Useful for user-friendly naming by postfixing
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Postfix {
@@ -1259,7 +1278,7 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForMessage(26, global::Avn.Connect.V1.EntityPropertyState.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.EntityPropertyState> clientState_ = new pbc::RepeatedField<global::Avn.Connect.V1.EntityPropertyState>();
     /// <summary>
-    /// Fingerprint of client
+    /// Fingerprint of client compiled from a collection of client properties
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1494,6 +1513,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "client_credentials" field.</summary>
     public const int ClientCredentialsFieldNumber = 1;
     private global::Avn.Connect.V1.ClientCredentials clientCredentials_;
+    /// <summary>
+    /// New client credentials
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ClientCredentials ClientCredentials {

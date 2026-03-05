@@ -45,6 +45,9 @@ namespace Avn.Connect.V1 {
 
   }
   #region Messages
+  /// <summary>
+  /// Registered Eduverse user
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class User : pb::IMessage<User>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -106,6 +109,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 1;
     private int userId_;
+    /// <summary>
+    /// User ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -118,6 +124,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "email" field.</summary>
     public const int EmailFieldNumber = 2;
     private string email_ = "";
+    /// <summary>
+    /// User email address
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Email {
@@ -130,6 +139,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 3;
     private string name_ = "";
+    /// <summary>
+    /// User display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -142,6 +154,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "country_id" field.</summary>
     public const int CountryIdFieldNumber = 4;
     private string countryId_ = "";
+    /// <summary>
+    /// User country
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CountryId {
@@ -154,6 +169,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "language_id" field.</summary>
     public const int LanguageIdFieldNumber = 5;
     private string languageId_ = "";
+    /// <summary>
+    /// User's preferred display language
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LanguageId {
@@ -166,6 +184,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "deleted" field.</summary>
     public const int DeletedFieldNumber = 6;
     private bool deleted_;
+    /// <summary>
+    /// Is this user deleted?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Deleted {
@@ -180,6 +201,9 @@ namespace Avn.Connect.V1 {
     private readonly static bool EmailVerifiedDefaultValue = false;
 
     private bool emailVerified_;
+    /// <summary>
+    /// Is the user's email address verified?
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool EmailVerified {
@@ -207,6 +231,9 @@ namespace Avn.Connect.V1 {
     private readonly static string PictureUrlDefaultValue = "";
 
     private string pictureUrl_;
+    /// <summary>
+    /// Picture of user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PictureUrl {
@@ -233,6 +260,9 @@ namespace Avn.Connect.V1 {
     private readonly static string PhoneDefaultValue = "";
 
     private string phone_;
+    /// <summary>
+    /// User's phone number
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Phone {
@@ -257,6 +287,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "first_login" field.</summary>
     public const int FirstLoginFieldNumber = 13;
     private global::Google.Protobuf.WellKnownTypes.Timestamp firstLogin_;
+    /// <summary>
+    /// When user first signed into an Eduverse portal
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp FirstLogin {
@@ -269,6 +302,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "last_login" field.</summary>
     public const int LastLoginFieldNumber = 14;
     private global::Google.Protobuf.WellKnownTypes.Timestamp lastLogin_;
+    /// <summary>
+    /// When user last signed into an Eduverse portal
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp LastLogin {

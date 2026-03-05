@@ -26,42 +26,43 @@ namespace Avn.Connect.V1 {
           string.Concat(
             "Chphdm4vY29ubmVjdC92MS9hdm5mcy5wcm90bxIOYXZuLmNvbm5lY3QudjEa",
             "GWF2bi9jb25uZWN0L3YxL2h0dHAucHJvdG8aImF2bi9jb25uZWN0L3YxL2F1",
-            "dGhvcml6YXRpb24ucHJvdG8ibwoRR2V0RmlsZVVybFJlcXVlc3QSDAoEaGFz",
-            "aBgBIAEoCRISCgpzaXplX2J5dGVzGAIgASgDEhIKCm1lZGlhX3R5cGUYAyAB",
-            "KAkSFgoJZmlsZV9uYW1lGAQgASgJSACIAQFCDAoKX2ZpbGVfbmFtZSIuChJH",
-            "ZXRGaWxlVXJsUmVzcG9uc2USEAoDdXJsGAEgASgJSACIAQFCBgoEX3VybCLk",
-            "AQoQSW1wb3J0VXJsUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5l",
-            "Y3QudjEuQXV0aG9yaXphdGlvbhILCgN1cmwYAiABKAkSFwoKbWVkaWFfdHlw",
-            "ZRgDIAEoCUgAiAEBEj4KB2hlYWRlcnMYBCADKAsyLS5hdm4uY29ubmVjdC52",
-            "MS5JbXBvcnRVcmxSZXF1ZXN0LkhlYWRlcnNFbnRyeRouCgxIZWFkZXJzRW50",
-            "cnkSCwoDa2V5GAEgASgJEg0KBXZhbHVlGAIgASgJOgI4AUINCgtfbWVkaWFf",
-            "dHlwZSIgChFJbXBvcnRVcmxSZXNwb25zZRILCgN1cmwYASABKAkinQEKEkdl",
-            "dE1hbmlmZXN0UmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3Qu",
-            "djEuQXV0aG9yaXphdGlvbhIMCgRoYXNoGAIgASgJEhIKCnNpemVfYnl0ZXMY",
-            "AyABKAMSEgoKbWVkaWFfdHlwZRgEIAEoCRIWCglmaWxlX25hbWUYBSABKAlI",
-            "AIgBAUIMCgpfZmlsZV9uYW1lIm4KDlVwbG9hZE1hbmlmZXN0EhIKCnVwbG9h",
-            "ZF91cmwYASABKAkSFAoMZG93bmxvYWRfdXJsGAIgASgJEjIKDWhlYWRlcl9m",
-            "aWVsZHMYAyADKAsyGy5hdm4uY29ubmVjdC52MS5IZWFkZXJGaWVsZCJvCglB",
-            "bHRTZXJ2ZXISKwoEdHlwZRgBIAEoDjIdLmF2bi5jb25uZWN0LnYxLkFsdFNl",
-            "cnZlclR5cGUSEwoLY2xpZW50X25hbWUYAiABKAkSEQoJY2xpZW50X2lkGAMg",
-            "ASgJEg0KBWhvc3RzGAQgAygJIhYKFEdldEFsdFNlcnZlcnNSZXF1ZXN0IkMK",
-            "FUdldEFsdFNlcnZlcnNSZXNwb25zZRIqCgdzZXJ2ZXJzGAEgAygLMhkuYXZu",
-            "LmNvbm5lY3QudjEuQWx0U2VydmVyKoABCg1BbHRTZXJ2ZXJUeXBlEh8KG0FM",
-            "VF9TRVJWRVJfVFlQRV9VTlNQRUNJRklFRBAAEhcKE0FMVF9TRVJWRVJfVFlQ",
-            "RV9MQU4QARIXChNBTFRfU0VSVkVSX1RZUEVfV0FOEAISHAoYQUxUX1NFUlZF",
-            "Ul9UWVBFX1JFR0lPTkFMEAMy6gIKDEF2bmZzU2VydmljZRJTCgpHZXRGaWxl",
-            "VXJsEiEuYXZuLmNvbm5lY3QudjEuR2V0RmlsZVVybFJlcXVlc3QaIi5hdm4u",
-            "Y29ubmVjdC52MS5HZXRGaWxlVXJsUmVzcG9uc2USVQoPR2V0UG9zdE1hbmlm",
-            "ZXN0EiIuYXZuLmNvbm5lY3QudjEuR2V0TWFuaWZlc3RSZXF1ZXN0Gh4uYXZu",
-            "LmNvbm5lY3QudjEuVXBsb2FkTWFuaWZlc3QSUAoJSW1wb3J0VXJsEiAuYXZu",
-            "LmNvbm5lY3QudjEuSW1wb3J0VXJsUmVxdWVzdBohLmF2bi5jb25uZWN0LnYx",
-            "LkltcG9ydFVybFJlc3BvbnNlElwKDUdldEFsdFNlcnZlcnMSJC5hdm4uY29u",
-            "bmVjdC52MS5HZXRBbHRTZXJ2ZXJzUmVxdWVzdBolLmF2bi5jb25uZWN0LnYx",
-            "LkdldEFsdFNlcnZlcnNSZXNwb25zZWIGcHJvdG8z"));
+            "dGhvcml6YXRpb24ucHJvdG8inAEKEUdldEZpbGVVcmxSZXF1ZXN0EisKBGF1",
+            "dGgYBSABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEgwKBGhh",
+            "c2gYASABKAkSEgoKc2l6ZV9ieXRlcxgCIAEoAxISCgptZWRpYV90eXBlGAMg",
+            "ASgJEhYKCWZpbGVfbmFtZRgEIAEoCUgAiAEBQgwKCl9maWxlX25hbWUiLgoS",
+            "R2V0RmlsZVVybFJlc3BvbnNlEhAKA3VybBgBIAEoCUgAiAEBQgYKBF91cmwi",
+            "5AEKEEltcG9ydFVybFJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25u",
+            "ZWN0LnYxLkF1dGhvcml6YXRpb24SCwoDdXJsGAIgASgJEhcKCm1lZGlhX3R5",
+            "cGUYAyABKAlIAIgBARI+CgdoZWFkZXJzGAQgAygLMi0uYXZuLmNvbm5lY3Qu",
+            "djEuSW1wb3J0VXJsUmVxdWVzdC5IZWFkZXJzRW50cnkaLgoMSGVhZGVyc0Vu",
+            "dHJ5EgsKA2tleRgBIAEoCRINCgV2YWx1ZRgCIAEoCToCOAFCDQoLX21lZGlh",
+            "X3R5cGUiIAoRSW1wb3J0VXJsUmVzcG9uc2USCwoDdXJsGAEgASgJIp0BChJH",
+            "ZXRNYW5pZmVzdFJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0",
+            "LnYxLkF1dGhvcml6YXRpb24SDAoEaGFzaBgCIAEoCRISCgpzaXplX2J5dGVz",
+            "GAMgASgDEhIKCm1lZGlhX3R5cGUYBCABKAkSFgoJZmlsZV9uYW1lGAUgASgJ",
+            "SACIAQFCDAoKX2ZpbGVfbmFtZSJuCg5VcGxvYWRNYW5pZmVzdBISCgp1cGxv",
+            "YWRfdXJsGAEgASgJEhQKDGRvd25sb2FkX3VybBgCIAEoCRIyCg1oZWFkZXJf",
+            "ZmllbGRzGAMgAygLMhsuYXZuLmNvbm5lY3QudjEuSGVhZGVyRmllbGQibwoJ",
+            "QWx0U2VydmVyEisKBHR5cGUYASABKA4yHS5hdm4uY29ubmVjdC52MS5BbHRT",
+            "ZXJ2ZXJUeXBlEhMKC2NsaWVudF9uYW1lGAIgASgJEhEKCWNsaWVudF9pZBgD",
+            "IAEoCRINCgVob3N0cxgEIAMoCSIWChRHZXRBbHRTZXJ2ZXJzUmVxdWVzdCJD",
+            "ChVHZXRBbHRTZXJ2ZXJzUmVzcG9uc2USKgoHc2VydmVycxgBIAMoCzIZLmF2",
+            "bi5jb25uZWN0LnYxLkFsdFNlcnZlciqAAQoNQWx0U2VydmVyVHlwZRIfChtB",
+            "TFRfU0VSVkVSX1RZUEVfVU5TUEVDSUZJRUQQABIXChNBTFRfU0VSVkVSX1RZ",
+            "UEVfTEFOEAESFwoTQUxUX1NFUlZFUl9UWVBFX1dBThACEhwKGEFMVF9TRVJW",
+            "RVJfVFlQRV9SRUdJT05BTBADMuoCCgxBdm5mc1NlcnZpY2USUwoKR2V0Rmls",
+            "ZVVybBIhLmF2bi5jb25uZWN0LnYxLkdldEZpbGVVcmxSZXF1ZXN0GiIuYXZu",
+            "LmNvbm5lY3QudjEuR2V0RmlsZVVybFJlc3BvbnNlElUKD0dldFBvc3RNYW5p",
+            "ZmVzdBIiLmF2bi5jb25uZWN0LnYxLkdldE1hbmlmZXN0UmVxdWVzdBoeLmF2",
+            "bi5jb25uZWN0LnYxLlVwbG9hZE1hbmlmZXN0ElAKCUltcG9ydFVybBIgLmF2",
+            "bi5jb25uZWN0LnYxLkltcG9ydFVybFJlcXVlc3QaIS5hdm4uY29ubmVjdC52",
+            "MS5JbXBvcnRVcmxSZXNwb25zZRJcCg1HZXRBbHRTZXJ2ZXJzEiQuYXZuLmNv",
+            "bm5lY3QudjEuR2V0QWx0U2VydmVyc1JlcXVlc3QaJS5hdm4uY29ubmVjdC52",
+            "MS5HZXRBbHRTZXJ2ZXJzUmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Avn.Connect.V1.HttpReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.AltServerType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetFileUrlRequest), global::Avn.Connect.V1.GetFileUrlRequest.Parser, new[]{ "Hash", "SizeBytes", "MediaType", "FileName" }, new[]{ "FileName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetFileUrlRequest), global::Avn.Connect.V1.GetFileUrlRequest.Parser, new[]{ "Auth", "Hash", "SizeBytes", "MediaType", "FileName" }, new[]{ "FileName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetFileUrlResponse), global::Avn.Connect.V1.GetFileUrlResponse.Parser, new[]{ "Url" }, new[]{ "Url" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.ImportUrlRequest), global::Avn.Connect.V1.ImportUrlRequest.Parser, new[]{ "Auth", "Url", "MediaType", "Headers" }, new[]{ "MediaType" }, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.ImportUrlResponse), global::Avn.Connect.V1.ImportUrlResponse.Parser, new[]{ "Url" }, null, null, null, null),
@@ -121,6 +122,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetFileUrlRequest(GetFileUrlRequest other) : this() {
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       hash_ = other.hash_;
       sizeBytes_ = other.sizeBytes_;
       mediaType_ = other.mediaType_;
@@ -132,6 +134,21 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetFileUrlRequest Clone() {
       return new GetFileUrlRequest(this);
+    }
+
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 5;
+    private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
     }
 
     /// <summary>Field number for the "hash" field.</summary>
@@ -223,6 +240,7 @@ namespace Avn.Connect.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(Auth, other.Auth)) return false;
       if (Hash != other.Hash) return false;
       if (SizeBytes != other.SizeBytes) return false;
       if (MediaType != other.MediaType) return false;
@@ -234,6 +252,7 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (auth_ != null) hash ^= Auth.GetHashCode();
       if (Hash.Length != 0) hash ^= Hash.GetHashCode();
       if (SizeBytes != 0L) hash ^= SizeBytes.GetHashCode();
       if (MediaType.Length != 0) hash ^= MediaType.GetHashCode();
@@ -272,6 +291,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(34);
         output.WriteString(FileName);
       }
+      if (auth_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Auth);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -298,6 +321,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(34);
         output.WriteString(FileName);
       }
+      if (auth_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Auth);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -308,6 +335,9 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
       if (Hash.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Hash);
       }
@@ -331,6 +361,12 @@ namespace Avn.Connect.V1 {
     public void MergeFrom(GetFileUrlRequest other) {
       if (other == null) {
         return;
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
       }
       if (other.Hash.Length != 0) {
         Hash = other.Hash;
@@ -379,6 +415,13 @@ namespace Avn.Connect.V1 {
             FileName = input.ReadString();
             break;
           }
+          case 42: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
         }
       }
     #endif
@@ -412,6 +455,13 @@ namespace Avn.Connect.V1 {
           }
           case 34: {
             FileName = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
             break;
           }
         }
@@ -687,6 +737,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1219,6 +1272,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {

@@ -126,7 +126,13 @@ namespace Avn.Connect.V1 {
   #region Enums
   public enum ExpiryStrategy {
     [pbr::OriginalName("EXPIRY_STRATEGY_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// Any active connection keeps the dimension alive
+    /// </summary>
     [pbr::OriginalName("EXPIRY_STRATEGY_ANY_CONNECTION")] AnyConnection = 1,
+    /// <summary>
+    /// Only the owners connection keeps the dimension alive
+    /// </summary>
     [pbr::OriginalName("EXPIRY_STRATEGY_ONLY_OWNER")] OnlyOwner = 2,
   }
 
@@ -659,6 +665,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "dimension_id" field.</summary>
     public const int DimensionIdFieldNumber = 1;
     private string dimensionId_ = "";
+    /// <summary>
+    /// Unique ID of new dimension
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DimensionId {
@@ -859,6 +868,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "client" field.</summary>
     public const int ClientFieldNumber = 1;
     private global::Avn.Connect.V1.ClientCredentials client_;
+    /// <summary>
+    /// Client ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ClientCredentials Client {
@@ -871,6 +883,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 2;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -883,6 +898,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "dimension_id" field.</summary>
     public const int DimensionIdFieldNumber = 3;
     private string dimensionId_ = "";
+    /// <summary>
+    /// Unique ID of dimension to get
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DimensionId {
@@ -1149,6 +1167,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "client" field.</summary>
     public const int ClientFieldNumber = 1;
     private global::Avn.Connect.V1.ClientCredentials client_;
+    /// <summary>
+    /// Client ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ClientCredentials Client {
@@ -1161,6 +1182,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 2;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -1893,6 +1917,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 1;
     private global::Avn.Connect.V1.OperationState state_ = global::Avn.Connect.V1.OperationState.Unspecified;
+    /// <summary>
+    /// Dimension state
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.OperationState State {
@@ -1907,6 +1934,9 @@ namespace Avn.Connect.V1 {
     private readonly static string DetailDefaultValue = "";
 
     private string detail_;
+    /// <summary>
+    /// Additional details about the dimension state
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Detail {
@@ -2144,6 +2174,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "info" field.</summary>
     public const int InfoFieldNumber = 1;
     private global::Avn.Connect.V1.DimensionInfo info_;
+    /// <summary>
+    /// Dimension properties
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.DimensionInfo Info {
@@ -2156,6 +2189,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "content" field.</summary>
     public const int ContentFieldNumber = 2;
     private global::Avn.Connect.V1.AvailableContent content_;
+    /// <summary>
+    /// Content available though this dimension
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.AvailableContent Content {
@@ -2168,6 +2204,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "permissions" field.</summary>
     public const int PermissionsFieldNumber = 4;
     private global::Avn.Connect.V1.InteractionPermissions permissions_;
+    /// <summary>
+    /// Permissions for all users within this dimension
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.InteractionPermissions Permissions {
@@ -2180,6 +2219,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "features" field.</summary>
     public const int FeaturesFieldNumber = 5;
     private global::Avn.Connect.V1.UserInterfaceFeatures features_;
+    /// <summary>
+    /// Recommended user interface features for all users
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.UserInterfaceFeatures Features {
@@ -2495,6 +2537,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// Dimension unique ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -2507,6 +2552,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// Display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -2519,6 +2567,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "created" field.</summary>
     public const int CreatedFieldNumber = 3;
     private global::Google.Protobuf.WellKnownTypes.Timestamp created_;
+    /// <summary>
+    /// When the dimension was created
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
@@ -2531,6 +2582,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "expiry_strategy" field.</summary>
     public const int ExpiryStrategyFieldNumber = 4;
     private global::Avn.Connect.V1.ExpiryStrategy expiryStrategy_ = global::Avn.Connect.V1.ExpiryStrategy.Unspecified;
+    /// <summary>
+    /// How the dimensions lifetype is controlled
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ExpiryStrategy ExpiryStrategy {
@@ -2543,6 +2597,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "domain" field.</summary>
     public const int DomainFieldNumber = 5;
     private string domain_ = "";
+    /// <summary>
+    /// Base domain for dimension access
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Domain {
@@ -2557,6 +2614,9 @@ namespace Avn.Connect.V1 {
     private readonly static string PassIdDefaultValue = "";
 
     private string passId_;
+    /// <summary>
+    /// Associated pass ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PassId {
@@ -2581,6 +2641,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "access_limits" field.</summary>
     public const int AccessLimitsFieldNumber = 7;
     private global::Avn.Connect.V1.AccessLimits accessLimits_;
+    /// <summary>
+    /// Dimension access limits
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.AccessLimits AccessLimits {
@@ -2593,6 +2656,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "origin" field.</summary>
     public const int OriginFieldNumber = 8;
     private global::Avn.Connect.V1.DimensionOrigin origin_;
+    /// <summary>
+    /// How the dimension was created
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.DimensionOrigin Origin {
@@ -2607,6 +2673,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.LicenseInfo> _repeated_licenses_codec
         = pb::FieldCodec.ForMessage(74, global::Avn.Connect.V1.LicenseInfo.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo> licenses_ = new pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo>();
+    /// <summary>
+    /// Licenses associated with this dimension
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo> Licenses {
@@ -2618,6 +2687,9 @@ namespace Avn.Connect.V1 {
     private readonly static string EntryMessageDefaultValue = "";
 
     private string entryMessage_;
+    /// <summary>
+    /// A message to show users who join the dimension
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string EntryMessage {
@@ -3067,6 +3139,9 @@ namespace Avn.Connect.V1 {
     private readonly static string ClientIdDefaultValue = "";
 
     private string clientId_;
+    /// <summary>
+    /// User client ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClientId {
@@ -3093,6 +3168,9 @@ namespace Avn.Connect.V1 {
     private readonly static int UserIdDefaultValue = 0;
 
     private int userId_;
+    /// <summary>
+    /// User Eduverse ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -3118,6 +3196,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "partner_session" field.</summary>
     public const int PartnerSessionFieldNumber = 3;
     private global::Avn.Connect.V1.PartnerSession partnerSession_;
+    /// <summary>
+    /// Associated partner sessions
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.PartnerSession PartnerSession {
@@ -3374,6 +3455,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "message" field.</summary>
     public const int MessageFieldNumber = 1;
     private string message_ = "";
+    /// <summary>
+    /// Message to send to all users in the dimension 
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Message {
@@ -3388,6 +3472,9 @@ namespace Avn.Connect.V1 {
     private readonly static string AnnouncerConnectionIdDefaultValue = "";
 
     private string announcerConnectionId_;
+    /// <summary>
+    /// Connection ID of announcer
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AnnouncerConnectionId {
@@ -3625,6 +3712,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "room_capacity" field.</summary>
     public const int RoomCapacityFieldNumber = 1;
     private int roomCapacity_;
+    /// <summary>
+    /// How many users each room is allowed to host simultaneously
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int RoomCapacity {
@@ -3637,6 +3727,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "dimension_capacity" field.</summary>
     public const int DimensionCapacityFieldNumber = 2;
     private int dimensionCapacity_;
+    /// <summary>
+    /// How many users the whole dimension is allowed to host simultaneously
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int DimensionCapacity {
@@ -3651,6 +3744,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.IdentityProvider> _repeated_identityProviders_codec
         = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::Avn.Connect.V1.IdentityProvider) x);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.IdentityProvider> identityProviders_ = new pbc::RepeatedField<global::Avn.Connect.V1.IdentityProvider>();
+    /// <summary>
+    /// Users must join with one of these identity providers
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.IdentityProvider> IdentityProviders {
@@ -3662,6 +3758,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_emailWhitelist_codec
         = pb::FieldCodec.ForString(34);
     private readonly pbc::RepeatedField<string> emailWhitelist_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// User emails addresses must match this whitelist
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> EmailWhitelist {
@@ -3913,6 +4012,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "credentials" field.</summary>
     public const int CredentialsFieldNumber = 1;
     private global::Avn.Connect.V1.ConnectionCredentials credentials_;
+    /// <summary>
+    /// Dimension connection credentials
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.ConnectionCredentials Credentials {
@@ -3925,6 +4027,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "dimension_id" field.</summary>
     public const int DimensionIdFieldNumber = 2;
     private string dimensionId_ = "";
+    /// <summary>
+    /// Dimension ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DimensionId {
@@ -3937,6 +4042,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "context" field.</summary>
     public const int ContextFieldNumber = 3;
     private global::Avn.Connect.V1.LessonContext context_;
+    /// <summary>
+    /// Current lesson context
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.LessonContext Context {
@@ -4202,6 +4310,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 1;
     private global::Avn.Connect.V1.OperationState state_ = global::Avn.Connect.V1.OperationState.Unspecified;
+    /// <summary>
+    /// Lesson context state
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.OperationState State {
@@ -4216,6 +4327,9 @@ namespace Avn.Connect.V1 {
     private readonly static string DetailDefaultValue = "";
 
     private string detail_;
+    /// <summary>
+    /// Additional information about the lesson context state
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Detail {

@@ -37,18 +37,23 @@ namespace Avn.Connect.V1 {
             "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAogBAUIICgZzb3Vy",
             "Y2VCDQoLX2xpY2Vuc2VfaWRCCgoIX2V4cGlyZXNKBAgLEBQiVgoWR2V0VXNl",
             "ckxpY2Vuc2VzUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3Qu",
-            "djEuQXV0aG9yaXphdGlvbhIPCgd1c2VyX2lkGAIgASgFIkgKF0dldFVzZXJM",
-            "aWNlbnNlc1Jlc3BvbnNlEi0KCGxpY2Vuc2VzGAEgAygLMhsuYXZuLmNvbm5l",
-            "Y3QudjEuTGljZW5zZUluZm8ydAoOTGljZW5zZVNlcnZpY2USYgoPR2V0VXNl",
-            "ckxpY2Vuc2VzEiYuYXZuLmNvbm5lY3QudjEuR2V0VXNlckxpY2Vuc2VzUmVx",
-            "dWVzdBonLmF2bi5jb25uZWN0LnYxLkdldFVzZXJMaWNlbnNlc1Jlc3BvbnNl",
-            "YgZwcm90bzM="));
+            "djEuQXV0aG9yaXphdGlvbhIPCgd1c2VyX2lkGAIgASgFImYKHkdldE9yZ2Fu",
+            "aXphdGlvbkxpY2Vuc2VzUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNv",
+            "bm5lY3QudjEuQXV0aG9yaXphdGlvbhIXCg9vcmdhbml6YXRpb25faWQYAiAB",
+            "KAUiRAoTR2V0TGljZW5zZXNSZXNwb25zZRItCghsaWNlbnNlcxgBIAMoCzIb",
+            "LmF2bi5jb25uZWN0LnYxLkxpY2Vuc2VJbmZvMuABCg5MaWNlbnNlU2Vydmlj",
+            "ZRJeCg9HZXRVc2VyTGljZW5zZXMSJi5hdm4uY29ubmVjdC52MS5HZXRVc2Vy",
+            "TGljZW5zZXNSZXF1ZXN0GiMuYXZuLmNvbm5lY3QudjEuR2V0TGljZW5zZXNS",
+            "ZXNwb25zZRJuChdHZXRPcmdhbml6YXRpb25MaWNlbnNlcxIuLmF2bi5jb25u",
+            "ZWN0LnYxLkdldE9yZ2FuaXphdGlvbkxpY2Vuc2VzUmVxdWVzdBojLmF2bi5j",
+            "b25uZWN0LnYxLkdldExpY2Vuc2VzUmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.PartnersReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.LicenseInfo), global::Avn.Connect.V1.LicenseInfo.Parser, new[]{ "LicenseId", "PlanCodes", "ClientId", "UserId", "OrganizationId", "PartnerSession", "AuthenticatedUserId", "PassId", "Context", "UserOrganizationId", "Expires" }, new[]{ "Source", "LicenseId", "Expires" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetUserLicensesRequest), global::Avn.Connect.V1.GetUserLicensesRequest.Parser, new[]{ "Auth", "UserId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetUserLicensesResponse), global::Avn.Connect.V1.GetUserLicensesResponse.Parser, new[]{ "Licenses" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetOrganizationLicensesRequest), global::Avn.Connect.V1.GetOrganizationLicensesRequest.Parser, new[]{ "Auth", "OrganizationId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetLicensesResponse), global::Avn.Connect.V1.GetLicensesResponse.Parser, new[]{ "Licenses" }, null, null, null, null)
           }));
     }
     #endregion
@@ -134,6 +139,9 @@ namespace Avn.Connect.V1 {
     private readonly static string LicenseIdDefaultValue = "";
 
     private string licenseId_;
+    /// <summary>
+    /// Unique license ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LicenseId {
@@ -160,6 +168,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_planCodes_codec
         = pb::FieldCodec.ForString(18);
     private readonly pbc::RepeatedField<string> planCodes_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Plan codes enabled by this license
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> PlanCodes {
@@ -387,6 +398,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "expires" field.</summary>
     public const int ExpiresFieldNumber = 20;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expires_;
+    /// <summary>
+    /// When the license expires
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Expires {
@@ -870,6 +884,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -882,6 +899,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 2;
     private int userId_;
+    /// <summary>
+    /// Unique user ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -1066,16 +1086,16 @@ namespace Avn.Connect.V1 {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class GetUserLicensesResponse : pb::IMessage<GetUserLicensesResponse>
+  public sealed partial class GetOrganizationLicensesRequest : pb::IMessage<GetOrganizationLicensesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GetUserLicensesResponse> _parser = new pb::MessageParser<GetUserLicensesResponse>(() => new GetUserLicensesResponse());
+    private static readonly pb::MessageParser<GetOrganizationLicensesRequest> _parser = new pb::MessageParser<GetOrganizationLicensesRequest>(() => new GetOrganizationLicensesRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GetUserLicensesResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<GetOrganizationLicensesRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1091,7 +1111,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetUserLicensesResponse() {
+    public GetOrganizationLicensesRequest() {
       OnConstruction();
     }
 
@@ -1099,15 +1119,265 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetUserLicensesResponse(GetUserLicensesResponse other) : this() {
+    public GetOrganizationLicensesRequest(GetOrganizationLicensesRequest other) : this() {
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+      organizationId_ = other.organizationId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetOrganizationLicensesRequest Clone() {
+      return new GetOrganizationLicensesRequest(this);
+    }
+
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 1;
+    private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "organization_id" field.</summary>
+    public const int OrganizationIdFieldNumber = 2;
+    private int organizationId_;
+    /// <summary>
+    /// Unique organization ID
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int OrganizationId {
+      get { return organizationId_; }
+      set {
+        organizationId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetOrganizationLicensesRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetOrganizationLicensesRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Auth, other.Auth)) return false;
+      if (OrganizationId != other.OrganizationId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (auth_ != null) hash ^= Auth.GetHashCode();
+      if (OrganizationId != 0) hash ^= OrganizationId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (OrganizationId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(OrganizationId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (OrganizationId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(OrganizationId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
+      if (OrganizationId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(OrganizationId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetOrganizationLicensesRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
+      }
+      if (other.OrganizationId != 0) {
+        OrganizationId = other.OrganizationId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 16: {
+            OrganizationId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 16: {
+            OrganizationId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetLicensesResponse : pb::IMessage<GetLicensesResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetLicensesResponse> _parser = new pb::MessageParser<GetLicensesResponse>(() => new GetLicensesResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetLicensesResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.LicensesReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetLicensesResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetLicensesResponse(GetLicensesResponse other) : this() {
       licenses_ = other.licenses_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GetUserLicensesResponse Clone() {
-      return new GetUserLicensesResponse(this);
+    public GetLicensesResponse Clone() {
+      return new GetLicensesResponse(this);
     }
 
     /// <summary>Field number for the "licenses" field.</summary>
@@ -1115,6 +1385,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.LicenseInfo> _repeated_licenses_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.LicenseInfo.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo> licenses_ = new pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo>();
+    /// <summary>
+    /// Available licenses
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo> Licenses {
@@ -1124,12 +1397,12 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GetUserLicensesResponse);
+      return Equals(other as GetLicensesResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GetUserLicensesResponse other) {
+    public bool Equals(GetLicensesResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1194,7 +1467,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GetUserLicensesResponse other) {
+    public void MergeFrom(GetLicensesResponse other) {
       if (other == null) {
         return;
       }

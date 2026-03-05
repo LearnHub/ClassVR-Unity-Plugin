@@ -28,29 +28,28 @@ namespace Avn.Connect.V1 {
             "djEaH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aImF2bi9jb25u",
             "ZWN0L3YxL2F1dGhvcml6YXRpb24ucHJvdG8aHWF2bi9jb25uZWN0L3YxL2Vu",
             "dGl0aWVzLnByb3RvGiFhdm4vY29ubmVjdC92MS90cmFuc2xhdGlvbnMucHJv",
-            "dG8i/AEKB0NoYW5uZWwSEQoJZW50aXR5X2lkGAEgASgFEioKBG5hbWUYAiAB",
-            "KAsyHC5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGFibGUSEAoIaWNvbl91cmwY",
-            "AyABKAkSKwoHY3JlYXRlZBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
-            "c3RhbXASKwoHdXBkYXRlZBgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
-            "c3RhbXASNgoLZGVzY3JpcHRpb24YBiABKAsyHC5hdm4uY29ubmVjdC52MS5U",
-            "cmFuc2xhdGFibGVIAIgBAUIOCgxfZGVzY3JpcHRpb24yvAQKDkNoYW5uZWxT",
-            "ZXJ2aWNlEkcKCkdldENoYW5uZWwSIC5hdm4uY29ubmVjdC52MS5HZXRFbnRp",
-            "dHlSZXF1ZXN0GhcuYXZuLmNvbm5lY3QudjEuQ2hhbm5lbBJlChRHZXRCcm93",
-            "c2FibGVDaGFubmVscxIlLmF2bi5jb25uZWN0LnYxLkVudGl0eUluZm9MaXN0",
-            "UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLkVudGl0eUluZm9MaXN0UmVzcG9u",
-            "c2USXAoLR2V0Q2hhbm5lbHMSJS5hdm4uY29ubmVjdC52MS5FbnRpdHlJbmZv",
-            "TGlzdFJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5FbnRpdHlJbmZvTGlzdFJl",
-            "c3BvbnNlElwKC0dldFByb2ZpbGVzEiUuYXZuLmNvbm5lY3QudjEuRW50aXR5",
-            "SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xp",
-            "c3RSZXNwb25zZRJeCg1HZXRDYXRlZ29yaWVzEiUuYXZuLmNvbm5lY3QudjEu",
-            "RW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNvbm5lY3QudjEuRW50aXR5",
-            "SW5mb0xpc3RSZXNwb25zZRJeCg1HZXRBY3Rpdml0aWVzEiUuYXZuLmNvbm5l",
-            "Y3QudjEuRW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNvbm5lY3QudjEu",
-            "RW50aXR5SW5mb0xpc3RSZXNwb25zZWIGcHJvdG8z"));
+            "dG8i3gEKB0NoYW5uZWwSEQoJZW50aXR5X2lkGAEgASgFEhEKBG5hbWUYAiAB",
+            "KAlCA8A+ARIQCghpY29uX3VybBgDIAEoCRIrCgdjcmVhdGVkGAQgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIrCgd1cGRhdGVkGAUgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIdCgtkZXNjcmlwdGlvbhgGIAEo",
+            "CUIDwD4BSACIAQESEgoKcGxhbl9jb2RlcxgHIAMoCUIOCgxfZGVzY3JpcHRp",
+            "b24yvAQKDkNoYW5uZWxTZXJ2aWNlEkcKCkdldENoYW5uZWwSIC5hdm4uY29u",
+            "bmVjdC52MS5HZXRFbnRpdHlSZXF1ZXN0GhcuYXZuLmNvbm5lY3QudjEuQ2hh",
+            "bm5lbBJlChRHZXRCcm93c2FibGVDaGFubmVscxIlLmF2bi5jb25uZWN0LnYx",
+            "LkVudGl0eUluZm9MaXN0UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLkVudGl0",
+            "eUluZm9MaXN0UmVzcG9uc2USXAoLR2V0Q2hhbm5lbHMSJS5hdm4uY29ubmVj",
+            "dC52MS5FbnRpdHlJbmZvTGlzdFJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5F",
+            "bnRpdHlJbmZvTGlzdFJlc3BvbnNlElwKC0dldFByb2ZpbGVzEiUuYXZuLmNv",
+            "bm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNvbm5lY3Qu",
+            "djEuRW50aXR5SW5mb0xpc3RSZXNwb25zZRJeCg1HZXRDYXRlZ29yaWVzEiUu",
+            "YXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNv",
+            "bm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXNwb25zZRJeCg1HZXRBY3Rpdml0",
+            "aWVzEiUuYXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYu",
+            "YXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Channel), global::Avn.Connect.V1.Channel.Parser, new[]{ "EntityId", "Name", "IconUrl", "Created", "Updated", "Description" }, new[]{ "Description" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Channel), global::Avn.Connect.V1.Channel.Parser, new[]{ "EntityId", "Name", "IconUrl", "Created", "Updated", "Description", "PlanCodes" }, new[]{ "Description" }, null, null, null)
           }));
     }
     #endregion
@@ -93,11 +92,12 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Channel(Channel other) : this() {
       entityId_ = other.entityId_;
-      name_ = other.name_ != null ? other.name_.Clone() : null;
+      name_ = other.name_;
       iconUrl_ = other.iconUrl_;
       created_ = other.created_ != null ? other.created_.Clone() : null;
       updated_ = other.updated_ != null ? other.updated_.Clone() : null;
-      description_ = other.description_ != null ? other.description_.Clone() : null;
+      description_ = other.description_;
+      planCodes_ = other.planCodes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -110,6 +110,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
     private int entityId_;
+    /// <summary>
+    /// ID of the channel entity
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -121,19 +124,25 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
-    private global::Avn.Connect.V1.Translatable name_;
+    private string name_ = "";
+    /// <summary>
+    /// Name of the channel stored in plain text format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Name {
+    public string Name {
       get { return name_; }
       set {
-        name_ = value;
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
     /// <summary>Field number for the "icon_url" field.</summary>
     public const int IconUrlFieldNumber = 3;
     private string iconUrl_ = "";
+    /// <summary>
+    /// Icon to use for the channel
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IconUrl {
@@ -146,6 +155,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "created" field.</summary>
     public const int CreatedFieldNumber = 4;
     private global::Google.Protobuf.WellKnownTypes.Timestamp created_;
+    /// <summary>
+    /// When channel was created
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
@@ -158,6 +170,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "updated" field.</summary>
     public const int UpdatedFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    /// <summary>
+    /// When channel last updated
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {
@@ -169,14 +184,45 @@ namespace Avn.Connect.V1 {
 
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 6;
-    private global::Avn.Connect.V1.Translatable description_;
+    private readonly static string DescriptionDefaultValue = "";
+
+    private string description_;
+    /// <summary>
+    /// Description of the channel stored in markdown format
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Translatable Description {
-      get { return description_; }
+    public string Description {
+      get { return description_ ?? DescriptionDefaultValue; }
       set {
-        description_ = value;
+        description_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+    /// <summary>Gets whether the "description" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasDescription {
+      get { return description_ != null; }
+    }
+    /// <summary>Clears the value of the "description" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDescription() {
+      description_ = null;
+    }
+
+    /// <summary>Field number for the "plan_codes" field.</summary>
+    public const int PlanCodesFieldNumber = 7;
+    private static readonly pb::FieldCodec<string> _repeated_planCodes_codec
+        = pb::FieldCodec.ForString(58);
+    private readonly pbc::RepeatedField<string> planCodes_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// License plan codes that enable this channel
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> PlanCodes {
+      get { return planCodes_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -195,11 +241,12 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (EntityId != other.EntityId) return false;
-      if (!object.Equals(Name, other.Name)) return false;
+      if (Name != other.Name) return false;
       if (IconUrl != other.IconUrl) return false;
       if (!object.Equals(Created, other.Created)) return false;
       if (!object.Equals(Updated, other.Updated)) return false;
-      if (!object.Equals(Description, other.Description)) return false;
+      if (Description != other.Description) return false;
+      if(!planCodes_.Equals(other.planCodes_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -208,11 +255,12 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (name_ != null) hash ^= Name.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (IconUrl.Length != 0) hash ^= IconUrl.GetHashCode();
       if (created_ != null) hash ^= Created.GetHashCode();
       if (updated_ != null) hash ^= Updated.GetHashCode();
-      if (description_ != null) hash ^= Description.GetHashCode();
+      if (HasDescription) hash ^= Description.GetHashCode();
+      hash ^= planCodes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -235,9 +283,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (IconUrl.Length != 0) {
         output.WriteRawTag(26);
@@ -251,10 +299,11 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Updated);
       }
-      if (description_ != null) {
+      if (HasDescription) {
         output.WriteRawTag(50);
-        output.WriteMessage(Description);
+        output.WriteString(Description);
       }
+      planCodes_.WriteTo(output, _repeated_planCodes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -269,9 +318,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(8);
         output.WriteInt32(EntityId);
       }
-      if (name_ != null) {
+      if (Name.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteMessage(Name);
+        output.WriteString(Name);
       }
       if (IconUrl.Length != 0) {
         output.WriteRawTag(26);
@@ -285,10 +334,11 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Updated);
       }
-      if (description_ != null) {
+      if (HasDescription) {
         output.WriteRawTag(50);
-        output.WriteMessage(Description);
+        output.WriteString(Description);
       }
+      planCodes_.WriteTo(ref output, _repeated_planCodes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -302,8 +352,8 @@ namespace Avn.Connect.V1 {
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
       }
-      if (name_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Name);
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (IconUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IconUrl);
@@ -314,9 +364,10 @@ namespace Avn.Connect.V1 {
       if (updated_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Updated);
       }
-      if (description_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Description);
+      if (HasDescription) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
+      size += planCodes_.CalculateSize(_repeated_planCodes_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -332,11 +383,8 @@ namespace Avn.Connect.V1 {
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
       }
-      if (other.name_ != null) {
-        if (name_ == null) {
-          Name = new global::Avn.Connect.V1.Translatable();
-        }
-        Name.MergeFrom(other.Name);
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       if (other.IconUrl.Length != 0) {
         IconUrl = other.IconUrl;
@@ -353,12 +401,10 @@ namespace Avn.Connect.V1 {
         }
         Updated.MergeFrom(other.Updated);
       }
-      if (other.description_ != null) {
-        if (description_ == null) {
-          Description = new global::Avn.Connect.V1.Translatable();
-        }
-        Description.MergeFrom(other.Description);
+      if (other.HasDescription) {
+        Description = other.Description;
       }
+      planCodes_.Add(other.planCodes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -383,10 +429,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -408,10 +451,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 50: {
-            if (description_ == null) {
-              Description = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Description);
+            Description = input.ReadString();
+            break;
+          }
+          case 58: {
+            planCodes_.AddEntriesFrom(input, _repeated_planCodes_codec);
             break;
           }
         }
@@ -438,10 +482,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 18: {
-            if (name_ == null) {
-              Name = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Name);
+            Name = input.ReadString();
             break;
           }
           case 26: {
@@ -463,10 +504,11 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 50: {
-            if (description_ == null) {
-              Description = new global::Avn.Connect.V1.Translatable();
-            }
-            input.ReadMessage(Description);
+            Description = input.ReadString();
+            break;
+          }
+          case 58: {
+            planCodes_.AddEntriesFrom(ref input, _repeated_planCodes_codec);
             break;
           }
         }

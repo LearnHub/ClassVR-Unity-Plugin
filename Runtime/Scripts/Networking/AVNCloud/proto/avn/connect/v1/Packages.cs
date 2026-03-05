@@ -118,6 +118,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
     private int entityId_;
+    /// <summary>
+    /// Android package ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int EntityId {
@@ -161,7 +164,7 @@ namespace Avn.Connect.V1 {
     public const int PackageNameFieldNumber = 4;
     private string packageName_ = "";
     /// <summary>
-    /// Package name and class (ANDROID_PACKAGE_REFACTORING)
+    /// Package name (ANDROID_PACKAGE_REFACTORING)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -177,6 +180,9 @@ namespace Avn.Connect.V1 {
     private readonly static string PackageClassDefaultValue = "";
 
     private string packageClass_;
+    /// <summary>
+    /// Package class
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PackageClass {
@@ -219,7 +225,7 @@ namespace Avn.Connect.V1 {
 
     private string obbMainUrl_;
     /// <summary>
-    /// Optional OBB files
+    /// OBB main file
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -247,6 +253,9 @@ namespace Avn.Connect.V1 {
     private readonly static string ObbPatchUrlDefaultValue = "";
 
     private string obbPatchUrl_;
+    /// <summary>
+    /// OBB patch file
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ObbPatchUrl {
@@ -315,6 +324,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "created" field.</summary>
     public const int CreatedFieldNumber = 11;
     private global::Google.Protobuf.WellKnownTypes.Timestamp created_;
+    /// <summary>
+    /// When the package was created
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Created {
@@ -327,6 +339,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "updated" field.</summary>
     public const int UpdatedFieldNumber = 12;
     private global::Google.Protobuf.WellKnownTypes.Timestamp updated_;
+    /// <summary>
+    /// When the package was last updated
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Updated {

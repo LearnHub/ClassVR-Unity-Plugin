@@ -131,48 +131,61 @@ namespace Avn.Connect.V1 {
             "Y3NSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRo",
             "b3JpemF0aW9uEhgKEG1lZGlhX2RldmljZV9pZHMYAiADKAkiWgobR2V0TWVk",
             "aWFEZXZpY2VTcGVjc1Jlc3BvbnNlEjsKEm1lZGlhX2RldmljZV9zcGVjcxgB",
-            "IAMoCzIfLmF2bi5jb25uZWN0LnYxLk1lZGlhRGV2aWNlU3BlYyqFAgoPTWVk",
-            "aWFTdHJlYW1UeXBlEiEKHU1FRElBX1NUUkVBTV9UWVBFX1VOU1BFQ0lGSUVE",
-            "EAASHQoZTUVESUFfU1RSRUFNX1RZUEVfVU5LTk9XThABEhsKF01FRElBX1NU",
-            "UkVBTV9UWVBFX1ZJREVPEAISGwoXTUVESUFfU1RSRUFNX1RZUEVfQVVESU8Q",
-            "AxIaChZNRURJQV9TVFJFQU1fVFlQRV9EQVRBEAQSHgoaTUVESUFfU1RSRUFN",
-            "X1RZUEVfU1VCVElUTEUQBRIgChxNRURJQV9TVFJFQU1fVFlQRV9BVFRBQ0hN",
-            "RU5UEAYSGAoUTUVESUFfU1RSRUFNX1RZUEVfTkIQByroAQoWTWVkaWFDb21w",
-            "YXRpYmlsaXR5QXJlYRIoCiRNRURJQV9DT01QQVRJQklMSVRZX0FSRUFfVU5T",
-            "UEVDSUZJRUQQABImCiJNRURJQV9DT01QQVRJQklMSVRZX0FSRUFfQ09OVEFJ",
-            "TkVSEAESKAokTUVESUFfQ09NUEFUSUJJTElUWV9BUkVBX1ZJREVPX0NPREVD",
-            "EAISKAokTUVESUFfQ09NUEFUSUJJTElUWV9BUkVBX0FVRElPX0NPREVDEAMS",
-            "KAokTUVESUFfQ09NUEFUSUJJTElUWV9BUkVBX09USEVSX0NPREVDEAQquQMK",
-            "GE1lZGlhQ29tcGF0aWJpbGl0eVJlYXNvbhIqCiZNRURJQV9DT01QQVRJQklM",
-            "SVRZX1JFQVNPTl9VTlNQRUNJRklFRBAAEiwKKE1FRElBX0NPTVBBVElCSUxJ",
-            "VFlfUkVBU09OX05PVF9TVVBQT1JURUQQARIuCipNRURJQV9DT01QQVRJQklM",
-            "SVRZX1JFQVNPTl9NQVhfUElYRUxfV0lEVEgQAhIvCitNRURJQV9DT01QQVRJ",
-            "QklMSVRZX1JFQVNPTl9NQVhfUElYRUxfSEVJR0hUEAMSKwonTUVESUFfQ09N",
-            "UEFUSUJJTElUWV9SRUFTT05fUElYRUxfRk9STUFUEAQSLAooTUVESUFfQ09N",
-            "UEFUSUJJTElUWV9SRUFTT05fTUFYX0ZSQU1FUkFURRAFEioKJk1FRElBX0NP",
-            "TVBBVElCSUxJVFlfUkVBU09OX01BWF9CSVRSQVRFEAYSLAooTUVESUFfQ09N",
-            "UEFUSUJJTElUWV9SRUFTT05fQ0hBTk5FTF9DT1VOVBAHEi0KKU1FRElBX0NP",
-            "TVBBVElCSUxJVFlfUkVBU09OX1RBUkdFVF9CSVRSQVRFEAgy5QYKDE1lZGlh",
-            "U2VydmljZRJiCg9HZXRQcmV2aWV3SW1hZ2USJi5hdm4uY29ubmVjdC52MS5H",
-            "ZXRQcmV2aWV3SW1hZ2VSZXF1ZXN0GicuYXZuLmNvbm5lY3QudjEuR2V0UHJl",
-            "dmlld0ltYWdlUmVzcG9uc2USYAoQR2V0SW1hZ2VNZXRhZGF0YRIiLmF2bi5j",
-            "b25uZWN0LnYxLkdldE1ldGFkYXRhUmVxdWVzdBooLmF2bi5jb25uZWN0LnYx",
-            "LkdldEltYWdlTWV0YWRhdGFSZXNwb25zZRJgChBHZXRWaWRlb01ldGFkYXRh",
-            "EiIuYXZuLmNvbm5lY3QudjEuR2V0TWV0YWRhdGFSZXF1ZXN0GiguYXZuLmNv",
-            "bm5lY3QudjEuR2V0VmlkZW9NZXRhZGF0YVJlc3BvbnNlEnoKF0NoZWNrTWVk",
-            "aWFDb21wYXRpYmlsaXR5Ei4uYXZuLmNvbm5lY3QudjEuQ2hlY2tNZWRpYUNv",
-            "bXBhdGliaWxpdHlSZXF1ZXN0Gi8uYXZuLmNvbm5lY3QudjEuQ2hlY2tNZWRp",
-            "YUNvbXBhdGliaWxpdHlSZXNwb25zZRJfCg5UcmFuc2NvZGVJbWFnZRIlLmF2",
-            "bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdlUmVxdWVzdBomLmF2bi5jb25u",
-            "ZWN0LnYxLlRyYW5zY29kZUltYWdlUmVzcG9uc2USYQoOVHJhbnNjb2RlVmlk",
-            "ZW8SJS5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVWaWRlb1JlcXVlc3QaJi5h",
-            "dm4uY29ubmVjdC52MS5UcmFuc2NvZGVWaWRlb1Jlc3BvbnNlMAESfQoYR2V0",
-            "TWVkaWFUeXBlRXh0ZW5zaW9uTWFwEi8uYXZuLmNvbm5lY3QudjEuR2V0TWVk",
-            "aWFUeXBlRXh0ZW5zaW9uTWFwUmVxdWVzdBowLmF2bi5jb25uZWN0LnYxLkdl",
-            "dE1lZGlhVHlwZUV4dGVuc2lvbk1hcFJlc3BvbnNlEm4KE0dldE1lZGlhRGV2",
-            "aWNlU3BlY3MSKi5hdm4uY29ubmVjdC52MS5HZXRNZWRpYURldmljZVNwZWNz",
-            "UmVxdWVzdBorLmF2bi5jb25uZWN0LnYxLkdldE1lZGlhRGV2aWNlU3BlY3NS",
-            "ZXNwb25zZWIGcHJvdG8z"));
+            "IAMoCzIfLmF2bi5jb25uZWN0LnYxLk1lZGlhRGV2aWNlU3BlYyLNAQoXR2V0",
+            "TWVkaWFTcGVjdHJ1bVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25u",
+            "ZWN0LnYxLkF1dGhvcml6YXRpb24SEQoJbWVkaWFfdXJsGAIgASgJEhMKC3Nh",
+            "bXBsZV9yYXRlGAMgASgCEhsKE2ZyZXF1ZW5jeV9iaW5fY291bnQYBCABKAUS",
+            "FQoNZnJlcXVlbmN5X21pbhgFIAEoAhIVCg1mcmVxdWVuY3lfbWF4GAYgASgC",
+            "EhIKCnZvbHVtZV9tYXgYByABKAIiUQoYR2V0TWVkaWFTcGVjdHJ1bVJlc3Bv",
+            "bnNlEjUKDm1lZGlhX3NwZWN0cnVtGAEgASgLMh0uYXZuLmNvbm5lY3QudjEu",
+            "TWVkaWFTcGVjdHJ1bSKyAQoNTWVkaWFTcGVjdHJ1bRITCgtzYW1wbGVfcmF0",
+            "ZRgBIAEoAhIUCgxzYW1wbGVfY291bnQYAiABKAUSGwoTZnJlcXVlbmN5X2Jp",
+            "bl9jb3VudBgDIAEoBRIVCg1mcmVxdWVuY3lfbWluGAQgASgCEhUKDWZyZXF1",
+            "ZW5jeV9tYXgYBSABKAISEgoKdm9sdW1lX21heBgGIAEoAhIXCg92b2x1bWVf",
+            "ZGF0YV91cmwYCiABKAkqhQIKD01lZGlhU3RyZWFtVHlwZRIhCh1NRURJQV9T",
+            "VFJFQU1fVFlQRV9VTlNQRUNJRklFRBAAEh0KGU1FRElBX1NUUkVBTV9UWVBF",
+            "X1VOS05PV04QARIbChdNRURJQV9TVFJFQU1fVFlQRV9WSURFTxACEhsKF01F",
+            "RElBX1NUUkVBTV9UWVBFX0FVRElPEAMSGgoWTUVESUFfU1RSRUFNX1RZUEVf",
+            "REFUQRAEEh4KGk1FRElBX1NUUkVBTV9UWVBFX1NVQlRJVExFEAUSIAocTUVE",
+            "SUFfU1RSRUFNX1RZUEVfQVRUQUNITUVOVBAGEhgKFE1FRElBX1NUUkVBTV9U",
+            "WVBFX05CEAcq6AEKFk1lZGlhQ29tcGF0aWJpbGl0eUFyZWESKAokTUVESUFf",
+            "Q09NUEFUSUJJTElUWV9BUkVBX1VOU1BFQ0lGSUVEEAASJgoiTUVESUFfQ09N",
+            "UEFUSUJJTElUWV9BUkVBX0NPTlRBSU5FUhABEigKJE1FRElBX0NPTVBBVElC",
+            "SUxJVFlfQVJFQV9WSURFT19DT0RFQxACEigKJE1FRElBX0NPTVBBVElCSUxJ",
+            "VFlfQVJFQV9BVURJT19DT0RFQxADEigKJE1FRElBX0NPTVBBVElCSUxJVFlf",
+            "QVJFQV9PVEhFUl9DT0RFQxAEKrkDChhNZWRpYUNvbXBhdGliaWxpdHlSZWFz",
+            "b24SKgomTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fVU5TUEVDSUZJRUQQ",
+            "ABIsCihNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9OT1RfU1VQUE9SVEVE",
+            "EAESLgoqTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fTUFYX1BJWEVMX1dJ",
+            "RFRIEAISLworTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fTUFYX1BJWEVM",
+            "X0hFSUdIVBADEisKJ01FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX1BJWEVM",
+            "X0ZPUk1BVBAEEiwKKE1FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX01BWF9G",
+            "UkFNRVJBVEUQBRIqCiZNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9NQVhf",
+            "QklUUkFURRAGEiwKKE1FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX0NIQU5O",
+            "RUxfQ09VTlQQBxItCilNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9UQVJH",
+            "RVRfQklUUkFURRAIMswHCgxNZWRpYVNlcnZpY2USYgoPR2V0UHJldmlld0lt",
+            "YWdlEiYuYXZuLmNvbm5lY3QudjEuR2V0UHJldmlld0ltYWdlUmVxdWVzdBon",
+            "LmF2bi5jb25uZWN0LnYxLkdldFByZXZpZXdJbWFnZVJlc3BvbnNlEmAKEEdl",
+            "dEltYWdlTWV0YWRhdGESIi5hdm4uY29ubmVjdC52MS5HZXRNZXRhZGF0YVJl",
+            "cXVlc3QaKC5hdm4uY29ubmVjdC52MS5HZXRJbWFnZU1ldGFkYXRhUmVzcG9u",
+            "c2USYAoQR2V0VmlkZW9NZXRhZGF0YRIiLmF2bi5jb25uZWN0LnYxLkdldE1l",
+            "dGFkYXRhUmVxdWVzdBooLmF2bi5jb25uZWN0LnYxLkdldFZpZGVvTWV0YWRh",
+            "dGFSZXNwb25zZRJ6ChdDaGVja01lZGlhQ29tcGF0aWJpbGl0eRIuLmF2bi5j",
+            "b25uZWN0LnYxLkNoZWNrTWVkaWFDb21wYXRpYmlsaXR5UmVxdWVzdBovLmF2",
+            "bi5jb25uZWN0LnYxLkNoZWNrTWVkaWFDb21wYXRpYmlsaXR5UmVzcG9uc2US",
+            "XwoOVHJhbnNjb2RlSW1hZ2USJS5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVJ",
+            "bWFnZVJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVJbWFnZVJl",
+            "c3BvbnNlEmEKDlRyYW5zY29kZVZpZGVvEiUuYXZuLmNvbm5lY3QudjEuVHJh",
+            "bnNjb2RlVmlkZW9SZXF1ZXN0GiYuYXZuLmNvbm5lY3QudjEuVHJhbnNjb2Rl",
+            "VmlkZW9SZXNwb25zZTABEn0KGEdldE1lZGlhVHlwZUV4dGVuc2lvbk1hcBIv",
+            "LmF2bi5jb25uZWN0LnYxLkdldE1lZGlhVHlwZUV4dGVuc2lvbk1hcFJlcXVl",
+            "c3QaMC5hdm4uY29ubmVjdC52MS5HZXRNZWRpYVR5cGVFeHRlbnNpb25NYXBS",
+            "ZXNwb25zZRJuChNHZXRNZWRpYURldmljZVNwZWNzEiouYXZuLmNvbm5lY3Qu",
+            "djEuR2V0TWVkaWFEZXZpY2VTcGVjc1JlcXVlc3QaKy5hdm4uY29ubmVjdC52",
+            "MS5HZXRNZWRpYURldmljZVNwZWNzUmVzcG9uc2USZQoQR2V0TWVkaWFTcGVj",
+            "dHJ1bRInLmF2bi5jb25uZWN0LnYxLkdldE1lZGlhU3BlY3RydW1SZXF1ZXN0",
+            "GiguYXZuLmNvbm5lY3QudjEuR2V0TWVkaWFTcGVjdHJ1bVJlc3BvbnNlYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.MediaStreamType), typeof(global::Avn.Connect.V1.MediaCompatibilityArea), typeof(global::Avn.Connect.V1.MediaCompatibilityReason), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -199,7 +212,10 @@ namespace Avn.Connect.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CheckMediaCompatibilityRequest), global::Avn.Connect.V1.CheckMediaCompatibilityRequest.Parser, new[]{ "Auth", "MediaUrl", "TargetDeviceSpec" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CheckMediaCompatibilityResponse), global::Avn.Connect.V1.CheckMediaCompatibilityResponse.Parser, new[]{ "ContainerIsSupported", "VideoStreamIsAvailable", "VideoStreamIsSupported", "AudioStreamIsAvailable", "AudioStreamIsSupported", "Errors", "Warnings" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMediaDeviceSpecsRequest), global::Avn.Connect.V1.GetMediaDeviceSpecsRequest.Parser, new[]{ "Auth", "MediaDeviceIds" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMediaDeviceSpecsResponse), global::Avn.Connect.V1.GetMediaDeviceSpecsResponse.Parser, new[]{ "MediaDeviceSpecs" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMediaDeviceSpecsResponse), global::Avn.Connect.V1.GetMediaDeviceSpecsResponse.Parser, new[]{ "MediaDeviceSpecs" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMediaSpectrumRequest), global::Avn.Connect.V1.GetMediaSpectrumRequest.Parser, new[]{ "Auth", "MediaUrl", "SampleRate", "FrequencyBinCount", "FrequencyMin", "FrequencyMax", "VolumeMax" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMediaSpectrumResponse), global::Avn.Connect.V1.GetMediaSpectrumResponse.Parser, new[]{ "MediaSpectrum" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MediaSpectrum), global::Avn.Connect.V1.MediaSpectrum.Parser, new[]{ "SampleRate", "SampleCount", "FrequencyBinCount", "FrequencyMin", "FrequencyMax", "VolumeMax", "VolumeDataUrl" }, null, null, null, null)
           }));
     }
     #endregion
@@ -298,6 +314,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -310,6 +329,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "media_url" field.</summary>
     public const int MediaUrlFieldNumber = 2;
     private string mediaUrl_ = "";
+    /// <summary>
+    /// AVNFS input URL
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MediaUrl {
@@ -544,7 +566,7 @@ namespace Avn.Connect.V1 {
 
     private string mediaUrl_;
     /// <summary>
-    /// Unset if no preview could be created for the given file
+    /// AVNFS output URL or unset if no preview could be created for the given file
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -757,6 +779,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -769,6 +794,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "media_url" field.</summary>
     public const int MediaUrlFieldNumber = 2;
     private string mediaUrl_ = "";
+    /// <summary>
+    /// AVNFS input URL
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MediaUrl {
@@ -1053,7 +1081,7 @@ namespace Avn.Connect.V1 {
     public const int WidthUnitsFieldNumber = 4;
     private string widthUnits_ = "";
     /// <summary>
-    /// One of in,mm,cm,pt,pc,px,em,ex
+    /// Width of image. One of: in,mm,cm,pt,pc,px,em,ex
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1067,6 +1095,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "height_units" field.</summary>
     public const int HeightUnitsFieldNumber = 5;
     private string heightUnits_ = "";
+    /// <summary>
+    /// Height of image. One of: in,mm,cm,pt,pc,px,em,ex
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string HeightUnits {
@@ -1082,7 +1113,7 @@ namespace Avn.Connect.V1 {
 
     private int orientation_;
     /// <summary>
-    /// Orientation
+    /// Orientation of image
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1419,6 +1450,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "num" field.</summary>
     public const int NumFieldNumber = 1;
     private int num_;
+    /// <summary>
+    /// Ratio numerator
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Num {
@@ -1431,6 +1465,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "den" field.</summary>
     public const int DenFieldNumber = 2;
     private int den_;
+    /// <summary>
+    /// Ratio denominator
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Den {
@@ -1751,6 +1788,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "codec_display_name" field.</summary>
     public const int CodecDisplayNameFieldNumber = 6;
     private string codecDisplayName_ = "";
+    /// <summary>
+    /// Codec display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CodecDisplayName {
@@ -3228,6 +3268,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "format" field.</summary>
     public const int FormatFieldNumber = 1;
     private global::Avn.Connect.V1.MediaFormatMetadata format_;
+    /// <summary>
+    /// Format of video
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.MediaFormatMetadata Format {
@@ -3242,6 +3285,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.MediaStreamMetadata> _repeated_streams_codec
         = pb::FieldCodec.ForMessage(18, global::Avn.Connect.V1.MediaStreamMetadata.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.MediaStreamMetadata> streams_ = new pbc::RepeatedField<global::Avn.Connect.V1.MediaStreamMetadata>();
+    /// <summary>
+    /// Streams within the media container
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.MediaStreamMetadata> Streams {
@@ -3665,6 +3711,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -3677,6 +3726,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "media_url" field.</summary>
     public const int MediaUrlFieldNumber = 2;
     private string mediaUrl_ = "";
+    /// <summary>
+    /// AVNFS input URL
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MediaUrl {
@@ -3689,6 +3741,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "transcode_spec" field.</summary>
     public const int TranscodeSpecFieldNumber = 3;
     private global::Avn.Connect.V1.TranscodeImageSpec transcodeSpec_;
+    /// <summary>
+    /// Transcode instructions
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.TranscodeImageSpec TranscodeSpec {
@@ -3953,6 +4008,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "media_url" field.</summary>
     public const int MediaUrlFieldNumber = 1;
     private string mediaUrl_ = "";
+    /// <summary>
+    /// AVNFS output URL
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MediaUrl {
@@ -5042,6 +5100,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "media_device_id" field.</summary>
     public const int MediaDeviceIdFieldNumber = 1;
     private string mediaDeviceId_ = "";
+    /// <summary>
+    /// Media device ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MediaDeviceId {
@@ -5054,6 +5115,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "media_device_name" field.</summary>
     public const int MediaDeviceNameFieldNumber = 2;
     private string mediaDeviceName_ = "";
+    /// <summary>
+    /// Media device display name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MediaDeviceName {
@@ -5335,6 +5399,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -6249,6 +6316,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "extension" field.</summary>
     public const int ExtensionFieldNumber = 1;
     private string extension_ = "";
+    /// <summary>
+    /// Media file extension
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Extension {
@@ -6261,6 +6331,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "media_type" field.</summary>
     public const int MediaTypeFieldNumber = 2;
     private string mediaType_ = "";
+    /// <summary>
+    /// Media type
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string MediaType {
@@ -6646,6 +6719,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.MediaTypeExtension> _repeated_mediaTypes_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.MediaTypeExtension.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.MediaTypeExtension> mediaTypes_ = new pbc::RepeatedField<global::Avn.Connect.V1.MediaTypeExtension>();
+    /// <summary>
+    /// Matching media types
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.MediaTypeExtension> MediaTypes {
@@ -7105,6 +7181,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -7792,6 +7871,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -8154,6 +8236,1092 @@ namespace Avn.Connect.V1 {
             break;
           case 10: {
             mediaDeviceSpecs_.AddEntriesFrom(ref input, _repeated_mediaDeviceSpecs_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetMediaSpectrumRequest : pb::IMessage<GetMediaSpectrumRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetMediaSpectrumRequest> _parser = new pb::MessageParser<GetMediaSpectrumRequest>(() => new GetMediaSpectrumRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetMediaSpectrumRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[24]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMediaSpectrumRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMediaSpectrumRequest(GetMediaSpectrumRequest other) : this() {
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+      mediaUrl_ = other.mediaUrl_;
+      sampleRate_ = other.sampleRate_;
+      frequencyBinCount_ = other.frequencyBinCount_;
+      frequencyMin_ = other.frequencyMin_;
+      frequencyMax_ = other.frequencyMax_;
+      volumeMax_ = other.volumeMax_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMediaSpectrumRequest Clone() {
+      return new GetMediaSpectrumRequest(this);
+    }
+
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 1;
+    private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "media_url" field.</summary>
+    public const int MediaUrlFieldNumber = 2;
+    private string mediaUrl_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string MediaUrl {
+      get { return mediaUrl_; }
+      set {
+        mediaUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "sample_rate" field.</summary>
+    public const int SampleRateFieldNumber = 3;
+    private float sampleRate_;
+    /// <summary>
+    /// Units Hz
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float SampleRate {
+      get { return sampleRate_; }
+      set {
+        sampleRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "frequency_bin_count" field.</summary>
+    public const int FrequencyBinCountFieldNumber = 4;
+    private int frequencyBinCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int FrequencyBinCount {
+      get { return frequencyBinCount_; }
+      set {
+        frequencyBinCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "frequency_min" field.</summary>
+    public const int FrequencyMinFieldNumber = 5;
+    private float frequencyMin_;
+    /// <summary>
+    /// Units Hz
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float FrequencyMin {
+      get { return frequencyMin_; }
+      set {
+        frequencyMin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "frequency_max" field.</summary>
+    public const int FrequencyMaxFieldNumber = 6;
+    private float frequencyMax_;
+    /// <summary>
+    /// Units Hz
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float FrequencyMax {
+      get { return frequencyMax_; }
+      set {
+        frequencyMax_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "volume_max" field.</summary>
+    public const int VolumeMaxFieldNumber = 7;
+    private float volumeMax_;
+    /// <summary>
+    /// Units dBFS
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float VolumeMax {
+      get { return volumeMax_; }
+      set {
+        volumeMax_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetMediaSpectrumRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetMediaSpectrumRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Auth, other.Auth)) return false;
+      if (MediaUrl != other.MediaUrl) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SampleRate, other.SampleRate)) return false;
+      if (FrequencyBinCount != other.FrequencyBinCount) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FrequencyMin, other.FrequencyMin)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FrequencyMax, other.FrequencyMax)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(VolumeMax, other.VolumeMax)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (auth_ != null) hash ^= Auth.GetHashCode();
+      if (MediaUrl.Length != 0) hash ^= MediaUrl.GetHashCode();
+      if (SampleRate != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SampleRate);
+      if (FrequencyBinCount != 0) hash ^= FrequencyBinCount.GetHashCode();
+      if (FrequencyMin != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FrequencyMin);
+      if (FrequencyMax != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FrequencyMax);
+      if (VolumeMax != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(VolumeMax);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (MediaUrl.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(MediaUrl);
+      }
+      if (SampleRate != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(SampleRate);
+      }
+      if (FrequencyBinCount != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(FrequencyBinCount);
+      }
+      if (FrequencyMin != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(FrequencyMin);
+      }
+      if (FrequencyMax != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(FrequencyMax);
+      }
+      if (VolumeMax != 0F) {
+        output.WriteRawTag(61);
+        output.WriteFloat(VolumeMax);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (MediaUrl.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(MediaUrl);
+      }
+      if (SampleRate != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(SampleRate);
+      }
+      if (FrequencyBinCount != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(FrequencyBinCount);
+      }
+      if (FrequencyMin != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(FrequencyMin);
+      }
+      if (FrequencyMax != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(FrequencyMax);
+      }
+      if (VolumeMax != 0F) {
+        output.WriteRawTag(61);
+        output.WriteFloat(VolumeMax);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
+      if (MediaUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MediaUrl);
+      }
+      if (SampleRate != 0F) {
+        size += 1 + 4;
+      }
+      if (FrequencyBinCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FrequencyBinCount);
+      }
+      if (FrequencyMin != 0F) {
+        size += 1 + 4;
+      }
+      if (FrequencyMax != 0F) {
+        size += 1 + 4;
+      }
+      if (VolumeMax != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetMediaSpectrumRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
+      }
+      if (other.MediaUrl.Length != 0) {
+        MediaUrl = other.MediaUrl;
+      }
+      if (other.SampleRate != 0F) {
+        SampleRate = other.SampleRate;
+      }
+      if (other.FrequencyBinCount != 0) {
+        FrequencyBinCount = other.FrequencyBinCount;
+      }
+      if (other.FrequencyMin != 0F) {
+        FrequencyMin = other.FrequencyMin;
+      }
+      if (other.FrequencyMax != 0F) {
+        FrequencyMax = other.FrequencyMax;
+      }
+      if (other.VolumeMax != 0F) {
+        VolumeMax = other.VolumeMax;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 18: {
+            MediaUrl = input.ReadString();
+            break;
+          }
+          case 29: {
+            SampleRate = input.ReadFloat();
+            break;
+          }
+          case 32: {
+            FrequencyBinCount = input.ReadInt32();
+            break;
+          }
+          case 45: {
+            FrequencyMin = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            FrequencyMax = input.ReadFloat();
+            break;
+          }
+          case 61: {
+            VolumeMax = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 18: {
+            MediaUrl = input.ReadString();
+            break;
+          }
+          case 29: {
+            SampleRate = input.ReadFloat();
+            break;
+          }
+          case 32: {
+            FrequencyBinCount = input.ReadInt32();
+            break;
+          }
+          case 45: {
+            FrequencyMin = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            FrequencyMax = input.ReadFloat();
+            break;
+          }
+          case 61: {
+            VolumeMax = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetMediaSpectrumResponse : pb::IMessage<GetMediaSpectrumResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetMediaSpectrumResponse> _parser = new pb::MessageParser<GetMediaSpectrumResponse>(() => new GetMediaSpectrumResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetMediaSpectrumResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[25]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMediaSpectrumResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMediaSpectrumResponse(GetMediaSpectrumResponse other) : this() {
+      mediaSpectrum_ = other.mediaSpectrum_ != null ? other.mediaSpectrum_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetMediaSpectrumResponse Clone() {
+      return new GetMediaSpectrumResponse(this);
+    }
+
+    /// <summary>Field number for the "media_spectrum" field.</summary>
+    public const int MediaSpectrumFieldNumber = 1;
+    private global::Avn.Connect.V1.MediaSpectrum mediaSpectrum_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.MediaSpectrum MediaSpectrum {
+      get { return mediaSpectrum_; }
+      set {
+        mediaSpectrum_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetMediaSpectrumResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetMediaSpectrumResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(MediaSpectrum, other.MediaSpectrum)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (mediaSpectrum_ != null) hash ^= MediaSpectrum.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (mediaSpectrum_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(MediaSpectrum);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (mediaSpectrum_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(MediaSpectrum);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (mediaSpectrum_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MediaSpectrum);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetMediaSpectrumResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.mediaSpectrum_ != null) {
+        if (mediaSpectrum_ == null) {
+          MediaSpectrum = new global::Avn.Connect.V1.MediaSpectrum();
+        }
+        MediaSpectrum.MergeFrom(other.MediaSpectrum);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (mediaSpectrum_ == null) {
+              MediaSpectrum = new global::Avn.Connect.V1.MediaSpectrum();
+            }
+            input.ReadMessage(MediaSpectrum);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (mediaSpectrum_ == null) {
+              MediaSpectrum = new global::Avn.Connect.V1.MediaSpectrum();
+            }
+            input.ReadMessage(MediaSpectrum);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class MediaSpectrum : pb::IMessage<MediaSpectrum>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MediaSpectrum> _parser = new pb::MessageParser<MediaSpectrum>(() => new MediaSpectrum());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<MediaSpectrum> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[26]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MediaSpectrum() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MediaSpectrum(MediaSpectrum other) : this() {
+      sampleRate_ = other.sampleRate_;
+      sampleCount_ = other.sampleCount_;
+      frequencyBinCount_ = other.frequencyBinCount_;
+      frequencyMin_ = other.frequencyMin_;
+      frequencyMax_ = other.frequencyMax_;
+      volumeMax_ = other.volumeMax_;
+      volumeDataUrl_ = other.volumeDataUrl_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MediaSpectrum Clone() {
+      return new MediaSpectrum(this);
+    }
+
+    /// <summary>Field number for the "sample_rate" field.</summary>
+    public const int SampleRateFieldNumber = 1;
+    private float sampleRate_;
+    /// <summary>
+    /// Units Hz
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float SampleRate {
+      get { return sampleRate_; }
+      set {
+        sampleRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sample_count" field.</summary>
+    public const int SampleCountFieldNumber = 2;
+    private int sampleCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SampleCount {
+      get { return sampleCount_; }
+      set {
+        sampleCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "frequency_bin_count" field.</summary>
+    public const int FrequencyBinCountFieldNumber = 3;
+    private int frequencyBinCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int FrequencyBinCount {
+      get { return frequencyBinCount_; }
+      set {
+        frequencyBinCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "frequency_min" field.</summary>
+    public const int FrequencyMinFieldNumber = 4;
+    private float frequencyMin_;
+    /// <summary>
+    /// Units Hz
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float FrequencyMin {
+      get { return frequencyMin_; }
+      set {
+        frequencyMin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "frequency_max" field.</summary>
+    public const int FrequencyMaxFieldNumber = 5;
+    private float frequencyMax_;
+    /// <summary>
+    /// Units Hz
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float FrequencyMax {
+      get { return frequencyMax_; }
+      set {
+        frequencyMax_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "volume_max" field.</summary>
+    public const int VolumeMaxFieldNumber = 6;
+    private float volumeMax_;
+    /// <summary>
+    /// Units dBFS
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float VolumeMax {
+      get { return volumeMax_; }
+      set {
+        volumeMax_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "volume_data_url" field.</summary>
+    public const int VolumeDataUrlFieldNumber = 10;
+    private string volumeDataUrl_ = "";
+    /// <summary>
+    /// File of frequency_bin_count x sample_count unsigned bytes representing the volume of the signal for each frequency and time
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string VolumeDataUrl {
+      get { return volumeDataUrl_; }
+      set {
+        volumeDataUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as MediaSpectrum);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(MediaSpectrum other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SampleRate, other.SampleRate)) return false;
+      if (SampleCount != other.SampleCount) return false;
+      if (FrequencyBinCount != other.FrequencyBinCount) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FrequencyMin, other.FrequencyMin)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FrequencyMax, other.FrequencyMax)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(VolumeMax, other.VolumeMax)) return false;
+      if (VolumeDataUrl != other.VolumeDataUrl) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SampleRate != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SampleRate);
+      if (SampleCount != 0) hash ^= SampleCount.GetHashCode();
+      if (FrequencyBinCount != 0) hash ^= FrequencyBinCount.GetHashCode();
+      if (FrequencyMin != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FrequencyMin);
+      if (FrequencyMax != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FrequencyMax);
+      if (VolumeMax != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(VolumeMax);
+      if (VolumeDataUrl.Length != 0) hash ^= VolumeDataUrl.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (SampleRate != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(SampleRate);
+      }
+      if (SampleCount != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SampleCount);
+      }
+      if (FrequencyBinCount != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(FrequencyBinCount);
+      }
+      if (FrequencyMin != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(FrequencyMin);
+      }
+      if (FrequencyMax != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(FrequencyMax);
+      }
+      if (VolumeMax != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(VolumeMax);
+      }
+      if (VolumeDataUrl.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(VolumeDataUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (SampleRate != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(SampleRate);
+      }
+      if (SampleCount != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(SampleCount);
+      }
+      if (FrequencyBinCount != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(FrequencyBinCount);
+      }
+      if (FrequencyMin != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(FrequencyMin);
+      }
+      if (FrequencyMax != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(FrequencyMax);
+      }
+      if (VolumeMax != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(VolumeMax);
+      }
+      if (VolumeDataUrl.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(VolumeDataUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (SampleRate != 0F) {
+        size += 1 + 4;
+      }
+      if (SampleCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SampleCount);
+      }
+      if (FrequencyBinCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FrequencyBinCount);
+      }
+      if (FrequencyMin != 0F) {
+        size += 1 + 4;
+      }
+      if (FrequencyMax != 0F) {
+        size += 1 + 4;
+      }
+      if (VolumeMax != 0F) {
+        size += 1 + 4;
+      }
+      if (VolumeDataUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(VolumeDataUrl);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(MediaSpectrum other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SampleRate != 0F) {
+        SampleRate = other.SampleRate;
+      }
+      if (other.SampleCount != 0) {
+        SampleCount = other.SampleCount;
+      }
+      if (other.FrequencyBinCount != 0) {
+        FrequencyBinCount = other.FrequencyBinCount;
+      }
+      if (other.FrequencyMin != 0F) {
+        FrequencyMin = other.FrequencyMin;
+      }
+      if (other.FrequencyMax != 0F) {
+        FrequencyMax = other.FrequencyMax;
+      }
+      if (other.VolumeMax != 0F) {
+        VolumeMax = other.VolumeMax;
+      }
+      if (other.VolumeDataUrl.Length != 0) {
+        VolumeDataUrl = other.VolumeDataUrl;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 13: {
+            SampleRate = input.ReadFloat();
+            break;
+          }
+          case 16: {
+            SampleCount = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            FrequencyBinCount = input.ReadInt32();
+            break;
+          }
+          case 37: {
+            FrequencyMin = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            FrequencyMax = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            VolumeMax = input.ReadFloat();
+            break;
+          }
+          case 82: {
+            VolumeDataUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 13: {
+            SampleRate = input.ReadFloat();
+            break;
+          }
+          case 16: {
+            SampleCount = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            FrequencyBinCount = input.ReadInt32();
+            break;
+          }
+          case 37: {
+            FrequencyMin = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            FrequencyMax = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            VolumeMax = input.ReadFloat();
+            break;
+          }
+          case 82: {
+            VolumeDataUrl = input.ReadString();
             break;
           }
         }

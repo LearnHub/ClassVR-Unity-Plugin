@@ -115,6 +115,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -127,6 +130,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 2;
     private int userId_;
+    /// <summary>
+    /// User to request membership details for
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int UserId {
@@ -360,6 +366,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.OrganizationMembership> _repeated_memberships_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.OrganizationMembership.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.OrganizationMembership> memberships_ = new pbc::RepeatedField<global::Avn.Connect.V1.OrganizationMembership>();
+    /// <summary>
+    /// Organizations that the user belongs to
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.OrganizationMembership> Memberships {
@@ -546,6 +555,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 1;
     private int organizationId_;
+    /// <summary>
+    /// Organization ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int OrganizationId {
@@ -558,6 +570,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// Organization name
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -785,6 +800,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "auth" field.</summary>
     public const int AuthFieldNumber = 1;
     private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.Authorization Auth {
@@ -799,6 +817,9 @@ namespace Avn.Connect.V1 {
     private readonly static string SearchTextDefaultValue = "";
 
     private string searchText_;
+    /// <summary>
+    /// Text to search organizations for using strict matching an % for wildcards
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SearchText {
@@ -825,6 +846,9 @@ namespace Avn.Connect.V1 {
     private readonly static int PageSizeDefaultValue = 0;
 
     private int pageSize_;
+    /// <summary>
+    /// Maximum number of results to return
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int PageSize {
@@ -852,6 +876,9 @@ namespace Avn.Connect.V1 {
     private readonly static string PageTokenDefaultValue = "";
 
     private string pageToken_;
+    /// <summary>
+    /// Start point from a previous paged search
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PageToken {
@@ -1146,6 +1173,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.MemberOrganization> _repeated_results_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.MemberOrganization.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.MemberOrganization> results_ = new pbc::RepeatedField<global::Avn.Connect.V1.MemberOrganization>();
+    /// <summary>
+    /// Matching membership information
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.MemberOrganization> Results {
@@ -1157,6 +1187,9 @@ namespace Avn.Connect.V1 {
     private readonly static string NextPageTokenDefaultValue = "";
 
     private string nextPageToken_;
+    /// <summary>
+    /// Token to use to access more paged results
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string NextPageToken {
