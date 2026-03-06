@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ClassVR {
+namespace ClassVR.Platform.Android {
   /// <summary>
   /// Utility class for getting device info from the ClassVR client
   /// </summary>
