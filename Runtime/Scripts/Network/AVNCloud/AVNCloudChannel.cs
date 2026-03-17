@@ -3,12 +3,10 @@ using System.Net.Http;
 using Grpc.Net.Client;
 using Grpc.Net.Client.Web;
 
-namespace ClassVR {
-  namespace AvnCloud {
-    public enum EndpointServer {
-      Production,
-      Alpha
-    }
+namespace ClassVR.Network.AvnCloud {
+  public enum EndpointServer {
+    Production,
+    Alpha
   }
 
   /// <summary>

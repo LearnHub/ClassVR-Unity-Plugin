@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ClassVR {
+namespace ClassVR.Platform.Android {
   public class IntentProvider {
     /// <summary>
     /// Subscribe to receive new intents whenever one is available.

@@ -20,7 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Upgraded CVR Unity Java Plugin to version 7
 - FileUploader.UploadToSharedCloud uses AVNFS ContentProvider for upload on Android, instead of gRPC + HTTP POST
-- Regenerated C# gRPC client for AVNCloud
+- Regenerated C# gRPC clients for AVNCloud
+- Namespaces of AVNCloud and Android Platform scripts
 
 ## [1.5.0] - 2025-11-04
 

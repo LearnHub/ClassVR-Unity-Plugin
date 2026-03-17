@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Avn.Connect.V1;
-using ClassVR.AvnCloud;
+using ClassVR.Platform.Android;
 using Grpc.Core;
 using UnityEngine;
 
 using WellKnownTypes = Google.Protobuf.WellKnownTypes;
 
-namespace ClassVR {
+namespace ClassVR.Network.AvnCloud {
   public static class Analytics {
     private static ClientCredentials clientCredentials;
 

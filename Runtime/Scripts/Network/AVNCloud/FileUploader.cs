@@ -4,11 +4,12 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Avn.Connect.V1;
+using ClassVR.Platform.Android;
 using UnityEngine;
 using UnityEngine.Networking;
 using Authorization = Avn.Connect.V1.Authorization;
 
-namespace ClassVR.AvnCloud {
+namespace ClassVR.Network.AvnCloud {
   public static class FileUploader {
     // Maximum size in bytes that AVNFS will accept (5GB)
     private const long MaxSinglePartUploadSizeBytes = 5368709120;

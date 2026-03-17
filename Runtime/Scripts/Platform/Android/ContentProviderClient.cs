@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace ClassVR {
+namespace ClassVR.Platform.Android {
   /// <summary>
   /// Provides methods to retrieve files from Android ContentProviders.
   /// Files are copied from content:// URIs into a local cache directory

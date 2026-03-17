@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace ClassVR {
+namespace ClassVR.Platform.Android {
   /// <summary>
   /// WARNING: Do not use this class directly from Unity, use <see cref="FileUploader"/>.
   /// Uploads files to AVNFS via the on-device AVNFS ContentProvider (content://avnfs.com).
