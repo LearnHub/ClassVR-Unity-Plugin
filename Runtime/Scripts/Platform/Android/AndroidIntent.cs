@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ClassVR {
+namespace ClassVR.Platform.Android {
   /// <summary>
   /// Represents the data from an Android intent
   /// </summary>

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ClassVR {
+namespace ClassVR.Platform.Android {
   /// <summary>
   ///  Utility class for querying Android system properties
   /// </summary>

@@ -30,9 +30,53 @@ _ = Analytics.SendEvent("example_action", "example_source");
 // Send an analytics event (and wait for it to complete)
 await Analytics.SendEvent("example_action", "example_source");
 
-// Upload a file to ClassVR Shared Cloud
-var url = await UploadToSharedCloud("example.txt", "text/plain", "example file contents");
+// Upload a small file to ClassVR Shared Cloud (on Android)
+var url = await FileUploader.UploadToSharedCloud("example.txt", "text/plain", "example file contents");
+// Upload a large file to ClassVR Shared Cloud (on Android)
+var filePath = Path.Combine(Application.temporaryCachePath, "filename.txt");
+... (write data to file)
+var url = await FileUploader.UploadToSharedCloud(filePath, "text/plain");
+
+// Retrieve a file from an Android ContentProvider
+var url = "content://...";
+var filePath = await ContentProviderClient.GetFile(url);
+
+// Disable tilt to spin - note this requires the ClassVR Tilt-To-Spin OpenXR feature (see below)
+var tiltToSpinFeature = OpenXRSettings.Instance.GetFeature<ClassVrTiltToSpinFeature>();
+tiltToSpinFeature.EnableTiltToSpin(false);
 ```
+
+## OpenXR Integration
+
+### OpenXR Features
+
+This plugin provides the **ClassVR Tilt-To-Spin** feature, which can be enabled via XR Plug-in Management. Further information on OpenXR Features can be found in the [Unity OpenXR Plugin docs](https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.3/manual/features.html).
+
+### OpenXR Interaction Profiles
+
+This plugin provides Unity support for the **ClassVR 655 Headset interaction profile**, which can be enabled via XR Plug-in Management. One enabled, interaction paths are available to the Unity Input System. Note that this interaction profile only includes inputs on the headset itself, for controllers please use the Oculus Touch Controller Profile.
+
+Further information on OpenXR Interaction Profiles can be found in the [Unity OpenXR Plugin docs](https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.3/manual/input.html).
+
+## ClassVR File Download/Upload
+
+### Downloads
+
+To download files from ClassVR, use the `ContentProviderClient.GetFile` method with a URL of the form:
+
+> `content://avnfs.com/{hash}?size={bytes}&type={mime}&name={name}` (name is optional)
+
+You can replace `https://` with `content://` in any AVNFS URL to use the ContentProviderClient.
+
+This method will download the file, store it in a temporary cache directory, and return the absolute path to the file which can then be used for normal file operations.
+
+This plugin aims to be agnostic as to which ContentProvider is being accessed, meaning you should be able to use `ContentProviderClient` to download files from other ContentProviders. However, this functionality has only been tested against the ClassVR AVNFS ContentProvider.
+
+### Uploads
+
+To upload files to ClassVR, use the `FileUploader.UploadToSharedCloud` method. You can use any of the overloads, but for large files it's recommended to write to a temporary file and use the overload which takes a file path.
+
+This method will assign the file to the Shared Cloud library for the organization that the device is currently registered to.
 
 ## Intents and Deep Linking
 

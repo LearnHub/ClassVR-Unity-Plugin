@@ -1,11 +1,15 @@
 {
   "name": "com.avantis.classvr",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "displayName": "ClassVR Plugin",
   "description": "The ClassVR Unity Plugin provides utilities and assets to enable development for ClassVR headsets and integration with ClassVR cloud services.",
-  "unity": "2022.3",
+  "unity": "6000.1",
   "author": {
     "name": "Avantis Education",
     "url": "https://www.classvr.com/"
+  },
+  "dependencies": {
+    "com.unity.xr.openxr": "1.15.1",
+    "com.unity.inputsystem": "1.14.0"
   }
 }
