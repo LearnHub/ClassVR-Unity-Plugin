@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Low-level (plumbing) class AvnfsUploader for file upload on Android via the AVNFS ContentProvider
 - ContentProviderClient for file retrieval on Android via URI from a ContentProvider
 - ClassVR 655 headset interaction profile support
+- System utils OpenXR feature with API to get time since last recenter event
 
 ### Changed
 
