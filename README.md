@@ -6,7 +6,7 @@ The ClassVR Unity Plugin provides utilities and assets to enable development for
 
 Unless you intend to make changes to the Plugin, please install via [OpenUPM](https://openupm.com/packages/com.avantis.classvr/). OpenUPM installation instructions are here - https://openupm.com/packages/com.avantis.classvr/#modal-manualinstallation.
 
-## Usage
+## API Usage
 
 ```
 using ClassVR;
