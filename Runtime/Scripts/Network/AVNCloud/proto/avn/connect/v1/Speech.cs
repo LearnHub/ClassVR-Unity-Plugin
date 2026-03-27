@@ -27,42 +27,42 @@ namespace Avn.Connect.V1 {
             "Chthdm4vY29ubmVjdC92MS9zcGVlY2gucHJvdG8SDmF2bi5jb25uZWN0LnYx",
             "Ghtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aImF2bi9jb25uZWN0L3Yx",
             "L2F1dGhvcml6YXRpb24ucHJvdG8aIWF2bi9jb25uZWN0L3YxL3RyYW5zbGF0",
-            "aW9ucy5wcm90byLKAQoXU3ludGhlc2l6ZVNwZWVjaFJlcXVlc3QSKwoEYXV0",
+            "aW9ucy5wcm90byLeAQoXU3ludGhlc2l6ZVNwZWVjaFJlcXVlc3QSKwoEYXV0",
             "aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SDAoEdGV4",
-            "dBgCIAEoCRITCgtsYW5ndWFnZV9pZBgDIAEoCRItCgZnZW5kZXIYBCABKA4y",
-            "HS5hdm4uY29ubmVjdC52MS5TcGVha2VyR2VuZGVyEjAKDHNwZWVjaF9mbGFn",
-            "cxgFIAMoDjIaLmF2bi5jb25uZWN0LnYxLlNwZWVjaEZsYWciaQoYU3ludGhl",
-            "c2l6ZVNwZWVjaFJlc3BvbnNlEhEKCWF1ZGlvX3VybBgBIAEoCRIYChBkdXJh",
-            "dGlvbl9zZWNvbmRzGAIgASgCEg4KBmVycm9ycxgDIAMoCRIQCgh3YXJuaW5n",
-            "cxgEIAMoCSJiChtTeW50aGVzaXplVHJhbnNjcmlwdFJlcXVlc3QSKwoEYXV0",
-            "aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SFgoOdHJh",
-            "bnNjcmlwdF91cmwYAiABKAkiSgoSU3ludGhlc2l6ZVJlc3BvbnNlEhIKCnNw",
-            "ZWVjaF91cmwYASABKAkSDgoGZXJyb3JzGAIgAygJEhAKCHdhcm5pbmdzGAMg",
-            "AygJIjkKBlNwZWVjaBIvCghzZWdtZW50cxgBIAMoCzIdLmF2bi5jb25uZWN0",
-            "LnYxLlNwZWVjaFNlZ21lbnQiPAoNU3BlZWNoU2VnbWVudBIRCglhdWRpb191",
-            "cmwYASABKAkSGAoQZHVyYXRpb25fc2Vjb25kcxgCIAEoAiKaAQoHU3BlYWtl",
-            "chISCgpzcGVha2VyX2lkGAEgASgFEi0KBmdlbmRlchgCIAEoDjIdLmF2bi5j",
-            "b25uZWN0LnYxLlNwZWFrZXJHZW5kZXISEQoEbmFtZRgDIAEoCUgAiAEBEjAK",
-            "DHNwZWVjaF9mbGFncxgEIAMoDjIaLmF2bi5jb25uZWN0LnYxLlNwZWVjaEZs",
-            "YWdCBwoFX25hbWUiGAoWR2V0Q2FwYWJpbGl0aWVzUmVxdWVzdCI3ChdHZXRD",
-            "YXBhYmlsaXRpZXNSZXNwb25zZRIcChRzdXBwb3J0ZWRMYW5ndWFnZUlkcxgB",
-            "IAMoCSp/Cg1TcGVha2VyR2VuZGVyEh4KGlNQRUFLRVJfR0VOREVSX1VOU1BF",
-            "Q0lGSUVEEAASGgoWU1BFQUtFUl9HRU5ERVJfTkVVVFJBTBABEhcKE1NQRUFL",
-            "RVJfR0VOREVSX01BTEUQAhIZChVTUEVBS0VSX0dFTkRFUl9GRU1BTEUQAypg",
-            "CgpTcGVlY2hGbGFnEhsKF1NQRUVDSF9GTEFHX1VOU1BFQ0lGSUVEEAASHgoa",
-            "U1BFRUNIX0ZMQUdfTk9fVFJBTlNMQVRJT04QARIVChFTUEVFQ0hfRkxBR19D",
-            "SElMRBACMsMCCg1TcGVlY2hTZXJ2aWNlEmUKEFN5bnRoZXNpemVTcGVlY2gS",
-            "Jy5hdm4uY29ubmVjdC52MS5TeW50aGVzaXplU3BlZWNoUmVxdWVzdBooLmF2",
-            "bi5jb25uZWN0LnYxLlN5bnRoZXNpemVTcGVlY2hSZXNwb25zZRJnChRTeW50",
-            "aGVzaXplVHJhbnNjcmlwdBIrLmF2bi5jb25uZWN0LnYxLlN5bnRoZXNpemVU",
-            "cmFuc2NyaXB0UmVxdWVzdBoiLmF2bi5jb25uZWN0LnYxLlN5bnRoZXNpemVS",
-            "ZXNwb25zZRJiCg9HZXRDYXBhYmlsaXRpZXMSJi5hdm4uY29ubmVjdC52MS5H",
-            "ZXRDYXBhYmlsaXRpZXNSZXF1ZXN0GicuYXZuLmNvbm5lY3QudjEuR2V0Q2Fw",
-            "YWJpbGl0aWVzUmVzcG9uc2ViBnByb3RvMw=="));
+            "dBgCIAEoCRISCgpzcGVha2VyX2lkGAYgASgFEhMKC2xhbmd1YWdlX2lkGAMg",
+            "ASgJEi0KBmdlbmRlchgEIAEoDjIdLmF2bi5jb25uZWN0LnYxLlNwZWFrZXJH",
+            "ZW5kZXISMAoMc3BlZWNoX2ZsYWdzGAUgAygOMhouYXZuLmNvbm5lY3QudjEu",
+            "U3BlZWNoRmxhZyJpChhTeW50aGVzaXplU3BlZWNoUmVzcG9uc2USEQoJYXVk",
+            "aW9fdXJsGAEgASgJEhgKEGR1cmF0aW9uX3NlY29uZHMYAiABKAISDgoGZXJy",
+            "b3JzGAMgAygJEhAKCHdhcm5pbmdzGAQgAygJImIKG1N5bnRoZXNpemVUcmFu",
+            "c2NyaXB0UmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEu",
+            "QXV0aG9yaXphdGlvbhIWCg50cmFuc2NyaXB0X3VybBgCIAEoCSJKChJTeW50",
+            "aGVzaXplUmVzcG9uc2USEgoKc3BlZWNoX3VybBgBIAEoCRIOCgZlcnJvcnMY",
+            "AiADKAkSEAoId2FybmluZ3MYAyADKAkiOQoGU3BlZWNoEi8KCHNlZ21lbnRz",
+            "GAEgAygLMh0uYXZuLmNvbm5lY3QudjEuU3BlZWNoU2VnbWVudCI8Cg1TcGVl",
+            "Y2hTZWdtZW50EhEKCWF1ZGlvX3VybBgBIAEoCRIYChBkdXJhdGlvbl9zZWNv",
+            "bmRzGAIgASgCIpoBCgdTcGVha2VyEhIKCnNwZWFrZXJfaWQYASABKAUSLQoG",
+            "Z2VuZGVyGAIgASgOMh0uYXZuLmNvbm5lY3QudjEuU3BlYWtlckdlbmRlchIR",
+            "CgRuYW1lGAMgASgJSACIAQESMAoMc3BlZWNoX2ZsYWdzGAQgAygOMhouYXZu",
+            "LmNvbm5lY3QudjEuU3BlZWNoRmxhZ0IHCgVfbmFtZSIYChZHZXRDYXBhYmls",
+            "aXRpZXNSZXF1ZXN0IjcKF0dldENhcGFiaWxpdGllc1Jlc3BvbnNlEhwKFHN1",
+            "cHBvcnRlZExhbmd1YWdlSWRzGAEgAygJKn8KDVNwZWFrZXJHZW5kZXISHgoa",
+            "U1BFQUtFUl9HRU5ERVJfVU5TUEVDSUZJRUQQABIaChZTUEVBS0VSX0dFTkRF",
+            "Ul9ORVVUUkFMEAESFwoTU1BFQUtFUl9HRU5ERVJfTUFMRRACEhkKFVNQRUFL",
+            "RVJfR0VOREVSX0ZFTUFMRRADKmAKClNwZWVjaEZsYWcSGwoXU1BFRUNIX0ZM",
+            "QUdfVU5TUEVDSUZJRUQQABIeChpTUEVFQ0hfRkxBR19OT19UUkFOU0xBVElP",
+            "ThABEhUKEVNQRUVDSF9GTEFHX0NISUxEEAIywwIKDVNwZWVjaFNlcnZpY2US",
+            "ZQoQU3ludGhlc2l6ZVNwZWVjaBInLmF2bi5jb25uZWN0LnYxLlN5bnRoZXNp",
+            "emVTcGVlY2hSZXF1ZXN0GiguYXZuLmNvbm5lY3QudjEuU3ludGhlc2l6ZVNw",
+            "ZWVjaFJlc3BvbnNlEmcKFFN5bnRoZXNpemVUcmFuc2NyaXB0EisuYXZuLmNv",
+            "bm5lY3QudjEuU3ludGhlc2l6ZVRyYW5zY3JpcHRSZXF1ZXN0GiIuYXZuLmNv",
+            "bm5lY3QudjEuU3ludGhlc2l6ZVJlc3BvbnNlEmIKD0dldENhcGFiaWxpdGll",
+            "cxImLmF2bi5jb25uZWN0LnYxLkdldENhcGFiaWxpdGllc1JlcXVlc3QaJy5h",
+            "dm4uY29ubmVjdC52MS5HZXRDYXBhYmlsaXRpZXNSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.SpeakerGender), typeof(global::Avn.Connect.V1.SpeechFlag), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeSpeechRequest), global::Avn.Connect.V1.SynthesizeSpeechRequest.Parser, new[]{ "Auth", "Text", "LanguageId", "Gender", "SpeechFlags" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeSpeechRequest), global::Avn.Connect.V1.SynthesizeSpeechRequest.Parser, new[]{ "Auth", "Text", "SpeakerId", "LanguageId", "Gender", "SpeechFlags" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeSpeechResponse), global::Avn.Connect.V1.SynthesizeSpeechResponse.Parser, new[]{ "AudioUrl", "DurationSeconds", "Errors", "Warnings" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeTranscriptRequest), global::Avn.Connect.V1.SynthesizeTranscriptRequest.Parser, new[]{ "Auth", "TranscriptUrl" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeResponse), global::Avn.Connect.V1.SynthesizeResponse.Parser, new[]{ "SpeechUrl", "Errors", "Warnings" }, null, null, null, null),
@@ -136,6 +136,7 @@ namespace Avn.Connect.V1 {
     public SynthesizeSpeechRequest(SynthesizeSpeechRequest other) : this() {
       auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       text_ = other.text_;
+      speakerId_ = other.speakerId_;
       languageId_ = other.languageId_;
       gender_ = other.gender_;
       speechFlags_ = other.speechFlags_.Clone();
@@ -175,6 +176,21 @@ namespace Avn.Connect.V1 {
       get { return text_; }
       set {
         text_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "speaker_id" field.</summary>
+    public const int SpeakerIdFieldNumber = 6;
+    private int speakerId_;
+    /// <summary>
+    /// Speaker ID for voice selection (varies voice within same gender/language)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SpeakerId {
+      get { return speakerId_; }
+      set {
+        speakerId_ = value;
       }
     }
 
@@ -239,6 +255,7 @@ namespace Avn.Connect.V1 {
       }
       if (!object.Equals(Auth, other.Auth)) return false;
       if (Text != other.Text) return false;
+      if (SpeakerId != other.SpeakerId) return false;
       if (LanguageId != other.LanguageId) return false;
       if (Gender != other.Gender) return false;
       if(!speechFlags_.Equals(other.speechFlags_)) return false;
@@ -251,6 +268,7 @@ namespace Avn.Connect.V1 {
       int hash = 1;
       if (auth_ != null) hash ^= Auth.GetHashCode();
       if (Text.Length != 0) hash ^= Text.GetHashCode();
+      if (SpeakerId != 0) hash ^= SpeakerId.GetHashCode();
       if (LanguageId.Length != 0) hash ^= LanguageId.GetHashCode();
       if (Gender != global::Avn.Connect.V1.SpeakerGender.Unspecified) hash ^= Gender.GetHashCode();
       hash ^= speechFlags_.GetHashCode();
@@ -289,6 +307,10 @@ namespace Avn.Connect.V1 {
         output.WriteEnum((int) Gender);
       }
       speechFlags_.WriteTo(output, _repeated_speechFlags_codec);
+      if (SpeakerId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(SpeakerId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -316,6 +338,10 @@ namespace Avn.Connect.V1 {
         output.WriteEnum((int) Gender);
       }
       speechFlags_.WriteTo(ref output, _repeated_speechFlags_codec);
+      if (SpeakerId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(SpeakerId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -331,6 +357,9 @@ namespace Avn.Connect.V1 {
       }
       if (Text.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
+      }
+      if (SpeakerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SpeakerId);
       }
       if (LanguageId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LanguageId);
@@ -359,6 +388,9 @@ namespace Avn.Connect.V1 {
       }
       if (other.Text.Length != 0) {
         Text = other.Text;
+      }
+      if (other.SpeakerId != 0) {
+        SpeakerId = other.SpeakerId;
       }
       if (other.LanguageId.Length != 0) {
         LanguageId = other.LanguageId;
@@ -410,6 +442,10 @@ namespace Avn.Connect.V1 {
             speechFlags_.AddEntriesFrom(input, _repeated_speechFlags_codec);
             break;
           }
+          case 48: {
+            SpeakerId = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -451,6 +487,10 @@ namespace Avn.Connect.V1 {
           case 42:
           case 40: {
             speechFlags_.AddEntriesFrom(ref input, _repeated_speechFlags_codec);
+            break;
+          }
+          case 48: {
+            SpeakerId = input.ReadInt32();
             break;
           }
         }
