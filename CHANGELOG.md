@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Regenerated C# gRPC clients to add speaker ID into speech synthesis request
+- Upgraded CVR Unity Java Plugin to version 8 to fix compile issue in Unity 2021.3
+- Package.json to specify Unity 2021.3 as min version
 
 ## [2.0.1] - 2026-03-23
 
