@@ -27,42 +27,42 @@ namespace Avn.Connect.V1 {
             "Chthdm4vY29ubmVjdC92MS9wYXNzZXMucHJvdG8SDmF2bi5jb25uZWN0LnYx",
             "Ghtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aH2dvb2dsZS9wcm90b2J1",
             "Zi90aW1lc3RhbXAucHJvdG8aImF2bi9jb25uZWN0L3YxL2F1dGhvcml6YXRp",
-            "b24ucHJvdG8aHWF2bi9jb25uZWN0L3YxL2VudGl0aWVzLnByb3RvGh1hdm4v",
-            "Y29ubmVjdC92MS9saWNlbnNlcy5wcm90bxodYXZuL2Nvbm5lY3QvdjEvZmVh",
-            "dHVyZXMucHJvdG8aIWF2bi9jb25uZWN0L3YxL3RyYW5zbGF0aW9ucy5wcm90",
-            "bxoaYXZuL2Nvbm5lY3QvdjEvbWVkaWEucHJvdG8i3gEKBFBhc3MSDwoHcGFz",
-            "c19pZBgBIAEoCRIQCghjYXBhY2l0eRgCIAEoBRITCgtkZXNjcmlwdGlvbhgD",
-            "IAEoCRIwCgdleHBpcmVzGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVz",
-            "dGFtcEgAiAEBEi0KCGxpY2Vuc2VzGAUgAygLMhsuYXZuLmNvbm5lY3QudjEu",
-            "TGljZW5zZUluZm8SMQoHY29udGVudBgGIAEoCzIgLmF2bi5jb25uZWN0LnYx",
-            "LkF2YWlsYWJsZUNvbnRlbnRCCgoIX2V4cGlyZXMixAEKEUNyZWF0ZVBhc3NS",
-            "ZXF1ZXN0EjAKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3Jp",
-            "emF0aW9uSACIAQESHQoQcHJlZmVycmVkX2RvbWFpbhgCIAEoCUgBiAEBEiQK",
-            "F2NvbnRleHRfb3JnYW5pemF0aW9uX2lkGAMgASgFSAKIAQFCBwoFX2F1dGhC",
-            "EwoRX3ByZWZlcnJlZF9kb21haW5CGgoYX2NvbnRleHRfb3JnYW5pemF0aW9u",
-            "X2lkIiUKEkNyZWF0ZVBhc3NSZXNwb25zZRIPCgdwYXNzX2lkGAEgASgJIl8K",
-            "EURlbGV0ZVBhc3NSZXF1ZXN0EjAKBGF1dGgYASABKAsyHS5hdm4uY29ubmVj",
-            "dC52MS5BdXRob3JpemF0aW9uSACIAQESDwoHcGFzc19pZBgCIAEoCUIHCgVf",
-            "YXV0aCIhCg5HZXRQYXNzUmVxdWVzdBIPCgdwYXNzX2lkGAEgASgJIjcKD0dl",
-            "dFBhc3NSZXNwb25zZRIkCgZyZXN1bHQYASABKAsyFC5hdm4uY29ubmVjdC52",
-            "MS5QYXNzIoYCChNSZXNvbHZlQXNzZXRSZXF1ZXN0Eg8KB3Bhc3NfaWQYASAB",
-            "KAkSEAoIYXNzZXRfaWQYAiABKAkSMgoJdHJhbnNsYXRlGAMgASgLMh8uYXZu",
-            "LmNvbm5lY3QudjEuVHJhbnNsYXRpb25TcGVjEjoKCWljb25fc3BlYxgEIAEo",
-            "CzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdlU3BlY0gAiAEBEj0K",
-            "DHByZXZpZXdfc3BlYxgFIAEoCzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29k",
-            "ZUltYWdlU3BlY0gBiAEBQgwKCl9pY29uX3NwZWNCDwoNX3ByZXZpZXdfc3Bl",
-            "YzLIAgoLUGFzc1NlcnZpY2USUwoKQ3JlYXRlUGFzcxIhLmF2bi5jb25uZWN0",
-            "LnYxLkNyZWF0ZVBhc3NSZXF1ZXN0GiIuYXZuLmNvbm5lY3QudjEuQ3JlYXRl",
-            "UGFzc1Jlc3BvbnNlEkcKCkRlbGV0ZVBhc3MSIS5hdm4uY29ubmVjdC52MS5E",
-            "ZWxldGVQYXNzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJKCgdH",
-            "ZXRQYXNzEh4uYXZuLmNvbm5lY3QudjEuR2V0UGFzc1JlcXVlc3QaHy5hdm4u",
-            "Y29ubmVjdC52MS5HZXRQYXNzUmVzcG9uc2USTwoMUmVzb2x2ZUFzc2V0EiMu",
-            "YXZuLmNvbm5lY3QudjEuUmVzb2x2ZUFzc2V0UmVxdWVzdBoaLmF2bi5jb25u",
-            "ZWN0LnYxLkVudGl0eUluZm9iBnByb3RvMw=="));
+            "b24ucHJvdG8aHWF2bi9jb25uZWN0L3YxL2VudGl0aWVzLnByb3RvGhthdm4v",
+            "Y29ubmVjdC92MS9ncmFudHMucHJvdG8aHWF2bi9jb25uZWN0L3YxL2ZlYXR1",
+            "cmVzLnByb3RvGiFhdm4vY29ubmVjdC92MS90cmFuc2xhdGlvbnMucHJvdG8a",
+            "GmF2bi9jb25uZWN0L3YxL21lZGlhLnByb3RvItoBCgRQYXNzEg8KB3Bhc3Nf",
+            "aWQYASABKAkSEAoIY2FwYWNpdHkYAiABKAUSEwoLZGVzY3JpcHRpb24YAyAB",
+            "KAkSMAoHZXhwaXJlcxgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
+            "bXBIAIgBARIpCgZncmFudHMYBSADKAsyGS5hdm4uY29ubmVjdC52MS5HcmFu",
+            "dEluZm8SMQoHY29udGVudBgGIAEoCzIgLmF2bi5jb25uZWN0LnYxLkF2YWls",
+            "YWJsZUNvbnRlbnRCCgoIX2V4cGlyZXMixAEKEUNyZWF0ZVBhc3NSZXF1ZXN0",
+            "EjAKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9u",
+            "SACIAQESHQoQcHJlZmVycmVkX2RvbWFpbhgCIAEoCUgBiAEBEiQKF2NvbnRl",
+            "eHRfb3JnYW5pemF0aW9uX2lkGAMgASgFSAKIAQFCBwoFX2F1dGhCEwoRX3By",
+            "ZWZlcnJlZF9kb21haW5CGgoYX2NvbnRleHRfb3JnYW5pemF0aW9uX2lkIiUK",
+            "EkNyZWF0ZVBhc3NSZXNwb25zZRIPCgdwYXNzX2lkGAEgASgJIl8KEURlbGV0",
+            "ZVBhc3NSZXF1ZXN0EjAKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5B",
+            "dXRob3JpemF0aW9uSACIAQESDwoHcGFzc19pZBgCIAEoCUIHCgVfYXV0aCIh",
+            "Cg5HZXRQYXNzUmVxdWVzdBIPCgdwYXNzX2lkGAEgASgJIjcKD0dldFBhc3NS",
+            "ZXNwb25zZRIkCgZyZXN1bHQYASABKAsyFC5hdm4uY29ubmVjdC52MS5QYXNz",
+            "IoYCChNSZXNvbHZlQXNzZXRSZXF1ZXN0Eg8KB3Bhc3NfaWQYASABKAkSEAoI",
+            "YXNzZXRfaWQYAiABKAkSMgoJdHJhbnNsYXRlGAMgASgLMh8uYXZuLmNvbm5l",
+            "Y3QudjEuVHJhbnNsYXRpb25TcGVjEjoKCWljb25fc3BlYxgEIAEoCzIiLmF2",
+            "bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdlU3BlY0gAiAEBEj0KDHByZXZp",
+            "ZXdfc3BlYxgFIAEoCzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdl",
+            "U3BlY0gBiAEBQgwKCl9pY29uX3NwZWNCDwoNX3ByZXZpZXdfc3BlYzLIAgoL",
+            "UGFzc1NlcnZpY2USUwoKQ3JlYXRlUGFzcxIhLmF2bi5jb25uZWN0LnYxLkNy",
+            "ZWF0ZVBhc3NSZXF1ZXN0GiIuYXZuLmNvbm5lY3QudjEuQ3JlYXRlUGFzc1Jl",
+            "c3BvbnNlEkcKCkRlbGV0ZVBhc3MSIS5hdm4uY29ubmVjdC52MS5EZWxldGVQ",
+            "YXNzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJKCgdHZXRQYXNz",
+            "Eh4uYXZuLmNvbm5lY3QudjEuR2V0UGFzc1JlcXVlc3QaHy5hdm4uY29ubmVj",
+            "dC52MS5HZXRQYXNzUmVzcG9uc2USTwoMUmVzb2x2ZUFzc2V0EiMuYXZuLmNv",
+            "bm5lY3QudjEuUmVzb2x2ZUFzc2V0UmVxdWVzdBoaLmF2bi5jb25uZWN0LnYx",
+            "LkVudGl0eUluZm9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.LicensesReflection.Descriptor, global::Avn.Connect.V1.FeaturesReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.GrantsReflection.Descriptor, global::Avn.Connect.V1.FeaturesReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Pass), global::Avn.Connect.V1.Pass.Parser, new[]{ "PassId", "Capacity", "Description", "Expires", "Licenses", "Content" }, new[]{ "Expires" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Pass), global::Avn.Connect.V1.Pass.Parser, new[]{ "PassId", "Capacity", "Description", "Expires", "Grants", "Content" }, new[]{ "Expires" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreatePassRequest), global::Avn.Connect.V1.CreatePassRequest.Parser, new[]{ "Auth", "PreferredDomain", "ContextOrganizationId" }, new[]{ "Auth", "PreferredDomain", "ContextOrganizationId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreatePassResponse), global::Avn.Connect.V1.CreatePassResponse.Parser, new[]{ "PassId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DeletePassRequest), global::Avn.Connect.V1.DeletePassRequest.Parser, new[]{ "Auth", "PassId" }, new[]{ "Auth" }, null, null, null),
@@ -76,7 +76,7 @@ namespace Avn.Connect.V1 {
   }
   #region Messages
   /// <summary>
-  /// A pass is a safe way of sharing licenses using a unqiue pass ID. 
+  /// A pass is a safe way of sharing grants using a unqiue pass ID.
   /// Passes are used to create licensed dimensions.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
@@ -118,7 +118,7 @@ namespace Avn.Connect.V1 {
       capacity_ = other.capacity_;
       description_ = other.description_;
       expires_ = other.expires_ != null ? other.expires_.Clone() : null;
-      licenses_ = other.licenses_.Clone();
+      grants_ = other.grants_.Clone();
       content_ = other.content_ != null ? other.content_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -189,18 +189,18 @@ namespace Avn.Connect.V1 {
       }
     }
 
-    /// <summary>Field number for the "licenses" field.</summary>
-    public const int LicensesFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Avn.Connect.V1.LicenseInfo> _repeated_licenses_codec
-        = pb::FieldCodec.ForMessage(42, global::Avn.Connect.V1.LicenseInfo.Parser);
-    private readonly pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo> licenses_ = new pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo>();
+    /// <summary>Field number for the "grants" field.</summary>
+    public const int GrantsFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Avn.Connect.V1.GrantInfo> _repeated_grants_codec
+        = pb::FieldCodec.ForMessage(42, global::Avn.Connect.V1.GrantInfo.Parser);
+    private readonly pbc::RepeatedField<global::Avn.Connect.V1.GrantInfo> grants_ = new pbc::RepeatedField<global::Avn.Connect.V1.GrantInfo>();
     /// <summary>
-    /// Licenses associated with this pass
+    /// Grants associated with this pass
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo> Licenses {
-      get { return licenses_; }
+    public pbc::RepeatedField<global::Avn.Connect.V1.GrantInfo> Grants {
+      get { return grants_; }
     }
 
     /// <summary>Field number for the "content" field.</summary>
@@ -237,7 +237,7 @@ namespace Avn.Connect.V1 {
       if (Capacity != other.Capacity) return false;
       if (Description != other.Description) return false;
       if (!object.Equals(Expires, other.Expires)) return false;
-      if(!licenses_.Equals(other.licenses_)) return false;
+      if(!grants_.Equals(other.grants_)) return false;
       if (!object.Equals(Content, other.Content)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -250,7 +250,7 @@ namespace Avn.Connect.V1 {
       if (Capacity != 0) hash ^= Capacity.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (expires_ != null) hash ^= Expires.GetHashCode();
-      hash ^= licenses_.GetHashCode();
+      hash ^= grants_.GetHashCode();
       if (content_ != null) hash ^= Content.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -286,7 +286,7 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Expires);
       }
-      licenses_.WriteTo(output, _repeated_licenses_codec);
+      grants_.WriteTo(output, _repeated_grants_codec);
       if (content_ != null) {
         output.WriteRawTag(50);
         output.WriteMessage(Content);
@@ -317,7 +317,7 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Expires);
       }
-      licenses_.WriteTo(ref output, _repeated_licenses_codec);
+      grants_.WriteTo(ref output, _repeated_grants_codec);
       if (content_ != null) {
         output.WriteRawTag(50);
         output.WriteMessage(Content);
@@ -344,7 +344,7 @@ namespace Avn.Connect.V1 {
       if (expires_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Expires);
       }
-      size += licenses_.CalculateSize(_repeated_licenses_codec);
+      size += grants_.CalculateSize(_repeated_grants_codec);
       if (content_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Content);
       }
@@ -375,7 +375,7 @@ namespace Avn.Connect.V1 {
         }
         Expires.MergeFrom(other.Expires);
       }
-      licenses_.Add(other.licenses_);
+      grants_.Add(other.grants_);
       if (other.content_ != null) {
         if (content_ == null) {
           Content = new global::Avn.Connect.V1.AvailableContent();
@@ -421,7 +421,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 42: {
-            licenses_.AddEntriesFrom(input, _repeated_licenses_codec);
+            grants_.AddEntriesFrom(input, _repeated_grants_codec);
             break;
           }
           case 50: {
@@ -470,7 +470,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 42: {
-            licenses_.AddEntriesFrom(ref input, _repeated_licenses_codec);
+            grants_.AddEntriesFrom(ref input, _repeated_grants_codec);
             break;
           }
           case 50: {
@@ -586,7 +586,7 @@ namespace Avn.Connect.V1 {
 
     private int contextOrganizationId_;
     /// <summary>
-    /// Narrow dimension license scope to a specific organization
+    /// Narrow dimension grant scope to a specific organization
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

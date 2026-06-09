@@ -49,9 +49,11 @@ namespace Avn.Connect.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityRequest> __Marshaller_avn_connect_v1_GetEntityRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityRequest.Parser));
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetCurrentUserRequest> __Marshaller_avn_connect_v1_GetCurrentUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetCurrentUserRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.User> __Marshaller_avn_connect_v1_User = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.User.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityRequest> __Marshaller_avn_connect_v1_GetEntityRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetOrganizationMembershipRequest> __Marshaller_avn_connect_v1_GetOrganizationMembershipRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetOrganizationMembershipRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -68,6 +70,14 @@ namespace Avn.Connect.V1 {
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetRecentOrganizationsRequest> __Marshaller_avn_connect_v1_GetRecentOrganizationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetRecentOrganizationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetRecentOrganizationsResponse> __Marshaller_avn_connect_v1_GetRecentOrganizationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetRecentOrganizationsResponse.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetCurrentUserRequest, global::Avn.Connect.V1.User> __Method_GetCurrentUser = new grpc::Method<global::Avn.Connect.V1.GetCurrentUserRequest, global::Avn.Connect.V1.User>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCurrentUser",
+        __Marshaller_avn_connect_v1_GetCurrentUserRequest,
+        __Marshaller_avn_connect_v1_User);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.GetEntityRequest, global::Avn.Connect.V1.User> __Method_GetUser = new grpc::Method<global::Avn.Connect.V1.GetEntityRequest, global::Avn.Connect.V1.User>(
@@ -143,7 +153,55 @@ namespace Avn.Connect.V1 {
       }
 
       /// <summary>
-      /// Get user by ID or the authenticating user if the requested ID is zero
+      /// Get the currently authenticated user (resolved from the request's auth credentials)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.User GetCurrentUser(global::Avn.Connect.V1.GetCurrentUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCurrentUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the currently authenticated user (resolved from the request's auth credentials)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.User GetCurrentUser(global::Avn.Connect.V1.GetCurrentUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetCurrentUser, null, options, request);
+      }
+      /// <summary>
+      /// Get the currently authenticated user (resolved from the request's auth credentials)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.User> GetCurrentUserAsync(global::Avn.Connect.V1.GetCurrentUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCurrentUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the currently authenticated user (resolved from the request's auth credentials)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.User> GetCurrentUserAsync(global::Avn.Connect.V1.GetCurrentUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetCurrentUser, null, options, request);
+      }
+      /// <summary>
+      /// Get user by ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -156,7 +214,7 @@ namespace Avn.Connect.V1 {
         return GetUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get user by ID or the authenticating user if the requested ID is zero
+      /// Get user by ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -167,7 +225,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetUser, null, options, request);
       }
       /// <summary>
-      /// Get user by ID or the authenticating user if the requested ID is zero
+      /// Get user by ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -180,7 +238,7 @@ namespace Avn.Connect.V1 {
         return GetUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get user by ID or the authenticating user if the requested ID is zero
+      /// Get user by ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

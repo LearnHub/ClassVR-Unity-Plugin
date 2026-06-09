@@ -30,7 +30,7 @@ namespace Avn.Connect.V1 {
             "ZGlhLnByb3RvGh1hdm4vY29ubmVjdC92MS9tZXRhZGF0YS5wcm90bxofYXZu",
             "L2Nvbm5lY3QvdjEvcHJvcGVydGllcy5wcm90bxobYXZuL2Nvbm5lY3QvdjEv",
             "c2VhcmNoLnByb3RvGhlhdm4vY29ubmVjdC92MS90YWdzLnByb3RvGiFhdm4v",
-            "Y29ubmVjdC92MS90cmFuc2xhdGlvbnMucHJvdG8i0gQKCkVudGl0eUluZm8S",
+            "Y29ubmVjdC92MS90cmFuc2xhdGlvbnMucHJvdG8i9wQKCkVudGl0eUluZm8S",
             "EQoJZW50aXR5X2lkGAEgASgFEhEKBG5hbWUYAiABKAlCA8A+ARIrCgd1cGRh",
             "dGVkGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIQCghpY29u",
             "X3VybBgEIAEoCRITCgtwcmV2aWV3X3VybBgFIAEoCRIUCgdjb250ZXh0GAYg",
@@ -38,57 +38,58 @@ namespace Avn.Connect.V1 {
             "b29nbGUucHJvdG9idWYuVGltZXN0YW1wSAKIAQESMQoIZmVhdHVyZWQYCSAB",
             "KAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wSAOIAQESGQoPb3JnYW5p",
             "emF0aW9uX2lkGAogASgFSAASEQoHdXNlcl9pZBgLIAEoBUgAEhwKD3NlYXJj",
-            "aF9kaXN0YW5jZRgMIAEoAkgEiAEBEhEKCWF2YWlsYWJsZRgUIAEoCBIVCghh",
-            "c3NldF9pZBgVIAEoCUgFiAEBEhcKCnNpemVfYnl0ZXMYFiABKANIBogBARIX",
-            "CgppdGVtX2NvdW50GB4gASgFSAeIAQESGAoLdHJhY2tfY291bnQYHyABKAVI",
-            "CIgBAUIHCgVvd25lckIKCghfY29udGV4dEIMCgpfcHVibGlzaGVkQgsKCV9m",
-            "ZWF0dXJlZEISChBfc2VhcmNoX2Rpc3RhbmNlQgsKCV9hc3NldF9pZEINCgtf",
-            "c2l6ZV9ieXRlc0INCgtfaXRlbV9jb3VudEIOCgxfdHJhY2tfY291bnQioAIK",
-            "EEdldEVudGl0eVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0",
-            "LnYxLkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgFEjIKCXRyYW5z",
-            "bGF0ZRgDIAEoCzIfLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0aW9uU3BlYxI6",
-            "CglpY29uX3NwZWMYBCABKAsyIi5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVJ",
-            "bWFnZVNwZWNIAIgBARI9CgxwcmV2aWV3X3NwZWMYBSABKAsyIi5hdm4uY29u",
-            "bmVjdC52MS5UcmFuc2NvZGVJbWFnZVNwZWNIAYgBAUIMCgpfaWNvbl9zcGVj",
-            "Qg8KDV9wcmV2aWV3X3NwZWMingEKE0NyZWF0ZUVudGl0eVJlcXVlc3QSKwoE",
-            "YXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SHAoP",
-            "b3JnYW5pemF0aW9uX2lkGAIgASgFSACIAQESGAoLbGFuZ3VhZ2VfaWQYAyAB",
-            "KAlIAYgBAUISChBfb3JnYW5pemF0aW9uX2lkQg4KDF9sYW5ndWFnZV9pZCIp",
-            "ChRDcmVhdGVFbnRpdHlSZXNwb25zZRIRCgllbnRpdHlfaWQYASABKAUiVQoT",
-            "RGVsZXRlRW50aXR5UmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5l",
-            "Y3QudjEuQXV0aG9yaXphdGlvbhIRCgllbnRpdHlfaWQYAiABKAUibAoRQ29w",
-            "eUVudGl0eVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYx",
-            "LkF1dGhvcml6YXRpb24SFwoPb3JnYW5pemF0aW9uX2lkGAIgASgFEhEKCXRh",
-            "cmdldF9pZBgDIAEoBSLlBAoVRW50aXR5SW5mb0xpc3RSZXF1ZXN0EisKBGF1",
-            "dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhIKCmVu",
-            "dGl0eV9pZHMYAiADKAUSMgoJdHJhbnNsYXRlGAMgASgLMh8uYXZuLmNvbm5l",
-            "Y3QudjEuVHJhbnNsYXRpb25TcGVjEjQKC3RleHRfc2VhcmNoGAQgASgLMhou",
-            "YXZuLmNvbm5lY3QudjEuVGV4dFNlYXJjaEgAiAEBEi4KC3RhZ19maWx0ZXJz",
-            "GAUgAygLMhkuYXZuLmNvbm5lY3QudjEuVGFnRmlsdGVyEi0KCG9yZGVyX2J5",
-            "GAcgAygLMhsuYXZuLmNvbm5lY3QudjEuT3JkZXJDbGF1c2USFgoJcGFnZV9z",
-            "aXplGAggASgFSAGIAQESFwoKcGFnZV90b2tlbhgJIAEoCUgCiAEBEjoKCWlj",
-            "b25fc3BlYxgKIAEoCzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdl",
-            "U3BlY0gDiAEBEj0KDHByZXZpZXdfc3BlYxgLIAEoCzIiLmF2bi5jb25uZWN0",
-            "LnYxLlRyYW5zY29kZUltYWdlU3BlY0gEiAEBEiYKGXNlYXJjaF9kaXN0YW5j",
-            "ZV90aHJlc2hvbGQYDCABKAJIBYgBAUIOCgxfdGV4dF9zZWFyY2hCDAoKX3Bh",
-            "Z2Vfc2l6ZUINCgtfcGFnZV90b2tlbkIMCgpfaWNvbl9zcGVjQg8KDV9wcmV2",
-            "aWV3X3NwZWNCHAoaX3NlYXJjaF9kaXN0YW5jZV90aHJlc2hvbGRKBAgGEAci",
-            "dwoWRW50aXR5SW5mb0xpc3RSZXNwb25zZRIrCgdyZXN1bHRzGAEgAygLMhou",
-            "YXZuLmNvbm5lY3QudjEuRW50aXR5SW5mbxIcCg9uZXh0X3BhZ2VfdG9rZW4Y",
-            "AiABKAlIAIgBAUISChBfbmV4dF9wYWdlX3Rva2VuIpsBChJBZGRDaGlsZHJl",
-            "blJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhv",
-            "cml6YXRpb24SEQoJcGFyZW50X2lkGAIgASgFEhEKCWNoaWxkX2lkcxgDIAMo",
-            "BRIdChByZXBsYWNlX2V4aXN0aW5nGAQgASgISACIAQFCEwoRX3JlcGxhY2Vf",
-            "ZXhpc3RpbmciagoVUmVtb3ZlQ2hpbGRyZW5SZXF1ZXN0EisKBGF1dGgYASAB",
-            "KAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhEKCXBhcmVudF9p",
-            "ZBgCIAEoBRIRCgljaGlsZF9pZHMYAyADKAUqdgoKRW50aXR5VHlwZRIbChdF",
-            "TlRJVFlfVFlQRV9VTlNQRUNJRklFRBAAEhgKFEVOVElUWV9UWVBFX0FDVElW",
-            "SVRZEAESGAoURU5USVRZX1RZUEVfQ0FURUdPUlkQAhIXChNFTlRJVFlfVFlQ",
-            "RV9QUk9GSUxFEANiBnByb3RvMw=="));
+            "aF9kaXN0YW5jZRgMIAEoAkgEiAEBEhAKCGxpY2Vuc2VkGBcgASgIEhEKCXBl",
+            "cm1pdHRlZBgYIAEoCBIRCglhdmFpbGFibGUYFCABKAgSFQoIYXNzZXRfaWQY",
+            "FSABKAlIBYgBARIXCgpzaXplX2J5dGVzGBYgASgDSAaIAQESFwoKaXRlbV9j",
+            "b3VudBgeIAEoBUgHiAEBEhgKC3RyYWNrX2NvdW50GB8gASgFSAiIAQFCBwoF",
+            "b3duZXJCCgoIX2NvbnRleHRCDAoKX3B1Ymxpc2hlZEILCglfZmVhdHVyZWRC",
+            "EgoQX3NlYXJjaF9kaXN0YW5jZUILCglfYXNzZXRfaWRCDQoLX3NpemVfYnl0",
+            "ZXNCDQoLX2l0ZW1fY291bnRCDgoMX3RyYWNrX2NvdW50IqACChBHZXRFbnRp",
+            "dHlSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRo",
+            "b3JpemF0aW9uEhEKCWVudGl0eV9pZBgCIAEoBRIyCgl0cmFuc2xhdGUYAyAB",
+            "KAsyHy5hdm4uY29ubmVjdC52MS5UcmFuc2xhdGlvblNwZWMSOgoJaWNvbl9z",
+            "cGVjGAQgASgLMiIuYXZuLmNvbm5lY3QudjEuVHJhbnNjb2RlSW1hZ2VTcGVj",
+            "SACIAQESPQoMcHJldmlld19zcGVjGAUgASgLMiIuYXZuLmNvbm5lY3QudjEu",
+            "VHJhbnNjb2RlSW1hZ2VTcGVjSAGIAQFCDAoKX2ljb25fc3BlY0IPCg1fcHJl",
+            "dmlld19zcGVjIp4BChNDcmVhdGVFbnRpdHlSZXF1ZXN0EisKBGF1dGgYASAB",
+            "KAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhwKD29yZ2FuaXph",
+            "dGlvbl9pZBgCIAEoBUgAiAEBEhgKC2xhbmd1YWdlX2lkGAMgASgJSAGIAQFC",
+            "EgoQX29yZ2FuaXphdGlvbl9pZEIOCgxfbGFuZ3VhZ2VfaWQiKQoUQ3JlYXRl",
+            "RW50aXR5UmVzcG9uc2USEQoJZW50aXR5X2lkGAEgASgFIlUKE0RlbGV0ZUVu",
+            "dGl0eVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1",
+            "dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgFImwKEUNvcHlFbnRpdHlS",
+            "ZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3Jp",
+            "emF0aW9uEhcKD29yZ2FuaXphdGlvbl9pZBgCIAEoBRIRCgl0YXJnZXRfaWQY",
+            "AyABKAUi5QQKFUVudGl0eUluZm9MaXN0UmVxdWVzdBIrCgRhdXRoGAEgASgL",
+            "Mh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhISCgplbnRpdHlfaWRz",
+            "GAIgAygFEjIKCXRyYW5zbGF0ZRgDIAEoCzIfLmF2bi5jb25uZWN0LnYxLlRy",
+            "YW5zbGF0aW9uU3BlYxI0Cgt0ZXh0X3NlYXJjaBgEIAEoCzIaLmF2bi5jb25u",
+            "ZWN0LnYxLlRleHRTZWFyY2hIAIgBARIuCgt0YWdfZmlsdGVycxgFIAMoCzIZ",
+            "LmF2bi5jb25uZWN0LnYxLlRhZ0ZpbHRlchItCghvcmRlcl9ieRgHIAMoCzIb",
+            "LmF2bi5jb25uZWN0LnYxLk9yZGVyQ2xhdXNlEhYKCXBhZ2Vfc2l6ZRgIIAEo",
+            "BUgBiAEBEhcKCnBhZ2VfdG9rZW4YCSABKAlIAogBARI6CglpY29uX3NwZWMY",
+            "CiABKAsyIi5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVJbWFnZVNwZWNIA4gB",
+            "ARI9CgxwcmV2aWV3X3NwZWMYCyABKAsyIi5hdm4uY29ubmVjdC52MS5UcmFu",
+            "c2NvZGVJbWFnZVNwZWNIBIgBARImChlzZWFyY2hfZGlzdGFuY2VfdGhyZXNo",
+            "b2xkGAwgASgCSAWIAQFCDgoMX3RleHRfc2VhcmNoQgwKCl9wYWdlX3NpemVC",
+            "DQoLX3BhZ2VfdG9rZW5CDAoKX2ljb25fc3BlY0IPCg1fcHJldmlld19zcGVj",
+            "QhwKGl9zZWFyY2hfZGlzdGFuY2VfdGhyZXNob2xkSgQIBhAHIncKFkVudGl0",
+            "eUluZm9MaXN0UmVzcG9uc2USKwoHcmVzdWx0cxgBIAMoCzIaLmF2bi5jb25u",
+            "ZWN0LnYxLkVudGl0eUluZm8SHAoPbmV4dF9wYWdlX3Rva2VuGAIgASgJSACI",
+            "AQFCEgoQX25leHRfcGFnZV90b2tlbiKRAQoSQWRkQ2hpbGRyZW5SZXF1ZXN0",
+            "EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9u",
+            "EhEKCXBhcmVudF9pZBgCIAEoBRIRCgljaGlsZF9pZHMYAyADKAUSGAoLcmVw",
+            "bGFjZV9hbGwYBCABKAhIAIgBAUIOCgxfcmVwbGFjZV9hbGwiagoVUmVtb3Zl",
+            "Q2hpbGRyZW5SZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52",
+            "MS5BdXRob3JpemF0aW9uEhEKCXBhcmVudF9pZBgCIAEoBRIRCgljaGlsZF9p",
+            "ZHMYAyADKAUqdgoKRW50aXR5VHlwZRIbChdFTlRJVFlfVFlQRV9VTlNQRUNJ",
+            "RklFRBAAEhgKFEVOVElUWV9UWVBFX0FDVElWSVRZEAESGAoURU5USVRZX1RZ",
+            "UEVfQ0FURUdPUlkQAhIXChNFTlRJVFlfVFlQRV9QUk9GSUxFEANiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, global::Avn.Connect.V1.MetadataReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, global::Avn.Connect.V1.SearchReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.EntityType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfo), global::Avn.Connect.V1.EntityInfo.Parser, new[]{ "EntityId", "Name", "Updated", "IconUrl", "PreviewUrl", "Context", "Tags", "Published", "Featured", "OrganizationId", "UserId", "SearchDistance", "Available", "AssetId", "SizeBytes", "ItemCount", "TrackCount" }, new[]{ "Owner", "Context", "Published", "Featured", "SearchDistance", "AssetId", "SizeBytes", "ItemCount", "TrackCount" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfo), global::Avn.Connect.V1.EntityInfo.Parser, new[]{ "EntityId", "Name", "Updated", "IconUrl", "PreviewUrl", "Context", "Tags", "Published", "Featured", "OrganizationId", "UserId", "SearchDistance", "Licensed", "Permitted", "Available", "AssetId", "SizeBytes", "ItemCount", "TrackCount" }, new[]{ "Owner", "Context", "Published", "Featured", "SearchDistance", "AssetId", "SizeBytes", "ItemCount", "TrackCount" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetEntityRequest), global::Avn.Connect.V1.GetEntityRequest.Parser, new[]{ "Auth", "EntityId", "Translate", "IconSpec", "PreviewSpec" }, new[]{ "IconSpec", "PreviewSpec" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateEntityRequest), global::Avn.Connect.V1.CreateEntityRequest.Parser, new[]{ "Auth", "OrganizationId", "LanguageId" }, new[]{ "OrganizationId", "LanguageId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateEntityResponse), global::Avn.Connect.V1.CreateEntityResponse.Parser, new[]{ "EntityId" }, null, null, null, null),
@@ -96,7 +97,7 @@ namespace Avn.Connect.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CopyEntityRequest), global::Avn.Connect.V1.CopyEntityRequest.Parser, new[]{ "Auth", "OrganizationId", "TargetId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfoListRequest), global::Avn.Connect.V1.EntityInfoListRequest.Parser, new[]{ "Auth", "EntityIds", "Translate", "TextSearch", "TagFilters", "OrderBy", "PageSize", "PageToken", "IconSpec", "PreviewSpec", "SearchDistanceThreshold" }, new[]{ "TextSearch", "PageSize", "PageToken", "IconSpec", "PreviewSpec", "SearchDistanceThreshold" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityInfoListResponse), global::Avn.Connect.V1.EntityInfoListResponse.Parser, new[]{ "Results", "NextPageToken" }, new[]{ "NextPageToken" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AddChildrenRequest), global::Avn.Connect.V1.AddChildrenRequest.Parser, new[]{ "Auth", "ParentId", "ChildIds", "ReplaceExisting" }, new[]{ "ReplaceExisting" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AddChildrenRequest), global::Avn.Connect.V1.AddChildrenRequest.Parser, new[]{ "Auth", "ParentId", "ChildIds", "ReplaceAll" }, new[]{ "ReplaceAll" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.RemoveChildrenRequest), global::Avn.Connect.V1.RemoveChildrenRequest.Parser, new[]{ "Auth", "ParentId", "ChildIds" }, null, null, null, null)
           }));
     }
@@ -176,6 +177,8 @@ namespace Avn.Connect.V1 {
       published_ = other.published_ != null ? other.published_.Clone() : null;
       featured_ = other.featured_ != null ? other.featured_.Clone() : null;
       searchDistance_ = other.searchDistance_;
+      licensed_ = other.licensed_;
+      permitted_ = other.permitted_;
       available_ = other.available_;
       assetId_ = other.assetId_;
       sizeBytes_ = other.sizeBytes_;
@@ -248,7 +251,7 @@ namespace Avn.Connect.V1 {
     public const int IconUrlFieldNumber = 4;
     private string iconUrl_ = "";
     /// <summary>
-    /// Icon to use for the entity
+    /// Icon URL for the entity. Accepted media types: image/png, image/jpeg, image/svg+xml
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -263,7 +266,7 @@ namespace Avn.Connect.V1 {
     public const int PreviewUrlFieldNumber = 5;
     private string previewUrl_ = "";
     /// <summary>
-    /// Preview to use for the entity
+    /// Preview image URL for the entity. Accepted media types: image/png, image/jpeg, image/svg+xml
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -321,7 +324,7 @@ namespace Avn.Connect.V1 {
     public const int PublishedFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Timestamp published_;
     /// <summary>
-    /// When entity was published
+    /// When entity was published or unset if not published
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -336,7 +339,7 @@ namespace Avn.Connect.V1 {
     public const int FeaturedFieldNumber = 9;
     private global::Google.Protobuf.WellKnownTypes.Timestamp featured_;
     /// <summary>
-    /// When entity was featured
+    /// When entity was featured or unset if not featured
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -435,11 +438,41 @@ namespace Avn.Connect.V1 {
       _hasBits0 &= ~1;
     }
 
+    /// <summary>Field number for the "licensed" field.</summary>
+    public const int LicensedFieldNumber = 23;
+    private bool licensed_;
+    /// <summary>
+    /// Is the entity licensed?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Licensed {
+      get { return licensed_; }
+      set {
+        licensed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "permitted" field.</summary>
+    public const int PermittedFieldNumber = 24;
+    private bool permitted_;
+    /// <summary>
+    /// Is the entity permitted?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Permitted {
+      get { return permitted_; }
+      set {
+        permitted_ = value;
+      }
+    }
+
     /// <summary>Field number for the "available" field.</summary>
     public const int AvailableFieldNumber = 20;
     private bool available_;
     /// <summary>
-    /// Is the activity available, e.g. licensed?
+    /// Is the entity available to use through licensing or content permissions?
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -617,6 +650,8 @@ namespace Avn.Connect.V1 {
       if (OrganizationId != other.OrganizationId) return false;
       if (UserId != other.UserId) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SearchDistance, other.SearchDistance)) return false;
+      if (Licensed != other.Licensed) return false;
+      if (Permitted != other.Permitted) return false;
       if (Available != other.Available) return false;
       if (AssetId != other.AssetId) return false;
       if (SizeBytes != other.SizeBytes) return false;
@@ -642,6 +677,8 @@ namespace Avn.Connect.V1 {
       if (HasOrganizationId) hash ^= OrganizationId.GetHashCode();
       if (HasUserId) hash ^= UserId.GetHashCode();
       if (HasSearchDistance) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SearchDistance);
+      if (Licensed != false) hash ^= Licensed.GetHashCode();
+      if (Permitted != false) hash ^= Permitted.GetHashCode();
       if (Available != false) hash ^= Available.GetHashCode();
       if (HasAssetId) hash ^= AssetId.GetHashCode();
       if (HasSizeBytes) hash ^= SizeBytes.GetHashCode();
@@ -723,6 +760,14 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(176, 1);
         output.WriteInt64(SizeBytes);
       }
+      if (Licensed != false) {
+        output.WriteRawTag(184, 1);
+        output.WriteBool(Licensed);
+      }
+      if (Permitted != false) {
+        output.WriteRawTag(192, 1);
+        output.WriteBool(Permitted);
+      }
       if (HasItemCount) {
         output.WriteRawTag(240, 1);
         output.WriteInt32(ItemCount);
@@ -798,6 +843,14 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(176, 1);
         output.WriteInt64(SizeBytes);
       }
+      if (Licensed != false) {
+        output.WriteRawTag(184, 1);
+        output.WriteBool(Licensed);
+      }
+      if (Permitted != false) {
+        output.WriteRawTag(192, 1);
+        output.WriteBool(Permitted);
+      }
       if (HasItemCount) {
         output.WriteRawTag(240, 1);
         output.WriteInt32(ItemCount);
@@ -849,6 +902,12 @@ namespace Avn.Connect.V1 {
       }
       if (HasSearchDistance) {
         size += 1 + 4;
+      }
+      if (Licensed != false) {
+        size += 2 + 1;
+      }
+      if (Permitted != false) {
+        size += 2 + 1;
       }
       if (Available != false) {
         size += 2 + 1;
@@ -913,6 +972,12 @@ namespace Avn.Connect.V1 {
       }
       if (other.HasSearchDistance) {
         SearchDistance = other.SearchDistance;
+      }
+      if (other.Licensed != false) {
+        Licensed = other.Licensed;
+      }
+      if (other.Permitted != false) {
+        Permitted = other.Permitted;
       }
       if (other.Available != false) {
         Available = other.Available;
@@ -1027,6 +1092,14 @@ namespace Avn.Connect.V1 {
             SizeBytes = input.ReadInt64();
             break;
           }
+          case 184: {
+            Licensed = input.ReadBool();
+            break;
+          }
+          case 192: {
+            Permitted = input.ReadBool();
+            break;
+          }
           case 240: {
             ItemCount = input.ReadInt32();
             break;
@@ -1122,6 +1195,14 @@ namespace Avn.Connect.V1 {
           }
           case 176: {
             SizeBytes = input.ReadInt64();
+            break;
+          }
+          case 184: {
+            Licensed = input.ReadBool();
+            break;
+          }
+          case 192: {
+            Permitted = input.ReadBool();
             break;
           }
           case 240: {
@@ -3567,7 +3648,7 @@ namespace Avn.Connect.V1 {
       auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       parentId_ = other.parentId_;
       childIds_ = other.childIds_.Clone();
-      replaceExisting_ = other.replaceExisting_;
+      replaceAll_ = other.replaceAll_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3613,7 +3694,8 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> childIds_ = new pbc::RepeatedField<int>();
     /// <summary>
-    /// IDs of the children to add
+    /// IDs of the children to add.
+    /// Order is significant: it sets the display/sort order of the children.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3621,33 +3703,34 @@ namespace Avn.Connect.V1 {
       get { return childIds_; }
     }
 
-    /// <summary>Field number for the "replace_existing" field.</summary>
-    public const int ReplaceExistingFieldNumber = 4;
-    private readonly static bool ReplaceExistingDefaultValue = false;
+    /// <summary>Field number for the "replace_all" field.</summary>
+    public const int ReplaceAllFieldNumber = 4;
+    private readonly static bool ReplaceAllDefaultValue = false;
 
-    private bool replaceExisting_;
+    private bool replaceAll_;
     /// <summary>
-    /// Should all existing children be replaced? The default is false.
+    /// If true, the parent's existing children are all removed first and the result becomes exactly child_ids, in the given order (any children not listed are removed).
+    /// If false (the default), child_ids are appended after the existing children.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool ReplaceExisting {
-      get { if ((_hasBits0 & 1) != 0) { return replaceExisting_; } else { return ReplaceExistingDefaultValue; } }
+    public bool ReplaceAll {
+      get { if ((_hasBits0 & 1) != 0) { return replaceAll_; } else { return ReplaceAllDefaultValue; } }
       set {
         _hasBits0 |= 1;
-        replaceExisting_ = value;
+        replaceAll_ = value;
       }
     }
-    /// <summary>Gets whether the "replace_existing" field is set</summary>
+    /// <summary>Gets whether the "replace_all" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasReplaceExisting {
+    public bool HasReplaceAll {
       get { return (_hasBits0 & 1) != 0; }
     }
-    /// <summary>Clears the value of the "replace_existing" field</summary>
+    /// <summary>Clears the value of the "replace_all" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearReplaceExisting() {
+    public void ClearReplaceAll() {
       _hasBits0 &= ~1;
     }
 
@@ -3669,7 +3752,7 @@ namespace Avn.Connect.V1 {
       if (!object.Equals(Auth, other.Auth)) return false;
       if (ParentId != other.ParentId) return false;
       if(!childIds_.Equals(other.childIds_)) return false;
-      if (ReplaceExisting != other.ReplaceExisting) return false;
+      if (ReplaceAll != other.ReplaceAll) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3680,7 +3763,7 @@ namespace Avn.Connect.V1 {
       if (auth_ != null) hash ^= Auth.GetHashCode();
       if (ParentId != 0) hash ^= ParentId.GetHashCode();
       hash ^= childIds_.GetHashCode();
-      if (HasReplaceExisting) hash ^= ReplaceExisting.GetHashCode();
+      if (HasReplaceAll) hash ^= ReplaceAll.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3708,9 +3791,9 @@ namespace Avn.Connect.V1 {
         output.WriteInt32(ParentId);
       }
       childIds_.WriteTo(output, _repeated_childIds_codec);
-      if (HasReplaceExisting) {
+      if (HasReplaceAll) {
         output.WriteRawTag(32);
-        output.WriteBool(ReplaceExisting);
+        output.WriteBool(ReplaceAll);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3731,9 +3814,9 @@ namespace Avn.Connect.V1 {
         output.WriteInt32(ParentId);
       }
       childIds_.WriteTo(ref output, _repeated_childIds_codec);
-      if (HasReplaceExisting) {
+      if (HasReplaceAll) {
         output.WriteRawTag(32);
-        output.WriteBool(ReplaceExisting);
+        output.WriteBool(ReplaceAll);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3752,7 +3835,7 @@ namespace Avn.Connect.V1 {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ParentId);
       }
       size += childIds_.CalculateSize(_repeated_childIds_codec);
-      if (HasReplaceExisting) {
+      if (HasReplaceAll) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -3777,8 +3860,8 @@ namespace Avn.Connect.V1 {
         ParentId = other.ParentId;
       }
       childIds_.Add(other.childIds_);
-      if (other.HasReplaceExisting) {
-        ReplaceExisting = other.ReplaceExisting;
+      if (other.HasReplaceAll) {
+        ReplaceAll = other.ReplaceAll;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3816,7 +3899,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 32: {
-            ReplaceExisting = input.ReadBool();
+            ReplaceAll = input.ReadBool();
             break;
           }
         }
@@ -3855,7 +3938,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 32: {
-            ReplaceExisting = input.ReadBool();
+            ReplaceAll = input.ReadBool();
             break;
           }
         }

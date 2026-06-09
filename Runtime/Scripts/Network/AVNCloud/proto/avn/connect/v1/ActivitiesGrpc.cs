@@ -76,6 +76,10 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetMetadataResponse> __Marshaller_avn_connect_v1_GetMetadataResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetMetadataResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityPropertiesRequest> __Marshaller_avn_connect_v1_GetEntityPropertiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityPropertiesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityPropertiesResponse> __Marshaller_avn_connect_v1_GetEntityPropertiesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityPropertiesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.SetEntityPropertiesRequest> __Marshaller_avn_connect_v1_SetEntityPropertiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SetEntityPropertiesRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -173,6 +177,14 @@ namespace Avn.Connect.V1 {
         "SetMetadata",
         __Marshaller_avn_connect_v1_MetadataRequest,
         __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetEntityPropertiesRequest, global::Avn.Connect.V1.GetEntityPropertiesResponse> __Method_GetProperties = new grpc::Method<global::Avn.Connect.V1.GetEntityPropertiesRequest, global::Avn.Connect.V1.GetEntityPropertiesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetProperties",
+        __Marshaller_avn_connect_v1_GetEntityPropertiesRequest,
+        __Marshaller_avn_connect_v1_GetEntityPropertiesResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.SetEntityPropertiesRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetProperties = new grpc::Method<global::Avn.Connect.V1.SetEntityPropertiesRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -792,7 +804,55 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_SetMetadata, null, options, request);
       }
       /// <summary>
-      /// Set the properties of an activity
+      /// Get specific properties of one or more activities
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetEntityPropertiesResponse GetProperties(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get specific properties of one or more activities
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetEntityPropertiesResponse GetProperties(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Get specific properties of one or more activities
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetEntityPropertiesResponse> GetPropertiesAsync(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get specific properties of one or more activities
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetEntityPropertiesResponse> GetPropertiesAsync(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Set the properties of one or more activities
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -805,7 +865,7 @@ namespace Avn.Connect.V1 {
         return SetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set the properties of an activity
+      /// Set the properties of one or more activities
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -816,7 +876,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_SetProperties, null, options, request);
       }
       /// <summary>
-      /// Set the properties of an activity
+      /// Set the properties of one or more activities
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -829,7 +889,7 @@ namespace Avn.Connect.V1 {
         return SetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set the properties of an activity
+      /// Set the properties of one or more activities
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

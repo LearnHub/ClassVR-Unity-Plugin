@@ -24,19 +24,21 @@ namespace Avn.Connect.V1 {
     static InfoReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Chlhdm4vY29ubmVjdC92MS9pbmZvLnByb3RvEg5hdm4uY29ubmVjdC52MRoh",
-            "YXZuL2Nvbm5lY3QvdjEvdHJhbnNsYXRpb25zLnByb3RvIkQKDkdldE5ld3NS",
-            "ZXF1ZXN0EjIKCXRyYW5zbGF0ZRgBIAEoCzIfLmF2bi5jb25uZWN0LnYxLlRy",
-            "YW5zbGF0aW9uU3BlYyI7Cg9HZXROZXdzUmVzcG9uc2USKAoFbGlua3MYASAD",
-            "KAsyGS5hdm4uY29ubmVjdC52MS5IeXBlcmxpbmsiRQoJSHlwZXJsaW5rEhEK",
-            "BHRleHQYASABKAlCA8A+ARIQCghsaW5rX3VybBgCIAEoCRITCgtwcmV2aWV3",
-            "X3VybBgDIAEoCTJZCgtJbmZvU2VydmljZRJKCgdHZXROZXdzEh4uYXZuLmNv",
-            "bm5lY3QudjEuR2V0TmV3c1JlcXVlc3QaHy5hdm4uY29ubmVjdC52MS5HZXRO",
-            "ZXdzUmVzcG9uc2ViBnByb3RvMw=="));
+            "Chlhdm4vY29ubmVjdC92MS9pbmZvLnByb3RvEg5hdm4uY29ubmVjdC52MRoi",
+            "YXZuL2Nvbm5lY3QvdjEvYXV0aG9yaXphdGlvbi5wcm90bxohYXZuL2Nvbm5l",
+            "Y3QvdjEvdHJhbnNsYXRpb25zLnByb3RvInEKDkdldE5ld3NSZXF1ZXN0EisK",
+            "BGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEjIK",
+            "CXRyYW5zbGF0ZRgCIAEoCzIfLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0aW9u",
+            "U3BlYyI7Cg9HZXROZXdzUmVzcG9uc2USKAoFbGlua3MYASADKAsyGS5hdm4u",
+            "Y29ubmVjdC52MS5IeXBlcmxpbmsiRQoJSHlwZXJsaW5rEhEKBHRleHQYASAB",
+            "KAlCA8A+ARIQCghsaW5rX3VybBgCIAEoCRITCgtwcmV2aWV3X3VybBgDIAEo",
+            "CTJZCgtJbmZvU2VydmljZRJKCgdHZXROZXdzEh4uYXZuLmNvbm5lY3QudjEu",
+            "R2V0TmV3c1JlcXVlc3QaHy5hdm4uY29ubmVjdC52MS5HZXROZXdzUmVzcG9u",
+            "c2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetNewsRequest), global::Avn.Connect.V1.GetNewsRequest.Parser, new[]{ "Translate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetNewsRequest), global::Avn.Connect.V1.GetNewsRequest.Parser, new[]{ "Auth", "Translate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetNewsResponse), global::Avn.Connect.V1.GetNewsResponse.Parser, new[]{ "Links" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Hyperlink), global::Avn.Connect.V1.Hyperlink.Parser, new[]{ "Text", "LinkUrl", "PreviewUrl" }, null, null, null, null)
           }));
@@ -80,6 +82,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetNewsRequest(GetNewsRequest other) : this() {
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       translate_ = other.translate_ != null ? other.translate_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -90,8 +93,23 @@ namespace Avn.Connect.V1 {
       return new GetNewsRequest(this);
     }
 
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 1;
+    private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
+    }
+
     /// <summary>Field number for the "translate" field.</summary>
-    public const int TranslateFieldNumber = 1;
+    public const int TranslateFieldNumber = 2;
     private global::Avn.Connect.V1.TranslationSpec translate_;
     /// <summary>
     /// Translation instructions. The original text is returned if this is unset.
@@ -120,6 +138,7 @@ namespace Avn.Connect.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(Auth, other.Auth)) return false;
       if (!object.Equals(Translate, other.Translate)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -128,6 +147,7 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (auth_ != null) hash ^= Auth.GetHashCode();
       if (translate_ != null) hash ^= Translate.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -147,8 +167,12 @@ namespace Avn.Connect.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (translate_ != null) {
+      if (auth_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (translate_ != null) {
+        output.WriteRawTag(18);
         output.WriteMessage(Translate);
       }
       if (_unknownFields != null) {
@@ -161,8 +185,12 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (translate_ != null) {
+      if (auth_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (translate_ != null) {
+        output.WriteRawTag(18);
         output.WriteMessage(Translate);
       }
       if (_unknownFields != null) {
@@ -175,6 +203,9 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
       if (translate_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Translate);
       }
@@ -189,6 +220,12 @@ namespace Avn.Connect.V1 {
     public void MergeFrom(GetNewsRequest other) {
       if (other == null) {
         return;
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
       }
       if (other.translate_ != null) {
         if (translate_ == null) {
@@ -216,6 +253,13 @@ namespace Avn.Connect.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 18: {
             if (translate_ == null) {
               Translate = new global::Avn.Connect.V1.TranslationSpec();
             }
@@ -242,6 +286,13 @@ namespace Avn.Connect.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 18: {
             if (translate_ == null) {
               Translate = new global::Avn.Connect.V1.TranslationSpec();
             }

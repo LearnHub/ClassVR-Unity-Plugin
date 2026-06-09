@@ -71,34 +71,50 @@ namespace Avn.Connect.V1 {
         __Marshaller_avn_connect_v1_EntityInfoListResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_GetChannels = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
+    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_GetLicensedChannels = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetChannels",
+        "GetLicensedChannels",
         __Marshaller_avn_connect_v1_EntityInfoListRequest,
         __Marshaller_avn_connect_v1_EntityInfoListResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_GetProfiles = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
+    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_GetBulkChannels = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetProfiles",
+        "GetBulkChannels",
         __Marshaller_avn_connect_v1_EntityInfoListRequest,
         __Marshaller_avn_connect_v1_EntityInfoListResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_GetCategories = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
+    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_SearchChannels = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetCategories",
+        "SearchChannels",
         __Marshaller_avn_connect_v1_EntityInfoListRequest,
         __Marshaller_avn_connect_v1_EntityInfoListResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_GetActivities = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
+    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_SearchProfiles = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetActivities",
+        "SearchProfiles",
+        __Marshaller_avn_connect_v1_EntityInfoListRequest,
+        __Marshaller_avn_connect_v1_EntityInfoListResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_SearchCategories = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SearchCategories",
+        __Marshaller_avn_connect_v1_EntityInfoListRequest,
+        __Marshaller_avn_connect_v1_EntityInfoListResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse> __Method_SearchActivities = new grpc::Method<global::Avn.Connect.V1.EntityInfoListRequest, global::Avn.Connect.V1.EntityInfoListResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SearchActivities",
         __Marshaller_avn_connect_v1_EntityInfoListRequest,
         __Marshaller_avn_connect_v1_EntityInfoListResponse);
 
@@ -232,7 +248,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetBrowsableChannels, null, options, request);
       }
       /// <summary>
-      /// Get all allowed channels from the given set of channels
+      /// Get all channels licensed with the given authorization credentials
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -240,23 +256,23 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetChannels(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetLicensedChannels(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetChannels(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetLicensedChannels(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all allowed channels from the given set of channels
+      /// Get all channels licensed with the given authorization credentials
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetChannels(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetLicensedChannels(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetChannels, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetLicensedChannels, null, options, request);
       }
       /// <summary>
-      /// Get all allowed channels from the given set of channels
+      /// Get all channels licensed with the given authorization credentials
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -264,23 +280,119 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetChannelsAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetLicensedChannelsAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetChannelsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetLicensedChannelsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all allowed channels from the given set of channels
+      /// Get all channels licensed with the given authorization credentials
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetChannelsAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetLicensedChannelsAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetChannels, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetLicensedChannels, null, options, request);
       }
       /// <summary>
-      /// Get all published profiles in the given set of channels.
+      /// Bulk lookup of channel details by ID — utility for efficient batch fetches when channel IDs are already known. Not for general discovery; use SearchChannels or GetBrowsableChannels for that.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetBulkChannels(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBulkChannels(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Bulk lookup of channel details by ID — utility for efficient batch fetches when channel IDs are already known. Not for general discovery; use SearchChannels or GetBrowsableChannels for that.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetBulkChannels(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetBulkChannels, null, options, request);
+      }
+      /// <summary>
+      /// Bulk lookup of channel details by ID — utility for efficient batch fetches when channel IDs are already known. Not for general discovery; use SearchChannels or GetBrowsableChannels for that.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetBulkChannelsAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetBulkChannelsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Bulk lookup of channel details by ID — utility for efficient batch fetches when channel IDs are already known. Not for general discovery; use SearchChannels or GetBrowsableChannels for that.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetBulkChannelsAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetBulkChannels, null, options, request);
+      }
+      /// <summary>
+      /// Search published channels by name or description across all approved publishers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse SearchChannels(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SearchChannels(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Search published channels by name or description across all approved publishers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse SearchChannels(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SearchChannels, null, options, request);
+      }
+      /// <summary>
+      /// Search published channels by name or description across all approved publishers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> SearchChannelsAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SearchChannelsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Search published channels by name or description across all approved publishers.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> SearchChannelsAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SearchChannels, null, options, request);
+      }
+      /// <summary>
+      /// Search published profiles in the given set of channels.
       /// All the profiles will belong to the channel, but the categories within those profiles may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -289,24 +401,24 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetProfiles(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse SearchProfiles(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetProfiles(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchProfiles(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published profiles in the given set of channels.
+      /// Search published profiles in the given set of channels.
       /// All the profiles will belong to the channel, but the categories within those profiles may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetProfiles(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse SearchProfiles(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetProfiles, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_SearchProfiles, null, options, request);
       }
       /// <summary>
-      /// Get all published profiles in the given set of channels.
+      /// Search published profiles in the given set of channels.
       /// All the profiles will belong to the channel, but the categories within those profiles may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -315,24 +427,24 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetProfilesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> SearchProfilesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetProfilesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchProfilesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published profiles in the given set of channels.
+      /// Search published profiles in the given set of channels.
       /// All the profiles will belong to the channel, but the categories within those profiles may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetProfilesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> SearchProfilesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetProfiles, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_SearchProfiles, null, options, request);
       }
       /// <summary>
-      /// Get all published categories in the given set of channels
+      /// Search published categories in the given set of channels.
       /// All the categories will belong to the channel, but the activities within those categories may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -341,24 +453,24 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetCategories(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse SearchCategories(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetCategories(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchCategories(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published categories in the given set of channels
+      /// Search published categories in the given set of channels.
       /// All the categories will belong to the channel, but the activities within those categories may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetCategories(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse SearchCategories(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetCategories, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_SearchCategories, null, options, request);
       }
       /// <summary>
-      /// Get all published categories in the given set of channels
+      /// Search published categories in the given set of channels.
       /// All the categories will belong to the channel, but the activities within those categories may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -367,24 +479,24 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetCategoriesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> SearchCategoriesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetCategoriesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchCategoriesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published categories in the given set of channels
+      /// Search published categories in the given set of channels.
       /// All the categories will belong to the channel, but the activities within those categories may belong to other channels.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetCategoriesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> SearchCategoriesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetCategories, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_SearchCategories, null, options, request);
       }
       /// <summary>
-      /// Get all published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
+      /// Search published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -392,23 +504,23 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetActivities(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse SearchActivities(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetActivities(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchActivities(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
+      /// Search published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.EntityInfoListResponse GetActivities(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      public virtual global::Avn.Connect.V1.EntityInfoListResponse SearchActivities(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetActivities, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_SearchActivities, null, options, request);
       }
       /// <summary>
-      /// Get all published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
+      /// Search published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -416,20 +528,20 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetActivitiesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> SearchActivitiesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetActivitiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return SearchActivitiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
+      /// Search published activities in the given set of channels. See eduverse://resources/searching-learning-resources for more details
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetActivitiesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> SearchActivitiesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetActivities, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_SearchActivities, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

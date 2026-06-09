@@ -37,16 +37,16 @@ namespace Avn.Connect.V1 {
             "EhsKE3Nob3dfZGltZW5zaW9uX2luZm8YFyABKAgSHQoVc2hvd19kZXZpY2Vf",
             "cXJfaW52aXRlGBggASgIEhIKCnNob3dfZm9jdXMYHiABKAgSEQoJc2hvd19t",
             "dXRlGB8gASgIEhYKDnNob3dfYW5hbHl0aWNzGCAgASgIEhcKD3Nob3dfc3Rh",
-            "cnRfdG91chghIAEoCEoECAQQCkoECBkQHiKZAQoQQXZhaWxhYmxlQ29udGVu",
+            "cnRfdG91chghIAEoCEoECAQQCkoECBkQHiKdAQoQQXZhaWxhYmxlQ29udGVu",
             "dBIaChJicm93c2FibGVfY2hhbm5lbHMYASADKAUSGQoRbGljZW5zZWRfY2hh",
             "bm5lbHMYAiADKAUSGQoRbGljZW5zZWRfZmVhdHVyZXMYAyADKAUSGwoTbGlj",
-            "ZW5zZWRfY2F0ZWdvcmllcxgEIAMoBRIWCg5saWNlbnNlZF91c2VycxgFIAMo",
-            "BWIGcHJvdG8z"));
+            "ZW5zZWRfY2F0ZWdvcmllcxgEIAMoBRIaChJwZXJtaXR0ZWRfY2hhbm5lbHMY",
+            "BSADKAViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.UserInterfaceFeatures), global::Avn.Connect.V1.UserInterfaceFeatures.Parser, new[]{ "ShowNavbar", "ShowSidebar", "ShowRoomEntryFlow", "ShowTeacherNotes", "ShowStudentNotes", "ShowSignIn", "ShowChangeAvatar", "ShowInvite", "ShowPass", "ShowObjectList", "ShowCamera", "ShowPhoto", "ShowVoip", "ShowText", "ShowPeopleMenu", "ShowAccountInfo", "ShowDimensionInfo", "ShowDeviceQrInvite", "ShowFocus", "ShowMute", "ShowAnalytics", "ShowStartTour" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AvailableContent), global::Avn.Connect.V1.AvailableContent.Parser, new[]{ "BrowsableChannels", "LicensedChannels", "LicensedFeatures", "LicensedCategories", "LicensedUsers" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AvailableContent), global::Avn.Connect.V1.AvailableContent.Parser, new[]{ "BrowsableChannels", "LicensedChannels", "LicensedFeatures", "LicensedCategories", "PermittedChannels" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1067,7 +1067,7 @@ namespace Avn.Connect.V1 {
       licensedChannels_ = other.licensedChannels_.Clone();
       licensedFeatures_ = other.licensedFeatures_.Clone();
       licensedCategories_ = other.licensedCategories_.Clone();
-      licensedUsers_ = other.licensedUsers_.Clone();
+      permittedChannels_ = other.permittedChannels_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1097,7 +1097,7 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForInt32(18);
     private readonly pbc::RepeatedField<int> licensedChannels_ = new pbc::RepeatedField<int>();
     /// <summary>
-    /// Published content from these channels is available 
+    /// Published content from these channels is available
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1111,7 +1111,7 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> licensedFeatures_ = new pbc::RepeatedField<int>();
     /// <summary>
-    /// Avaialble features by custom SKU ID
+    /// Available features by custom SKU ID
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1133,18 +1133,18 @@ namespace Avn.Connect.V1 {
       get { return licensedCategories_; }
     }
 
-    /// <summary>Field number for the "licensed_users" field.</summary>
-    public const int LicensedUsersFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_licensedUsers_codec
+    /// <summary>Field number for the "permitted_channels" field.</summary>
+    public const int PermittedChannelsFieldNumber = 5;
+    private static readonly pb::FieldCodec<int> _repeated_permittedChannels_codec
         = pb::FieldCodec.ForInt32(42);
-    private readonly pbc::RepeatedField<int> licensedUsers_ = new pbc::RepeatedField<int>();
+    private readonly pbc::RepeatedField<int> permittedChannels_ = new pbc::RepeatedField<int>();
     /// <summary>
-    /// Published content owned exclusively by these users is available (i.e. from the users playlists)
+    /// Published content owned by these channels is available
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> LicensedUsers {
-      get { return licensedUsers_; }
+    public pbc::RepeatedField<int> PermittedChannels {
+      get { return permittedChannels_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1166,7 +1166,7 @@ namespace Avn.Connect.V1 {
       if(!licensedChannels_.Equals(other.licensedChannels_)) return false;
       if(!licensedFeatures_.Equals(other.licensedFeatures_)) return false;
       if(!licensedCategories_.Equals(other.licensedCategories_)) return false;
-      if(!licensedUsers_.Equals(other.licensedUsers_)) return false;
+      if(!permittedChannels_.Equals(other.permittedChannels_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1178,7 +1178,7 @@ namespace Avn.Connect.V1 {
       hash ^= licensedChannels_.GetHashCode();
       hash ^= licensedFeatures_.GetHashCode();
       hash ^= licensedCategories_.GetHashCode();
-      hash ^= licensedUsers_.GetHashCode();
+      hash ^= permittedChannels_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1201,7 +1201,7 @@ namespace Avn.Connect.V1 {
       licensedChannels_.WriteTo(output, _repeated_licensedChannels_codec);
       licensedFeatures_.WriteTo(output, _repeated_licensedFeatures_codec);
       licensedCategories_.WriteTo(output, _repeated_licensedCategories_codec);
-      licensedUsers_.WriteTo(output, _repeated_licensedUsers_codec);
+      permittedChannels_.WriteTo(output, _repeated_permittedChannels_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1216,7 +1216,7 @@ namespace Avn.Connect.V1 {
       licensedChannels_.WriteTo(ref output, _repeated_licensedChannels_codec);
       licensedFeatures_.WriteTo(ref output, _repeated_licensedFeatures_codec);
       licensedCategories_.WriteTo(ref output, _repeated_licensedCategories_codec);
-      licensedUsers_.WriteTo(ref output, _repeated_licensedUsers_codec);
+      permittedChannels_.WriteTo(ref output, _repeated_permittedChannels_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1231,7 +1231,7 @@ namespace Avn.Connect.V1 {
       size += licensedChannels_.CalculateSize(_repeated_licensedChannels_codec);
       size += licensedFeatures_.CalculateSize(_repeated_licensedFeatures_codec);
       size += licensedCategories_.CalculateSize(_repeated_licensedCategories_codec);
-      size += licensedUsers_.CalculateSize(_repeated_licensedUsers_codec);
+      size += permittedChannels_.CalculateSize(_repeated_permittedChannels_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1248,7 +1248,7 @@ namespace Avn.Connect.V1 {
       licensedChannels_.Add(other.licensedChannels_);
       licensedFeatures_.Add(other.licensedFeatures_);
       licensedCategories_.Add(other.licensedCategories_);
-      licensedUsers_.Add(other.licensedUsers_);
+      permittedChannels_.Add(other.permittedChannels_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1290,7 +1290,7 @@ namespace Avn.Connect.V1 {
           }
           case 42:
           case 40: {
-            licensedUsers_.AddEntriesFrom(input, _repeated_licensedUsers_codec);
+            permittedChannels_.AddEntriesFrom(input, _repeated_permittedChannels_codec);
             break;
           }
         }
@@ -1334,7 +1334,7 @@ namespace Avn.Connect.V1 {
           }
           case 42:
           case 40: {
-            licensedUsers_.AddEntriesFrom(ref input, _repeated_licensedUsers_codec);
+            permittedChannels_.AddEntriesFrom(ref input, _repeated_permittedChannels_codec);
             break;
           }
         }

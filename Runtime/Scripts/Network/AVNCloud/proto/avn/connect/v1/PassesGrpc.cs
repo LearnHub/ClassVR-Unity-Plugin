@@ -272,7 +272,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetPass, null, options, request);
       }
       /// <summary>
-      /// Resolve an activity asset ID in the licensing context of a pass
+      /// Resolve an activity asset ID in the grant context of a pass
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -285,7 +285,7 @@ namespace Avn.Connect.V1 {
         return ResolveAsset(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Resolve an activity asset ID in the licensing context of a pass
+      /// Resolve an activity asset ID in the grant context of a pass
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -296,7 +296,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_ResolveAsset, null, options, request);
       }
       /// <summary>
-      /// Resolve an activity asset ID in the licensing context of a pass
+      /// Resolve an activity asset ID in the grant context of a pass
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -309,7 +309,7 @@ namespace Avn.Connect.V1 {
         return ResolveAssetAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Resolve an activity asset ID in the licensing context of a pass
+      /// Resolve an activity asset ID in the grant context of a pass
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

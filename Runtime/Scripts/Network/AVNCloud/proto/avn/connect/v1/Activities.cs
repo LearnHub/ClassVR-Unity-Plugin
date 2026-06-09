@@ -31,7 +31,7 @@ namespace Avn.Connect.V1 {
             "YXZuL2Nvbm5lY3QvdjEvbWV0YWRhdGEucHJvdG8aIWF2bi9jb25uZWN0L3Yx",
             "L3RyYW5zbGF0aW9ucy5wcm90bxoZYXZuL2Nvbm5lY3QvdjEvdGFncy5wcm90",
             "bxodYXZuL2Nvbm5lY3QvdjEvcGFja2FnZXMucHJvdG8aH2F2bi9jb25uZWN0",
-            "L3YxL3Byb3BlcnRpZXMucHJvdG8i7gUKCEFjdGl2aXR5EhEKCWVudGl0eV9p",
+            "L3YxL3Byb3BlcnRpZXMucHJvdG8ikwYKCEFjdGl2aXR5EhEKCWVudGl0eV9p",
             "ZBgBIAEoBRIRCgRuYW1lGAIgASgJQgPAPgESEAoIaWNvbl91cmwYAyABKAkS",
             "EwoLcHJldmlld191cmwYBCABKAkSKwoHdXBkYXRlZBgFIAEoCzIaLmdvb2ds",
             "ZS5wcm90b2J1Zi5UaW1lc3RhbXASFAoHc3VtbWFyeRgWIAEoCUIDwD4BEhgK",
@@ -41,64 +41,67 @@ namespace Avn.Connect.V1 {
             "ZS5wcm90b2J1Zi5UaW1lc3RhbXBIAYgBARIxCghmZWF0dXJlZBgLIAEoCzIa",
             "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAogBARIZCg9vcmdhbml6YXRp",
             "b25faWQYDCABKAVIABIRCgd1c2VyX2lkGA0gASgFSAASDwoHZGVsZXRlZBgO",
-            "IAEoCBIRCglhdmFpbGFibGUYDyABKAgSEAoIYXNzZXRfaWQYECABKAkSFAoH",
-            "Y29udGV4dBgRIAEoCUgDiAEBEhcKD3NjcmVlbnNob3RfdXJscxgSIAMoCRIX",
-            "CgpzaXplX2J5dGVzGBMgASgDSASIAQESKgoEdHlwZRgUIAEoDjIcLmF2bi5j",
-            "b25uZWN0LnYxLkFjdGl2aXR5VHlwZRIQCgN1cmwYHyABKAlIBYgBARIRCglm",
-            "aWxlX3VybHMYICADKAkSOAoQYW5kcm9pZF9wYWNrYWdlcxghIAMoCzIeLmF2",
-            "bi5jb25uZWN0LnYxLkFuZHJvaWRQYWNrYWdlQgcKBW93bmVyQgwKCl9wdWJs",
-            "aXNoZWRCCwoJX2ZlYXR1cmVkQgoKCF9jb250ZXh0Qg0KC19zaXplX2J5dGVz",
-            "QgYKBF91cmwizAEKFUNyZWF0ZUFjdGl2aXR5UmVxdWVzdBIrCgRhdXRoGAEg",
-            "ASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIcCg9vcmdhbml6",
-            "YXRpb25faWQYAiABKAVIAIgBARIYCgtsYW5ndWFnZV9pZBgDIAEoCUgBiAEB",
-            "EioKBHR5cGUYBCABKA4yHC5hdm4uY29ubmVjdC52MS5BY3Rpdml0eVR5cGVC",
-            "EgoQX29yZ2FuaXphdGlvbl9pZEIOCgxfbGFuZ3VhZ2VfaWQi1QEKF0FkZEFj",
-            "dGl2aXR5RmlsZXNSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVj",
-            "dC52MS5BdXRob3JpemF0aW9uEhEKCWVudGl0eV9pZBgCIAEoBRIRCglmaWxl",
-            "X3VybHMYAyADKAkSMwoJZmlsZV90eXBlGAQgASgOMiAuYXZuLmNvbm5lY3Qu",
-            "djEuQWN0aXZpdHlGaWxlVHlwZRIdChByZXBsYWNlX2V4aXN0aW5nGAUgASgI",
-            "SACIAQFCEwoRX3JlcGxhY2VfZXhpc3RpbmcipAEKGlJlbW92ZUFjdGl2aXR5",
-            "RmlsZXNSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5B",
-            "dXRob3JpemF0aW9uEhEKCWVudGl0eV9pZBgCIAEoBRIRCglmaWxlX3VybHMY",
-            "AyADKAkSMwoJZmlsZV90eXBlGAQgASgOMiAuYXZuLmNvbm5lY3QudjEuQWN0",
-            "aXZpdHlGaWxlVHlwZSqRAQoMQWN0aXZpdHlUeXBlEh0KGUFDVElWSVRZX1RZ",
-            "UEVfVU5TUEVDSUZJRUQQABIWChJBQ1RJVklUWV9UWVBFX0ZJTEUQARIVChFB",
-            "Q1RJVklUWV9UWVBFX1VSTBACEhUKEUFDVElWSVRZX1RZUEVfQVBQEAMSHAoU",
-            "QUNUSVZJVFlfVFlQRV9GT0xERVIQBBoCCAEqmQEKEEFjdGl2aXR5RmlsZVR5",
-            "cGUSIgoeQUNUSVZJVFlfRklMRV9UWVBFX1VOU1BFQ0lGSUVEEAASHgoaQUNU",
-            "SVZJVFlfRklMRV9UWVBFX0NPTlRFTlQQARIhCh1BQ1RJVklUWV9GSUxFX1RZ",
-            "UEVfU0NSRUVOU0hPVBACEh4KGkFDVElWSVRZX0ZJTEVfVFlQRV9QQUNLQUdF",
-            "EAMy0QgKD0FjdGl2aXR5U2VydmljZRJJCgtHZXRBY3Rpdml0eRIgLmF2bi5j",
-            "b25uZWN0LnYxLkdldEVudGl0eVJlcXVlc3QaGC5hdm4uY29ubmVjdC52MS5B",
-            "Y3Rpdml0eRJdCg5DcmVhdGVBY3Rpdml0eRIlLmF2bi5jb25uZWN0LnYxLkNy",
-            "ZWF0ZUFjdGl2aXR5UmVxdWVzdBokLmF2bi5jb25uZWN0LnYxLkNyZWF0ZUVu",
-            "dGl0eVJlc3BvbnNlEk0KDkRlbGV0ZUFjdGl2aXR5EiMuYXZuLmNvbm5lY3Qu",
-            "djEuRGVsZXRlRW50aXR5UmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
-            "eRJXCgxDb3B5QWN0aXZpdHkSIS5hdm4uY29ubmVjdC52MS5Db3B5RW50aXR5",
-            "UmVxdWVzdBokLmF2bi5jb25uZWN0LnYxLkNyZWF0ZUVudGl0eVJlc3BvbnNl",
-            "EmoKGUdldE9yZ2FuaXphdGlvbkFjdGl2aXRpZXMSJS5hdm4uY29ubmVjdC52",
-            "MS5FbnRpdHlJbmZvTGlzdFJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5FbnRp",
-            "dHlJbmZvTGlzdFJlc3BvbnNlEmIKEUdldFVzZXJBY3Rpdml0aWVzEiUuYXZu",
-            "LmNvbm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNvbm5l",
-            "Y3QudjEuRW50aXR5SW5mb0xpc3RSZXNwb25zZRJLCghBZGRGaWxlcxInLmF2",
-            "bi5jb25uZWN0LnYxLkFkZEFjdGl2aXR5RmlsZXNSZXF1ZXN0GhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5ElEKC1JlbW92ZUZpbGVzEiouYXZuLmNvbm5lY3Qu",
-            "djEuUmVtb3ZlQWN0aXZpdHlGaWxlc1JlcXVlc3QaFi5nb29nbGUucHJvdG9i",
-            "dWYuRW1wdHkSQQoHQWRkVGFncxIeLmF2bi5jb25uZWN0LnYxLkFkZFRhZ3NS",
-            "ZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkcKClJlbW92ZVRhZ3MS",
-            "IS5hdm4uY29ubmVjdC52MS5SZW1vdmVUYWdzUmVxdWVzdBoWLmdvb2dsZS5w",
-            "cm90b2J1Zi5FbXB0eRJTCgtHZXRNZXRhZGF0YRIfLmF2bi5jb25uZWN0LnYx",
-            "Lk1ldGFkYXRhUmVxdWVzdBojLmF2bi5jb25uZWN0LnYxLkdldE1ldGFkYXRh",
-            "UmVzcG9uc2USRgoLU2V0TWV0YWRhdGESHy5hdm4uY29ubmVjdC52MS5NZXRh",
-            "ZGF0YVJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSUwoNU2V0UHJv",
-            "cGVydGllcxIqLmF2bi5jb25uZWN0LnYxLlNldEVudGl0eVByb3BlcnRpZXNS",
-            "ZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5YgZwcm90bzM="));
+            "IAEoCBIQCghsaWNlbnNlZBgXIAEoCBIRCglwZXJtaXR0ZWQYGCABKAgSEQoJ",
+            "YXZhaWxhYmxlGA8gASgIEhAKCGFzc2V0X2lkGBAgASgJEhQKB2NvbnRleHQY",
+            "ESABKAlIA4gBARIXCg9zY3JlZW5zaG90X3VybHMYEiADKAkSFwoKc2l6ZV9i",
+            "eXRlcxgTIAEoA0gEiAEBEioKBHR5cGUYFCABKA4yHC5hdm4uY29ubmVjdC52",
+            "MS5BY3Rpdml0eVR5cGUSEAoDdXJsGB8gASgJSAWIAQESEQoJZmlsZV91cmxz",
+            "GCAgAygJEjgKEGFuZHJvaWRfcGFja2FnZXMYISADKAsyHi5hdm4uY29ubmVj",
+            "dC52MS5BbmRyb2lkUGFja2FnZUIHCgVvd25lckIMCgpfcHVibGlzaGVkQgsK",
+            "CV9mZWF0dXJlZEIKCghfY29udGV4dEINCgtfc2l6ZV9ieXRlc0IGCgRfdXJs",
+            "IswBChVDcmVhdGVBY3Rpdml0eVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2",
+            "bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SHAoPb3JnYW5pemF0aW9uX2lk",
+            "GAIgASgFSACIAQESGAoLbGFuZ3VhZ2VfaWQYAyABKAlIAYgBARIqCgR0eXBl",
+            "GAQgASgOMhwuYXZuLmNvbm5lY3QudjEuQWN0aXZpdHlUeXBlQhIKEF9vcmdh",
+            "bml6YXRpb25faWRCDgoMX2xhbmd1YWdlX2lkIssBChdBZGRBY3Rpdml0eUZp",
+            "bGVzUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0",
+            "aG9yaXphdGlvbhIRCgllbnRpdHlfaWQYAiABKAUSEQoJZmlsZV91cmxzGAMg",
+            "AygJEjMKCWZpbGVfdHlwZRgEIAEoDjIgLmF2bi5jb25uZWN0LnYxLkFjdGl2",
+            "aXR5RmlsZVR5cGUSGAoLcmVwbGFjZV9hbGwYBSABKAhIAIgBAUIOCgxfcmVw",
+            "bGFjZV9hbGwipAEKGlJlbW92ZUFjdGl2aXR5RmlsZXNSZXF1ZXN0EisKBGF1",
+            "dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEhEKCWVu",
+            "dGl0eV9pZBgCIAEoBRIRCglmaWxlX3VybHMYAyADKAkSMwoJZmlsZV90eXBl",
+            "GAQgASgOMiAuYXZuLmNvbm5lY3QudjEuQWN0aXZpdHlGaWxlVHlwZSqRAQoM",
+            "QWN0aXZpdHlUeXBlEh0KGUFDVElWSVRZX1RZUEVfVU5TUEVDSUZJRUQQABIW",
+            "ChJBQ1RJVklUWV9UWVBFX0ZJTEUQARIVChFBQ1RJVklUWV9UWVBFX1VSTBAC",
+            "EhUKEUFDVElWSVRZX1RZUEVfQVBQEAMSHAoUQUNUSVZJVFlfVFlQRV9GT0xE",
+            "RVIQBBoCCAEqmQEKEEFjdGl2aXR5RmlsZVR5cGUSIgoeQUNUSVZJVFlfRklM",
+            "RV9UWVBFX1VOU1BFQ0lGSUVEEAASHgoaQUNUSVZJVFlfRklMRV9UWVBFX0NP",
+            "TlRFTlQQARIhCh1BQ1RJVklUWV9GSUxFX1RZUEVfU0NSRUVOU0hPVBACEh4K",
+            "GkFDVElWSVRZX0ZJTEVfVFlQRV9QQUNLQUdFEAMyuwkKD0FjdGl2aXR5U2Vy",
+            "dmljZRJJCgtHZXRBY3Rpdml0eRIgLmF2bi5jb25uZWN0LnYxLkdldEVudGl0",
+            "eVJlcXVlc3QaGC5hdm4uY29ubmVjdC52MS5BY3Rpdml0eRJdCg5DcmVhdGVB",
+            "Y3Rpdml0eRIlLmF2bi5jb25uZWN0LnYxLkNyZWF0ZUFjdGl2aXR5UmVxdWVz",
+            "dBokLmF2bi5jb25uZWN0LnYxLkNyZWF0ZUVudGl0eVJlc3BvbnNlEk0KDkRl",
+            "bGV0ZUFjdGl2aXR5EiMuYXZuLmNvbm5lY3QudjEuRGVsZXRlRW50aXR5UmVx",
+            "dWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJXCgxDb3B5QWN0aXZpdHkS",
+            "IS5hdm4uY29ubmVjdC52MS5Db3B5RW50aXR5UmVxdWVzdBokLmF2bi5jb25u",
+            "ZWN0LnYxLkNyZWF0ZUVudGl0eVJlc3BvbnNlEmoKGUdldE9yZ2FuaXphdGlv",
+            "bkFjdGl2aXRpZXMSJS5hdm4uY29ubmVjdC52MS5FbnRpdHlJbmZvTGlzdFJl",
+            "cXVlc3QaJi5hdm4uY29ubmVjdC52MS5FbnRpdHlJbmZvTGlzdFJlc3BvbnNl",
+            "EmIKEUdldFVzZXJBY3Rpdml0aWVzEiUuYXZuLmNvbm5lY3QudjEuRW50aXR5",
+            "SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xp",
+            "c3RSZXNwb25zZRJLCghBZGRGaWxlcxInLmF2bi5jb25uZWN0LnYxLkFkZEFj",
+            "dGl2aXR5RmlsZXNSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5ElEK",
+            "C1JlbW92ZUZpbGVzEiouYXZuLmNvbm5lY3QudjEuUmVtb3ZlQWN0aXZpdHlG",
+            "aWxlc1JlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSQQoHQWRkVGFn",
+            "cxIeLmF2bi5jb25uZWN0LnYxLkFkZFRhZ3NSZXF1ZXN0GhYuZ29vZ2xlLnBy",
+            "b3RvYnVmLkVtcHR5EkcKClJlbW92ZVRhZ3MSIS5hdm4uY29ubmVjdC52MS5S",
+            "ZW1vdmVUYWdzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJTCgtH",
+            "ZXRNZXRhZGF0YRIfLmF2bi5jb25uZWN0LnYxLk1ldGFkYXRhUmVxdWVzdBoj",
+            "LmF2bi5jb25uZWN0LnYxLkdldE1ldGFkYXRhUmVzcG9uc2USRgoLU2V0TWV0",
+            "YWRhdGESHy5hdm4uY29ubmVjdC52MS5NZXRhZGF0YVJlcXVlc3QaFi5nb29n",
+            "bGUucHJvdG9idWYuRW1wdHkSaAoNR2V0UHJvcGVydGllcxIqLmF2bi5jb25u",
+            "ZWN0LnYxLkdldEVudGl0eVByb3BlcnRpZXNSZXF1ZXN0GisuYXZuLmNvbm5l",
+            "Y3QudjEuR2V0RW50aXR5UHJvcGVydGllc1Jlc3BvbnNlElMKDVNldFByb3Bl",
+            "cnRpZXMSKi5hdm4uY29ubmVjdC52MS5TZXRFbnRpdHlQcm9wZXJ0aWVzUmVx",
+            "dWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.MetadataReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.PackagesReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.ActivityType), typeof(global::Avn.Connect.V1.ActivityFileType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Activity), global::Avn.Connect.V1.Activity.Parser, new[]{ "EntityId", "Name", "IconUrl", "PreviewUrl", "Updated", "Summary", "Description", "Instructions", "Keywords", "LanguageId", "Tags", "Published", "Featured", "OrganizationId", "UserId", "Deleted", "Available", "AssetId", "Context", "ScreenshotUrls", "SizeBytes", "Type", "Url", "FileUrls", "AndroidPackages" }, new[]{ "Owner", "Published", "Featured", "Context", "SizeBytes", "Url" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Activity), global::Avn.Connect.V1.Activity.Parser, new[]{ "EntityId", "Name", "IconUrl", "PreviewUrl", "Updated", "Summary", "Description", "Instructions", "Keywords", "LanguageId", "Tags", "Published", "Featured", "OrganizationId", "UserId", "Deleted", "Licensed", "Permitted", "Available", "AssetId", "Context", "ScreenshotUrls", "SizeBytes", "Type", "Url", "FileUrls", "AndroidPackages" }, new[]{ "Owner", "Published", "Featured", "Context", "SizeBytes", "Url" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateActivityRequest), global::Avn.Connect.V1.CreateActivityRequest.Parser, new[]{ "Auth", "OrganizationId", "LanguageId", "Type" }, new[]{ "OrganizationId", "LanguageId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AddActivityFilesRequest), global::Avn.Connect.V1.AddActivityFilesRequest.Parser, new[]{ "Auth", "EntityId", "FileUrls", "FileType", "ReplaceExisting" }, new[]{ "ReplaceExisting" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AddActivityFilesRequest), global::Avn.Connect.V1.AddActivityFilesRequest.Parser, new[]{ "Auth", "EntityId", "FileUrls", "FileType", "ReplaceAll" }, new[]{ "ReplaceAll" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.RemoveActivityFilesRequest), global::Avn.Connect.V1.RemoveActivityFilesRequest.Parser, new[]{ "Auth", "EntityId", "FileUrls", "FileType" }, null, null, null, null)
           }));
     }
@@ -203,6 +206,8 @@ namespace Avn.Connect.V1 {
       published_ = other.published_ != null ? other.published_.Clone() : null;
       featured_ = other.featured_ != null ? other.featured_.Clone() : null;
       deleted_ = other.deleted_;
+      licensed_ = other.licensed_;
+      permitted_ = other.permitted_;
       available_ = other.available_;
       assetId_ = other.assetId_;
       context_ = other.context_;
@@ -264,7 +269,7 @@ namespace Avn.Connect.V1 {
     public const int IconUrlFieldNumber = 3;
     private string iconUrl_ = "";
     /// <summary>
-    /// Icon to use for the activity
+    /// Icon URL for the activity. Accepted media types: image/png, image/jpeg, image/svg+xml
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -279,7 +284,7 @@ namespace Avn.Connect.V1 {
     public const int PreviewUrlFieldNumber = 4;
     private string previewUrl_ = "";
     /// <summary>
-    /// Preview to use for the activity
+    /// Preview image URL for the activity. Accepted media types: image/png, image/jpeg, image/svg+xml.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -497,11 +502,41 @@ namespace Avn.Connect.V1 {
       }
     }
 
+    /// <summary>Field number for the "licensed" field.</summary>
+    public const int LicensedFieldNumber = 23;
+    private bool licensed_;
+    /// <summary>
+    /// Is the activity licensed?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Licensed {
+      get { return licensed_; }
+      set {
+        licensed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "permitted" field.</summary>
+    public const int PermittedFieldNumber = 24;
+    private bool permitted_;
+    /// <summary>
+    /// Is the activity permitted?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Permitted {
+      get { return permitted_; }
+      set {
+        permitted_ = value;
+      }
+    }
+
     /// <summary>Field number for the "available" field.</summary>
     public const int AvailableFieldNumber = 15;
     private bool available_;
     /// <summary>
-    /// Is this activity availabe, e.g. licensed?
+    /// Is the activity available to use?
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -562,7 +597,7 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForString(146);
     private readonly pbc::RepeatedField<string> screenshotUrls_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// An array of screenshot URLs
+    /// Screenshot image URLs. Accepted media types: image/png, image/jpeg, image/svg+xml.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -724,6 +759,8 @@ namespace Avn.Connect.V1 {
       if (OrganizationId != other.OrganizationId) return false;
       if (UserId != other.UserId) return false;
       if (Deleted != other.Deleted) return false;
+      if (Licensed != other.Licensed) return false;
+      if (Permitted != other.Permitted) return false;
       if (Available != other.Available) return false;
       if (AssetId != other.AssetId) return false;
       if (Context != other.Context) return false;
@@ -757,6 +794,8 @@ namespace Avn.Connect.V1 {
       if (HasOrganizationId) hash ^= OrganizationId.GetHashCode();
       if (HasUserId) hash ^= UserId.GetHashCode();
       if (Deleted != false) hash ^= Deleted.GetHashCode();
+      if (Licensed != false) hash ^= Licensed.GetHashCode();
+      if (Permitted != false) hash ^= Permitted.GetHashCode();
       if (Available != false) hash ^= Available.GetHashCode();
       if (AssetId.Length != 0) hash ^= AssetId.GetHashCode();
       if (HasContext) hash ^= Context.GetHashCode();
@@ -867,6 +906,14 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(178, 1);
         output.WriteString(Summary);
       }
+      if (Licensed != false) {
+        output.WriteRawTag(184, 1);
+        output.WriteBool(Licensed);
+      }
+      if (Permitted != false) {
+        output.WriteRawTag(192, 1);
+        output.WriteBool(Permitted);
+      }
       if (HasUrl) {
         output.WriteRawTag(250, 1);
         output.WriteString(Url);
@@ -965,6 +1012,14 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(178, 1);
         output.WriteString(Summary);
       }
+      if (Licensed != false) {
+        output.WriteRawTag(184, 1);
+        output.WriteBool(Licensed);
+      }
+      if (Permitted != false) {
+        output.WriteRawTag(192, 1);
+        output.WriteBool(Permitted);
+      }
       if (HasUrl) {
         output.WriteRawTag(250, 1);
         output.WriteString(Url);
@@ -1026,6 +1081,12 @@ namespace Avn.Connect.V1 {
       }
       if (Deleted != false) {
         size += 1 + 1;
+      }
+      if (Licensed != false) {
+        size += 2 + 1;
+      }
+      if (Permitted != false) {
+        size += 2 + 1;
       }
       if (Available != false) {
         size += 1 + 1;
@@ -1108,6 +1169,12 @@ namespace Avn.Connect.V1 {
       }
       if (other.Deleted != false) {
         Deleted = other.Deleted;
+      }
+      if (other.Licensed != false) {
+        Licensed = other.Licensed;
+      }
+      if (other.Permitted != false) {
+        Permitted = other.Permitted;
       }
       if (other.Available != false) {
         Available = other.Available;
@@ -1256,6 +1323,14 @@ namespace Avn.Connect.V1 {
             Summary = input.ReadString();
             break;
           }
+          case 184: {
+            Licensed = input.ReadBool();
+            break;
+          }
+          case 192: {
+            Permitted = input.ReadBool();
+            break;
+          }
           case 250: {
             Url = input.ReadString();
             break;
@@ -1383,6 +1458,14 @@ namespace Avn.Connect.V1 {
           }
           case 178: {
             Summary = input.ReadString();
+            break;
+          }
+          case 184: {
+            Licensed = input.ReadBool();
+            break;
+          }
+          case 192: {
+            Permitted = input.ReadBool();
             break;
           }
           case 250: {
@@ -1809,7 +1892,7 @@ namespace Avn.Connect.V1 {
       entityId_ = other.entityId_;
       fileUrls_ = other.fileUrls_.Clone();
       fileType_ = other.fileType_;
-      replaceExisting_ = other.replaceExisting_;
+      replaceAll_ = other.replaceAll_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1878,33 +1961,33 @@ namespace Avn.Connect.V1 {
       }
     }
 
-    /// <summary>Field number for the "replace_existing" field.</summary>
-    public const int ReplaceExistingFieldNumber = 5;
-    private readonly static bool ReplaceExistingDefaultValue = false;
+    /// <summary>Field number for the "replace_all" field.</summary>
+    public const int ReplaceAllFieldNumber = 5;
+    private readonly static bool ReplaceAllDefaultValue = false;
 
-    private bool replaceExisting_;
+    private bool replaceAll_;
     /// <summary>
     /// Replace all existing files of target type? The default is false
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool ReplaceExisting {
-      get { if ((_hasBits0 & 1) != 0) { return replaceExisting_; } else { return ReplaceExistingDefaultValue; } }
+    public bool ReplaceAll {
+      get { if ((_hasBits0 & 1) != 0) { return replaceAll_; } else { return ReplaceAllDefaultValue; } }
       set {
         _hasBits0 |= 1;
-        replaceExisting_ = value;
+        replaceAll_ = value;
       }
     }
-    /// <summary>Gets whether the "replace_existing" field is set</summary>
+    /// <summary>Gets whether the "replace_all" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasReplaceExisting {
+    public bool HasReplaceAll {
       get { return (_hasBits0 & 1) != 0; }
     }
-    /// <summary>Clears the value of the "replace_existing" field</summary>
+    /// <summary>Clears the value of the "replace_all" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearReplaceExisting() {
+    public void ClearReplaceAll() {
       _hasBits0 &= ~1;
     }
 
@@ -1927,7 +2010,7 @@ namespace Avn.Connect.V1 {
       if (EntityId != other.EntityId) return false;
       if(!fileUrls_.Equals(other.fileUrls_)) return false;
       if (FileType != other.FileType) return false;
-      if (ReplaceExisting != other.ReplaceExisting) return false;
+      if (ReplaceAll != other.ReplaceAll) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1939,7 +2022,7 @@ namespace Avn.Connect.V1 {
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
       hash ^= fileUrls_.GetHashCode();
       if (FileType != global::Avn.Connect.V1.ActivityFileType.Unspecified) hash ^= FileType.GetHashCode();
-      if (HasReplaceExisting) hash ^= ReplaceExisting.GetHashCode();
+      if (HasReplaceAll) hash ^= ReplaceAll.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1971,9 +2054,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(32);
         output.WriteEnum((int) FileType);
       }
-      if (HasReplaceExisting) {
+      if (HasReplaceAll) {
         output.WriteRawTag(40);
-        output.WriteBool(ReplaceExisting);
+        output.WriteBool(ReplaceAll);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1998,9 +2081,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(32);
         output.WriteEnum((int) FileType);
       }
-      if (HasReplaceExisting) {
+      if (HasReplaceAll) {
         output.WriteRawTag(40);
-        output.WriteBool(ReplaceExisting);
+        output.WriteBool(ReplaceAll);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2022,7 +2105,7 @@ namespace Avn.Connect.V1 {
       if (FileType != global::Avn.Connect.V1.ActivityFileType.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) FileType);
       }
-      if (HasReplaceExisting) {
+      if (HasReplaceAll) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -2050,8 +2133,8 @@ namespace Avn.Connect.V1 {
       if (other.FileType != global::Avn.Connect.V1.ActivityFileType.Unspecified) {
         FileType = other.FileType;
       }
-      if (other.HasReplaceExisting) {
-        ReplaceExisting = other.ReplaceExisting;
+      if (other.HasReplaceAll) {
+        ReplaceAll = other.ReplaceAll;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2092,7 +2175,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 40: {
-            ReplaceExisting = input.ReadBool();
+            ReplaceAll = input.ReadBool();
             break;
           }
         }
@@ -2134,7 +2217,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 40: {
-            ReplaceExisting = input.ReadBool();
+            ReplaceAll = input.ReadBool();
             break;
           }
         }

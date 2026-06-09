@@ -3510,6 +3510,7 @@ namespace Avn.Connect.V1 {
     /// Maximum height or width in pixels
     /// Must be one of 8, 16, 32, 64, 128, 256, 512, 1024, or 2048
     /// -1 indicates that the original image should be returned
+    /// image/svg+xml inputs are returned unchanged regardless of this value (no rasterization).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
