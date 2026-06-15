@@ -1,0 +1,185 @@
+using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Threading;
+using Avn.Connect.V1;
+using ClassVR.Platform.Android;
+using Google.Protobuf.WellKnownTypes;
+using ProtoCloudFile = Avn.Connect.V1.CloudFile;
+
+namespace ClassVR.Network.AvnCloud {
+  /// <summary>
+  /// Entry point for querying files stored in the ClassVR cloud.
+  /// </summary>
+  public static class CloudFiles {
+    /// <summary>
+    /// Searches the cloud for files matching <paramref name="query"/>.
+    /// <para>
+    /// No network request is made until the returned <see cref="CloudFilePageable"/> is enumerated.
+    /// Stream every match with <c>await foreach</c> (paging is handled for you) or use
+    /// <see cref="CloudFilePageable.AsPages"/> to drive paging yourself.
+    /// </para>
+    /// </summary>
+    /// <param name="query">Describes what to search for. See <see cref="CloudFileQuery"/>.</param>
+    /// <param name="endpointServer">Which backend to talk to. Defaults to Production.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>A lazily-evaluated, auto-paging sequence of matching files.</returns>
+    /// <exception cref="ArgumentNullException">Thrown if <paramref name="query"/> is null.</exception>
+    /// <exception cref="Grpc.Core.RpcException">Thrown during enumeration if the cloud request fails.</exception>
+    public static CloudFilePageable Search(CloudFileQuery query, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      if (query == null) {
+        throw new ArgumentNullException(nameof(query));
+      }
+      return new CloudFilePageable(query, endpointServer, jwt);
+    }
+  }
+
+  /// <summary>
+  /// A lazily-evaluated, auto-paging sequence of <see cref="CloudFile"/> results.
+  /// <para>
+  /// Enumerate it directly with <c>await foreach</c> to stream every match,
+  /// or call <see cref="AsPages"/> to retrieve results one page at a time.
+  /// </para>
+  /// </summary>
+  public sealed class CloudFilePageable : IAsyncEnumerable<CloudFile> {
+    private readonly CloudFileQuery query;
+    private readonly EndpointServer endpointServer;
+    private readonly string jwt;
+
+    internal CloudFilePageable(CloudFileQuery query, EndpointServer endpointServer, string jwt) {
+      this.query = query;
+      this.endpointServer = endpointServer;
+      this.jwt = jwt;
+    }
+
+    /// <summary>
+    /// Enumerates the results one page at a time, following each page's <see cref="CloudFilePage.NextPageToken"/>
+    /// until the cloud reports no more pages.
+    /// </summary>
+    /// <param name="continuationToken">Resume from a previously returned <see cref="CloudFilePage.NextPageToken"/>. Null starts from the first page.</param>
+    /// <param name="pageSize">How many results the server should return per page. Null lets the server choose. Affects network round-trips, not which results you can enumerate.</param>
+    /// <param name="cancellationToken">Cancels the enumeration.</param>
+    /// <exception cref="Grpc.Core.RpcException">Thrown if a cloud request fails.</exception>
+    public async IAsyncEnumerable<CloudFilePage> AsPages(string continuationToken = null, int? pageSize = null, [EnumeratorCancellation] CancellationToken cancellationToken = default) {
+      var client = new CloudService.CloudServiceClient(AvnCloudChannel.Instance.ChannelForServer(endpointServer));
+      var pageToken = continuationToken;
+      do {
+        var request = BuildRequest(pageToken, pageSize);
+        var response = await client.SearchCloudFilesAsync(request, cancellationToken: cancellationToken);
+
+        var files = new List<CloudFile>(response.Results.Count);
+        foreach (var proto in response.Results) {
+          files.Add(FromProto(proto));
+        }
+
+        var next = response.HasNextPageToken && !string.IsNullOrEmpty(response.NextPageToken) ? response.NextPageToken : null;
+        yield return new CloudFilePage(files, next);
+        pageToken = next;
+      } while (!string.IsNullOrEmpty(pageToken));
+    }
+
+    /// <summary>
+    /// Streams every matching file, transparently following page tokens. Call with
+    /// <c>await foreach (var file in CloudFiles.Search(query)) { ... }</c>.
+    /// </summary>
+    public async IAsyncEnumerator<CloudFile> GetAsyncEnumerator(CancellationToken cancellationToken = default) {
+      await foreach (var page in AsPages(cancellationToken: cancellationToken)) {
+        foreach (var file in page.Files) {
+          cancellationToken.ThrowIfCancellationRequested();
+          yield return file;
+        }
+      }
+    }
+
+    // Translates the public query (+ paging state) into the underlying protobuf request.
+    private SearchCloudFilesRequest BuildRequest(string pageToken, int? pageSize) {
+      // The device JWT is only populated on a ClassVR device, so fail with a clear message in the Editor
+      // (rather than a NullReferenceException from the gRPC call) when no token is available.
+      var jwtToUse = jwt ?? CVRProperties.Instance.DeviceJWT;
+      if (string.IsNullOrEmpty(jwtToUse)) {
+        throw new InvalidOperationException("Cloud file query failed: no authentication token available. The device JWT is only populated on a ClassVR device, not in the Editor. Pass an explicit 'jwt' to CloudFiles.Search to query from the Editor.");
+      }
+
+      var request = new SearchCloudFilesRequest {
+        Auth = new Authorization { DeviceJwt = jwtToUse }
+      };
+
+      // Owner: explicit override on the query wins, otherwise default to the device's current organization.
+      if (query.OrganizationId.HasValue) {
+        request.OrganizationId = query.OrganizationId.Value;
+      } else if (query.UserId.HasValue) {
+        request.UserId = query.UserId.Value;
+      } else {
+        // OrganizationInfo is only populated on a ClassVR device. Guard against the NullReferenceException
+        // that would otherwise occur in the Editor, and explain how to query without device properties.
+        var organizationInfo = CVRProperties.Instance.OrganizationInfo;
+        if (organizationInfo == null) {
+          throw new InvalidOperationException("Cloud file query failed: no organization available. The device's organization info is only populated on a ClassVR device, not in the Editor. Set CloudFileQuery.OrganizationId (or UserId) to query from the Editor.");
+        }
+        request.OrganizationId = organizationInfo.Id;
+      }
+
+      if (!string.IsNullOrEmpty(query.Text)) {
+        request.TextSearch = new TextSearch { Text = query.Text };
+      }
+
+      if (query.MediaTypes.Count > 0) {
+        request.FilterMediaTypes.AddRange(query.MediaTypes);
+      }
+
+      if (query.Tags.Count > 0) {
+        var condition = query.TagMatch == TagMatch.Any ? TagFilterCondition.HasAnyOf : TagFilterCondition.HasAllOf;
+        var tagFilter = new TagFilter { Condition = condition };
+        tagFilter.Tags.AddRange(query.Tags);
+        request.TagFilters.Add(tagFilter);
+      }
+
+      if (query.CreatedAfter.HasValue) {
+        request.After = Timestamp.FromDateTimeOffset(query.CreatedAfter.Value);
+      }
+      if (query.CreatedBefore.HasValue) {
+        request.Before = Timestamp.FromDateTimeOffset(query.CreatedBefore.Value);
+      }
+
+      var orderClause = OrderClauseFor(query.OrderBy);
+      if (orderClause != null) {
+        request.OrderBy.Add(orderClause);
+      }
+
+      if (pageSize.HasValue) {
+        request.PageSize = pageSize.Value;
+      }
+
+      if (!string.IsNullOrEmpty(pageToken)) {
+        request.PageToken = pageToken;
+      }
+
+      return request;
+    }
+
+    // Maps the friendly ordering enum to a single protobuf OrderClause (null = server default).
+    private static OrderClause OrderClauseFor(CloudFileOrder order) {
+      switch (order) {
+        case CloudFileOrder.NewestFirst: return new OrderClause { Property = EntityProperty.Updated, SortOrder = SortOrder.Desc };
+        case CloudFileOrder.OldestFirst: return new OrderClause { Property = EntityProperty.Updated, SortOrder = SortOrder.Asc };
+        case CloudFileOrder.NameAToZ: return new OrderClause { Property = EntityProperty.Name, SortOrder = SortOrder.Asc };
+        case CloudFileOrder.NameZToA: return new OrderClause { Property = EntityProperty.Name, SortOrder = SortOrder.Desc };
+        case CloudFileOrder.LargestFirst: return new OrderClause { Property = EntityProperty.Size, SortOrder = SortOrder.Desc };
+        case CloudFileOrder.SmallestFirst: return new OrderClause { Property = EntityProperty.Size, SortOrder = SortOrder.Asc };
+        case CloudFileOrder.Default:
+        default: return null;
+      }
+    }
+
+    // Maps the transport type to the public POCO, normalising protobuf optionals to nullable C# values.
+    private static CloudFile FromProto(ProtoCloudFile proto) {
+      var fileName = proto.HasFileName ? proto.FileName : null;
+      var mediaType = proto.HasMediaType ? proto.MediaType : null;
+      long? sizeBytes = proto.HasSizeBytes ? proto.SizeBytes : (long?)null;
+      var updated = proto.Updated != null ? proto.Updated.ToDateTimeOffset() : default;
+      var tags = new List<int>(proto.Tags);
+
+      return new CloudFile(proto.EntityId, fileName, proto.FileUrl, mediaType, sizeBytes, proto.PreviewUrl, updated, tags);
+    }
+  }
+}
