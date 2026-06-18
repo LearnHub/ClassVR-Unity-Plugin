@@ -2,12 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading;
+using System.Threading.Tasks;
 using Avn.Connect.V1;
 using ClassVR.Platform.Android;
 using Google.Protobuf.WellKnownTypes;
 using ProtoCloudFile = Avn.Connect.V1.CloudFile;
 
 namespace ClassVR.Network.AvnCloud {
+  // Fetches a single page of raw results. The production implementation calls the gRPC client; tests substitute
+  // a lambda so the paging/mapping logic can be exercised without a network or any gRPC types.
+  internal delegate Task<SearchCloudFilesResponse> SearchCloudFilesFetch(SearchCloudFilesRequest request, CancellationToken cancellationToken);
+
   /// <summary>
   /// Entry point for querying files stored in the ClassVR cloud.
   /// </summary>
@@ -30,7 +35,13 @@ namespace ClassVR.Network.AvnCloud {
       if (query == null) {
         throw new ArgumentNullException(nameof(query));
       }
-      return new CloudFilePageable(query, endpointServer, jwt);
+      return new CloudFilePageable(query, jwt, CreateFetch(endpointServer));
+    }
+
+    // The production page fetcher: the only place that touches the gRPC client and channel singleton.
+    private static SearchCloudFilesFetch CreateFetch(EndpointServer endpointServer) {
+      var client = new CloudService.CloudServiceClient(AvnCloudChannel.Instance.ChannelForServer(endpointServer));
+      return (request, cancellationToken) => client.SearchCloudFilesAsync(request, cancellationToken: cancellationToken).ResponseAsync;
     }
   }
 
@@ -43,13 +54,13 @@ namespace ClassVR.Network.AvnCloud {
   /// </summary>
   public sealed class CloudFilePageable : IAsyncEnumerable<CloudFile> {
     private readonly CloudFileQuery query;
-    private readonly EndpointServer endpointServer;
     private readonly string jwt;
+    private readonly SearchCloudFilesFetch fetchPage;
 
-    internal CloudFilePageable(CloudFileQuery query, EndpointServer endpointServer, string jwt) {
+    internal CloudFilePageable(CloudFileQuery query, string jwt, SearchCloudFilesFetch fetchPage) {
       this.query = query;
-      this.endpointServer = endpointServer;
       this.jwt = jwt;
+      this.fetchPage = fetchPage;
     }
 
     /// <summary>
@@ -61,11 +72,10 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="cancellationToken">Cancels the enumeration.</param>
     /// <exception cref="Grpc.Core.RpcException">Thrown if a cloud request fails.</exception>
     public async IAsyncEnumerable<CloudFilePage> AsPages(string continuationToken = null, int? pageSize = null, [EnumeratorCancellation] CancellationToken cancellationToken = default) {
-      var client = new CloudService.CloudServiceClient(AvnCloudChannel.Instance.ChannelForServer(endpointServer));
       var pageToken = continuationToken;
       do {
         var request = BuildRequest(pageToken, pageSize);
-        var response = await client.SearchCloudFilesAsync(request, cancellationToken: cancellationToken);
+        var response = await fetchPage(request, cancellationToken);
 
         var files = new List<CloudFile>(response.Results.Count);
         foreach (var proto in response.Results) {
