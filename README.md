@@ -8,7 +8,7 @@ Unless you intend to make changes to the Plugin, please install via [OpenUPM](ht
 
 ## API Usage
 
-```
+```csharp
 using ClassVR;
 ...
 // Read ClassVR headset properties
@@ -30,12 +30,18 @@ _ = Analytics.SendEvent("example_action", "example_source");
 // Send an analytics event (and wait for it to complete)
 await Analytics.SendEvent("example_action", "example_source");
 
-// Upload a small file to ClassVR Shared Cloud (on Android)
+// Upload a small file to ClassVR Shared Cloud for the current enrolled organisation (on Android)
 var url = await FileUploader.UploadToSharedCloud("example.txt", "text/plain", "example file contents");
 // Upload a large file to ClassVR Shared Cloud (on Android)
 var filePath = Path.Combine(Application.temporaryCachePath, "filename.txt");
 ... (write data to file)
 var url = await FileUploader.UploadToSharedCloud(filePath, "text/plain");
+
+// Query files in the ClassVR Shared Cloud for the current enrolled organisation (on Android)
+var query = new CloudFileQuery { MediaTypes = { "image/png" }, OrderBy = CloudFileOrder.NewestFirst };
+await foreach (CloudFile file in CloudFiles.Search(query)) { Debug.Log($"{file.FileName}"); }
+// Or to load page-by-page
+await foreach (CloudFilePage page in CloudFiles.Search(query).AsPages(pageSize: 10)) {}
 
 // Retrieve a file from an Android ContentProvider
 var url = "content://...";
@@ -58,7 +64,11 @@ This plugin provides Unity support for the **ClassVR 655 Headset interaction pro
 
 Further information on OpenXR Interaction Profiles can be found in the [Unity OpenXR Plugin docs](https://docs.unity3d.com/Packages/com.unity.xr.openxr@1.3/manual/input.html).
 
-## ClassVR File Download/Upload
+## ClassVR File Management
+
+The ClassVR cloud infrastructure stores all files in a flat filesystem called AVNFS. Files in AVNFS can be accessed via their unique URL.
+
+Optionally, files stored in AVNFS can be associated with an organisation (org) in ClassVR. If so, they will appear in the Shared Cloud section on the Portal for that org, and can be browsed by users (usually teachers). Files associated with a ClassVR org can be queried by devices enrolled in the same org.
 
 ### Downloads
 
@@ -78,6 +88,42 @@ To upload files to ClassVR, use the `FileUploader.UploadToSharedCloud` method. Y
 
 This method will assign the file to the Shared Cloud library for the organization that the device is currently registered to.
 
+### Queries
+
+To search files in the Shared Cloud, use `CloudFiles.Search`. It returns a lazily-evaluated, auto-paging sequence — no request is made to the cloud until you start enumerating it. On a ClassVR device the authentication token and organisation are read from the device automatically; off-device (e.g. in the Editor) you must supply a `jwt` and set `OrganizationId` on the query.
+
+Build the search with a `CloudFileQuery`. Every property is an optional filter, so an empty query returns every file the device's organisation can see:
+
+| Property | Description |
+| --- | --- |
+| `Text` | Free-text search across the files. |
+| `MediaTypes` | Restrict to these media (MIME) types. |
+| `Tags` + `TagMatch` | Restrict to files matching these tag IDs — `TagMatch.All` (default) or `TagMatch.Any`. |
+| `CreatedAfter` / `CreatedBefore` | Restrict to a time range. |
+| `OrderBy` | Result ordering, e.g. `CloudFileOrder.NewestFirst` (default is the server's order). |
+
+This example will stream every match — paging is handled for you:
+
+```csharp
+var query = new CloudFileQuery { MediaTypes = { "image/png" }, OrderBy = CloudFileOrder.NewestFirst };
+await foreach (CloudFile file in CloudFiles.Search(query)) {
+  Debug.Log($"{file.FileName} ({file.MediaType}) — {file.FileUrl}");
+}
+```
+
+Each `CloudFile` exposes `Id`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `PreviewUrl`, `Updated` and `Tags`.
+
+To drive paging yourself, use `AsPages`. Each `CloudFilePage` has the page's `Files` and a `NextPageToken` that is `null` on the last page:
+
+```csharp
+await foreach (CloudFilePage page in CloudFiles.Search(query).AsPages(pageSize: 10)) {
+  Debug.Log($"Got a page of {page.Files.Count} file(s)");
+  if (page.NextPageToken == null) break;
+}
+```
+
+Enumeration can be cancelled with a `CancellationToken` (`CloudFiles.Search(query).WithCancellation(token)`), and a failed cloud request throws an `RpcException`.
+
 ## Intents and Deep Linking
 
 To receive new intents while the app is running, direct intents to `com.classvr.cvr_unity_java.DeepLinkActivity` via [intent filters](https://developer.android.com/guide/components/intents-filters) in the manifest.
@@ -90,7 +136,7 @@ To receive new intents while the app is running, direct intents to `com.classvr.
 
 This example shows the whole AndroidManifest.xml. You must replace the "placeholder" strings in the data elements.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
   <application>
