@@ -60,12 +60,15 @@ namespace ClassVR.Network.AvnCloud {
     public CloudFileOrder OrderBy { get; set; } = CloudFileOrder.Default;
 
     /// <summary>
-    /// Search a specific organization's cloud. When <c>null</c> (and <see cref="UserId"/> is also <c>null</c>),
-    /// the device's current organization is used.
+    /// Search a specific organization's cloud. If set, this takes precedence over <see cref="UserId"/>.
+    /// When both this and <see cref="UserId"/> are <c>null</c>, the device's current organization is used.
     /// </summary>
     public int? OrganizationId { get; set; }
 
-    /// <summary>Search a specific user's cloud instead of an organization's. Mutually exclusive with <see cref="OrganizationId"/>.</summary>
+    /// <summary>
+    /// Search a specific user's cloud instead of an organization's. Used only when <see cref="OrganizationId"/>
+    /// is <c>null</c> (<see cref="OrganizationId"/> takes precedence if both are set).
+    /// </summary>
     public int? UserId { get; set; }
   }
 }
