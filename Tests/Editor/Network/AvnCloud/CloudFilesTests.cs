@@ -71,6 +71,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       Assert.IsNull(file.FileName);
       Assert.IsNull(file.MediaType);
       Assert.IsNull(file.SizeBytes);
+      Assert.IsNull(file.Updated);
       Assert.IsEmpty(file.Tags);
     }
 

@@ -186,7 +186,7 @@ namespace ClassVR.Network.AvnCloud {
       var fileName = proto.HasFileName ? proto.FileName : null;
       var mediaType = proto.HasMediaType ? proto.MediaType : null;
       long? sizeBytes = proto.HasSizeBytes ? proto.SizeBytes : (long?)null;
-      var updated = proto.Updated != null ? proto.Updated.ToDateTimeOffset() : default;
+      var updated = proto.Updated?.ToDateTimeOffset();
       var tags = new List<int>(proto.Tags);
 
       return new CloudFile(proto.EntityId, fileName, proto.FileUrl, mediaType, sizeBytes, proto.PreviewUrl, updated, tags);

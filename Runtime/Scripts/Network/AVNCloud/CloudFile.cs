@@ -24,13 +24,13 @@ namespace ClassVR.Network.AvnCloud {
     /// <summary>A URL for a preview/thumbnail of the file. May be empty if none is available.</summary>
     public string PreviewUrl { get; }
 
-    /// <summary>When the file was last modified.</summary>
-    public DateTimeOffset Updated { get; }
+    /// <summary>When the file was last modified, or <c>null</c> if the cloud has no timestamp recorded.</summary>
+    public DateTimeOffset? Updated { get; }
 
     /// <summary>IDs of the tags associated with this file.</summary>
     public IReadOnlyList<int> Tags { get; }
 
-    internal CloudFile(int id, string fileName, string fileUrl, string mediaType, long? sizeBytes, string previewUrl, DateTimeOffset updated, IReadOnlyList<int> tags) {
+    internal CloudFile(int id, string fileName, string fileUrl, string mediaType, long? sizeBytes, string previewUrl, DateTimeOffset? updated, IReadOnlyList<int> tags) {
       Id = id;
       FileName = fileName;
       FileUrl = fileUrl;
