@@ -50,10 +50,10 @@ namespace ClassVR.Network.AvnCloud {
     /// <summary>Whether a file must have all of <see cref="Tags"/> or just any one of them. Defaults to <see cref="TagMatch.All"/>.</summary>
     public TagMatch TagMatch { get; set; } = TagMatch.All;
 
-    /// <summary>Only return files updated strictly after this time.</summary>
+    /// <summary>Only return files added to the cloud strictly after this time.</summary>
     public DateTimeOffset? CreatedAfter { get; set; }
 
-    /// <summary>Only return files updated strictly before this time.</summary>
+    /// <summary>Only return files added to the cloud strictly before this time.</summary>
     public DateTimeOffset? CreatedBefore { get; set; }
 
     /// <summary>How to order the results. Defaults to <see cref="CloudFileOrder.Default"/>.</summary>
