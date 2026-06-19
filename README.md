@@ -36,6 +36,8 @@ var url = await FileUploader.UploadToSharedCloud("example.txt", "text/plain", "e
 var filePath = Path.Combine(Application.temporaryCachePath, "filename.txt");
 ... (write data to file)
 var url = await FileUploader.UploadToSharedCloud(filePath, "text/plain");
+// Upload a file to AVNFS only, without associating it with any organisation (on Android)
+var url = await FileUploader.UploadToAvnfs("example.txt", "text/plain", "example file contents");
 
 // Query files in the ClassVR Shared Cloud for the current enrolled organisation (on Android)
 var query = new CloudFileQuery { MediaTypes = { "image/png" }, OrderBy = CloudFileOrder.NewestFirst };
@@ -84,9 +86,11 @@ This plugin aims to be agnostic as to which ContentProvider is being accessed, m
 
 ### Uploads
 
-To upload files to ClassVR, use the `FileUploader.UploadToSharedCloud` method. You can use any of the overloads, but for large files it's recommended to write to a temporary file and use the overload which takes a file path.
+To upload files to ClassVR and associate with an organization, use the `FileUploader.UploadToSharedCloud` method. You can use any of the overloads, but for large files it's recommended to write to a temporary file and use the overload which takes a file path.
 
 This method will assign the file to the Shared Cloud library for the organization that the device is currently registered to.
+
+If you only want to upload a file to AVNFS and get its URL — without it appearing in any organization's Shared Cloud library — use `FileUploader.UploadToAvnfs` instead. It accepts the same set of overloads (string, byte array, or file path) and returns the AVNFS URL on success, or `null` on failure.
 
 ### Queries
 

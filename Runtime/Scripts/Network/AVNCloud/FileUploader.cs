@@ -15,7 +15,7 @@ namespace ClassVR.Network.AvnCloud {
     private const long MaxSinglePartUploadSizeBytes = 5368709120;
 
     /// <summary>
-    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is assigned to.
+    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
     /// </summary>
     /// <param name="filename">The name and extension of the file.</param>
     /// <param name="mediaType">The media (or MIME) type of the file.</param>
@@ -29,7 +29,7 @@ namespace ClassVR.Network.AvnCloud {
     }
 
     /// <summary>
-    /// Uploads a file already on disk to the Shared Cloud area of ClassVR for the current Organization the device is assigned to.
+    /// Uploads a file already on disk to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
     /// The display name is derived from the file path via <see cref="Path.GetFileName"/>.
     /// Note: the maximum file size for upload is 5GB.
     /// </summary>
@@ -39,6 +39,69 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
     public static async Task<string> UploadToSharedCloud(string filePath, string mediaType, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      // Upload the file to AVNFS and get the URL to download the file
+      var downloadUrl = await UploadToAvnfs(filePath, mediaType, endpointServer, jwt);
+      if (downloadUrl == null) {
+        return null;
+      }
+
+      // Assign the file to the Shared Cloud area of the organization the device is currently registered to.
+      // The display name is derived from the file path (e.g. "/path/to/photo.png" -> "photo.png").
+      return await AssociateWithOrg(downloadUrl, endpointServer, jwt, Path.GetFileName(filePath));
+    }
+
+    /// <summary>
+    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="data">The file contents as a byte array.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    public static async Task<string> UploadToSharedCloud(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      //TODO: enable cancellation
+
+      // Upload the file to AVNFS and get the URL to download the file
+      var downloadUrl = await UploadToAvnfs(filename, mediaType, data, endpointServer, jwt);
+      // Check upload was successful
+      if (downloadUrl == null) {
+        return null;
+      }
+
+      // Assign the file to the Shared Cloud area of the organization the device is currently registered to
+      return await AssociateWithOrg(downloadUrl, endpointServer, jwt, filename);
+    }
+
+    /// <summary>
+    /// Uploads a file to AVNFS (the ClassVR file store) and returns its URL, WITHOUT associating it
+    /// with any Organization. Use <see cref="UploadToSharedCloud(string, string, string, EndpointServer, string)"/>
+    /// instead if you want the file to appear in the device Organization's Shared Cloud library.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="data">The file contents as a string. This will be encoded using UTF8.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    public static async Task<string> UploadToAvnfs(string filename, string mediaType, string data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      byte[] byteData = Encoding.UTF8.GetBytes(data);
+      return await UploadToAvnfs(filename, mediaType, byteData, endpointServer, jwt);
+    }
+
+    /// <summary>
+    /// Uploads a file already on disk to AVNFS (the ClassVR file store) and returns its URL, WITHOUT
+    /// associating it with any Organization. Use <see cref="UploadToSharedCloud(string, string, EndpointServer, string)"/>
+    /// instead if you want the file to appear in the device Organization's Shared Cloud library.
+    /// The display name is derived from the file path via <see cref="Path.GetFileName"/>.
+    /// Note: the maximum file size for upload is 5GB.
+    /// </summary>
+    /// <param name="filePath">Local file path (not a URI — the method handles file:// prefixing).</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    public static async Task<string> UploadToAvnfs(string filePath, string mediaType, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
       // Validate the file path
       if (string.IsNullOrEmpty(filePath)) {
         Debug.LogError("FileUploader: filePath is null or empty.");
@@ -66,18 +129,13 @@ namespace ClassVR.Network.AvnCloud {
       }
 
       // Upload the file to AVNFS and get the URL to download the file
-      var downloadUrl = await UploadFileToAvnfs(filePath, filename, mediaType, auth, endpointServer);
-      if (downloadUrl == null) {
-        return null;
-      }
-
-      // Assign the file to the Shared Cloud area of the organization the device is currently registered to
-      var addFileSuccess = await AddFileToSharedCloud(downloadUrl, auth, endpointServer);
-      return addFileSuccess ? downloadUrl : null;
+      return await UploadFileToAvnfs(filePath, filename, mediaType, auth, endpointServer);
     }
 
     /// <summary>
-    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is assigned to.
+    /// Uploads a file to AVNFS (the ClassVR file store) and returns its URL, WITHOUT associating it
+    /// with any Organization. Use <see cref="UploadToSharedCloud(string, string, byte[], EndpointServer, string)"/>
+    /// instead if you want the file to appear in the device Organization's Shared Cloud library.
     /// </summary>
     /// <param name="filename">The name and extension of the file.</param>
     /// <param name="mediaType">The media (or MIME) type of the file.</param>
@@ -85,7 +143,7 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
-    public static async Task<string> UploadToSharedCloud(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+    public static async Task<string> UploadToAvnfs(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
       //TODO: enable cancellation
 
       // No need to check file doesn't exceed upload size limit, as max array length is 2GB and upload limit is 5GB
@@ -97,16 +155,18 @@ namespace ClassVR.Network.AvnCloud {
       }
 
       // Upload the file to AVNFS and get the URL to download the file
-      var downloadUrl = await UploadBytesToAvnfs(filename, mediaType, data, auth, endpointServer);
-      // Check upload was successful
-      if (downloadUrl == null) {
+      return await UploadBytesToAvnfs(filename, mediaType, data, auth, endpointServer);
+    }
+
+    // Associates an already-uploaded AVNFS file with the Shared Cloud of the Organization the device is
+    // registered to. Returns the download URL on success, null otherwise.
+    private static async Task<string> AssociateWithOrg(string downloadUrl, EndpointServer endpointServer, string jwt, string filename) {
+      var auth = GetAuthorizationForUpload(jwt, filename);
+      if (auth == null) {
         return null;
       }
 
-      // Assign the file to the Shared Cloud area of the organization the device is currently registered to
       var addFileSuccess = await AddFileToSharedCloud(downloadUrl, auth, endpointServer);
-
-      // Return the URL if successful, null otherwise
       return addFileSuccess ? downloadUrl : null;
     }
 
@@ -114,12 +174,11 @@ namespace ClassVR.Network.AvnCloud {
     // Returns null if no valid JWT is available (error is logged)
     private static Authorization GetAuthorizationForUpload(string jwt, string filename) {
       var jwtToUse = jwt ?? CVRProperties.Instance.DeviceJWT;
-      var auth = new Authorization { DeviceJwt = jwtToUse };
-      if (string.IsNullOrEmpty(auth.DeviceJwt)) {
+      if (string.IsNullOrEmpty(jwtToUse)) {
         Debug.LogError($"Couldn't retrieve device JWT for authorization. Upload of '{filename}' to ClassVR failed.");
         return null;
       }
-      return auth;
+      return new Authorization { DeviceJwt = jwtToUse };
     }
 
     // Uploads the provided file to AVNFS and provides the URL it can be downloaded from
@@ -215,7 +274,15 @@ namespace ClassVR.Network.AvnCloud {
         Authorization auth,
         EndpointServer endpointServer) {
 
-      var orgId = CVRProperties.Instance.OrganizationInfo.Id;
+      // OrganizationInfo is only populated on an enrolled Android device; off-device (e.g. in the Editor) it is
+      // null, so guard against it rather than letting a NullReferenceException surface.
+      var organizationInfo = CVRProperties.Instance.OrganizationInfo;
+      if (organizationInfo == null) {
+        Debug.LogError($"Couldn't retrieve Organization info. Failed to assign '{downloadUrl}' to Shared Cloud.");
+        return false;
+      }
+
+      var orgId = organizationInfo.Id;
       Debug.Log($"Assigning '{downloadUrl}' to Shared Cloud of Organization with ID '{orgId}'");
 
       // Construct a request using the organization ID the device is currently registered to

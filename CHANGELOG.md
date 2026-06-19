@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- ClassVR Shared Cloud query API to search files in AVNFS associated with an organisation
+- FileUploader.UploadToAvnfs overloads (string, byte array, and file path) to upload a file to AVNFS without associating it with an organisation
+
 ### Changed
 
 - Regenerated C# gRPC clients to add speaker ID into speech synthesis request
