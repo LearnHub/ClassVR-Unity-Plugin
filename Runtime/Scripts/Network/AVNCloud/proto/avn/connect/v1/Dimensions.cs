@@ -29,81 +29,81 @@ namespace Avn.Connect.V1 {
             "bm5lY3QvdjEvcHJlc2VuY2UucHJvdG8aIGF2bi9jb25uZWN0L3YxL2Nvbm5l",
             "Y3Rpb25zLnByb3RvGiNhdm4vY29ubmVjdC92MS9sZXNzb25fY29udGV4dC5w",
             "cm90bxofYXZuL2Nvbm5lY3QvdjEvb3BlcmF0aW9ucy5wcm90bxodYXZuL2Nv",
-            "bm5lY3QvdjEvcGFydG5lcnMucHJvdG8aHWF2bi9jb25uZWN0L3YxL2xpY2Vu",
-            "c2VzLnByb3RvGixhdm4vY29ubmVjdC92MS9pbnRlcmFjdGlvbl9wZXJtaXNz",
-            "aW9ucy5wcm90bxodYXZuL2Nvbm5lY3QvdjEvZmVhdHVyZXMucHJvdG8aImF2",
-            "bi9jb25uZWN0L3YxL2F1dGhvcml6YXRpb24ucHJvdG8aHGF2bi9jb25uZWN0",
-            "L3YxL2NvbnRlbnQucHJvdG8aHGF2bi9jb25uZWN0L3YxL2NsaWVudHMucHJv",
-            "dG8iwgIKFkNyZWF0ZURpbWVuc2lvblJlcXVlc3QSMQoGY2xpZW50GAEgASgL",
-            "MiEuYXZuLmNvbm5lY3QudjEuQ2xpZW50Q3JlZGVudGlhbHMSMAoEYXV0aBgC",
-            "IAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb25IAIgBARIUCgdw",
-            "YXNzX2lkGAMgASgJSAGIAQESHQoQcHJlZmVycmVkX2RvbWFpbhgEIAEoCUgC",
-            "iAEBEhUKCHJlZmVycmVyGAUgASgJSAOIAQESJAoXY29udGV4dF9vcmdhbml6",
-            "YXRpb25faWQYBiABKAVIBIgBAUIHCgVfYXV0aEIKCghfcGFzc19pZEITChFf",
-            "cHJlZmVycmVkX2RvbWFpbkILCglfcmVmZXJyZXJCGgoYX2NvbnRleHRfb3Jn",
-            "YW5pemF0aW9uX2lkIi8KF0NyZWF0ZURpbWVuc2lvblJlc3BvbnNlEhQKDGRp",
-            "bWVuc2lvbl9pZBgBIAEoCSKLAQoTR2V0RGltZW5zaW9uUmVxdWVzdBIxCgZj",
-            "bGllbnQYASABKAsyIS5hdm4uY29ubmVjdC52MS5DbGllbnRDcmVkZW50aWFs",
-            "cxIrCgRhdXRoGAIgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlv",
-            "bhIUCgxkaW1lbnNpb25faWQYAyABKAkijAEKFEpvaW5EaW1lbnNpb25SZXF1",
-            "ZXN0EjEKBmNsaWVudBgBIAEoCzIhLmF2bi5jb25uZWN0LnYxLkNsaWVudENy",
-            "ZWRlbnRpYWxzEisKBGF1dGgYAiABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRo",
-            "b3JpemF0aW9uEhQKDGRpbWVuc2lvbl9pZBgDIAEoCSKlAwoORGltZW5zaW9u",
-            "RXZlbnQSNAoGc3RhdHVzGAEgASgLMh8uYXZuLmNvbm5lY3QudjEuRGltZW5z",
-            "aW9uU3RhdHVzSACIAQESMAoEaW5mbxgCIAEoCzIdLmF2bi5jb25uZWN0LnYx",
-            "LkRpbWVuc2lvbkluZm9IAYgBARI7Cgpjb25uZWN0aW9uGAMgASgLMiIuYXZu",
-            "LmNvbm5lY3QudjEuQ29ubmVjdGlvbkluc3RhbmNlSAKIAQESOgoJYnJvYWRj",
-            "YXN0GAQgASgLMiIuYXZuLmNvbm5lY3QudjEuRGltZW5zaW9uQnJvYWRjYXN0",
-            "SAOIAQESNQoIcHJlc2VuY2UYBSABKAsyHi5hdm4uY29ubmVjdC52MS5QcmVz",
-            "ZW5jZVVwZGF0ZUgEiAEBEjIKBmxlc3NvbhgGIAEoCzIdLmF2bi5jb25uZWN0",
-            "LnYxLkxlc3NvbkNvbnRleHRIBYgBAUIJCgdfc3RhdHVzQgcKBV9pbmZvQg0K",
-            "C19jb25uZWN0aW9uQgwKCl9icm9hZGNhc3RCCwoJX3ByZXNlbmNlQgkKB19s",
-            "ZXNzb24iYAoPRGltZW5zaW9uU3RhdHVzEi0KBXN0YXRlGAEgASgOMh4uYXZu",
-            "LmNvbm5lY3QudjEuT3BlcmF0aW9uU3RhdGUSEwoGZGV0YWlsGAIgASgJSACI",
-            "AQFCCQoHX2RldGFpbCLpAQoRRGltZW5zaW9uSW5zdGFuY2USKwoEaW5mbxgB",
-            "IAEoCzIdLmF2bi5jb25uZWN0LnYxLkRpbWVuc2lvbkluZm8SMQoHY29udGVu",
-            "dBgCIAEoCzIgLmF2bi5jb25uZWN0LnYxLkF2YWlsYWJsZUNvbnRlbnQSOwoL",
-            "cGVybWlzc2lvbnMYBCABKAsyJi5hdm4uY29ubmVjdC52MS5JbnRlcmFjdGlv",
-            "blBlcm1pc3Npb25zEjcKCGZlYXR1cmVzGAUgASgLMiUuYXZuLmNvbm5lY3Qu",
-            "djEuVXNlckludGVyZmFjZUZlYXR1cmVzIoQDCg1EaW1lbnNpb25JbmZvEgoK",
-            "AmlkGAEgASgJEgwKBG5hbWUYAiABKAkSKwoHY3JlYXRlZBgDIAEoCzIaLmdv",
-            "b2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASNwoPZXhwaXJ5X3N0cmF0ZWd5GAQg",
-            "ASgOMh4uYXZuLmNvbm5lY3QudjEuRXhwaXJ5U3RyYXRlZ3kSDgoGZG9tYWlu",
-            "GAUgASgJEhQKB3Bhc3NfaWQYBiABKAlIAIgBARIzCg1hY2Nlc3NfbGltaXRz",
-            "GAcgASgLMhwuYXZuLmNvbm5lY3QudjEuQWNjZXNzTGltaXRzEi8KBm9yaWdp",
-            "bhgIIAEoCzIfLmF2bi5jb25uZWN0LnYxLkRpbWVuc2lvbk9yaWdpbhItCghs",
-            "aWNlbnNlcxgJIAMoCzIbLmF2bi5jb25uZWN0LnYxLkxpY2Vuc2VJbmZvEhoK",
-            "DWVudHJ5X21lc3NhZ2UYCiABKAlIAYgBAUIKCghfcGFzc19pZEIQCg5fZW50",
-            "cnlfbWVzc2FnZSKrAQoPRGltZW5zaW9uT3JpZ2luEhYKCWNsaWVudF9pZBgB",
-            "IAEoCUgAiAEBEhQKB3VzZXJfaWQYAiABKAVIAYgBARI8Cg9wYXJ0bmVyX3Nl",
-            "c3Npb24YAyABKAsyHi5hdm4uY29ubmVjdC52MS5QYXJ0bmVyU2Vzc2lvbkgC",
-            "iAEBQgwKCl9jbGllbnRfaWRCCgoIX3VzZXJfaWRCEgoQX3BhcnRuZXJfc2Vz",
-            "c2lvbiJnChJEaW1lbnNpb25Ccm9hZGNhc3QSDwoHbWVzc2FnZRgBIAEoCRIk",
-            "Chdhbm5vdW5jZXJfY29ubmVjdGlvbl9pZBgCIAEoCUgAiAEBQhoKGF9hbm5v",
-            "dW5jZXJfY29ubmVjdGlvbl9pZCKYAQoMQWNjZXNzTGltaXRzEhUKDXJvb21f",
-            "Y2FwYWNpdHkYASABKAUSGgoSZGltZW5zaW9uX2NhcGFjaXR5GAIgASgFEjwK",
-            "EmlkZW50aXR5X3Byb3ZpZGVycxgDIAMoDjIgLmF2bi5jb25uZWN0LnYxLklk",
-            "ZW50aXR5UHJvdmlkZXISFwoPZW1haWxfd2hpdGVsaXN0GAQgAygJIqwBChdT",
-            "ZXRMZXNzb25Db250ZXh0UmVxdWVzdBI6CgtjcmVkZW50aWFscxgBIAEoCzIl",
-            "LmF2bi5jb25uZWN0LnYxLkNvbm5lY3Rpb25DcmVkZW50aWFscxIUCgxkaW1l",
-            "bnNpb25faWQYAiABKAkSMwoHY29udGV4dBgDIAEoCzIdLmF2bi5jb25uZWN0",
-            "LnYxLkxlc3NvbkNvbnRleHRIAIgBAUIKCghfY29udGV4dCJpChhTZXRMZXNz",
-            "b25Db250ZXh0UmVzcG9uc2USLQoFc3RhdGUYASABKA4yHi5hdm4uY29ubmVj",
-            "dC52MS5PcGVyYXRpb25TdGF0ZRITCgZkZXRhaWwYAiABKAlIAIgBAUIJCgdf",
-            "ZGV0YWlsKnUKDkV4cGlyeVN0cmF0ZWd5Eh8KG0VYUElSWV9TVFJBVEVHWV9V",
-            "TlNQRUNJRklFRBAAEiIKHkVYUElSWV9TVFJBVEVHWV9BTllfQ09OTkVDVElP",
-            "ThABEh4KGkVYUElSWV9TVFJBVEVHWV9PTkxZX09XTkVSEAIyjgMKEERpbWVu",
-            "c2lvblNlcnZpY2USYgoPQ3JlYXRlRGltZW5zaW9uEiYuYXZuLmNvbm5lY3Qu",
-            "djEuQ3JlYXRlRGltZW5zaW9uUmVxdWVzdBonLmF2bi5jb25uZWN0LnYxLkNy",
-            "ZWF0ZURpbWVuc2lvblJlc3BvbnNlElYKDEdldERpbWVuc2lvbhIjLmF2bi5j",
-            "b25uZWN0LnYxLkdldERpbWVuc2lvblJlcXVlc3QaIS5hdm4uY29ubmVjdC52",
-            "MS5EaW1lbnNpb25JbnN0YW5jZRJXCg1Kb2luRGltZW5zaW9uEiQuYXZuLmNv",
-            "bm5lY3QudjEuSm9pbkRpbWVuc2lvblJlcXVlc3QaHi5hdm4uY29ubmVjdC52",
-            "MS5EaW1lbnNpb25FdmVudDABEmUKEFNldExlc3NvbkNvbnRleHQSJy5hdm4u",
-            "Y29ubmVjdC52MS5TZXRMZXNzb25Db250ZXh0UmVxdWVzdBooLmF2bi5jb25u",
-            "ZWN0LnYxLlNldExlc3NvbkNvbnRleHRSZXNwb25zZWIGcHJvdG8z"));
+            "bm5lY3QvdjEvcGFydG5lcnMucHJvdG8aG2F2bi9jb25uZWN0L3YxL2dyYW50",
+            "cy5wcm90bxosYXZuL2Nvbm5lY3QvdjEvaW50ZXJhY3Rpb25fcGVybWlzc2lv",
+            "bnMucHJvdG8aHWF2bi9jb25uZWN0L3YxL2ZlYXR1cmVzLnByb3RvGiJhdm4v",
+            "Y29ubmVjdC92MS9hdXRob3JpemF0aW9uLnByb3RvGhxhdm4vY29ubmVjdC92",
+            "MS9jb250ZW50LnByb3RvGhxhdm4vY29ubmVjdC92MS9jbGllbnRzLnByb3Rv",
+            "IsICChZDcmVhdGVEaW1lbnNpb25SZXF1ZXN0EjEKBmNsaWVudBgBIAEoCzIh",
+            "LmF2bi5jb25uZWN0LnYxLkNsaWVudENyZWRlbnRpYWxzEjAKBGF1dGgYAiAB",
+            "KAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uSACIAQESFAoHcGFz",
+            "c19pZBgDIAEoCUgBiAEBEh0KEHByZWZlcnJlZF9kb21haW4YBCABKAlIAogB",
+            "ARIVCghyZWZlcnJlchgFIAEoCUgDiAEBEiQKF2NvbnRleHRfb3JnYW5pemF0",
+            "aW9uX2lkGAYgASgFSASIAQFCBwoFX2F1dGhCCgoIX3Bhc3NfaWRCEwoRX3By",
+            "ZWZlcnJlZF9kb21haW5CCwoJX3JlZmVycmVyQhoKGF9jb250ZXh0X29yZ2Fu",
+            "aXphdGlvbl9pZCIvChdDcmVhdGVEaW1lbnNpb25SZXNwb25zZRIUCgxkaW1l",
+            "bnNpb25faWQYASABKAkiiwEKE0dldERpbWVuc2lvblJlcXVlc3QSMQoGY2xp",
+            "ZW50GAEgASgLMiEuYXZuLmNvbm5lY3QudjEuQ2xpZW50Q3JlZGVudGlhbHMS",
+            "KwoEYXV0aBgCIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24S",
+            "FAoMZGltZW5zaW9uX2lkGAMgASgJIowBChRKb2luRGltZW5zaW9uUmVxdWVz",
+            "dBIxCgZjbGllbnQYASABKAsyIS5hdm4uY29ubmVjdC52MS5DbGllbnRDcmVk",
+            "ZW50aWFscxIrCgRhdXRoGAIgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9y",
+            "aXphdGlvbhIUCgxkaW1lbnNpb25faWQYAyABKAkipQMKDkRpbWVuc2lvbkV2",
+            "ZW50EjQKBnN0YXR1cxgBIAEoCzIfLmF2bi5jb25uZWN0LnYxLkRpbWVuc2lv",
+            "blN0YXR1c0gAiAEBEjAKBGluZm8YAiABKAsyHS5hdm4uY29ubmVjdC52MS5E",
+            "aW1lbnNpb25JbmZvSAGIAQESOwoKY29ubmVjdGlvbhgDIAEoCzIiLmF2bi5j",
+            "b25uZWN0LnYxLkNvbm5lY3Rpb25JbnN0YW5jZUgCiAEBEjoKCWJyb2FkY2Fz",
+            "dBgEIAEoCzIiLmF2bi5jb25uZWN0LnYxLkRpbWVuc2lvbkJyb2FkY2FzdEgD",
+            "iAEBEjUKCHByZXNlbmNlGAUgASgLMh4uYXZuLmNvbm5lY3QudjEuUHJlc2Vu",
+            "Y2VVcGRhdGVIBIgBARIyCgZsZXNzb24YBiABKAsyHS5hdm4uY29ubmVjdC52",
+            "MS5MZXNzb25Db250ZXh0SAWIAQFCCQoHX3N0YXR1c0IHCgVfaW5mb0INCgtf",
+            "Y29ubmVjdGlvbkIMCgpfYnJvYWRjYXN0QgsKCV9wcmVzZW5jZUIJCgdfbGVz",
+            "c29uImAKD0RpbWVuc2lvblN0YXR1cxItCgVzdGF0ZRgBIAEoDjIeLmF2bi5j",
+            "b25uZWN0LnYxLk9wZXJhdGlvblN0YXRlEhMKBmRldGFpbBgCIAEoCUgAiAEB",
+            "QgkKB19kZXRhaWwi6QEKEURpbWVuc2lvbkluc3RhbmNlEisKBGluZm8YASAB",
+            "KAsyHS5hdm4uY29ubmVjdC52MS5EaW1lbnNpb25JbmZvEjEKB2NvbnRlbnQY",
+            "AiABKAsyIC5hdm4uY29ubmVjdC52MS5BdmFpbGFibGVDb250ZW50EjsKC3Bl",
+            "cm1pc3Npb25zGAQgASgLMiYuYXZuLmNvbm5lY3QudjEuSW50ZXJhY3Rpb25Q",
+            "ZXJtaXNzaW9ucxI3CghmZWF0dXJlcxgFIAEoCzIlLmF2bi5jb25uZWN0LnYx",
+            "LlVzZXJJbnRlcmZhY2VGZWF0dXJlcyKAAwoNRGltZW5zaW9uSW5mbxIKCgJp",
+            "ZBgBIAEoCRIMCgRuYW1lGAIgASgJEisKB2NyZWF0ZWQYAyABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wEjcKD2V4cGlyeV9zdHJhdGVneRgEIAEo",
+            "DjIeLmF2bi5jb25uZWN0LnYxLkV4cGlyeVN0cmF0ZWd5Eg4KBmRvbWFpbhgF",
+            "IAEoCRIUCgdwYXNzX2lkGAYgASgJSACIAQESMwoNYWNjZXNzX2xpbWl0cxgH",
+            "IAEoCzIcLmF2bi5jb25uZWN0LnYxLkFjY2Vzc0xpbWl0cxIvCgZvcmlnaW4Y",
+            "CCABKAsyHy5hdm4uY29ubmVjdC52MS5EaW1lbnNpb25PcmlnaW4SKQoGZ3Jh",
+            "bnRzGAkgAygLMhkuYXZuLmNvbm5lY3QudjEuR3JhbnRJbmZvEhoKDWVudHJ5",
+            "X21lc3NhZ2UYCiABKAlIAYgBAUIKCghfcGFzc19pZEIQCg5fZW50cnlfbWVz",
+            "c2FnZSKrAQoPRGltZW5zaW9uT3JpZ2luEhYKCWNsaWVudF9pZBgBIAEoCUgA",
+            "iAEBEhQKB3VzZXJfaWQYAiABKAVIAYgBARI8Cg9wYXJ0bmVyX3Nlc3Npb24Y",
+            "AyABKAsyHi5hdm4uY29ubmVjdC52MS5QYXJ0bmVyU2Vzc2lvbkgCiAEBQgwK",
+            "Cl9jbGllbnRfaWRCCgoIX3VzZXJfaWRCEgoQX3BhcnRuZXJfc2Vzc2lvbiJn",
+            "ChJEaW1lbnNpb25Ccm9hZGNhc3QSDwoHbWVzc2FnZRgBIAEoCRIkChdhbm5v",
+            "dW5jZXJfY29ubmVjdGlvbl9pZBgCIAEoCUgAiAEBQhoKGF9hbm5vdW5jZXJf",
+            "Y29ubmVjdGlvbl9pZCKYAQoMQWNjZXNzTGltaXRzEhUKDXJvb21fY2FwYWNp",
+            "dHkYASABKAUSGgoSZGltZW5zaW9uX2NhcGFjaXR5GAIgASgFEjwKEmlkZW50",
+            "aXR5X3Byb3ZpZGVycxgDIAMoDjIgLmF2bi5jb25uZWN0LnYxLklkZW50aXR5",
+            "UHJvdmlkZXISFwoPZW1haWxfd2hpdGVsaXN0GAQgAygJIqwBChdTZXRMZXNz",
+            "b25Db250ZXh0UmVxdWVzdBI6CgtjcmVkZW50aWFscxgBIAEoCzIlLmF2bi5j",
+            "b25uZWN0LnYxLkNvbm5lY3Rpb25DcmVkZW50aWFscxIUCgxkaW1lbnNpb25f",
+            "aWQYAiABKAkSMwoHY29udGV4dBgDIAEoCzIdLmF2bi5jb25uZWN0LnYxLkxl",
+            "c3NvbkNvbnRleHRIAIgBAUIKCghfY29udGV4dCJpChhTZXRMZXNzb25Db250",
+            "ZXh0UmVzcG9uc2USLQoFc3RhdGUYASABKA4yHi5hdm4uY29ubmVjdC52MS5P",
+            "cGVyYXRpb25TdGF0ZRITCgZkZXRhaWwYAiABKAlIAIgBAUIJCgdfZGV0YWls",
+            "KnUKDkV4cGlyeVN0cmF0ZWd5Eh8KG0VYUElSWV9TVFJBVEVHWV9VTlNQRUNJ",
+            "RklFRBAAEiIKHkVYUElSWV9TVFJBVEVHWV9BTllfQ09OTkVDVElPThABEh4K",
+            "GkVYUElSWV9TVFJBVEVHWV9PTkxZX09XTkVSEAIyjgMKEERpbWVuc2lvblNl",
+            "cnZpY2USYgoPQ3JlYXRlRGltZW5zaW9uEiYuYXZuLmNvbm5lY3QudjEuQ3Jl",
+            "YXRlRGltZW5zaW9uUmVxdWVzdBonLmF2bi5jb25uZWN0LnYxLkNyZWF0ZURp",
+            "bWVuc2lvblJlc3BvbnNlElYKDEdldERpbWVuc2lvbhIjLmF2bi5jb25uZWN0",
+            "LnYxLkdldERpbWVuc2lvblJlcXVlc3QaIS5hdm4uY29ubmVjdC52MS5EaW1l",
+            "bnNpb25JbnN0YW5jZRJXCg1Kb2luRGltZW5zaW9uEiQuYXZuLmNvbm5lY3Qu",
+            "djEuSm9pbkRpbWVuc2lvblJlcXVlc3QaHi5hdm4uY29ubmVjdC52MS5EaW1l",
+            "bnNpb25FdmVudDABEmUKEFNldExlc3NvbkNvbnRleHQSJy5hdm4uY29ubmVj",
+            "dC52MS5TZXRMZXNzb25Db250ZXh0UmVxdWVzdBooLmF2bi5jb25uZWN0LnYx",
+            "LlNldExlc3NvbkNvbnRleHRSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.PresenceReflection.Descriptor, global::Avn.Connect.V1.ConnectionsReflection.Descriptor, global::Avn.Connect.V1.LessonContextReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, global::Avn.Connect.V1.PartnersReflection.Descriptor, global::Avn.Connect.V1.LicensesReflection.Descriptor, global::Avn.Connect.V1.InteractionPermissionsReflection.Descriptor, global::Avn.Connect.V1.FeaturesReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.ContentReflection.Descriptor, global::Avn.Connect.V1.ClientsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.PresenceReflection.Descriptor, global::Avn.Connect.V1.ConnectionsReflection.Descriptor, global::Avn.Connect.V1.LessonContextReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, global::Avn.Connect.V1.PartnersReflection.Descriptor, global::Avn.Connect.V1.GrantsReflection.Descriptor, global::Avn.Connect.V1.InteractionPermissionsReflection.Descriptor, global::Avn.Connect.V1.FeaturesReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.ContentReflection.Descriptor, global::Avn.Connect.V1.ClientsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.ExpiryStrategy), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateDimensionRequest), global::Avn.Connect.V1.CreateDimensionRequest.Parser, new[]{ "Client", "Auth", "PassId", "PreferredDomain", "Referrer", "ContextOrganizationId" }, new[]{ "Auth", "PassId", "PreferredDomain", "Referrer", "ContextOrganizationId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateDimensionResponse), global::Avn.Connect.V1.CreateDimensionResponse.Parser, new[]{ "DimensionId" }, null, null, null, null),
@@ -112,7 +112,7 @@ namespace Avn.Connect.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionEvent), global::Avn.Connect.V1.DimensionEvent.Parser, new[]{ "Status", "Info", "Connection", "Broadcast", "Presence", "Lesson" }, new[]{ "Status", "Info", "Connection", "Broadcast", "Presence", "Lesson" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionStatus), global::Avn.Connect.V1.DimensionStatus.Parser, new[]{ "State", "Detail" }, new[]{ "Detail" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionInstance), global::Avn.Connect.V1.DimensionInstance.Parser, new[]{ "Info", "Content", "Permissions", "Features" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionInfo), global::Avn.Connect.V1.DimensionInfo.Parser, new[]{ "Id", "Name", "Created", "ExpiryStrategy", "Domain", "PassId", "AccessLimits", "Origin", "Licenses", "EntryMessage" }, new[]{ "PassId", "EntryMessage" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionInfo), global::Avn.Connect.V1.DimensionInfo.Parser, new[]{ "Id", "Name", "Created", "ExpiryStrategy", "Domain", "PassId", "AccessLimits", "Origin", "Grants", "EntryMessage" }, new[]{ "PassId", "EntryMessage" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionOrigin), global::Avn.Connect.V1.DimensionOrigin.Parser, new[]{ "ClientId", "UserId", "PartnerSession" }, new[]{ "ClientId", "UserId", "PartnerSession" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.DimensionBroadcast), global::Avn.Connect.V1.DimensionBroadcast.Parser, new[]{ "Message", "AnnouncerConnectionId" }, new[]{ "AnnouncerConnectionId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AccessLimits), global::Avn.Connect.V1.AccessLimits.Parser, new[]{ "RoomCapacity", "DimensionCapacity", "IdentityProviders", "EmailWhitelist" }, null, null, null, null),
@@ -2523,7 +2523,7 @@ namespace Avn.Connect.V1 {
       passId_ = other.passId_;
       accessLimits_ = other.accessLimits_ != null ? other.accessLimits_.Clone() : null;
       origin_ = other.origin_ != null ? other.origin_.Clone() : null;
-      licenses_ = other.licenses_.Clone();
+      grants_ = other.grants_.Clone();
       entryMessage_ = other.entryMessage_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2668,18 +2668,18 @@ namespace Avn.Connect.V1 {
       }
     }
 
-    /// <summary>Field number for the "licenses" field.</summary>
-    public const int LicensesFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::Avn.Connect.V1.LicenseInfo> _repeated_licenses_codec
-        = pb::FieldCodec.ForMessage(74, global::Avn.Connect.V1.LicenseInfo.Parser);
-    private readonly pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo> licenses_ = new pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo>();
+    /// <summary>Field number for the "grants" field.</summary>
+    public const int GrantsFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Avn.Connect.V1.GrantInfo> _repeated_grants_codec
+        = pb::FieldCodec.ForMessage(74, global::Avn.Connect.V1.GrantInfo.Parser);
+    private readonly pbc::RepeatedField<global::Avn.Connect.V1.GrantInfo> grants_ = new pbc::RepeatedField<global::Avn.Connect.V1.GrantInfo>();
     /// <summary>
-    /// Licenses associated with this dimension
+    /// Grants associated with this dimension
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Avn.Connect.V1.LicenseInfo> Licenses {
-      get { return licenses_; }
+    public pbc::RepeatedField<global::Avn.Connect.V1.GrantInfo> Grants {
+      get { return grants_; }
     }
 
     /// <summary>Field number for the "entry_message" field.</summary>
@@ -2734,7 +2734,7 @@ namespace Avn.Connect.V1 {
       if (PassId != other.PassId) return false;
       if (!object.Equals(AccessLimits, other.AccessLimits)) return false;
       if (!object.Equals(Origin, other.Origin)) return false;
-      if(!licenses_.Equals(other.licenses_)) return false;
+      if(!grants_.Equals(other.grants_)) return false;
       if (EntryMessage != other.EntryMessage) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2751,7 +2751,7 @@ namespace Avn.Connect.V1 {
       if (HasPassId) hash ^= PassId.GetHashCode();
       if (accessLimits_ != null) hash ^= AccessLimits.GetHashCode();
       if (origin_ != null) hash ^= Origin.GetHashCode();
-      hash ^= licenses_.GetHashCode();
+      hash ^= grants_.GetHashCode();
       if (HasEntryMessage) hash ^= EntryMessage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2803,7 +2803,7 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(66);
         output.WriteMessage(Origin);
       }
-      licenses_.WriteTo(output, _repeated_licenses_codec);
+      grants_.WriteTo(output, _repeated_grants_codec);
       if (HasEntryMessage) {
         output.WriteRawTag(82);
         output.WriteString(EntryMessage);
@@ -2850,7 +2850,7 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(66);
         output.WriteMessage(Origin);
       }
-      licenses_.WriteTo(ref output, _repeated_licenses_codec);
+      grants_.WriteTo(ref output, _repeated_grants_codec);
       if (HasEntryMessage) {
         output.WriteRawTag(82);
         output.WriteString(EntryMessage);
@@ -2889,7 +2889,7 @@ namespace Avn.Connect.V1 {
       if (origin_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Origin);
       }
-      size += licenses_.CalculateSize(_repeated_licenses_codec);
+      size += grants_.CalculateSize(_repeated_grants_codec);
       if (HasEntryMessage) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(EntryMessage);
       }
@@ -2938,7 +2938,7 @@ namespace Avn.Connect.V1 {
         }
         Origin.MergeFrom(other.Origin);
       }
-      licenses_.Add(other.licenses_);
+      grants_.Add(other.grants_);
       if (other.HasEntryMessage) {
         EntryMessage = other.EntryMessage;
       }
@@ -3003,7 +3003,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 74: {
-            licenses_.AddEntriesFrom(input, _repeated_licenses_codec);
+            grants_.AddEntriesFrom(input, _repeated_grants_codec);
             break;
           }
           case 82: {
@@ -3071,7 +3071,7 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 74: {
-            licenses_.AddEntriesFrom(ref input, _repeated_licenses_codec);
+            grants_.AddEntriesFrom(ref input, _repeated_grants_codec);
             break;
           }
           case 82: {

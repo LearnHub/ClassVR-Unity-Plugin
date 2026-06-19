@@ -53,7 +53,7 @@ namespace Avn.Connect.V1 {
             "dXBJZBIYChRUQUdfR1JPVVBfSURfVU5LTk9XThAAEhgKFFRBR19HUk9VUF9J",
             "RF9TVUJKRUNUEAESGgoWVEFHX0dST1VQX0lEX0FHRV9SQU5HRRACEhkKFVRB",
             "R19HUk9VUF9JRF9QTEFURk9STRAKEhYKElRBR19HUk9VUF9JRF9NRURJQRAc",
-            "EhsKF1RBR19HUk9VUF9JRF9ERVBSRUNBVEVEEE4qrAcKBVRhZ0lkEhIKDlRB",
+            "EhsKF1RBR19HUk9VUF9JRF9ERVBSRUNBVEVEEE4q+gcKBVRhZ0lkEhIKDlRB",
             "R19JRF9VTktOT1dOEAASFwoSVEFHX0lEX0VEVVZFUlNFX0FJELkVEhgKE1RB",
             "R19JRF9BSV9HRU5FUkFURUQQuxUSFQoQVEFHX0lEX1NLWUJPWF9BSRC6FRIY",
             "ChNUQUdfSURfQ0xBU1NfQ0FOVkFTENoVEhkKFFRBR19JRF9OT1RfQlJPV1NB",
@@ -70,15 +70,17 @@ namespace Avn.Connect.V1 {
             "CgxUQUdfSURfTU9ERUwQxhISEQoMVEFHX0lEX0FVRElPEN8UEhEKDFRBR19J",
             "RF9JTUFHRRDIEhIRCgxUQUdfSURfVklERU8QyRISEQoMVEFHX0lEX1RPUElD",
             "ELUVEhUKEFRBR19JRF9USFJFRV9ET0YQ2BUSEwoOVEFHX0lEX1NJWF9ET0YQ",
-            "2RUSFgoRVEFHX0lEX0VYUExPREFCTEUQ7BUSHAoYVEFHX0lEX0FHRV9SQU5H",
-            "RV9VTkRFUl81EBESGwoXVEFHX0lEX0FHRV9SQU5HRV81X1RPXzcQEhIcChhU",
-            "QUdfSURfQUdFX1JBTkdFXzdfVE9fMTEQExIdChlUQUdfSURfQUdFX1JBTkdF",
-            "XzExX1RPXzE0EBQSHQoZVEFHX0lEX0FHRV9SQU5HRV8xNF9UT18xNhAVEhwK",
-            "GFRBR19JRF9BR0VfUkFOR0VfT1ZFUl8xNhAWMrABCgpUYWdTZXJ2aWNlEkoK",
-            "B0dldFRhZ3MSHi5hdm4uY29ubmVjdC52MS5HZXRUYWdzUmVxdWVzdBofLmF2",
-            "bi5jb25uZWN0LnYxLkdldFRhZ3NSZXNwb25zZRJWCgtHZXRUYWdHcm91cBIi",
-            "LmF2bi5jb25uZWN0LnYxLkdldFRhZ0dyb3VwUmVxdWVzdBojLmF2bi5jb25u",
-            "ZWN0LnYxLkdldFRhZ0dyb3VwUmVzcG9uc2ViBnByb3RvMw=="));
+            "2RUSFgoRVEFHX0lEX0VYUExPREFCTEUQ7BUSHAoXVEFHX0lEX0lOVEVSTkFM",
+            "X0lOU1RBTEwQyxESHAoXVEFHX0lEX0ZPUkNFXzJEX0lOU1RBTEwQ+hISEAoL",
+            "VEFHX0lEX0JFVEEQ6RQSHAoYVEFHX0lEX0FHRV9SQU5HRV9VTkRFUl81EBES",
+            "GwoXVEFHX0lEX0FHRV9SQU5HRV81X1RPXzcQEhIcChhUQUdfSURfQUdFX1JB",
+            "TkdFXzdfVE9fMTEQExIdChlUQUdfSURfQUdFX1JBTkdFXzExX1RPXzE0EBQS",
+            "HQoZVEFHX0lEX0FHRV9SQU5HRV8xNF9UT18xNhAVEhwKGFRBR19JRF9BR0Vf",
+            "UkFOR0VfT1ZFUl8xNhAWMrABCgpUYWdTZXJ2aWNlEkoKB0dldFRhZ3MSHi5h",
+            "dm4uY29ubmVjdC52MS5HZXRUYWdzUmVxdWVzdBofLmF2bi5jb25uZWN0LnYx",
+            "LkdldFRhZ3NSZXNwb25zZRJWCgtHZXRUYWdHcm91cBIiLmF2bi5jb25uZWN0",
+            "LnYxLkdldFRhZ0dyb3VwUmVxdWVzdBojLmF2bi5jb25uZWN0LnYxLkdldFRh",
+            "Z0dyb3VwUmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.TagFilterCondition), typeof(global::Avn.Connect.V1.TagGroupId), typeof(global::Avn.Connect.V1.TagId), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -237,6 +239,18 @@ namespace Avn.Connect.V1 {
     /// </summary>
     [pbr::OriginalName("TAG_ID_SIX_DOF")] SixDof = 2777,
     [pbr::OriginalName("TAG_ID_EXPLODABLE")] Explodable = 2796,
+    /// <summary>
+    /// client install: install silently/internally
+    /// </summary>
+    [pbr::OriginalName("TAG_ID_INTERNAL_INSTALL")] InternalInstall = 2251,
+    /// <summary>
+    /// client install: force 2D install mode
+    /// </summary>
+    [pbr::OriginalName("TAG_ID_FORCE_2D_INSTALL")] Force2DInstall = 2426,
+    /// <summary>
+    /// (currently unused in the client) 
+    /// </summary>
+    [pbr::OriginalName("TAG_ID_BETA")] Beta = 2665,
     [pbr::OriginalName("TAG_ID_AGE_RANGE_UNDER_5")] AgeRangeUnder5 = 17,
     [pbr::OriginalName("TAG_ID_AGE_RANGE_5_TO_7")] AgeRange5To7 = 18,
     [pbr::OriginalName("TAG_ID_AGE_RANGE_7_TO_11")] AgeRange7To11 = 19,

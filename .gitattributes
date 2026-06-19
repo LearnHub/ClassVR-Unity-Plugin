@@ -1,0 +1,11 @@
+# Normalise line endings so editors/formatters can't churn the whole file to CRLF
+# on a repo that is otherwise LF (the existing source and Unity-generated files are LF).
+*.cs       text eol=lf
+*.asmdef   text eol=lf
+*.meta     text eol=lf
+*.json     text eol=lf
+*.md       text eol=lf
+
+# Precompiled / native dependencies must never be touched.
+*.dll      binary
+*.aar      binary

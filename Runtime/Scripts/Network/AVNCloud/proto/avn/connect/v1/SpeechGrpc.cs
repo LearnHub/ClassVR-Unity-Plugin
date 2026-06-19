@@ -46,17 +46,29 @@ namespace Avn.Connect.V1 {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetCapabilitiesRequest> __Marshaller_avn_connect_v1_GetCapabilitiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetCapabilitiesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetCapabilitiesResponse> __Marshaller_avn_connect_v1_GetCapabilitiesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetCapabilitiesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.SynthesizeSpeechRequest> __Marshaller_avn_connect_v1_SynthesizeSpeechRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SynthesizeSpeechRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.SynthesizeSpeechResponse> __Marshaller_avn_connect_v1_SynthesizeSpeechResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SynthesizeSpeechResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.SynthesizeTranscriptRequest> __Marshaller_avn_connect_v1_SynthesizeTranscriptRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SynthesizeTranscriptRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Avn.Connect.V1.SynthesizeResponse> __Marshaller_avn_connect_v1_SynthesizeResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SynthesizeResponse.Parser));
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.SynthesizeTranscriptResponse> __Marshaller_avn_connect_v1_SynthesizeTranscriptResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SynthesizeTranscriptResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetCapabilitiesRequest> __Marshaller_avn_connect_v1_GetCapabilitiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetCapabilitiesRequest.Parser));
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.PronunciationAnalysisRequest> __Marshaller_avn_connect_v1_PronunciationAnalysisRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.PronunciationAnalysisRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetCapabilitiesResponse> __Marshaller_avn_connect_v1_GetCapabilitiesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetCapabilitiesResponse.Parser));
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.PronunciationAnalysisResponse> __Marshaller_avn_connect_v1_PronunciationAnalysisResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.PronunciationAnalysisResponse.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetCapabilitiesRequest, global::Avn.Connect.V1.GetCapabilitiesResponse> __Method_GetCapabilities = new grpc::Method<global::Avn.Connect.V1.GetCapabilitiesRequest, global::Avn.Connect.V1.GetCapabilitiesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetCapabilities",
+        __Marshaller_avn_connect_v1_GetCapabilitiesRequest,
+        __Marshaller_avn_connect_v1_GetCapabilitiesResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.SynthesizeSpeechRequest, global::Avn.Connect.V1.SynthesizeSpeechResponse> __Method_SynthesizeSpeech = new grpc::Method<global::Avn.Connect.V1.SynthesizeSpeechRequest, global::Avn.Connect.V1.SynthesizeSpeechResponse>(
@@ -67,20 +79,20 @@ namespace Avn.Connect.V1 {
         __Marshaller_avn_connect_v1_SynthesizeSpeechResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Avn.Connect.V1.SynthesizeTranscriptRequest, global::Avn.Connect.V1.SynthesizeResponse> __Method_SynthesizeTranscript = new grpc::Method<global::Avn.Connect.V1.SynthesizeTranscriptRequest, global::Avn.Connect.V1.SynthesizeResponse>(
+    static readonly grpc::Method<global::Avn.Connect.V1.SynthesizeTranscriptRequest, global::Avn.Connect.V1.SynthesizeTranscriptResponse> __Method_SynthesizeTranscript = new grpc::Method<global::Avn.Connect.V1.SynthesizeTranscriptRequest, global::Avn.Connect.V1.SynthesizeTranscriptResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SynthesizeTranscript",
         __Marshaller_avn_connect_v1_SynthesizeTranscriptRequest,
-        __Marshaller_avn_connect_v1_SynthesizeResponse);
+        __Marshaller_avn_connect_v1_SynthesizeTranscriptResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::Avn.Connect.V1.GetCapabilitiesRequest, global::Avn.Connect.V1.GetCapabilitiesResponse> __Method_GetCapabilities = new grpc::Method<global::Avn.Connect.V1.GetCapabilitiesRequest, global::Avn.Connect.V1.GetCapabilitiesResponse>(
+    static readonly grpc::Method<global::Avn.Connect.V1.PronunciationAnalysisRequest, global::Avn.Connect.V1.PronunciationAnalysisResponse> __Method_PronunciationAnalysis = new grpc::Method<global::Avn.Connect.V1.PronunciationAnalysisRequest, global::Avn.Connect.V1.PronunciationAnalysisResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "GetCapabilities",
-        __Marshaller_avn_connect_v1_GetCapabilitiesRequest,
-        __Marshaller_avn_connect_v1_GetCapabilitiesResponse);
+        "PronunciationAnalysis",
+        __Marshaller_avn_connect_v1_PronunciationAnalysisRequest,
+        __Marshaller_avn_connect_v1_PronunciationAnalysisResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -115,6 +127,54 @@ namespace Avn.Connect.V1 {
       {
       }
 
+      /// <summary>
+      /// Capabilities of the speech engine
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetCapabilitiesResponse GetCapabilities(global::Avn.Connect.V1.GetCapabilitiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCapabilities(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Capabilities of the speech engine
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetCapabilitiesResponse GetCapabilities(global::Avn.Connect.V1.GetCapabilitiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetCapabilities, null, options, request);
+      }
+      /// <summary>
+      /// Capabilities of the speech engine
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetCapabilitiesResponse> GetCapabilitiesAsync(global::Avn.Connect.V1.GetCapabilitiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetCapabilitiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Capabilities of the speech engine
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetCapabilitiesResponse> GetCapabilitiesAsync(global::Avn.Connect.V1.GetCapabilitiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetCapabilities, null, options, request);
+      }
       /// <summary>
       /// Synthesize speech from a text string
       /// </summary>
@@ -172,7 +232,7 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.SynthesizeResponse SynthesizeTranscript(global::Avn.Connect.V1.SynthesizeTranscriptRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Avn.Connect.V1.SynthesizeTranscriptResponse SynthesizeTranscript(global::Avn.Connect.V1.SynthesizeTranscriptRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SynthesizeTranscript(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -183,7 +243,7 @@ namespace Avn.Connect.V1 {
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.SynthesizeResponse SynthesizeTranscript(global::Avn.Connect.V1.SynthesizeTranscriptRequest request, grpc::CallOptions options)
+      public virtual global::Avn.Connect.V1.SynthesizeTranscriptResponse SynthesizeTranscript(global::Avn.Connect.V1.SynthesizeTranscriptRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_SynthesizeTranscript, null, options, request);
       }
@@ -196,7 +256,7 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.SynthesizeResponse> SynthesizeTranscriptAsync(global::Avn.Connect.V1.SynthesizeTranscriptRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.SynthesizeTranscriptResponse> SynthesizeTranscriptAsync(global::Avn.Connect.V1.SynthesizeTranscriptRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SynthesizeTranscriptAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
@@ -207,12 +267,12 @@ namespace Avn.Connect.V1 {
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.SynthesizeResponse> SynthesizeTranscriptAsync(global::Avn.Connect.V1.SynthesizeTranscriptRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.SynthesizeTranscriptResponse> SynthesizeTranscriptAsync(global::Avn.Connect.V1.SynthesizeTranscriptRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SynthesizeTranscript, null, options, request);
       }
       /// <summary>
-      /// Capabilities of the speech engine
+      /// Analyze pronunciation: extract phonemes from audio and/or text
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -220,23 +280,23 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.GetCapabilitiesResponse GetCapabilities(global::Avn.Connect.V1.GetCapabilitiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Avn.Connect.V1.PronunciationAnalysisResponse PronunciationAnalysis(global::Avn.Connect.V1.PronunciationAnalysisRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetCapabilities(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return PronunciationAnalysis(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Capabilities of the speech engine
+      /// Analyze pronunciation: extract phonemes from audio and/or text
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::Avn.Connect.V1.GetCapabilitiesResponse GetCapabilities(global::Avn.Connect.V1.GetCapabilitiesRequest request, grpc::CallOptions options)
+      public virtual global::Avn.Connect.V1.PronunciationAnalysisResponse PronunciationAnalysis(global::Avn.Connect.V1.PronunciationAnalysisRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_GetCapabilities, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_PronunciationAnalysis, null, options, request);
       }
       /// <summary>
-      /// Capabilities of the speech engine
+      /// Analyze pronunciation: extract phonemes from audio and/or text
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -244,20 +304,20 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetCapabilitiesResponse> GetCapabilitiesAsync(global::Avn.Connect.V1.GetCapabilitiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.PronunciationAnalysisResponse> PronunciationAnalysisAsync(global::Avn.Connect.V1.PronunciationAnalysisRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return GetCapabilitiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return PronunciationAnalysisAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Capabilities of the speech engine
+      /// Analyze pronunciation: extract phonemes from audio and/or text
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetCapabilitiesResponse> GetCapabilitiesAsync(global::Avn.Connect.V1.GetCapabilitiesRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.PronunciationAnalysisResponse> PronunciationAnalysisAsync(global::Avn.Connect.V1.PronunciationAnalysisRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_GetCapabilities, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_PronunciationAnalysis, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

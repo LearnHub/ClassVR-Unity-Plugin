@@ -28,28 +28,36 @@ namespace Avn.Connect.V1 {
             "djEaH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aImF2bi9jb25u",
             "ZWN0L3YxL2F1dGhvcml6YXRpb24ucHJvdG8aHWF2bi9jb25uZWN0L3YxL2Vu",
             "dGl0aWVzLnByb3RvGiFhdm4vY29ubmVjdC92MS90cmFuc2xhdGlvbnMucHJv",
-            "dG8i3gEKB0NoYW5uZWwSEQoJZW50aXR5X2lkGAEgASgFEhEKBG5hbWUYAiAB",
+            "dG8i2AIKB0NoYW5uZWwSEQoJZW50aXR5X2lkGAEgASgFEhEKBG5hbWUYAiAB",
             "KAlCA8A+ARIQCghpY29uX3VybBgDIAEoCRIrCgdjcmVhdGVkGAQgASgLMhou",
             "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIrCgd1cGRhdGVkGAUgASgLMhou",
             "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIdCgtkZXNjcmlwdGlvbhgGIAEo",
-            "CUIDwD4BSACIAQESEgoKcGxhbl9jb2RlcxgHIAMoCUIOCgxfZGVzY3JpcHRp",
-            "b24yvAQKDkNoYW5uZWxTZXJ2aWNlEkcKCkdldENoYW5uZWwSIC5hdm4uY29u",
-            "bmVjdC52MS5HZXRFbnRpdHlSZXF1ZXN0GhcuYXZuLmNvbm5lY3QudjEuQ2hh",
-            "bm5lbBJlChRHZXRCcm93c2FibGVDaGFubmVscxIlLmF2bi5jb25uZWN0LnYx",
-            "LkVudGl0eUluZm9MaXN0UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLkVudGl0",
-            "eUluZm9MaXN0UmVzcG9uc2USXAoLR2V0Q2hhbm5lbHMSJS5hdm4uY29ubmVj",
-            "dC52MS5FbnRpdHlJbmZvTGlzdFJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5F",
-            "bnRpdHlJbmZvTGlzdFJlc3BvbnNlElwKC0dldFByb2ZpbGVzEiUuYXZuLmNv",
-            "bm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNvbm5lY3Qu",
-            "djEuRW50aXR5SW5mb0xpc3RSZXNwb25zZRJeCg1HZXRDYXRlZ29yaWVzEiUu",
+            "CUIDwD4BSACIAQESEgoKcGxhbl9jb2RlcxgHIAMoCRIyCglwdWJsaXNoZWQY",
+            "CCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wSAGIAQESEAoIbGlj",
+            "ZW5zZWQYCSABKAgSEQoJcGVybWl0dGVkGAogASgIEhEKCWF2YWlsYWJsZRgL",
+            "IAEoCEIOCgxfZGVzY3JpcHRpb25CDAoKX3B1Ymxpc2hlZDKQBgoOQ2hhbm5l",
+            "bFNlcnZpY2USRwoKR2V0Q2hhbm5lbBIgLmF2bi5jb25uZWN0LnYxLkdldEVu",
+            "dGl0eVJlcXVlc3QaFy5hdm4uY29ubmVjdC52MS5DaGFubmVsEmUKFEdldEJy",
+            "b3dzYWJsZUNoYW5uZWxzEiUuYXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xp",
+            "c3RSZXF1ZXN0GiYuYXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXNw",
+            "b25zZRJkChNHZXRMaWNlbnNlZENoYW5uZWxzEiUuYXZuLmNvbm5lY3QudjEu",
+            "RW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNvbm5lY3QudjEuRW50aXR5",
+            "SW5mb0xpc3RSZXNwb25zZRJgCg9HZXRCdWxrQ2hhbm5lbHMSJS5hdm4uY29u",
+            "bmVjdC52MS5FbnRpdHlJbmZvTGlzdFJlcXVlc3QaJi5hdm4uY29ubmVjdC52",
+            "MS5FbnRpdHlJbmZvTGlzdFJlc3BvbnNlEl8KDlNlYXJjaENoYW5uZWxzEiUu",
             "YXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYuYXZuLmNv",
-            "bm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXNwb25zZRJeCg1HZXRBY3Rpdml0",
-            "aWVzEiUuYXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXF1ZXN0GiYu",
-            "YXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXNwb25zZWIGcHJvdG8z"));
+            "bm5lY3QudjEuRW50aXR5SW5mb0xpc3RSZXNwb25zZRJfCg5TZWFyY2hQcm9m",
+            "aWxlcxIlLmF2bi5jb25uZWN0LnYxLkVudGl0eUluZm9MaXN0UmVxdWVzdBom",
+            "LmF2bi5jb25uZWN0LnYxLkVudGl0eUluZm9MaXN0UmVzcG9uc2USYQoQU2Vh",
+            "cmNoQ2F0ZWdvcmllcxIlLmF2bi5jb25uZWN0LnYxLkVudGl0eUluZm9MaXN0",
+            "UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLkVudGl0eUluZm9MaXN0UmVzcG9u",
+            "c2USYQoQU2VhcmNoQWN0aXZpdGllcxIlLmF2bi5jb25uZWN0LnYxLkVudGl0",
+            "eUluZm9MaXN0UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLkVudGl0eUluZm9M",
+            "aXN0UmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Channel), global::Avn.Connect.V1.Channel.Parser, new[]{ "EntityId", "Name", "IconUrl", "Created", "Updated", "Description", "PlanCodes" }, new[]{ "Description" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Channel), global::Avn.Connect.V1.Channel.Parser, new[]{ "EntityId", "Name", "IconUrl", "Created", "Updated", "Description", "PlanCodes", "Published", "Licensed", "Permitted", "Available" }, new[]{ "Description", "Published" }, null, null, null)
           }));
     }
     #endregion
@@ -98,6 +106,10 @@ namespace Avn.Connect.V1 {
       updated_ = other.updated_ != null ? other.updated_.Clone() : null;
       description_ = other.description_;
       planCodes_ = other.planCodes_.Clone();
+      published_ = other.published_ != null ? other.published_.Clone() : null;
+      licensed_ = other.licensed_;
+      permitted_ = other.permitted_;
+      available_ = other.available_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -141,7 +153,7 @@ namespace Avn.Connect.V1 {
     public const int IconUrlFieldNumber = 3;
     private string iconUrl_ = "";
     /// <summary>
-    /// Icon to use for the channel
+    /// Icon URL for the channel. Accepted media types: image/png, image/jpeg, image/svg+xml
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -217,12 +229,72 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForString(58);
     private readonly pbc::RepeatedField<string> planCodes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// License plan codes that enable this channel
+    /// Plan codes that enable this channel
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> PlanCodes {
       get { return planCodes_; }
+    }
+
+    /// <summary>Field number for the "published" field.</summary>
+    public const int PublishedFieldNumber = 8;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp published_;
+    /// <summary>
+    /// When channel was published or unset if not published
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Published {
+      get { return published_; }
+      set {
+        published_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "licensed" field.</summary>
+    public const int LicensedFieldNumber = 9;
+    private bool licensed_;
+    /// <summary>
+    /// Is the channel licensed?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Licensed {
+      get { return licensed_; }
+      set {
+        licensed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "permitted" field.</summary>
+    public const int PermittedFieldNumber = 10;
+    private bool permitted_;
+    /// <summary>
+    /// Is the channel permitted?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Permitted {
+      get { return permitted_; }
+      set {
+        permitted_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "available" field.</summary>
+    public const int AvailableFieldNumber = 11;
+    private bool available_;
+    /// <summary>
+    /// Is the channel available to use?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Available {
+      get { return available_; }
+      set {
+        available_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -247,6 +319,10 @@ namespace Avn.Connect.V1 {
       if (!object.Equals(Updated, other.Updated)) return false;
       if (Description != other.Description) return false;
       if(!planCodes_.Equals(other.planCodes_)) return false;
+      if (!object.Equals(Published, other.Published)) return false;
+      if (Licensed != other.Licensed) return false;
+      if (Permitted != other.Permitted) return false;
+      if (Available != other.Available) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -261,6 +337,10 @@ namespace Avn.Connect.V1 {
       if (updated_ != null) hash ^= Updated.GetHashCode();
       if (HasDescription) hash ^= Description.GetHashCode();
       hash ^= planCodes_.GetHashCode();
+      if (published_ != null) hash ^= Published.GetHashCode();
+      if (Licensed != false) hash ^= Licensed.GetHashCode();
+      if (Permitted != false) hash ^= Permitted.GetHashCode();
+      if (Available != false) hash ^= Available.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -304,6 +384,22 @@ namespace Avn.Connect.V1 {
         output.WriteString(Description);
       }
       planCodes_.WriteTo(output, _repeated_planCodes_codec);
+      if (published_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Published);
+      }
+      if (Licensed != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(Licensed);
+      }
+      if (Permitted != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(Permitted);
+      }
+      if (Available != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(Available);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -339,6 +435,22 @@ namespace Avn.Connect.V1 {
         output.WriteString(Description);
       }
       planCodes_.WriteTo(ref output, _repeated_planCodes_codec);
+      if (published_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Published);
+      }
+      if (Licensed != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(Licensed);
+      }
+      if (Permitted != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(Permitted);
+      }
+      if (Available != false) {
+        output.WriteRawTag(88);
+        output.WriteBool(Available);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -368,6 +480,18 @@ namespace Avn.Connect.V1 {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Description);
       }
       size += planCodes_.CalculateSize(_repeated_planCodes_codec);
+      if (published_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Published);
+      }
+      if (Licensed != false) {
+        size += 1 + 1;
+      }
+      if (Permitted != false) {
+        size += 1 + 1;
+      }
+      if (Available != false) {
+        size += 1 + 1;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -405,6 +529,21 @@ namespace Avn.Connect.V1 {
         Description = other.Description;
       }
       planCodes_.Add(other.planCodes_);
+      if (other.published_ != null) {
+        if (published_ == null) {
+          Published = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Published.MergeFrom(other.Published);
+      }
+      if (other.Licensed != false) {
+        Licensed = other.Licensed;
+      }
+      if (other.Permitted != false) {
+        Permitted = other.Permitted;
+      }
+      if (other.Available != false) {
+        Available = other.Available;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -458,6 +597,25 @@ namespace Avn.Connect.V1 {
             planCodes_.AddEntriesFrom(input, _repeated_planCodes_codec);
             break;
           }
+          case 66: {
+            if (published_ == null) {
+              Published = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Published);
+            break;
+          }
+          case 72: {
+            Licensed = input.ReadBool();
+            break;
+          }
+          case 80: {
+            Permitted = input.ReadBool();
+            break;
+          }
+          case 88: {
+            Available = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -509,6 +667,25 @@ namespace Avn.Connect.V1 {
           }
           case 58: {
             planCodes_.AddEntriesFrom(ref input, _repeated_planCodes_codec);
+            break;
+          }
+          case 66: {
+            if (published_ == null) {
+              Published = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Published);
+            break;
+          }
+          case 72: {
+            Licensed = input.ReadBool();
+            break;
+          }
+          case 80: {
+            Permitted = input.ReadBool();
+            break;
+          }
+          case 88: {
+            Available = input.ReadBool();
             break;
           }
         }

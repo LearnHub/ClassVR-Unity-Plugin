@@ -27,56 +27,111 @@ namespace Avn.Connect.V1 {
             "Chthdm4vY29ubmVjdC92MS9zcGVlY2gucHJvdG8SDmF2bi5jb25uZWN0LnYx",
             "Ghtnb29nbGUvcHJvdG9idWYvZW1wdHkucHJvdG8aImF2bi9jb25uZWN0L3Yx",
             "L2F1dGhvcml6YXRpb24ucHJvdG8aIWF2bi9jb25uZWN0L3YxL3RyYW5zbGF0",
-            "aW9ucy5wcm90byLKAQoXU3ludGhlc2l6ZVNwZWVjaFJlcXVlc3QSKwoEYXV0",
+            "aW9ucy5wcm90byKoAgoXU3ludGhlc2l6ZVNwZWVjaFJlcXVlc3QSKwoEYXV0",
             "aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SDAoEdGV4",
-            "dBgCIAEoCRITCgtsYW5ndWFnZV9pZBgDIAEoCRItCgZnZW5kZXIYBCABKA4y",
-            "HS5hdm4uY29ubmVjdC52MS5TcGVha2VyR2VuZGVyEjAKDHNwZWVjaF9mbGFn",
-            "cxgFIAMoDjIaLmF2bi5jb25uZWN0LnYxLlNwZWVjaEZsYWciaQoYU3ludGhl",
-            "c2l6ZVNwZWVjaFJlc3BvbnNlEhEKCWF1ZGlvX3VybBgBIAEoCRIYChBkdXJh",
-            "dGlvbl9zZWNvbmRzGAIgASgCEg4KBmVycm9ycxgDIAMoCRIQCgh3YXJuaW5n",
-            "cxgEIAMoCSJiChtTeW50aGVzaXplVHJhbnNjcmlwdFJlcXVlc3QSKwoEYXV0",
-            "aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24SFgoOdHJh",
-            "bnNjcmlwdF91cmwYAiABKAkiSgoSU3ludGhlc2l6ZVJlc3BvbnNlEhIKCnNw",
-            "ZWVjaF91cmwYASABKAkSDgoGZXJyb3JzGAIgAygJEhAKCHdhcm5pbmdzGAMg",
-            "AygJIjkKBlNwZWVjaBIvCghzZWdtZW50cxgBIAMoCzIdLmF2bi5jb25uZWN0",
-            "LnYxLlNwZWVjaFNlZ21lbnQiPAoNU3BlZWNoU2VnbWVudBIRCglhdWRpb191",
-            "cmwYASABKAkSGAoQZHVyYXRpb25fc2Vjb25kcxgCIAEoAiKaAQoHU3BlYWtl",
-            "chISCgpzcGVha2VyX2lkGAEgASgFEi0KBmdlbmRlchgCIAEoDjIdLmF2bi5j",
-            "b25uZWN0LnYxLlNwZWFrZXJHZW5kZXISEQoEbmFtZRgDIAEoCUgAiAEBEjAK",
-            "DHNwZWVjaF9mbGFncxgEIAMoDjIaLmF2bi5jb25uZWN0LnYxLlNwZWVjaEZs",
-            "YWdCBwoFX25hbWUiGAoWR2V0Q2FwYWJpbGl0aWVzUmVxdWVzdCI3ChdHZXRD",
-            "YXBhYmlsaXRpZXNSZXNwb25zZRIcChRzdXBwb3J0ZWRMYW5ndWFnZUlkcxgB",
-            "IAMoCSp/Cg1TcGVha2VyR2VuZGVyEh4KGlNQRUFLRVJfR0VOREVSX1VOU1BF",
-            "Q0lGSUVEEAASGgoWU1BFQUtFUl9HRU5ERVJfTkVVVFJBTBABEhcKE1NQRUFL",
-            "RVJfR0VOREVSX01BTEUQAhIZChVTUEVBS0VSX0dFTkRFUl9GRU1BTEUQAypg",
-            "CgpTcGVlY2hGbGFnEhsKF1NQRUVDSF9GTEFHX1VOU1BFQ0lGSUVEEAASHgoa",
-            "U1BFRUNIX0ZMQUdfTk9fVFJBTlNMQVRJT04QARIVChFTUEVFQ0hfRkxBR19D",
-            "SElMRBACMsMCCg1TcGVlY2hTZXJ2aWNlEmUKEFN5bnRoZXNpemVTcGVlY2gS",
-            "Jy5hdm4uY29ubmVjdC52MS5TeW50aGVzaXplU3BlZWNoUmVxdWVzdBooLmF2",
-            "bi5jb25uZWN0LnYxLlN5bnRoZXNpemVTcGVlY2hSZXNwb25zZRJnChRTeW50",
-            "aGVzaXplVHJhbnNjcmlwdBIrLmF2bi5jb25uZWN0LnYxLlN5bnRoZXNpemVU",
-            "cmFuc2NyaXB0UmVxdWVzdBoiLmF2bi5jb25uZWN0LnYxLlN5bnRoZXNpemVS",
-            "ZXNwb25zZRJiCg9HZXRDYXBhYmlsaXRpZXMSJi5hdm4uY29ubmVjdC52MS5H",
-            "ZXRDYXBhYmlsaXRpZXNSZXF1ZXN0GicuYXZuLmNvbm5lY3QudjEuR2V0Q2Fw",
-            "YWJpbGl0aWVzUmVzcG9uc2ViBnByb3RvMw=="));
+            "dBgCIAEoCRISCgpzcGVha2VyX2lkGAYgASgFEhMKC2xhbmd1YWdlX2lkGAMg",
+            "ASgJEi0KBmdlbmRlchgEIAEoDjIdLmF2bi5jb25uZWN0LnYxLlNwZWFrZXJH",
+            "ZW5kZXISMAoMc3BlZWNoX2ZsYWdzGAUgAygOMhouYXZuLmNvbm5lY3QudjEu",
+            "U3BlZWNoRmxhZxI4CgtvdXRwdXRfc3BlYxgHIAEoCzIeLmF2bi5jb25uZWN0",
+            "LnYxLlNwZWVjaEZpbGVTcGVjSACIAQFCDgoMX291dHB1dF9zcGVjIp0BChhT",
+            "eW50aGVzaXplU3BlZWNoUmVzcG9uc2USEQoJYXVkaW9fdXJsGAEgASgJEh0K",
+            "EHNwZWVjaF9tYXJrc191cmwYBSABKAlIAIgBARIYChBkdXJhdGlvbl9zZWNv",
+            "bmRzGAIgASgCEg4KBmVycm9ycxgDIAMoCRIQCgh3YXJuaW5ncxgEIAMoCUIT",
+            "ChFfc3BlZWNoX21hcmtzX3VybCKsAQobU3ludGhlc2l6ZVRyYW5zY3JpcHRS",
+            "ZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3Jp",
+            "emF0aW9uEhYKDnRyYW5zY3JpcHRfdXJsGAIgASgJEjgKC291dHB1dF9zcGVj",
+            "GAMgASgLMh4uYXZuLmNvbm5lY3QudjEuU3BlZWNoRmlsZVNwZWNIAIgBAUIO",
+            "Cgxfb3V0cHV0X3NwZWMiVAocU3ludGhlc2l6ZVRyYW5zY3JpcHRSZXNwb25z",
+            "ZRISCgpzcGVlY2hfdXJsGAEgASgJEg4KBmVycm9ycxgCIAMoCRIQCgh3YXJu",
+            "aW5ncxgDIAMoCSKkAQocUHJvbnVuY2lhdGlvbkFuYWx5c2lzUmVxdWVzdBIr",
+            "CgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIT",
+            "CgtsYW5ndWFnZV9pZBgCIAEoCRIXCgpzcGVlY2hfdXJsGAMgASgJSACIAQES",
+            "EQoEdGV4dBgEIAEoCUgBiAEBQg0KC19zcGVlY2hfdXJsQgcKBV90ZXh0In0K",
+            "HVByb251bmNpYXRpb25BbmFseXNpc1Jlc3BvbnNlEhAKCHBob25lbWVzGAEg",
+            "ASgJEjYKD3Bob25lbWVfZGV0YWlscxgCIAMoCzIdLmF2bi5jb25uZWN0LnYx",
+            "LlBob25lbWVEZXRhaWwSEgoKc2FtcGxlX3VybBgDIAEoCSI8Cg1QaG9uZW1l",
+            "RGV0YWlsEg8KB3Bob25lbWUYASABKAkSDQoFc3RhcnQYBCABKAISCwoDZW5k",
+            "GAUgASgCIjkKBlNwZWVjaBIvCghzZWdtZW50cxgBIAMoCzIdLmF2bi5jb25u",
+            "ZWN0LnYxLlNwZWVjaFNlZ21lbnQiVgoNU3BlZWNoU2VnbWVudBIRCglhdWRp",
+            "b191cmwYASABKAkSGAoQc3BlZWNoX21hcmtzX3VybBgDIAEoCRIYChBkdXJh",
+            "dGlvbl9zZWNvbmRzGAIgASgCIpoBCgdTcGVha2VyEhIKCnNwZWFrZXJfaWQY",
+            "ASABKAUSLQoGZ2VuZGVyGAIgASgOMh0uYXZuLmNvbm5lY3QudjEuU3BlYWtl",
+            "ckdlbmRlchIRCgRuYW1lGAMgASgJSACIAQESMAoMc3BlZWNoX2ZsYWdzGAQg",
+            "AygOMhouYXZuLmNvbm5lY3QudjEuU3BlZWNoRmxhZ0IHCgVfbmFtZSI4CgtT",
+            "cGVlY2hNYXJrcxIpCgVtYXJrcxgBIAMoCzIaLmF2bi5jb25uZWN0LnYxLlNw",
+            "ZWVjaE1hcmsihwEKClNwZWVjaE1hcmsSLAoEdHlwZRgBIAEoDjIeLmF2bi5j",
+            "b25uZWN0LnYxLlNwZWVjaE1hcmtUeXBlEhQKDHRpbWVfc2Vjb25kcxgCIAEo",
+            "AhITCgtzdGFydF9ieXRlcxgDIAEoBRIRCgllbmRfYnl0ZXMYBCABKAUSDQoF",
+            "dmFsdWUYBSABKAkiGAoWR2V0Q2FwYWJpbGl0aWVzUmVxdWVzdCI5ChdHZXRD",
+            "YXBhYmlsaXRpZXNSZXNwb25zZRIeChZzdXBwb3J0ZWRfbGFuZ3VhZ2VfaWRz",
+            "GAEgAygJIkIKDlNwZWVjaEZpbGVTcGVjEjAKBmZvcm1hdBgBIAEoDjIgLmF2",
+            "bi5jb25uZWN0LnYxLlNwZWVjaEZpbGVGb3JtYXQqiAEKDlNwZWVjaE1hcmtU",
+            "eXBlEiAKHFNQRUVDSF9NQVJLX1RZUEVfVU5TUEVDSUZJRUQQABIdChlTUEVF",
+            "Q0hfTUFSS19UWVBFX1NFTlRFTkNFEAESGQoVU1BFRUNIX01BUktfVFlQRV9X",
+            "T1JEEAISGgoWU1BFRUNIX01BUktfVFlQRV9WSVNNRRADKnMKEFNwZWVjaEZp",
+            "bGVGb3JtYXQSIgoeU1BFRUNIX0ZJTEVfRk9STUFUX1VOU1BFQ0lGSUVEEAAS",
+            "HwobU1BFRUNIX0ZJTEVfRk9STUFUX09HR19PUFVTEAESGgoWU1BFRUNIX0ZJ",
+            "TEVfRk9STUFUX01QMxACKn8KDVNwZWFrZXJHZW5kZXISHgoaU1BFQUtFUl9H",
+            "RU5ERVJfVU5TUEVDSUZJRUQQABIaChZTUEVBS0VSX0dFTkRFUl9ORVVUUkFM",
+            "EAESFwoTU1BFQUtFUl9HRU5ERVJfTUFMRRACEhkKFVNQRUFLRVJfR0VOREVS",
+            "X0ZFTUFMRRADKp8BCgpTcGVlY2hGbGFnEhsKF1NQRUVDSF9GTEFHX1VOU1BF",
+            "Q0lGSUVEEAASHgoaU1BFRUNIX0ZMQUdfTk9fVFJBTlNMQVRJT04QARIVChFT",
+            "UEVFQ0hfRkxBR19DSElMRBACEhcKE1NQRUVDSF9GTEFHX1BIT05FTUUQAxIk",
+            "CiBTUEVFQ0hfRkxBR19SRVFVSVJFX1NQRUVDSF9NQVJLUxAEMsMDCg1TcGVl",
+            "Y2hTZXJ2aWNlEmIKD0dldENhcGFiaWxpdGllcxImLmF2bi5jb25uZWN0LnYx",
+            "LkdldENhcGFiaWxpdGllc1JlcXVlc3QaJy5hdm4uY29ubmVjdC52MS5HZXRD",
+            "YXBhYmlsaXRpZXNSZXNwb25zZRJlChBTeW50aGVzaXplU3BlZWNoEicuYXZu",
+            "LmNvbm5lY3QudjEuU3ludGhlc2l6ZVNwZWVjaFJlcXVlc3QaKC5hdm4uY29u",
+            "bmVjdC52MS5TeW50aGVzaXplU3BlZWNoUmVzcG9uc2UScQoUU3ludGhlc2l6",
+            "ZVRyYW5zY3JpcHQSKy5hdm4uY29ubmVjdC52MS5TeW50aGVzaXplVHJhbnNj",
+            "cmlwdFJlcXVlc3QaLC5hdm4uY29ubmVjdC52MS5TeW50aGVzaXplVHJhbnNj",
+            "cmlwdFJlc3BvbnNlEnQKFVByb251bmNpYXRpb25BbmFseXNpcxIsLmF2bi5j",
+            "b25uZWN0LnYxLlByb251bmNpYXRpb25BbmFseXNpc1JlcXVlc3QaLS5hdm4u",
+            "Y29ubmVjdC52MS5Qcm9udW5jaWF0aW9uQW5hbHlzaXNSZXNwb25zZWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.SpeakerGender), typeof(global::Avn.Connect.V1.SpeechFlag), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeSpeechRequest), global::Avn.Connect.V1.SynthesizeSpeechRequest.Parser, new[]{ "Auth", "Text", "LanguageId", "Gender", "SpeechFlags" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeSpeechResponse), global::Avn.Connect.V1.SynthesizeSpeechResponse.Parser, new[]{ "AudioUrl", "DurationSeconds", "Errors", "Warnings" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeTranscriptRequest), global::Avn.Connect.V1.SynthesizeTranscriptRequest.Parser, new[]{ "Auth", "TranscriptUrl" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeResponse), global::Avn.Connect.V1.SynthesizeResponse.Parser, new[]{ "SpeechUrl", "Errors", "Warnings" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.SpeechMarkType), typeof(global::Avn.Connect.V1.SpeechFileFormat), typeof(global::Avn.Connect.V1.SpeakerGender), typeof(global::Avn.Connect.V1.SpeechFlag), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeSpeechRequest), global::Avn.Connect.V1.SynthesizeSpeechRequest.Parser, new[]{ "Auth", "Text", "SpeakerId", "LanguageId", "Gender", "SpeechFlags", "OutputSpec" }, new[]{ "OutputSpec" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeSpeechResponse), global::Avn.Connect.V1.SynthesizeSpeechResponse.Parser, new[]{ "AudioUrl", "SpeechMarksUrl", "DurationSeconds", "Errors", "Warnings" }, new[]{ "SpeechMarksUrl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeTranscriptRequest), global::Avn.Connect.V1.SynthesizeTranscriptRequest.Parser, new[]{ "Auth", "TranscriptUrl", "OutputSpec" }, new[]{ "OutputSpec" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SynthesizeTranscriptResponse), global::Avn.Connect.V1.SynthesizeTranscriptResponse.Parser, new[]{ "SpeechUrl", "Errors", "Warnings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.PronunciationAnalysisRequest), global::Avn.Connect.V1.PronunciationAnalysisRequest.Parser, new[]{ "Auth", "LanguageId", "SpeechUrl", "Text" }, new[]{ "SpeechUrl", "Text" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.PronunciationAnalysisResponse), global::Avn.Connect.V1.PronunciationAnalysisResponse.Parser, new[]{ "Phonemes", "PhonemeDetails", "SampleUrl" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.PhonemeDetail), global::Avn.Connect.V1.PhonemeDetail.Parser, new[]{ "Phoneme", "Start", "End" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Speech), global::Avn.Connect.V1.Speech.Parser, new[]{ "Segments" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SpeechSegment), global::Avn.Connect.V1.SpeechSegment.Parser, new[]{ "AudioUrl", "DurationSeconds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SpeechSegment), global::Avn.Connect.V1.SpeechSegment.Parser, new[]{ "AudioUrl", "SpeechMarksUrl", "DurationSeconds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Speaker), global::Avn.Connect.V1.Speaker.Parser, new[]{ "SpeakerId", "Gender", "Name", "SpeechFlags" }, new[]{ "Name" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SpeechMarks), global::Avn.Connect.V1.SpeechMarks.Parser, new[]{ "Marks" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SpeechMark), global::Avn.Connect.V1.SpeechMark.Parser, new[]{ "Type", "TimeSeconds", "StartBytes", "EndBytes", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCapabilitiesRequest), global::Avn.Connect.V1.GetCapabilitiesRequest.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCapabilitiesResponse), global::Avn.Connect.V1.GetCapabilitiesResponse.Parser, new[]{ "SupportedLanguageIds" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCapabilitiesResponse), global::Avn.Connect.V1.GetCapabilitiesResponse.Parser, new[]{ "SupportedLanguageIds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SpeechFileSpec), global::Avn.Connect.V1.SpeechFileSpec.Parser, new[]{ "Format" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Enums
+  public enum SpeechMarkType {
+    [pbr::OriginalName("SPEECH_MARK_TYPE_UNSPECIFIED")] Unspecified = 0,
+    [pbr::OriginalName("SPEECH_MARK_TYPE_SENTENCE")] Sentence = 1,
+    [pbr::OriginalName("SPEECH_MARK_TYPE_WORD")] Word = 2,
+    [pbr::OriginalName("SPEECH_MARK_TYPE_VISME")] Visme = 3,
+  }
+
+  public enum SpeechFileFormat {
+    [pbr::OriginalName("SPEECH_FILE_FORMAT_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// OPUS audio (preferred option)
+    /// </summary>
+    [pbr::OriginalName("SPEECH_FILE_FORMAT_OGG_OPUS")] OggOpus = 1,
+    /// <summary>
+    /// MP3 audio
+    /// </summary>
+    [pbr::OriginalName("SPEECH_FILE_FORMAT_MP3")] Mp3 = 2,
+  }
+
   public enum SpeakerGender {
     [pbr::OriginalName("SPEAKER_GENDER_UNSPECIFIED")] Unspecified = 0,
     [pbr::OriginalName("SPEAKER_GENDER_NEUTRAL")] Neutral = 1,
@@ -94,6 +149,14 @@ namespace Avn.Connect.V1 {
     /// Speech of a child
     /// </summary>
     [pbr::OriginalName("SPEECH_FLAG_CHILD")] Child = 2,
+    /// <summary>
+    /// Speech input is in IPA phonemes
+    /// </summary>
+    [pbr::OriginalName("SPEECH_FLAG_PHONEME")] Phoneme = 3,
+    /// <summary>
+    /// Force the output of `SpeechMarks` even it means using a simpler speech model
+    /// </summary>
+    [pbr::OriginalName("SPEECH_FLAG_REQUIRE_SPEECH_MARKS")] RequireSpeechMarks = 4,
   }
 
   #endregion
@@ -136,9 +199,11 @@ namespace Avn.Connect.V1 {
     public SynthesizeSpeechRequest(SynthesizeSpeechRequest other) : this() {
       auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       text_ = other.text_;
+      speakerId_ = other.speakerId_;
       languageId_ = other.languageId_;
       gender_ = other.gender_;
       speechFlags_ = other.speechFlags_.Clone();
+      outputSpec_ = other.outputSpec_ != null ? other.outputSpec_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -175,6 +240,21 @@ namespace Avn.Connect.V1 {
       get { return text_; }
       set {
         text_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "speaker_id" field.</summary>
+    public const int SpeakerIdFieldNumber = 6;
+    private int speakerId_;
+    /// <summary>
+    /// Speaker ID for voice selection (varies voice within same gender/language)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int SpeakerId {
+      get { return speakerId_; }
+      set {
+        speakerId_ = value;
       }
     }
 
@@ -222,6 +302,21 @@ namespace Avn.Connect.V1 {
       get { return speechFlags_; }
     }
 
+    /// <summary>Field number for the "output_spec" field.</summary>
+    public const int OutputSpecFieldNumber = 7;
+    private global::Avn.Connect.V1.SpeechFileSpec outputSpec_;
+    /// <summary>
+    /// Output file spec (OPUS is the default)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.SpeechFileSpec OutputSpec {
+      get { return outputSpec_; }
+      set {
+        outputSpec_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -239,9 +334,11 @@ namespace Avn.Connect.V1 {
       }
       if (!object.Equals(Auth, other.Auth)) return false;
       if (Text != other.Text) return false;
+      if (SpeakerId != other.SpeakerId) return false;
       if (LanguageId != other.LanguageId) return false;
       if (Gender != other.Gender) return false;
       if(!speechFlags_.Equals(other.speechFlags_)) return false;
+      if (!object.Equals(OutputSpec, other.OutputSpec)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -251,9 +348,11 @@ namespace Avn.Connect.V1 {
       int hash = 1;
       if (auth_ != null) hash ^= Auth.GetHashCode();
       if (Text.Length != 0) hash ^= Text.GetHashCode();
+      if (SpeakerId != 0) hash ^= SpeakerId.GetHashCode();
       if (LanguageId.Length != 0) hash ^= LanguageId.GetHashCode();
       if (Gender != global::Avn.Connect.V1.SpeakerGender.Unspecified) hash ^= Gender.GetHashCode();
       hash ^= speechFlags_.GetHashCode();
+      if (outputSpec_ != null) hash ^= OutputSpec.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -289,6 +388,14 @@ namespace Avn.Connect.V1 {
         output.WriteEnum((int) Gender);
       }
       speechFlags_.WriteTo(output, _repeated_speechFlags_codec);
+      if (SpeakerId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(SpeakerId);
+      }
+      if (outputSpec_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(OutputSpec);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -316,6 +423,14 @@ namespace Avn.Connect.V1 {
         output.WriteEnum((int) Gender);
       }
       speechFlags_.WriteTo(ref output, _repeated_speechFlags_codec);
+      if (SpeakerId != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(SpeakerId);
+      }
+      if (outputSpec_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(OutputSpec);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -332,6 +447,9 @@ namespace Avn.Connect.V1 {
       if (Text.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
       }
+      if (SpeakerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SpeakerId);
+      }
       if (LanguageId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LanguageId);
       }
@@ -339,6 +457,9 @@ namespace Avn.Connect.V1 {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Gender);
       }
       size += speechFlags_.CalculateSize(_repeated_speechFlags_codec);
+      if (outputSpec_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OutputSpec);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -360,6 +481,9 @@ namespace Avn.Connect.V1 {
       if (other.Text.Length != 0) {
         Text = other.Text;
       }
+      if (other.SpeakerId != 0) {
+        SpeakerId = other.SpeakerId;
+      }
       if (other.LanguageId.Length != 0) {
         LanguageId = other.LanguageId;
       }
@@ -367,6 +491,12 @@ namespace Avn.Connect.V1 {
         Gender = other.Gender;
       }
       speechFlags_.Add(other.speechFlags_);
+      if (other.outputSpec_ != null) {
+        if (outputSpec_ == null) {
+          OutputSpec = new global::Avn.Connect.V1.SpeechFileSpec();
+        }
+        OutputSpec.MergeFrom(other.OutputSpec);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -408,6 +538,17 @@ namespace Avn.Connect.V1 {
           case 42:
           case 40: {
             speechFlags_.AddEntriesFrom(input, _repeated_speechFlags_codec);
+            break;
+          }
+          case 48: {
+            SpeakerId = input.ReadInt32();
+            break;
+          }
+          case 58: {
+            if (outputSpec_ == null) {
+              OutputSpec = new global::Avn.Connect.V1.SpeechFileSpec();
+            }
+            input.ReadMessage(OutputSpec);
             break;
           }
         }
@@ -453,6 +594,17 @@ namespace Avn.Connect.V1 {
             speechFlags_.AddEntriesFrom(ref input, _repeated_speechFlags_codec);
             break;
           }
+          case 48: {
+            SpeakerId = input.ReadInt32();
+            break;
+          }
+          case 58: {
+            if (outputSpec_ == null) {
+              OutputSpec = new global::Avn.Connect.V1.SpeechFileSpec();
+            }
+            input.ReadMessage(OutputSpec);
+            break;
+          }
         }
       }
     }
@@ -496,6 +648,7 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SynthesizeSpeechResponse(SynthesizeSpeechResponse other) : this() {
       audioUrl_ = other.audioUrl_;
+      speechMarksUrl_ = other.speechMarksUrl_;
       durationSeconds_ = other.durationSeconds_;
       errors_ = other.errors_.Clone();
       warnings_ = other.warnings_.Clone();
@@ -521,6 +674,35 @@ namespace Avn.Connect.V1 {
       set {
         audioUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+
+    /// <summary>Field number for the "speech_marks_url" field.</summary>
+    public const int SpeechMarksUrlFieldNumber = 5;
+    private readonly static string SpeechMarksUrlDefaultValue = "";
+
+    private string speechMarksUrl_;
+    /// <summary>
+    /// `SpeechMarks` binary file AVNFS URL. Only guarenteed to be returned if SPEECH_FLAG_REQUIRE_SPEECH_MARKS is in the request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SpeechMarksUrl {
+      get { return speechMarksUrl_ ?? SpeechMarksUrlDefaultValue; }
+      set {
+        speechMarksUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "speech_marks_url" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSpeechMarksUrl {
+      get { return speechMarksUrl_ != null; }
+    }
+    /// <summary>Clears the value of the "speech_marks_url" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSpeechMarksUrl() {
+      speechMarksUrl_ = null;
     }
 
     /// <summary>Field number for the "duration_seconds" field.</summary>
@@ -582,6 +764,7 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (AudioUrl != other.AudioUrl) return false;
+      if (SpeechMarksUrl != other.SpeechMarksUrl) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(DurationSeconds, other.DurationSeconds)) return false;
       if(!errors_.Equals(other.errors_)) return false;
       if(!warnings_.Equals(other.warnings_)) return false;
@@ -593,6 +776,7 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (AudioUrl.Length != 0) hash ^= AudioUrl.GetHashCode();
+      if (HasSpeechMarksUrl) hash ^= SpeechMarksUrl.GetHashCode();
       if (DurationSeconds != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(DurationSeconds);
       hash ^= errors_.GetHashCode();
       hash ^= warnings_.GetHashCode();
@@ -624,6 +808,10 @@ namespace Avn.Connect.V1 {
       }
       errors_.WriteTo(output, _repeated_errors_codec);
       warnings_.WriteTo(output, _repeated_warnings_codec);
+      if (HasSpeechMarksUrl) {
+        output.WriteRawTag(42);
+        output.WriteString(SpeechMarksUrl);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -644,6 +832,10 @@ namespace Avn.Connect.V1 {
       }
       errors_.WriteTo(ref output, _repeated_errors_codec);
       warnings_.WriteTo(ref output, _repeated_warnings_codec);
+      if (HasSpeechMarksUrl) {
+        output.WriteRawTag(42);
+        output.WriteString(SpeechMarksUrl);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -656,6 +848,9 @@ namespace Avn.Connect.V1 {
       int size = 0;
       if (AudioUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(AudioUrl);
+      }
+      if (HasSpeechMarksUrl) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpeechMarksUrl);
       }
       if (DurationSeconds != 0F) {
         size += 1 + 4;
@@ -676,6 +871,9 @@ namespace Avn.Connect.V1 {
       }
       if (other.AudioUrl.Length != 0) {
         AudioUrl = other.AudioUrl;
+      }
+      if (other.HasSpeechMarksUrl) {
+        SpeechMarksUrl = other.SpeechMarksUrl;
       }
       if (other.DurationSeconds != 0F) {
         DurationSeconds = other.DurationSeconds;
@@ -717,6 +915,10 @@ namespace Avn.Connect.V1 {
             warnings_.AddEntriesFrom(input, _repeated_warnings_codec);
             break;
           }
+          case 42: {
+            SpeechMarksUrl = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -750,6 +952,10 @@ namespace Avn.Connect.V1 {
           }
           case 34: {
             warnings_.AddEntriesFrom(ref input, _repeated_warnings_codec);
+            break;
+          }
+          case 42: {
+            SpeechMarksUrl = input.ReadString();
             break;
           }
         }
@@ -796,6 +1002,7 @@ namespace Avn.Connect.V1 {
     public SynthesizeTranscriptRequest(SynthesizeTranscriptRequest other) : this() {
       auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       transcriptUrl_ = other.transcriptUrl_;
+      outputSpec_ = other.outputSpec_ != null ? other.outputSpec_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -835,6 +1042,21 @@ namespace Avn.Connect.V1 {
       }
     }
 
+    /// <summary>Field number for the "output_spec" field.</summary>
+    public const int OutputSpecFieldNumber = 3;
+    private global::Avn.Connect.V1.SpeechFileSpec outputSpec_;
+    /// <summary>
+    /// Output file spec (OPUS is the default)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.SpeechFileSpec OutputSpec {
+      get { return outputSpec_; }
+      set {
+        outputSpec_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -852,6 +1074,7 @@ namespace Avn.Connect.V1 {
       }
       if (!object.Equals(Auth, other.Auth)) return false;
       if (TranscriptUrl != other.TranscriptUrl) return false;
+      if (!object.Equals(OutputSpec, other.OutputSpec)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -861,6 +1084,7 @@ namespace Avn.Connect.V1 {
       int hash = 1;
       if (auth_ != null) hash ^= Auth.GetHashCode();
       if (TranscriptUrl.Length != 0) hash ^= TranscriptUrl.GetHashCode();
+      if (outputSpec_ != null) hash ^= OutputSpec.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -887,6 +1111,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(18);
         output.WriteString(TranscriptUrl);
       }
+      if (outputSpec_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(OutputSpec);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -905,6 +1133,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(18);
         output.WriteString(TranscriptUrl);
       }
+      if (outputSpec_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(OutputSpec);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -920,6 +1152,9 @@ namespace Avn.Connect.V1 {
       }
       if (TranscriptUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TranscriptUrl);
+      }
+      if (outputSpec_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OutputSpec);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -941,6 +1176,12 @@ namespace Avn.Connect.V1 {
       }
       if (other.TranscriptUrl.Length != 0) {
         TranscriptUrl = other.TranscriptUrl;
+      }
+      if (other.outputSpec_ != null) {
+        if (outputSpec_ == null) {
+          OutputSpec = new global::Avn.Connect.V1.SpeechFileSpec();
+        }
+        OutputSpec.MergeFrom(other.OutputSpec);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -970,6 +1211,13 @@ namespace Avn.Connect.V1 {
           }
           case 18: {
             TranscriptUrl = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (outputSpec_ == null) {
+              OutputSpec = new global::Avn.Connect.V1.SpeechFileSpec();
+            }
+            input.ReadMessage(OutputSpec);
             break;
           }
         }
@@ -1002,6 +1250,13 @@ namespace Avn.Connect.V1 {
             TranscriptUrl = input.ReadString();
             break;
           }
+          case 26: {
+            if (outputSpec_ == null) {
+              OutputSpec = new global::Avn.Connect.V1.SpeechFileSpec();
+            }
+            input.ReadMessage(OutputSpec);
+            break;
+          }
         }
       }
     }
@@ -1010,16 +1265,16 @@ namespace Avn.Connect.V1 {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class SynthesizeResponse : pb::IMessage<SynthesizeResponse>
+  public sealed partial class SynthesizeTranscriptResponse : pb::IMessage<SynthesizeTranscriptResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<SynthesizeResponse> _parser = new pb::MessageParser<SynthesizeResponse>(() => new SynthesizeResponse());
+    private static readonly pb::MessageParser<SynthesizeTranscriptResponse> _parser = new pb::MessageParser<SynthesizeTranscriptResponse>(() => new SynthesizeTranscriptResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<SynthesizeResponse> Parser { get { return _parser; } }
+    public static pb::MessageParser<SynthesizeTranscriptResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1035,7 +1290,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SynthesizeResponse() {
+    public SynthesizeTranscriptResponse() {
       OnConstruction();
     }
 
@@ -1043,7 +1298,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SynthesizeResponse(SynthesizeResponse other) : this() {
+    public SynthesizeTranscriptResponse(SynthesizeTranscriptResponse other) : this() {
       speechUrl_ = other.speechUrl_;
       errors_ = other.errors_.Clone();
       warnings_ = other.warnings_.Clone();
@@ -1052,13 +1307,16 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public SynthesizeResponse Clone() {
-      return new SynthesizeResponse(this);
+    public SynthesizeTranscriptResponse Clone() {
+      return new SynthesizeTranscriptResponse(this);
     }
 
     /// <summary>Field number for the "speech_url" field.</summary>
     public const int SpeechUrlFieldNumber = 1;
     private string speechUrl_ = "";
+    /// <summary>
+    /// `Speech` message response (binary AVNFS file)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SpeechUrl {
@@ -1099,12 +1357,12 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as SynthesizeResponse);
+      return Equals(other as SynthesizeTranscriptResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(SynthesizeResponse other) {
+    public bool Equals(SynthesizeTranscriptResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1187,7 +1445,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(SynthesizeResponse other) {
+    public void MergeFrom(SynthesizeTranscriptResponse other) {
       if (other == null) {
         return;
       }
@@ -1266,6 +1524,915 @@ namespace Avn.Connect.V1 {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PronunciationAnalysisRequest : pb::IMessage<PronunciationAnalysisRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PronunciationAnalysisRequest> _parser = new pb::MessageParser<PronunciationAnalysisRequest>(() => new PronunciationAnalysisRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PronunciationAnalysisRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PronunciationAnalysisRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PronunciationAnalysisRequest(PronunciationAnalysisRequest other) : this() {
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+      languageId_ = other.languageId_;
+      speechUrl_ = other.speechUrl_;
+      text_ = other.text_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PronunciationAnalysisRequest Clone() {
+      return new PronunciationAnalysisRequest(this);
+    }
+
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 1;
+    private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "language_id" field.</summary>
+    public const int LanguageIdFieldNumber = 2;
+    private string languageId_ = "";
+    /// <summary>
+    /// IETF BCP 47 language tag
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string LanguageId {
+      get { return languageId_; }
+      set {
+        languageId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "speech_url" field.</summary>
+    public const int SpeechUrlFieldNumber = 3;
+    private readonly static string SpeechUrlDefaultValue = "";
+
+    private string speechUrl_;
+    /// <summary>
+    /// AVNFS URL of speech audio to analyze (synthesized from text if absent)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SpeechUrl {
+      get { return speechUrl_ ?? SpeechUrlDefaultValue; }
+      set {
+        speechUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "speech_url" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSpeechUrl {
+      get { return speechUrl_ != null; }
+    }
+    /// <summary>Clears the value of the "speech_url" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSpeechUrl() {
+      speechUrl_ = null;
+    }
+
+    /// <summary>Field number for the "text" field.</summary>
+    public const int TextFieldNumber = 4;
+    private readonly static string TextDefaultValue = "";
+
+    private string text_;
+    /// <summary>
+    /// Reference text (transcribed from audio file if absent)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Text {
+      get { return text_ ?? TextDefaultValue; }
+      set {
+        text_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "text" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasText {
+      get { return text_ != null; }
+    }
+    /// <summary>Clears the value of the "text" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearText() {
+      text_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PronunciationAnalysisRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PronunciationAnalysisRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Auth, other.Auth)) return false;
+      if (LanguageId != other.LanguageId) return false;
+      if (SpeechUrl != other.SpeechUrl) return false;
+      if (Text != other.Text) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (auth_ != null) hash ^= Auth.GetHashCode();
+      if (LanguageId.Length != 0) hash ^= LanguageId.GetHashCode();
+      if (HasSpeechUrl) hash ^= SpeechUrl.GetHashCode();
+      if (HasText) hash ^= Text.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (LanguageId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(LanguageId);
+      }
+      if (HasSpeechUrl) {
+        output.WriteRawTag(26);
+        output.WriteString(SpeechUrl);
+      }
+      if (HasText) {
+        output.WriteRawTag(34);
+        output.WriteString(Text);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (LanguageId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(LanguageId);
+      }
+      if (HasSpeechUrl) {
+        output.WriteRawTag(26);
+        output.WriteString(SpeechUrl);
+      }
+      if (HasText) {
+        output.WriteRawTag(34);
+        output.WriteString(Text);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
+      if (LanguageId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LanguageId);
+      }
+      if (HasSpeechUrl) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpeechUrl);
+      }
+      if (HasText) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PronunciationAnalysisRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
+      }
+      if (other.LanguageId.Length != 0) {
+        LanguageId = other.LanguageId;
+      }
+      if (other.HasSpeechUrl) {
+        SpeechUrl = other.SpeechUrl;
+      }
+      if (other.HasText) {
+        Text = other.Text;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 18: {
+            LanguageId = input.ReadString();
+            break;
+          }
+          case 26: {
+            SpeechUrl = input.ReadString();
+            break;
+          }
+          case 34: {
+            Text = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 18: {
+            LanguageId = input.ReadString();
+            break;
+          }
+          case 26: {
+            SpeechUrl = input.ReadString();
+            break;
+          }
+          case 34: {
+            Text = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PronunciationAnalysisResponse : pb::IMessage<PronunciationAnalysisResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PronunciationAnalysisResponse> _parser = new pb::MessageParser<PronunciationAnalysisResponse>(() => new PronunciationAnalysisResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PronunciationAnalysisResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PronunciationAnalysisResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PronunciationAnalysisResponse(PronunciationAnalysisResponse other) : this() {
+      phonemes_ = other.phonemes_;
+      phonemeDetails_ = other.phonemeDetails_.Clone();
+      sampleUrl_ = other.sampleUrl_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PronunciationAnalysisResponse Clone() {
+      return new PronunciationAnalysisResponse(this);
+    }
+
+    /// <summary>Field number for the "phonemes" field.</summary>
+    public const int PhonemesFieldNumber = 1;
+    private string phonemes_ = "";
+    /// <summary>
+    /// IPA symbols space-separated by word
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Phonemes {
+      get { return phonemes_; }
+      set {
+        phonemes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "phoneme_details" field.</summary>
+    public const int PhonemeDetailsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Avn.Connect.V1.PhonemeDetail> _repeated_phonemeDetails_codec
+        = pb::FieldCodec.ForMessage(18, global::Avn.Connect.V1.PhonemeDetail.Parser);
+    private readonly pbc::RepeatedField<global::Avn.Connect.V1.PhonemeDetail> phonemeDetails_ = new pbc::RepeatedField<global::Avn.Connect.V1.PhonemeDetail>();
+    /// <summary>
+    /// Timings for phonemes
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Avn.Connect.V1.PhonemeDetail> PhonemeDetails {
+      get { return phonemeDetails_; }
+    }
+
+    /// <summary>Field number for the "sample_url" field.</summary>
+    public const int SampleUrlFieldNumber = 3;
+    private string sampleUrl_ = "";
+    /// <summary>
+    /// AVNFS URL of the sample audio used for analysis
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SampleUrl {
+      get { return sampleUrl_; }
+      set {
+        sampleUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PronunciationAnalysisResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PronunciationAnalysisResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Phonemes != other.Phonemes) return false;
+      if(!phonemeDetails_.Equals(other.phonemeDetails_)) return false;
+      if (SampleUrl != other.SampleUrl) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Phonemes.Length != 0) hash ^= Phonemes.GetHashCode();
+      hash ^= phonemeDetails_.GetHashCode();
+      if (SampleUrl.Length != 0) hash ^= SampleUrl.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Phonemes.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Phonemes);
+      }
+      phonemeDetails_.WriteTo(output, _repeated_phonemeDetails_codec);
+      if (SampleUrl.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SampleUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Phonemes.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Phonemes);
+      }
+      phonemeDetails_.WriteTo(ref output, _repeated_phonemeDetails_codec);
+      if (SampleUrl.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SampleUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Phonemes.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Phonemes);
+      }
+      size += phonemeDetails_.CalculateSize(_repeated_phonemeDetails_codec);
+      if (SampleUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SampleUrl);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PronunciationAnalysisResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Phonemes.Length != 0) {
+        Phonemes = other.Phonemes;
+      }
+      phonemeDetails_.Add(other.phonemeDetails_);
+      if (other.SampleUrl.Length != 0) {
+        SampleUrl = other.SampleUrl;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Phonemes = input.ReadString();
+            break;
+          }
+          case 18: {
+            phonemeDetails_.AddEntriesFrom(input, _repeated_phonemeDetails_codec);
+            break;
+          }
+          case 26: {
+            SampleUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Phonemes = input.ReadString();
+            break;
+          }
+          case 18: {
+            phonemeDetails_.AddEntriesFrom(ref input, _repeated_phonemeDetails_codec);
+            break;
+          }
+          case 26: {
+            SampleUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PhonemeDetail : pb::IMessage<PhonemeDetail>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PhonemeDetail> _parser = new pb::MessageParser<PhonemeDetail>(() => new PhonemeDetail());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PhonemeDetail> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PhonemeDetail() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PhonemeDetail(PhonemeDetail other) : this() {
+      phoneme_ = other.phoneme_;
+      start_ = other.start_;
+      end_ = other.end_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PhonemeDetail Clone() {
+      return new PhonemeDetail(this);
+    }
+
+    /// <summary>Field number for the "phoneme" field.</summary>
+    public const int PhonemeFieldNumber = 1;
+    private string phoneme_ = "";
+    /// <summary>
+    /// Phoneme or space for word gaps
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Phoneme {
+      get { return phoneme_; }
+      set {
+        phoneme_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "start" field.</summary>
+    public const int StartFieldNumber = 4;
+    private float start_;
+    /// <summary>
+    /// Start time in seconds
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Start {
+      get { return start_; }
+      set {
+        start_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end" field.</summary>
+    public const int EndFieldNumber = 5;
+    private float end_;
+    /// <summary>
+    /// End time in seconds
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float End {
+      get { return end_; }
+      set {
+        end_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PhonemeDetail);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PhonemeDetail other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Phoneme != other.Phoneme) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Start, other.Start)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(End, other.End)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Phoneme.Length != 0) hash ^= Phoneme.GetHashCode();
+      if (Start != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Start);
+      if (End != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(End);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Phoneme.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Phoneme);
+      }
+      if (Start != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Start);
+      }
+      if (End != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(End);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Phoneme.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Phoneme);
+      }
+      if (Start != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Start);
+      }
+      if (End != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(End);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Phoneme.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Phoneme);
+      }
+      if (Start != 0F) {
+        size += 1 + 4;
+      }
+      if (End != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PhonemeDetail other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Phoneme.Length != 0) {
+        Phoneme = other.Phoneme;
+      }
+      if (other.Start != 0F) {
+        Start = other.Start;
+      }
+      if (other.End != 0F) {
+        End = other.End;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Phoneme = input.ReadString();
+            break;
+          }
+          case 37: {
+            Start = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            End = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Phoneme = input.ReadString();
+            break;
+          }
+          case 37: {
+            Start = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            End = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Speech : pb::IMessage<Speech>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1280,7 +2447,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1315,6 +2482,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.SpeechSegment> _repeated_segments_codec
         = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.SpeechSegment.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.SpeechSegment> segments_ = new pbc::RepeatedField<global::Avn.Connect.V1.SpeechSegment>();
+    /// <summary>
+    /// Audio segments of the speech
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.SpeechSegment> Segments {
@@ -1467,7 +2637,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1488,6 +2658,7 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SpeechSegment(SpeechSegment other) : this() {
       audioUrl_ = other.audioUrl_;
+      speechMarksUrl_ = other.speechMarksUrl_;
       durationSeconds_ = other.durationSeconds_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1501,6 +2672,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "audio_url" field.</summary>
     public const int AudioUrlFieldNumber = 1;
     private string audioUrl_ = "";
+    /// <summary>
+    /// Audio clip AVNFS URL
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AudioUrl {
@@ -1510,9 +2684,27 @@ namespace Avn.Connect.V1 {
       }
     }
 
+    /// <summary>Field number for the "speech_marks_url" field.</summary>
+    public const int SpeechMarksUrlFieldNumber = 3;
+    private string speechMarksUrl_ = "";
+    /// <summary>
+    /// `SpeechMarks` binary file AVNFS URL. Only guarenteed to be returned if SPEECH_FLAG_REQUIRE_SPEECH_MARKS is in the request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SpeechMarksUrl {
+      get { return speechMarksUrl_; }
+      set {
+        speechMarksUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "duration_seconds" field.</summary>
     public const int DurationSecondsFieldNumber = 2;
     private float durationSeconds_;
+    /// <summary>
+    /// Length of the audio clip
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float DurationSeconds {
@@ -1538,6 +2730,7 @@ namespace Avn.Connect.V1 {
         return true;
       }
       if (AudioUrl != other.AudioUrl) return false;
+      if (SpeechMarksUrl != other.SpeechMarksUrl) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(DurationSeconds, other.DurationSeconds)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1547,6 +2740,7 @@ namespace Avn.Connect.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (AudioUrl.Length != 0) hash ^= AudioUrl.GetHashCode();
+      if (SpeechMarksUrl.Length != 0) hash ^= SpeechMarksUrl.GetHashCode();
       if (DurationSeconds != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(DurationSeconds);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1574,6 +2768,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(21);
         output.WriteFloat(DurationSeconds);
       }
+      if (SpeechMarksUrl.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SpeechMarksUrl);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1592,6 +2790,10 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(21);
         output.WriteFloat(DurationSeconds);
       }
+      if (SpeechMarksUrl.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SpeechMarksUrl);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1604,6 +2806,9 @@ namespace Avn.Connect.V1 {
       int size = 0;
       if (AudioUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(AudioUrl);
+      }
+      if (SpeechMarksUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpeechMarksUrl);
       }
       if (DurationSeconds != 0F) {
         size += 1 + 4;
@@ -1622,6 +2827,9 @@ namespace Avn.Connect.V1 {
       }
       if (other.AudioUrl.Length != 0) {
         AudioUrl = other.AudioUrl;
+      }
+      if (other.SpeechMarksUrl.Length != 0) {
+        SpeechMarksUrl = other.SpeechMarksUrl;
       }
       if (other.DurationSeconds != 0F) {
         DurationSeconds = other.DurationSeconds;
@@ -1653,6 +2861,10 @@ namespace Avn.Connect.V1 {
             DurationSeconds = input.ReadFloat();
             break;
           }
+          case 26: {
+            SpeechMarksUrl = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1680,6 +2892,10 @@ namespace Avn.Connect.V1 {
             DurationSeconds = input.ReadFloat();
             break;
           }
+          case 26: {
+            SpeechMarksUrl = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -1702,7 +2918,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1738,6 +2954,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "speaker_id" field.</summary>
     public const int SpeakerIdFieldNumber = 1;
     private int speakerId_;
+    /// <summary>
+    /// Unique ID of speaker within speech
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int SpeakerId {
@@ -1750,6 +2969,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "gender" field.</summary>
     public const int GenderFieldNumber = 2;
     private global::Avn.Connect.V1.SpeakerGender gender_ = global::Avn.Connect.V1.SpeakerGender.Unspecified;
+    /// <summary>
+    /// Speaker voice gender
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Avn.Connect.V1.SpeakerGender Gender {
@@ -1764,6 +2986,9 @@ namespace Avn.Connect.V1 {
     private readonly static string NameDefaultValue = "";
 
     private string name_;
+    /// <summary>
+    /// Speaker name (display only)
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -1790,6 +3015,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<global::Avn.Connect.V1.SpeechFlag> _repeated_speechFlags_codec
         = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::Avn.Connect.V1.SpeechFlag) x);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.SpeechFlag> speechFlags_ = new pbc::RepeatedField<global::Avn.Connect.V1.SpeechFlag>();
+    /// <summary>
+    /// Modifiers for speech generation
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Avn.Connect.V1.SpeechFlag> SpeechFlags {
@@ -2002,6 +3230,539 @@ namespace Avn.Connect.V1 {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SpeechMarks : pb::IMessage<SpeechMarks>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SpeechMarks> _parser = new pb::MessageParser<SpeechMarks>(() => new SpeechMarks());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SpeechMarks> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechMarks() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechMarks(SpeechMarks other) : this() {
+      marks_ = other.marks_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechMarks Clone() {
+      return new SpeechMarks(this);
+    }
+
+    /// <summary>Field number for the "marks" field.</summary>
+    public const int MarksFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Avn.Connect.V1.SpeechMark> _repeated_marks_codec
+        = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.SpeechMark.Parser);
+    private readonly pbc::RepeatedField<global::Avn.Connect.V1.SpeechMark> marks_ = new pbc::RepeatedField<global::Avn.Connect.V1.SpeechMark>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Avn.Connect.V1.SpeechMark> Marks {
+      get { return marks_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SpeechMarks);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SpeechMarks other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!marks_.Equals(other.marks_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= marks_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      marks_.WriteTo(output, _repeated_marks_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      marks_.WriteTo(ref output, _repeated_marks_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += marks_.CalculateSize(_repeated_marks_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SpeechMarks other) {
+      if (other == null) {
+        return;
+      }
+      marks_.Add(other.marks_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            marks_.AddEntriesFrom(input, _repeated_marks_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            marks_.AddEntriesFrom(ref input, _repeated_marks_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SpeechMark : pb::IMessage<SpeechMark>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SpeechMark> _parser = new pb::MessageParser<SpeechMark>(() => new SpeechMark());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SpeechMark> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechMark() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechMark(SpeechMark other) : this() {
+      type_ = other.type_;
+      timeSeconds_ = other.timeSeconds_;
+      startBytes_ = other.startBytes_;
+      endBytes_ = other.endBytes_;
+      value_ = other.value_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechMark Clone() {
+      return new SpeechMark(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private global::Avn.Connect.V1.SpeechMarkType type_ = global::Avn.Connect.V1.SpeechMarkType.Unspecified;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.SpeechMarkType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "time_seconds" field.</summary>
+    public const int TimeSecondsFieldNumber = 2;
+    private float timeSeconds_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float TimeSeconds {
+      get { return timeSeconds_; }
+      set {
+        timeSeconds_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_bytes" field.</summary>
+    public const int StartBytesFieldNumber = 3;
+    private int startBytes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int StartBytes {
+      get { return startBytes_; }
+      set {
+        startBytes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "end_bytes" field.</summary>
+    public const int EndBytesFieldNumber = 4;
+    private int endBytes_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int EndBytes {
+      get { return endBytes_; }
+      set {
+        endBytes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 5;
+    private string value_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Value {
+      get { return value_; }
+      set {
+        value_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SpeechMark);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SpeechMark other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(TimeSeconds, other.TimeSeconds)) return false;
+      if (StartBytes != other.StartBytes) return false;
+      if (EndBytes != other.EndBytes) return false;
+      if (Value != other.Value) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != global::Avn.Connect.V1.SpeechMarkType.Unspecified) hash ^= Type.GetHashCode();
+      if (TimeSeconds != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(TimeSeconds);
+      if (StartBytes != 0) hash ^= StartBytes.GetHashCode();
+      if (EndBytes != 0) hash ^= EndBytes.GetHashCode();
+      if (Value.Length != 0) hash ^= Value.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Type != global::Avn.Connect.V1.SpeechMarkType.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (TimeSeconds != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(TimeSeconds);
+      }
+      if (StartBytes != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(StartBytes);
+      }
+      if (EndBytes != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(EndBytes);
+      }
+      if (Value.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Type != global::Avn.Connect.V1.SpeechMarkType.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (TimeSeconds != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(TimeSeconds);
+      }
+      if (StartBytes != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(StartBytes);
+      }
+      if (EndBytes != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(EndBytes);
+      }
+      if (Value.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != global::Avn.Connect.V1.SpeechMarkType.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (TimeSeconds != 0F) {
+        size += 1 + 4;
+      }
+      if (StartBytes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StartBytes);
+      }
+      if (EndBytes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndBytes);
+      }
+      if (Value.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SpeechMark other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != global::Avn.Connect.V1.SpeechMarkType.Unspecified) {
+        Type = other.Type;
+      }
+      if (other.TimeSeconds != 0F) {
+        TimeSeconds = other.TimeSeconds;
+      }
+      if (other.StartBytes != 0) {
+        StartBytes = other.StartBytes;
+      }
+      if (other.EndBytes != 0) {
+        EndBytes = other.EndBytes;
+      }
+      if (other.Value.Length != 0) {
+        Value = other.Value;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Type = (global::Avn.Connect.V1.SpeechMarkType) input.ReadEnum();
+            break;
+          }
+          case 21: {
+            TimeSeconds = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            StartBytes = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            EndBytes = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            Value = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Type = (global::Avn.Connect.V1.SpeechMarkType) input.ReadEnum();
+            break;
+          }
+          case 21: {
+            TimeSeconds = input.ReadFloat();
+            break;
+          }
+          case 24: {
+            StartBytes = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            EndBytes = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            Value = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetCapabilitiesRequest : pb::IMessage<GetCapabilitiesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2016,7 +3777,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2177,7 +3938,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2207,11 +3968,14 @@ namespace Avn.Connect.V1 {
       return new GetCapabilitiesResponse(this);
     }
 
-    /// <summary>Field number for the "supportedLanguageIds" field.</summary>
+    /// <summary>Field number for the "supported_language_ids" field.</summary>
     public const int SupportedLanguageIdsFieldNumber = 1;
     private static readonly pb::FieldCodec<string> _repeated_supportedLanguageIds_codec
         = pb::FieldCodec.ForString(10);
     private readonly pbc::RepeatedField<string> supportedLanguageIds_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Languages supported for TTS
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> SupportedLanguageIds {
@@ -2340,6 +4104,204 @@ namespace Avn.Connect.V1 {
             break;
           case 10: {
             supportedLanguageIds_.AddEntriesFrom(ref input, _repeated_supportedLanguageIds_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SpeechFileSpec : pb::IMessage<SpeechFileSpec>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SpeechFileSpec> _parser = new pb::MessageParser<SpeechFileSpec>(() => new SpeechFileSpec());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SpeechFileSpec> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.SpeechReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechFileSpec() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechFileSpec(SpeechFileSpec other) : this() {
+      format_ = other.format_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SpeechFileSpec Clone() {
+      return new SpeechFileSpec(this);
+    }
+
+    /// <summary>Field number for the "format" field.</summary>
+    public const int FormatFieldNumber = 1;
+    private global::Avn.Connect.V1.SpeechFileFormat format_ = global::Avn.Connect.V1.SpeechFileFormat.Unspecified;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.SpeechFileFormat Format {
+      get { return format_; }
+      set {
+        format_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SpeechFileSpec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SpeechFileSpec other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Format != other.Format) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Format != global::Avn.Connect.V1.SpeechFileFormat.Unspecified) hash ^= Format.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Format != global::Avn.Connect.V1.SpeechFileFormat.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Format);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Format != global::Avn.Connect.V1.SpeechFileFormat.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Format);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Format != global::Avn.Connect.V1.SpeechFileFormat.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Format);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SpeechFileSpec other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Format != global::Avn.Connect.V1.SpeechFileFormat.Unspecified) {
+        Format = other.Format;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Format = (global::Avn.Connect.V1.SpeechFileFormat) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Format = (global::Avn.Connect.V1.SpeechFileFormat) input.ReadEnum();
             break;
           }
         }

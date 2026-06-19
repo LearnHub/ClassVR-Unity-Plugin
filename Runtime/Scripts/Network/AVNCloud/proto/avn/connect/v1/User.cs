@@ -155,7 +155,7 @@ namespace Avn.Connect.V1 {
     public const int CountryIdFieldNumber = 4;
     private string countryId_ = "";
     /// <summary>
-    /// User country
+    /// User country (ISO 3166-1 alpha-2)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -170,7 +170,7 @@ namespace Avn.Connect.V1 {
     public const int LanguageIdFieldNumber = 5;
     private string languageId_ = "";
     /// <summary>
-    /// User's preferred display language
+    /// User's preferred display language (IETF BCP 47)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

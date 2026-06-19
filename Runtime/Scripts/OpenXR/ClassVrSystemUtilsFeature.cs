@@ -99,7 +99,7 @@ namespace ClassVR.OpenXR {
 
       // Get xrGetTimeSinceLastRecenterAVN
       result = getInstanceProcAddr(xrInstance, "xrGetTimeSinceLastRecenterAVN", ref funcPtr);
-      if (result.IsSuccess() && funcPtr != IntPtr.Zero) {
+      if (result >= XrResult.Success && funcPtr != IntPtr.Zero) {
         xrGetTimeSinceLastRecenterAVN = Marshal.GetDelegateForFunctionPointer<xrGetTimeSinceLastRecenterAVNDelegate>(funcPtr);
       } else {
         Debug.LogError("[AvantisSystemUtils] Failed to get xrGetTimeSinceLastRecenterAVN function pointer");
@@ -140,7 +140,7 @@ namespace ClassVR.OpenXR {
       Marshal.WriteInt64(timeSinceRecenterPtr, 0);
       XrResult result = xrGetTimeSinceLastRecenterAVN(xrInstance, timeSinceRecenterPtr);
 
-      if (!result.IsSuccess()) {
+      if (result < XrResult.Success) {
         Debug.LogError($"[AvantisSystemUtils] xrGetTimeSinceLastRecenterAVN failed with result: {result}");
         return -1;
       }

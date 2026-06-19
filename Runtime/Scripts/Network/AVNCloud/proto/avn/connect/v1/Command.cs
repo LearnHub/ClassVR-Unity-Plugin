@@ -372,6 +372,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "code" field.</summary>
     public const int CodeFieldNumber = 1;
     private int code_;
+    /// <summary>
+    /// Exit code for the command
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Code {
@@ -384,6 +387,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "stdout" field.</summary>
     public const int StdoutFieldNumber = 2;
     private string stdout_ = "";
+    /// <summary>
+    /// Command output
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Stdout {
@@ -396,6 +402,9 @@ namespace Avn.Connect.V1 {
     /// <summary>Field number for the "stderr" field.</summary>
     public const int StderrFieldNumber = 3;
     private string stderr_ = "";
+    /// <summary>
+    /// Error output
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Stderr {
@@ -410,6 +419,9 @@ namespace Avn.Connect.V1 {
     private static readonly pb::FieldCodec<string> _repeated_outputFileUrls_codec
         = pb::FieldCodec.ForString(34);
     private readonly pbc::RepeatedField<string> outputFileUrls_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Optional output files
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> OutputFileUrls {

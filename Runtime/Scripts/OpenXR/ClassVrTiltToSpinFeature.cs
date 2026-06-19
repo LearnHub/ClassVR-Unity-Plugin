@@ -111,7 +111,7 @@ namespace ClassVR.OpenXR {
 
       // Get xrEnableTiltToSpinAVN
       result = getInstanceProcAddr(xrInstance, "xrEnableTiltToSpinAVN", ref funcPtr);
-      if (result.IsSuccess() && funcPtr != IntPtr.Zero) {
+      if (result >= XrResult.Success && funcPtr != IntPtr.Zero) {
         xrEnableTiltToSpinAVN = Marshal.GetDelegateForFunctionPointer<xrEnableTiltToSpinAVNDelegate>(funcPtr);
       } else {
         Debug.LogError("[AvantisTiltToSpin] Failed to get xrEnableTiltToSpinAVN function pointer");
@@ -121,7 +121,7 @@ namespace ClassVR.OpenXR {
       // Get xrEnableResetOnRecenterTiltToSpinAVN
       funcPtr = IntPtr.Zero;
       result = getInstanceProcAddr(xrInstance, "xrEnableResetOnRecenterTiltToSpinAVN", ref funcPtr);
-      if (result.IsSuccess() && funcPtr != IntPtr.Zero) {
+      if (result >= XrResult.Success && funcPtr != IntPtr.Zero) {
         xrEnableResetOnRecenterTiltToSpinAVN = Marshal.GetDelegateForFunctionPointer<xrEnableResetOnRecenterTiltToSpinAVNDelegate>(funcPtr);
       } else {
         Debug.LogWarning("[AvantisTiltToSpin] Failed to get xrEnableResetOnRecenterTiltToSpinAVN function pointer");
@@ -161,7 +161,7 @@ namespace ClassVR.OpenXR {
       uint xrBoolValue = enable ? XR_TRUE : XR_FALSE;
       XrResult result = xrEnableTiltToSpinAVN(xrInstance, xrBoolValue);
 
-      if (!result.IsSuccess()) {
+      if (result < XrResult.Success) {
         Debug.LogError($"[AvantisTiltToSpin] xrEnableTiltToSpinAVN failed with result: {result}");
         return false;
       }
@@ -185,7 +185,7 @@ namespace ClassVR.OpenXR {
       uint xrBoolValue = enable ? XR_TRUE : XR_FALSE;
       XrResult result = xrEnableResetOnRecenterTiltToSpinAVN(xrInstance, xrBoolValue);
 
-      if (!result.IsSuccess()) {
+      if (result < XrResult.Success) {
         Debug.LogError($"[AvantisTiltToSpin] xrEnableResetOnRecenterTiltToSpinAVN failed with result: {result}");
         return false;
       }

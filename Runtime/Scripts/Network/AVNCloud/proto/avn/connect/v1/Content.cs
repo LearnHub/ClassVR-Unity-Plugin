@@ -28,38 +28,36 @@ namespace Avn.Connect.V1 {
             "MRobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvGh9nb29nbGUvcHJvdG9i",
             "dWYvdGltZXN0YW1wLnByb3RvGh9hdm4vY29ubmVjdC92MS9hY3Rpdml0aWVz",
             "LnByb3RvGiJhdm4vY29ubmVjdC92MS9hdXRob3JpemF0aW9uLnByb3RvGh1h",
-            "dm4vY29ubmVjdC92MS9lbnRpdGllcy5wcm90byKRAQodTWF0Y2hBY3Rpdml0",
-            "eUZyb21DbG91ZFJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0",
-            "LnYxLkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgFEhwKD29yZ2Fu",
-            "aXphdGlvbl9pZBgDIAEoBUgAiAEBQhIKEF9vcmdhbml6YXRpb25faWQivwEK",
-            "HU1hdGNoQWN0aXZpdHlGcm9tRmlsZXNSZXF1ZXN0EisKBGF1dGgYASABKAsy",
-            "HS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEgwKBG5hbWUYAiABKAkS",
-            "EAoIaWNvbl91cmwYAyABKAkSDAoEdGFncxgEIAMoBRIRCglmaWxlX3VybHMY",
-            "BSADKAkSHAoPb3JnYW5pemF0aW9uX2lkGAYgASgFSACIAQFCEgoQX29yZ2Fu",
-            "aXphdGlvbl9pZCLZAQobTWF0Y2hBY3Rpdml0eUZyb21VcmxSZXF1ZXN0EisK",
-            "BGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEgwK",
-            "BG5hbWUYAiABKAkSEAoIaWNvbl91cmwYAyABKAkSDAoEdGFncxgEIAMoBRIL",
-            "CgN1cmwYBSABKAkSFAoHY29udGV4dBgGIAEoCUgAiAEBEhwKD29yZ2FuaXph",
-            "dGlvbl9pZBgHIAEoBUgBiAEBQgoKCF9jb250ZXh0QhIKEF9vcmdhbml6YXRp",
-            "b25faWQiRQoVTWF0Y2hBY3Rpdml0eVJlc3BvbnNlEiwKCGFjdGl2aXR5GAEg",
-            "ASgLMhouYXZuLmNvbm5lY3QudjEuRW50aXR5SW5mbyJgCh5TdWJtaXRDb21t",
-            "dW5pdHlDYXRlZ29yeVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25u",
-            "ZWN0LnYxLkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgFMr8DCg5D",
-            "b250ZW50U2VydmljZRJuChZNYXRjaEFjdGl2aXR5RnJvbUNsb3VkEi0uYXZu",
-            "LmNvbm5lY3QudjEuTWF0Y2hBY3Rpdml0eUZyb21DbG91ZFJlcXVlc3QaJS5h",
-            "dm4uY29ubmVjdC52MS5NYXRjaEFjdGl2aXR5UmVzcG9uc2USbgoWTWF0Y2hB",
-            "Y3Rpdml0eUZyb21GaWxlcxItLmF2bi5jb25uZWN0LnYxLk1hdGNoQWN0aXZp",
-            "dHlGcm9tRmlsZXNSZXF1ZXN0GiUuYXZuLmNvbm5lY3QudjEuTWF0Y2hBY3Rp",
-            "dml0eVJlc3BvbnNlEmoKFE1hdGNoQWN0aXZpdHlGcm9tVXJsEisuYXZuLmNv",
-            "bm5lY3QudjEuTWF0Y2hBY3Rpdml0eUZyb21VcmxSZXF1ZXN0GiUuYXZuLmNv",
-            "bm5lY3QudjEuTWF0Y2hBY3Rpdml0eVJlc3BvbnNlEmEKF1N1Ym1pdENvbW11",
-            "bml0eUNhdGVnb3J5Ei4uYXZuLmNvbm5lY3QudjEuU3VibWl0Q29tbXVuaXR5",
-            "Q2F0ZWdvcnlSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5YgZwcm90",
-            "bzM="));
+            "dm4vY29ubmVjdC92MS9lbnRpdGllcy5wcm90byJfCh1NYXRjaEFjdGl2aXR5",
+            "RnJvbUNsb3VkUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3Qu",
+            "djEuQXV0aG9yaXphdGlvbhIRCgllbnRpdHlfaWQYAiABKAUivwEKHU1hdGNo",
+            "QWN0aXZpdHlGcm9tRmlsZXNSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4u",
+            "Y29ubmVjdC52MS5BdXRob3JpemF0aW9uEgwKBG5hbWUYAiABKAkSEAoIaWNv",
+            "bl91cmwYAyABKAkSDAoEdGFncxgEIAMoBRIRCglmaWxlX3VybHMYBSADKAkS",
+            "HAoPb3JnYW5pemF0aW9uX2lkGAYgASgFSACIAQFCEgoQX29yZ2FuaXphdGlv",
+            "bl9pZCLZAQobTWF0Y2hBY3Rpdml0eUZyb21VcmxSZXF1ZXN0EisKBGF1dGgY",
+            "ASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEgwKBG5hbWUY",
+            "AiABKAkSEAoIaWNvbl91cmwYAyABKAkSDAoEdGFncxgEIAMoBRILCgN1cmwY",
+            "BSABKAkSFAoHY29udGV4dBgGIAEoCUgAiAEBEhwKD29yZ2FuaXphdGlvbl9p",
+            "ZBgHIAEoBUgBiAEBQgoKCF9jb250ZXh0QhIKEF9vcmdhbml6YXRpb25faWQi",
+            "RQoVTWF0Y2hBY3Rpdml0eVJlc3BvbnNlEiwKCGFjdGl2aXR5GAEgASgLMhou",
+            "YXZuLmNvbm5lY3QudjEuRW50aXR5SW5mbyJgCh5TdWJtaXRDb21tdW5pdHlD",
+            "YXRlZ29yeVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYx",
+            "LkF1dGhvcml6YXRpb24SEQoJZW50aXR5X2lkGAIgASgFMr8DCg5Db250ZW50",
+            "U2VydmljZRJuChZNYXRjaEFjdGl2aXR5RnJvbUNsb3VkEi0uYXZuLmNvbm5l",
+            "Y3QudjEuTWF0Y2hBY3Rpdml0eUZyb21DbG91ZFJlcXVlc3QaJS5hdm4uY29u",
+            "bmVjdC52MS5NYXRjaEFjdGl2aXR5UmVzcG9uc2USbgoWTWF0Y2hBY3Rpdml0",
+            "eUZyb21GaWxlcxItLmF2bi5jb25uZWN0LnYxLk1hdGNoQWN0aXZpdHlGcm9t",
+            "RmlsZXNSZXF1ZXN0GiUuYXZuLmNvbm5lY3QudjEuTWF0Y2hBY3Rpdml0eVJl",
+            "c3BvbnNlEmoKFE1hdGNoQWN0aXZpdHlGcm9tVXJsEisuYXZuLmNvbm5lY3Qu",
+            "djEuTWF0Y2hBY3Rpdml0eUZyb21VcmxSZXF1ZXN0GiUuYXZuLmNvbm5lY3Qu",
+            "djEuTWF0Y2hBY3Rpdml0eVJlc3BvbnNlEmEKF1N1Ym1pdENvbW11bml0eUNh",
+            "dGVnb3J5Ei4uYXZuLmNvbm5lY3QudjEuU3VibWl0Q29tbXVuaXR5Q2F0ZWdv",
+            "cnlSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.ActivitiesReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MatchActivityFromCloudRequest), global::Avn.Connect.V1.MatchActivityFromCloudRequest.Parser, new[]{ "Auth", "EntityId", "OrganizationId" }, new[]{ "OrganizationId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MatchActivityFromCloudRequest), global::Avn.Connect.V1.MatchActivityFromCloudRequest.Parser, new[]{ "Auth", "EntityId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MatchActivityFromFilesRequest), global::Avn.Connect.V1.MatchActivityFromFilesRequest.Parser, new[]{ "Auth", "Name", "IconUrl", "Tags", "FileUrls", "OrganizationId" }, new[]{ "OrganizationId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MatchActivityFromUrlRequest), global::Avn.Connect.V1.MatchActivityFromUrlRequest.Parser, new[]{ "Auth", "Name", "IconUrl", "Tags", "Url", "Context", "OrganizationId" }, new[]{ "Context", "OrganizationId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MatchActivityResponse), global::Avn.Connect.V1.MatchActivityResponse.Parser, new[]{ "Activity" }, null, null, null, null),
@@ -70,6 +68,11 @@ namespace Avn.Connect.V1 {
 
   }
   #region Messages
+  /// <summary>
+  /// Find or create a matching activity. 
+  /// User-owned cloud files will create user-owned activities
+  /// Organization-owned cloud files will create organization-owned activities
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MatchActivityFromCloudRequest : pb::IMessage<MatchActivityFromCloudRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -78,7 +81,6 @@ namespace Avn.Connect.V1 {
   {
     private static readonly pb::MessageParser<MatchActivityFromCloudRequest> _parser = new pb::MessageParser<MatchActivityFromCloudRequest>(() => new MatchActivityFromCloudRequest());
     private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MatchActivityFromCloudRequest> Parser { get { return _parser; } }
@@ -106,10 +108,8 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MatchActivityFromCloudRequest(MatchActivityFromCloudRequest other) : this() {
-      _hasBits0 = other._hasBits0;
       auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       entityId_ = other.entityId_;
-      organizationId_ = other.organizationId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -146,36 +146,6 @@ namespace Avn.Connect.V1 {
       }
     }
 
-    /// <summary>Field number for the "organization_id" field.</summary>
-    public const int OrganizationIdFieldNumber = 3;
-    private readonly static int OrganizationIdDefaultValue = 0;
-
-    private int organizationId_;
-    /// <summary>
-    /// Optional override for the org to assign
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int OrganizationId {
-      get { if ((_hasBits0 & 1) != 0) { return organizationId_; } else { return OrganizationIdDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        organizationId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "organization_id" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasOrganizationId {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "organization_id" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearOrganizationId() {
-      _hasBits0 &= ~1;
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -193,7 +163,6 @@ namespace Avn.Connect.V1 {
       }
       if (!object.Equals(Auth, other.Auth)) return false;
       if (EntityId != other.EntityId) return false;
-      if (OrganizationId != other.OrganizationId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -203,7 +172,6 @@ namespace Avn.Connect.V1 {
       int hash = 1;
       if (auth_ != null) hash ^= Auth.GetHashCode();
       if (EntityId != 0) hash ^= EntityId.GetHashCode();
-      if (HasOrganizationId) hash ^= OrganizationId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -230,10 +198,6 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(EntityId);
       }
-      if (HasOrganizationId) {
-        output.WriteRawTag(24);
-        output.WriteInt32(OrganizationId);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -252,10 +216,6 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(16);
         output.WriteInt32(EntityId);
       }
-      if (HasOrganizationId) {
-        output.WriteRawTag(24);
-        output.WriteInt32(OrganizationId);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -271,9 +231,6 @@ namespace Avn.Connect.V1 {
       }
       if (EntityId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EntityId);
-      }
-      if (HasOrganizationId) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(OrganizationId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -295,9 +252,6 @@ namespace Avn.Connect.V1 {
       }
       if (other.EntityId != 0) {
         EntityId = other.EntityId;
-      }
-      if (other.HasOrganizationId) {
-        OrganizationId = other.OrganizationId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -329,10 +283,6 @@ namespace Avn.Connect.V1 {
             EntityId = input.ReadInt32();
             break;
           }
-          case 24: {
-            OrganizationId = input.ReadInt32();
-            break;
-          }
         }
       }
     #endif
@@ -361,10 +311,6 @@ namespace Avn.Connect.V1 {
           }
           case 16: {
             EntityId = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            OrganizationId = input.ReadInt32();
             break;
           }
         }

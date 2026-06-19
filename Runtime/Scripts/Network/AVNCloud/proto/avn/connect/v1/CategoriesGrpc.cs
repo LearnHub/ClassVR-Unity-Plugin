@@ -540,7 +540,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetActivities, null, options, request);
       }
       /// <summary>
-      /// Add an activity to a category
+      /// Add activities to a category. child_ids are appended by default, or become the category's exact membership when replace_all is set. The order of child_ids is persisted as the activities' sort order.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -553,7 +553,7 @@ namespace Avn.Connect.V1 {
         return AddActivities(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add an activity to a category
+      /// Add activities to a category. child_ids are appended by default, or become the category's exact membership when replace_all is set. The order of child_ids is persisted as the activities' sort order.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -564,7 +564,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_AddActivities, null, options, request);
       }
       /// <summary>
-      /// Add an activity to a category
+      /// Add activities to a category. child_ids are appended by default, or become the category's exact membership when replace_all is set. The order of child_ids is persisted as the activities' sort order.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -577,7 +577,7 @@ namespace Avn.Connect.V1 {
         return AddActivitiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add an activity to a category
+      /// Add activities to a category. child_ids are appended by default, or become the category's exact membership when replace_all is set. The order of child_ids is persisted as the activities' sort order.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

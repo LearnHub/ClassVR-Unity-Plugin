@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-06-19
+
+### Added
+
+- ClassVR Shared Cloud query API to search files in AVNFS associated with an organisation
+- FileUploader.UploadToAvnfs overloads (string, byte array, and file path) to upload a file to AVNFS without associating it with an organisation
+
+### Changed
+
+- Regenerated C# gRPC clients to add speaker ID into speech synthesis request
+- Upgraded CVR Unity Java Plugin to version 8 to fix compile issue in Unity 2021.3
+- Package.json to specify Unity 2021.3 as min version
+
 ## [2.0.1] - 2026-03-23
 
 ### Fixed
