@@ -255,7 +255,8 @@ namespace ClassVR.Network.AvnCloud {
         return null;
       }
       Debug.Log($"'{filename}' uploaded to AVNFS successfully");
-      return result.AvnfsUrl;
+      // The provider drops the supplied name when the content already exists, so re-apply it
+      return EnsureFileNameParameter(result.AvnfsUrl, filename);
 #else
       try {
         var data = File.ReadAllBytes(filePath);
@@ -369,6 +370,33 @@ namespace ClassVR.Network.AvnCloud {
         Debug.LogException(ex);
         return null;
       }
+    }
+
+    /// <summary>
+    /// Ensures an AVNFS URL carries the display name as a <c>name</c> query parameter.
+    /// </summary>
+    /// <remarks>
+    /// The on-device AVNFS ContentProvider applies the caller's <c>name</c> extra only when it
+    /// performs a real upload. Re-uploading existing content would overwrite the name as a hash.
+    ///
+    /// Re-applying the parameter here makes a deduplicated upload produce the same URL shape
+    /// as a fresh one.
+    /// </remarks>
+    /// <param name="avnfsUrl">The URL returned by the upload, which may lack the parameter.</param>
+    /// <param name="filename">The display name the caller asked for.</param>
+    /// <returns>The URL with a <c>name</c> parameter, or the input unchanged if it cannot be applied.</returns>
+    internal static string EnsureFileNameParameter(string avnfsUrl, string filename) {
+      if (string.IsNullOrEmpty(avnfsUrl) || string.IsNullOrEmpty(filename)) {
+        return avnfsUrl;
+      }
+
+      // Already named — don't append a duplicate parameter
+      if (avnfsUrl.Contains("?name=") || avnfsUrl.Contains("&name=")) {
+        return avnfsUrl;
+      }
+
+      char separator = avnfsUrl.Contains('?') ? '&' : '?';
+      return $"{avnfsUrl}{separator}name={Uri.EscapeDataString(filename)}";
     }
 
     // Hashes specified byte array using SHA256 then converts to Base64URL
