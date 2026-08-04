@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Cloud file metadata support in the gRPC clients
+- `CloudFile.IconUrl` (replacing the deprecated `CloudFile.PreviewUrl`), and an `IconSpec` on the cloud file get/search requests
+- Client credential support on `Authorization` via the new `ClientCredentials` message
+
+### Deprecated
+
+- `CloudFile.PreviewUrl` on the cloud file query API. Use `CloudFile.IconUrl`, which carries the identical value
+
+### Changed
+
+- Regenerated C# gRPC clients to add support for cloud file metadata
+- **Breaking:** `Authorization.Credentials` renamed to `Authorization.ConnectionCredentials`
+- **Breaking:** `PreviewSpec` renamed to `IconSpec` on `GetCloudFilesRequest` and `SearchCloudFilesRequest`
+
+### Removed
+
+- **Breaking:** `CreateClientCredentialsRequest.ClientState`
+
 ### Fixed
 
 - Shared Cloud filenames being lost when uploading content already present in AVNFS

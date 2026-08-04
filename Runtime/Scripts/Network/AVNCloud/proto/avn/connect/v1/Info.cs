@@ -25,22 +25,35 @@ namespace Avn.Connect.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chlhdm4vY29ubmVjdC92MS9pbmZvLnByb3RvEg5hdm4uY29ubmVjdC52MRoi",
-            "YXZuL2Nvbm5lY3QvdjEvYXV0aG9yaXphdGlvbi5wcm90bxohYXZuL2Nvbm5l",
-            "Y3QvdjEvdHJhbnNsYXRpb25zLnByb3RvInEKDkdldE5ld3NSZXF1ZXN0EisK",
-            "BGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uEjIK",
-            "CXRyYW5zbGF0ZRgCIAEoCzIfLmF2bi5jb25uZWN0LnYxLlRyYW5zbGF0aW9u",
-            "U3BlYyI7Cg9HZXROZXdzUmVzcG9uc2USKAoFbGlua3MYASADKAsyGS5hdm4u",
-            "Y29ubmVjdC52MS5IeXBlcmxpbmsiRQoJSHlwZXJsaW5rEhEKBHRleHQYASAB",
-            "KAlCA8A+ARIQCghsaW5rX3VybBgCIAEoCRITCgtwcmV2aWV3X3VybBgDIAEo",
-            "CTJZCgtJbmZvU2VydmljZRJKCgdHZXROZXdzEh4uYXZuLmNvbm5lY3QudjEu",
-            "R2V0TmV3c1JlcXVlc3QaHy5hdm4uY29ubmVjdC52MS5HZXROZXdzUmVzcG9u",
-            "c2ViBnByb3RvMw=="));
+            "YXZuL2Nvbm5lY3QvdjEvYXV0aG9yaXphdGlvbi5wcm90bxoYYXZuL2Nvbm5l",
+            "Y3QvdjEvZ2VvLnByb3RvGiFhdm4vY29ubmVjdC92MS90cmFuc2xhdGlvbnMu",
+            "cHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8icQoOR2V0",
+            "TmV3c1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1",
+            "dGhvcml6YXRpb24SMgoJdHJhbnNsYXRlGAIgASgLMh8uYXZuLmNvbm5lY3Qu",
+            "djEuVHJhbnNsYXRpb25TcGVjIjsKD0dldE5ld3NSZXNwb25zZRIoCgVsaW5r",
+            "cxgBIAMoCzIZLmF2bi5jb25uZWN0LnYxLkh5cGVybGluayJFCglIeXBlcmxp",
+            "bmsSEQoEdGV4dBgBIAEoCUIDwD4BEhAKCGxpbmtfdXJsGAIgASgJEhMKC3By",
+            "ZXZpZXdfdXJsGAMgASgJIlEKEUdldEdlb0ZlZWRSZXF1ZXN0EisKBGF1dGgY",
+            "ASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uSgQIAhADUglw",
+            "cmVjaXNpb24ihwEKEkdldEdlb0ZlZWRSZXNwb25zZRIqCgVjZWxscxgBIAMo",
+            "CzIbLmF2bi5jb25uZWN0LnYxLkdlb0ZlZWRDZWxsEi0KCWdlbmVyYXRlZBgC",
+            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXASFgoOd2luZG93X3Nl",
+            "Y29uZHMYAyABKAUicAoLR2VvRmVlZENlbGwSLQoIbG9jYXRpb24YASABKAsy",
+            "Gy5hdm4uY29ubmVjdC52MS5HZW9Mb2NhdGlvbhINCgVjb3VudBgCIAEoBRIT",
+            "CgthY3Rpdml0eV9pZBgDIAEoBRIOCgZzb3VyY2UYBCABKAkyrgEKC0luZm9T",
+            "ZXJ2aWNlEkoKB0dldE5ld3MSHi5hdm4uY29ubmVjdC52MS5HZXROZXdzUmVx",
+            "dWVzdBofLmF2bi5jb25uZWN0LnYxLkdldE5ld3NSZXNwb25zZRJTCgpHZXRH",
+            "ZW9GZWVkEiEuYXZuLmNvbm5lY3QudjEuR2V0R2VvRmVlZFJlcXVlc3QaIi5h",
+            "dm4uY29ubmVjdC52MS5HZXRHZW9GZWVkUmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.GeoReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetNewsRequest), global::Avn.Connect.V1.GetNewsRequest.Parser, new[]{ "Auth", "Translate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetNewsResponse), global::Avn.Connect.V1.GetNewsResponse.Parser, new[]{ "Links" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Hyperlink), global::Avn.Connect.V1.Hyperlink.Parser, new[]{ "Text", "LinkUrl", "PreviewUrl" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Hyperlink), global::Avn.Connect.V1.Hyperlink.Parser, new[]{ "Text", "LinkUrl", "PreviewUrl" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetGeoFeedRequest), global::Avn.Connect.V1.GetGeoFeedRequest.Parser, new[]{ "Auth" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetGeoFeedResponse), global::Avn.Connect.V1.GetGeoFeedResponse.Parser, new[]{ "Cells", "Generated", "WindowSeconds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GeoFeedCell), global::Avn.Connect.V1.GeoFeedCell.Parser, new[]{ "Location", "Count", "ActivityId", "Source" }, null, null, null, null)
           }));
     }
     #endregion
@@ -768,6 +781,834 @@ namespace Avn.Connect.V1 {
           }
           case 26: {
             PreviewUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetGeoFeedRequest : pb::IMessage<GetGeoFeedRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetGeoFeedRequest> _parser = new pb::MessageParser<GetGeoFeedRequest>(() => new GetGeoFeedRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetGeoFeedRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.InfoReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGeoFeedRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGeoFeedRequest(GetGeoFeedRequest other) : this() {
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGeoFeedRequest Clone() {
+      return new GetGeoFeedRequest(this);
+    }
+
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 1;
+    private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request. Accepted for consistency but not required:
+    /// this feed is intended to be public.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetGeoFeedRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetGeoFeedRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Auth, other.Auth)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (auth_ != null) hash ^= Auth.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetGeoFeedRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GetGeoFeedResponse : pb::IMessage<GetGeoFeedResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GetGeoFeedResponse> _parser = new pb::MessageParser<GetGeoFeedResponse>(() => new GetGeoFeedResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GetGeoFeedResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.InfoReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGeoFeedResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGeoFeedResponse(GetGeoFeedResponse other) : this() {
+      cells_ = other.cells_.Clone();
+      generated_ = other.generated_ != null ? other.generated_.Clone() : null;
+      windowSeconds_ = other.windowSeconds_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GetGeoFeedResponse Clone() {
+      return new GetGeoFeedResponse(this);
+    }
+
+    /// <summary>Field number for the "cells" field.</summary>
+    public const int CellsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Avn.Connect.V1.GeoFeedCell> _repeated_cells_codec
+        = pb::FieldCodec.ForMessage(10, global::Avn.Connect.V1.GeoFeedCell.Parser);
+    private readonly pbc::RepeatedField<global::Avn.Connect.V1.GeoFeedCell> cells_ = new pbc::RepeatedField<global::Avn.Connect.V1.GeoFeedCell>();
+    /// <summary>
+    /// Activity clusters, each at an approximate (IP-derived) location
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Avn.Connect.V1.GeoFeedCell> Cells {
+      get { return cells_; }
+    }
+
+    /// <summary>Field number for the "generated" field.</summary>
+    public const int GeneratedFieldNumber = 2;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp generated_;
+    /// <summary>
+    /// When this snapshot was generated
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Generated {
+      get { return generated_; }
+      set {
+        generated_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "window_seconds" field.</summary>
+    public const int WindowSecondsFieldNumber = 3;
+    private int windowSeconds_;
+    /// <summary>
+    /// The rolling window (seconds) of activity represented in this snapshot
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int WindowSeconds {
+      get { return windowSeconds_; }
+      set {
+        windowSeconds_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GetGeoFeedResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GetGeoFeedResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!cells_.Equals(other.cells_)) return false;
+      if (!object.Equals(Generated, other.Generated)) return false;
+      if (WindowSeconds != other.WindowSeconds) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= cells_.GetHashCode();
+      if (generated_ != null) hash ^= Generated.GetHashCode();
+      if (WindowSeconds != 0) hash ^= WindowSeconds.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      cells_.WriteTo(output, _repeated_cells_codec);
+      if (generated_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Generated);
+      }
+      if (WindowSeconds != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(WindowSeconds);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      cells_.WriteTo(ref output, _repeated_cells_codec);
+      if (generated_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Generated);
+      }
+      if (WindowSeconds != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(WindowSeconds);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += cells_.CalculateSize(_repeated_cells_codec);
+      if (generated_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Generated);
+      }
+      if (WindowSeconds != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(WindowSeconds);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GetGeoFeedResponse other) {
+      if (other == null) {
+        return;
+      }
+      cells_.Add(other.cells_);
+      if (other.generated_ != null) {
+        if (generated_ == null) {
+          Generated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        Generated.MergeFrom(other.Generated);
+      }
+      if (other.WindowSeconds != 0) {
+        WindowSeconds = other.WindowSeconds;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            cells_.AddEntriesFrom(input, _repeated_cells_codec);
+            break;
+          }
+          case 18: {
+            if (generated_ == null) {
+              Generated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Generated);
+            break;
+          }
+          case 24: {
+            WindowSeconds = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            cells_.AddEntriesFrom(ref input, _repeated_cells_codec);
+            break;
+          }
+          case 18: {
+            if (generated_ == null) {
+              Generated = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(Generated);
+            break;
+          }
+          case 24: {
+            WindowSeconds = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// A cluster of recent activity: plays of one activity reported from one source
+  /// network. Location, activity_id and source together form the aggregation key.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GeoFeedCell : pb::IMessage<GeoFeedCell>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GeoFeedCell> _parser = new pb::MessageParser<GeoFeedCell>(() => new GeoFeedCell());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GeoFeedCell> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.InfoReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeoFeedCell() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeoFeedCell(GeoFeedCell other) : this() {
+      location_ = other.location_ != null ? other.location_.Clone() : null;
+      count_ = other.count_;
+      activityId_ = other.activityId_;
+      source_ = other.source_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeoFeedCell Clone() {
+      return new GeoFeedCell(this);
+    }
+
+    /// <summary>Field number for the "location" field.</summary>
+    public const int LocationFieldNumber = 1;
+    private global::Avn.Connect.V1.GeoLocation location_;
+    /// <summary>
+    /// Approximate location of the cluster, as resolved from the source network's
+    /// IP address (city-level at best, country centroid otherwise).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.GeoLocation Location {
+      get { return location_; }
+      set {
+        location_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "count" field.</summary>
+    public const int CountFieldNumber = 2;
+    private int count_;
+    /// <summary>
+    /// Number of pings aggregated into this cell within the window
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Count {
+      get { return count_; }
+      set {
+        count_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "activity_id" field.</summary>
+    public const int ActivityIdFieldNumber = 3;
+    private int activityId_;
+    /// <summary>
+    /// The activity being played at this cluster (0 if unknown)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ActivityId {
+      get { return activityId_; }
+      set {
+        activityId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "source" field.</summary>
+    public const int SourceFieldNumber = 4;
+    private string source_ = "";
+    /// <summary>
+    /// Opaque, pseudonymous tag for the reporting network (a salted hash of the
+    /// source address — never the address itself, and stable only for the
+    /// lifetime of the serving process). Distinguishes same-location cells from
+    /// different sources, e.g. two schools resolved to the same city.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Source {
+      get { return source_; }
+      set {
+        source_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GeoFeedCell);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GeoFeedCell other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Location, other.Location)) return false;
+      if (Count != other.Count) return false;
+      if (ActivityId != other.ActivityId) return false;
+      if (Source != other.Source) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (location_ != null) hash ^= Location.GetHashCode();
+      if (Count != 0) hash ^= Count.GetHashCode();
+      if (ActivityId != 0) hash ^= ActivityId.GetHashCode();
+      if (Source.Length != 0) hash ^= Source.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (location_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Location);
+      }
+      if (Count != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Count);
+      }
+      if (ActivityId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(ActivityId);
+      }
+      if (Source.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Source);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (location_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Location);
+      }
+      if (Count != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Count);
+      }
+      if (ActivityId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(ActivityId);
+      }
+      if (Source.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Source);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (location_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Location);
+      }
+      if (Count != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Count);
+      }
+      if (ActivityId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ActivityId);
+      }
+      if (Source.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Source);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GeoFeedCell other) {
+      if (other == null) {
+        return;
+      }
+      if (other.location_ != null) {
+        if (location_ == null) {
+          Location = new global::Avn.Connect.V1.GeoLocation();
+        }
+        Location.MergeFrom(other.Location);
+      }
+      if (other.Count != 0) {
+        Count = other.Count;
+      }
+      if (other.ActivityId != 0) {
+        ActivityId = other.ActivityId;
+      }
+      if (other.Source.Length != 0) {
+        Source = other.Source;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (location_ == null) {
+              Location = new global::Avn.Connect.V1.GeoLocation();
+            }
+            input.ReadMessage(Location);
+            break;
+          }
+          case 16: {
+            Count = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            ActivityId = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            Source = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (location_ == null) {
+              Location = new global::Avn.Connect.V1.GeoLocation();
+            }
+            input.ReadMessage(Location);
+            break;
+          }
+          case 16: {
+            Count = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            ActivityId = input.ReadInt32();
+            break;
+          }
+          case 34: {
+            Source = input.ReadString();
             break;
           }
         }

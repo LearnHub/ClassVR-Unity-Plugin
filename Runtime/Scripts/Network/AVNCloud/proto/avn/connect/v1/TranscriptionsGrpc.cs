@@ -114,7 +114,11 @@ namespace Avn.Connect.V1 {
       }
 
       /// <summary>
-      /// Get the transcript from a video or audio file
+      /// Get the transcript from a video or audio file, transcribing it if one does not
+      /// already exist. A transcript may contain segments in several languages (each
+      /// segment carries its own language_id). 
+      /// Pass `translate` with a target language_id to translate every
+      /// segment on demand; leave it unset to return the transcript unchanged.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -127,7 +131,11 @@ namespace Avn.Connect.V1 {
         return GetMediaTranscript(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the transcript from a video or audio file
+      /// Get the transcript from a video or audio file, transcribing it if one does not
+      /// already exist. A transcript may contain segments in several languages (each
+      /// segment carries its own language_id). 
+      /// Pass `translate` with a target language_id to translate every
+      /// segment on demand; leave it unset to return the transcript unchanged.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -138,7 +146,11 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetMediaTranscript, null, options, request);
       }
       /// <summary>
-      /// Get the transcript from a video or audio file
+      /// Get the transcript from a video or audio file, transcribing it if one does not
+      /// already exist. A transcript may contain segments in several languages (each
+      /// segment carries its own language_id). 
+      /// Pass `translate` with a target language_id to translate every
+      /// segment on demand; leave it unset to return the transcript unchanged.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -151,7 +163,11 @@ namespace Avn.Connect.V1 {
         return GetMediaTranscriptAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the transcript from a video or audio file
+      /// Get the transcript from a video or audio file, transcribing it if one does not
+      /// already exist. A transcript may contain segments in several languages (each
+      /// segment carries its own language_id). 
+      /// Pass `translate` with a target language_id to translate every
+      /// segment on demand; leave it unset to return the transcript unchanged.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -162,7 +178,11 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetMediaTranscript, null, options, request);
       }
       /// <summary>
-      /// Get the transcript for an activity source file, which may have been overriden
+      /// Get the transcript for an activity's source file (or the override set via
+      /// SetActivityTranscript, if one exists). A transcript's language(s) are held
+      /// per-segment and are independent of the activity's own language_id.
+      /// Pass `translate` with a target language_id to
+      /// translate every segment on demand; leave it unset to return the original.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -175,7 +195,11 @@ namespace Avn.Connect.V1 {
         return GetActivityTranscript(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the transcript for an activity source file, which may have been overriden
+      /// Get the transcript for an activity's source file (or the override set via
+      /// SetActivityTranscript, if one exists). A transcript's language(s) are held
+      /// per-segment and are independent of the activity's own language_id.
+      /// Pass `translate` with a target language_id to
+      /// translate every segment on demand; leave it unset to return the original.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -186,7 +210,11 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetActivityTranscript, null, options, request);
       }
       /// <summary>
-      /// Get the transcript for an activity source file, which may have been overriden
+      /// Get the transcript for an activity's source file (or the override set via
+      /// SetActivityTranscript, if one exists). A transcript's language(s) are held
+      /// per-segment and are independent of the activity's own language_id.
+      /// Pass `translate` with a target language_id to
+      /// translate every segment on demand; leave it unset to return the original.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -199,7 +227,11 @@ namespace Avn.Connect.V1 {
         return GetActivityTranscriptAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the transcript for an activity source file, which may have been overriden
+      /// Get the transcript for an activity's source file (or the override set via
+      /// SetActivityTranscript, if one exists). A transcript's language(s) are held
+      /// per-segment and are independent of the activity's own language_id.
+      /// Pass `translate` with a target language_id to
+      /// translate every segment on demand; leave it unset to return the original.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -210,7 +242,12 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetActivityTranscript, null, options, request);
       }
       /// <summary>
-      /// Set a transcript override for an activity
+      /// Set a transcript override for an activity, replacing the auto-generated
+      /// transcript of its source file. Provide the transcript in its original
+      /// language(s): GetActivityTranscript translates on read, so there is no need to
+      /// store a separate copy per language. (Because segment languages are independent
+      /// of the activity's language_id, an override is safe to copy verbatim when an
+      /// activity is duplicated.)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -223,7 +260,12 @@ namespace Avn.Connect.V1 {
         return SetActivityTranscript(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set a transcript override for an activity
+      /// Set a transcript override for an activity, replacing the auto-generated
+      /// transcript of its source file. Provide the transcript in its original
+      /// language(s): GetActivityTranscript translates on read, so there is no need to
+      /// store a separate copy per language. (Because segment languages are independent
+      /// of the activity's language_id, an override is safe to copy verbatim when an
+      /// activity is duplicated.)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -234,7 +276,12 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_SetActivityTranscript, null, options, request);
       }
       /// <summary>
-      /// Set a transcript override for an activity
+      /// Set a transcript override for an activity, replacing the auto-generated
+      /// transcript of its source file. Provide the transcript in its original
+      /// language(s): GetActivityTranscript translates on read, so there is no need to
+      /// store a separate copy per language. (Because segment languages are independent
+      /// of the activity's language_id, an override is safe to copy verbatim when an
+      /// activity is duplicated.)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -247,7 +294,12 @@ namespace Avn.Connect.V1 {
         return SetActivityTranscriptAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set a transcript override for an activity
+      /// Set a transcript override for an activity, replacing the auto-generated
+      /// transcript of its source file. Provide the transcript in its original
+      /// language(s): GetActivityTranscript translates on read, so there is no need to
+      /// store a separate copy per language. (Because segment languages are independent
+      /// of the activity's language_id, an override is safe to copy verbatim when an
+      /// activity is duplicated.)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

@@ -115,7 +115,7 @@ await foreach (CloudFile file in CloudFiles.Search(query)) {
 }
 ```
 
-Each `CloudFile` exposes `Id`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `PreviewUrl`, `Updated` and `Tags`.
+Each `CloudFile` exposes `Id`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `IconUrl`, `Updated` and `Tags`.
 
 To drive paging yourself, use `AsPages`. Each `CloudFilePage` has the page's `Files` and a `NextPageToken` that is `null` on the last page:
 

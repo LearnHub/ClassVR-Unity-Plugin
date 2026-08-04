@@ -51,7 +51,7 @@ namespace Avn.Connect.V1 {
             "KAVIABIPCgVpbnQ2NBgGIAEoA0gAEg8KBWZsb2F0GAcgASgCSAASEAoGZG91",
             "YmxlGAggASgBSAASEAoGc3RyaW5nGAkgASgJSAASDwoFYnl0ZXMYCiABKAxI",
             "ABIvCgl0aW1lc3RhbXAYCyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
-            "YW1wSABCBwoFc3RhdGUqxwkKDkVudGl0eVByb3BlcnR5Eh8KG0VOVElUWV9Q",
+            "YW1wSABCBwoFc3RhdGUqswsKDkVudGl0eVByb3BlcnR5Eh8KG0VOVElUWV9Q",
             "Uk9QRVJUWV9VTlNQRUNJRklFRBAAEhYKEkVOVElUWV9QUk9QRVJUWV9JRBAB",
             "EhgKFEVOVElUWV9QUk9QRVJUWV9OQU1FEAISHwobRU5USVRZX1BST1BFUlRZ",
             "X0RFU0NSSVBUSU9OEAMSGwoXRU5USVRZX1BST1BFUlRZX0NSRUFURUQQBBIb",
@@ -78,7 +78,12 @@ namespace Avn.Connect.V1 {
             "UxAiEhwKGEVOVElUWV9QUk9QRVJUWV9QUklPUklUWRAjEh8KG0VOVElUWV9Q",
             "Uk9QRVJUWV9QUkVWSUVXX1VSTBAkEh0KGUVOVElUWV9QUk9QRVJUWV9QRVJN",
             "SVRURUQQJRIcChhFTlRJVFlfUFJPUEVSVFlfTElDRU5TRUQQJhIfChtFTlRJ",
-            "VFlfUFJPUEVSVFlfRU5USVRZX1RZUEUQJ2IGcHJvdG8z"));
+            "VFlfUFJPUEVSVFlfRU5USVRZX1RZUEUQJxIjCh9FTlRJVFlfUFJPUEVSVFlf",
+            "T1JHQU5JWkFUSU9OX0lEECgSHQoZRU5USVRZX1BST1BFUlRZX0RFVklDRV9J",
+            "RBApEh8KG0VOVElUWV9QUk9QRVJUWV9XRUJTSVRFX1VSTBAqEiEKHUVOVElU",
+            "WV9QUk9QRVJUWV9XQUxMUEFQRVJfVVJMECsSIwofRU5USVRZX1BST1BFUlRZ",
+            "X1JFTEVBU0VfQ0hBTk5FTBAsEhwKGEVOVElUWV9QUk9QRVJUWV9GSVJNV0FS",
+            "RRAtEh8KG0VOVElUWV9QUk9QRVJUWV9MQVNUX0FDQ0VTUxAuYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.EntityProperty), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -254,6 +259,36 @@ namespace Avn.Connect.V1 {
     /// Entity type
     /// </summary>
     [pbr::OriginalName("ENTITY_PROPERTY_ENTITY_TYPE")] EntityType = 39,
+    /// <summary>
+    /// Owning organization ID for activities, categories, and profiles (0 means personally owned by the creator)
+    /// </summary>
+    [pbr::OriginalName("ENTITY_PROPERTY_ORGANIZATION_ID")] OrganizationId = 40,
+    /// <summary>
+    /// Device ID
+    /// </summary>
+    [pbr::OriginalName("ENTITY_PROPERTY_DEVICE_ID")] DeviceId = 41,
+    /// <summary>
+    /// Website URL for activities
+    /// </summary>
+    [pbr::OriginalName("ENTITY_PROPERTY_WEBSITE_URL")] WebsiteUrl = 42,
+    /// <summary>
+    /// Wallpaper image for categories and profiles
+    /// </summary>
+    [pbr::OriginalName("ENTITY_PROPERTY_WALLPAPER_URL")] WallpaperUrl = 43,
+    /// <summary>
+    /// Software release channel a device is tracking for updates. Carried as a string
+    /// using the `ReleaseChannel` enum names (e.g. "PRODUCTION"); empty string means
+    /// the device is not tracking any channel
+    /// </summary>
+    [pbr::OriginalName("ENTITY_PROPERTY_RELEASE_CHANNEL")] ReleaseChannel = 44,
+    /// <summary>
+    /// Firmware build identifier reported by a device (raw build string)
+    /// </summary>
+    [pbr::OriginalName("ENTITY_PROPERTY_FIRMWARE")] Firmware = 45,
+    /// <summary>
+    /// When a device last reported in (most recent check-in)
+    /// </summary>
+    [pbr::OriginalName("ENTITY_PROPERTY_LAST_ACCESS")] LastAccess = 46,
   }
 
   #endregion
@@ -331,7 +366,8 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForMessage(34, global::Avn.Connect.V1.EntityProperties.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.EntityProperties> entityProperties_ = new pbc::RepeatedField<global::Avn.Connect.V1.EntityProperties>();
     /// <summary>
-    /// Entity properties to update
+    /// Entity properties to update. A single request may modify at most 128 entities;
+    /// larger requests are rejected. Batch bigger updates in groups of 128 or fewer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -645,7 +681,8 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForInt32(18);
     private readonly pbc::RepeatedField<int> entityIds_ = new pbc::RepeatedField<int>();
     /// <summary>
-    /// Entities to inspect
+    /// Entities to inspect. A single request may reference at most 128 entities; larger
+    /// requests are rejected. Page through bigger sets in batches of 128 or fewer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

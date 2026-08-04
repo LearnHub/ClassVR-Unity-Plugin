@@ -42,24 +42,26 @@ namespace Avn.Connect.V1 {
             "emF0aW9uEjIKCXRyYW5zbGF0ZRgCIAEoCzIfLmF2bi5jb25uZWN0LnYxLlRy",
             "YW5zbGF0aW9uU3BlYyJdCh5HZXRTa3lib3hTdHlsZUZhbWlsaWVzUmVzcG9u",
             "c2USOwoIZmFtaWxpZXMYASADKAsyKS5hdm4uY29ubmVjdC52MS5CbG9ja2Fk",
-            "ZVNreWJveFN0eWxlRmFtaWx5ItQCChVHZW5lcmF0ZVNreWJveFJlcXVlc3QS",
-            "KwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6YXRpb24S",
-            "FwoPc2t5Ym94X3N0eWxlX2lkGAIgASgFEg4KBnByb21wdBgDIAEoCRIcCg9u",
-            "ZWdhdGl2ZV9wcm9tcHQYBCABKAlIAIgBARIeChFjb250cm9sX2ltYWdlX3Vy",
-            "bBgFIAEoCUgBiAEBEhYKDmVuaGFuY2VfcHJvbXB0GAYgASgIEhgKC2xhbmd1",
-            "YWdlX2lkGAcgASgJSAKIAQESEQoEc2VlZBgIIAEoBUgDiAEBEh8KF2NvbnRl",
-            "eHRfb3JnYW5pemF0aW9uX2lkGAkgASgFQhIKEF9uZWdhdGl2ZV9wcm9tcHRC",
-            "FAoSX2NvbnRyb2xfaW1hZ2VfdXJsQg4KDF9sYW5ndWFnZV9pZEIHCgVfc2Vl",
-            "ZCLFAQoWR2VuZXJhdGVTa3lib3hSZXNwb25zZRItCgVzdGF0ZRgBIAEoDjIe",
-            "LmF2bi5jb25uZWN0LnYxLk9wZXJhdGlvblN0YXRlEjYKDWFjdGl2aXR5X2lu",
-            "Zm8YAiABKAsyGi5hdm4uY29ubmVjdC52MS5FbnRpdHlJbmZvSACIAQESHQoQ",
-            "cHJvZ3Jlc3NfcGVyY2VudBgDIAEoBUgBiAEBQhAKDl9hY3Rpdml0eV9pbmZv",
-            "QhMKEV9wcm9ncmVzc19wZXJjZW50Mu0BCg9CbG9ja2FkZVNlcnZpY2USYQoO",
-            "R2VuZXJhdGVTa3lib3gSJS5hdm4uY29ubmVjdC52MS5HZW5lcmF0ZVNreWJv",
-            "eFJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5HZW5lcmF0ZVNreWJveFJlc3Bv",
-            "bnNlMAESdwoWR2V0U2t5Ym94U3R5bGVGYW1pbGllcxItLmF2bi5jb25uZWN0",
-            "LnYxLkdldFNreWJveFN0eWxlRmFtaWxpZXNSZXF1ZXN0Gi4uYXZuLmNvbm5l",
-            "Y3QudjEuR2V0U2t5Ym94U3R5bGVGYW1pbGllc1Jlc3BvbnNlYgZwcm90bzM="));
+            "ZVNreWJveFN0eWxlRmFtaWx5IqQCChJHZW5lcmF0ZVNreWJveFRhc2sSFwoP",
+            "c2t5Ym94X3N0eWxlX2lkGAEgASgFEg4KBnByb21wdBgCIAEoCRIcCg9uZWdh",
+            "dGl2ZV9wcm9tcHQYAyABKAlIAIgBARIeChFjb250cm9sX2ltYWdlX3VybBgE",
+            "IAEoCUgBiAEBEhYKDmVuaGFuY2VfcHJvbXB0GAUgASgIEhgKC2xhbmd1YWdl",
+            "X2lkGAYgASgJSAKIAQESEQoEc2VlZBgHIAEoBUgDiAEBEh8KF2NvbnRleHRf",
+            "b3JnYW5pemF0aW9uX2lkGAggASgFQhIKEF9uZWdhdGl2ZV9wcm9tcHRCFAoS",
+            "X2NvbnRyb2xfaW1hZ2VfdXJsQg4KDF9sYW5ndWFnZV9pZEIHCgVfc2VlZCK/",
+            "AQoVR2VuZXJhdGVTa3lib3hSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4u",
+            "Y29ubmVjdC52MS5BdXRob3JpemF0aW9uEhkKDHdhaXRfc2Vjb25kcxgCIAEo",
+            "AkgBiAEBEjIKBHRhc2sYAyABKAsyIi5hdm4uY29ubmVjdC52MS5HZW5lcmF0",
+            "ZVNreWJveFRhc2tIABIQCgZqb2JfaWQYBCABKAlIAEIHCgVwaGFzZUIPCg1f",
+            "d2FpdF9zZWNvbmRzIooBChZHZW5lcmF0ZVNreWJveFJlc3BvbnNlEiAKA2pv",
+            "YhgBIAEoCzITLmF2bi5jb25uZWN0LnYxLkpvYhI2Cg1hY3Rpdml0eV9pbmZv",
+            "GAIgASgLMhouYXZuLmNvbm5lY3QudjEuRW50aXR5SW5mb0gAiAEBQhAKDl9h",
+            "Y3Rpdml0eV9pbmZvSgQIAxAEMusBCg9CbG9ja2FkZVNlcnZpY2USXwoOR2Vu",
+            "ZXJhdGVTa3lib3gSJS5hdm4uY29ubmVjdC52MS5HZW5lcmF0ZVNreWJveFJl",
+            "cXVlc3QaJi5hdm4uY29ubmVjdC52MS5HZW5lcmF0ZVNreWJveFJlc3BvbnNl",
+            "EncKFkdldFNreWJveFN0eWxlRmFtaWxpZXMSLS5hdm4uY29ubmVjdC52MS5H",
+            "ZXRTa3lib3hTdHlsZUZhbWlsaWVzUmVxdWVzdBouLmF2bi5jb25uZWN0LnYx",
+            "LkdldFNreWJveFN0eWxlRmFtaWxpZXNSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -67,8 +69,9 @@ namespace Avn.Connect.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.BlockadeSkyboxStyle), global::Avn.Connect.V1.BlockadeSkyboxStyle.Parser, new[]{ "EntityId", "Name", "Description", "MaxPromptSize", "MaxNegativePromptSize", "PreviewUrl" }, new[]{ "Description", "PreviewUrl" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetSkyboxStyleFamiliesRequest), global::Avn.Connect.V1.GetSkyboxStyleFamiliesRequest.Parser, new[]{ "Auth", "Translate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetSkyboxStyleFamiliesResponse), global::Avn.Connect.V1.GetSkyboxStyleFamiliesResponse.Parser, new[]{ "Families" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GenerateSkyboxRequest), global::Avn.Connect.V1.GenerateSkyboxRequest.Parser, new[]{ "Auth", "SkyboxStyleId", "Prompt", "NegativePrompt", "ControlImageUrl", "EnhancePrompt", "LanguageId", "Seed", "ContextOrganizationId" }, new[]{ "NegativePrompt", "ControlImageUrl", "LanguageId", "Seed" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GenerateSkyboxResponse), global::Avn.Connect.V1.GenerateSkyboxResponse.Parser, new[]{ "State", "ActivityInfo", "ProgressPercent" }, new[]{ "ActivityInfo", "ProgressPercent" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GenerateSkyboxTask), global::Avn.Connect.V1.GenerateSkyboxTask.Parser, new[]{ "SkyboxStyleId", "Prompt", "NegativePrompt", "ControlImageUrl", "EnhancePrompt", "LanguageId", "Seed", "ContextOrganizationId" }, new[]{ "NegativePrompt", "ControlImageUrl", "LanguageId", "Seed" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GenerateSkyboxRequest), global::Avn.Connect.V1.GenerateSkyboxRequest.Parser, new[]{ "Auth", "WaitSeconds", "Task", "JobId" }, new[]{ "Phase", "WaitSeconds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GenerateSkyboxResponse), global::Avn.Connect.V1.GenerateSkyboxResponse.Parser, new[]{ "Job", "ActivityInfo" }, new[]{ "ActivityInfo" }, null, null, null)
           }));
     }
     #endregion
@@ -1193,18 +1196,21 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// The work itself: payload of a first (submitting) GenerateSkybox call.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class GenerateSkyboxRequest : pb::IMessage<GenerateSkyboxRequest>
+  public sealed partial class GenerateSkyboxTask : pb::IMessage<GenerateSkyboxTask>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GenerateSkyboxRequest> _parser = new pb::MessageParser<GenerateSkyboxRequest>(() => new GenerateSkyboxRequest());
+    private static readonly pb::MessageParser<GenerateSkyboxTask> _parser = new pb::MessageParser<GenerateSkyboxTask>(() => new GenerateSkyboxTask());
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GenerateSkyboxRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GenerateSkyboxTask> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1220,7 +1226,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GenerateSkyboxRequest() {
+    public GenerateSkyboxTask() {
       OnConstruction();
     }
 
@@ -1228,9 +1234,8 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GenerateSkyboxRequest(GenerateSkyboxRequest other) : this() {
+    public GenerateSkyboxTask(GenerateSkyboxTask other) : this() {
       _hasBits0 = other._hasBits0;
-      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       skyboxStyleId_ = other.skyboxStyleId_;
       prompt_ = other.prompt_;
       negativePrompt_ = other.negativePrompt_;
@@ -1244,27 +1249,12 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GenerateSkyboxRequest Clone() {
-      return new GenerateSkyboxRequest(this);
-    }
-
-    /// <summary>Field number for the "auth" field.</summary>
-    public const int AuthFieldNumber = 1;
-    private global::Avn.Connect.V1.Authorization auth_;
-    /// <summary>
-    /// Authorization for the request
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Authorization Auth {
-      get { return auth_; }
-      set {
-        auth_ = value;
-      }
+    public GenerateSkyboxTask Clone() {
+      return new GenerateSkyboxTask(this);
     }
 
     /// <summary>Field number for the "skybox_style_id" field.</summary>
-    public const int SkyboxStyleIdFieldNumber = 2;
+    public const int SkyboxStyleIdFieldNumber = 1;
     private int skyboxStyleId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1276,7 +1266,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "prompt" field.</summary>
-    public const int PromptFieldNumber = 3;
+    public const int PromptFieldNumber = 2;
     private string prompt_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1288,7 +1278,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "negative_prompt" field.</summary>
-    public const int NegativePromptFieldNumber = 4;
+    public const int NegativePromptFieldNumber = 3;
     private readonly static string NegativePromptDefaultValue = "";
 
     private string negativePrompt_;
@@ -1314,7 +1304,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "control_image_url" field.</summary>
-    public const int ControlImageUrlFieldNumber = 5;
+    public const int ControlImageUrlFieldNumber = 4;
     private readonly static string ControlImageUrlDefaultValue = "";
 
     private string controlImageUrl_;
@@ -1340,7 +1330,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "enhance_prompt" field.</summary>
-    public const int EnhancePromptFieldNumber = 6;
+    public const int EnhancePromptFieldNumber = 5;
     private bool enhancePrompt_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1352,7 +1342,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "language_id" field.</summary>
-    public const int LanguageIdFieldNumber = 7;
+    public const int LanguageIdFieldNumber = 6;
     private readonly static string LanguageIdDefaultValue = "";
 
     private string languageId_;
@@ -1381,7 +1371,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "seed" field.</summary>
-    public const int SeedFieldNumber = 8;
+    public const int SeedFieldNumber = 7;
     private readonly static int SeedDefaultValue = 0;
 
     private int seed_;
@@ -1411,7 +1401,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "context_organization_id" field.</summary>
-    public const int ContextOrganizationIdFieldNumber = 9;
+    public const int ContextOrganizationIdFieldNumber = 8;
     private int contextOrganizationId_;
     /// <summary>
     /// License context to use independent of authorization
@@ -1428,19 +1418,18 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as GenerateSkyboxRequest);
+      return Equals(other as GenerateSkyboxTask);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GenerateSkyboxRequest other) {
+    public bool Equals(GenerateSkyboxTask other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Auth, other.Auth)) return false;
       if (SkyboxStyleId != other.SkyboxStyleId) return false;
       if (Prompt != other.Prompt) return false;
       if (NegativePrompt != other.NegativePrompt) return false;
@@ -1456,7 +1445,6 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (auth_ != null) hash ^= Auth.GetHashCode();
       if (SkyboxStyleId != 0) hash ^= SkyboxStyleId.GetHashCode();
       if (Prompt.Length != 0) hash ^= Prompt.GetHashCode();
       if (HasNegativePrompt) hash ^= NegativePrompt.GetHashCode();
@@ -1483,40 +1471,36 @@ namespace Avn.Connect.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (auth_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Auth);
-      }
       if (SkyboxStyleId != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(8);
         output.WriteInt32(SkyboxStyleId);
       }
       if (Prompt.Length != 0) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(18);
         output.WriteString(Prompt);
       }
       if (HasNegativePrompt) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(26);
         output.WriteString(NegativePrompt);
       }
       if (HasControlImageUrl) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(34);
         output.WriteString(ControlImageUrl);
       }
       if (EnhancePrompt != false) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(40);
         output.WriteBool(EnhancePrompt);
       }
       if (HasLanguageId) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(50);
         output.WriteString(LanguageId);
       }
       if (HasSeed) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(56);
         output.WriteInt32(Seed);
       }
       if (ContextOrganizationId != 0) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(64);
         output.WriteInt32(ContextOrganizationId);
       }
       if (_unknownFields != null) {
@@ -1529,40 +1513,36 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (auth_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Auth);
-      }
       if (SkyboxStyleId != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(8);
         output.WriteInt32(SkyboxStyleId);
       }
       if (Prompt.Length != 0) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(18);
         output.WriteString(Prompt);
       }
       if (HasNegativePrompt) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(26);
         output.WriteString(NegativePrompt);
       }
       if (HasControlImageUrl) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(34);
         output.WriteString(ControlImageUrl);
       }
       if (EnhancePrompt != false) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(40);
         output.WriteBool(EnhancePrompt);
       }
       if (HasLanguageId) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(50);
         output.WriteString(LanguageId);
       }
       if (HasSeed) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(56);
         output.WriteInt32(Seed);
       }
       if (ContextOrganizationId != 0) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(64);
         output.WriteInt32(ContextOrganizationId);
       }
       if (_unknownFields != null) {
@@ -1575,9 +1555,6 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (auth_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
-      }
       if (SkyboxStyleId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(SkyboxStyleId);
       }
@@ -1610,15 +1587,9 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GenerateSkyboxRequest other) {
+    public void MergeFrom(GenerateSkyboxTask other) {
       if (other == null) {
         return;
-      }
-      if (other.auth_ != null) {
-        if (auth_ == null) {
-          Auth = new global::Avn.Connect.V1.Authorization();
-        }
-        Auth.MergeFrom(other.Auth);
       }
       if (other.SkyboxStyleId != 0) {
         SkyboxStyleId = other.SkyboxStyleId;
@@ -1663,6 +1634,433 @@ namespace Avn.Connect.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 8: {
+            SkyboxStyleId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            Prompt = input.ReadString();
+            break;
+          }
+          case 26: {
+            NegativePrompt = input.ReadString();
+            break;
+          }
+          case 34: {
+            ControlImageUrl = input.ReadString();
+            break;
+          }
+          case 40: {
+            EnhancePrompt = input.ReadBool();
+            break;
+          }
+          case 50: {
+            LanguageId = input.ReadString();
+            break;
+          }
+          case 56: {
+            Seed = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            ContextOrganizationId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            SkyboxStyleId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            Prompt = input.ReadString();
+            break;
+          }
+          case 26: {
+            NegativePrompt = input.ReadString();
+            break;
+          }
+          case 34: {
+            ControlImageUrl = input.ReadString();
+            break;
+          }
+          case 40: {
+            EnhancePrompt = input.ReadBool();
+            break;
+          }
+          case 50: {
+            LanguageId = input.ReadString();
+            break;
+          }
+          case 56: {
+            Seed = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            ContextOrganizationId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GenerateSkyboxRequest : pb::IMessage<GenerateSkyboxRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GenerateSkyboxRequest> _parser = new pb::MessageParser<GenerateSkyboxRequest>(() => new GenerateSkyboxRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GenerateSkyboxRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.BlockadeReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerateSkyboxRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerateSkyboxRequest(GenerateSkyboxRequest other) : this() {
+      _hasBits0 = other._hasBits0;
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+      waitSeconds_ = other.waitSeconds_;
+      switch (other.PhaseCase) {
+        case PhaseOneofCase.Task:
+          Task = other.Task.Clone();
+          break;
+        case PhaseOneofCase.JobId:
+          JobId = other.JobId;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerateSkyboxRequest Clone() {
+      return new GenerateSkyboxRequest(this);
+    }
+
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 1;
+    private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request. Polls must come from the user that submitted
+    /// the task; other callers see NOT_FOUND.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wait_seconds" field.</summary>
+    public const int WaitSecondsFieldNumber = 2;
+    private readonly static float WaitSecondsDefaultValue = 0F;
+
+    private float waitSeconds_;
+    /// <summary>
+    /// Seconds to wait inline for a terminal state before returning the current
+    /// state. Clamped server-side to a safe maximum; unset uses the server default
+    /// and 0 polls without blocking.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float WaitSeconds {
+      get { if ((_hasBits0 & 1) != 0) { return waitSeconds_; } else { return WaitSecondsDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        waitSeconds_ = value;
+      }
+    }
+    /// <summary>Gets whether the "wait_seconds" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasWaitSeconds {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "wait_seconds" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearWaitSeconds() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "task" field.</summary>
+    public const int TaskFieldNumber = 3;
+    /// <summary>
+    /// First call: submit this work, creating the job returned in the response.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.GenerateSkyboxTask Task {
+      get { return phaseCase_ == PhaseOneofCase.Task ? (global::Avn.Connect.V1.GenerateSkyboxTask) phase_ : null; }
+      set {
+        phase_ = value;
+        phaseCase_ = value == null ? PhaseOneofCase.None : PhaseOneofCase.Task;
+      }
+    }
+
+    /// <summary>Field number for the "job_id" field.</summary>
+    public const int JobIdFieldNumber = 4;
+    /// <summary>
+    /// Subsequent calls: poll an earlier submission using its `job.id` from the
+    /// response envelope, until `job.state` is terminal.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string JobId {
+      get { return HasJobId ? (string) phase_ : ""; }
+      set {
+        phase_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        phaseCase_ = PhaseOneofCase.JobId;
+      }
+    }
+    /// <summary>Gets whether the "job_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasJobId {
+      get { return phaseCase_ == PhaseOneofCase.JobId; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "job_id" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearJobId() {
+      if (HasJobId) {
+        ClearPhase();
+      }
+    }
+
+    private object phase_;
+    /// <summary>Enum of possible cases for the "phase" oneof.</summary>
+    public enum PhaseOneofCase {
+      None = 0,
+      Task = 3,
+      JobId = 4,
+    }
+    private PhaseOneofCase phaseCase_ = PhaseOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PhaseOneofCase PhaseCase {
+      get { return phaseCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPhase() {
+      phaseCase_ = PhaseOneofCase.None;
+      phase_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GenerateSkyboxRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GenerateSkyboxRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Auth, other.Auth)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(WaitSeconds, other.WaitSeconds)) return false;
+      if (!object.Equals(Task, other.Task)) return false;
+      if (JobId != other.JobId) return false;
+      if (PhaseCase != other.PhaseCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (auth_ != null) hash ^= Auth.GetHashCode();
+      if (HasWaitSeconds) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(WaitSeconds);
+      if (phaseCase_ == PhaseOneofCase.Task) hash ^= Task.GetHashCode();
+      if (HasJobId) hash ^= JobId.GetHashCode();
+      hash ^= (int) phaseCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (HasWaitSeconds) {
+        output.WriteRawTag(21);
+        output.WriteFloat(WaitSeconds);
+      }
+      if (phaseCase_ == PhaseOneofCase.Task) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Task);
+      }
+      if (HasJobId) {
+        output.WriteRawTag(34);
+        output.WriteString(JobId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (HasWaitSeconds) {
+        output.WriteRawTag(21);
+        output.WriteFloat(WaitSeconds);
+      }
+      if (phaseCase_ == PhaseOneofCase.Task) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Task);
+      }
+      if (HasJobId) {
+        output.WriteRawTag(34);
+        output.WriteString(JobId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
+      if (HasWaitSeconds) {
+        size += 1 + 4;
+      }
+      if (phaseCase_ == PhaseOneofCase.Task) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Task);
+      }
+      if (HasJobId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(JobId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GenerateSkyboxRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
+      }
+      if (other.HasWaitSeconds) {
+        WaitSeconds = other.WaitSeconds;
+      }
+      switch (other.PhaseCase) {
+        case PhaseOneofCase.Task:
+          if (Task == null) {
+            Task = new global::Avn.Connect.V1.GenerateSkyboxTask();
+          }
+          Task.MergeFrom(other.Task);
+          break;
+        case PhaseOneofCase.JobId:
+          JobId = other.JobId;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
           case 10: {
             if (auth_ == null) {
               Auth = new global::Avn.Connect.V1.Authorization();
@@ -1670,36 +2068,21 @@ namespace Avn.Connect.V1 {
             input.ReadMessage(Auth);
             break;
           }
-          case 16: {
-            SkyboxStyleId = input.ReadInt32();
+          case 21: {
+            WaitSeconds = input.ReadFloat();
             break;
           }
           case 26: {
-            Prompt = input.ReadString();
+            global::Avn.Connect.V1.GenerateSkyboxTask subBuilder = new global::Avn.Connect.V1.GenerateSkyboxTask();
+            if (phaseCase_ == PhaseOneofCase.Task) {
+              subBuilder.MergeFrom(Task);
+            }
+            input.ReadMessage(subBuilder);
+            Task = subBuilder;
             break;
           }
           case 34: {
-            NegativePrompt = input.ReadString();
-            break;
-          }
-          case 42: {
-            ControlImageUrl = input.ReadString();
-            break;
-          }
-          case 48: {
-            EnhancePrompt = input.ReadBool();
-            break;
-          }
-          case 58: {
-            LanguageId = input.ReadString();
-            break;
-          }
-          case 64: {
-            Seed = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            ContextOrganizationId = input.ReadInt32();
+            JobId = input.ReadString();
             break;
           }
         }
@@ -1728,36 +2111,21 @@ namespace Avn.Connect.V1 {
             input.ReadMessage(Auth);
             break;
           }
-          case 16: {
-            SkyboxStyleId = input.ReadInt32();
+          case 21: {
+            WaitSeconds = input.ReadFloat();
             break;
           }
           case 26: {
-            Prompt = input.ReadString();
+            global::Avn.Connect.V1.GenerateSkyboxTask subBuilder = new global::Avn.Connect.V1.GenerateSkyboxTask();
+            if (phaseCase_ == PhaseOneofCase.Task) {
+              subBuilder.MergeFrom(Task);
+            }
+            input.ReadMessage(subBuilder);
+            Task = subBuilder;
             break;
           }
           case 34: {
-            NegativePrompt = input.ReadString();
-            break;
-          }
-          case 42: {
-            ControlImageUrl = input.ReadString();
-            break;
-          }
-          case 48: {
-            EnhancePrompt = input.ReadBool();
-            break;
-          }
-          case 58: {
-            LanguageId = input.ReadString();
-            break;
-          }
-          case 64: {
-            Seed = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            ContextOrganizationId = input.ReadInt32();
+            JobId = input.ReadString();
             break;
           }
         }
@@ -1775,7 +2143,6 @@ namespace Avn.Connect.V1 {
   {
     private static readonly pb::MessageParser<GenerateSkyboxResponse> _parser = new pb::MessageParser<GenerateSkyboxResponse>(() => new GenerateSkyboxResponse());
     private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerateSkyboxResponse> Parser { get { return _parser; } }
@@ -1783,7 +2150,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.BlockadeReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Avn.Connect.V1.BlockadeReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1803,10 +2170,8 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerateSkyboxResponse(GenerateSkyboxResponse other) : this() {
-      _hasBits0 = other._hasBits0;
-      state_ = other.state_;
+      job_ = other.job_ != null ? other.job_.Clone() : null;
       activityInfo_ = other.activityInfo_ != null ? other.activityInfo_.Clone() : null;
-      progressPercent_ = other.progressPercent_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1816,18 +2181,20 @@ namespace Avn.Connect.V1 {
       return new GenerateSkyboxResponse(this);
     }
 
-    /// <summary>Field number for the "state" field.</summary>
-    public const int StateFieldNumber = 1;
-    private global::Avn.Connect.V1.OperationState state_ = global::Avn.Connect.V1.OperationState.Unspecified;
+    /// <summary>Field number for the "job" field.</summary>
+    public const int JobFieldNumber = 1;
+    private global::Avn.Connect.V1.Job job_;
     /// <summary>
-    /// State of the process
+    /// Operation envelope. Poll `job.id` (via GenerateSkyboxRequest.job_id) until
+    /// `job.state` is terminal (COMPLETE on success, ERROR on failure). Progress is
+    /// reported on `job.progress`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.OperationState State {
-      get { return state_; }
+    public global::Avn.Connect.V1.Job Job {
+      get { return job_; }
       set {
-        state_ = value;
+        job_ = value;
       }
     }
 
@@ -1835,7 +2202,7 @@ namespace Avn.Connect.V1 {
     public const int ActivityInfoFieldNumber = 2;
     private global::Avn.Connect.V1.EntityInfo activityInfo_;
     /// <summary>
-    /// Only set if the job completes successfully
+    /// Only set when job.state == COMPLETE
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1844,36 +2211,6 @@ namespace Avn.Connect.V1 {
       set {
         activityInfo_ = value;
       }
-    }
-
-    /// <summary>Field number for the "progress_percent" field.</summary>
-    public const int ProgressPercentFieldNumber = 3;
-    private readonly static int ProgressPercentDefaultValue = 0;
-
-    private int progressPercent_;
-    /// <summary>
-    /// May be set when processing to indicated progress
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ProgressPercent {
-      get { if ((_hasBits0 & 1) != 0) { return progressPercent_; } else { return ProgressPercentDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        progressPercent_ = value;
-      }
-    }
-    /// <summary>Gets whether the "progress_percent" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasProgressPercent {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "progress_percent" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearProgressPercent() {
-      _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1891,9 +2228,8 @@ namespace Avn.Connect.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (State != other.State) return false;
+      if (!object.Equals(Job, other.Job)) return false;
       if (!object.Equals(ActivityInfo, other.ActivityInfo)) return false;
-      if (ProgressPercent != other.ProgressPercent) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1901,9 +2237,8 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (State != global::Avn.Connect.V1.OperationState.Unspecified) hash ^= State.GetHashCode();
+      if (job_ != null) hash ^= Job.GetHashCode();
       if (activityInfo_ != null) hash ^= ActivityInfo.GetHashCode();
-      if (HasProgressPercent) hash ^= ProgressPercent.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1922,17 +2257,13 @@ namespace Avn.Connect.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (State != global::Avn.Connect.V1.OperationState.Unspecified) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) State);
+      if (job_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Job);
       }
       if (activityInfo_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(ActivityInfo);
-      }
-      if (HasProgressPercent) {
-        output.WriteRawTag(24);
-        output.WriteInt32(ProgressPercent);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1944,17 +2275,13 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (State != global::Avn.Connect.V1.OperationState.Unspecified) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) State);
+      if (job_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Job);
       }
       if (activityInfo_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(ActivityInfo);
-      }
-      if (HasProgressPercent) {
-        output.WriteRawTag(24);
-        output.WriteInt32(ProgressPercent);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1966,14 +2293,11 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (State != global::Avn.Connect.V1.OperationState.Unspecified) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
+      if (job_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Job);
       }
       if (activityInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ActivityInfo);
-      }
-      if (HasProgressPercent) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProgressPercent);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1987,17 +2311,17 @@ namespace Avn.Connect.V1 {
       if (other == null) {
         return;
       }
-      if (other.State != global::Avn.Connect.V1.OperationState.Unspecified) {
-        State = other.State;
+      if (other.job_ != null) {
+        if (job_ == null) {
+          Job = new global::Avn.Connect.V1.Job();
+        }
+        Job.MergeFrom(other.Job);
       }
       if (other.activityInfo_ != null) {
         if (activityInfo_ == null) {
           ActivityInfo = new global::Avn.Connect.V1.EntityInfo();
         }
         ActivityInfo.MergeFrom(other.ActivityInfo);
-      }
-      if (other.HasProgressPercent) {
-        ProgressPercent = other.ProgressPercent;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2018,8 +2342,11 @@ namespace Avn.Connect.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            State = (global::Avn.Connect.V1.OperationState) input.ReadEnum();
+          case 10: {
+            if (job_ == null) {
+              Job = new global::Avn.Connect.V1.Job();
+            }
+            input.ReadMessage(Job);
             break;
           }
           case 18: {
@@ -2027,10 +2354,6 @@ namespace Avn.Connect.V1 {
               ActivityInfo = new global::Avn.Connect.V1.EntityInfo();
             }
             input.ReadMessage(ActivityInfo);
-            break;
-          }
-          case 24: {
-            ProgressPercent = input.ReadInt32();
             break;
           }
         }
@@ -2052,8 +2375,11 @@ namespace Avn.Connect.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            State = (global::Avn.Connect.V1.OperationState) input.ReadEnum();
+          case 10: {
+            if (job_ == null) {
+              Job = new global::Avn.Connect.V1.Job();
+            }
+            input.ReadMessage(Job);
             break;
           }
           case 18: {
@@ -2061,10 +2387,6 @@ namespace Avn.Connect.V1 {
               ActivityInfo = new global::Avn.Connect.V1.EntityInfo();
             }
             input.ReadMessage(ActivityInfo);
-            break;
-          }
-          case 24: {
-            ProgressPercent = input.ReadInt32();
             break;
           }
         }

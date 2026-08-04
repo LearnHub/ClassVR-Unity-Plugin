@@ -21,8 +21,12 @@ namespace ClassVR.Network.AvnCloud {
     /// <summary>The file size in bytes, or <c>null</c> if unknown.</summary>
     public long? SizeBytes { get; }
 
+    /// <summary>A URL for an icon/preview image of the file. May be empty if none is available.</summary>
+    public string IconUrl { get; }
+
     /// <summary>A URL for a preview/thumbnail of the file. May be empty if none is available.</summary>
-    public string PreviewUrl { get; }
+    [Obsolete("Use IconUrl instead, which carries the identical value.")]
+    public string PreviewUrl => IconUrl;
 
     /// <summary>When the file was last modified, or <c>null</c> if the cloud has no timestamp recorded.</summary>
     public DateTimeOffset? Updated { get; }
@@ -30,13 +34,13 @@ namespace ClassVR.Network.AvnCloud {
     /// <summary>IDs of the tags associated with this file.</summary>
     public IReadOnlyList<int> Tags { get; }
 
-    internal CloudFile(int id, string fileName, string fileUrl, string mediaType, long? sizeBytes, string previewUrl, DateTimeOffset? updated, IReadOnlyList<int> tags) {
+    internal CloudFile(int id, string fileName, string fileUrl, string mediaType, long? sizeBytes, string iconUrl, DateTimeOffset? updated, IReadOnlyList<int> tags) {
       Id = id;
       FileName = fileName;
       FileUrl = fileUrl;
       MediaType = mediaType;
       SizeBytes = sizeBytes;
-      PreviewUrl = previewUrl;
+      IconUrl = iconUrl;
       Updated = updated;
       Tags = tags;
     }

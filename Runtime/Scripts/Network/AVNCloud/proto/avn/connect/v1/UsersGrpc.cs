@@ -249,7 +249,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetUser, null, options, request);
       }
       /// <summary>
-      /// Get the organizations which the user directly belongs to
+      /// Get the organizations which the user directly belongs to. Users (and support users) see their own full list; other callers see only the memberships in organizations where they hold the `viewUsers` permission
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -262,7 +262,7 @@ namespace Avn.Connect.V1 {
         return GetOrganizationMembership(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the organizations which the user directly belongs to
+      /// Get the organizations which the user directly belongs to. Users (and support users) see their own full list; other callers see only the memberships in organizations where they hold the `viewUsers` permission
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -273,7 +273,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetOrganizationMembership, null, options, request);
       }
       /// <summary>
-      /// Get the organizations which the user directly belongs to
+      /// Get the organizations which the user directly belongs to. Users (and support users) see their own full list; other callers see only the memberships in organizations where they hold the `viewUsers` permission
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -286,7 +286,7 @@ namespace Avn.Connect.V1 {
         return GetOrganizationMembershipAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the organizations which the user directly belongs to
+      /// Get the organizations which the user directly belongs to. Users (and support users) see their own full list; other callers see only the memberships in organizations where they hold the `viewUsers` permission
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

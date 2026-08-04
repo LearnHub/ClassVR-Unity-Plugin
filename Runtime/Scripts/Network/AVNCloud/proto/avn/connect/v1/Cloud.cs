@@ -29,80 +29,90 @@ namespace Avn.Connect.V1 {
             "L3RpbWVzdGFtcC5wcm90bxoiYXZuL2Nvbm5lY3QvdjEvYXV0aG9yaXphdGlv",
             "bi5wcm90bxoZYXZuL2Nvbm5lY3QvdjEvdGFncy5wcm90bxodYXZuL2Nvbm5l",
             "Y3QvdjEvZW50aXRpZXMucHJvdG8aH2F2bi9jb25uZWN0L3YxL2FjdGl2aXRp",
-            "ZXMucHJvdG8aGmF2bi9jb25uZWN0L3YxL21lZGlhLnByb3RvGhthdm4vY29u",
-            "bmVjdC92MS9zZWFyY2gucHJvdG8aH2F2bi9jb25uZWN0L3YxL3Byb3BlcnRp",
-            "ZXMucHJvdG8itAMKCUNsb3VkRmlsZRIRCgllbnRpdHlfaWQYASABKAUSGQoP",
-            "b3JnYW5pemF0aW9uX2lkGAIgASgFSAASEQoHdXNlcl9pZBgDIAEoBUgAEhAK",
-            "CGZpbGVfdXJsGAQgASgJEisKB3VwZGF0ZWQYBSABKAsyGi5nb29nbGUucHJv",
-            "dG9idWYuVGltZXN0YW1wEgwKBHRhZ3MYBiADKAUSEwoLcHJldmlld191cmwY",
-            "ByABKAkSEQoJbGVnYWN5X2lkGAogASgJEhYKCXVzZXJfbmFtZRgLIAEoCUgB",
-            "iAEBEhgKC2RldmljZV9uYW1lGAwgASgJSAKIAQESFQoIcGxhY2VfaWQYDSAB",
-            "KAVIA4gBARIWCglmaWxlX25hbWUYDiABKAlIBIgBARIXCgptZWRpYV90eXBl",
-            "GA8gASgJSAWIAQESFwoKc2l6ZV9ieXRlcxgQIAEoA0gGiAEBQgcKBW93bmVy",
-            "QgwKCl91c2VyX25hbWVCDgoMX2RldmljZV9uYW1lQgsKCV9wbGFjZV9pZEIM",
-            "CgpfZmlsZV9uYW1lQg0KC19tZWRpYV90eXBlQg0KC19zaXplX2J5dGVzIqUB",
-            "ChRHZXRDbG91ZEZpbGVzUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNv",
-            "bm5lY3QudjEuQXV0aG9yaXphdGlvbhISCgplbnRpdHlfaWRzGAIgAygFEjgK",
-            "DHByZXZpZXdfc3BlYxgDIAEoCzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29k",
-            "ZUltYWdlU3BlYxISCgpsZWdhY3lfaWRzGAogAygJIkMKFUdldENsb3VkRmls",
-            "ZXNSZXNwb25zZRIqCgdyZXN1bHRzGAEgAygLMhkuYXZuLmNvbm5lY3QudjEu",
-            "Q2xvdWRGaWxlIo0BChRBZGRDbG91ZEZpbGVzUmVxdWVzdBIrCgRhdXRoGAEg",
-            "ASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIZCg9vcmdhbml6",
-            "YXRpb25faWQYAiABKAVIABIRCgd1c2VyX2lkGAMgASgFSAASEQoJZmlsZV91",
-            "cmxzGAQgAygJQgcKBW93bmVyIj8KFUFkZENsb3VkRmlsZXNSZXNwb25zZRIS",
-            "CgplbnRpdHlfaWRzGAEgAygFEhIKCmxlZ2FjeV9pZHMYCiADKAkibgoXUmVt",
-            "b3ZlQ2xvdWRGaWxlc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25u",
-            "ZWN0LnYxLkF1dGhvcml6YXRpb24SEgoKZW50aXR5X2lkcxgCIAMoBRISCgps",
-            "ZWdhY3lfaWRzGAogAygJIrwEChdTZWFyY2hDbG91ZEZpbGVzUmVxdWVzdBIr",
-            "CgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIZ",
-            "Cg9vcmdhbml6YXRpb25faWQYAiABKAVIABIRCgd1c2VyX2lkGAMgASgFSAAS",
-            "NAoLdGV4dF9zZWFyY2gYBCABKAsyGi5hdm4uY29ubmVjdC52MS5UZXh0U2Vh",
-            "cmNoSAGIAQESLgoLdGFnX2ZpbHRlcnMYBSADKAsyGS5hdm4uY29ubmVjdC52",
-            "MS5UYWdGaWx0ZXISGgoSZmlsdGVyX21lZGlhX3R5cGVzGAYgAygJEi4KBWFm",
-            "dGVyGAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgCiAEBEi8K",
-            "BmJlZm9yZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIA4gB",
-            "ARItCghvcmRlcl9ieRgJIAMoCzIbLmF2bi5jb25uZWN0LnYxLk9yZGVyQ2xh",
-            "dXNlEhYKCXBhZ2Vfc2l6ZRgLIAEoBUgEiAEBEhcKCnBhZ2VfdG9rZW4YDCAB",
-            "KAlIBYgBARI4CgxwcmV2aWV3X3NwZWMYDSABKAsyIi5hdm4uY29ubmVjdC52",
-            "MS5UcmFuc2NvZGVJbWFnZVNwZWNCBwoFb3duZXJCDgoMX3RleHRfc2VhcmNo",
-            "QggKBl9hZnRlckIJCgdfYmVmb3JlQgwKCl9wYWdlX3NpemVCDQoLX3BhZ2Vf",
-            "dG9rZW4ieAoYU2VhcmNoQ2xvdWRGaWxlc1Jlc3BvbnNlEioKB3Jlc3VsdHMY",
-            "ASADKAsyGS5hdm4uY29ubmVjdC52MS5DbG91ZEZpbGUSHAoPbmV4dF9wYWdl",
-            "X3Rva2VuGAIgASgJSACIAQFCEgoQX25leHRfcGFnZV90b2tlbiJ8ChZHZXRD",
-            "bG91ZFN1bW1hcnlSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVj",
-            "dC52MS5BdXRob3JpemF0aW9uEhkKD29yZ2FuaXphdGlvbl9pZBgCIAEoBUgA",
-            "EhEKB3VzZXJfaWQYAyABKAVIAEIHCgVvd25lciLTAQoXR2V0Q2xvdWRTdW1t",
-            "YXJ5UmVzcG9uc2USEwoLdG90YWxfY291bnQYASABKAUSEwoLdG90YWxfYnl0",
-            "ZXMYAiABKAMSFgoOY2FwYWNpdHlfYnl0ZXMYAyABKAMSLwoGb2xkZXN0GAQg",
-            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgAiAEBEi8KBm5ld2Vz",
-            "dBgFIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBIAYgBAUIJCgdf",
-            "b2xkZXN0QgkKB19uZXdlc3QyywUKDENsb3VkU2VydmljZRJcCg1HZXRDbG91",
-            "ZEZpbGVzEiQuYXZuLmNvbm5lY3QudjEuR2V0Q2xvdWRGaWxlc1JlcXVlc3Qa",
-            "JS5hdm4uY29ubmVjdC52MS5HZXRDbG91ZEZpbGVzUmVzcG9uc2USXAoNQWRk",
-            "Q2xvdWRGaWxlcxIkLmF2bi5jb25uZWN0LnYxLkFkZENsb3VkRmlsZXNSZXF1",
-            "ZXN0GiUuYXZuLmNvbm5lY3QudjEuQWRkQ2xvdWRGaWxlc1Jlc3BvbnNlElMK",
-            "EFJlbW92ZUNsb3VkRmlsZXMSJy5hdm4uY29ubmVjdC52MS5SZW1vdmVDbG91",
-            "ZEZpbGVzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRJBCgdBZGRU",
-            "YWdzEh4uYXZuLmNvbm5lY3QudjEuQWRkVGFnc1JlcXVlc3QaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkSRwoKUmVtb3ZlVGFncxIhLmF2bi5jb25uZWN0LnYx",
-            "LlJlbW92ZVRhZ3NSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EmUK",
-            "EFNlYXJjaENsb3VkRmlsZXMSJy5hdm4uY29ubmVjdC52MS5TZWFyY2hDbG91",
-            "ZEZpbGVzUmVxdWVzdBooLmF2bi5jb25uZWN0LnYxLlNlYXJjaENsb3VkRmls",
-            "ZXNSZXNwb25zZRJiCg9HZXRDbG91ZFN1bW1hcnkSJi5hdm4uY29ubmVjdC52",
-            "MS5HZXRDbG91ZFN1bW1hcnlSZXF1ZXN0GicuYXZuLmNvbm5lY3QudjEuR2V0",
-            "Q2xvdWRTdW1tYXJ5UmVzcG9uc2USUwoNU2V0UHJvcGVydGllcxIqLmF2bi5j",
-            "b25uZWN0LnYxLlNldEVudGl0eVByb3BlcnRpZXNSZXF1ZXN0GhYuZ29vZ2xl",
-            "LnByb3RvYnVmLkVtcHR5YgZwcm90bzM="));
+            "ZXMucHJvdG8aGmF2bi9jb25uZWN0L3YxL21lZGlhLnByb3RvGh1hdm4vY29u",
+            "bmVjdC92MS9tZXRhZGF0YS5wcm90bxobYXZuL2Nvbm5lY3QvdjEvc2VhcmNo",
+            "LnByb3RvGh9hdm4vY29ubmVjdC92MS9wcm9wZXJ0aWVzLnByb3RvIuIDCglD",
+            "bG91ZEZpbGUSEQoJZW50aXR5X2lkGAEgASgFEhkKD29yZ2FuaXphdGlvbl9p",
+            "ZBgCIAEoBUgAEhEKB3VzZXJfaWQYAyABKAVIABIQCghmaWxlX3VybBgEIAEo",
+            "CRIrCgd1cGRhdGVkGAUgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
+            "cBIMCgR0YWdzGAYgAygFEhcKC3ByZXZpZXdfdXJsGAcgASgJQgIYARIQCghp",
+            "Y29uX3VybBgIIAEoCRIWCg5tZXRhZGF0YV9jb3VudBgJIAEoBRIRCglsZWdh",
+            "Y3lfaWQYCiABKAkSFgoJdXNlcl9uYW1lGAsgASgJSAGIAQESGAoLZGV2aWNl",
+            "X25hbWUYDCABKAlIAogBARIVCghwbGFjZV9pZBgNIAEoBUgDiAEBEhYKCWZp",
+            "bGVfbmFtZRgOIAEoCUgEiAEBEhcKCm1lZGlhX3R5cGUYDyABKAlIBYgBARIX",
+            "CgpzaXplX2J5dGVzGBAgASgDSAaIAQFCBwoFb3duZXJCDAoKX3VzZXJfbmFt",
+            "ZUIOCgxfZGV2aWNlX25hbWVCCwoJX3BsYWNlX2lkQgwKCl9maWxlX25hbWVC",
+            "DQoLX21lZGlhX3R5cGVCDQoLX3NpemVfYnl0ZXMitQEKFEdldENsb3VkRmls",
+            "ZXNSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRo",
+            "b3JpemF0aW9uEhIKCmVudGl0eV9pZHMYAiADKAUSOgoJaWNvbl9zcGVjGAMg",
+            "ASgLMiIuYXZuLmNvbm5lY3QudjEuVHJhbnNjb2RlSW1hZ2VTcGVjSACIAQES",
+            "EgoKbGVnYWN5X2lkcxgKIAMoCUIMCgpfaWNvbl9zcGVjIkMKFUdldENsb3Vk",
+            "RmlsZXNSZXNwb25zZRIqCgdyZXN1bHRzGAEgAygLMhkuYXZuLmNvbm5lY3Qu",
+            "djEuQ2xvdWRGaWxlIo0BChRBZGRDbG91ZEZpbGVzUmVxdWVzdBIrCgRhdXRo",
+            "GAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIZCg9vcmdh",
+            "bml6YXRpb25faWQYAiABKAVIABIRCgd1c2VyX2lkGAMgASgFSAASEQoJZmls",
+            "ZV91cmxzGAQgAygJQgcKBW93bmVyIj8KFUFkZENsb3VkRmlsZXNSZXNwb25z",
+            "ZRISCgplbnRpdHlfaWRzGAEgAygFEhIKCmxlZ2FjeV9pZHMYCiADKAkibgoX",
+            "UmVtb3ZlQ2xvdWRGaWxlc1JlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5j",
+            "b25uZWN0LnYxLkF1dGhvcml6YXRpb24SEgoKZW50aXR5X2lkcxgCIAMoBRIS",
+            "CgpsZWdhY3lfaWRzGAogAygJIoYFChdTZWFyY2hDbG91ZEZpbGVzUmVxdWVz",
+            "dBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEuQXV0aG9yaXphdGlv",
+            "bhIZCg9vcmdhbml6YXRpb25faWQYAiABKAVIABIRCgd1c2VyX2lkGAMgASgF",
+            "SAASNAoLdGV4dF9zZWFyY2gYBCABKAsyGi5hdm4uY29ubmVjdC52MS5UZXh0",
+            "U2VhcmNoSAGIAQESLgoLdGFnX2ZpbHRlcnMYBSADKAsyGS5hdm4uY29ubmVj",
+            "dC52MS5UYWdGaWx0ZXISGgoSZmlsdGVyX21lZGlhX3R5cGVzGAYgAygJEi4K",
+            "BWFmdGVyGAcgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEgCiAEB",
+            "Ei8KBmJlZm9yZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBI",
+            "A4gBARItCghvcmRlcl9ieRgJIAMoCzIbLmF2bi5jb25uZWN0LnYxLk9yZGVy",
+            "Q2xhdXNlEhYKCXBhZ2Vfc2l6ZRgLIAEoBUgEiAEBEhcKCnBhZ2VfdG9rZW4Y",
+            "DCABKAlIBYgBARI6CglpY29uX3NwZWMYDSABKAsyIi5hdm4uY29ubmVjdC52",
+            "MS5UcmFuc2NvZGVJbWFnZVNwZWNIBogBARI4ChBtZXRhZGF0YV9maWx0ZXJz",
+            "GA4gAygLMh4uYXZuLmNvbm5lY3QudjEuTWV0YWRhdGFGaWx0ZXJCBwoFb3du",
+            "ZXJCDgoMX3RleHRfc2VhcmNoQggKBl9hZnRlckIJCgdfYmVmb3JlQgwKCl9w",
+            "YWdlX3NpemVCDQoLX3BhZ2VfdG9rZW5CDAoKX2ljb25fc3BlYyJ4ChhTZWFy",
+            "Y2hDbG91ZEZpbGVzUmVzcG9uc2USKgoHcmVzdWx0cxgBIAMoCzIZLmF2bi5j",
+            "b25uZWN0LnYxLkNsb3VkRmlsZRIcCg9uZXh0X3BhZ2VfdG9rZW4YAiABKAlI",
+            "AIgBAUISChBfbmV4dF9wYWdlX3Rva2VuInwKFkdldENsb3VkU3VtbWFyeVJl",
+            "cXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6",
+            "YXRpb24SGQoPb3JnYW5pemF0aW9uX2lkGAIgASgFSAASEQoHdXNlcl9pZBgD",
+            "IAEoBUgAQgcKBW93bmVyItMBChdHZXRDbG91ZFN1bW1hcnlSZXNwb25zZRIT",
+            "Cgt0b3RhbF9jb3VudBgBIAEoBRITCgt0b3RhbF9ieXRlcxgCIAEoAxIWCg5j",
+            "YXBhY2l0eV9ieXRlcxgDIAEoAxIvCgZvbGRlc3QYBCABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wSACIAQESLwoGbmV3ZXN0GAUgASgLMhouZ29v",
+            "Z2xlLnByb3RvYnVmLlRpbWVzdGFtcEgBiAEBQgkKB19vbGRlc3RCCQoHX25l",
+            "d2VzdDLSBwoMQ2xvdWRTZXJ2aWNlElwKDUdldENsb3VkRmlsZXMSJC5hdm4u",
+            "Y29ubmVjdC52MS5HZXRDbG91ZEZpbGVzUmVxdWVzdBolLmF2bi5jb25uZWN0",
+            "LnYxLkdldENsb3VkRmlsZXNSZXNwb25zZRJcCg1BZGRDbG91ZEZpbGVzEiQu",
+            "YXZuLmNvbm5lY3QudjEuQWRkQ2xvdWRGaWxlc1JlcXVlc3QaJS5hdm4uY29u",
+            "bmVjdC52MS5BZGRDbG91ZEZpbGVzUmVzcG9uc2USUwoQUmVtb3ZlQ2xvdWRG",
+            "aWxlcxInLmF2bi5jb25uZWN0LnYxLlJlbW92ZUNsb3VkRmlsZXNSZXF1ZXN0",
+            "GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5EkEKB0FkZFRhZ3MSHi5hdm4uY29u",
+            "bmVjdC52MS5BZGRUYWdzUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0",
+            "eRJHCgpSZW1vdmVUYWdzEiEuYXZuLmNvbm5lY3QudjEuUmVtb3ZlVGFnc1Jl",
+            "cXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSZQoQU2VhcmNoQ2xvdWRG",
+            "aWxlcxInLmF2bi5jb25uZWN0LnYxLlNlYXJjaENsb3VkRmlsZXNSZXF1ZXN0",
+            "GiguYXZuLmNvbm5lY3QudjEuU2VhcmNoQ2xvdWRGaWxlc1Jlc3BvbnNlEmIK",
+            "D0dldENsb3VkU3VtbWFyeRImLmF2bi5jb25uZWN0LnYxLkdldENsb3VkU3Vt",
+            "bWFyeVJlcXVlc3QaJy5hdm4uY29ubmVjdC52MS5HZXRDbG91ZFN1bW1hcnlS",
+            "ZXNwb25zZRJoCg1HZXRQcm9wZXJ0aWVzEiouYXZuLmNvbm5lY3QudjEuR2V0",
+            "RW50aXR5UHJvcGVydGllc1JlcXVlc3QaKy5hdm4uY29ubmVjdC52MS5HZXRF",
+            "bnRpdHlQcm9wZXJ0aWVzUmVzcG9uc2USUwoNU2V0UHJvcGVydGllcxIqLmF2",
+            "bi5jb25uZWN0LnYxLlNldEVudGl0eVByb3BlcnRpZXNSZXF1ZXN0GhYuZ29v",
+            "Z2xlLnByb3RvYnVmLkVtcHR5ElMKC0dldE1ldGFkYXRhEh8uYXZuLmNvbm5l",
+            "Y3QudjEuTWV0YWRhdGFSZXF1ZXN0GiMuYXZuLmNvbm5lY3QudjEuR2V0TWV0",
+            "YWRhdGFSZXNwb25zZRJGCgtTZXRNZXRhZGF0YRIfLmF2bi5jb25uZWN0LnYx",
+            "Lk1ldGFkYXRhUmVxdWVzdBoWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.ActivitiesReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, global::Avn.Connect.V1.SearchReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.ActivitiesReflection.Descriptor, global::Avn.Connect.V1.MediaReflection.Descriptor, global::Avn.Connect.V1.MetadataReflection.Descriptor, global::Avn.Connect.V1.SearchReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CloudFile), global::Avn.Connect.V1.CloudFile.Parser, new[]{ "EntityId", "OrganizationId", "UserId", "FileUrl", "Updated", "Tags", "PreviewUrl", "LegacyId", "UserName", "DeviceName", "PlaceId", "FileName", "MediaType", "SizeBytes" }, new[]{ "Owner", "UserName", "DeviceName", "PlaceId", "FileName", "MediaType", "SizeBytes" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCloudFilesRequest), global::Avn.Connect.V1.GetCloudFilesRequest.Parser, new[]{ "Auth", "EntityIds", "PreviewSpec", "LegacyIds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CloudFile), global::Avn.Connect.V1.CloudFile.Parser, new[]{ "EntityId", "OrganizationId", "UserId", "FileUrl", "Updated", "Tags", "PreviewUrl", "IconUrl", "MetadataCount", "LegacyId", "UserName", "DeviceName", "PlaceId", "FileName", "MediaType", "SizeBytes" }, new[]{ "Owner", "UserName", "DeviceName", "PlaceId", "FileName", "MediaType", "SizeBytes" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCloudFilesRequest), global::Avn.Connect.V1.GetCloudFilesRequest.Parser, new[]{ "Auth", "EntityIds", "IconSpec", "LegacyIds" }, new[]{ "IconSpec" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCloudFilesResponse), global::Avn.Connect.V1.GetCloudFilesResponse.Parser, new[]{ "Results" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AddCloudFilesRequest), global::Avn.Connect.V1.AddCloudFilesRequest.Parser, new[]{ "Auth", "OrganizationId", "UserId", "FileUrls" }, new[]{ "Owner" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AddCloudFilesResponse), global::Avn.Connect.V1.AddCloudFilesResponse.Parser, new[]{ "EntityIds", "LegacyIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.RemoveCloudFilesRequest), global::Avn.Connect.V1.RemoveCloudFilesRequest.Parser, new[]{ "Auth", "EntityIds", "LegacyIds" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SearchCloudFilesRequest), global::Avn.Connect.V1.SearchCloudFilesRequest.Parser, new[]{ "Auth", "OrganizationId", "UserId", "TextSearch", "TagFilters", "FilterMediaTypes", "After", "Before", "OrderBy", "PageSize", "PageToken", "PreviewSpec" }, new[]{ "Owner", "TextSearch", "After", "Before", "PageSize", "PageToken" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SearchCloudFilesRequest), global::Avn.Connect.V1.SearchCloudFilesRequest.Parser, new[]{ "Auth", "OrganizationId", "UserId", "TextSearch", "TagFilters", "FilterMediaTypes", "After", "Before", "OrderBy", "PageSize", "PageToken", "IconSpec", "MetadataFilters" }, new[]{ "Owner", "TextSearch", "After", "Before", "PageSize", "PageToken", "IconSpec" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.SearchCloudFilesResponse), global::Avn.Connect.V1.SearchCloudFilesResponse.Parser, new[]{ "Results", "NextPageToken" }, new[]{ "NextPageToken" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCloudSummaryRequest), global::Avn.Connect.V1.GetCloudSummaryRequest.Parser, new[]{ "Auth", "OrganizationId", "UserId" }, new[]{ "Owner" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetCloudSummaryResponse), global::Avn.Connect.V1.GetCloudSummaryResponse.Parser, new[]{ "TotalCount", "TotalBytes", "CapacityBytes", "Oldest", "Newest" }, new[]{ "Oldest", "Newest" }, null, null, null)
@@ -154,6 +164,8 @@ namespace Avn.Connect.V1 {
       updated_ = other.updated_ != null ? other.updated_.Clone() : null;
       tags_ = other.tags_.Clone();
       previewUrl_ = other.previewUrl_;
+      iconUrl_ = other.iconUrl_;
+      metadataCount_ = other.metadataCount_;
       legacyId_ = other.legacyId_;
       userName_ = other.userName_;
       deviceName_ = other.deviceName_;
@@ -300,15 +312,48 @@ namespace Avn.Connect.V1 {
     public const int PreviewUrlFieldNumber = 7;
     private string previewUrl_ = "";
     /// <summary>
-    /// Preview to use for the cloud file
-    /// In future this should be based on an image request spec in the request
+    /// Preview to use for the cloud file.
+    /// Deprecated: use icon_url instead, which carries the identical value.
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PreviewUrl {
       get { return previewUrl_; }
       set {
         previewUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "icon_url" field.</summary>
+    public const int IconUrlFieldNumber = 8;
+    private string iconUrl_ = "";
+    /// <summary>
+    /// Icon/preview image for the cloud file, transcoded per the request's
+    /// icon_spec (TranscodeImageSpec) when one is supplied.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string IconUrl {
+      get { return iconUrl_; }
+      set {
+        iconUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "metadata_count" field.</summary>
+    public const int MetadataCountFieldNumber = 9;
+    private int metadataCount_;
+    /// <summary>
+    /// Number of metadata entries attached to this file, so clients know
+    /// whether a GetMetadata call is worthwhile
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int MetadataCount {
+      get { return metadataCount_; }
+      set {
+        metadataCount_ = value;
       }
     }
 
@@ -531,6 +576,8 @@ namespace Avn.Connect.V1 {
       if (!object.Equals(Updated, other.Updated)) return false;
       if(!tags_.Equals(other.tags_)) return false;
       if (PreviewUrl != other.PreviewUrl) return false;
+      if (IconUrl != other.IconUrl) return false;
+      if (MetadataCount != other.MetadataCount) return false;
       if (LegacyId != other.LegacyId) return false;
       if (UserName != other.UserName) return false;
       if (DeviceName != other.DeviceName) return false;
@@ -553,6 +600,8 @@ namespace Avn.Connect.V1 {
       if (updated_ != null) hash ^= Updated.GetHashCode();
       hash ^= tags_.GetHashCode();
       if (PreviewUrl.Length != 0) hash ^= PreviewUrl.GetHashCode();
+      if (IconUrl.Length != 0) hash ^= IconUrl.GetHashCode();
+      if (MetadataCount != 0) hash ^= MetadataCount.GetHashCode();
       if (LegacyId.Length != 0) hash ^= LegacyId.GetHashCode();
       if (HasUserName) hash ^= UserName.GetHashCode();
       if (HasDeviceName) hash ^= DeviceName.GetHashCode();
@@ -603,6 +652,14 @@ namespace Avn.Connect.V1 {
       if (PreviewUrl.Length != 0) {
         output.WriteRawTag(58);
         output.WriteString(PreviewUrl);
+      }
+      if (IconUrl.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(IconUrl);
+      }
+      if (MetadataCount != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(MetadataCount);
       }
       if (LegacyId.Length != 0) {
         output.WriteRawTag(82);
@@ -667,6 +724,14 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(58);
         output.WriteString(PreviewUrl);
       }
+      if (IconUrl.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(IconUrl);
+      }
+      if (MetadataCount != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(MetadataCount);
+      }
       if (LegacyId.Length != 0) {
         output.WriteRawTag(82);
         output.WriteString(LegacyId);
@@ -724,6 +789,12 @@ namespace Avn.Connect.V1 {
       if (PreviewUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PreviewUrl);
       }
+      if (IconUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IconUrl);
+      }
+      if (MetadataCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(MetadataCount);
+      }
       if (LegacyId.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LegacyId);
       }
@@ -772,6 +843,12 @@ namespace Avn.Connect.V1 {
       tags_.Add(other.tags_);
       if (other.PreviewUrl.Length != 0) {
         PreviewUrl = other.PreviewUrl;
+      }
+      if (other.IconUrl.Length != 0) {
+        IconUrl = other.IconUrl;
+      }
+      if (other.MetadataCount != 0) {
+        MetadataCount = other.MetadataCount;
       }
       if (other.LegacyId.Length != 0) {
         LegacyId = other.LegacyId;
@@ -854,6 +931,14 @@ namespace Avn.Connect.V1 {
             PreviewUrl = input.ReadString();
             break;
           }
+          case 66: {
+            IconUrl = input.ReadString();
+            break;
+          }
+          case 72: {
+            MetadataCount = input.ReadInt32();
+            break;
+          }
           case 82: {
             LegacyId = input.ReadString();
             break;
@@ -933,6 +1018,14 @@ namespace Avn.Connect.V1 {
             PreviewUrl = input.ReadString();
             break;
           }
+          case 66: {
+            IconUrl = input.ReadString();
+            break;
+          }
+          case 72: {
+            MetadataCount = input.ReadInt32();
+            break;
+          }
           case 82: {
             LegacyId = input.ReadString();
             break;
@@ -1005,7 +1098,7 @@ namespace Avn.Connect.V1 {
     public GetCloudFilesRequest(GetCloudFilesRequest other) : this() {
       auth_ = other.auth_ != null ? other.auth_.Clone() : null;
       entityIds_ = other.entityIds_.Clone();
-      previewSpec_ = other.previewSpec_ != null ? other.previewSpec_.Clone() : null;
+      iconSpec_ = other.iconSpec_ != null ? other.iconSpec_.Clone() : null;
       legacyIds_ = other.legacyIds_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1045,18 +1138,18 @@ namespace Avn.Connect.V1 {
       get { return entityIds_; }
     }
 
-    /// <summary>Field number for the "preview_spec" field.</summary>
-    public const int PreviewSpecFieldNumber = 3;
-    private global::Avn.Connect.V1.TranscodeImageSpec previewSpec_;
+    /// <summary>Field number for the "icon_spec" field.</summary>
+    public const int IconSpecFieldNumber = 3;
+    private global::Avn.Connect.V1.TranscodeImageSpec iconSpec_;
     /// <summary>
-    /// Preview transcoding instructions. No preview is returned if this is unset.
+    /// Icon transcoding instructions. No icon is returned if this is unset.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.TranscodeImageSpec PreviewSpec {
-      get { return previewSpec_; }
+    public global::Avn.Connect.V1.TranscodeImageSpec IconSpec {
+      get { return iconSpec_; }
       set {
-        previewSpec_ = value;
+        iconSpec_ = value;
       }
     }
 
@@ -1088,7 +1181,7 @@ namespace Avn.Connect.V1 {
       }
       if (!object.Equals(Auth, other.Auth)) return false;
       if(!entityIds_.Equals(other.entityIds_)) return false;
-      if (!object.Equals(PreviewSpec, other.PreviewSpec)) return false;
+      if (!object.Equals(IconSpec, other.IconSpec)) return false;
       if(!legacyIds_.Equals(other.legacyIds_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1099,7 +1192,7 @@ namespace Avn.Connect.V1 {
       int hash = 1;
       if (auth_ != null) hash ^= Auth.GetHashCode();
       hash ^= entityIds_.GetHashCode();
-      if (previewSpec_ != null) hash ^= PreviewSpec.GetHashCode();
+      if (iconSpec_ != null) hash ^= IconSpec.GetHashCode();
       hash ^= legacyIds_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1124,9 +1217,9 @@ namespace Avn.Connect.V1 {
         output.WriteMessage(Auth);
       }
       entityIds_.WriteTo(output, _repeated_entityIds_codec);
-      if (previewSpec_ != null) {
+      if (iconSpec_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(PreviewSpec);
+        output.WriteMessage(IconSpec);
       }
       legacyIds_.WriteTo(output, _repeated_legacyIds_codec);
       if (_unknownFields != null) {
@@ -1144,9 +1237,9 @@ namespace Avn.Connect.V1 {
         output.WriteMessage(Auth);
       }
       entityIds_.WriteTo(ref output, _repeated_entityIds_codec);
-      if (previewSpec_ != null) {
+      if (iconSpec_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(PreviewSpec);
+        output.WriteMessage(IconSpec);
       }
       legacyIds_.WriteTo(ref output, _repeated_legacyIds_codec);
       if (_unknownFields != null) {
@@ -1163,8 +1256,8 @@ namespace Avn.Connect.V1 {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
       }
       size += entityIds_.CalculateSize(_repeated_entityIds_codec);
-      if (previewSpec_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PreviewSpec);
+      if (iconSpec_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(IconSpec);
       }
       size += legacyIds_.CalculateSize(_repeated_legacyIds_codec);
       if (_unknownFields != null) {
@@ -1186,11 +1279,11 @@ namespace Avn.Connect.V1 {
         Auth.MergeFrom(other.Auth);
       }
       entityIds_.Add(other.entityIds_);
-      if (other.previewSpec_ != null) {
-        if (previewSpec_ == null) {
-          PreviewSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
+      if (other.iconSpec_ != null) {
+        if (iconSpec_ == null) {
+          IconSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
         }
-        PreviewSpec.MergeFrom(other.PreviewSpec);
+        IconSpec.MergeFrom(other.IconSpec);
       }
       legacyIds_.Add(other.legacyIds_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1225,10 +1318,10 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 26: {
-            if (previewSpec_ == null) {
-              PreviewSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
+            if (iconSpec_ == null) {
+              IconSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
             }
-            input.ReadMessage(PreviewSpec);
+            input.ReadMessage(IconSpec);
             break;
           }
           case 82: {
@@ -1267,10 +1360,10 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 26: {
-            if (previewSpec_ == null) {
-              PreviewSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
+            if (iconSpec_ == null) {
+              IconSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
             }
-            input.ReadMessage(PreviewSpec);
+            input.ReadMessage(IconSpec);
             break;
           }
           case 82: {
@@ -2388,7 +2481,8 @@ namespace Avn.Connect.V1 {
       orderBy_ = other.orderBy_.Clone();
       pageSize_ = other.pageSize_;
       pageToken_ = other.pageToken_;
-      previewSpec_ = other.previewSpec_ != null ? other.previewSpec_.Clone() : null;
+      iconSpec_ = other.iconSpec_ != null ? other.iconSpec_.Clone() : null;
+      metadataFilters_ = other.metadataFilters_.Clone();
       switch (other.OwnerCase) {
         case OwnerOneofCase.OrganizationId:
           OrganizationId = other.OrganizationId;
@@ -2626,19 +2720,33 @@ namespace Avn.Connect.V1 {
       pageToken_ = null;
     }
 
-    /// <summary>Field number for the "preview_spec" field.</summary>
-    public const int PreviewSpecFieldNumber = 13;
-    private global::Avn.Connect.V1.TranscodeImageSpec previewSpec_;
+    /// <summary>Field number for the "icon_spec" field.</summary>
+    public const int IconSpecFieldNumber = 13;
+    private global::Avn.Connect.V1.TranscodeImageSpec iconSpec_;
     /// <summary>
-    /// Preview transcoding instructions. No preview is returned if this is not defined.
+    /// Icon transcoding instructions. No icon is returned if this is unset.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.TranscodeImageSpec PreviewSpec {
-      get { return previewSpec_; }
+    public global::Avn.Connect.V1.TranscodeImageSpec IconSpec {
+      get { return iconSpec_; }
       set {
-        previewSpec_ = value;
+        iconSpec_ = value;
       }
+    }
+
+    /// <summary>Field number for the "metadata_filters" field.</summary>
+    public const int MetadataFiltersFieldNumber = 14;
+    private static readonly pb::FieldCodec<global::Avn.Connect.V1.MetadataFilter> _repeated_metadataFilters_codec
+        = pb::FieldCodec.ForMessage(114, global::Avn.Connect.V1.MetadataFilter.Parser);
+    private readonly pbc::RepeatedField<global::Avn.Connect.V1.MetadataFilter> metadataFilters_ = new pbc::RepeatedField<global::Avn.Connect.V1.MetadataFilter>();
+    /// <summary>
+    /// Metadata filters - all filters must pass (AND), matching tag_filters semantics
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Avn.Connect.V1.MetadataFilter> MetadataFilters {
+      get { return metadataFilters_; }
     }
 
     private object owner_;
@@ -2688,7 +2796,8 @@ namespace Avn.Connect.V1 {
       if(!orderBy_.Equals(other.orderBy_)) return false;
       if (PageSize != other.PageSize) return false;
       if (PageToken != other.PageToken) return false;
-      if (!object.Equals(PreviewSpec, other.PreviewSpec)) return false;
+      if (!object.Equals(IconSpec, other.IconSpec)) return false;
+      if(!metadataFilters_.Equals(other.metadataFilters_)) return false;
       if (OwnerCase != other.OwnerCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2708,7 +2817,8 @@ namespace Avn.Connect.V1 {
       hash ^= orderBy_.GetHashCode();
       if (HasPageSize) hash ^= PageSize.GetHashCode();
       if (HasPageToken) hash ^= PageToken.GetHashCode();
-      if (previewSpec_ != null) hash ^= PreviewSpec.GetHashCode();
+      if (iconSpec_ != null) hash ^= IconSpec.GetHashCode();
+      hash ^= metadataFilters_.GetHashCode();
       hash ^= (int) ownerCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2763,10 +2873,11 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(98);
         output.WriteString(PageToken);
       }
-      if (previewSpec_ != null) {
+      if (iconSpec_ != null) {
         output.WriteRawTag(106);
-        output.WriteMessage(PreviewSpec);
+        output.WriteMessage(IconSpec);
       }
+      metadataFilters_.WriteTo(output, _repeated_metadataFilters_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2812,10 +2923,11 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(98);
         output.WriteString(PageToken);
       }
-      if (previewSpec_ != null) {
+      if (iconSpec_ != null) {
         output.WriteRawTag(106);
-        output.WriteMessage(PreviewSpec);
+        output.WriteMessage(IconSpec);
       }
+      metadataFilters_.WriteTo(ref output, _repeated_metadataFilters_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2853,9 +2965,10 @@ namespace Avn.Connect.V1 {
       if (HasPageToken) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PageToken);
       }
-      if (previewSpec_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PreviewSpec);
+      if (iconSpec_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(IconSpec);
       }
+      size += metadataFilters_.CalculateSize(_repeated_metadataFilters_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2901,12 +3014,13 @@ namespace Avn.Connect.V1 {
       if (other.HasPageToken) {
         PageToken = other.PageToken;
       }
-      if (other.previewSpec_ != null) {
-        if (previewSpec_ == null) {
-          PreviewSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
+      if (other.iconSpec_ != null) {
+        if (iconSpec_ == null) {
+          IconSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
         }
-        PreviewSpec.MergeFrom(other.PreviewSpec);
+        IconSpec.MergeFrom(other.IconSpec);
       }
+      metadataFilters_.Add(other.metadataFilters_);
       switch (other.OwnerCase) {
         case OwnerOneofCase.OrganizationId:
           OrganizationId = other.OrganizationId;
@@ -2992,10 +3106,14 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 106: {
-            if (previewSpec_ == null) {
-              PreviewSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
+            if (iconSpec_ == null) {
+              IconSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
             }
-            input.ReadMessage(PreviewSpec);
+            input.ReadMessage(IconSpec);
+            break;
+          }
+          case 114: {
+            metadataFilters_.AddEntriesFrom(input, _repeated_metadataFilters_codec);
             break;
           }
         }
@@ -3074,10 +3192,14 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 106: {
-            if (previewSpec_ == null) {
-              PreviewSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
+            if (iconSpec_ == null) {
+              IconSpec = new global::Avn.Connect.V1.TranscodeImageSpec();
             }
-            input.ReadMessage(PreviewSpec);
+            input.ReadMessage(IconSpec);
+            break;
+          }
+          case 114: {
+            metadataFilters_.AddEntriesFrom(ref input, _repeated_metadataFilters_codec);
             break;
           }
         }

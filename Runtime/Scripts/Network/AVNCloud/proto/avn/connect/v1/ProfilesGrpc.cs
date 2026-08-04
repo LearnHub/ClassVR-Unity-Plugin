@@ -62,9 +62,17 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.EntityInfoListResponse> __Marshaller_avn_connect_v1_EntityInfoListResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.EntityInfoListResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.AddChildrenRequest> __Marshaller_avn_connect_v1_AddChildrenRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.AddChildrenRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.RemoveChildrenRequest> __Marshaller_avn_connect_v1_RemoveChildrenRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.RemoveChildrenRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.AddTagsRequest> __Marshaller_avn_connect_v1_AddTagsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.AddTagsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.RemoveTagsRequest> __Marshaller_avn_connect_v1_RemoveTagsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.RemoveTagsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityPropertiesRequest> __Marshaller_avn_connect_v1_GetEntityPropertiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityPropertiesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityPropertiesResponse> __Marshaller_avn_connect_v1_GetEntityPropertiesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityPropertiesResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.SetEntityPropertiesRequest> __Marshaller_avn_connect_v1_SetEntityPropertiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SetEntityPropertiesRequest.Parser));
 
@@ -109,6 +117,22 @@ namespace Avn.Connect.V1 {
         __Marshaller_avn_connect_v1_EntityInfoListResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.AddChildrenRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AddCategories = new grpc::Method<global::Avn.Connect.V1.AddChildrenRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddCategories",
+        __Marshaller_avn_connect_v1_AddChildrenRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.RemoveChildrenRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_RemoveCategories = new grpc::Method<global::Avn.Connect.V1.RemoveChildrenRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RemoveCategories",
+        __Marshaller_avn_connect_v1_RemoveChildrenRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.AddTagsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_AddTags = new grpc::Method<global::Avn.Connect.V1.AddTagsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -123,6 +147,14 @@ namespace Avn.Connect.V1 {
         "RemoveTags",
         __Marshaller_avn_connect_v1_RemoveTagsRequest,
         __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetEntityPropertiesRequest, global::Avn.Connect.V1.GetEntityPropertiesResponse> __Method_GetProperties = new grpc::Method<global::Avn.Connect.V1.GetEntityPropertiesRequest, global::Avn.Connect.V1.GetEntityPropertiesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetProperties",
+        __Marshaller_avn_connect_v1_GetEntityPropertiesRequest,
+        __Marshaller_avn_connect_v1_GetEntityPropertiesResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.SetEntityPropertiesRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetProperties = new grpc::Method<global::Avn.Connect.V1.SetEntityPropertiesRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
@@ -310,7 +342,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteProfile, null, options, request);
       }
       /// <summary>
-      /// Get all published categories in the given profile
+      /// Get a page of published categories in the given profile (paged via page_size/page_token; follow next_page_token for the rest)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -323,7 +355,7 @@ namespace Avn.Connect.V1 {
         return GetCategories(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published categories in the given profile
+      /// Get a page of published categories in the given profile (paged via page_size/page_token; follow next_page_token for the rest)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -334,7 +366,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetCategories, null, options, request);
       }
       /// <summary>
-      /// Get all published categories in the given profile
+      /// Get a page of published categories in the given profile (paged via page_size/page_token; follow next_page_token for the rest)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -347,7 +379,7 @@ namespace Avn.Connect.V1 {
         return GetCategoriesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published categories in the given profile
+      /// Get a page of published categories in the given profile (paged via page_size/page_token; follow next_page_token for the rest)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -358,7 +390,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetCategories, null, options, request);
       }
       /// <summary>
-      /// Get all published activities in the given profile
+      /// Get a page of published activities in the given profile (paged via page_size/page_token; follow next_page_token for the rest)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -371,7 +403,7 @@ namespace Avn.Connect.V1 {
         return GetActivities(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published activities in the given profile
+      /// Get a page of published activities in the given profile (paged via page_size/page_token; follow next_page_token for the rest)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -382,7 +414,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetActivities, null, options, request);
       }
       /// <summary>
-      /// Get all published activities in the given profile
+      /// Get a page of published activities in the given profile (paged via page_size/page_token; follow next_page_token for the rest)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -395,7 +427,7 @@ namespace Avn.Connect.V1 {
         return GetActivitiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get all published activities in the given profile
+      /// Get a page of published activities in the given profile (paged via page_size/page_token; follow next_page_token for the rest)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -404,6 +436,102 @@ namespace Avn.Connect.V1 {
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.EntityInfoListResponse> GetActivitiesAsync(global::Avn.Connect.V1.EntityInfoListRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetActivities, null, options, request);
+      }
+      /// <summary>
+      /// Add categories to a profile. child_ids are appended by default, or become the profile's exact membership when replace_all is set. The order of child_ids is persisted as the categories' sort order.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty AddCategories(global::Avn.Connect.V1.AddChildrenRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddCategories(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add categories to a profile. child_ids are appended by default, or become the profile's exact membership when replace_all is set. The order of child_ids is persisted as the categories' sort order.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty AddCategories(global::Avn.Connect.V1.AddChildrenRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddCategories, null, options, request);
+      }
+      /// <summary>
+      /// Add categories to a profile. child_ids are appended by default, or become the profile's exact membership when replace_all is set. The order of child_ids is persisted as the categories' sort order.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AddCategoriesAsync(global::Avn.Connect.V1.AddChildrenRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddCategoriesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add categories to a profile. child_ids are appended by default, or become the profile's exact membership when replace_all is set. The order of child_ids is persisted as the categories' sort order.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> AddCategoriesAsync(global::Avn.Connect.V1.AddChildrenRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddCategories, null, options, request);
+      }
+      /// <summary>
+      /// Remove a category from a profile
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveCategories(global::Avn.Connect.V1.RemoveChildrenRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveCategories(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove a category from a profile
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveCategories(global::Avn.Connect.V1.RemoveChildrenRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveCategories, null, options, request);
+      }
+      /// <summary>
+      /// Remove a category from a profile
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveCategoriesAsync(global::Avn.Connect.V1.RemoveChildrenRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveCategoriesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove a category from a profile
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveCategoriesAsync(global::Avn.Connect.V1.RemoveChildrenRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveCategories, null, options, request);
       }
       /// <summary>
       /// Add tags to a profile
@@ -502,7 +630,55 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveTags, null, options, request);
       }
       /// <summary>
-      /// Set the properties of a category
+      /// Get the properties of one or more profiles. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, LANGUAGE_ID, UPDATED, LICENSED, PERMITTED, ICON_URL, PREVIEW_URL, WALLPAPER_URL, PUBLISHED, FEATURED, ITEM_COUNT, ORGANIZATION_ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetEntityPropertiesResponse GetProperties(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the properties of one or more profiles. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, LANGUAGE_ID, UPDATED, LICENSED, PERMITTED, ICON_URL, PREVIEW_URL, WALLPAPER_URL, PUBLISHED, FEATURED, ITEM_COUNT, ORGANIZATION_ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetEntityPropertiesResponse GetProperties(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Get the properties of one or more profiles. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, LANGUAGE_ID, UPDATED, LICENSED, PERMITTED, ICON_URL, PREVIEW_URL, WALLPAPER_URL, PUBLISHED, FEATURED, ITEM_COUNT, ORGANIZATION_ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetEntityPropertiesResponse> GetPropertiesAsync(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the properties of one or more profiles. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, LANGUAGE_ID, UPDATED, LICENSED, PERMITTED, ICON_URL, PREVIEW_URL, WALLPAPER_URL, PUBLISHED, FEATURED, ITEM_COUNT, ORGANIZATION_ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetEntityPropertiesResponse> GetPropertiesAsync(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Set the properties of a profile. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, WALLPAPER_URL, PUBLISHED, LANGUAGE_ID, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -515,7 +691,7 @@ namespace Avn.Connect.V1 {
         return SetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set the properties of a category
+      /// Set the properties of a profile. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, WALLPAPER_URL, PUBLISHED, LANGUAGE_ID, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -526,7 +702,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_SetProperties, null, options, request);
       }
       /// <summary>
-      /// Set the properties of a category
+      /// Set the properties of a profile. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, WALLPAPER_URL, PUBLISHED, LANGUAGE_ID, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -539,7 +715,7 @@ namespace Avn.Connect.V1 {
         return SetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set the properties of a category
+      /// Set the properties of a profile. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, WALLPAPER_URL, PUBLISHED, LANGUAGE_ID, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

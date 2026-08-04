@@ -46,7 +46,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       var updated = DateTimeOffset.FromUnixTimeSeconds(1_700_000_000);
       var proto = new ProtoCloudFile {
         EntityId = 42, FileUrl = "the-url", FileName = "photo.png", MediaType = "image/png",
-        SizeBytes = 123, PreviewUrl = "preview-url", Updated = Timestamp.FromDateTimeOffset(updated)
+        SizeBytes = 123, IconUrl = "icon-url", Updated = Timestamp.FromDateTimeOffset(updated)
       };
       proto.Tags.AddRange(new[] { 1, 2, 3 });
 
@@ -57,7 +57,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       Assert.AreEqual("the-url", file.FileUrl);
       Assert.AreEqual("image/png", file.MediaType);
       Assert.AreEqual(123L, file.SizeBytes);
-      Assert.AreEqual("preview-url", file.PreviewUrl);
+      Assert.AreEqual("icon-url", file.IconUrl);
       Assert.AreEqual(updated, file.Updated);
       CollectionAssert.AreEqual(new[] { 1, 2, 3 }, file.Tags);
     }

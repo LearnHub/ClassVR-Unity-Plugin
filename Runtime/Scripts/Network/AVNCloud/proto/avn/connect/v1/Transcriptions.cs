@@ -152,7 +152,9 @@ namespace Avn.Connect.V1 {
     public const int TranslateFieldNumber = 3;
     private global::Avn.Connect.V1.TranslationSpec translate_;
     /// <summary>
-    /// Translation instructions. The original text is returned if this is unset.
+    /// Optional on-demand translation. Set language_id to a target BCP 47 language to
+    /// translate every segment of the transcript into it; leave unset to return the
+    /// transcript unchanged (which may itself contain more than one language).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -451,7 +453,10 @@ namespace Avn.Connect.V1 {
     public const int TranslateFieldNumber = 3;
     private global::Avn.Connect.V1.TranslationSpec translate_;
     /// <summary>
-    /// Translation instructions. The original text is returned if this is unset.
+    /// Optional on-demand translation. Set language_id to a target BCP 47 language to
+    /// translate every segment of the transcript into it; leave unset to return the
+    /// original. A transcript's language(s) are per-segment and independent of the
+    /// activity's own language_id.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1314,7 +1319,8 @@ namespace Avn.Connect.V1 {
         = pb::FieldCodec.ForMessage(26, global::Avn.Connect.V1.TranscriptSegment.Parser);
     private readonly pbc::RepeatedField<global::Avn.Connect.V1.TranscriptSegment> segments_ = new pbc::RepeatedField<global::Avn.Connect.V1.TranscriptSegment>();
     /// <summary>
-    /// All the transcribed  segments
+    /// All the transcribed segments. Segments may be in different languages: each
+    /// carries its own language_id, so a single transcript can be multilingual.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1577,7 +1583,8 @@ namespace Avn.Connect.V1 {
     public const int LanguageIdFieldNumber = 3;
     private string languageId_ = "";
     /// <summary>
-    /// May differ from source_language_id if translated
+    /// Language of this segment's text (BCP 47). Segments in one transcript may differ.
+    /// On translated output this is the target language and differs from source_language_id.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1636,7 +1643,7 @@ namespace Avn.Connect.V1 {
     public const int SourceLanguageIdFieldNumber = 8;
     private string sourceLanguageId_ = "";
     /// <summary>
-    /// Original language of transcript (only set for translated text)
+    /// Original language this segment was translated from (BCP 47); only set on translated output
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1651,7 +1658,7 @@ namespace Avn.Connect.V1 {
     public const int TranslationIdFieldNumber = 7;
     private string translationId_ = "";
     /// <summary>
-    /// Translation metadata
+    /// ID of the stored translation for this segment (links to the translation store); only set on translated output
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

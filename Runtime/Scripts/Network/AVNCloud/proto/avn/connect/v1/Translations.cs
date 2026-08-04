@@ -98,7 +98,7 @@ namespace Avn.Connect.V1 {
     /// </summary>
     [pbr::OriginalName("TRANSLATION_FORMAT_MARKDOWN")] Markdown = 2,
     /// <summary>
-    /// Text is in HTML format
+    /// Text is in HTML format (valid as a translation target/output only, not as a source)
     /// </summary>
     [pbr::OriginalName("TRANSLATION_FORMAT_HTML")] Html = 3,
     /// <summary>
@@ -114,11 +114,13 @@ namespace Avn.Connect.V1 {
   public enum TranslationFlag {
     [pbr::OriginalName("TRANSLATION_FLAG_UNKNOWN")] Unknown = 0,
     /// <summary>
-    /// Is translation `text` field an AVNFS path?
+    /// The `text` field is an AVNFS URL, not inline text: the file is fetched, translated
+    /// and re-uploaded, and the response `text` is the new AVNFS URL.
     /// </summary>
     [pbr::OriginalName("TRANSLATION_FLAG_IS_AVNFS")] IsAvnfs = 1,
     /// <summary>
-    /// Should translation include metadata info for translators?
+    /// Wrap each translated fragment with its translation_id/source/target metadata (an
+    /// &lt;avn-tx> tag in HTML or a :tx[] directive in Markdown) for translator tooling.
     /// </summary>
     [pbr::OriginalName("TRANSLATION_FLAG_INCLUDE_METADATA")] IncludeMetadata = 2,
     /// <summary>
@@ -188,8 +190,10 @@ namespace Avn.Connect.V1 {
     public const int LanguageIdFieldNumber = 1;
     private string languageId_ = "";
     /// <summary>
-    /// IETF BCP 47 language tag
-    /// Note: A blank language_id signifies that the language is expected to come from the source or, if the source doesn't support this, it should not be translated
+    /// IETF BCP 47 language tag.
+    /// Blank means "unspecified": on a source spec the language is left undetermined; on
+    /// a target spec it disables translation, so the source text is returned unchanged.
+    /// Unlisted tags reduce to their nearest supported base (e.g. es-ES -> es).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -697,7 +701,7 @@ namespace Avn.Connect.V1 {
     public const int SourceSpecFieldNumber = 3;
     private global::Avn.Connect.V1.TranslationSpec sourceSpec_;
     /// <summary>
-    /// Language and format of the source text
+    /// Language and format of the source text. Required; format must not be UNDEFINED.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -712,9 +716,9 @@ namespace Avn.Connect.V1 {
     public const int TargetSpecFieldNumber = 4;
     private global::Avn.Connect.V1.TranslationSpec targetSpec_;
     /// <summary>
-    /// Language and format to translate:
-    /// - if undefined the original source will be returned unmodified
-    /// - if the format field is set to UNDEFINED the source format will be preserved
+    /// Language and format to translate into:
+    /// - if unset, the original source is returned unmodified
+    /// - if its format is UNDEFINED, the source format is preserved
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -729,7 +733,10 @@ namespace Avn.Connect.V1 {
     public const int ModifierFieldNumber = 5;
     private string modifier_ = "";
     /// <summary>
-    /// Differential modifier for short or ambiguous text (currently implemented as a prefix for backward compatibility with CC1)
+    /// Optional disambiguation prefix for short or ambiguous text, applied as a single
+    /// whole-source translation (one translation_id). PLAIN_TEXT sources only — supplying
+    /// a modifier with any other source format is rejected. (Implemented as a prefix for
+    /// backward compatibility with CC1.)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1072,7 +1079,10 @@ namespace Avn.Connect.V1 {
     public const int TranslationIdFieldNumber = 2;
     private string translationId_ = "";
     /// <summary>
-    /// Unique ID of translation source text
+    /// ID of the source text being translated. Derived from the trimmed source fragment:
+    /// the text itself if under 16 characters, otherwise its Java String hashCode as a
+    /// decimal string. Translation is per fragment (paragraph / Markdown text node), so
+    /// each fragment has its own id.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1441,7 +1451,10 @@ namespace Avn.Connect.V1 {
     public const int TranslationIdFieldNumber = 2;
     private string translationId_ = "";
     /// <summary>
-    /// Unique ID of translation source text
+    /// ID of the source text being translated. Derived from the trimmed source fragment:
+    /// the text itself if under 16 characters, otherwise its Java String hashCode as a
+    /// decimal string. Translation is per fragment (paragraph / Markdown text node), so
+    /// each fragment has its own id.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

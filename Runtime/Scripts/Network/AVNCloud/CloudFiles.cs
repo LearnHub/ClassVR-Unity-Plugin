@@ -189,7 +189,7 @@ namespace ClassVR.Network.AvnCloud {
       var updated = proto.Updated?.ToDateTimeOffset();
       var tags = new List<int>(proto.Tags);
 
-      return new CloudFile(proto.EntityId, fileName, proto.FileUrl, mediaType, sizeBytes, proto.PreviewUrl, updated, tags);
+      return new CloudFile(proto.EntityId, fileName, proto.FileUrl, mediaType, sizeBytes, proto.IconUrl, updated, tags);
     }
   }
 }
