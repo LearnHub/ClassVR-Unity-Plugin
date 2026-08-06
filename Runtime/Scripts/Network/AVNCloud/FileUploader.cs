@@ -10,6 +10,11 @@ using UnityEngine.Networking;
 using Authorization = Avn.Connect.V1.Authorization;
 
 namespace ClassVR.Network.AvnCloud {
+  // Sends the Shared Cloud association request. The production implementation calls the gRPC client; tests
+  // substitute a lambda so the entity ID extraction can be exercised without a network, a gRPC channel, or
+  // the device-only CVRProperties singleton.
+  internal delegate Task<AddCloudFilesResponse> AddCloudFilesFetch(AddCloudFilesRequest request);
+
   public static class FileUploader {
     // Maximum size in bytes that AVNFS will accept (5GB)
     private const long MaxSinglePartUploadSizeBytes = 5368709120;
@@ -47,7 +52,8 @@ namespace ClassVR.Network.AvnCloud {
 
       // Assign the file to the Shared Cloud area of the organization the device is currently registered to.
       // The display name is derived from the file path (e.g. "/path/to/photo.png" -> "photo.png").
-      return await AssociateWithOrg(downloadUrl, endpointServer, jwt, Path.GetFileName(filePath));
+      var entityId = await AssociateWithOrg(downloadUrl, endpointServer, jwt, Path.GetFileName(filePath));
+      return entityId.HasValue ? downloadUrl : null;
     }
 
     /// <summary>
@@ -70,7 +76,8 @@ namespace ClassVR.Network.AvnCloud {
       }
 
       // Assign the file to the Shared Cloud area of the organization the device is currently registered to
-      return await AssociateWithOrg(downloadUrl, endpointServer, jwt, filename);
+      var entityId = await AssociateWithOrg(downloadUrl, endpointServer, jwt, filename);
+      return entityId.HasValue ? downloadUrl : null;
     }
 
     /// <summary>
@@ -159,15 +166,14 @@ namespace ClassVR.Network.AvnCloud {
     }
 
     // Associates an already-uploaded AVNFS file with the Shared Cloud of the Organization the device is
-    // registered to. Returns the download URL on success, null otherwise.
-    private static async Task<string> AssociateWithOrg(string downloadUrl, EndpointServer endpointServer, string jwt, string filename) {
+    // registered to. Returns the cloud file's entity ID on success, null otherwise.
+    private static async Task<int?> AssociateWithOrg(string downloadUrl, EndpointServer endpointServer, string jwt, string filename) {
       var auth = GetAuthorizationForUpload(jwt, filename);
       if (auth == null) {
         return null;
       }
 
-      var addFileSuccess = await AddFileToSharedCloud(downloadUrl, auth, endpointServer);
-      return addFileSuccess ? downloadUrl : null;
+      return await AddFileToSharedCloud(downloadUrl, auth, endpointServer);
     }
 
     // Gets authorization for upload, using provided JWT or falling back to device JWT
@@ -268,9 +274,10 @@ namespace ClassVR.Network.AvnCloud {
 #endif
     }
 
-    // Assigns the file with the specified URL to the Shared Cloud of the ClassVR Organization that the device is registered to
-    // Returns true if successful, false otherwise
-    private static async Task<bool> AddFileToSharedCloud(
+    // Assigns the file with the specified URL to the Shared Cloud of the ClassVR Organization that the device is
+    // registered to. Resolves the organization from the device, then defers to the overload below.
+    // Returns the cloud file's entity ID if successful, null otherwise.
+    private static async Task<int?> AddFileToSharedCloud(
         string downloadUrl,
         Authorization auth,
         EndpointServer endpointServer) {
@@ -280,31 +287,50 @@ namespace ClassVR.Network.AvnCloud {
       var organizationInfo = CVRProperties.Instance.OrganizationInfo;
       if (organizationInfo == null) {
         Debug.LogError($"Couldn't retrieve Organization info. Failed to assign '{downloadUrl}' to Shared Cloud.");
-        return false;
+        return null;
       }
 
-      var orgId = organizationInfo.Id;
-      Debug.Log($"Assigning '{downloadUrl}' to Shared Cloud of Organization with ID '{orgId}'");
+      var avnCloud = new CloudService.CloudServiceClient(AvnCloudChannel.Instance.ChannelForServer(endpointServer));
+      return await AddFileToSharedCloud(downloadUrl, auth, organizationInfo.Id,
+          request => avnCloud.AddCloudFilesAsync(request).ResponseAsync);
+    }
+
+    // Builds and sends the association request, and pulls the entity ID out of the response. The gRPC call sits
+    // behind the AddCloudFilesFetch seam and the organization is passed in, so this logic is unit-testable
+    // without a network or an enrolled device.
+    // Returns the cloud file's entity ID if successful, null otherwise.
+    internal static async Task<int?> AddFileToSharedCloud(
+        string downloadUrl,
+        Authorization auth,
+        int organizationId,
+        AddCloudFilesFetch fetch) {
+
+      Debug.Log($"Assigning '{downloadUrl}' to Shared Cloud of Organization with ID '{organizationId}'");
 
       // Construct a request using the organization ID the device is currently registered to
       var addFilesRequest = new AddCloudFilesRequest {
         Auth = auth,
-        OrganizationId = orgId,
+        OrganizationId = organizationId,
         FileUrls = { downloadUrl }
       };
 
       // Make the request
-      var avnCloud = new CloudService.CloudServiceClient(AvnCloudChannel.Instance.ChannelForServer(endpointServer));
-      var cloudFilesResult = await avnCloud.AddCloudFilesAsync(addFilesRequest);
+      var cloudFilesResult = await fetch(addFilesRequest);
 
       // Check the response for EntityIds
       if (cloudFilesResult.EntityIds.Count < 1) {
-        Debug.LogError($"Failed to assign '{downloadUrl}' to Shared Cloud of Organization with ID '{orgId}'");
-        return false;
+        Debug.LogError($"Failed to assign '{downloadUrl}' to Shared Cloud of Organization with ID '{organizationId}'");
+        return null;
       }
 
-      Debug.Log($"'{downloadUrl}' successfully added to Shared Cloud of Organization with ID '{orgId}'");
-      return true;
+      // Exactly one URL is sent per call, so more than one ID coming back means the cloud did something we
+      // don't model. Surface it rather than silently discarding the extras.
+      if (cloudFilesResult.EntityIds.Count > 1) {
+        Debug.LogWarning($"Expected one entity ID for '{downloadUrl}' but the cloud returned {cloudFilesResult.EntityIds.Count}. Using the first.");
+      }
+
+      Debug.Log($"'{downloadUrl}' successfully added to Shared Cloud of Organization with ID '{organizationId}'");
+      return cloudFilesResult.EntityIds[0];
     }
 
     // Checks if the file has been uploaded to AVNFS and provides its URL if so, otherwise null
