@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Avn.Connect.V1;
@@ -14,7 +15,7 @@ namespace ClassVR.Network.AvnCloud {
   internal delegate Task<SearchCloudFilesResponse> SearchCloudFilesFetch(SearchCloudFilesRequest request, CancellationToken cancellationToken);
 
   /// <summary>
-  /// Entry point for querying files stored in the ClassVR cloud.
+  /// Entry point for uploading files to, and querying files stored in, the ClassVR cloud.
   /// </summary>
   public static class CloudFiles {
     /// <summary>
@@ -36,6 +37,59 @@ namespace ClassVR.Network.AvnCloud {
         throw new ArgumentNullException(nameof(query));
       }
       return new CloudFilePageable(query, jwt, CreateFetch(endpointServer));
+    }
+
+    /// <summary>
+    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="data">The file contents as a string. This will be encoded using UTF8.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>
+    /// The new cloud file, whose <see cref="CloudUploadResult.EntityId"/> is the key for attaching metadata.
+    /// Returns <c>null</c> if the upload was unsuccessful — unlike <see cref="Search"/>, a failure is logged
+    /// rather than thrown.
+    /// </returns>
+    public static async Task<CloudUploadResult> Upload(string filename, string mediaType, string data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      byte[] byteData = Encoding.UTF8.GetBytes(data);
+      return await FileUploader.UploadBytesToSharedCloud(filename, mediaType, byteData, endpointServer, jwt);
+    }
+
+    /// <summary>
+    /// Uploads a file already on disk to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
+    /// The display name is derived from the file path via <see cref="System.IO.Path.GetFileName"/>.
+    /// Note: the maximum file size for upload is 5GB.
+    /// </summary>
+    /// <param name="filePath">Local file path (not a URI — the method handles file:// prefixing).</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>
+    /// The new cloud file, whose <see cref="CloudUploadResult.EntityId"/> is the key for attaching metadata.
+    /// Returns <c>null</c> if the upload was unsuccessful — unlike <see cref="Search"/>, a failure is logged
+    /// rather than thrown.
+    /// </returns>
+    public static async Task<CloudUploadResult> Upload(string filePath, string mediaType, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return await FileUploader.UploadFileToSharedCloud(filePath, mediaType, endpointServer, jwt);
+    }
+
+    /// <summary>
+    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="data">The file contents as a byte array.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>
+    /// The new cloud file, whose <see cref="CloudUploadResult.EntityId"/> is the key for attaching metadata.
+    /// Returns <c>null</c> if the upload was unsuccessful — unlike <see cref="Search"/>, a failure is logged
+    /// rather than thrown.
+    /// </returns>
+    public static async Task<CloudUploadResult> Upload(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return await FileUploader.UploadBytesToSharedCloud(filename, mediaType, data, endpointServer, jwt);
     }
 
     // The production page fetcher: the only place that touches the gRPC client and channel singleton.

@@ -10,7 +10,8 @@ namespace ClassVR.Network.AvnCloud.Tests {
   /// <summary>
   /// EditMode unit tests for <see cref="FileUploader"/>. Three groups, all network-free: the file-path
   /// validation guards, which run before any authentication or gRPC/HTTP call and so complete
-  /// synchronously; <see cref="FileUploader.AddFileToSharedCloud(string, Authorization, int, AddCloudFilesFetch)"/>,
+  /// synchronously — exercised through both <see cref="FileUploader"/> and the <see cref="CloudFiles.Upload"/>
+  /// entry point that shares the same core; <see cref="FileUploader.AddFileToSharedCloud(string, Authorization, int, AddCloudFilesFetch)"/>,
   /// which builds the org-association request and extracts the entity ID from the response behind a test seam;
   /// and <see cref="FileUploader.EnsureFileNameParameter"/>, which is pure string logic.
   /// The actual AVNFS upload and the association round-trip against a real cloud must be manually verified.
@@ -72,6 +73,28 @@ namespace ClassVR.Network.AvnCloud.Tests {
     public void UploadToSharedCloud_MissingFile_ReturnsNull() {
       LogAssert.ignoreFailingMessages = true;
       Assert.IsNull(Result(FileUploader.UploadToSharedCloud(MissingPath(), TestMediaType)));
+    }
+
+    // --- CloudFiles.Upload (file path overload) shares the same guards -------
+    //
+    // The new entry point reaches the same validation via the shared core, so it must reject the same paths.
+
+    [Test]
+    public void CloudFilesUpload_NullFilePath_ReturnsNull() {
+      LogAssert.ignoreFailingMessages = true;
+      Assert.IsNull(Result(CloudFiles.Upload(null, TestMediaType)));
+    }
+
+    [Test]
+    public void CloudFilesUpload_EmptyFilePath_ReturnsNull() {
+      LogAssert.ignoreFailingMessages = true;
+      Assert.IsNull(Result(CloudFiles.Upload("", TestMediaType)));
+    }
+
+    [Test]
+    public void CloudFilesUpload_MissingFile_ReturnsNull() {
+      LogAssert.ignoreFailingMessages = true;
+      Assert.IsNull(Result(CloudFiles.Upload(MissingPath(), TestMediaType)));
     }
 
     // --- AddFileToSharedCloud (org association) ------------------------------
