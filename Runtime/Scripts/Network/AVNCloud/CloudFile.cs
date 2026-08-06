@@ -6,7 +6,10 @@ namespace ClassVR.Network.AvnCloud {
   /// A file stored in the ClassVR cloud, as returned by <see cref="CloudFiles.Search"/>.
   /// </summary>
   public sealed class CloudFile {
-    /// <summary>Unique cloud file ID.</summary>
+    /// <summary>
+    /// Unique cloud file ID. This is the entity ID used to attach metadata to the file — the same value
+    /// <see cref="CloudUploadResult.EntityId"/> carries for a freshly uploaded one.
+    /// </summary>
     public int Id { get; }
 
     /// <summary>The file's display name, or <c>null</c> if the cloud has none recorded.</summary>
@@ -50,6 +53,39 @@ namespace ClassVR.Network.AvnCloud {
       Updated = updated;
       Tags = tags;
       MetadataCount = metadataCount;
+    }
+  }
+
+  /// <summary>
+  /// The outcome of a successful upload to an Organization's Shared Cloud.
+  /// </summary>
+  public sealed class CloudUploadResult {
+    /// <summary>
+    /// The cloud file's entity ID — the key used to attach metadata to the file. Appears as
+    /// <see cref="CloudFile.Id"/> when the same file comes back from <see cref="CloudFiles.Search"/>.
+    /// </summary>
+    public int EntityId { get; }
+
+    /// <summary>The AVNFS URL the file can be downloaded from.</summary>
+    public string FileUrl { get; }
+
+    /// <summary>The display name the file was uploaded under.</summary>
+    public string FileName { get; }
+
+    /// <summary>The media (MIME) type the file was uploaded with, as supplied by the caller.</summary>
+    public string MediaType { get; }
+
+    /// <summary>
+    /// The size of the uploaded content in bytes, or <c>null</c> if it could not be determined.
+    /// </summary>
+    public long? SizeBytes { get; }
+
+    internal CloudUploadResult(int entityId, string fileUrl, string fileName, string mediaType, long? sizeBytes) {
+      EntityId = entityId;
+      FileUrl = fileUrl;
+      FileName = fileName;
+      MediaType = mediaType;
+      SizeBytes = sizeBytes;
     }
   }
 

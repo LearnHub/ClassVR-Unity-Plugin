@@ -30,7 +30,7 @@ namespace ClassVR.Network.AvnCloud {
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
     public static async Task<string> UploadToSharedCloud(string filename, string mediaType, string data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
       byte[] byteData = Encoding.UTF8.GetBytes(data);
-      return await UploadToSharedCloud(filename, mediaType, byteData, endpointServer, jwt);
+      return (await UploadBytesToSharedCloud(filename, mediaType, byteData, endpointServer, jwt))?.FileUrl;
     }
 
     /// <summary>
@@ -44,16 +44,7 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
     public static async Task<string> UploadToSharedCloud(string filePath, string mediaType, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
-      // Upload the file to AVNFS and get the URL to download the file
-      var downloadUrl = await UploadToAvnfs(filePath, mediaType, endpointServer, jwt);
-      if (downloadUrl == null) {
-        return null;
-      }
-
-      // Assign the file to the Shared Cloud area of the organization the device is currently registered to.
-      // The display name is derived from the file path (e.g. "/path/to/photo.png" -> "photo.png").
-      var entityId = await AssociateWithOrg(downloadUrl, endpointServer, jwt, Path.GetFileName(filePath));
-      return entityId.HasValue ? downloadUrl : null;
+      return (await UploadFileToSharedCloud(filePath, mediaType, endpointServer, jwt))?.FileUrl;
     }
 
     /// <summary>
@@ -66,18 +57,7 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
     public static async Task<string> UploadToSharedCloud(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
-      //TODO: enable cancellation
-
-      // Upload the file to AVNFS and get the URL to download the file
-      var downloadUrl = await UploadToAvnfs(filename, mediaType, data, endpointServer, jwt);
-      // Check upload was successful
-      if (downloadUrl == null) {
-        return null;
-      }
-
-      // Assign the file to the Shared Cloud area of the organization the device is currently registered to
-      var entityId = await AssociateWithOrg(downloadUrl, endpointServer, jwt, filename);
-      return entityId.HasValue ? downloadUrl : null;
+      return (await UploadBytesToSharedCloud(filename, mediaType, data, endpointServer, jwt))?.FileUrl;
     }
 
     /// <summary>
@@ -163,6 +143,72 @@ namespace ClassVR.Network.AvnCloud {
 
       // Upload the file to AVNFS and get the URL to download the file
       return await UploadBytesToAvnfs(filename, mediaType, data, auth, endpointServer);
+    }
+
+    // Uploads a byte array to AVNFS and assigns it to the Shared Cloud of the Organization the device is
+    // registered to. Returns everything known about the new cloud file, or null if any stage failed (the
+    // failure is logged by whichever stage hit it).
+    internal static async Task<CloudUploadResult> UploadBytesToSharedCloud(
+        string filename,
+        string mediaType,
+        byte[] data,
+        EndpointServer endpointServer,
+        string jwt) {
+      //TODO: enable cancellation
+
+      // Upload the file to AVNFS and get the URL to download the file
+      var downloadUrl = await UploadToAvnfs(filename, mediaType, data, endpointServer, jwt);
+      // Check upload was successful
+      if (downloadUrl == null) {
+        return null;
+      }
+
+      // Assign the file to the Shared Cloud area of the organization the device is currently registered to
+      var entityId = await AssociateWithOrg(downloadUrl, endpointServer, jwt, filename);
+      if (!entityId.HasValue) {
+        return null;
+      }
+
+      return new CloudUploadResult(entityId.Value, downloadUrl, filename, mediaType, data.Length);
+    }
+
+    // Uploads a file already on disk to AVNFS and assigns it to the Shared Cloud of the Organization the
+    // device is registered to. Returns everything known about the new cloud file, or null if any stage
+    // failed (the failure is logged by whichever stage hit it).
+    internal static async Task<CloudUploadResult> UploadFileToSharedCloud(
+        string filePath,
+        string mediaType,
+        EndpointServer endpointServer,
+        string jwt) {
+
+      // Read the size up front. UploadToAvnfs validates the path and logs the canonical error, and measuring
+      // afterwards would let a file that vanished mid-upload turn a successful upload into a failure.
+      var sizeBytes = TryGetFileLength(filePath);
+
+      // Upload the file to AVNFS and get the URL to download the file
+      var downloadUrl = await UploadToAvnfs(filePath, mediaType, endpointServer, jwt);
+      if (downloadUrl == null) {
+        return null;
+      }
+
+      // Assign the file to the Shared Cloud area of the organization the device is currently registered to.
+      // The display name is derived from the file path (e.g. "/path/to/photo.png" -> "photo.png").
+      var filename = Path.GetFileName(filePath);
+      var entityId = await AssociateWithOrg(downloadUrl, endpointServer, jwt, filename);
+      if (!entityId.HasValue) {
+        return null;
+      }
+
+      return new CloudUploadResult(entityId.Value, downloadUrl, filename, mediaType, sizeBytes);
+    }
+
+    // The file's length, or null if it can't be determined. Deliberately silent.
+    private static long? TryGetFileLength(string filePath) {
+      try {
+        return new FileInfo(filePath).Length;
+      } catch {
+        return null;
+      }
     }
 
     // Associates an already-uploaded AVNFS file with the Shared Cloud of the Organization the device is
