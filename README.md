@@ -102,9 +102,10 @@ Build the search with a `CloudFileQuery`. Every property is an optional filter, 
 | --- | --- |
 | `Text` | Free-text search across the files. |
 | `MediaTypes` | Restrict to these media (MIME) types. |
-| `Tags` + `TagMatch` | Restrict to files matching these tag IDs — `TagMatch.All` (default) or `TagMatch.Any`. |
+| `Tags` + `TagMatch` | Restrict to files matching these tag IDs — `TagMatch.All` (default) or `TagMatch.Any`. Note: tag filtering is not yet implemented by the cloud, so these are currently ignored server-side. |
 | `CreatedAfter` / `CreatedBefore` | Restrict to a time range. |
 | `OrderBy` | Result ordering, e.g. `CloudFileOrder.NewestFirst` (default is the server's order). |
+| `IconSize` | Ask the cloud for an icon per result, surfaced as `CloudFile.IconUrl`. Defaults to `CloudIconSize.None`, which returns no icon. |
 
 This example will stream every match — paging is handled for you:
 
@@ -115,7 +116,9 @@ await foreach (CloudFile file in CloudFiles.Search(query)) {
 }
 ```
 
-Each `CloudFile` exposes `Id`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `IconUrl`, `Updated` and `Tags`.
+Each `CloudFile` exposes `Id`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `IconUrl`, `Updated`, `Tags` and `MetadataCount`.
+
+`Id` is the cloud file's entity ID — the key used to attach metadata to the file. `MetadataCount` tells you how many metadata entries it already has, so you can skip a fetch when there are none. `IconUrl` is only populated when the query sets `IconSize`.
 
 To drive paging yourself, use `AsPages`. Each `CloudFilePage` has the page's `Files` and a `NextPageToken` that is `null` on the last page:
 

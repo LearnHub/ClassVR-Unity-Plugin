@@ -21,7 +21,10 @@ namespace ClassVR.Network.AvnCloud {
     /// <summary>The file size in bytes, or <c>null</c> if unknown.</summary>
     public long? SizeBytes { get; }
 
-    /// <summary>A URL for an icon/preview image of the file. May be empty if none is available.</summary>
+    /// <summary>
+    /// A URL for an icon/preview image of the file. Empty unless the query asked for an icon via
+    /// <see cref="CloudFileQuery.IconSize"/>.
+    /// </summary>
     public string IconUrl { get; }
 
     /// <summary>A URL for a preview/thumbnail of the file. May be empty if none is available.</summary>
@@ -34,7 +37,10 @@ namespace ClassVR.Network.AvnCloud {
     /// <summary>IDs of the tags associated with this file.</summary>
     public IReadOnlyList<int> Tags { get; }
 
-    internal CloudFile(int id, string fileName, string fileUrl, string mediaType, long? sizeBytes, string iconUrl, DateTimeOffset? updated, IReadOnlyList<int> tags) {
+    /// <summary>How many metadata entries are attached to this file.</summary>
+    public int MetadataCount { get; }
+
+    internal CloudFile(int id, string fileName, string fileUrl, string mediaType, long? sizeBytes, string iconUrl, DateTimeOffset? updated, IReadOnlyList<int> tags, int metadataCount) {
       Id = id;
       FileName = fileName;
       FileUrl = fileUrl;
@@ -43,6 +49,7 @@ namespace ClassVR.Network.AvnCloud {
       IconUrl = iconUrl;
       Updated = updated;
       Tags = tags;
+      MetadataCount = metadataCount;
     }
   }
 

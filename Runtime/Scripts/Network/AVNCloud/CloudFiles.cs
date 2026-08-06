@@ -156,6 +156,11 @@ namespace ClassVR.Network.AvnCloud {
         request.OrderBy.Add(orderClause);
       }
 
+      // The cloud returns no icon at all unless the request carries transcoding instructions
+      if (query.IconSize != CloudIconSize.None) {
+        request.IconSpec = new TranscodeImageSpec { MaxSizePixels = (int)query.IconSize };
+      }
+
       if (pageSize.HasValue) {
         request.PageSize = pageSize.Value;
       }
@@ -189,7 +194,7 @@ namespace ClassVR.Network.AvnCloud {
       var updated = proto.Updated?.ToDateTimeOffset();
       var tags = new List<int>(proto.Tags);
 
-      return new CloudFile(proto.EntityId, fileName, proto.FileUrl, mediaType, sizeBytes, proto.IconUrl, updated, tags);
+      return new CloudFile(proto.EntityId, fileName, proto.FileUrl, mediaType, sizeBytes, proto.IconUrl, updated, tags, proto.MetadataCount);
     }
   }
 }

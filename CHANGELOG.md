@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Cloud file metadata support in the gRPC clients
 - `CloudFile.IconUrl` (replacing the deprecated `CloudFile.PreviewUrl`), and an `IconSpec` on the cloud file get/search requests
+- `CloudFileQuery.IconSize` and the `CloudIconSize` enum, to request an icon for each cloud file result
+- `CloudFile.MetadataCount`, so callers can tell whether a file has metadata without fetching it
 - Client credential support on `Authorization` via the new `ClientCredentials` message
 
 ### Deprecated
@@ -20,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Regenerated C# gRPC clients to add support for cloud file metadata
+- Analytics events now send client credentials on the `Authorization` rather than the deprecated `RecordActionRequest.Client` field
 - **Breaking:** `Authorization.Credentials` renamed to `Authorization.ConnectionCredentials`
 - **Breaking:** `PreviewSpec` renamed to `IconSpec` on `GetCloudFilesRequest` and `SearchCloudFilesRequest`
 

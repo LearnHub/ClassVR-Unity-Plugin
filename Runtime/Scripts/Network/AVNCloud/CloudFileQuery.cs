@@ -23,6 +23,35 @@ namespace ClassVR.Network.AvnCloud {
   }
 
   /// <summary>
+  /// What size of icon to ask the cloud to produce for each result. The image is transcoded to fit within
+  /// this many pixels on its longest edge; SVG inputs are returned unchanged regardless.
+  /// </summary>
+  public enum CloudIconSize {
+    /// <summary>Request no icon, leaving <see cref="CloudFile.IconUrl"/> empty. This is the default.</summary>
+    None = 0,
+    /// <summary>Fit within 8 pixels.</summary>
+    Pixels8 = 8,
+    /// <summary>Fit within 16 pixels.</summary>
+    Pixels16 = 16,
+    /// <summary>Fit within 32 pixels.</summary>
+    Pixels32 = 32,
+    /// <summary>Fit within 64 pixels.</summary>
+    Pixels64 = 64,
+    /// <summary>Fit within 128 pixels.</summary>
+    Pixels128 = 128,
+    /// <summary>Fit within 256 pixels.</summary>
+    Pixels256 = 256,
+    /// <summary>Fit within 512 pixels.</summary>
+    Pixels512 = 512,
+    /// <summary>Fit within 1024 pixels.</summary>
+    Pixels1024 = 1024,
+    /// <summary>Fit within 2048 pixels.</summary>
+    Pixels2048 = 2048,
+    /// <summary>Return the image at its original size, without transcoding.</summary>
+    Original = -1
+  }
+
+  /// <summary>
   /// How a query's tag list is matched against a file's tags.
   /// </summary>
   public enum TagMatch {
@@ -58,6 +87,12 @@ namespace ClassVR.Network.AvnCloud {
 
     /// <summary>How to order the results. Defaults to <see cref="CloudFileOrder.Default"/>.</summary>
     public CloudFileOrder OrderBy { get; set; } = CloudFileOrder.Default;
+
+    /// <summary>
+    /// What size icon to request for each result, surfaced as <see cref="CloudFile.IconUrl"/>. Defaults to
+    /// <see cref="CloudIconSize.None"/> — the cloud returns no icon unless this is set.
+    /// </summary>
+    public CloudIconSize IconSize { get; set; } = CloudIconSize.None;
 
     /// <summary>
     /// Search a specific organization's cloud. If set, this takes precedence over <see cref="UserId"/>.

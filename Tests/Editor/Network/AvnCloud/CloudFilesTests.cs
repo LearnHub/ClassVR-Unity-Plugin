@@ -46,7 +46,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       var updated = DateTimeOffset.FromUnixTimeSeconds(1_700_000_000);
       var proto = new ProtoCloudFile {
         EntityId = 42, FileUrl = "the-url", FileName = "photo.png", MediaType = "image/png",
-        SizeBytes = 123, IconUrl = "icon-url", Updated = Timestamp.FromDateTimeOffset(updated)
+        SizeBytes = 123, IconUrl = "icon-url", MetadataCount = 3, Updated = Timestamp.FromDateTimeOffset(updated)
       };
       proto.Tags.AddRange(new[] { 1, 2, 3 });
 
@@ -58,6 +58,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       Assert.AreEqual("image/png", file.MediaType);
       Assert.AreEqual(123L, file.SizeBytes);
       Assert.AreEqual("icon-url", file.IconUrl);
+      Assert.AreEqual(3, file.MetadataCount);
       Assert.AreEqual(updated, file.Updated);
       CollectionAssert.AreEqual(new[] { 1, 2, 3 }, file.Tags);
     }
@@ -73,6 +74,8 @@ namespace ClassVR.Network.AvnCloud.Tests {
       Assert.IsNull(file.SizeBytes);
       Assert.IsNull(file.Updated);
       Assert.IsEmpty(file.Tags);
+      // Not an optional in the proto, so an absent count arrives as zero rather than null
+      Assert.AreEqual(0, file.MetadataCount);
     }
 
     // --- paging --------------------------------------------------------------
@@ -184,6 +187,29 @@ namespace ClassVR.Network.AvnCloud.Tests {
       var request = CapturedRequest(Query());
 
       Assert.AreEqual(TestOrgId, request.OrganizationId);
+    }
+
+    // --- icon size -----------------------------------------------------------
+
+    [TestCase(CloudIconSize.Pixels256, 256)]
+    [TestCase(CloudIconSize.Pixels8, 8)]
+    [TestCase(CloudIconSize.Pixels2048, 2048)]
+    [TestCase(CloudIconSize.Original, -1)]
+    public void IconSizeMapsToIconSpec(CloudIconSize size, int expectedPixels) {
+      var query = Query();
+      query.IconSize = size;
+
+      var request = CapturedRequest(query);
+
+      Assert.AreEqual(expectedPixels, request.IconSpec.MaxSizePixels);
+    }
+
+    [Test]
+    public void NoIconSizeLeavesIconSpecUnset() {
+      // The cloud returns no icon unless a spec is sent, so the default must not send one
+      var request = CapturedRequest(Query());
+
+      Assert.IsNull(request.IconSpec, "an unset IconSize must not put an IconSpec on the request");
     }
 
     // --- cancellation --------------------------------------------------------
