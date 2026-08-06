@@ -28,6 +28,7 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    [Obsolete("Use CloudFiles.Upload instead.")]
     public static async Task<string> UploadToSharedCloud(string filename, string mediaType, string data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
       byte[] byteData = Encoding.UTF8.GetBytes(data);
       return (await UploadBytesToSharedCloud(filename, mediaType, byteData, endpointServer, jwt))?.FileUrl;
@@ -43,6 +44,7 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    [Obsolete("Use CloudFiles.Upload instead.")]
     public static async Task<string> UploadToSharedCloud(string filePath, string mediaType, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
       return (await UploadFileToSharedCloud(filePath, mediaType, endpointServer, jwt))?.FileUrl;
     }
@@ -56,13 +58,14 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    [Obsolete("Use CloudFiles.Upload instead.")]
     public static async Task<string> UploadToSharedCloud(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
       return (await UploadBytesToSharedCloud(filename, mediaType, data, endpointServer, jwt))?.FileUrl;
     }
 
     /// <summary>
     /// Uploads a file to AVNFS (the ClassVR file store) and returns its URL, WITHOUT associating it
-    /// with any Organization. Use <see cref="UploadToSharedCloud(string, string, string, EndpointServer, string)"/>
+    /// with any Organization. Use <see cref="CloudFiles.Upload(string, string, string, EndpointServer, string)"/>
     /// instead if you want the file to appear in the device Organization's Shared Cloud library.
     /// </summary>
     /// <param name="filename">The name and extension of the file.</param>
@@ -78,7 +81,7 @@ namespace ClassVR.Network.AvnCloud {
 
     /// <summary>
     /// Uploads a file already on disk to AVNFS (the ClassVR file store) and returns its URL, WITHOUT
-    /// associating it with any Organization. Use <see cref="UploadToSharedCloud(string, string, EndpointServer, string)"/>
+    /// associating it with any Organization. Use <see cref="CloudFiles.Upload(string, string, EndpointServer, string)"/>
     /// instead if you want the file to appear in the device Organization's Shared Cloud library.
     /// The display name is derived from the file path via <see cref="Path.GetFileName"/>.
     /// Note: the maximum file size for upload is 5GB.
@@ -121,7 +124,7 @@ namespace ClassVR.Network.AvnCloud {
 
     /// <summary>
     /// Uploads a file to AVNFS (the ClassVR file store) and returns its URL, WITHOUT associating it
-    /// with any Organization. Use <see cref="UploadToSharedCloud(string, string, byte[], EndpointServer, string)"/>
+    /// with any Organization. Use <see cref="CloudFiles.Upload(string, string, byte[], EndpointServer, string)"/>
     /// instead if you want the file to appear in the device Organization's Shared Cloud library.
     /// </summary>
     /// <param name="filename">The name and extension of the file.</param>

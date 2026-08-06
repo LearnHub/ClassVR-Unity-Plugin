@@ -116,9 +116,9 @@ await foreach (CloudFile file in CloudFiles.Search(query)) {
 }
 ```
 
-Each `CloudFile` exposes `Id`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `IconUrl`, `Updated`, `Tags` and `MetadataCount`.
+Each `CloudFile` exposes `EntityId`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `IconUrl`, `Updated`, `Tags` and `MetadataCount`.
 
-`Id` is the cloud file's entity ID — the key used to attach metadata to the file. `MetadataCount` tells you how many metadata entries it already has, so you can skip a fetch when there are none. `IconUrl` is only populated when the query sets `IconSize`.
+`EntityId` is the key used to attach metadata to the file — the same value `CloudUploadResult.EntityId` carries for a file you just uploaded. `MetadataCount` tells you how many metadata entries it already has, so you can skip a fetch when there are none. `IconUrl` is only populated when the query sets `IconSize`.
 
 To drive paging yourself, use `AsPages`. Each `CloudFilePage` has the page's `Files` and a `NextPageToken` that is `null` on the last page:
 

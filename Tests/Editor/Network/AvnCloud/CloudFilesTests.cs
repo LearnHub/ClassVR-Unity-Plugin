@@ -52,7 +52,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
 
       var file = Pageable(new RecordingFetch(Response(proto))).ToListSync().Single();
 
-      Assert.AreEqual(42, file.Id);
+      Assert.AreEqual(42, file.EntityId);
       Assert.AreEqual("photo.png", file.FileName);
       Assert.AreEqual("the-url", file.FileUrl);
       Assert.AreEqual("image/png", file.MediaType);
@@ -68,7 +68,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       int fileId = 7;
       var file = Pageable(new RecordingFetch(Response(File(fileId)))).ToListSync().Single();
 
-      Assert.AreEqual(fileId, file.Id);
+      Assert.AreEqual(fileId, file.EntityId);
       Assert.IsNull(file.FileName);
       Assert.IsNull(file.MediaType);
       Assert.IsNull(file.SizeBytes);
@@ -87,7 +87,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       var page2 = Response(File(3)); // no token -> last page
       var fetch = new RecordingFetch(page1, page2);
 
-      var ids = Pageable(fetch).ToListSync().Select(f => f.Id).ToArray();
+      var ids = Pageable(fetch).ToListSync().Select(f => f.EntityId).ToArray();
 
       CollectionAssert.AreEqual(new[] { 1, 2, 3 }, ids);
       Assert.AreEqual(2, fetch.Requests.Count);

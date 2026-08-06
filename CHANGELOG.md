@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Analytics events now send client credentials on the `Authorization` rather than the deprecated `RecordActionRequest.Client` field
 - **Breaking:** `Authorization.Credentials` renamed to `Authorization.ConnectionCredentials`
 - **Breaking:** `PreviewSpec` renamed to `IconSpec` on `GetCloudFilesRequest` and `SearchCloudFilesRequest`
+- **Breaking:** `CloudFile.Id` renamed to `CloudFile.EntityId`, matching `CloudUploadResult.EntityId`
 
 ### Removed
 

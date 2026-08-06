@@ -7,10 +7,10 @@ namespace ClassVR.Network.AvnCloud {
   /// </summary>
   public sealed class CloudFile {
     /// <summary>
-    /// Unique cloud file ID. This is the entity ID used to attach metadata to the file — the same value
+    /// Unique cloud file ID, and the key used to attach metadata to the file — the same value
     /// <see cref="CloudUploadResult.EntityId"/> carries for a freshly uploaded one.
     /// </summary>
-    public int Id { get; }
+    public int EntityId { get; }
 
     /// <summary>The file's display name, or <c>null</c> if the cloud has none recorded.</summary>
     public string FileName { get; }
@@ -43,8 +43,8 @@ namespace ClassVR.Network.AvnCloud {
     /// <summary>How many metadata entries are attached to this file.</summary>
     public int MetadataCount { get; }
 
-    internal CloudFile(int id, string fileName, string fileUrl, string mediaType, long? sizeBytes, string iconUrl, DateTimeOffset? updated, IReadOnlyList<int> tags, int metadataCount) {
-      Id = id;
+    internal CloudFile(int entityId, string fileName, string fileUrl, string mediaType, long? sizeBytes, string iconUrl, DateTimeOffset? updated, IReadOnlyList<int> tags, int metadataCount) {
+      EntityId = entityId;
       FileName = fileName;
       FileUrl = fileUrl;
       MediaType = mediaType;
@@ -62,7 +62,7 @@ namespace ClassVR.Network.AvnCloud {
   public sealed class CloudUploadResult {
     /// <summary>
     /// The cloud file's entity ID — the key used to attach metadata to the file. Appears as
-    /// <see cref="CloudFile.Id"/> when the same file comes back from <see cref="CloudFiles.Search"/>.
+    /// <see cref="CloudFile.EntityId"/> when the same file comes back from <see cref="CloudFiles.Search"/>.
     /// </summary>
     public int EntityId { get; }
 

@@ -56,6 +56,11 @@ namespace ClassVR.Network.AvnCloud.Tests {
     }
 
     // --- UploadToSharedCloud (file path overload) shares the same guards -----
+    //
+    // UploadToSharedCloud is obsolete in favour of CloudFiles.Upload, but it remains supported and is now a
+    // thin shim over the same core. These tests are the regression check that the shim still behaves
+    // identically, so they deliberately keep calling it — hence the CS0618 suppression.
+#pragma warning disable 618
 
     [Test]
     public void UploadToSharedCloud_NullFilePath_ReturnsNull() {
@@ -74,6 +79,8 @@ namespace ClassVR.Network.AvnCloud.Tests {
       LogAssert.ignoreFailingMessages = true;
       Assert.IsNull(Result(FileUploader.UploadToSharedCloud(MissingPath(), TestMediaType)));
     }
+
+#pragma warning restore 618
 
     // --- CloudFiles.Upload (file path overload) shares the same guards -------
     //
