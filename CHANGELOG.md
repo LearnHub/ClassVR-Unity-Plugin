@@ -14,10 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `CloudFileQuery.IconSize` and the `CloudIconSize` enum, to request an icon for each cloud file result
 - `CloudFile.MetadataCount`, so callers can tell whether a file has metadata without fetching it
 - Client credential support on `Authorization` via the new `ClientCredentials` message
+- `CloudFiles.Upload` and `CloudUploadResult`, which expose the uploaded file's `EntityId` — the key needed to attach cloud file metadata
 
 ### Deprecated
 
 - `CloudFile.PreviewUrl` on the cloud file query API. Use `CloudFile.IconUrl`, which carries the identical value
+- `FileUploader.UploadToSharedCloud`. Use `CloudFiles.Upload`, which additionally returns the `EntityId`. Behaviour is otherwise unchanged
 
 ### Changed
 

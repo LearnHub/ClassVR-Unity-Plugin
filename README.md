@@ -31,11 +31,11 @@ _ = Analytics.SendEvent("example_action", "example_source");
 await Analytics.SendEvent("example_action", "example_source");
 
 // Upload a small file to ClassVR Shared Cloud for the current enrolled organisation (on Android)
-var url = await FileUploader.UploadToSharedCloud("example.txt", "text/plain", "example file contents");
+var result = await CloudFiles.Upload("example.txt", "text/plain", "example file contents");
 // Upload a large file to ClassVR Shared Cloud (on Android)
 var filePath = Path.Combine(Application.temporaryCachePath, "filename.txt");
 ... (write data to file)
-var url = await FileUploader.UploadToSharedCloud(filePath, "text/plain");
+var result = await CloudFiles.Upload(filePath, "text/plain");
 // Upload a file to AVNFS only, without associating it with any organisation (on Android)
 var url = await FileUploader.UploadToAvnfs("example.txt", "text/plain", "example file contents");
 
@@ -86,11 +86,24 @@ This plugin aims to be agnostic as to which ContentProvider is being accessed, m
 
 ### Uploads
 
-To upload files to ClassVR and associate with an organization, use the `FileUploader.UploadToSharedCloud` method. You can use any of the overloads, but for large files it's recommended to write to a temporary file and use the overload which takes a file path.
+To upload files to ClassVR and associate with an organization, use `CloudFiles.Upload`. It assigns the file to the Shared Cloud library for the organization that the device is currently registered to. You can use any of the overloads — string contents, a byte array, or a file path — but for large files it's recommended to write to a temporary file and use the file path overload.
 
-This method will assign the file to the Shared Cloud library for the organization that the device is currently registered to.
+```csharp
+CloudUploadResult result = await CloudFiles.Upload("example.txt", "text/plain", "example file contents");
+if (result == null) {
+  // The reason has already been logged
+  return;
+}
+Debug.Log($"Uploaded as entity {result.EntityId}: {result.FileUrl}");
+```
 
-If you only want to upload a file to AVNFS and get its URL — without it appearing in any organization's Shared Cloud library — use `FileUploader.UploadToAvnfs` instead. It accepts the same set of overloads (string, byte array, or file path) and returns the AVNFS URL on success, or `null` on failure.
+Each `CloudUploadResult` exposes `EntityId`, `FileUrl`, `FileName`, `MediaType` and `SizeBytes`.
+
+`EntityId` is the cloud file's entity ID — the key you need to attach metadata to the file, and the same value `CloudFile.EntityId` carries when the file later comes back from a search. Hold on to it if you intend to set metadata; there is no way to look an entity ID up from an AVNFS URL afterwards.
+
+Note that an unsuccessful upload returns `null` and logs the reason, rather than throwing — unlike `CloudFiles.Search`, which throws an `RpcException`.
+
+If you only want to upload a file to AVNFS and get its URL — without it appearing in any organization's Shared Cloud library — use `FileUploader.UploadToAvnfs` instead. It accepts the same set of overloads (string, byte array, or file path) and returns the AVNFS URL on success, or `null` on failure. Note that a file which isn't associated with an organization has no cloud file entity, and so has no `EntityId` and cannot carry metadata.
 
 ### Queries
 
