@@ -212,6 +212,81 @@ namespace ClassVR.Network.AvnCloud.Tests {
       Assert.IsNull(request.IconSpec, "an unset IconSize must not put an IconSpec on the request");
     }
 
+    // --- metadata filters ----------------------------------------------------
+    //
+    // The factories are the only way to build a filter, so they are what enforces that match text is present
+    // for the value conditions and absent for the presence ones (where the cloud ignores it).
+
+    private const string TestKey = "Task";
+
+    [Test]
+    public void HasKeyFilterTestsPresenceOnly() {
+      var filter = CloudMetadataFilter.HasKey(TestKey);
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.HasKey, filter.Condition);
+      Assert.IsNull(filter.Match, "presence conditions must not carry match text");
+    }
+
+    [Test]
+    public void HasNotKeyFilterTestsAbsenceOnly() {
+      var filter = CloudMetadataFilter.HasNotKey(TestKey);
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.HasNotKey, filter.Condition);
+      Assert.IsNull(filter.Match, "presence conditions must not carry match text");
+    }
+
+    [Test]
+    public void ValueEqualsFilterCarriesMatchText() {
+      var filter = CloudMetadataFilter.ValueEquals(TestKey, "scan-room");
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.Equals, filter.Condition);
+      Assert.AreEqual("scan-room", filter.Match);
+    }
+
+    [Test]
+    public void ValueStartsWithFilterCarriesMatchText() {
+      var filter = CloudMetadataFilter.ValueStartsWith(TestKey, "scan-");
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.StartsWith, filter.Condition);
+      Assert.AreEqual("scan-", filter.Match);
+    }
+
+    [Test]
+    public void ValueContainsFilterCarriesMatchText() {
+      var filter = CloudMetadataFilter.ValueContains(TestKey, "room");
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.Contains, filter.Condition);
+      Assert.AreEqual("room", filter.Match);
+    }
+
+    [TestCase(null)]
+    [TestCase("")]
+    public void FilterWithoutKeyThrows(string key) {
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.HasKey(key));
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.HasNotKey(key));
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.ValueEquals(key, "x"));
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.ValueStartsWith(key, "x"));
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.ValueContains(key, "x"));
+    }
+
+    [Test]
+    public void ValueFilterWithNullMatchThrows() {
+      Assert.Throws<ArgumentNullException>(() => CloudMetadataFilter.ValueEquals(TestKey, null));
+      Assert.Throws<ArgumentNullException>(() => CloudMetadataFilter.ValueStartsWith(TestKey, null));
+      Assert.Throws<ArgumentNullException>(() => CloudMetadataFilter.ValueContains(TestKey, null));
+    }
+
+    [Test]
+    public void ValueFilterAcceptsEmptyMatch() {
+      // Deliberately allowed: "contains nothing" is unhelpful but well-formed, unlike a null match
+      Assert.AreEqual("", CloudMetadataFilter.ValueContains(TestKey, "").Match);
+    }
+
     // --- cancellation --------------------------------------------------------
 
     [Test]
