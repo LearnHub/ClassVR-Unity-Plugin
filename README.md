@@ -40,7 +40,7 @@ var result = await CloudFiles.Upload(filePath, "text/plain");
 var url = await FileUploader.UploadToAvnfs("example.txt", "text/plain", "example file contents");
 
 // Query files in the ClassVR Shared Cloud for the current enrolled organisation (on Android)
-var query = new CloudFileQuery { MediaTypes = { "image/png" }, OrderBy = CloudFileOrder.NewestFirst };
+var query = new CloudFileQuery { MediaTypes = { "image/png" }, MetadataFilters = { CloudMetadataFilter.HasKey("Example") }, OrderBy = CloudFileOrder.NewestFirst };
 await foreach (CloudFile file in CloudFiles.Search(query)) { Debug.Log($"{file.FileName}"); }
 // Or to load page-by-page
 await foreach (CloudFilePage page in CloudFiles.Search(query).AsPages(pageSize: 10)) {}
@@ -115,7 +115,8 @@ Build the search with a `CloudFileQuery`. Every property is an optional filter, 
 | --- | --- |
 | `Text` | Free-text search across the files. |
 | `MediaTypes` | Restrict to these media (MIME) types. |
-| `Tags` + `TagMatch` | Restrict to files matching these tag IDs — `TagMatch.All` (default) or `TagMatch.Any`. Note: tag filtering is not yet implemented by the cloud, so these are currently ignored server-side. |
+| `Tags` + `TagMatch` | Restrict to files matching these tag IDs — `TagMatch.All` (default) or `TagMatch.Any`. **Not yet implemented by the cloud**, so these are currently ignored server-side. |
+| `MetadataFilters` | Restrict to files whose metadata matches — see [Metadata filters](#metadata-filters) below. |
 | `CreatedAfter` / `CreatedBefore` | Restrict to a time range. |
 | `OrderBy` | Result ordering, e.g. `CloudFileOrder.NewestFirst` (default is the server's order). |
 | `IconSize` | Ask the cloud for an icon per result, surfaced as `CloudFile.IconUrl`. Defaults to `CloudIconSize.None`, which returns no icon. |
@@ -143,6 +144,38 @@ await foreach (CloudFilePage page in CloudFiles.Search(query).AsPages(pageSize: 
 ```
 
 Enumeration can be cancelled with a `CancellationToken` (`CloudFiles.Search(query).WithCancellation(token)`), and a failed cloud request throws an `RpcException`.
+
+### Metadata filters
+
+Cloud files can carry small key/value metadata entries and searches can filter on them. Add `CloudMetadataFilter` instances to `CloudFileQuery.MetadataFilters`, built with one of the five factory methods:
+
+| Factory | Matches files where |
+| --- | --- |
+| `CloudMetadataFilter.HasKey(key)` | an entry exists for `key`, whatever its value |
+| `CloudMetadataFilter.HasNotKey(key)` | no entry exists for `key` |
+| `CloudMetadataFilter.ValueEquals(key, value)` | the entry's value equals `value` |
+| `CloudMetadataFilter.ValueStartsWith(key, prefix)` | the entry's value starts with `prefix` |
+| `CloudMetadataFilter.ValueContains(key, text)` | the entry's value contains `text` |
+
+```csharp
+var query = new CloudFileQuery {
+  MetadataFilters = {
+    CloudMetadataFilter.ValueEquals("ExampleKey", "ExampleValue"),
+    CloudMetadataFilter.HasNotKey("Archived")
+  }
+};
+await foreach (CloudFile file in CloudFiles.Search(query)) {
+  Debug.Log($"{file.FileName} has {file.MetadataCount} metadata entries");
+}
+```
+
+Notes:
+
+- **Multiple filters combine with AND.** A file must satisfy every filter in the list to be returned.
+- **Keys are matched exactly and are case-sensitive; values are matched case-insensitively.** `ValueEquals("ExampleKey", "EXAMPLEVALUE")` matches a value of `ExampleValue`, but `HasKey("exampleKey")` does not find a key stored as `ExampleKey`.
+- **Metadata belongs to the cloud file entry, not the file contents.** Re-uploading the same file produces a new entry, which starts with no metadata. It also means metadata cannot be attached to a file uploaded with `FileUploader.UploadToAvnfs`, since that never creates a cloud file entry.
+
+Writing and reading metadata is not yet wrapped by this plugin — use `CloudService.SetMetadata` and `CloudService.GetMetadata` on the gRPC client directly, keyed on `CloudFile.EntityId` (or `CloudUploadResult.EntityId` for a file you just uploaded). The cloud limits a key to 128 characters and a value to 512, and holds one value per key. `CloudFile.MetadataCount` tells you whether a file has any entries at all, so you can skip the read when it is `0`.
 
 ## Intents and Deep Linking
 

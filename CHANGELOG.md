@@ -10,11 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Cloud file metadata support in the gRPC clients
-- `CloudFile.IconUrl` (replacing the deprecated `CloudFile.PreviewUrl`), and an `IconSpec` on the cloud file get/search requests
+- `CloudFile.IconUrl` (replacing the deprecated `CloudFile.PreviewUrl`), and an `IconSpec` on cloud file get/search requests
 - `CloudFileQuery.IconSize` and the `CloudIconSize` enum, to request an icon for each cloud file result
 - `CloudFile.MetadataCount`, so callers can tell whether a file has metadata without fetching it
 - Client credential support on `Authorization` via the new `ClientCredentials` message
 - `CloudFiles.Upload` and `CloudUploadResult`, which expose the uploaded file's `EntityId` — the key needed to attach cloud file metadata
+- `CloudFileQuery.MetadataFilters`, to search cloud files by the metadata attached to them
 
 ### Deprecated
 
