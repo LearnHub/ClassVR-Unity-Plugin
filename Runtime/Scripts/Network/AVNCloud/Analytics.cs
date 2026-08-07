@@ -60,8 +60,11 @@ namespace ClassVR.Network.AvnCloud {
         }
       }
 
-      // Use the device JWT for auth
-      var auth = new Authorization { DeviceJwt = CVRProperties.Instance.DeviceJWT };
+      // Use the device JWT for auth, carrying the client credentials alongside it
+      var auth = new Authorization {
+        DeviceJwt = CVRProperties.Instance.DeviceJWT,
+        ClientCredentials = clientCredentials
+      };
 
       // Data when serialized cannot exceed 2048 chars
       if (data != null && data.CalculateSize() > 2048) {
@@ -70,7 +73,6 @@ namespace ClassVR.Network.AvnCloud {
       }
 
       var request = new RecordActionRequest() {
-        Client = clientCredentials,
         ActionId = actionId,
         SourceId = sourceId,
         HostId = Application.identifier,  // Package name

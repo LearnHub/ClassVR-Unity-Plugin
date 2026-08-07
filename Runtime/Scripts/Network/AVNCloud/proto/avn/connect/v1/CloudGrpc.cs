@@ -70,7 +70,15 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetCloudSummaryResponse> __Marshaller_avn_connect_v1_GetCloudSummaryResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetCloudSummaryResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityPropertiesRequest> __Marshaller_avn_connect_v1_GetEntityPropertiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityPropertiesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityPropertiesResponse> __Marshaller_avn_connect_v1_GetEntityPropertiesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityPropertiesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.SetEntityPropertiesRequest> __Marshaller_avn_connect_v1_SetEntityPropertiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SetEntityPropertiesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.MetadataRequest> __Marshaller_avn_connect_v1_MetadataRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.MetadataRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetMetadataResponse> __Marshaller_avn_connect_v1_GetMetadataResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetMetadataResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.GetCloudFilesRequest, global::Avn.Connect.V1.GetCloudFilesResponse> __Method_GetCloudFiles = new grpc::Method<global::Avn.Connect.V1.GetCloudFilesRequest, global::Avn.Connect.V1.GetCloudFilesResponse>(
@@ -129,11 +137,35 @@ namespace Avn.Connect.V1 {
         __Marshaller_avn_connect_v1_GetCloudSummaryResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetEntityPropertiesRequest, global::Avn.Connect.V1.GetEntityPropertiesResponse> __Method_GetProperties = new grpc::Method<global::Avn.Connect.V1.GetEntityPropertiesRequest, global::Avn.Connect.V1.GetEntityPropertiesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetProperties",
+        __Marshaller_avn_connect_v1_GetEntityPropertiesRequest,
+        __Marshaller_avn_connect_v1_GetEntityPropertiesResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.SetEntityPropertiesRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetProperties = new grpc::Method<global::Avn.Connect.V1.SetEntityPropertiesRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SetProperties",
         __Marshaller_avn_connect_v1_SetEntityPropertiesRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.MetadataRequest, global::Avn.Connect.V1.GetMetadataResponse> __Method_GetMetadata = new grpc::Method<global::Avn.Connect.V1.MetadataRequest, global::Avn.Connect.V1.GetMetadataResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetMetadata",
+        __Marshaller_avn_connect_v1_MetadataRequest,
+        __Marshaller_avn_connect_v1_GetMetadataResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.MetadataRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetMetadata = new grpc::Method<global::Avn.Connect.V1.MetadataRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SetMetadata",
+        __Marshaller_avn_connect_v1_MetadataRequest,
         __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
@@ -506,7 +538,55 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetCloudSummary, null, options, request);
       }
       /// <summary>
-      /// Property management
+      /// Get specific properties of one or more cloud files. Supports ID, FILENAME, ICON_URL, UPDATED, SIZE, ORGANIZATION_ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetEntityPropertiesResponse GetProperties(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get specific properties of one or more cloud files. Supports ID, FILENAME, ICON_URL, UPDATED, SIZE, ORGANIZATION_ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetEntityPropertiesResponse GetProperties(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Get specific properties of one or more cloud files. Supports ID, FILENAME, ICON_URL, UPDATED, SIZE, ORGANIZATION_ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetEntityPropertiesResponse> GetPropertiesAsync(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get specific properties of one or more cloud files. Supports ID, FILENAME, ICON_URL, UPDATED, SIZE, ORGANIZATION_ID
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetEntityPropertiesResponse> GetPropertiesAsync(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Set the properties of one or more cloud files. Supports ICON_URL, FILENAME
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -519,7 +599,7 @@ namespace Avn.Connect.V1 {
         return SetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Property management
+      /// Set the properties of one or more cloud files. Supports ICON_URL, FILENAME
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -530,7 +610,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_SetProperties, null, options, request);
       }
       /// <summary>
-      /// Property management
+      /// Set the properties of one or more cloud files. Supports ICON_URL, FILENAME
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -543,7 +623,7 @@ namespace Avn.Connect.V1 {
         return SetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Property management
+      /// Set the properties of one or more cloud files. Supports ICON_URL, FILENAME
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -552,6 +632,110 @@ namespace Avn.Connect.V1 {
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetPropertiesAsync(global::Avn.Connect.V1.SetEntityPropertiesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Get metadata from a cloud file
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetMetadataResponse GetMetadata(global::Avn.Connect.V1.MetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMetadata(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get metadata from a cloud file
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetMetadataResponse GetMetadata(global::Avn.Connect.V1.MetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetMetadata, null, options, request);
+      }
+      /// <summary>
+      /// Get metadata from a cloud file
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetMetadataResponse> GetMetadataAsync(global::Avn.Connect.V1.MetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetMetadataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get metadata from a cloud file
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetMetadataResponse> GetMetadataAsync(global::Avn.Connect.V1.MetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetMetadata, null, options, request);
+      }
+      /// <summary>
+      /// Set metadata for a cloud file
+      /// - Values are limited to 512 characters so that search filters stay index-backed
+      /// - Setting metadata does not change the file's updated timestamp
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetMetadata(global::Avn.Connect.V1.MetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetMetadata(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Set metadata for a cloud file
+      /// - Values are limited to 512 characters so that search filters stay index-backed
+      /// - Setting metadata does not change the file's updated timestamp
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetMetadata(global::Avn.Connect.V1.MetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetMetadata, null, options, request);
+      }
+      /// <summary>
+      /// Set metadata for a cloud file
+      /// - Values are limited to 512 characters so that search filters stay index-backed
+      /// - Setting metadata does not change the file's updated timestamp
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetMetadataAsync(global::Avn.Connect.V1.MetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetMetadataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Set metadata for a cloud file
+      /// - Values are limited to 512 characters so that search filters stay index-backed
+      /// - Setting metadata does not change the file's updated timestamp
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetMetadataAsync(global::Avn.Connect.V1.MetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetMetadata, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

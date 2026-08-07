@@ -45,7 +45,7 @@ namespace Avn.Connect.V1 {
             "c2VkGBcgASgIEhEKCXBlcm1pdHRlZBgYIAEoCBIRCglhdmFpbGFibGUYGSAB",
             "KAhCBwoFb3duZXJCCgoIX3N1bW1hcnlCDgoMX2Rlc2NyaXB0aW9uQg8KDV9p",
             "bnN0cnVjdGlvbnNCCwoJX2tleXdvcmRzQgwKCl9wdWJsaXNoZWRCCwoJX2Zl",
-            "YXR1cmVkMpIICg9DYXRlZ29yeVNlcnZpY2USSQoLR2V0Q2F0ZWdvcnkSIC5h",
+            "YXR1cmVkMvwICg9DYXRlZ29yeVNlcnZpY2USSQoLR2V0Q2F0ZWdvcnkSIC5h",
             "dm4uY29ubmVjdC52MS5HZXRFbnRpdHlSZXF1ZXN0GhguYXZuLmNvbm5lY3Qu",
             "djEuQ2F0ZWdvcnkSWwoOQ3JlYXRlQ2F0ZWdvcnkSIy5hdm4uY29ubmVjdC52",
             "MS5DcmVhdGVFbnRpdHlSZXF1ZXN0GiQuYXZuLmNvbm5lY3QudjEuQ3JlYXRl",
@@ -66,9 +66,11 @@ namespace Avn.Connect.V1 {
             "ZS5wcm90b2J1Zi5FbXB0eRJBCgdBZGRUYWdzEh4uYXZuLmNvbm5lY3QudjEu",
             "QWRkVGFnc1JlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkSRwoKUmVt",
             "b3ZlVGFncxIhLmF2bi5jb25uZWN0LnYxLlJlbW92ZVRhZ3NSZXF1ZXN0GhYu",
-            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5ElMKDVNldFByb3BlcnRpZXMSKi5hdm4u",
-            "Y29ubmVjdC52MS5TZXRFbnRpdHlQcm9wZXJ0aWVzUmVxdWVzdBoWLmdvb2ds",
-            "ZS5wcm90b2J1Zi5FbXB0eWIGcHJvdG8z"));
+            "Z29vZ2xlLnByb3RvYnVmLkVtcHR5EmgKDUdldFByb3BlcnRpZXMSKi5hdm4u",
+            "Y29ubmVjdC52MS5HZXRFbnRpdHlQcm9wZXJ0aWVzUmVxdWVzdBorLmF2bi5j",
+            "b25uZWN0LnYxLkdldEVudGl0eVByb3BlcnRpZXNSZXNwb25zZRJTCg1TZXRQ",
+            "cm9wZXJ0aWVzEiouYXZuLmNvbm5lY3QudjEuU2V0RW50aXR5UHJvcGVydGll",
+            "c1JlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.ActivitiesReflection.Descriptor, global::Avn.Connect.V1.EntitiesReflection.Descriptor, global::Avn.Connect.V1.TranslationsReflection.Descriptor, global::Avn.Connect.V1.TagsReflection.Descriptor, global::Avn.Connect.V1.PropertiesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

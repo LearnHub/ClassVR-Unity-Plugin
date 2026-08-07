@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.0] - 2026-08-07
+
+### Added
+
+- Cloud file metadata support in the gRPC clients
+- `CloudFile.IconUrl` (replacing the deprecated `CloudFile.PreviewUrl`), and an `IconSpec` on cloud file get/search requests
+- `CloudFileQuery.IconSize` and the `CloudIconSize` enum, to request an icon for each cloud file result
+- `CloudFile.MetadataCount`, so callers can tell whether a file has metadata without fetching it
+- Client credential support on `Authorization` via the new `ClientCredentials` message
+- `CloudFiles.Upload` and `CloudUploadResult`, which expose the uploaded file's `EntityId` — the key needed to attach cloud file metadata
+- `CloudFileQuery.MetadataFilters`, to search cloud files by the metadata attached to them
+
+### Deprecated
+
+- `CloudFile.PreviewUrl` on the cloud file query API. Use `CloudFile.IconUrl`, which carries the identical value
+- `FileUploader.UploadToSharedCloud`. Use `CloudFiles.Upload`, which additionally returns the `EntityId`. Behaviour is otherwise unchanged
+
+### Changed
+
+- Regenerated C# gRPC clients to add support for cloud file metadata
+- Analytics events now send client credentials on the `Authorization` rather than the deprecated `RecordActionRequest.Client` field
+- **Breaking:** `Authorization.Credentials` renamed to `Authorization.ConnectionCredentials`
+- **Breaking:** `PreviewSpec` renamed to `IconSpec` on `GetCloudFilesRequest` and `SearchCloudFilesRequest`
+- **Breaking:** `CloudFile.Id` renamed to `CloudFile.EntityId`, matching `CloudUploadResult.EntityId`
+
+### Removed
+
+- **Breaking:** `CreateClientCredentialsRequest.ClientState`
+
+### Fixed
+
+- Shared Cloud filenames being lost when uploading content already present in AVNFS
+
 ## [2.1.0] - 2026-06-19
 
 ### Added

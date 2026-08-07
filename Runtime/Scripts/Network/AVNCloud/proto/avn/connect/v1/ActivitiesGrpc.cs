@@ -804,7 +804,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_SetMetadata, null, options, request);
       }
       /// <summary>
-      /// Get specific properties of one or more activities
+      /// Get specific properties of one or more activities. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, PREVIEW_URL, PUBLISHED, ASSET_ID, WEBSITE_URL, CONTEXT, LANGUAGE_ID, LICENSED, PERMITTED, SIZE, UPDATED, FEATURED, ENTITY_TYPE, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -817,7 +817,7 @@ namespace Avn.Connect.V1 {
         return GetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get specific properties of one or more activities
+      /// Get specific properties of one or more activities. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, PREVIEW_URL, PUBLISHED, ASSET_ID, WEBSITE_URL, CONTEXT, LANGUAGE_ID, LICENSED, PERMITTED, SIZE, UPDATED, FEATURED, ENTITY_TYPE, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -828,7 +828,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetProperties, null, options, request);
       }
       /// <summary>
-      /// Get specific properties of one or more activities
+      /// Get specific properties of one or more activities. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, PREVIEW_URL, PUBLISHED, ASSET_ID, WEBSITE_URL, CONTEXT, LANGUAGE_ID, LICENSED, PERMITTED, SIZE, UPDATED, FEATURED, ENTITY_TYPE, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -841,7 +841,7 @@ namespace Avn.Connect.V1 {
         return GetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get specific properties of one or more activities
+      /// Get specific properties of one or more activities. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, PREVIEW_URL, PUBLISHED, ASSET_ID, WEBSITE_URL, CONTEXT, LANGUAGE_ID, LICENSED, PERMITTED, SIZE, UPDATED, FEATURED, ENTITY_TYPE, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -852,7 +852,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GetProperties, null, options, request);
       }
       /// <summary>
-      /// Set the properties of one or more activities
+      /// Set the properties of one or more activities. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, PUBLISHED, ASSET_ID, WEBSITE_URL, CONTEXT, LANGUAGE_ID, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -865,7 +865,7 @@ namespace Avn.Connect.V1 {
         return SetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set the properties of one or more activities
+      /// Set the properties of one or more activities. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, PUBLISHED, ASSET_ID, WEBSITE_URL, CONTEXT, LANGUAGE_ID, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -876,7 +876,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_SetProperties, null, options, request);
       }
       /// <summary>
-      /// Set the properties of one or more activities
+      /// Set the properties of one or more activities. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, PUBLISHED, ASSET_ID, WEBSITE_URL, CONTEXT, LANGUAGE_ID, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -889,7 +889,7 @@ namespace Avn.Connect.V1 {
         return SetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set the properties of one or more activities
+      /// Set the properties of one or more activities. Supports NAME, SUMMARY, DESCRIPTION, INSTRUCTIONS, KEYWORDS, ICON_URL, PUBLISHED, ASSET_ID, WEBSITE_URL, CONTEXT, LANGUAGE_ID, ORGANIZATION_ID
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

@@ -56,7 +56,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.GenerateSkyboxRequest, global::Avn.Connect.V1.GenerateSkyboxResponse> __Method_GenerateSkybox = new grpc::Method<global::Avn.Connect.V1.GenerateSkyboxRequest, global::Avn.Connect.V1.GenerateSkyboxResponse>(
-        grpc::MethodType.ServerStreaming,
+        grpc::MethodType.Unary,
         __ServiceName,
         "GenerateSkybox",
         __Marshaller_avn_connect_v1_GenerateSkyboxRequest,
@@ -103,15 +103,53 @@ namespace Avn.Connect.V1 {
       {
       }
 
+      /// <summary>
+      /// Generate a skybox image using the durable-job pattern (see Job in operations.proto)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::Avn.Connect.V1.GenerateSkyboxResponse> GenerateSkybox(global::Avn.Connect.V1.GenerateSkyboxRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::Avn.Connect.V1.GenerateSkyboxResponse GenerateSkybox(global::Avn.Connect.V1.GenerateSkyboxRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GenerateSkybox(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Generate a skybox image using the durable-job pattern (see Job in operations.proto)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::Avn.Connect.V1.GenerateSkyboxResponse> GenerateSkybox(global::Avn.Connect.V1.GenerateSkyboxRequest request, grpc::CallOptions options)
+      public virtual global::Avn.Connect.V1.GenerateSkyboxResponse GenerateSkybox(global::Avn.Connect.V1.GenerateSkyboxRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncServerStreamingCall(__Method_GenerateSkybox, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GenerateSkybox, null, options, request);
+      }
+      /// <summary>
+      /// Generate a skybox image using the durable-job pattern (see Job in operations.proto)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GenerateSkyboxResponse> GenerateSkyboxAsync(global::Avn.Connect.V1.GenerateSkyboxRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateSkyboxAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Generate a skybox image using the durable-job pattern (see Job in operations.proto)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GenerateSkyboxResponse> GenerateSkyboxAsync(global::Avn.Connect.V1.GenerateSkyboxRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GenerateSkybox, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Avn.Connect.V1.GetSkyboxStyleFamiliesResponse GetSkyboxStyleFamilies(global::Avn.Connect.V1.GetSkyboxStyleFamiliesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))

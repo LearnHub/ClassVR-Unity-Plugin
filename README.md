@@ -31,16 +31,16 @@ _ = Analytics.SendEvent("example_action", "example_source");
 await Analytics.SendEvent("example_action", "example_source");
 
 // Upload a small file to ClassVR Shared Cloud for the current enrolled organisation (on Android)
-var url = await FileUploader.UploadToSharedCloud("example.txt", "text/plain", "example file contents");
+var result = await CloudFiles.Upload("example.txt", "text/plain", "example file contents");
 // Upload a large file to ClassVR Shared Cloud (on Android)
 var filePath = Path.Combine(Application.temporaryCachePath, "filename.txt");
 ... (write data to file)
-var url = await FileUploader.UploadToSharedCloud(filePath, "text/plain");
+var result = await CloudFiles.Upload(filePath, "text/plain");
 // Upload a file to AVNFS only, without associating it with any organisation (on Android)
 var url = await FileUploader.UploadToAvnfs("example.txt", "text/plain", "example file contents");
 
 // Query files in the ClassVR Shared Cloud for the current enrolled organisation (on Android)
-var query = new CloudFileQuery { MediaTypes = { "image/png" }, OrderBy = CloudFileOrder.NewestFirst };
+var query = new CloudFileQuery { MediaTypes = { "image/png" }, MetadataFilters = { CloudMetadataFilter.HasKey("Example") }, OrderBy = CloudFileOrder.NewestFirst };
 await foreach (CloudFile file in CloudFiles.Search(query)) { Debug.Log($"{file.FileName}"); }
 // Or to load page-by-page
 await foreach (CloudFilePage page in CloudFiles.Search(query).AsPages(pageSize: 10)) {}
@@ -86,11 +86,24 @@ This plugin aims to be agnostic as to which ContentProvider is being accessed, m
 
 ### Uploads
 
-To upload files to ClassVR and associate with an organization, use the `FileUploader.UploadToSharedCloud` method. You can use any of the overloads, but for large files it's recommended to write to a temporary file and use the overload which takes a file path.
+To upload files to ClassVR and associate with an organization, use `CloudFiles.Upload`. It assigns the file to the Shared Cloud library for the organization that the device is currently registered to. You can use any of the overloads — string contents, a byte array, or a file path — but for large files it's recommended to write to a temporary file and use the file path overload.
 
-This method will assign the file to the Shared Cloud library for the organization that the device is currently registered to.
+```csharp
+CloudUploadResult result = await CloudFiles.Upload("example.txt", "text/plain", "example file contents");
+if (result == null) {
+  // The reason has already been logged
+  return;
+}
+Debug.Log($"Uploaded as entity {result.EntityId}: {result.FileUrl}");
+```
 
-If you only want to upload a file to AVNFS and get its URL — without it appearing in any organization's Shared Cloud library — use `FileUploader.UploadToAvnfs` instead. It accepts the same set of overloads (string, byte array, or file path) and returns the AVNFS URL on success, or `null` on failure.
+Each `CloudUploadResult` exposes `EntityId`, `FileUrl`, `FileName`, `MediaType` and `SizeBytes`.
+
+`EntityId` is the cloud file's entity ID — the key you need to attach metadata to the file, and the same value `CloudFile.EntityId` carries when the file later comes back from a search. Hold on to it if you intend to set metadata; there is no way to look an entity ID up from an AVNFS URL afterwards.
+
+Note that an unsuccessful upload returns `null` and logs the reason, rather than throwing — unlike `CloudFiles.Search`, which throws an `RpcException`.
+
+If you only want to upload a file to AVNFS and get its URL — without it appearing in any organization's Shared Cloud library — use `FileUploader.UploadToAvnfs` instead. It accepts the same set of overloads (string, byte array, or file path) and returns the AVNFS URL on success, or `null` on failure. Note that a file which isn't associated with an organization has no cloud file entity, and so has no `EntityId` and cannot carry metadata.
 
 ### Queries
 
@@ -102,9 +115,11 @@ Build the search with a `CloudFileQuery`. Every property is an optional filter, 
 | --- | --- |
 | `Text` | Free-text search across the files. |
 | `MediaTypes` | Restrict to these media (MIME) types. |
-| `Tags` + `TagMatch` | Restrict to files matching these tag IDs — `TagMatch.All` (default) or `TagMatch.Any`. |
+| `Tags` + `TagMatch` | Restrict to files matching these tag IDs — `TagMatch.All` (default) or `TagMatch.Any`. **Not yet implemented by the cloud**, so these are currently ignored server-side. |
+| `MetadataFilters` | Restrict to files whose metadata matches — see [Metadata filters](#metadata-filters) below. |
 | `CreatedAfter` / `CreatedBefore` | Restrict to a time range. |
 | `OrderBy` | Result ordering, e.g. `CloudFileOrder.NewestFirst` (default is the server's order). |
+| `IconSize` | Ask the cloud for an icon per result, surfaced as `CloudFile.IconUrl`. Defaults to `CloudIconSize.None`, which returns no icon. |
 
 This example will stream every match — paging is handled for you:
 
@@ -115,7 +130,9 @@ await foreach (CloudFile file in CloudFiles.Search(query)) {
 }
 ```
 
-Each `CloudFile` exposes `Id`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `PreviewUrl`, `Updated` and `Tags`.
+Each `CloudFile` exposes `EntityId`, `FileName`, `FileUrl`, `MediaType`, `SizeBytes`, `IconUrl`, `Updated`, `Tags` and `MetadataCount`.
+
+`EntityId` is the key used to attach metadata to the file — the same value `CloudUploadResult.EntityId` carries for a file you just uploaded. `MetadataCount` tells you how many metadata entries it already has, so you can skip a fetch when there are none. `IconUrl` is only populated when the query sets `IconSize`.
 
 To drive paging yourself, use `AsPages`. Each `CloudFilePage` has the page's `Files` and a `NextPageToken` that is `null` on the last page:
 
@@ -127,6 +144,38 @@ await foreach (CloudFilePage page in CloudFiles.Search(query).AsPages(pageSize: 
 ```
 
 Enumeration can be cancelled with a `CancellationToken` (`CloudFiles.Search(query).WithCancellation(token)`), and a failed cloud request throws an `RpcException`.
+
+### Metadata filters
+
+Cloud files can carry small key/value metadata entries and searches can filter on them. Add `CloudMetadataFilter` instances to `CloudFileQuery.MetadataFilters`, built with one of the five factory methods:
+
+| Factory | Matches files where |
+| --- | --- |
+| `CloudMetadataFilter.HasKey(key)` | an entry exists for `key`, whatever its value |
+| `CloudMetadataFilter.HasNotKey(key)` | no entry exists for `key` |
+| `CloudMetadataFilter.ValueEquals(key, value)` | the entry's value equals `value` |
+| `CloudMetadataFilter.ValueStartsWith(key, prefix)` | the entry's value starts with `prefix` |
+| `CloudMetadataFilter.ValueContains(key, text)` | the entry's value contains `text` |
+
+```csharp
+var query = new CloudFileQuery {
+  MetadataFilters = {
+    CloudMetadataFilter.ValueEquals("ExampleKey", "ExampleValue"),
+    CloudMetadataFilter.HasNotKey("Archived")
+  }
+};
+await foreach (CloudFile file in CloudFiles.Search(query)) {
+  Debug.Log($"{file.FileName} has {file.MetadataCount} metadata entries");
+}
+```
+
+Notes:
+
+- **Multiple filters combine with AND.** A file must satisfy every filter in the list to be returned.
+- **Keys are matched exactly and are case-sensitive; values are matched case-insensitively.** `ValueEquals("ExampleKey", "EXAMPLEVALUE")` matches a value of `ExampleValue`, but `HasKey("exampleKey")` does not find a key stored as `ExampleKey`.
+- **Metadata belongs to the cloud file entry, not the file contents.** Re-uploading the same file produces a new entry, which starts with no metadata. It also means metadata cannot be attached to a file uploaded with `FileUploader.UploadToAvnfs`, since that never creates a cloud file entry.
+
+Writing and reading metadata is not yet wrapped by this plugin — use `CloudService.SetMetadata` and `CloudService.GetMetadata` on the gRPC client directly, keyed on `CloudFile.EntityId` (or `CloudUploadResult.EntityId` for a file you just uploaded). The cloud limits a key to 128 characters and a value to 512, and holds one value per key. `CloudFile.MetadataCount` tells you whether a file has any entries at all, so you can skip the read when it is `0`.
 
 ## Intents and Deep Linking
 

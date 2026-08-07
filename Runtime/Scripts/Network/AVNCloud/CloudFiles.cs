@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Avn.Connect.V1;
@@ -14,7 +15,7 @@ namespace ClassVR.Network.AvnCloud {
   internal delegate Task<SearchCloudFilesResponse> SearchCloudFilesFetch(SearchCloudFilesRequest request, CancellationToken cancellationToken);
 
   /// <summary>
-  /// Entry point for querying files stored in the ClassVR cloud.
+  /// Entry point for uploading files to, and querying files stored in, the ClassVR cloud.
   /// </summary>
   public static class CloudFiles {
     /// <summary>
@@ -36,6 +37,59 @@ namespace ClassVR.Network.AvnCloud {
         throw new ArgumentNullException(nameof(query));
       }
       return new CloudFilePageable(query, jwt, CreateFetch(endpointServer));
+    }
+
+    /// <summary>
+    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="data">The file contents as a string. This will be encoded using UTF8.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>
+    /// The new cloud file, whose <see cref="CloudUploadResult.EntityId"/> is the key for attaching metadata.
+    /// Returns <c>null</c> if the upload was unsuccessful — unlike <see cref="Search"/>, a failure is logged
+    /// rather than thrown.
+    /// </returns>
+    public static async Task<CloudUploadResult> Upload(string filename, string mediaType, string data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      byte[] byteData = Encoding.UTF8.GetBytes(data);
+      return await FileUploader.UploadBytesToSharedCloud(filename, mediaType, byteData, endpointServer, jwt);
+    }
+
+    /// <summary>
+    /// Uploads a file already on disk to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
+    /// The display name is derived from the file path via <see cref="System.IO.Path.GetFileName"/>.
+    /// Note: the maximum file size for upload is 5GB.
+    /// </summary>
+    /// <param name="filePath">Local file path (not a URI — the method handles file:// prefixing).</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>
+    /// The new cloud file, whose <see cref="CloudUploadResult.EntityId"/> is the key for attaching metadata.
+    /// Returns <c>null</c> if the upload was unsuccessful — unlike <see cref="Search"/>, a failure is logged
+    /// rather than thrown.
+    /// </returns>
+    public static async Task<CloudUploadResult> Upload(string filePath, string mediaType, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return await FileUploader.UploadFileToSharedCloud(filePath, mediaType, endpointServer, jwt);
+    }
+
+    /// <summary>
+    /// Uploads a file to the Shared Cloud area of ClassVR for the current Organization the device is enrolled in.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (or MIME) type of the file.</param>
+    /// <param name="data">The file contents as a byte array.</param>
+    /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>
+    /// The new cloud file, whose <see cref="CloudUploadResult.EntityId"/> is the key for attaching metadata.
+    /// Returns <c>null</c> if the upload was unsuccessful — unlike <see cref="Search"/>, a failure is logged
+    /// rather than thrown.
+    /// </returns>
+    public static async Task<CloudUploadResult> Upload(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return await FileUploader.UploadBytesToSharedCloud(filename, mediaType, data, endpointServer, jwt);
     }
 
     // The production page fetcher: the only place that touches the gRPC client and channel singleton.
@@ -144,6 +198,18 @@ namespace ClassVR.Network.AvnCloud {
         request.TagFilters.Add(tagFilter);
       }
 
+      foreach (var filter in query.MetadataFilters) {
+        var metadataFilter = new MetadataFilter {
+          Key = filter.Key,
+          Condition = ConditionFor(filter.Condition)
+        };
+        // Left unset for the presence conditions, where the cloud ignores it
+        if (filter.Match != null) {
+          metadataFilter.Match = filter.Match;
+        }
+        request.MetadataFilters.Add(metadataFilter);
+      }
+
       if (query.CreatedAfter.HasValue) {
         request.After = Timestamp.FromDateTimeOffset(query.CreatedAfter.Value);
       }
@@ -156,6 +222,11 @@ namespace ClassVR.Network.AvnCloud {
         request.OrderBy.Add(orderClause);
       }
 
+      // The cloud returns no icon at all unless the request carries transcoding instructions
+      if (query.IconSize != CloudIconSize.None) {
+        request.IconSpec = new TranscodeImageSpec { MaxSizePixels = (int)query.IconSize };
+      }
+
       if (pageSize.HasValue) {
         request.PageSize = pageSize.Value;
       }
@@ -165,6 +236,20 @@ namespace ClassVR.Network.AvnCloud {
       }
 
       return request;
+    }
+
+    // Maps the friendly match enum to its protobuf condition. Every MetadataMatch member is covered; the
+    // throw is a guard against a member being added here without being mapped, which would otherwise send
+    // the unspecified condition and have the cloud filter on nothing.
+    private static MetadataFilterCondition ConditionFor(MetadataMatch match) {
+      switch (match) {
+        case MetadataMatch.HasKey: return MetadataFilterCondition.HasKey;
+        case MetadataMatch.HasNotKey: return MetadataFilterCondition.HasNotKey;
+        case MetadataMatch.Equals: return MetadataFilterCondition.Equals;
+        case MetadataMatch.StartsWith: return MetadataFilterCondition.StartsWith;
+        case MetadataMatch.Contains: return MetadataFilterCondition.Contains;
+        default: throw new ArgumentOutOfRangeException(nameof(match), match, "Unmapped metadata match condition.");
+      }
     }
 
     // Maps the friendly ordering enum to a single protobuf OrderClause (null = server default).
@@ -189,7 +274,7 @@ namespace ClassVR.Network.AvnCloud {
       var updated = proto.Updated?.ToDateTimeOffset();
       var tags = new List<int>(proto.Tags);
 
-      return new CloudFile(proto.EntityId, fileName, proto.FileUrl, mediaType, sizeBytes, proto.PreviewUrl, updated, tags);
+      return new CloudFile(proto.EntityId, fileName, proto.FileUrl, mediaType, sizeBytes, proto.IconUrl, updated, tags, proto.MetadataCount);
     }
   }
 }

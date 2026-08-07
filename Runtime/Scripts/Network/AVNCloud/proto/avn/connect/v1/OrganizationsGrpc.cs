@@ -58,9 +58,21 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.CreateOrganizationResponse> __Marshaller_avn_connect_v1_CreateOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.CreateOrganizationResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityPropertiesRequest> __Marshaller_avn_connect_v1_GetEntityPropertiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityPropertiesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetEntityPropertiesResponse> __Marshaller_avn_connect_v1_GetEntityPropertiesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetEntityPropertiesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.SetEntityPropertiesRequest> __Marshaller_avn_connect_v1_SetEntityPropertiesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SetEntityPropertiesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetOrganizationUsersRequest> __Marshaller_avn_connect_v1_GetOrganizationUsersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetOrganizationUsersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetOrganizationUsersResponse> __Marshaller_avn_connect_v1_GetOrganizationUsersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetOrganizationUsersResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.SetOrganizationMembershipRequest> __Marshaller_avn_connect_v1_SetOrganizationMembershipRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.SetOrganizationMembershipRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.RemoveOrganizationUserRequest> __Marshaller_avn_connect_v1_RemoveOrganizationUserRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.RemoveOrganizationUserRequest.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.GetEntityRequest, global::Avn.Connect.V1.Organization> __Method_GetOrganization = new grpc::Method<global::Avn.Connect.V1.GetEntityRequest, global::Avn.Connect.V1.Organization>(
@@ -87,11 +99,43 @@ namespace Avn.Connect.V1 {
         __Marshaller_avn_connect_v1_CreateOrganizationResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetEntityPropertiesRequest, global::Avn.Connect.V1.GetEntityPropertiesResponse> __Method_GetProperties = new grpc::Method<global::Avn.Connect.V1.GetEntityPropertiesRequest, global::Avn.Connect.V1.GetEntityPropertiesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetProperties",
+        __Marshaller_avn_connect_v1_GetEntityPropertiesRequest,
+        __Marshaller_avn_connect_v1_GetEntityPropertiesResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.SetEntityPropertiesRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetProperties = new grpc::Method<global::Avn.Connect.V1.SetEntityPropertiesRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
         "SetProperties",
         __Marshaller_avn_connect_v1_SetEntityPropertiesRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetOrganizationUsersRequest, global::Avn.Connect.V1.GetOrganizationUsersResponse> __Method_GetOrganizationUsers = new grpc::Method<global::Avn.Connect.V1.GetOrganizationUsersRequest, global::Avn.Connect.V1.GetOrganizationUsersResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetOrganizationUsers",
+        __Marshaller_avn_connect_v1_GetOrganizationUsersRequest,
+        __Marshaller_avn_connect_v1_GetOrganizationUsersResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.SetOrganizationMembershipRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_SetOrganizationMembership = new grpc::Method<global::Avn.Connect.V1.SetOrganizationMembershipRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SetOrganizationMembership",
+        __Marshaller_avn_connect_v1_SetOrganizationMembershipRequest,
+        __Marshaller_google_protobuf_Empty);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.RemoveOrganizationUserRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_RemoveOrganizationUser = new grpc::Method<global::Avn.Connect.V1.RemoveOrganizationUserRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RemoveOrganizationUser",
+        __Marshaller_avn_connect_v1_RemoveOrganizationUserRequest,
         __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
@@ -272,7 +316,55 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_CreateOrganization, null, options, request);
       }
       /// <summary>
-      /// Property management
+      /// Get the requested properties from every requested organization. Supports NAME, ADDRESS, CITY, STATE, POSTCODE, PHONE, EMAIL, UPDATED
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetEntityPropertiesResponse GetProperties(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the requested properties from every requested organization. Supports NAME, ADDRESS, CITY, STATE, POSTCODE, PHONE, EMAIL, UPDATED
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetEntityPropertiesResponse GetProperties(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Get the requested properties from every requested organization. Supports NAME, ADDRESS, CITY, STATE, POSTCODE, PHONE, EMAIL, UPDATED
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetEntityPropertiesResponse> GetPropertiesAsync(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the requested properties from every requested organization. Supports NAME, ADDRESS, CITY, STATE, POSTCODE, PHONE, EMAIL, UPDATED
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetEntityPropertiesResponse> GetPropertiesAsync(global::Avn.Connect.V1.GetEntityPropertiesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Set the properties of one or more organizations. Supports NAME, ADDRESS, CITY, STATE, POSTCODE, PHONE, EMAIL
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -285,7 +377,7 @@ namespace Avn.Connect.V1 {
         return SetProperties(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Property management
+      /// Set the properties of one or more organizations. Supports NAME, ADDRESS, CITY, STATE, POSTCODE, PHONE, EMAIL
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -296,7 +388,7 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_SetProperties, null, options, request);
       }
       /// <summary>
-      /// Property management
+      /// Set the properties of one or more organizations. Supports NAME, ADDRESS, CITY, STATE, POSTCODE, PHONE, EMAIL
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -309,7 +401,7 @@ namespace Avn.Connect.V1 {
         return SetPropertiesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Property management
+      /// Set the properties of one or more organizations. Supports NAME, ADDRESS, CITY, STATE, POSTCODE, PHONE, EMAIL
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -318,6 +410,150 @@ namespace Avn.Connect.V1 {
       public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetPropertiesAsync(global::Avn.Connect.V1.SetEntityPropertiesRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SetProperties, null, options, request);
+      }
+      /// <summary>
+      /// Get the users that are members of an organization together with their membership details. Requires the `viewUsers` permission for the organization
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetOrganizationUsersResponse GetOrganizationUsers(global::Avn.Connect.V1.GetOrganizationUsersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetOrganizationUsers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the users that are members of an organization together with their membership details. Requires the `viewUsers` permission for the organization
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetOrganizationUsersResponse GetOrganizationUsers(global::Avn.Connect.V1.GetOrganizationUsersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetOrganizationUsers, null, options, request);
+      }
+      /// <summary>
+      /// Get the users that are members of an organization together with their membership details. Requires the `viewUsers` permission for the organization
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetOrganizationUsersResponse> GetOrganizationUsersAsync(global::Avn.Connect.V1.GetOrganizationUsersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetOrganizationUsersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Get the users that are members of an organization together with their membership details. Requires the `viewUsers` permission for the organization
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetOrganizationUsersResponse> GetOrganizationUsersAsync(global::Avn.Connect.V1.GetOrganizationUsersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetOrganizationUsers, null, options, request);
+      }
+      /// <summary>
+      /// Set a member's role and additional permissions within an organization. Replaces the whole membership record, adding the user as a member if necessary. Requires the `editOrganizations` permission for the organization; callers cannot modify their own membership, cannot assign a role above their own inherited role level, and can only grant additional permissions they hold themselves
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetOrganizationMembership(global::Avn.Connect.V1.SetOrganizationMembershipRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetOrganizationMembership(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Set a member's role and additional permissions within an organization. Replaces the whole membership record, adding the user as a member if necessary. Requires the `editOrganizations` permission for the organization; callers cannot modify their own membership, cannot assign a role above their own inherited role level, and can only grant additional permissions they hold themselves
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty SetOrganizationMembership(global::Avn.Connect.V1.SetOrganizationMembershipRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetOrganizationMembership, null, options, request);
+      }
+      /// <summary>
+      /// Set a member's role and additional permissions within an organization. Replaces the whole membership record, adding the user as a member if necessary. Requires the `editOrganizations` permission for the organization; callers cannot modify their own membership, cannot assign a role above their own inherited role level, and can only grant additional permissions they hold themselves
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetOrganizationMembershipAsync(global::Avn.Connect.V1.SetOrganizationMembershipRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetOrganizationMembershipAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Set a member's role and additional permissions within an organization. Replaces the whole membership record, adding the user as a member if necessary. Requires the `editOrganizations` permission for the organization; callers cannot modify their own membership, cannot assign a role above their own inherited role level, and can only grant additional permissions they hold themselves
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> SetOrganizationMembershipAsync(global::Avn.Connect.V1.SetOrganizationMembershipRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetOrganizationMembership, null, options, request);
+      }
+      /// <summary>
+      /// Remove a user from an organization. Requires the `editOrganizations` permission for the organization; callers cannot remove themselves
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveOrganizationUser(global::Avn.Connect.V1.RemoveOrganizationUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveOrganizationUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove a user from an organization. Requires the `editOrganizations` permission for the organization; callers cannot remove themselves
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveOrganizationUser(global::Avn.Connect.V1.RemoveOrganizationUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveOrganizationUser, null, options, request);
+      }
+      /// <summary>
+      /// Remove a user from an organization. Requires the `editOrganizations` permission for the organization; callers cannot remove themselves
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveOrganizationUserAsync(global::Avn.Connect.V1.RemoveOrganizationUserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveOrganizationUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove a user from an organization. Requires the `editOrganizations` permission for the organization; callers cannot remove themselves
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveOrganizationUserAsync(global::Avn.Connect.V1.RemoveOrganizationUserRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveOrganizationUser, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

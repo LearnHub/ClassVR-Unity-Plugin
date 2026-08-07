@@ -52,6 +52,10 @@ namespace Avn.Connect.V1 {
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetNewsRequest> __Marshaller_avn_connect_v1_GetNewsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetNewsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Avn.Connect.V1.GetNewsResponse> __Marshaller_avn_connect_v1_GetNewsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetNewsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetGeoFeedRequest> __Marshaller_avn_connect_v1_GetGeoFeedRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetGeoFeedRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Avn.Connect.V1.GetGeoFeedResponse> __Marshaller_avn_connect_v1_GetGeoFeedResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Avn.Connect.V1.GetGeoFeedResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.GetNewsRequest, global::Avn.Connect.V1.GetNewsResponse> __Method_GetNews = new grpc::Method<global::Avn.Connect.V1.GetNewsRequest, global::Avn.Connect.V1.GetNewsResponse>(
@@ -60,6 +64,14 @@ namespace Avn.Connect.V1 {
         "GetNews",
         __Marshaller_avn_connect_v1_GetNewsRequest,
         __Marshaller_avn_connect_v1_GetNewsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Avn.Connect.V1.GetGeoFeedRequest, global::Avn.Connect.V1.GetGeoFeedResponse> __Method_GetGeoFeed = new grpc::Method<global::Avn.Connect.V1.GetGeoFeedRequest, global::Avn.Connect.V1.GetGeoFeedResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetGeoFeed",
+        __Marshaller_avn_connect_v1_GetGeoFeedRequest,
+        __Marshaller_avn_connect_v1_GetGeoFeedResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -141,6 +153,58 @@ namespace Avn.Connect.V1 {
       public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetNewsResponse> GetNewsAsync(global::Avn.Connect.V1.GetNewsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetNews, null, options, request);
+      }
+      /// <summary>
+      /// Aggregated, anonymised feed of recent ClassVR activity grouped into
+      /// approximate locations. Intended as a public "activity around the world" feed.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetGeoFeedResponse GetGeoFeed(global::Avn.Connect.V1.GetGeoFeedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetGeoFeed(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Aggregated, anonymised feed of recent ClassVR activity grouped into
+      /// approximate locations. Intended as a public "activity around the world" feed.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.GetGeoFeedResponse GetGeoFeed(global::Avn.Connect.V1.GetGeoFeedRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetGeoFeed, null, options, request);
+      }
+      /// <summary>
+      /// Aggregated, anonymised feed of recent ClassVR activity grouped into
+      /// approximate locations. Intended as a public "activity around the world" feed.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetGeoFeedResponse> GetGeoFeedAsync(global::Avn.Connect.V1.GetGeoFeedRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetGeoFeedAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Aggregated, anonymised feed of recent ClassVR activity grouped into
+      /// approximate locations. Intended as a public "activity around the world" feed.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.GetGeoFeedResponse> GetGeoFeedAsync(global::Avn.Connect.V1.GetGeoFeedRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetGeoFeed, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

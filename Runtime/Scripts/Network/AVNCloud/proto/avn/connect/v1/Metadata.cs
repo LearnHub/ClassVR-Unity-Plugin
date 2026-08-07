@@ -32,18 +32,54 @@ namespace Avn.Connect.V1 {
             "MS5BdXRob3JpemF0aW9uEjAKCG1ldGFkYXRhGAIgASgLMh4uYXZuLmNvbm5l",
             "Y3QudjEuRW50aXR5TWV0YWRhdGEiRgoTR2V0TWV0YWRhdGFSZXNwb25zZRIv",
             "CgdyZXN1bHRzGAEgAygLMh4uYXZuLmNvbm5lY3QudjEuRW50aXR5TWV0YWRh",
-            "dGFiBnByb3RvMw=="));
+            "dGEidwoOTWV0YWRhdGFGaWx0ZXISCwoDa2V5GAEgASgJEjoKCWNvbmRpdGlv",
+            "bhgCIAEoDjInLmF2bi5jb25uZWN0LnYxLk1ldGFkYXRhRmlsdGVyQ29uZGl0",
+            "aW9uEhIKBW1hdGNoGAMgASgJSACIAQFCCAoGX21hdGNoKo8CChdNZXRhZGF0",
+            "YUZpbHRlckNvbmRpdGlvbhIpCiVNRVRBREFUQV9GSUxURVJfQ09ORElUSU9O",
+            "X1VOU1BFQ0lGSUVEEAASJQohTUVUQURBVEFfRklMVEVSX0NPTkRJVElPTl9I",
+            "QVNfS0VZEAESKQolTUVUQURBVEFfRklMVEVSX0NPTkRJVElPTl9IQVNfTk9U",
+            "X0tFWRACEiQKIE1FVEFEQVRBX0ZJTFRFUl9DT05ESVRJT05fRVFVQUxTEAMS",
+            "KQolTUVUQURBVEFfRklMVEVSX0NPTkRJVElPTl9TVEFSVFNfV0lUSBAEEiYK",
+            "Ik1FVEFEQVRBX0ZJTFRFUl9DT05ESVRJT05fQ09OVEFJTlMQBWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.MetadataFilterCondition), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.EntityMetadata), global::Avn.Connect.V1.EntityMetadata.Parser, new[]{ "EntityId", "Key", "Value" }, new[]{ "Key", "Value" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MetadataRequest), global::Avn.Connect.V1.MetadataRequest.Parser, new[]{ "Auth", "Metadata" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMetadataResponse), global::Avn.Connect.V1.GetMetadataResponse.Parser, new[]{ "Results" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMetadataResponse), global::Avn.Connect.V1.GetMetadataResponse.Parser, new[]{ "Results" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MetadataFilter), global::Avn.Connect.V1.MetadataFilter.Parser, new[]{ "Key", "Condition", "Match" }, new[]{ "Match" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum MetadataFilterCondition {
+    [pbr::OriginalName("METADATA_FILTER_CONDITION_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// Entity has the key, with any value
+    /// </summary>
+    [pbr::OriginalName("METADATA_FILTER_CONDITION_HAS_KEY")] HasKey = 1,
+    /// <summary>
+    /// Entity does not have the key
+    /// </summary>
+    [pbr::OriginalName("METADATA_FILTER_CONDITION_HAS_NOT_KEY")] HasNotKey = 2,
+    /// <summary>
+    /// Value equals match text (case-insensitive)
+    /// </summary>
+    [pbr::OriginalName("METADATA_FILTER_CONDITION_EQUALS")] Equals = 3,
+    /// <summary>
+    /// Value starts with match text (case-insensitive)
+    /// </summary>
+    [pbr::OriginalName("METADATA_FILTER_CONDITION_STARTS_WITH")] StartsWith = 4,
+    /// <summary>
+    /// Value contains match text (case-insensitive)
+    /// </summary>
+    [pbr::OriginalName("METADATA_FILTER_CONDITION_CONTAINS")] Contains = 5,
+  }
+
+  #endregion
+
   #region Messages
   /// <summary>
   /// Entity metadata entry
@@ -807,6 +843,305 @@ namespace Avn.Connect.V1 {
             break;
           case 10: {
             results_.AddEntriesFrom(ref input, _repeated_results_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Filter entities by a metadata key and how its value matches.
+  /// Multiple filters combine with AND, matching TagFilter semantics.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class MetadataFilter : pb::IMessage<MetadataFilter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MetadataFilter> _parser = new pb::MessageParser<MetadataFilter>(() => new MetadataFilter());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<MetadataFilter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.MetadataReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MetadataFilter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MetadataFilter(MetadataFilter other) : this() {
+      key_ = other.key_;
+      condition_ = other.condition_;
+      match_ = other.match_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public MetadataFilter Clone() {
+      return new MetadataFilter(this);
+    }
+
+    /// <summary>Field number for the "key" field.</summary>
+    public const int KeyFieldNumber = 1;
+    private string key_ = "";
+    /// <summary>
+    /// Metadata key to filter on (exact, case-sensitive - matches SetMetadata keys)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Key {
+      get { return key_; }
+      set {
+        key_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "condition" field.</summary>
+    public const int ConditionFieldNumber = 2;
+    private global::Avn.Connect.V1.MetadataFilterCondition condition_ = global::Avn.Connect.V1.MetadataFilterCondition.Unspecified;
+    /// <summary>
+    /// Condition to use when filtering
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.MetadataFilterCondition Condition {
+      get { return condition_; }
+      set {
+        condition_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "match" field.</summary>
+    public const int MatchFieldNumber = 3;
+    private readonly static string MatchDefaultValue = "";
+
+    private string match_;
+    /// <summary>
+    /// Text to match values against (ignored for the presence conditions)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Match {
+      get { return match_ ?? MatchDefaultValue; }
+      set {
+        match_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "match" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMatch {
+      get { return match_ != null; }
+    }
+    /// <summary>Clears the value of the "match" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMatch() {
+      match_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as MetadataFilter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(MetadataFilter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Key != other.Key) return false;
+      if (Condition != other.Condition) return false;
+      if (Match != other.Match) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Key.Length != 0) hash ^= Key.GetHashCode();
+      if (Condition != global::Avn.Connect.V1.MetadataFilterCondition.Unspecified) hash ^= Condition.GetHashCode();
+      if (HasMatch) hash ^= Match.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Key.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Key);
+      }
+      if (Condition != global::Avn.Connect.V1.MetadataFilterCondition.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Condition);
+      }
+      if (HasMatch) {
+        output.WriteRawTag(26);
+        output.WriteString(Match);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Key.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Key);
+      }
+      if (Condition != global::Avn.Connect.V1.MetadataFilterCondition.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) Condition);
+      }
+      if (HasMatch) {
+        output.WriteRawTag(26);
+        output.WriteString(Match);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Key.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Key);
+      }
+      if (Condition != global::Avn.Connect.V1.MetadataFilterCondition.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Condition);
+      }
+      if (HasMatch) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Match);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(MetadataFilter other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Key.Length != 0) {
+        Key = other.Key;
+      }
+      if (other.Condition != global::Avn.Connect.V1.MetadataFilterCondition.Unspecified) {
+        Condition = other.Condition;
+      }
+      if (other.HasMatch) {
+        Match = other.Match;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Key = input.ReadString();
+            break;
+          }
+          case 16: {
+            Condition = (global::Avn.Connect.V1.MetadataFilterCondition) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            Match = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Key = input.ReadString();
+            break;
+          }
+          case 16: {
+            Condition = (global::Avn.Connect.V1.MetadataFilterCondition) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            Match = input.ReadString();
             break;
           }
         }

@@ -98,94 +98,95 @@ namespace Avn.Connect.V1 {
             "ChBzdXBwb3J0ZWRfY29kZWNzGAQgAygLMjQuYXZuLmNvbm5lY3QudjEuTWVk",
             "aWFEZXZpY2VTcGVjLlN1cHBvcnRlZENvZGVjc0VudHJ5GlcKFFN1cHBvcnRl",
             "ZENvZGVjc0VudHJ5EgsKA2tleRgBIAEoCRIuCgV2YWx1ZRgCIAEoCzIfLmF2",
-            "bi5jb25uZWN0LnYxLk1lZGlhRm9ybWF0U3BlYzoCOAEirQEKFVRyYW5zY29k",
-            "ZVZpZGVvUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3QudjEu",
-            "QXV0aG9yaXphdGlvbhIRCgltZWRpYV91cmwYAiABKAkSOwoSdGFyZ2V0X2Rl",
-            "dmljZV9zcGVjGAMgASgLMh8uYXZuLmNvbm5lY3QudjEuTWVkaWFEZXZpY2VT",
-            "cGVjEhcKD2ZvcmNlX3RyYW5zY29kZRgEIAEoCCLBAQoWVHJhbnNjb2RlVmlk",
-            "ZW9SZXNwb25zZRItCgVzdGF0ZRgBIAEoDjIeLmF2bi5jb25uZWN0LnYxLk9w",
-            "ZXJhdGlvblN0YXRlEjkKBnJlc3VsdBgCIAEoCzIkLmF2bi5jb25uZWN0LnYx",
-            "LlRyYW5zY29kZVZpZGVvUmVzdWx0SACIAQESHQoQcHJvZ3Jlc3NfcGVyY2Vu",
-            "dBgDIAEoBUgBiAEBQgkKB19yZXN1bHRCEwoRX3Byb2dyZXNzX3BlcmNlbnQi",
-            "XgoUVHJhbnNjb2RlVmlkZW9SZXN1bHQSFgoJbWVkaWFfdXJsGAEgASgJSACI",
-            "AQESDgoGZXJyb3JzGAIgAygJEhAKCHdhcm5pbmdzGAMgAygJQgwKCl9tZWRp",
-            "YV91cmwiOwoSTWVkaWFUeXBlRXh0ZW5zaW9uEhEKCWV4dGVuc2lvbhgBIAEo",
-            "CRISCgptZWRpYV90eXBlGAIgASgJIiEKH0dldE1lZGlhVHlwZUV4dGVuc2lv",
-            "bk1hcFJlcXVlc3QiWwogR2V0TWVkaWFUeXBlRXh0ZW5zaW9uTWFwUmVzcG9u",
-            "c2USNwoLbWVkaWFfdHlwZXMYASADKAsyIi5hdm4uY29ubmVjdC52MS5NZWRp",
-            "YVR5cGVFeHRlbnNpb24imQEKF01lZGlhQ29tcGF0aWJpbGl0eUlzc3VlEjQK",
-            "BGFyZWEYASABKA4yJi5hdm4uY29ubmVjdC52MS5NZWRpYUNvbXBhdGliaWxp",
-            "dHlBcmVhEjgKBnJlYXNvbhgCIAEoDjIoLmF2bi5jb25uZWN0LnYxLk1lZGlh",
-            "Q29tcGF0aWJpbGl0eVJlYXNvbhIOCgZkZXRhaWwYAyABKAkinQEKHkNoZWNr",
-            "TWVkaWFDb21wYXRpYmlsaXR5UmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZu",
-            "LmNvbm5lY3QudjEuQXV0aG9yaXphdGlvbhIRCgltZWRpYV91cmwYAiABKAkS",
-            "OwoSdGFyZ2V0X2RldmljZV9zcGVjGAMgASgLMh8uYXZuLmNvbm5lY3QudjEu",
-            "TWVkaWFEZXZpY2VTcGVjIsECCh9DaGVja01lZGlhQ29tcGF0aWJpbGl0eVJl",
-            "c3BvbnNlEh4KFmNvbnRhaW5lcl9pc19zdXBwb3J0ZWQYASABKAgSIQoZdmlk",
-            "ZW9fc3RyZWFtX2lzX2F2YWlsYWJsZRgCIAEoCBIhChl2aWRlb19zdHJlYW1f",
-            "aXNfc3VwcG9ydGVkGAMgASgIEiEKGWF1ZGlvX3N0cmVhbV9pc19hdmFpbGFi",
-            "bGUYBCABKAgSIQoZYXVkaW9fc3RyZWFtX2lzX3N1cHBvcnRlZBgFIAEoCBI3",
-            "CgZlcnJvcnMYBiADKAsyJy5hdm4uY29ubmVjdC52MS5NZWRpYUNvbXBhdGli",
-            "aWxpdHlJc3N1ZRI5Cgh3YXJuaW5ncxgHIAMoCzInLmF2bi5jb25uZWN0LnYx",
-            "Lk1lZGlhQ29tcGF0aWJpbGl0eUlzc3VlImMKGkdldE1lZGlhRGV2aWNlU3Bl",
-            "Y3NSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRo",
-            "b3JpemF0aW9uEhgKEG1lZGlhX2RldmljZV9pZHMYAiADKAkiWgobR2V0TWVk",
-            "aWFEZXZpY2VTcGVjc1Jlc3BvbnNlEjsKEm1lZGlhX2RldmljZV9zcGVjcxgB",
-            "IAMoCzIfLmF2bi5jb25uZWN0LnYxLk1lZGlhRGV2aWNlU3BlYyLNAQoXR2V0",
-            "TWVkaWFTcGVjdHJ1bVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25u",
-            "ZWN0LnYxLkF1dGhvcml6YXRpb24SEQoJbWVkaWFfdXJsGAIgASgJEhMKC3Nh",
-            "bXBsZV9yYXRlGAMgASgCEhsKE2ZyZXF1ZW5jeV9iaW5fY291bnQYBCABKAUS",
-            "FQoNZnJlcXVlbmN5X21pbhgFIAEoAhIVCg1mcmVxdWVuY3lfbWF4GAYgASgC",
-            "EhIKCnZvbHVtZV9tYXgYByABKAIiUQoYR2V0TWVkaWFTcGVjdHJ1bVJlc3Bv",
-            "bnNlEjUKDm1lZGlhX3NwZWN0cnVtGAEgASgLMh0uYXZuLmNvbm5lY3QudjEu",
-            "TWVkaWFTcGVjdHJ1bSKyAQoNTWVkaWFTcGVjdHJ1bRITCgtzYW1wbGVfcmF0",
-            "ZRgBIAEoAhIUCgxzYW1wbGVfY291bnQYAiABKAUSGwoTZnJlcXVlbmN5X2Jp",
-            "bl9jb3VudBgDIAEoBRIVCg1mcmVxdWVuY3lfbWluGAQgASgCEhUKDWZyZXF1",
-            "ZW5jeV9tYXgYBSABKAISEgoKdm9sdW1lX21heBgGIAEoAhIXCg92b2x1bWVf",
-            "ZGF0YV91cmwYCiABKAkqhQIKD01lZGlhU3RyZWFtVHlwZRIhCh1NRURJQV9T",
-            "VFJFQU1fVFlQRV9VTlNQRUNJRklFRBAAEh0KGU1FRElBX1NUUkVBTV9UWVBF",
-            "X1VOS05PV04QARIbChdNRURJQV9TVFJFQU1fVFlQRV9WSURFTxACEhsKF01F",
-            "RElBX1NUUkVBTV9UWVBFX0FVRElPEAMSGgoWTUVESUFfU1RSRUFNX1RZUEVf",
-            "REFUQRAEEh4KGk1FRElBX1NUUkVBTV9UWVBFX1NVQlRJVExFEAUSIAocTUVE",
-            "SUFfU1RSRUFNX1RZUEVfQVRUQUNITUVOVBAGEhgKFE1FRElBX1NUUkVBTV9U",
-            "WVBFX05CEAcq6AEKFk1lZGlhQ29tcGF0aWJpbGl0eUFyZWESKAokTUVESUFf",
-            "Q09NUEFUSUJJTElUWV9BUkVBX1VOU1BFQ0lGSUVEEAASJgoiTUVESUFfQ09N",
-            "UEFUSUJJTElUWV9BUkVBX0NPTlRBSU5FUhABEigKJE1FRElBX0NPTVBBVElC",
-            "SUxJVFlfQVJFQV9WSURFT19DT0RFQxACEigKJE1FRElBX0NPTVBBVElCSUxJ",
-            "VFlfQVJFQV9BVURJT19DT0RFQxADEigKJE1FRElBX0NPTVBBVElCSUxJVFlf",
-            "QVJFQV9PVEhFUl9DT0RFQxAEKrkDChhNZWRpYUNvbXBhdGliaWxpdHlSZWFz",
-            "b24SKgomTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fVU5TUEVDSUZJRUQQ",
-            "ABIsCihNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9OT1RfU1VQUE9SVEVE",
-            "EAESLgoqTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fTUFYX1BJWEVMX1dJ",
-            "RFRIEAISLworTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fTUFYX1BJWEVM",
-            "X0hFSUdIVBADEisKJ01FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX1BJWEVM",
-            "X0ZPUk1BVBAEEiwKKE1FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX01BWF9G",
-            "UkFNRVJBVEUQBRIqCiZNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9NQVhf",
-            "QklUUkFURRAGEiwKKE1FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX0NIQU5O",
-            "RUxfQ09VTlQQBxItCilNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9UQVJH",
-            "RVRfQklUUkFURRAIMswHCgxNZWRpYVNlcnZpY2USYgoPR2V0UHJldmlld0lt",
-            "YWdlEiYuYXZuLmNvbm5lY3QudjEuR2V0UHJldmlld0ltYWdlUmVxdWVzdBon",
-            "LmF2bi5jb25uZWN0LnYxLkdldFByZXZpZXdJbWFnZVJlc3BvbnNlEmAKEEdl",
-            "dEltYWdlTWV0YWRhdGESIi5hdm4uY29ubmVjdC52MS5HZXRNZXRhZGF0YVJl",
-            "cXVlc3QaKC5hdm4uY29ubmVjdC52MS5HZXRJbWFnZU1ldGFkYXRhUmVzcG9u",
-            "c2USYAoQR2V0VmlkZW9NZXRhZGF0YRIiLmF2bi5jb25uZWN0LnYxLkdldE1l",
-            "dGFkYXRhUmVxdWVzdBooLmF2bi5jb25uZWN0LnYxLkdldFZpZGVvTWV0YWRh",
-            "dGFSZXNwb25zZRJ6ChdDaGVja01lZGlhQ29tcGF0aWJpbGl0eRIuLmF2bi5j",
-            "b25uZWN0LnYxLkNoZWNrTWVkaWFDb21wYXRpYmlsaXR5UmVxdWVzdBovLmF2",
-            "bi5jb25uZWN0LnYxLkNoZWNrTWVkaWFDb21wYXRpYmlsaXR5UmVzcG9uc2US",
-            "XwoOVHJhbnNjb2RlSW1hZ2USJS5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVJ",
-            "bWFnZVJlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVJbWFnZVJl",
-            "c3BvbnNlEmEKDlRyYW5zY29kZVZpZGVvEiUuYXZuLmNvbm5lY3QudjEuVHJh",
-            "bnNjb2RlVmlkZW9SZXF1ZXN0GiYuYXZuLmNvbm5lY3QudjEuVHJhbnNjb2Rl",
-            "VmlkZW9SZXNwb25zZTABEn0KGEdldE1lZGlhVHlwZUV4dGVuc2lvbk1hcBIv",
-            "LmF2bi5jb25uZWN0LnYxLkdldE1lZGlhVHlwZUV4dGVuc2lvbk1hcFJlcXVl",
-            "c3QaMC5hdm4uY29ubmVjdC52MS5HZXRNZWRpYVR5cGVFeHRlbnNpb25NYXBS",
-            "ZXNwb25zZRJuChNHZXRNZWRpYURldmljZVNwZWNzEiouYXZuLmNvbm5lY3Qu",
-            "djEuR2V0TWVkaWFEZXZpY2VTcGVjc1JlcXVlc3QaKy5hdm4uY29ubmVjdC52",
-            "MS5HZXRNZWRpYURldmljZVNwZWNzUmVzcG9uc2USZQoQR2V0TWVkaWFTcGVj",
-            "dHJ1bRInLmF2bi5jb25uZWN0LnYxLkdldE1lZGlhU3BlY3RydW1SZXF1ZXN0",
-            "GiguYXZuLmNvbm5lY3QudjEuR2V0TWVkaWFTcGVjdHJ1bVJlc3BvbnNlYgZw",
-            "cm90bzM="));
+            "bi5jb25uZWN0LnYxLk1lZGlhRm9ybWF0U3BlYzoCOAEifQoSVHJhbnNjb2Rl",
+            "VmlkZW9UYXNrEhEKCW1lZGlhX3VybBgBIAEoCRI7ChJ0YXJnZXRfZGV2aWNl",
+            "X3NwZWMYAiABKAsyHy5hdm4uY29ubmVjdC52MS5NZWRpYURldmljZVNwZWMS",
+            "FwoPZm9yY2VfdHJhbnNjb2RlGAMgASgIIr8BChVUcmFuc2NvZGVWaWRlb1Jl",
+            "cXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6",
+            "YXRpb24SGQoMd2FpdF9zZWNvbmRzGAIgASgCSAGIAQESMgoEdGFzaxgDIAEo",
+            "CzIiLmF2bi5jb25uZWN0LnYxLlRyYW5zY29kZVZpZGVvVGFza0gAEhAKBmpv",
+            "Yl9pZBgEIAEoCUgAQgcKBXBoYXNlQg8KDV93YWl0X3NlY29uZHMihgEKFlRy",
+            "YW5zY29kZVZpZGVvUmVzcG9uc2USIAoDam9iGAEgASgLMhMuYXZuLmNvbm5l",
+            "Y3QudjEuSm9iEjkKBnJlc3VsdBgCIAEoCzIkLmF2bi5jb25uZWN0LnYxLlRy",
+            "YW5zY29kZVZpZGVvUmVzdWx0SACIAQFCCQoHX3Jlc3VsdEoECAMQBCJeChRU",
+            "cmFuc2NvZGVWaWRlb1Jlc3VsdBIWCgltZWRpYV91cmwYASABKAlIAIgBARIO",
+            "CgZlcnJvcnMYAiADKAkSEAoId2FybmluZ3MYAyADKAlCDAoKX21lZGlhX3Vy",
+            "bCI7ChJNZWRpYVR5cGVFeHRlbnNpb24SEQoJZXh0ZW5zaW9uGAEgASgJEhIK",
+            "Cm1lZGlhX3R5cGUYAiABKAkiIQofR2V0TWVkaWFUeXBlRXh0ZW5zaW9uTWFw",
+            "UmVxdWVzdCJbCiBHZXRNZWRpYVR5cGVFeHRlbnNpb25NYXBSZXNwb25zZRI3",
+            "CgttZWRpYV90eXBlcxgBIAMoCzIiLmF2bi5jb25uZWN0LnYxLk1lZGlhVHlw",
+            "ZUV4dGVuc2lvbiKZAQoXTWVkaWFDb21wYXRpYmlsaXR5SXNzdWUSNAoEYXJl",
+            "YRgBIAEoDjImLmF2bi5jb25uZWN0LnYxLk1lZGlhQ29tcGF0aWJpbGl0eUFy",
+            "ZWESOAoGcmVhc29uGAIgASgOMiguYXZuLmNvbm5lY3QudjEuTWVkaWFDb21w",
+            "YXRpYmlsaXR5UmVhc29uEg4KBmRldGFpbBgDIAEoCSKdAQoeQ2hlY2tNZWRp",
+            "YUNvbXBhdGliaWxpdHlSZXF1ZXN0EisKBGF1dGgYASABKAsyHS5hdm4uY29u",
+            "bmVjdC52MS5BdXRob3JpemF0aW9uEhEKCW1lZGlhX3VybBgCIAEoCRI7ChJ0",
+            "YXJnZXRfZGV2aWNlX3NwZWMYAyABKAsyHy5hdm4uY29ubmVjdC52MS5NZWRp",
+            "YURldmljZVNwZWMiwQIKH0NoZWNrTWVkaWFDb21wYXRpYmlsaXR5UmVzcG9u",
+            "c2USHgoWY29udGFpbmVyX2lzX3N1cHBvcnRlZBgBIAEoCBIhChl2aWRlb19z",
+            "dHJlYW1faXNfYXZhaWxhYmxlGAIgASgIEiEKGXZpZGVvX3N0cmVhbV9pc19z",
+            "dXBwb3J0ZWQYAyABKAgSIQoZYXVkaW9fc3RyZWFtX2lzX2F2YWlsYWJsZRgE",
+            "IAEoCBIhChlhdWRpb19zdHJlYW1faXNfc3VwcG9ydGVkGAUgASgIEjcKBmVy",
+            "cm9ycxgGIAMoCzInLmF2bi5jb25uZWN0LnYxLk1lZGlhQ29tcGF0aWJpbGl0",
+            "eUlzc3VlEjkKCHdhcm5pbmdzGAcgAygLMicuYXZuLmNvbm5lY3QudjEuTWVk",
+            "aWFDb21wYXRpYmlsaXR5SXNzdWUiYwoaR2V0TWVkaWFEZXZpY2VTcGVjc1Jl",
+            "cXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25uZWN0LnYxLkF1dGhvcml6",
+            "YXRpb24SGAoQbWVkaWFfZGV2aWNlX2lkcxgCIAMoCSJaChtHZXRNZWRpYURl",
+            "dmljZVNwZWNzUmVzcG9uc2USOwoSbWVkaWFfZGV2aWNlX3NwZWNzGAEgAygL",
+            "Mh8uYXZuLmNvbm5lY3QudjEuTWVkaWFEZXZpY2VTcGVjIs0BChdHZXRNZWRp",
+            "YVNwZWN0cnVtUmVxdWVzdBIrCgRhdXRoGAEgASgLMh0uYXZuLmNvbm5lY3Qu",
+            "djEuQXV0aG9yaXphdGlvbhIRCgltZWRpYV91cmwYAiABKAkSEwoLc2FtcGxl",
+            "X3JhdGUYAyABKAISGwoTZnJlcXVlbmN5X2Jpbl9jb3VudBgEIAEoBRIVCg1m",
+            "cmVxdWVuY3lfbWluGAUgASgCEhUKDWZyZXF1ZW5jeV9tYXgYBiABKAISEgoK",
+            "dm9sdW1lX21heBgHIAEoAiJRChhHZXRNZWRpYVNwZWN0cnVtUmVzcG9uc2US",
+            "NQoObWVkaWFfc3BlY3RydW0YASABKAsyHS5hdm4uY29ubmVjdC52MS5NZWRp",
+            "YVNwZWN0cnVtIrIBCg1NZWRpYVNwZWN0cnVtEhMKC3NhbXBsZV9yYXRlGAEg",
+            "ASgCEhQKDHNhbXBsZV9jb3VudBgCIAEoBRIbChNmcmVxdWVuY3lfYmluX2Nv",
+            "dW50GAMgASgFEhUKDWZyZXF1ZW5jeV9taW4YBCABKAISFQoNZnJlcXVlbmN5",
+            "X21heBgFIAEoAhISCgp2b2x1bWVfbWF4GAYgASgCEhcKD3ZvbHVtZV9kYXRh",
+            "X3VybBgKIAEoCSqFAgoPTWVkaWFTdHJlYW1UeXBlEiEKHU1FRElBX1NUUkVB",
+            "TV9UWVBFX1VOU1BFQ0lGSUVEEAASHQoZTUVESUFfU1RSRUFNX1RZUEVfVU5L",
+            "Tk9XThABEhsKF01FRElBX1NUUkVBTV9UWVBFX1ZJREVPEAISGwoXTUVESUFf",
+            "U1RSRUFNX1RZUEVfQVVESU8QAxIaChZNRURJQV9TVFJFQU1fVFlQRV9EQVRB",
+            "EAQSHgoaTUVESUFfU1RSRUFNX1RZUEVfU1VCVElUTEUQBRIgChxNRURJQV9T",
+            "VFJFQU1fVFlQRV9BVFRBQ0hNRU5UEAYSGAoUTUVESUFfU1RSRUFNX1RZUEVf",
+            "TkIQByroAQoWTWVkaWFDb21wYXRpYmlsaXR5QXJlYRIoCiRNRURJQV9DT01Q",
+            "QVRJQklMSVRZX0FSRUFfVU5TUEVDSUZJRUQQABImCiJNRURJQV9DT01QQVRJ",
+            "QklMSVRZX0FSRUFfQ09OVEFJTkVSEAESKAokTUVESUFfQ09NUEFUSUJJTElU",
+            "WV9BUkVBX1ZJREVPX0NPREVDEAISKAokTUVESUFfQ09NUEFUSUJJTElUWV9B",
+            "UkVBX0FVRElPX0NPREVDEAMSKAokTUVESUFfQ09NUEFUSUJJTElUWV9BUkVB",
+            "X09USEVSX0NPREVDEAQquQMKGE1lZGlhQ29tcGF0aWJpbGl0eVJlYXNvbhIq",
+            "CiZNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9VTlNQRUNJRklFRBAAEiwK",
+            "KE1FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX05PVF9TVVBQT1JURUQQARIu",
+            "CipNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9NQVhfUElYRUxfV0lEVEgQ",
+            "AhIvCitNRURJQV9DT01QQVRJQklMSVRZX1JFQVNPTl9NQVhfUElYRUxfSEVJ",
+            "R0hUEAMSKwonTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fUElYRUxfRk9S",
+            "TUFUEAQSLAooTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fTUFYX0ZSQU1F",
+            "UkFURRAFEioKJk1FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX01BWF9CSVRS",
+            "QVRFEAYSLAooTUVESUFfQ09NUEFUSUJJTElUWV9SRUFTT05fQ0hBTk5FTF9D",
+            "T1VOVBAHEi0KKU1FRElBX0NPTVBBVElCSUxJVFlfUkVBU09OX1RBUkdFVF9C",
+            "SVRSQVRFEAgyygcKDE1lZGlhU2VydmljZRJiCg9HZXRQcmV2aWV3SW1hZ2US",
+            "Ji5hdm4uY29ubmVjdC52MS5HZXRQcmV2aWV3SW1hZ2VSZXF1ZXN0GicuYXZu",
+            "LmNvbm5lY3QudjEuR2V0UHJldmlld0ltYWdlUmVzcG9uc2USYAoQR2V0SW1h",
+            "Z2VNZXRhZGF0YRIiLmF2bi5jb25uZWN0LnYxLkdldE1ldGFkYXRhUmVxdWVz",
+            "dBooLmF2bi5jb25uZWN0LnYxLkdldEltYWdlTWV0YWRhdGFSZXNwb25zZRJg",
+            "ChBHZXRWaWRlb01ldGFkYXRhEiIuYXZuLmNvbm5lY3QudjEuR2V0TWV0YWRh",
+            "dGFSZXF1ZXN0GiguYXZuLmNvbm5lY3QudjEuR2V0VmlkZW9NZXRhZGF0YVJl",
+            "c3BvbnNlEnoKF0NoZWNrTWVkaWFDb21wYXRpYmlsaXR5Ei4uYXZuLmNvbm5l",
+            "Y3QudjEuQ2hlY2tNZWRpYUNvbXBhdGliaWxpdHlSZXF1ZXN0Gi8uYXZuLmNv",
+            "bm5lY3QudjEuQ2hlY2tNZWRpYUNvbXBhdGliaWxpdHlSZXNwb25zZRJfCg5U",
+            "cmFuc2NvZGVJbWFnZRIlLmF2bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdl",
+            "UmVxdWVzdBomLmF2bi5jb25uZWN0LnYxLlRyYW5zY29kZUltYWdlUmVzcG9u",
+            "c2USXwoOVHJhbnNjb2RlVmlkZW8SJS5hdm4uY29ubmVjdC52MS5UcmFuc2Nv",
+            "ZGVWaWRlb1JlcXVlc3QaJi5hdm4uY29ubmVjdC52MS5UcmFuc2NvZGVWaWRl",
+            "b1Jlc3BvbnNlEn0KGEdldE1lZGlhVHlwZUV4dGVuc2lvbk1hcBIvLmF2bi5j",
+            "b25uZWN0LnYxLkdldE1lZGlhVHlwZUV4dGVuc2lvbk1hcFJlcXVlc3QaMC5h",
+            "dm4uY29ubmVjdC52MS5HZXRNZWRpYVR5cGVFeHRlbnNpb25NYXBSZXNwb25z",
+            "ZRJuChNHZXRNZWRpYURldmljZVNwZWNzEiouYXZuLmNvbm5lY3QudjEuR2V0",
+            "TWVkaWFEZXZpY2VTcGVjc1JlcXVlc3QaKy5hdm4uY29ubmVjdC52MS5HZXRN",
+            "ZWRpYURldmljZVNwZWNzUmVzcG9uc2USZQoQR2V0TWVkaWFTcGVjdHJ1bRIn",
+            "LmF2bi5jb25uZWN0LnYxLkdldE1lZGlhU3BlY3RydW1SZXF1ZXN0GiguYXZu",
+            "LmNvbm5lY3QudjEuR2V0TWVkaWFTcGVjdHJ1bVJlc3BvbnNlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.MediaStreamType), typeof(global::Avn.Connect.V1.MediaCompatibilityArea), typeof(global::Avn.Connect.V1.MediaCompatibilityReason), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -202,8 +203,9 @@ namespace Avn.Connect.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.TranscodeImageResponse), global::Avn.Connect.V1.TranscodeImageResponse.Parser, new[]{ "MediaUrl" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MediaFormatSpec), global::Avn.Connect.V1.MediaFormatSpec.Parser, new[]{ "CodecName", "SupportedCodecTags", "StreamType", "Priority", "MaxWidthPixels", "TargetWidthPixels", "MaxHeightPixels", "TargetHeightPixels", "SupportedPixelFormats", "MaxFramerate", "MaxBitrateBitsPerSecond", "TargetBitrateBitsPerSecond", "TargetQualityPercent", "MaxAudioChannels", "MaxSampleRateHertz" }, new[]{ "MaxWidthPixels", "TargetWidthPixels", "MaxHeightPixels", "TargetHeightPixels", "MaxFramerate", "MaxBitrateBitsPerSecond", "TargetBitrateBitsPerSecond", "TargetQualityPercent", "MaxAudioChannels", "MaxSampleRateHertz" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MediaDeviceSpec), global::Avn.Connect.V1.MediaDeviceSpec.Parser, new[]{ "MediaDeviceId", "MediaDeviceName", "SupportedContainerFormats", "SupportedCodecs" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.TranscodeVideoRequest), global::Avn.Connect.V1.TranscodeVideoRequest.Parser, new[]{ "Auth", "MediaUrl", "TargetDeviceSpec", "ForceTranscode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.TranscodeVideoResponse), global::Avn.Connect.V1.TranscodeVideoResponse.Parser, new[]{ "State", "Result", "ProgressPercent" }, new[]{ "Result", "ProgressPercent" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.TranscodeVideoTask), global::Avn.Connect.V1.TranscodeVideoTask.Parser, new[]{ "MediaUrl", "TargetDeviceSpec", "ForceTranscode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.TranscodeVideoRequest), global::Avn.Connect.V1.TranscodeVideoRequest.Parser, new[]{ "Auth", "WaitSeconds", "Task", "JobId" }, new[]{ "Phase", "WaitSeconds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.TranscodeVideoResponse), global::Avn.Connect.V1.TranscodeVideoResponse.Parser, new[]{ "Job", "Result" }, new[]{ "Result" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.TranscodeVideoResult), global::Avn.Connect.V1.TranscodeVideoResult.Parser, new[]{ "MediaUrl", "Errors", "Warnings" }, new[]{ "MediaUrl" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.MediaTypeExtension), global::Avn.Connect.V1.MediaTypeExtension.Parser, new[]{ "Extension", "MediaType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetMediaTypeExtensionMapRequest), global::Avn.Connect.V1.GetMediaTypeExtensionMapRequest.Parser, null, null, null, null, null),
@@ -5349,17 +5351,20 @@ namespace Avn.Connect.V1 {
 
   }
 
+  /// <summary>
+  /// The work itself: payload of a first (submitting) TranscodeVideo call.
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class TranscodeVideoRequest : pb::IMessage<TranscodeVideoRequest>
+  public sealed partial class TranscodeVideoTask : pb::IMessage<TranscodeVideoTask>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<TranscodeVideoRequest> _parser = new pb::MessageParser<TranscodeVideoRequest>(() => new TranscodeVideoRequest());
+    private static readonly pb::MessageParser<TranscodeVideoTask> _parser = new pb::MessageParser<TranscodeVideoTask>(() => new TranscodeVideoTask());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<TranscodeVideoRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<TranscodeVideoTask> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5375,7 +5380,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TranscodeVideoRequest() {
+    public TranscodeVideoTask() {
       OnConstruction();
     }
 
@@ -5383,8 +5388,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TranscodeVideoRequest(TranscodeVideoRequest other) : this() {
-      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+    public TranscodeVideoTask(TranscodeVideoTask other) : this() {
       mediaUrl_ = other.mediaUrl_;
       targetDeviceSpec_ = other.targetDeviceSpec_ != null ? other.targetDeviceSpec_.Clone() : null;
       forceTranscode_ = other.forceTranscode_;
@@ -5393,27 +5397,12 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public TranscodeVideoRequest Clone() {
-      return new TranscodeVideoRequest(this);
-    }
-
-    /// <summary>Field number for the "auth" field.</summary>
-    public const int AuthFieldNumber = 1;
-    private global::Avn.Connect.V1.Authorization auth_;
-    /// <summary>
-    /// Authorization for the request
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.Authorization Auth {
-      get { return auth_; }
-      set {
-        auth_ = value;
-      }
+    public TranscodeVideoTask Clone() {
+      return new TranscodeVideoTask(this);
     }
 
     /// <summary>Field number for the "media_url" field.</summary>
-    public const int MediaUrlFieldNumber = 2;
+    public const int MediaUrlFieldNumber = 1;
     private string mediaUrl_ = "";
     /// <summary>
     /// The media file to transcode
@@ -5428,7 +5417,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "target_device_spec" field.</summary>
-    public const int TargetDeviceSpecFieldNumber = 3;
+    public const int TargetDeviceSpecFieldNumber = 2;
     private global::Avn.Connect.V1.MediaDeviceSpec targetDeviceSpec_;
     /// <summary>
     /// The target spec to transcode to
@@ -5443,7 +5432,7 @@ namespace Avn.Connect.V1 {
     }
 
     /// <summary>Field number for the "force_transcode" field.</summary>
-    public const int ForceTranscodeFieldNumber = 4;
+    public const int ForceTranscodeFieldNumber = 3;
     private bool forceTranscode_;
     /// <summary>
     /// Force transcoding even if the media file is already on spec
@@ -5460,19 +5449,18 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as TranscodeVideoRequest);
+      return Equals(other as TranscodeVideoTask);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(TranscodeVideoRequest other) {
+    public bool Equals(TranscodeVideoTask other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Auth, other.Auth)) return false;
       if (MediaUrl != other.MediaUrl) return false;
       if (!object.Equals(TargetDeviceSpec, other.TargetDeviceSpec)) return false;
       if (ForceTranscode != other.ForceTranscode) return false;
@@ -5483,7 +5471,6 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (auth_ != null) hash ^= Auth.GetHashCode();
       if (MediaUrl.Length != 0) hash ^= MediaUrl.GetHashCode();
       if (targetDeviceSpec_ != null) hash ^= TargetDeviceSpec.GetHashCode();
       if (ForceTranscode != false) hash ^= ForceTranscode.GetHashCode();
@@ -5505,20 +5492,16 @@ namespace Avn.Connect.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (auth_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Auth);
-      }
       if (MediaUrl.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(MediaUrl);
       }
       if (targetDeviceSpec_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(18);
         output.WriteMessage(TargetDeviceSpec);
       }
       if (ForceTranscode != false) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteBool(ForceTranscode);
       }
       if (_unknownFields != null) {
@@ -5531,20 +5514,16 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (auth_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Auth);
-      }
       if (MediaUrl.Length != 0) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(10);
         output.WriteString(MediaUrl);
       }
       if (targetDeviceSpec_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(18);
         output.WriteMessage(TargetDeviceSpec);
       }
       if (ForceTranscode != false) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(24);
         output.WriteBool(ForceTranscode);
       }
       if (_unknownFields != null) {
@@ -5557,9 +5536,6 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (auth_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
-      }
       if (MediaUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(MediaUrl);
       }
@@ -5577,15 +5553,9 @@ namespace Avn.Connect.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(TranscodeVideoRequest other) {
+    public void MergeFrom(TranscodeVideoTask other) {
       if (other == null) {
         return;
-      }
-      if (other.auth_ != null) {
-        if (auth_ == null) {
-          Auth = new global::Avn.Connect.V1.Authorization();
-        }
-        Auth.MergeFrom(other.Auth);
       }
       if (other.MediaUrl.Length != 0) {
         MediaUrl = other.MediaUrl;
@@ -5619,25 +5589,420 @@ namespace Avn.Connect.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (auth_ == null) {
-              Auth = new global::Avn.Connect.V1.Authorization();
-            }
-            input.ReadMessage(Auth);
-            break;
-          }
-          case 18: {
             MediaUrl = input.ReadString();
             break;
           }
-          case 26: {
+          case 18: {
             if (targetDeviceSpec_ == null) {
               TargetDeviceSpec = new global::Avn.Connect.V1.MediaDeviceSpec();
             }
             input.ReadMessage(TargetDeviceSpec);
             break;
           }
-          case 32: {
+          case 24: {
             ForceTranscode = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            MediaUrl = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (targetDeviceSpec_ == null) {
+              TargetDeviceSpec = new global::Avn.Connect.V1.MediaDeviceSpec();
+            }
+            input.ReadMessage(TargetDeviceSpec);
+            break;
+          }
+          case 24: {
+            ForceTranscode = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class TranscodeVideoRequest : pb::IMessage<TranscodeVideoRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TranscodeVideoRequest> _parser = new pb::MessageParser<TranscodeVideoRequest>(() => new TranscodeVideoRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<TranscodeVideoRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TranscodeVideoRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TranscodeVideoRequest(TranscodeVideoRequest other) : this() {
+      _hasBits0 = other._hasBits0;
+      auth_ = other.auth_ != null ? other.auth_.Clone() : null;
+      waitSeconds_ = other.waitSeconds_;
+      switch (other.PhaseCase) {
+        case PhaseOneofCase.Task:
+          Task = other.Task.Clone();
+          break;
+        case PhaseOneofCase.JobId:
+          JobId = other.JobId;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TranscodeVideoRequest Clone() {
+      return new TranscodeVideoRequest(this);
+    }
+
+    /// <summary>Field number for the "auth" field.</summary>
+    public const int AuthFieldNumber = 1;
+    private global::Avn.Connect.V1.Authorization auth_;
+    /// <summary>
+    /// Authorization for the request. Polls must come from the user that submitted
+    /// the task; other callers see NOT_FOUND.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.Authorization Auth {
+      get { return auth_; }
+      set {
+        auth_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wait_seconds" field.</summary>
+    public const int WaitSecondsFieldNumber = 2;
+    private readonly static float WaitSecondsDefaultValue = 0F;
+
+    private float waitSeconds_;
+    /// <summary>
+    /// Seconds to wait inline for a terminal state before returning the current
+    /// state. Clamped server-side to a safe maximum; unset uses the server default
+    /// and 0 polls without blocking.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float WaitSeconds {
+      get { if ((_hasBits0 & 1) != 0) { return waitSeconds_; } else { return WaitSecondsDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        waitSeconds_ = value;
+      }
+    }
+    /// <summary>Gets whether the "wait_seconds" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasWaitSeconds {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "wait_seconds" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearWaitSeconds() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "task" field.</summary>
+    public const int TaskFieldNumber = 3;
+    /// <summary>
+    /// First call: submit this work, creating the job returned in the response.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.TranscodeVideoTask Task {
+      get { return phaseCase_ == PhaseOneofCase.Task ? (global::Avn.Connect.V1.TranscodeVideoTask) phase_ : null; }
+      set {
+        phase_ = value;
+        phaseCase_ = value == null ? PhaseOneofCase.None : PhaseOneofCase.Task;
+      }
+    }
+
+    /// <summary>Field number for the "job_id" field.</summary>
+    public const int JobIdFieldNumber = 4;
+    /// <summary>
+    /// Subsequent calls: poll an earlier submission using its `job.id` from the
+    /// response envelope, until `job.state` is terminal.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string JobId {
+      get { return HasJobId ? (string) phase_ : ""; }
+      set {
+        phase_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        phaseCase_ = PhaseOneofCase.JobId;
+      }
+    }
+    /// <summary>Gets whether the "job_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasJobId {
+      get { return phaseCase_ == PhaseOneofCase.JobId; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "job_id" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearJobId() {
+      if (HasJobId) {
+        ClearPhase();
+      }
+    }
+
+    private object phase_;
+    /// <summary>Enum of possible cases for the "phase" oneof.</summary>
+    public enum PhaseOneofCase {
+      None = 0,
+      Task = 3,
+      JobId = 4,
+    }
+    private PhaseOneofCase phaseCase_ = PhaseOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PhaseOneofCase PhaseCase {
+      get { return phaseCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPhase() {
+      phaseCase_ = PhaseOneofCase.None;
+      phase_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as TranscodeVideoRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(TranscodeVideoRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Auth, other.Auth)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(WaitSeconds, other.WaitSeconds)) return false;
+      if (!object.Equals(Task, other.Task)) return false;
+      if (JobId != other.JobId) return false;
+      if (PhaseCase != other.PhaseCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (auth_ != null) hash ^= Auth.GetHashCode();
+      if (HasWaitSeconds) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(WaitSeconds);
+      if (phaseCase_ == PhaseOneofCase.Task) hash ^= Task.GetHashCode();
+      if (HasJobId) hash ^= JobId.GetHashCode();
+      hash ^= (int) phaseCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (HasWaitSeconds) {
+        output.WriteRawTag(21);
+        output.WriteFloat(WaitSeconds);
+      }
+      if (phaseCase_ == PhaseOneofCase.Task) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Task);
+      }
+      if (HasJobId) {
+        output.WriteRawTag(34);
+        output.WriteString(JobId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (auth_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Auth);
+      }
+      if (HasWaitSeconds) {
+        output.WriteRawTag(21);
+        output.WriteFloat(WaitSeconds);
+      }
+      if (phaseCase_ == PhaseOneofCase.Task) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Task);
+      }
+      if (HasJobId) {
+        output.WriteRawTag(34);
+        output.WriteString(JobId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (auth_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Auth);
+      }
+      if (HasWaitSeconds) {
+        size += 1 + 4;
+      }
+      if (phaseCase_ == PhaseOneofCase.Task) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Task);
+      }
+      if (HasJobId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(JobId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(TranscodeVideoRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.auth_ != null) {
+        if (auth_ == null) {
+          Auth = new global::Avn.Connect.V1.Authorization();
+        }
+        Auth.MergeFrom(other.Auth);
+      }
+      if (other.HasWaitSeconds) {
+        WaitSeconds = other.WaitSeconds;
+      }
+      switch (other.PhaseCase) {
+        case PhaseOneofCase.Task:
+          if (Task == null) {
+            Task = new global::Avn.Connect.V1.TranscodeVideoTask();
+          }
+          Task.MergeFrom(other.Task);
+          break;
+        case PhaseOneofCase.JobId:
+          JobId = other.JobId;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (auth_ == null) {
+              Auth = new global::Avn.Connect.V1.Authorization();
+            }
+            input.ReadMessage(Auth);
+            break;
+          }
+          case 21: {
+            WaitSeconds = input.ReadFloat();
+            break;
+          }
+          case 26: {
+            global::Avn.Connect.V1.TranscodeVideoTask subBuilder = new global::Avn.Connect.V1.TranscodeVideoTask();
+            if (phaseCase_ == PhaseOneofCase.Task) {
+              subBuilder.MergeFrom(Task);
+            }
+            input.ReadMessage(subBuilder);
+            Task = subBuilder;
+            break;
+          }
+          case 34: {
+            JobId = input.ReadString();
             break;
           }
         }
@@ -5666,19 +6031,21 @@ namespace Avn.Connect.V1 {
             input.ReadMessage(Auth);
             break;
           }
-          case 18: {
-            MediaUrl = input.ReadString();
+          case 21: {
+            WaitSeconds = input.ReadFloat();
             break;
           }
           case 26: {
-            if (targetDeviceSpec_ == null) {
-              TargetDeviceSpec = new global::Avn.Connect.V1.MediaDeviceSpec();
+            global::Avn.Connect.V1.TranscodeVideoTask subBuilder = new global::Avn.Connect.V1.TranscodeVideoTask();
+            if (phaseCase_ == PhaseOneofCase.Task) {
+              subBuilder.MergeFrom(Task);
             }
-            input.ReadMessage(TargetDeviceSpec);
+            input.ReadMessage(subBuilder);
+            Task = subBuilder;
             break;
           }
-          case 32: {
-            ForceTranscode = input.ReadBool();
+          case 34: {
+            JobId = input.ReadString();
             break;
           }
         }
@@ -5696,7 +6063,6 @@ namespace Avn.Connect.V1 {
   {
     private static readonly pb::MessageParser<TranscodeVideoResponse> _parser = new pb::MessageParser<TranscodeVideoResponse>(() => new TranscodeVideoResponse());
     private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<TranscodeVideoResponse> Parser { get { return _parser; } }
@@ -5704,7 +6070,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5724,10 +6090,8 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TranscodeVideoResponse(TranscodeVideoResponse other) : this() {
-      _hasBits0 = other._hasBits0;
-      state_ = other.state_;
+      job_ = other.job_ != null ? other.job_.Clone() : null;
       result_ = other.result_ != null ? other.result_.Clone() : null;
-      progressPercent_ = other.progressPercent_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5737,18 +6101,20 @@ namespace Avn.Connect.V1 {
       return new TranscodeVideoResponse(this);
     }
 
-    /// <summary>Field number for the "state" field.</summary>
-    public const int StateFieldNumber = 1;
-    private global::Avn.Connect.V1.OperationState state_ = global::Avn.Connect.V1.OperationState.Unspecified;
+    /// <summary>Field number for the "job" field.</summary>
+    public const int JobFieldNumber = 1;
+    private global::Avn.Connect.V1.Job job_;
     /// <summary>
-    /// State of the transcoding process
+    /// Operation envelope. Poll `job.id` (via TranscodeVideoRequest.job_id) until
+    /// `job.state` is terminal (COMPLETE on success, ERROR on failure). Progress is
+    /// reported on `job.progress`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.OperationState State {
-      get { return state_; }
+    public global::Avn.Connect.V1.Job Job {
+      get { return job_; }
       set {
-        state_ = value;
+        job_ = value;
       }
     }
 
@@ -5756,7 +6122,7 @@ namespace Avn.Connect.V1 {
     public const int ResultFieldNumber = 2;
     private global::Avn.Connect.V1.TranscodeVideoResult result_;
     /// <summary>
-    /// Set once the job has finished regardless of outcome
+    /// Only set when job.state == COMPLETE
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5765,36 +6131,6 @@ namespace Avn.Connect.V1 {
       set {
         result_ = value;
       }
-    }
-
-    /// <summary>Field number for the "progress_percent" field.</summary>
-    public const int ProgressPercentFieldNumber = 3;
-    private readonly static int ProgressPercentDefaultValue = 0;
-
-    private int progressPercent_;
-    /// <summary>
-    /// May be set when processing to indicated progress
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ProgressPercent {
-      get { if ((_hasBits0 & 1) != 0) { return progressPercent_; } else { return ProgressPercentDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        progressPercent_ = value;
-      }
-    }
-    /// <summary>Gets whether the "progress_percent" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasProgressPercent {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "progress_percent" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearProgressPercent() {
-      _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5812,9 +6148,8 @@ namespace Avn.Connect.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (State != other.State) return false;
+      if (!object.Equals(Job, other.Job)) return false;
       if (!object.Equals(Result, other.Result)) return false;
-      if (ProgressPercent != other.ProgressPercent) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5822,9 +6157,8 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (State != global::Avn.Connect.V1.OperationState.Unspecified) hash ^= State.GetHashCode();
+      if (job_ != null) hash ^= Job.GetHashCode();
       if (result_ != null) hash ^= Result.GetHashCode();
-      if (HasProgressPercent) hash ^= ProgressPercent.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5843,17 +6177,13 @@ namespace Avn.Connect.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (State != global::Avn.Connect.V1.OperationState.Unspecified) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) State);
+      if (job_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Job);
       }
       if (result_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Result);
-      }
-      if (HasProgressPercent) {
-        output.WriteRawTag(24);
-        output.WriteInt32(ProgressPercent);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -5865,17 +6195,13 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (State != global::Avn.Connect.V1.OperationState.Unspecified) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) State);
+      if (job_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Job);
       }
       if (result_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Result);
-      }
-      if (HasProgressPercent) {
-        output.WriteRawTag(24);
-        output.WriteInt32(ProgressPercent);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -5887,14 +6213,11 @@ namespace Avn.Connect.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (State != global::Avn.Connect.V1.OperationState.Unspecified) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
+      if (job_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Job);
       }
       if (result_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Result);
-      }
-      if (HasProgressPercent) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProgressPercent);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5908,17 +6231,17 @@ namespace Avn.Connect.V1 {
       if (other == null) {
         return;
       }
-      if (other.State != global::Avn.Connect.V1.OperationState.Unspecified) {
-        State = other.State;
+      if (other.job_ != null) {
+        if (job_ == null) {
+          Job = new global::Avn.Connect.V1.Job();
+        }
+        Job.MergeFrom(other.Job);
       }
       if (other.result_ != null) {
         if (result_ == null) {
           Result = new global::Avn.Connect.V1.TranscodeVideoResult();
         }
         Result.MergeFrom(other.Result);
-      }
-      if (other.HasProgressPercent) {
-        ProgressPercent = other.ProgressPercent;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5939,8 +6262,11 @@ namespace Avn.Connect.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            State = (global::Avn.Connect.V1.OperationState) input.ReadEnum();
+          case 10: {
+            if (job_ == null) {
+              Job = new global::Avn.Connect.V1.Job();
+            }
+            input.ReadMessage(Job);
             break;
           }
           case 18: {
@@ -5948,10 +6274,6 @@ namespace Avn.Connect.V1 {
               Result = new global::Avn.Connect.V1.TranscodeVideoResult();
             }
             input.ReadMessage(Result);
-            break;
-          }
-          case 24: {
-            ProgressPercent = input.ReadInt32();
             break;
           }
         }
@@ -5973,8 +6295,11 @@ namespace Avn.Connect.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            State = (global::Avn.Connect.V1.OperationState) input.ReadEnum();
+          case 10: {
+            if (job_ == null) {
+              Job = new global::Avn.Connect.V1.Job();
+            }
+            input.ReadMessage(Job);
             break;
           }
           case 18: {
@@ -5982,10 +6307,6 @@ namespace Avn.Connect.V1 {
               Result = new global::Avn.Connect.V1.TranscodeVideoResult();
             }
             input.ReadMessage(Result);
-            break;
-          }
-          case 24: {
-            ProgressPercent = input.ReadInt32();
             break;
           }
         }
@@ -6010,7 +6331,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6283,7 +6604,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6524,7 +6845,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6685,7 +7006,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6875,7 +7196,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7147,7 +7468,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7440,7 +7761,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7838,7 +8159,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8074,7 +8395,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8261,7 +8582,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8705,7 +9026,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8912,7 +9233,7 @@ namespace Avn.Connect.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Avn.Connect.V1.MediaReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

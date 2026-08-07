@@ -116,7 +116,16 @@ namespace Avn.Connect.V1 {
       }
 
       /// <summary>
-      /// Translate a given source
+      /// Translate a source into a target language, cache-first: a stored translation
+      /// (including any human-approved Update) is returned if present, otherwise the text
+      /// is machine-translated and cached for next time. All three RPCs share one store,
+      /// keyed by (translation_id, source_language_id, target_language_id). Text is
+      /// translated per fragment (each paragraph / Markdown text node separately) and
+      /// `:notx[...]` / `:::notx` directives pass through untranslated. The source is
+      /// returned unchanged when target_spec is unset, the text is blank, or the source
+      /// and target resolve to the same language (e.g. en vs en-GB, handled as a spelling
+      /// dialect, not a translation). source_spec.format must be set; HTML is an output
+      /// format only (not a valid source). Callers must be users.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -129,7 +138,16 @@ namespace Avn.Connect.V1 {
         return Translate(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Translate a given source
+      /// Translate a source into a target language, cache-first: a stored translation
+      /// (including any human-approved Update) is returned if present, otherwise the text
+      /// is machine-translated and cached for next time. All three RPCs share one store,
+      /// keyed by (translation_id, source_language_id, target_language_id). Text is
+      /// translated per fragment (each paragraph / Markdown text node separately) and
+      /// `:notx[...]` / `:::notx` directives pass through untranslated. The source is
+      /// returned unchanged when target_spec is unset, the text is blank, or the source
+      /// and target resolve to the same language (e.g. en vs en-GB, handled as a spelling
+      /// dialect, not a translation). source_spec.format must be set; HTML is an output
+      /// format only (not a valid source). Callers must be users.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -140,7 +158,16 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_Translate, null, options, request);
       }
       /// <summary>
-      /// Translate a given source
+      /// Translate a source into a target language, cache-first: a stored translation
+      /// (including any human-approved Update) is returned if present, otherwise the text
+      /// is machine-translated and cached for next time. All three RPCs share one store,
+      /// keyed by (translation_id, source_language_id, target_language_id). Text is
+      /// translated per fragment (each paragraph / Markdown text node separately) and
+      /// `:notx[...]` / `:::notx` directives pass through untranslated. The source is
+      /// returned unchanged when target_spec is unset, the text is blank, or the source
+      /// and target resolve to the same language (e.g. en vs en-GB, handled as a spelling
+      /// dialect, not a translation). source_spec.format must be set; HTML is an output
+      /// format only (not a valid source). Callers must be users.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -153,7 +180,16 @@ namespace Avn.Connect.V1 {
         return TranslateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Translate a given source
+      /// Translate a source into a target language, cache-first: a stored translation
+      /// (including any human-approved Update) is returned if present, otherwise the text
+      /// is machine-translated and cached for next time. All three RPCs share one store,
+      /// keyed by (translation_id, source_language_id, target_language_id). Text is
+      /// translated per fragment (each paragraph / Markdown text node separately) and
+      /// `:notx[...]` / `:::notx` directives pass through untranslated. The source is
+      /// returned unchanged when target_spec is unset, the text is blank, or the source
+      /// and target resolve to the same language (e.g. en vs en-GB, handled as a spelling
+      /// dialect, not a translation). source_spec.format must be set; HTML is an output
+      /// format only (not a valid source). Callers must be users.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -164,7 +200,9 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_Translate, null, options, request);
       }
       /// <summary>
-      /// Lookup an existing translation
+      /// Look up an existing stored translation only (never generates one); NOT_FOUND if
+      /// absent. Requires the caller to be a nominated translator for the source and
+      /// target languages, or a parent variant of them (e.g. rights on `es` cover `es-ES`).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -177,7 +215,9 @@ namespace Avn.Connect.V1 {
         return Lookup(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Lookup an existing translation
+      /// Look up an existing stored translation only (never generates one); NOT_FOUND if
+      /// absent. Requires the caller to be a nominated translator for the source and
+      /// target languages, or a parent variant of them (e.g. rights on `es` cover `es-ES`).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -188,7 +228,9 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_Lookup, null, options, request);
       }
       /// <summary>
-      /// Lookup an existing translation
+      /// Look up an existing stored translation only (never generates one); NOT_FOUND if
+      /// absent. Requires the caller to be a nominated translator for the source and
+      /// target languages, or a parent variant of them (e.g. rights on `es` cover `es-ES`).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -201,7 +243,9 @@ namespace Avn.Connect.V1 {
         return LookupAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Lookup an existing translation
+      /// Look up an existing stored translation only (never generates one); NOT_FOUND if
+      /// absent. Requires the caller to be a nominated translator for the source and
+      /// target languages, or a parent variant of them (e.g. rights on `es` cover `es-ES`).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -212,7 +256,11 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_Lookup, null, options, request);
       }
       /// <summary>
-      /// Update an existing translation
+      /// Overwrite an existing stored translation and mark it approved; the approved value
+      /// is what future Translate/Lookup calls return. The row must already exist (run
+      /// Translate or Lookup first) or the call is NOT_FOUND. Requires the caller to be a
+      /// nominated translator for the exact source and target languages (no variant
+      /// fallback, unlike Lookup). `text` must be whitespace-trimmed.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -225,7 +273,11 @@ namespace Avn.Connect.V1 {
         return Update(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update an existing translation
+      /// Overwrite an existing stored translation and mark it approved; the approved value
+      /// is what future Translate/Lookup calls return. The row must already exist (run
+      /// Translate or Lookup first) or the call is NOT_FOUND. Requires the caller to be a
+      /// nominated translator for the exact source and target languages (no variant
+      /// fallback, unlike Lookup). `text` must be whitespace-trimmed.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -236,7 +288,11 @@ namespace Avn.Connect.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_Update, null, options, request);
       }
       /// <summary>
-      /// Update an existing translation
+      /// Overwrite an existing stored translation and mark it approved; the approved value
+      /// is what future Translate/Lookup calls return. The row must already exist (run
+      /// Translate or Lookup first) or the call is NOT_FOUND. Requires the caller to be a
+      /// nominated translator for the exact source and target languages (no variant
+      /// fallback, unlike Lookup). `text` must be whitespace-trimmed.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -249,7 +305,11 @@ namespace Avn.Connect.V1 {
         return UpdateAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update an existing translation
+      /// Overwrite an existing stored translation and mark it approved; the approved value
+      /// is what future Translate/Lookup calls return. The row must already exist (run
+      /// Translate or Lookup first) or the call is NOT_FOUND. Requires the caller to be a
+      /// nominated translator for the exact source and target languages (no variant
+      /// fallback, unlike Lookup). `text` must be whitespace-trimmed.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

@@ -25,25 +25,28 @@ namespace Avn.Connect.V1 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJhdm4vY29ubmVjdC92MS9hdXRob3JpemF0aW9uLnByb3RvEg5hdm4uY29u",
-            "bmVjdC52MRogYXZuL2Nvbm5lY3QvdjEvY29ubmVjdGlvbnMucHJvdG8ipgIK",
+            "bmVjdC52MRogYXZuL2Nvbm5lY3QvdjEvY3JlZGVudGlhbHMucHJvdG8ilwMK",
             "DUF1dGhvcml6YXRpb24SFQoIdXNlcl9qd3QYASABKAlIAIgBARIZCgxkaW1l",
-            "bnNpb25faWQYAiABKAlIAYgBARI/CgtjcmVkZW50aWFscxgDIAEoCzIlLmF2",
-            "bi5jb25uZWN0LnYxLkNvbm5lY3Rpb25DcmVkZW50aWFsc0gCiAEBEhkKDHVz",
-            "ZXJfYXBpX2tleRgEIAEoCUgDiAEBEhcKCmRldmljZV9qd3QYBSABKAlIBIgB",
-            "ARIUCgdwYXNzX2lkGAYgASgJSAWIAQFCCwoJX3VzZXJfand0Qg8KDV9kaW1l",
-            "bnNpb25faWRCDgoMX2NyZWRlbnRpYWxzQg8KDV91c2VyX2FwaV9rZXlCDQoL",
-            "X2RldmljZV9qd3RCCgoIX3Bhc3NfaWQiPgoPQXV0aE9ubHlSZXF1ZXN0EisK",
-            "BGF1dGgYASABKAsyHS5hdm4uY29ubmVjdC52MS5BdXRob3JpemF0aW9uKvgB",
-            "ChBJZGVudGl0eVByb3ZpZGVyEiEKHUlERU5USVRZX1BST1ZJREVSX1VOU1BF",
-            "Q0lGSUVEEAASHwobSURFTlRJVFlfUFJPVklERVJfQU5PTllNT1VTEAESIgoe",
-            "SURFTlRJVFlfUFJPVklERVJfQ0xBU1NDT05ORUNUEAISHAoYSURFTlRJVFlf",
-            "UFJPVklERVJfR09PR0xFEAMSHwobSURFTlRJVFlfUFJPVklERVJfTUlDUk9T",
-            "T0ZUEAQSHAoYSURFTlRJVFlfUFJPVklERVJfQ0xFVkVSEAUSHwobSURFTlRJ",
-            "VFlfUFJPVklERVJfQ0xBU1NMSU5LEAZiBnByb3RvMw=="));
+            "bnNpb25faWQYAiABKAlIAYgBARJKChZjb25uZWN0aW9uX2NyZWRlbnRpYWxz",
+            "GAMgASgLMiUuYXZuLmNvbm5lY3QudjEuQ29ubmVjdGlvbkNyZWRlbnRpYWxz",
+            "SAKIAQESGQoMdXNlcl9hcGlfa2V5GAQgASgJSAOIAQESFwoKZGV2aWNlX2p3",
+            "dBgFIAEoCUgEiAEBEhQKB3Bhc3NfaWQYBiABKAlIBYgBARJCChJjbGllbnRf",
+            "Y3JlZGVudGlhbHMYByABKAsyIS5hdm4uY29ubmVjdC52MS5DbGllbnRDcmVk",
+            "ZW50aWFsc0gGiAEBQgsKCV91c2VyX2p3dEIPCg1fZGltZW5zaW9uX2lkQhkK",
+            "F19jb25uZWN0aW9uX2NyZWRlbnRpYWxzQg8KDV91c2VyX2FwaV9rZXlCDQoL",
+            "X2RldmljZV9qd3RCCgoIX3Bhc3NfaWRCFQoTX2NsaWVudF9jcmVkZW50aWFs",
+            "cyI+Cg9BdXRoT25seVJlcXVlc3QSKwoEYXV0aBgBIAEoCzIdLmF2bi5jb25u",
+            "ZWN0LnYxLkF1dGhvcml6YXRpb24q+AEKEElkZW50aXR5UHJvdmlkZXISIQod",
+            "SURFTlRJVFlfUFJPVklERVJfVU5TUEVDSUZJRUQQABIfChtJREVOVElUWV9Q",
+            "Uk9WSURFUl9BTk9OWU1PVVMQARIiCh5JREVOVElUWV9QUk9WSURFUl9DTEFT",
+            "U0NPTk5FQ1QQAhIcChhJREVOVElUWV9QUk9WSURFUl9HT09HTEUQAxIfChtJ",
+            "REVOVElUWV9QUk9WSURFUl9NSUNST1NPRlQQBBIcChhJREVOVElUWV9QUk9W",
+            "SURFUl9DTEVWRVIQBRIfChtJREVOVElUWV9QUk9WSURFUl9DTEFTU0xJTksQ",
+            "BmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Avn.Connect.V1.ConnectionsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Avn.Connect.V1.CredentialsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.IdentityProvider), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Authorization), global::Avn.Connect.V1.Authorization.Parser, new[]{ "UserJwt", "DimensionId", "Credentials", "UserApiKey", "DeviceJwt", "PassId" }, new[]{ "UserJwt", "DimensionId", "Credentials", "UserApiKey", "DeviceJwt", "PassId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.Authorization), global::Avn.Connect.V1.Authorization.Parser, new[]{ "UserJwt", "DimensionId", "ConnectionCredentials", "UserApiKey", "DeviceJwt", "PassId", "ClientCredentials" }, new[]{ "UserJwt", "DimensionId", "ConnectionCredentials", "UserApiKey", "DeviceJwt", "PassId", "ClientCredentials" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.AuthOnlyRequest), global::Avn.Connect.V1.AuthOnlyRequest.Parser, new[]{ "Auth" }, null, null, null, null)
           }));
     }
@@ -104,10 +107,11 @@ namespace Avn.Connect.V1 {
     public Authorization(Authorization other) : this() {
       userJwt_ = other.userJwt_;
       dimensionId_ = other.dimensionId_;
-      credentials_ = other.credentials_ != null ? other.credentials_.Clone() : null;
+      connectionCredentials_ = other.connectionCredentials_ != null ? other.connectionCredentials_.Clone() : null;
       userApiKey_ = other.userApiKey_;
       deviceJwt_ = other.deviceJwt_;
       passId_ = other.passId_;
+      clientCredentials_ = other.clientCredentials_ != null ? other.clientCredentials_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -175,18 +179,18 @@ namespace Avn.Connect.V1 {
       dimensionId_ = null;
     }
 
-    /// <summary>Field number for the "credentials" field.</summary>
-    public const int CredentialsFieldNumber = 3;
-    private global::Avn.Connect.V1.ConnectionCredentials credentials_;
+    /// <summary>Field number for the "connection_credentials" field.</summary>
+    public const int ConnectionCredentialsFieldNumber = 3;
+    private global::Avn.Connect.V1.ConnectionCredentials connectionCredentials_;
     /// <summary>
-    /// The confirmed connection credentials
+    /// The dimension connection credentials
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Avn.Connect.V1.ConnectionCredentials Credentials {
-      get { return credentials_; }
+    public global::Avn.Connect.V1.ConnectionCredentials ConnectionCredentials {
+      get { return connectionCredentials_; }
       set {
-        credentials_ = value;
+        connectionCredentials_ = value;
       }
     }
 
@@ -277,6 +281,21 @@ namespace Avn.Connect.V1 {
       passId_ = null;
     }
 
+    /// <summary>Field number for the "client_credentials" field.</summary>
+    public const int ClientCredentialsFieldNumber = 7;
+    private global::Avn.Connect.V1.ClientCredentials clientCredentials_;
+    /// <summary>
+    /// Simple client credentials
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Avn.Connect.V1.ClientCredentials ClientCredentials {
+      get { return clientCredentials_; }
+      set {
+        clientCredentials_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -294,10 +313,11 @@ namespace Avn.Connect.V1 {
       }
       if (UserJwt != other.UserJwt) return false;
       if (DimensionId != other.DimensionId) return false;
-      if (!object.Equals(Credentials, other.Credentials)) return false;
+      if (!object.Equals(ConnectionCredentials, other.ConnectionCredentials)) return false;
       if (UserApiKey != other.UserApiKey) return false;
       if (DeviceJwt != other.DeviceJwt) return false;
       if (PassId != other.PassId) return false;
+      if (!object.Equals(ClientCredentials, other.ClientCredentials)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -307,10 +327,11 @@ namespace Avn.Connect.V1 {
       int hash = 1;
       if (HasUserJwt) hash ^= UserJwt.GetHashCode();
       if (HasDimensionId) hash ^= DimensionId.GetHashCode();
-      if (credentials_ != null) hash ^= Credentials.GetHashCode();
+      if (connectionCredentials_ != null) hash ^= ConnectionCredentials.GetHashCode();
       if (HasUserApiKey) hash ^= UserApiKey.GetHashCode();
       if (HasDeviceJwt) hash ^= DeviceJwt.GetHashCode();
       if (HasPassId) hash ^= PassId.GetHashCode();
+      if (clientCredentials_ != null) hash ^= ClientCredentials.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -337,9 +358,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(18);
         output.WriteString(DimensionId);
       }
-      if (credentials_ != null) {
+      if (connectionCredentials_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(Credentials);
+        output.WriteMessage(ConnectionCredentials);
       }
       if (HasUserApiKey) {
         output.WriteRawTag(34);
@@ -352,6 +373,10 @@ namespace Avn.Connect.V1 {
       if (HasPassId) {
         output.WriteRawTag(50);
         output.WriteString(PassId);
+      }
+      if (clientCredentials_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ClientCredentials);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -371,9 +396,9 @@ namespace Avn.Connect.V1 {
         output.WriteRawTag(18);
         output.WriteString(DimensionId);
       }
-      if (credentials_ != null) {
+      if (connectionCredentials_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(Credentials);
+        output.WriteMessage(ConnectionCredentials);
       }
       if (HasUserApiKey) {
         output.WriteRawTag(34);
@@ -386,6 +411,10 @@ namespace Avn.Connect.V1 {
       if (HasPassId) {
         output.WriteRawTag(50);
         output.WriteString(PassId);
+      }
+      if (clientCredentials_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ClientCredentials);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -403,8 +432,8 @@ namespace Avn.Connect.V1 {
       if (HasDimensionId) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(DimensionId);
       }
-      if (credentials_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Credentials);
+      if (connectionCredentials_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConnectionCredentials);
       }
       if (HasUserApiKey) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(UserApiKey);
@@ -414,6 +443,9 @@ namespace Avn.Connect.V1 {
       }
       if (HasPassId) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PassId);
+      }
+      if (clientCredentials_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientCredentials);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -433,11 +465,11 @@ namespace Avn.Connect.V1 {
       if (other.HasDimensionId) {
         DimensionId = other.DimensionId;
       }
-      if (other.credentials_ != null) {
-        if (credentials_ == null) {
-          Credentials = new global::Avn.Connect.V1.ConnectionCredentials();
+      if (other.connectionCredentials_ != null) {
+        if (connectionCredentials_ == null) {
+          ConnectionCredentials = new global::Avn.Connect.V1.ConnectionCredentials();
         }
-        Credentials.MergeFrom(other.Credentials);
+        ConnectionCredentials.MergeFrom(other.ConnectionCredentials);
       }
       if (other.HasUserApiKey) {
         UserApiKey = other.UserApiKey;
@@ -447,6 +479,12 @@ namespace Avn.Connect.V1 {
       }
       if (other.HasPassId) {
         PassId = other.PassId;
+      }
+      if (other.clientCredentials_ != null) {
+        if (clientCredentials_ == null) {
+          ClientCredentials = new global::Avn.Connect.V1.ClientCredentials();
+        }
+        ClientCredentials.MergeFrom(other.ClientCredentials);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -476,10 +514,10 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 26: {
-            if (credentials_ == null) {
-              Credentials = new global::Avn.Connect.V1.ConnectionCredentials();
+            if (connectionCredentials_ == null) {
+              ConnectionCredentials = new global::Avn.Connect.V1.ConnectionCredentials();
             }
-            input.ReadMessage(Credentials);
+            input.ReadMessage(ConnectionCredentials);
             break;
           }
           case 34: {
@@ -492,6 +530,13 @@ namespace Avn.Connect.V1 {
           }
           case 50: {
             PassId = input.ReadString();
+            break;
+          }
+          case 58: {
+            if (clientCredentials_ == null) {
+              ClientCredentials = new global::Avn.Connect.V1.ClientCredentials();
+            }
+            input.ReadMessage(ClientCredentials);
             break;
           }
         }
@@ -522,10 +567,10 @@ namespace Avn.Connect.V1 {
             break;
           }
           case 26: {
-            if (credentials_ == null) {
-              Credentials = new global::Avn.Connect.V1.ConnectionCredentials();
+            if (connectionCredentials_ == null) {
+              ConnectionCredentials = new global::Avn.Connect.V1.ConnectionCredentials();
             }
-            input.ReadMessage(Credentials);
+            input.ReadMessage(ConnectionCredentials);
             break;
           }
           case 34: {
@@ -538,6 +583,13 @@ namespace Avn.Connect.V1 {
           }
           case 50: {
             PassId = input.ReadString();
+            break;
+          }
+          case 58: {
+            if (clientCredentials_ == null) {
+              ClientCredentials = new global::Avn.Connect.V1.ClientCredentials();
+            }
+            input.ReadMessage(ClientCredentials);
             break;
           }
         }

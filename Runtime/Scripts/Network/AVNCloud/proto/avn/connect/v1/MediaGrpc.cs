@@ -122,7 +122,7 @@ namespace Avn.Connect.V1 {
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Avn.Connect.V1.TranscodeVideoRequest, global::Avn.Connect.V1.TranscodeVideoResponse> __Method_TranscodeVideo = new grpc::Method<global::Avn.Connect.V1.TranscodeVideoRequest, global::Avn.Connect.V1.TranscodeVideoResponse>(
-        grpc::MethodType.ServerStreaming,
+        grpc::MethodType.Unary,
         __ServiceName,
         "TranscodeVideo",
         __Marshaller_avn_connect_v1_TranscodeVideoRequest,
@@ -426,7 +426,31 @@ namespace Avn.Connect.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_TranscodeImage, null, options, request);
       }
       /// <summary>
-      /// Transcode a video
+      /// Transcode a video using the durable-job pattern (see Job in operations.proto)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.TranscodeVideoResponse TranscodeVideo(global::Avn.Connect.V1.TranscodeVideoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return TranscodeVideo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Transcode a video using the durable-job pattern (see Job in operations.proto)
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Avn.Connect.V1.TranscodeVideoResponse TranscodeVideo(global::Avn.Connect.V1.TranscodeVideoRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_TranscodeVideo, null, options, request);
+      }
+      /// <summary>
+      /// Transcode a video using the durable-job pattern (see Job in operations.proto)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -434,20 +458,20 @@ namespace Avn.Connect.V1 {
       /// <param name="cancellationToken">An optional token for canceling the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::Avn.Connect.V1.TranscodeVideoResponse> TranscodeVideo(global::Avn.Connect.V1.TranscodeVideoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.TranscodeVideoResponse> TranscodeVideoAsync(global::Avn.Connect.V1.TranscodeVideoRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return TranscodeVideo(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return TranscodeVideoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Transcode a video
+      /// Transcode a video using the durable-job pattern (see Job in operations.proto)
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
       /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::Avn.Connect.V1.TranscodeVideoResponse> TranscodeVideo(global::Avn.Connect.V1.TranscodeVideoRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::Avn.Connect.V1.TranscodeVideoResponse> TranscodeVideoAsync(global::Avn.Connect.V1.TranscodeVideoRequest request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncServerStreamingCall(__Method_TranscodeVideo, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_TranscodeVideo, null, options, request);
       }
       /// <summary>
       /// A mapping of well known file extensions to media types

@@ -26,7 +26,7 @@ namespace Avn.Connect.V1 {
           string.Concat(
             "Chphdm4vY29ubmVjdC92MS9yb29tcy5wcm90bxIOYXZuLmNvbm5lY3QudjEa",
             "H2dvb2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aIGF2bi9jb25uZWN0",
-            "L3YxL2Nvbm5lY3Rpb25zLnByb3RvIs4CCghSb29tSW5mbxIOCgZkb21haW4Y",
+            "L3YxL2NyZWRlbnRpYWxzLnByb3RvIs4CCghSb29tSW5mbxIOCgZkb21haW4Y",
             "ASABKAkSFAoMZGltZW5zaW9uX2lkGAIgASgJEg8KB3Jvb21faWQYAyABKAkS",
             "DAoEbmFtZRgEIAEoCRIQCghpY29uX3VybBgFIAEoCRIWCg5zY3JlZW5zaG90",
             "X3VybBgGIAEoCRIQCghhc3NldF9pZBgHIAEoCRITCgthY3Rpdml0eV9pZBgI",
@@ -56,7 +56,7 @@ namespace Avn.Connect.V1 {
             "bHZlTWVkaWFSZXF1ZXN0GiQuYXZuLmNvbm5lY3QudjEuUmVzb2x2ZU1lZGlh",
             "UmVzcG9uc2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.ConnectionsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.CredentialsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.RoomInfo), global::Avn.Connect.V1.RoomInfo.Parser, new[]{ "Domain", "DimensionId", "RoomId", "Name", "IconUrl", "ScreenshotUrl", "AssetId", "ActivityId", "Created", "AssetParameters" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, }),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.GetRoomRequest), global::Avn.Connect.V1.GetRoomRequest.Parser, new[]{ "RoomId" }, null, null, null, null),

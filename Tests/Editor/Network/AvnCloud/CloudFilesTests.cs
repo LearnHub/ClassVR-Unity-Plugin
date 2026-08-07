@@ -46,18 +46,19 @@ namespace ClassVR.Network.AvnCloud.Tests {
       var updated = DateTimeOffset.FromUnixTimeSeconds(1_700_000_000);
       var proto = new ProtoCloudFile {
         EntityId = 42, FileUrl = "the-url", FileName = "photo.png", MediaType = "image/png",
-        SizeBytes = 123, PreviewUrl = "preview-url", Updated = Timestamp.FromDateTimeOffset(updated)
+        SizeBytes = 123, IconUrl = "icon-url", MetadataCount = 3, Updated = Timestamp.FromDateTimeOffset(updated)
       };
       proto.Tags.AddRange(new[] { 1, 2, 3 });
 
       var file = Pageable(new RecordingFetch(Response(proto))).ToListSync().Single();
 
-      Assert.AreEqual(42, file.Id);
+      Assert.AreEqual(42, file.EntityId);
       Assert.AreEqual("photo.png", file.FileName);
       Assert.AreEqual("the-url", file.FileUrl);
       Assert.AreEqual("image/png", file.MediaType);
       Assert.AreEqual(123L, file.SizeBytes);
-      Assert.AreEqual("preview-url", file.PreviewUrl);
+      Assert.AreEqual("icon-url", file.IconUrl);
+      Assert.AreEqual(3, file.MetadataCount);
       Assert.AreEqual(updated, file.Updated);
       CollectionAssert.AreEqual(new[] { 1, 2, 3 }, file.Tags);
     }
@@ -67,12 +68,14 @@ namespace ClassVR.Network.AvnCloud.Tests {
       int fileId = 7;
       var file = Pageable(new RecordingFetch(Response(File(fileId)))).ToListSync().Single();
 
-      Assert.AreEqual(fileId, file.Id);
+      Assert.AreEqual(fileId, file.EntityId);
       Assert.IsNull(file.FileName);
       Assert.IsNull(file.MediaType);
       Assert.IsNull(file.SizeBytes);
       Assert.IsNull(file.Updated);
       Assert.IsEmpty(file.Tags);
+      // Not an optional in the proto, so an absent count arrives as zero rather than null
+      Assert.AreEqual(0, file.MetadataCount);
     }
 
     // --- paging --------------------------------------------------------------
@@ -84,7 +87,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       var page2 = Response(File(3)); // no token -> last page
       var fetch = new RecordingFetch(page1, page2);
 
-      var ids = Pageable(fetch).ToListSync().Select(f => f.Id).ToArray();
+      var ids = Pageable(fetch).ToListSync().Select(f => f.EntityId).ToArray();
 
       CollectionAssert.AreEqual(new[] { 1, 2, 3 }, ids);
       Assert.AreEqual(2, fetch.Requests.Count);
@@ -184,6 +187,172 @@ namespace ClassVR.Network.AvnCloud.Tests {
       var request = CapturedRequest(Query());
 
       Assert.AreEqual(TestOrgId, request.OrganizationId);
+    }
+
+    // --- icon size -----------------------------------------------------------
+
+    [TestCase(CloudIconSize.Pixels256, 256)]
+    [TestCase(CloudIconSize.Pixels8, 8)]
+    [TestCase(CloudIconSize.Pixels2048, 2048)]
+    [TestCase(CloudIconSize.Original, -1)]
+    public void IconSizeMapsToIconSpec(CloudIconSize size, int expectedPixels) {
+      var query = Query();
+      query.IconSize = size;
+
+      var request = CapturedRequest(query);
+
+      Assert.AreEqual(expectedPixels, request.IconSpec.MaxSizePixels);
+    }
+
+    [Test]
+    public void NoIconSizeLeavesIconSpecUnset() {
+      // The cloud returns no icon unless a spec is sent, so the default must not send one
+      var request = CapturedRequest(Query());
+
+      Assert.IsNull(request.IconSpec, "an unset IconSize must not put an IconSpec on the request");
+    }
+
+    // --- metadata filters ----------------------------------------------------
+    //
+    // The factories are the only way to build a filter, so they are what enforces that match text is present
+    // for the value conditions and absent for the presence ones (where the cloud ignores it).
+
+    private const string TestKey = "Task";
+    private const string TestMatch = "scan-room";
+
+    [Test]
+    public void HasKeyFilterTestsPresenceOnly() {
+      var filter = CloudMetadataFilter.HasKey(TestKey);
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.HasKey, filter.Condition);
+      Assert.IsNull(filter.Match, "presence conditions must not carry match text");
+    }
+
+    [Test]
+    public void HasNotKeyFilterTestsAbsenceOnly() {
+      var filter = CloudMetadataFilter.HasNotKey(TestKey);
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.HasNotKey, filter.Condition);
+      Assert.IsNull(filter.Match, "presence conditions must not carry match text");
+    }
+
+    [Test]
+    public void ValueEqualsFilterCarriesMatchText() {
+      var filter = CloudMetadataFilter.ValueEquals(TestKey, "scan-room");
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.Equals, filter.Condition);
+      Assert.AreEqual("scan-room", filter.Match);
+    }
+
+    [Test]
+    public void ValueStartsWithFilterCarriesMatchText() {
+      var filter = CloudMetadataFilter.ValueStartsWith(TestKey, "scan-");
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.StartsWith, filter.Condition);
+      Assert.AreEqual("scan-", filter.Match);
+    }
+
+    [Test]
+    public void ValueContainsFilterCarriesMatchText() {
+      var filter = CloudMetadataFilter.ValueContains(TestKey, "room");
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(MetadataMatch.Contains, filter.Condition);
+      Assert.AreEqual("room", filter.Match);
+    }
+
+    [TestCase(null)]
+    [TestCase("")]
+    public void FilterWithoutKeyThrows(string key) {
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.HasKey(key));
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.HasNotKey(key));
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.ValueEquals(key, "x"));
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.ValueStartsWith(key, "x"));
+      Assert.Throws<ArgumentException>(() => CloudMetadataFilter.ValueContains(key, "x"));
+    }
+
+    [Test]
+    public void ValueFilterWithNullMatchThrows() {
+      Assert.Throws<ArgumentNullException>(() => CloudMetadataFilter.ValueEquals(TestKey, null));
+      Assert.Throws<ArgumentNullException>(() => CloudMetadataFilter.ValueStartsWith(TestKey, null));
+      Assert.Throws<ArgumentNullException>(() => CloudMetadataFilter.ValueContains(TestKey, null));
+    }
+
+    [Test]
+    public void ValueFilterAcceptsEmptyMatch() {
+      // Deliberately allowed: "contains nothing" is unhelpful but well-formed, unlike a null match
+      Assert.AreEqual("", CloudMetadataFilter.ValueContains(TestKey, "").Match);
+    }
+
+    // Builds a filter for the given condition, so the mapping can be driven from a TestCase
+    private static CloudMetadataFilter FilterWith(MetadataMatch match) {
+      switch (match) {
+        case MetadataMatch.HasKey: return CloudMetadataFilter.HasKey(TestKey);
+        case MetadataMatch.HasNotKey: return CloudMetadataFilter.HasNotKey(TestKey);
+        case MetadataMatch.Equals: return CloudMetadataFilter.ValueEquals(TestKey, TestMatch);
+        case MetadataMatch.StartsWith: return CloudMetadataFilter.ValueStartsWith(TestKey, TestMatch);
+        case MetadataMatch.Contains: return CloudMetadataFilter.ValueContains(TestKey, TestMatch);
+        default: throw new ArgumentOutOfRangeException(nameof(match));
+      }
+    }
+
+    [TestCase(MetadataMatch.HasKey, MetadataFilterCondition.HasKey)]
+    [TestCase(MetadataMatch.HasNotKey, MetadataFilterCondition.HasNotKey)]
+    [TestCase(MetadataMatch.Equals, MetadataFilterCondition.Equals)]
+    [TestCase(MetadataMatch.StartsWith, MetadataFilterCondition.StartsWith)]
+    [TestCase(MetadataMatch.Contains, MetadataFilterCondition.Contains)]
+    public void MetadataMatchMapsToCondition(MetadataMatch match, MetadataFilterCondition expected) {
+      var query = Query();
+      query.MetadataFilters.Add(FilterWith(match));
+
+      var filter = CapturedRequest(query).MetadataFilters.Single();
+
+      Assert.AreEqual(TestKey, filter.Key);
+      Assert.AreEqual(expected, filter.Condition);
+    }
+
+    [Test]
+    public void ValueFilterSendsMatchText() {
+      var query = Query();
+      query.MetadataFilters.Add(CloudMetadataFilter.ValueEquals(TestKey, TestMatch));
+
+      var filter = CapturedRequest(query).MetadataFilters.Single();
+
+      Assert.AreEqual(TestMatch, filter.Match);
+    }
+
+    [Test]
+    public void PresenceFilterSendsNoMatchText() {
+      var query = Query();
+      query.MetadataFilters.Add(CloudMetadataFilter.HasKey(TestKey));
+
+      var filter = CapturedRequest(query).MetadataFilters.Single();
+
+      Assert.IsFalse(filter.HasMatch, "the cloud ignores match text for presence conditions, so it must not be sent");
+    }
+
+    [Test]
+    public void MultipleMetadataFiltersAllReachTheRequest() {
+      // They combine with AND server-side, so every one of them has to be sent
+      var query = Query();
+      query.MetadataFilters.Add(CloudMetadataFilter.ValueEquals("Task", "scan-room"));
+      query.MetadataFilters.Add(CloudMetadataFilter.HasNotKey("Archived"));
+
+      var request = CapturedRequest(query);
+
+      CollectionAssert.AreEqual(new[] { "Task", "Archived" }, request.MetadataFilters.Select(f => f.Key).ToArray());
+      CollectionAssert.AreEqual(
+          new[] { MetadataFilterCondition.Equals, MetadataFilterCondition.HasNotKey },
+          request.MetadataFilters.Select(f => f.Condition).ToArray());
+    }
+
+    [Test]
+    public void NoMetadataFiltersMeansNoneOnRequest() {
+      Assert.IsEmpty(CapturedRequest(Query()).MetadataFilters);
     }
 
     // --- cancellation --------------------------------------------------------

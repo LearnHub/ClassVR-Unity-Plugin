@@ -2847,7 +2847,8 @@ namespace Avn.Connect.V1 {
 
     private int pageSize_;
     /// <summary>
-    /// Maximum number of results to return. Defaults to 30 if unset and the maximum value is 128.
+    /// Maximum number of results to return. Defaults to 30 when unset or 0, and is clamped to a
+    /// maximum of 256. Negative values are rejected.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2877,7 +2878,8 @@ namespace Avn.Connect.V1 {
 
     private string pageToken_;
     /// <summary>
-    /// Start point from a previous paged search
+    /// Start point from a previous paged search. Must be a token returned as next_page_token by an
+    /// earlier call; malformed tokens are rejected rather than returning an empty page.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

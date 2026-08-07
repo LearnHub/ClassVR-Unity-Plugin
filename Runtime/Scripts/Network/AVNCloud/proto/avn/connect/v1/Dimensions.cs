@@ -26,8 +26,8 @@ namespace Avn.Connect.V1 {
           string.Concat(
             "Ch9hdm4vY29ubmVjdC92MS9kaW1lbnNpb25zLnByb3RvEg5hdm4uY29ubmVj",
             "dC52MRofZ29vZ2xlL3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90bxodYXZuL2Nv",
-            "bm5lY3QvdjEvcHJlc2VuY2UucHJvdG8aIGF2bi9jb25uZWN0L3YxL2Nvbm5l",
-            "Y3Rpb25zLnByb3RvGiNhdm4vY29ubmVjdC92MS9sZXNzb25fY29udGV4dC5w",
+            "bm5lY3QvdjEvcHJlc2VuY2UucHJvdG8aIGF2bi9jb25uZWN0L3YxL2NyZWRl",
+            "bnRpYWxzLnByb3RvGiNhdm4vY29ubmVjdC92MS9sZXNzb25fY29udGV4dC5w",
             "cm90bxofYXZuL2Nvbm5lY3QvdjEvb3BlcmF0aW9ucy5wcm90bxodYXZuL2Nv",
             "bm5lY3QvdjEvcGFydG5lcnMucHJvdG8aG2F2bi9jb25uZWN0L3YxL2dyYW50",
             "cy5wcm90bxosYXZuL2Nvbm5lY3QvdjEvaW50ZXJhY3Rpb25fcGVybWlzc2lv",
@@ -103,7 +103,7 @@ namespace Avn.Connect.V1 {
             "dC52MS5TZXRMZXNzb25Db250ZXh0UmVxdWVzdBooLmF2bi5jb25uZWN0LnYx",
             "LlNldExlc3NvbkNvbnRleHRSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.PresenceReflection.Descriptor, global::Avn.Connect.V1.ConnectionsReflection.Descriptor, global::Avn.Connect.V1.LessonContextReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, global::Avn.Connect.V1.PartnersReflection.Descriptor, global::Avn.Connect.V1.GrantsReflection.Descriptor, global::Avn.Connect.V1.InteractionPermissionsReflection.Descriptor, global::Avn.Connect.V1.FeaturesReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.ContentReflection.Descriptor, global::Avn.Connect.V1.ClientsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Avn.Connect.V1.PresenceReflection.Descriptor, global::Avn.Connect.V1.CredentialsReflection.Descriptor, global::Avn.Connect.V1.LessonContextReflection.Descriptor, global::Avn.Connect.V1.OperationsReflection.Descriptor, global::Avn.Connect.V1.PartnersReflection.Descriptor, global::Avn.Connect.V1.GrantsReflection.Descriptor, global::Avn.Connect.V1.InteractionPermissionsReflection.Descriptor, global::Avn.Connect.V1.FeaturesReflection.Descriptor, global::Avn.Connect.V1.AuthorizationReflection.Descriptor, global::Avn.Connect.V1.ContentReflection.Descriptor, global::Avn.Connect.V1.ClientsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Avn.Connect.V1.ExpiryStrategy), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateDimensionRequest), global::Avn.Connect.V1.CreateDimensionRequest.Parser, new[]{ "Client", "Auth", "PassId", "PreferredDomain", "Referrer", "ContextOrganizationId" }, new[]{ "Auth", "PassId", "PreferredDomain", "Referrer", "ContextOrganizationId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Avn.Connect.V1.CreateDimensionResponse), global::Avn.Connect.V1.CreateDimensionResponse.Parser, new[]{ "DimensionId" }, null, null, null, null),
