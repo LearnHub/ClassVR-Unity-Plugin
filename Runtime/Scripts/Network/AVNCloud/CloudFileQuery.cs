@@ -172,6 +172,13 @@ namespace ClassVR.Network.AvnCloud {
     /// <summary>Whether a file must have all of <see cref="Tags"/> or just any one of them. Defaults to <see cref="TagMatch.All"/>.</summary>
     public TagMatch TagMatch { get; set; } = TagMatch.All;
 
+    /// <summary>
+    /// Restrict results to files whose metadata satisfies every one of these conditions. Build them with the
+    /// factory methods on <see cref="CloudMetadataFilter"/>. Empty means "any metadata".
+    /// </summary>
+    /// <remarks>Multiple filters combine with AND — a file must satisfy all of them to be returned.</remarks>
+    public IList<CloudMetadataFilter> MetadataFilters { get; } = new List<CloudMetadataFilter>();
+
     /// <summary>Only return files added to the cloud strictly after this time.</summary>
     public DateTimeOffset? CreatedAfter { get; set; }
 

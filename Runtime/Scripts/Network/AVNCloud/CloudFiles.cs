@@ -198,6 +198,18 @@ namespace ClassVR.Network.AvnCloud {
         request.TagFilters.Add(tagFilter);
       }
 
+      foreach (var filter in query.MetadataFilters) {
+        var metadataFilter = new MetadataFilter {
+          Key = filter.Key,
+          Condition = ConditionFor(filter.Condition)
+        };
+        // Left unset for the presence conditions, where the cloud ignores it
+        if (filter.Match != null) {
+          metadataFilter.Match = filter.Match;
+        }
+        request.MetadataFilters.Add(metadataFilter);
+      }
+
       if (query.CreatedAfter.HasValue) {
         request.After = Timestamp.FromDateTimeOffset(query.CreatedAfter.Value);
       }
@@ -224,6 +236,20 @@ namespace ClassVR.Network.AvnCloud {
       }
 
       return request;
+    }
+
+    // Maps the friendly match enum to its protobuf condition. Every MetadataMatch member is covered; the
+    // throw is a guard against a member being added here without being mapped, which would otherwise send
+    // the unspecified condition and have the cloud filter on nothing.
+    private static MetadataFilterCondition ConditionFor(MetadataMatch match) {
+      switch (match) {
+        case MetadataMatch.HasKey: return MetadataFilterCondition.HasKey;
+        case MetadataMatch.HasNotKey: return MetadataFilterCondition.HasNotKey;
+        case MetadataMatch.Equals: return MetadataFilterCondition.Equals;
+        case MetadataMatch.StartsWith: return MetadataFilterCondition.StartsWith;
+        case MetadataMatch.Contains: return MetadataFilterCondition.Contains;
+        default: throw new ArgumentOutOfRangeException(nameof(match), match, "Unmapped metadata match condition.");
+      }
     }
 
     // Maps the friendly ordering enum to a single protobuf OrderClause (null = server default).
