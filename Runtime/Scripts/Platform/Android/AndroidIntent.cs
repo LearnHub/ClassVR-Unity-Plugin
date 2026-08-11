@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace ClassVR.Platform.Android {
@@ -17,10 +18,22 @@ namespace ClassVR.Platform.Android {
     public ComponentName Component { get; private set; }
     public int ContentUserHint { get; private set; }
     public string Data { get; private set; }
-    public string Extras { get; private set; }
     public int Flags { get; private set; }
     public string Package { get; private set; }
     public string Type { get; private set; }
+
+    /// <summary>
+    /// The intent's extras, as string key/value pairs. Empty rather than null when the intent
+    /// carries none.
+    /// </summary>
+    /// <remarks>
+    /// String and JSON-native primitive values are included as strings, while Parcelables and nested Bundles are skipped.
+    /// A value may be empty. Values are never null.
+    /// </remarks>
+    public IReadOnlyDictionary<string, string> Extras { get; private set; } = NoExtras;
+
+    private static readonly IReadOnlyDictionary<string, string> NoExtras =
+      new Dictionary<string, string>();
 
     private static readonly Lazy<AndroidIntent> lazy = new Lazy<AndroidIntent>(() => new AndroidIntent());
     [Obsolete("Use IntentProvider instead.")]
@@ -65,16 +78,64 @@ namespace ClassVR.Platform.Android {
       Action = intent.mAction;
       BroadcastQueueHint = intent.mBroadcastQueueHint;
       Categories = intent.mCategories;
-      Component = new ComponentName {
-        Class = intent.mComponent.mClass,
-        Package = intent.mComponent.mPackage
-      };
+      Component = BuildComponent(intent.mComponent);
       ContentUserHint = intent.mContentUserHint;
       Data = intent.mData?.uriString;
-      Extras = intent.mExtras;
+      Extras = BuildExtras(intent.mExtras);
       Flags = intent.mFlags;
       Package = intent.mPackage;
       Type = intent.mType;
+    }
+
+    /// <summary>
+    /// Gets the value of a named extra.
+    /// </summary>
+    /// <param name="key">The extra's key, for example <c>"ContentUriExtra"</c>.</param>
+    /// <param name="value">
+    /// The extra's value, which may be empty. Never null when this returns true.
+    /// </param>
+    /// <returns>
+    /// True if the intent carries the extra, whatever its value. Presence is reported
+    /// independently of value, matching <c>Intent.hasExtra</c>.
+    /// Callers needing a usable value should check it is non-empty.
+    /// </returns>
+    public bool TryGetExtra(string key, out string value) {
+      value = null;
+      return !string.IsNullOrEmpty(key) && Extras.TryGetValue(key, out value);
+    }
+
+    // Defensive: JsonUtility instantiates nested serializable fields, so this is never null today.
+    private static ComponentName BuildComponent(SerializableIntent.SerializableComponent component) {
+      if (component == null) {
+        return null;
+      }
+
+      return new ComponentName {
+        Class = component.mClass,
+        Package = component.mPackage
+      };
+    }
+
+    // Turns the serialized pairs into a lookup. The bridge sends an array rather than a JSON
+    // object because JsonUtility cannot deserialize arbitrary keys.
+    private static IReadOnlyDictionary<string, string> BuildExtras(
+        SerializableIntent.SerializableExtra[] extras) {
+      if (extras == null || extras.Length == 0) {
+        return NoExtras;
+      }
+
+      var lookup = new Dictionary<string, string>(extras.Length);
+      foreach (var extra in extras) {
+        if (extra == null || string.IsNullOrEmpty(extra.mKey)) {
+          continue;
+        }
+
+        // Indexed assignment rather than Add: a duplicate key would throw.
+        // A value-less key is kept and normalised to empty so values are never null.
+        lookup[extra.mKey] = extra.mValue ?? string.Empty;
+      }
+
+      return lookup;
     }
 
     [Serializable]
@@ -90,13 +151,19 @@ namespace ClassVR.Platform.Android {
         public string uriString;
       }
 
+      [Serializable]
+      public class SerializableExtra {
+        public string mKey;
+        public string mValue;
+      }
+
       public string mAction;
       public int mBroadcastQueueHint;
       public string[] mCategories;
       public SerializableComponent mComponent;
       public int mContentUserHint;
       public SerializableData mData;
-      public string mExtras;  // Extras is an arbitrary JSON object
+      public SerializableExtra[] mExtras;
       public int mFlags;
       public string mPackage;
       public string mType;
