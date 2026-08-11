@@ -78,10 +78,7 @@ namespace ClassVR.Platform.Android {
       Action = intent.mAction;
       BroadcastQueueHint = intent.mBroadcastQueueHint;
       Categories = intent.mCategories;
-      Component = new ComponentName {
-        Class = intent.mComponent.mClass,
-        Package = intent.mComponent.mPackage
-      };
+      Component = BuildComponent(intent.mComponent);
       ContentUserHint = intent.mContentUserHint;
       Data = intent.mData?.uriString;
       Extras = BuildExtras(intent.mExtras);
@@ -105,6 +102,18 @@ namespace ClassVR.Platform.Android {
     public bool TryGetExtra(string key, out string value) {
       value = null;
       return !string.IsNullOrEmpty(key) && Extras.TryGetValue(key, out value);
+    }
+
+    // Defensive: JsonUtility instantiates nested serializable fields, so this is never null today.
+    private static ComponentName BuildComponent(SerializableIntent.SerializableComponent component) {
+      if (component == null) {
+        return null;
+      }
+
+      return new ComponentName {
+        Class = component.mClass,
+        Package = component.mPackage
+      };
     }
 
     // Turns the serialized pairs into a lookup. The bridge sends an array rather than a JSON

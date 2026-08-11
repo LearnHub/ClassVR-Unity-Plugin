@@ -18,8 +18,7 @@ namespace ClassVR.Platform.Android.Tests {
       "content://avnfs.com/AOP6OOHckt7YWoO9321hD4sQABwnXszytVTYdFwu5ds" +
       "?size=17&type=application%2Fx.sample.saveload&name=SampleSaveLoad-967.saveload";
 
-    // mComponent is always emitted: AndroidIntent.DeserializeIntent dereferences it unguarded,
-    // so a payload without it would throw before reaching the code under test.
+    // mComponent is emitted to keep payloads realistic; its absence is covered separately.
     private static string IntentJson(string extrasJson) {
       return "{\"mAction\":\"android.intent.action.VIEW\"," +
              "\"mComponent\":{\"mClass\":\"TestActivity\",\"mPackage\":\"com.avantis.tests\"}," +
@@ -98,8 +97,22 @@ namespace ClassVR.Platform.Android.Tests {
     }
 
     [Test]
-    public void Extras_NullValue_IsPresentAndNormalisedToEmpty() {
-      // The bridge emits null for a value-less extra; values must never surface as null
+    public void Extras_OmittedValueField_IsPresentAndNormalisedToEmpty() {
+      // Gson omits null fields, so this is the shape the bridge actually emits for a value-less
+      // extra — verified on device as {"mKey":"FlagKey"} with no mValue at all
+      var json = IntentJson("[{\"mKey\":\"SomeFlag\"}]");
+
+      var intent = new AndroidIntent(json);
+
+      Assert.IsTrue(intent.Extras.ContainsKey("SomeFlag"));
+      Assert.AreEqual(string.Empty, intent.Extras["SomeFlag"]);
+    }
+
+    [Test]
+    public void Extras_ExplicitNullValue_IsPresentAndNormalisedToEmpty() {
+      // Not a shape the bridge produces — this pins the public constructor's contract, since it
+      // accepts arbitrary JSON from any caller, and is the only case that can exercise the
+      // null-to-empty normalisation. Documented on Extras as "values are never null".
       var json = IntentJson("[{\"mKey\":\"SomeFlag\",\"mValue\":null}]");
 
       var intent = new AndroidIntent(json);
@@ -115,6 +128,35 @@ namespace ClassVR.Platform.Android.Tests {
 
       Assert.IsFalse(intent.TryGetExtra(key, out string value));
       Assert.IsNull(value);
+    }
+
+    // The bridge only emits mComponent when the intent has one, so a payload without it is
+    // ordinary rather than malformed and must not take the whole deserialization down.
+
+    [Test]
+    public void Component_AbsentFromPayload_DeserializesWithEmptyFields() {
+      var json = "{\"mAction\":\"android.intent.action.VIEW\"," +
+                 "\"mData\":{\"uriString\":\"content://avnfs.com/abc\"}}";
+
+      AndroidIntent intent = null;
+      Assert.DoesNotThrow(() => intent = new AndroidIntent(json));
+
+      // JsonUtility instantiates a nested serializable field even when the JSON omits it, so
+      // the component is never null here — it arrives with empty fields rather than absent.
+      Assert.IsNotNull(intent.Component);
+      Assert.IsTrue(string.IsNullOrEmpty(intent.Component.Class));
+      Assert.IsTrue(string.IsNullOrEmpty(intent.Component.Package));
+      // The rest of the intent still deserializes
+      Assert.AreEqual("content://avnfs.com/abc", intent.Data);
+    }
+
+    [Test]
+    public void Component_PresentInPayload_IsPopulated() {
+      var intent = new AndroidIntent(IntentJson(null));
+
+      Assert.IsNotNull(intent.Component);
+      Assert.AreEqual("TestActivity", intent.Component.Class);
+      Assert.AreEqual("com.avantis.tests", intent.Component.Package);
     }
 
     [Test]
