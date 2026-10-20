@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Avn.Connect.V1;
@@ -257,7 +256,7 @@ namespace ClassVR.Network.AvnCloud {
       }
 #else
       // Check whether the file has already been uploaded
-      var base64UrlHash = Base64UrlHash(data);
+      var base64UrlHash = AvnfsHash.Compute(data);
       var existingUrl = await CheckFileAlreadyUploaded(filename, mediaType, base64UrlHash, data.Length, endpointServer);
 
       // Return the existing URL if file already exists in AVNFS
@@ -472,23 +471,6 @@ namespace ClassVR.Network.AvnCloud {
 
       char separator = avnfsUrl.Contains('?') ? '&' : '?';
       return $"{avnfsUrl}{separator}name={Uri.EscapeDataString(filename)}";
-    }
-
-    // Hashes specified byte array using SHA256 then converts to Base64URL
-    private static string Base64UrlHash(byte[] data) {
-      // Hash the array using SHA256
-      byte[] hash;
-      using (var sha256 = SHA256.Create()) {
-        hash = sha256.ComputeHash(data);
-      }
-
-      // Encode hash as Base64URL
-      return ToBase64Url(hash);
-    }
-
-    // Converts the given byte array to Base64URL - https://base64.guru/standards/base64url
-    private static string ToBase64Url(byte[] bytes) {
-      return Convert.ToBase64String(bytes).TrimEnd('=').Replace('+', '-').Replace('/', '_');
     }
   }
 }
