@@ -11,9 +11,10 @@ using UnityEngine.TestTools;
 namespace ClassVR.Network.AvnCloud.Tests {
   /// <summary>
   /// EditMode unit tests for <see cref="Avnfs"/>. The download sits behind the <see cref="AvnfsDownload"/>
-  /// seam and the cache directory is a temp folder per test, so the cache, integrity check and
-  /// cancellation logic run without a network. The real UnityWebRequest path is covered by one explicit
-  /// test against the live server, run by hand.
+  /// seam, the on-device provider behind <see cref="ContentProviderFetch"/>, and the cache directory is a
+  /// temp folder per test, so the cache, route selection, integrity checks and cancellation logic run
+  /// without a network or a device. The real UnityWebRequest path is covered by one explicit test against
+  /// the live server, run by hand; the real provider path can only be checked on a headset.
   ///
   /// The core awaits with ConfigureAwait(false) and the fakes complete synchronously, so blocking on the
   /// Task cannot deadlock the Unity synchronization context. Failures are reported by logging an error
@@ -50,8 +51,12 @@ namespace ClassVR.Network.AvnCloud.Tests {
 
     private static T Result<T>(Task<T> task) => task.GetAwaiter().GetResult();
 
-    private Task<string> Fetch(AvnfsUri uri, AvnfsDownload download, CancellationToken cancellationToken = default) {
-      return Avnfs.GetFileAsync(uri, download, cacheDirectory, cancellationToken);
+    private Task<string> Fetch(AvnfsUri uri, AvnfsDownload download, bool verifyHash = true, CancellationToken cancellationToken = default) {
+      return Avnfs.GetFileAsync(uri, download, verifyHash, cacheDirectory, cancellationToken);
+    }
+
+    private Task<string> FetchViaProvider(AvnfsUri uri, ContentProviderFetch fetch, CancellationToken cancellationToken = default) {
+      return Fetch(uri, Avnfs.ContentProviderDownload(fetch), verifyHash: false, cancellationToken);
     }
 
     // Stands in for the web request: writes the given bytes to the destination and records each URL.
@@ -65,9 +70,9 @@ namespace ClassVR.Network.AvnCloud.Tests {
         this.succeeds = succeeds;
       }
 
-      public Task<bool> Download(string url, string destinationPath, CancellationToken cancellationToken) {
+      public Task<bool> Download(AvnfsUri uri, string destinationPath, CancellationToken cancellationToken) {
         cancellationToken.ThrowIfCancellationRequested();
-        Urls.Add(url);
+        Urls.Add(uri.OriginalUrl);
         if (bytes != null) {
           File.WriteAllBytes(destinationPath, bytes);
         }
@@ -91,13 +96,14 @@ namespace ClassVR.Network.AvnCloud.Tests {
     }
 
     [Test]
-    public void CacheMiss_DownloadsTheHttpsFormWithPathAndQueryUntouched() {
+    public void CacheMiss_HandsTheParsedUrlToTheDownload() {
+      // Which form of the URL to fetch is the route's decision, so the core passes the parsed URL through
       var fake = new FakeDownload(Content);
-      var contentForm = AvnfsUri.Parse("content://avnfs.com/" + ContentHash + "?size=3&type=text%2Fplain&name=a%20b.txt");
+      var contentForm = AvnfsUri.Parse("content://avnfs.com/" + ContentHash + SizeAndType);
 
       Result(Fetch(contentForm, fake.Download));
 
-      Assert.AreEqual("https://avnfs.com/" + ContentHash + "?size=3&type=text%2Fplain&name=a%20b.txt", fake.Urls[0]);
+      Assert.AreEqual(new[] { contentForm.OriginalUrl }, fake.Urls);
     }
 
     [Test]
@@ -125,7 +131,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
     [Test]
     public void ConcurrentFetch_KeepsTheCopyThatCommittedFirst() {
       // Another fetch of the same hash lands while ours is downloading
-      Task<bool> Download(string url, string destinationPath, CancellationToken cancellationToken) {
+      Task<bool> Download(AvnfsUri uri, string destinationPath, CancellationToken cancellationToken) {
         File.WriteAllBytes(CachedPath, Content);
         File.WriteAllBytes(destinationPath, Content);
         return Task.FromResult(true);
@@ -182,7 +188,7 @@ namespace ClassVR.Network.AvnCloud.Tests {
       var cancellation = new CancellationTokenSource();
       cancellation.Cancel();
 
-      Assert.Throws<OperationCanceledException>(() => Result(Fetch(ContentUrl(), fake.Download, cancellation.Token)));
+      Assert.Throws<OperationCanceledException>(() => Result(Fetch(ContentUrl(), fake.Download, cancellationToken: cancellation.Token)));
       Assert.IsEmpty(fake.Urls);
       Assert.IsEmpty(CachedFiles);
     }
@@ -191,24 +197,151 @@ namespace ClassVR.Network.AvnCloud.Tests {
     public void CancelledDuringDownload_ThrowsAndLeavesNothingBehind() {
       // An aborted UnityWebRequest comes back as a failure, so the token is what distinguishes the two
       var cancellation = new CancellationTokenSource();
-      Task<bool> AbortedDownload(string url, string destinationPath, CancellationToken cancellationToken) {
+      Task<bool> AbortedDownload(AvnfsUri uri, string destinationPath, CancellationToken cancellationToken) {
         File.WriteAllBytes(destinationPath, Encoding.ASCII.GetBytes("ab"));
         cancellation.Cancel();
         return Task.FromResult(false);
       }
 
-      Assert.Throws<OperationCanceledException>(() => Result(Fetch(ContentUrl(), AbortedDownload, cancellation.Token)));
+      Assert.Throws<OperationCanceledException>(() => Result(Fetch(ContentUrl(), AbortedDownload, cancellationToken: cancellation.Token)));
       Assert.IsEmpty(CachedFiles);
     }
 
     [Test]
     public void DownloadThrowingCancellation_Propagates() {
-      Task<bool> Download(string url, string destinationPath, CancellationToken cancellationToken) {
+      Task<bool> Download(AvnfsUri uri, string destinationPath, CancellationToken cancellationToken) {
         throw new OperationCanceledException(cancellationToken);
       }
 
       Assert.Throws<OperationCanceledException>(() => Result(Fetch(ContentUrl(), Download)));
       Assert.IsEmpty(CachedFiles);
+    }
+
+    // --- Route selection ---------------------------------------------------------
+
+    [TestCase(SizeAndType, true, true)]
+    [TestCase(SizeAndType, false, false)]
+    [TestCase("?size=3", true, false)]
+    [TestCase("?type=text%2Fplain", true, false)]
+    [TestCase("", true, false)]
+    public void UseContentProvider_NeedsSizeTypeAndAnInstalledProvider(string query, bool providerInstalled, bool expected) {
+      Assert.AreEqual(expected, Avnfs.UseContentProvider(ContentUrl(query), authority => providerInstalled));
+    }
+
+    [Test]
+    public void UseContentProvider_ProbesTheUrlsHost() {
+      string probed = null;
+      var uri = AvnfsUri.Parse("https://bny.avnfs.com/" + ContentHash + SizeAndType);
+
+      Avnfs.UseContentProvider(uri, authority => { probed = authority; return true; });
+
+      Assert.AreEqual("bny.avnfs.com", probed);
+    }
+
+    [Test]
+    public void UseContentProvider_WithoutSizeAndType_DoesNotProbe() {
+      var probed = false;
+
+      Avnfs.UseContentProvider(ContentUrl(""), authority => probed = true);
+
+      Assert.IsFalse(probed);
+    }
+
+    // --- Provider route ----------------------------------------------------------
+
+    // Stands in for ContentProviderClient: writes the given bytes to the destination and records each URI.
+    private sealed class FakeProvider {
+      public readonly List<string> Uris = new List<string>();
+      private readonly byte[] bytes;
+
+      public FakeProvider(byte[] bytes) {
+        this.bytes = bytes;
+      }
+
+      public Task<string> Fetch(string contentUri, string destinationPath) {
+        Uris.Add(contentUri);
+        if (bytes == null) {
+          return Task.FromResult<string>(null);
+        }
+        File.WriteAllBytes(destinationPath, bytes);
+        return Task.FromResult(destinationPath);
+      }
+    }
+
+    [Test]
+    public void ProviderRoute_FetchesTheContentFormAndReturnsTheHashNamedFile() {
+      var provider = new FakeProvider(Content);
+
+      var path = Result(FetchViaProvider(ContentUrl(), provider.Fetch));
+
+      Assert.AreEqual(CachedPath, path);
+      Assert.AreEqual(new[] { "content://avnfs.com/" + ContentHash + SizeAndType }, provider.Uris);
+      Assert.AreEqual(new[] { CachedPath }, CachedFiles);
+    }
+
+    [Test]
+    public void ProviderRoute_ProviderReturnsNull_IsAFailure() {
+      var provider = new FakeProvider(null);
+
+      var path = Result(FetchViaProvider(ContentUrl(), provider.Fetch));
+
+      Assert.IsNull(path);
+      Assert.IsEmpty(CachedFiles);
+    }
+
+    [Test]
+    public void ProviderRoute_TrustsTheProvidersHashCheck() {
+      // The provider verified the file itself, so content of the right size is accepted without a re-hash
+      var provider = new FakeProvider(Encoding.ASCII.GetBytes("xyz"));
+
+      var path = Result(FetchViaProvider(ContentUrl(), provider.Fetch));
+
+      Assert.AreEqual(CachedPath, path);
+    }
+
+    [Test]
+    public void ProviderRoute_TruncatedCopy_ReturnsNullAndLeavesNothingBehind() {
+      LogAssert.ignoreFailingMessages = true;
+      var provider = new FakeProvider(Encoding.ASCII.GetBytes("ab"));
+
+      var path = Result(FetchViaProvider(ContentUrl(), provider.Fetch));
+
+      Assert.IsNull(path);
+      Assert.IsEmpty(CachedFiles);
+    }
+
+    [Test]
+    public void ProviderRoute_CancelledWhileCopying_ThrowsAndRemovesTheLateCopy() {
+      // The provider's copy cannot be aborted: this one finishes only when the test lets it
+      var copyFinished = new TaskCompletionSource<string>();
+      string destination = null;
+      Task<string> SlowFetch(string contentUri, string destinationPath) {
+        destination = destinationPath;
+        return copyFinished.Task;
+      }
+      var cancellation = new CancellationTokenSource();
+      var fetch = FetchViaProvider(ContentUrl(), SlowFetch, cancellation.Token);
+      Assert.IsFalse(fetch.IsCompleted);
+
+      cancellation.Cancel();
+
+      Assert.Throws<OperationCanceledException>(() => Result(fetch));
+      // The copy lands after the caller gave up, and must not linger
+      File.WriteAllBytes(destination, Content);
+      copyFinished.SetResult(destination);
+      Assert.IsTrue(WaitUntil(() => !File.Exists(destination)), "the late copy should be removed");
+      Assert.IsEmpty(CachedFiles);
+    }
+
+    private static bool WaitUntil(Func<bool> condition, int timeoutMs = 2000) {
+      var deadline = DateTime.UtcNow.AddMilliseconds(timeoutMs);
+      while (!condition()) {
+        if (DateTime.UtcNow > deadline) {
+          return false;
+        }
+        Thread.Sleep(10);
+      }
+      return true;
     }
 
     // --- Public surface ----------------------------------------------------------

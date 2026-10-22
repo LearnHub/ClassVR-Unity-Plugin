@@ -3,14 +3,20 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using ClassVR.Platform.Android;
 using UnityEngine.Networking;
 
 namespace ClassVR.Network.AvnCloud {
-  // Downloads a URL to a local path, returning true on success. The production implementation is a
-  // UnityWebRequest; tests substitute a lambda that writes bytes, so the cache, integrity check and
-  // cancellation logic can be exercised without a network. An implementation logs its own failures
-  // before returning false, and may throw OperationCanceledException.
-  internal delegate Task<bool> AvnfsDownload(string url, string destinationPath, CancellationToken cancellationToken);
+  // Fetches an AVNFS file to a local path, returning true on success.
+  // The web request takes the https form of the URL, the on-device provider the content form. Tests
+  // substitute a lambda that writes bytes, so the cache, integrity check and cancellation logic can be
+  // exercised without a network or a device. An implementation logs its own failures before returning
+  // false, and may throw OperationCanceledException.
+  internal delegate Task<bool> AvnfsDownload(AvnfsUri uri, string destinationPath, CancellationToken cancellationToken);
+
+  // Copies a content URI to a destination path, returning the path or null. ContentProviderClient in
+  // production; tests substitute a fake.
+  internal delegate Task<string> ContentProviderFetch(string contentUri, string destinationPath);
 
   /// <summary>
   /// AVNFS is the flat, hash-addressed file store behind ClassVR. Retrieves files by URL, caching them
@@ -21,15 +27,20 @@ namespace ClassVR.Network.AvnCloud {
     private const string PartialSuffix = ".part";
 
     /// <summary>
-    /// Gets a local copy of an AVNFS file, downloading if not cached.
+    /// Gets a local copy of an AVNFS file, fetching it if not cached.
     /// <para>
-    /// Must be awaited from the main thread: the download is a <see cref="UnityWebRequest"/>, and the
-    /// result comes back on the main thread via Unity's synchronization context.
+    /// On a ClassVR headset the file comes from the on-device AVNFS ContentProvider, which has its own
+    /// cache and verifies the file itself. Everywhere else, it is downloaded over HTTPS and verified
+    /// against the hash in the URL.
+    /// </para>
+    /// <para>
+    /// Must be awaited from the main thread: the fetch starts with a <see cref="UnityWebRequest"/> or a
+    /// JNI call, and the result comes back on the main thread via Unity's synchronization context.
     /// </para>
     /// </summary>
     /// <param name="url">An AVNFS URL, in its <c>https://</c> or <c>content://</c> form. See <see cref="AvnfsUri"/>.</param>
     /// <param name="cancellationToken">
-    /// Aborts the download. Meant for a caller that no longer wants the file at all.
+    /// Aborts the download, or stops waiting for the provider. Meant for a caller that no longer wants the file at all.
     /// It is not a timeout: a slow download is not a failure. Cancel from the main thread.
     /// </param>
     /// <returns>
@@ -39,7 +50,13 @@ namespace ClassVR.Network.AvnCloud {
     /// <exception cref="OperationCanceledException">Thrown if <paramref name="cancellationToken"/> is cancelled.</exception>
     public static Task<string> GetFileAsync(string url, CancellationToken cancellationToken = default) {
       var uri = AvnfsUri.Parse(url);
-      return GetFileAsync(uri, DownloadWithWebRequest, CacheDirectory, cancellationToken);
+#if !UNITY_EDITOR && UNITY_ANDROID
+      if (UseContentProvider(uri, ContentProviderClient.HasProvider)) {
+        var viaProvider = ContentProviderDownload(ContentProviderClient.GetFileAsync);
+        return GetFileAsync(uri, viaProvider, verifyHash: false, CacheDirectory, cancellationToken);
+      }
+#endif
+      return GetFileAsync(uri, DownloadWithWebRequest, verifyHash: true, CacheDirectory, cancellationToken);
     }
 
     /// <summary>
@@ -55,10 +72,10 @@ namespace ClassVR.Network.AvnCloud {
     private static string CacheDirectory => Path.Combine(Application.temporaryCachePath, CacheSubdirectory);
 
     // The testable core. Takes the cache directory and the download behind the seam so it runs against a
-    // temp folder and a fake in tests. Every await uses ConfigureAwait(false): nothing after the first
-    // await needs the main thread, and it lets a test block on the Task without deadlocking the Unity
-    // synchronization context.
-    internal static async Task<string> GetFileAsync(AvnfsUri uri, AvnfsDownload download, string cacheDirectory, CancellationToken cancellationToken) {
+    // temp folder and a fake in tests. verifyHash is false for the provider route, which has checked the
+    // hash already. Every await uses ConfigureAwait(false): nothing after the first await needs the main
+    // thread, and it lets a test block on the Task without deadlocking the Unity synchronization context.
+    internal static async Task<string> GetFileAsync(AvnfsUri uri, AvnfsDownload download, bool verifyHash, string cacheDirectory, CancellationToken cancellationToken) {
       cancellationToken.ThrowIfCancellationRequested();
 
       Directory.CreateDirectory(cacheDirectory);
@@ -71,17 +88,14 @@ namespace ClassVR.Network.AvnCloud {
       // verified file is ever renamed to the hash.
       var partialPath = Path.Combine(cacheDirectory, uri.Hash + "." + Guid.NewGuid().ToString("N") + PartialSuffix);
       try {
-        Debug.Log($"Avnfs: downloading '{uri}'");
-        var downloaded = await download(uri.ToHttpsUri(), partialPath, cancellationToken).ConfigureAwait(false);
+        var downloaded = await download(uri, partialPath, cancellationToken).ConfigureAwait(false);
         // An aborted request reports as a failed one, so check the token before calling it a failure
         cancellationToken.ThrowIfCancellationRequested();
         if (!downloaded) {
           return null;
         }
 
-        var actualHash = await ComputeHashAsync(partialPath, cancellationToken).ConfigureAwait(false);
-        if (!string.Equals(actualHash, uri.Hash, StringComparison.Ordinal)) {
-          Debug.LogError($"Avnfs: '{uri}' failed its integrity check: the downloaded content hashes to '{actualHash}'. Discarding it.");
+        if (!await IsIntact(partialPath, uri, verifyHash, cancellationToken).ConfigureAwait(false)) {
           return null;
         }
 
@@ -89,6 +103,31 @@ namespace ClassVR.Network.AvnCloud {
       } finally {
         TryDelete(partialPath);
       }
+    }
+
+    // The on-device provider needs size and type, and probing first keeps ContentProviderClient from
+    // logging an error on every fetch where no provider is installed.
+    internal static bool UseContentProvider(AvnfsUri uri, Func<string, bool> hasProvider) {
+      return uri.HasSizeAndType && hasProvider(uri.Host);
+    }
+
+    // Adapts the on-device provider to the download seam. The provider's copy cannot be aborted, so on
+    // cancellation this stops waiting and removes the copy once it lands, rather than leaving it behind.
+    internal static AvnfsDownload ContentProviderDownload(ContentProviderFetch fetch) {
+      return async (uri, destinationPath, cancellationToken) => {
+        var contentUri = uri.ToContentUri();
+        Debug.Log($"Avnfs: fetching '{contentUri}' from the on-device provider");
+        var copy = fetch(contentUri, destinationPath);
+
+        var cancelled = new TaskCompletionSource<bool>();
+        using (cancellationToken.Register(() => cancelled.TrySetResult(true))) {
+          if (await Task.WhenAny(copy, cancelled.Task).ConfigureAwait(false) != copy) {
+            _ = copy.ContinueWith(late => TryDelete(destinationPath), TaskScheduler.Default);
+            return false;
+          }
+        }
+        return await copy.ConfigureAwait(false) != null;
+      };
     }
 
     internal static int ClearCache(string cacheDirectory) {
@@ -135,6 +174,27 @@ namespace ClassVR.Network.AvnCloud {
       return cachedPath;
     }
 
+    // The HTTPS route verifies the download against the hash in the URL. The provider route trusts the
+    // provider, which verified the file itself, and only checks the size: a full re-hash would read the
+    // whole file again on the headset.
+    private static async Task<bool> IsIntact(string path, AvnfsUri uri, bool verifyHash, CancellationToken cancellationToken) {
+      if (verifyHash) {
+        var actualHash = await ComputeHashAsync(path, cancellationToken).ConfigureAwait(false);
+        if (!string.Equals(actualHash, uri.Hash, StringComparison.Ordinal)) {
+          Debug.LogError($"Avnfs: '{uri}' failed its integrity check: the downloaded content hashes to '{actualHash}'. Discarding it.");
+          return false;
+        }
+        return true;
+      }
+
+      var length = new FileInfo(path).Length;
+      if (uri.SizeBytes.HasValue && length != uri.SizeBytes.Value) {
+        Debug.LogError($"Avnfs: '{uri}' failed its size check: the provider supplied {length} bytes but the URL says {uri.SizeBytes.Value}. Discarding it.");
+        return false;
+      }
+      return true;
+    }
+
     // WebGL has no thread pool, so hash on the main thread there.
     private static Task<string> ComputeHashAsync(string path, CancellationToken cancellationToken) {
 #if UNITY_WEBGL
@@ -156,7 +216,9 @@ namespace ClassVR.Network.AvnCloud {
     // through managed memory. Runs on the caller's thread up to the first await, which is where the
     // request must be created, hence the main-thread requirement on GetFileAsync. Cancelling the token
     // aborts the request, which also removes the partial file.
-    private static async Task<bool> DownloadWithWebRequest(string url, string destinationPath, CancellationToken cancellationToken) {
+    private static async Task<bool> DownloadWithWebRequest(AvnfsUri uri, string destinationPath, CancellationToken cancellationToken) {
+      var url = uri.ToHttpsUri();
+      Debug.Log($"Avnfs: downloading '{url}'");
       using (var request = new UnityWebRequest(url, UnityWebRequest.kHttpVerbGET)) {
         request.downloadHandler = new DownloadHandlerFile(destinationPath) { removeFileOnAbort = true };
         var operation = request.SendWebRequest();
