@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -20,7 +21,8 @@ namespace ClassVR.Network.AvnCloud {
 
   /// <summary>
   /// AVNFS is the flat, hash-addressed file store behind ClassVR. Retrieves files by URL, caching them
-  /// locally by hash. For files associated with an organisation's Shared Cloud, see <see cref="CloudFiles"/>.
+  /// locally by hash, and uploads new ones. For files associated with an organisation's Shared Cloud, see
+  /// <see cref="CloudFiles"/>.
   /// </summary>
   public static class Avnfs {
     private const string CacheSubdirectory = "avnfs";
@@ -57,6 +59,51 @@ namespace ClassVR.Network.AvnCloud {
       }
 #endif
       return GetFileAsync(uri, DownloadWithWebRequest, verifyHash: true, CacheDirectory, cancellationToken);
+    }
+
+    /// <summary>
+    /// Uploads a file to AVNFS and returns its URL, without associating it with any organisation. Use
+    /// <see cref="CloudFiles.Upload(string, string, string, EndpointServer, string)"/> instead if the file
+    /// should appear in the device organisation's Shared Cloud library.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (MIME) type of the file.</param>
+    /// <param name="data">The file contents as a string.</param>
+    /// <param name="endpointServer">The endpoint to use. Defaults to Production.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>The AVNFS URL the file can be fetched from, or <c>null</c> if the upload failed.</returns>
+    public static Task<string> UploadAsync(string filename, string mediaType, string data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return FileUploader.UploadBytesToAvnfs(filename, mediaType, Encoding.UTF8.GetBytes(data), endpointServer, jwt);
+    }
+
+    /// <summary>
+    /// Uploads a file already on disk to AVNFS and returns its URL, without associating it with any
+    /// organisation. Use <see cref="CloudFiles.Upload(string, string, EndpointServer, string)"/> instead if
+    /// the file should appear in the device organisation's Shared Cloud library. The display name is the
+    /// file name part of the path. The maximum file size is 5GB.
+    /// </summary>
+    /// <param name="filePath">Local file path, not a URI.</param>
+    /// <param name="mediaType">The media (MIME) type of the file.</param>
+    /// <param name="endpointServer">The endpoint to use. Defaults to Production.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>The AVNFS URL the file can be fetched from, or <c>null</c> if the upload failed.</returns>
+    public static Task<string> UploadAsync(string filePath, string mediaType, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return FileUploader.UploadFileToAvnfs(filePath, mediaType, endpointServer, jwt);
+    }
+
+    /// <summary>
+    /// Uploads a byte array to AVNFS and returns its URL, without associating it with any organisation. Use
+    /// <see cref="CloudFiles.Upload(string, string, byte[], EndpointServer, string)"/> instead if the file
+    /// should appear in the device organisation's Shared Cloud library.
+    /// </summary>
+    /// <param name="filename">The name and extension of the file.</param>
+    /// <param name="mediaType">The media (MIME) type of the file.</param>
+    /// <param name="data">The file contents.</param>
+    /// <param name="endpointServer">The endpoint to use. Defaults to Production.</param>
+    /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
+    /// <returns>The AVNFS URL the file can be fetched from, or <c>null</c> if the upload failed.</returns>
+    public static Task<string> UploadAsync(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return FileUploader.UploadBytesToAvnfs(filename, mediaType, data, endpointServer, jwt);
     }
 
     /// <summary>
