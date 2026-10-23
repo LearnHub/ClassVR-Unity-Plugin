@@ -37,7 +37,7 @@ var filePath = Path.Combine(Application.temporaryCachePath, "filename.txt");
 ... (write data to file)
 var result = await CloudFiles.Upload(filePath, "text/plain");
 // Upload a file to AVNFS only, without associating it with any organisation (on Android)
-var url = await FileUploader.UploadToAvnfs("example.txt", "text/plain", "example file contents");
+var url = await Avnfs.UploadAsync("example.txt", "text/plain", "example file contents");
 
 // Query files in the ClassVR Shared Cloud for the current enrolled organisation (on Android)
 var query = new CloudFileQuery { MediaTypes = { "image/png" }, MetadataFilters = { CloudMetadataFilter.HasKey("Example") }, OrderBy = CloudFileOrder.NewestFirst };
@@ -45,9 +45,11 @@ await foreach (CloudFile file in CloudFiles.Search(query)) { Debug.Log($"{file.F
 // Or to load page-by-page
 await foreach (CloudFilePage page in CloudFiles.Search(query).AsPages(pageSize: 10)) {}
 
-// Retrieve a file from an Android ContentProvider
-var url = "content://...";
-var filePath = await ContentProviderClient.GetFile(url);
+// Get a local copy of an AVNFS file from its URL, in either its https:// or content:// form
+var path = await Avnfs.GetFileAsync("https://avnfs.com/...");
+
+// Retrieve a file from any other Android ContentProvider
+var filePath = await ContentProviderClient.GetFileAsync("content://...");
 
 // Disable tilt to spin - note this requires the ClassVR Tilt-To-Spin OpenXR feature (see below)
 var tiltToSpinFeature = OpenXRSettings.Instance.GetFeature<ClassVrTiltToSpinFeature>();
@@ -72,17 +74,39 @@ The ClassVR cloud infrastructure stores all files in a flat filesystem called AV
 
 Optionally, files stored in AVNFS can be associated with an organisation (org) in ClassVR. If so, they will appear in the Shared Cloud section on the Portal for that org, and can be browsed by users (usually teachers). Files associated with a ClassVR org can be queried by devices enrolled in the same org.
 
+| I want to… | Use |
+| --- | --- |
+| Get a local copy of a file from its AVNFS URL | `Avnfs.GetFileAsync` |
+| Upload a file to AVNFS and get its URL, without it appearing in any org's Shared Cloud | `Avnfs.UploadAsync` |
+| Upload a file to the device org's Shared Cloud | `CloudFiles.Upload` |
+| Search the device org's Shared Cloud | `CloudFiles.Search` |
+| Pick an AVNFS URL apart, or convert between its `https://` and `content://` forms | `AvnfsUri` |
+| Read a file from an Android ContentProvider other than AVNFS | `ContentProviderClient` |
+
 ### Downloads
 
-To download files from ClassVR, use the `ContentProviderClient.GetFile` method with a URL of the form:
+To get a local copy of an AVNFS file, use `Avnfs.GetFileAsync` with the file's URL in either of its forms (`name` is optional):
 
-> `content://avnfs.com/{hash}?size={bytes}&type={mime}&name={name}` (name is optional)
+> `https://avnfs.com/{hash}?size={bytes}&type={mime}&name={name}`
+>
+> `content://avnfs.com/{hash}?size={bytes}&type={mime}&name={name}`
 
-You can replace `https://` with `content://` in any AVNFS URL to use the ContentProviderClient.
+The method works out how to fetch the file. On a ClassVR headset it uses the on-device AVNFS ContentProvider, which keeps its own cache and verifies the file. Everywhere else, including the Editor, it downloads over HTTPS and verifies the download against the hash in the URL.
 
-This method will download the file, store it in a temporary cache directory, and return the absolute path to the file which can then be used for normal file operations.
+```csharp
+string path = await Avnfs.GetFileAsync(url);
+if (path == null) {
+  // The reason has already been logged
+  return;
+}
+var bytes = File.ReadAllBytes(path);
+```
 
-This plugin aims to be agnostic as to which ContentProvider is being accessed, meaning you should be able to use `ContentProviderClient` to download files from other ContentProviders. However, this functionality has only been tested against the ClassVR AVNFS ContentProvider.
+The file is named by its hash and has no extension. A fetch that fails, or whose content does not match the hash, returns `null` and logs the reason. A URL that is not an AVNFS URL throws `ArgumentException`. Pass a `CancellationToken` to abandon a fetch, for example when the scene that wanted the file is being torn down; a cancelled fetch throws `OperationCanceledException`. Await it from the main thread. `Avnfs.ClearCache()` empties the cache.
+
+`AvnfsUri` parses an AVNFS URL into `Hash`, `SizeBytes`, `MediaType` and `FileName`, and converts between the two forms with `ToHttpsUri()` and `ToContentUri()`. It only accepts URLs on `avnfs.com` or its subdomains.
+
+For a `content://` URI served by some other Android ContentProvider, `ContentProviderClient.GetFileAsync` copies the file into a cache directory and returns its path, and `ContentProviderClient.HasProvider` reports whether a provider for an authority is installed. These are Android-only and have only been tested against the AVNFS provider.
 
 ### Uploads
 
@@ -103,7 +127,7 @@ Each `CloudUploadResult` exposes `EntityId`, `FileUrl`, `FileName`, `MediaType` 
 
 Note that an unsuccessful upload returns `null` and logs the reason, rather than throwing — unlike `CloudFiles.Search`, which throws an `RpcException`.
 
-If you only want to upload a file to AVNFS and get its URL — without it appearing in any organization's Shared Cloud library — use `FileUploader.UploadToAvnfs` instead. It accepts the same set of overloads (string, byte array, or file path) and returns the AVNFS URL on success, or `null` on failure. Note that a file which isn't associated with an organization has no cloud file entity, and so has no `EntityId` and cannot carry metadata.
+If you only want to upload a file to AVNFS and get its URL — without it appearing in any organization's Shared Cloud library — use `Avnfs.UploadAsync` instead. It accepts the same set of overloads (string, byte array, or file path) and returns the AVNFS URL on success, or `null` on failure. Note that a file which isn't associated with an organization has no cloud file entity, and so has no `EntityId` and cannot carry metadata. `FileUploader.UploadToAvnfs` is deprecated in favour of `Avnfs.UploadAsync` and behaves identically.
 
 ### Queries
 
@@ -173,7 +197,7 @@ Notes:
 
 - **Multiple filters combine with AND.** A file must satisfy every filter in the list to be returned.
 - **Keys are matched exactly and are case-sensitive; values are matched case-insensitively.** `ValueEquals("ExampleKey", "EXAMPLEVALUE")` matches a value of `ExampleValue`, but `HasKey("exampleKey")` does not find a key stored as `ExampleKey`.
-- **Metadata belongs to the cloud file entry, not the file contents.** Re-uploading the same file produces a new entry, which starts with no metadata. It also means metadata cannot be attached to a file uploaded with `FileUploader.UploadToAvnfs`, since that never creates a cloud file entry.
+- **Metadata belongs to the cloud file entry, not the file contents.** Re-uploading the same file produces a new entry, which starts with no metadata. It also means metadata cannot be attached to a file uploaded with `Avnfs.UploadAsync`, since that never creates a cloud file entry.
 
 Writing and reading metadata is not yet wrapped by this plugin — use `CloudService.SetMetadata` and `CloudService.GetMetadata` on the gRPC client directly, keyed on `CloudFile.EntityId` (or `CloudUploadResult.EntityId` for a file you just uploaded). The cloud limits a key to 128 characters and a value to 512, and holds one value per key. `CloudFile.MetadataCount` tells you whether a file has any entries at all, so you can skip the read when it is `0`.
 

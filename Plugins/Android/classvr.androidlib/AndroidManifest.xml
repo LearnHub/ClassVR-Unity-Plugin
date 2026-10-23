@@ -2,5 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.avantis.classvr.Manifest">
     <queries>
 		<package android:name="com.classvr.client"/>
+		<!-- The AVNFS ContentProvider needs no entry: it ships in a platform-signed system app, which Android
+		     makes visible to every app. A <provider> entry for it would also collide with the OpenXR loader's
+		     in the manifest merger. -->
 	</queries>
 </manifest>

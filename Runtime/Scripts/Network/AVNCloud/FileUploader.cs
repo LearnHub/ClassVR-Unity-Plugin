@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Avn.Connect.V1;
@@ -74,9 +73,9 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    [Obsolete("Use Avnfs.UploadAsync instead.")]
     public static async Task<string> UploadToAvnfs(string filename, string mediaType, string data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
-      byte[] byteData = Encoding.UTF8.GetBytes(data);
-      return await UploadToAvnfs(filename, mediaType, byteData, endpointServer, jwt);
+      return await UploadBytesToAvnfs(filename, mediaType, Encoding.UTF8.GetBytes(data), endpointServer, jwt);
     }
 
     /// <summary>
@@ -91,7 +90,15 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    [Obsolete("Use Avnfs.UploadAsync instead.")]
     public static async Task<string> UploadToAvnfs(string filePath, string mediaType, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return await UploadFileToAvnfs(filePath, mediaType, endpointServer, jwt);
+    }
+
+    // Uploads a file already on disk to AVNFS and returns its URL, or null if any stage failed (the failure
+    // is logged by whichever stage hit it). The core behind Avnfs.UploadAsync, the obsolete UploadToAvnfs
+    // shim, and the Shared Cloud upload.
+    internal static async Task<string> UploadFileToAvnfs(string filePath, string mediaType, EndpointServer endpointServer, string jwt) {
       // Validate the file path
       if (string.IsNullOrEmpty(filePath)) {
         Debug.LogError("FileUploader: filePath is null or empty.");
@@ -119,7 +126,7 @@ namespace ClassVR.Network.AvnCloud {
       }
 
       // Upload the file to AVNFS and get the URL to download the file
-      return await UploadFileToAvnfs(filePath, filename, mediaType, auth, endpointServer);
+      return await SendFileToAvnfs(filePath, filename, mediaType, auth, endpointServer);
     }
 
     /// <summary>
@@ -133,7 +140,15 @@ namespace ClassVR.Network.AvnCloud {
     /// <param name="endpointServer">The endpoint to use for communication. Defaults to Production if not provided.</param>
     /// <param name="jwt">Optional JWT for authentication. If null, uses the device JWT from CVRProperties (only available on Android).</param>
     /// <returns>The AVNFS URL where the file can be accessed. If the upload was unsuccessful, returns null.</returns>
+    [Obsolete("Use Avnfs.UploadAsync instead.")]
     public static async Task<string> UploadToAvnfs(string filename, string mediaType, byte[] data, EndpointServer endpointServer = EndpointServer.Production, string jwt = null) {
+      return await UploadBytesToAvnfs(filename, mediaType, data, endpointServer, jwt);
+    }
+
+    // Uploads a byte array to AVNFS and returns its URL, or null if any stage failed (the failure is logged
+    // by whichever stage hit it). The core behind Avnfs.UploadAsync, the obsolete UploadToAvnfs shims, and
+    // the Shared Cloud upload.
+    internal static async Task<string> UploadBytesToAvnfs(string filename, string mediaType, byte[] data, EndpointServer endpointServer, string jwt) {
       //TODO: enable cancellation
 
       // No need to check file doesn't exceed upload size limit, as max array length is 2GB and upload limit is 5GB
@@ -145,7 +160,7 @@ namespace ClassVR.Network.AvnCloud {
       }
 
       // Upload the file to AVNFS and get the URL to download the file
-      return await UploadBytesToAvnfs(filename, mediaType, data, auth, endpointServer);
+      return await SendBytesToAvnfs(filename, mediaType, data, auth, endpointServer);
     }
 
     // Uploads a byte array to AVNFS and assigns it to the Shared Cloud of the Organization the device is
@@ -160,7 +175,7 @@ namespace ClassVR.Network.AvnCloud {
       //TODO: enable cancellation
 
       // Upload the file to AVNFS and get the URL to download the file
-      var downloadUrl = await UploadToAvnfs(filename, mediaType, data, endpointServer, jwt);
+      var downloadUrl = await UploadBytesToAvnfs(filename, mediaType, data, endpointServer, jwt);
       // Check upload was successful
       if (downloadUrl == null) {
         return null;
@@ -184,12 +199,12 @@ namespace ClassVR.Network.AvnCloud {
         EndpointServer endpointServer,
         string jwt) {
 
-      // Read the size up front. UploadToAvnfs validates the path and logs the canonical error, and measuring
+      // Read the size up front. UploadFileToAvnfs validates the path and logs the canonical error, and measuring
       // afterwards would let a file that vanished mid-upload turn a successful upload into a failure.
       var sizeBytes = TryGetFileLength(filePath);
 
       // Upload the file to AVNFS and get the URL to download the file
-      var downloadUrl = await UploadToAvnfs(filePath, mediaType, endpointServer, jwt);
+      var downloadUrl = await UploadFileToAvnfs(filePath, mediaType, endpointServer, jwt);
       if (downloadUrl == null) {
         return null;
       }
@@ -237,7 +252,7 @@ namespace ClassVR.Network.AvnCloud {
     }
 
     // Uploads the provided file to AVNFS and provides the URL it can be downloaded from
-    private static async Task<string> UploadBytesToAvnfs(
+    private static async Task<string> SendBytesToAvnfs(
         string filename,
         string mediaType,
         byte[] data,
@@ -251,13 +266,13 @@ namespace ClassVR.Network.AvnCloud {
       var tempPath = Path.Combine(Application.temporaryCachePath, filename);
       try {
         File.WriteAllBytes(tempPath, data);
-        return await UploadFileToAvnfs(tempPath, filename, mediaType, auth, endpointServer);
+        return await SendFileToAvnfs(tempPath, filename, mediaType, auth, endpointServer);
       } finally {
         try { File.Delete(tempPath); } catch { /* best-effort cleanup */ }
       }
 #else
       // Check whether the file has already been uploaded
-      var base64UrlHash = Base64UrlHash(data);
+      var base64UrlHash = AvnfsHash.Compute(data);
       var existingUrl = await CheckFileAlreadyUploaded(filename, mediaType, base64UrlHash, data.Length, endpointServer);
 
       // Return the existing URL if file already exists in AVNFS
@@ -294,7 +309,7 @@ namespace ClassVR.Network.AvnCloud {
     }
 
     // Uploads a file from a local path to AVNFS via the on-device ContentProvider (Android) or via web request (other platforms)
-    private static async Task<string> UploadFileToAvnfs(
+    private static async Task<string> SendFileToAvnfs(
         string filePath,
         string filename,
         string mediaType,
@@ -315,7 +330,7 @@ namespace ClassVR.Network.AvnCloud {
 #else
       try {
         var data = File.ReadAllBytes(filePath);
-        return await UploadBytesToAvnfs(filename, mediaType, data, auth, endpointServer);
+        return await SendBytesToAvnfs(filename, mediaType, data, auth, endpointServer);
       } catch (Exception ex) {
         Debug.LogError($"Failed to read file at '{filePath}': {ex.Message}");
         return null;
@@ -472,23 +487,6 @@ namespace ClassVR.Network.AvnCloud {
 
       char separator = avnfsUrl.Contains('?') ? '&' : '?';
       return $"{avnfsUrl}{separator}name={Uri.EscapeDataString(filename)}";
-    }
-
-    // Hashes specified byte array using SHA256 then converts to Base64URL
-    private static string Base64UrlHash(byte[] data) {
-      // Hash the array using SHA256
-      byte[] hash;
-      using (var sha256 = SHA256.Create()) {
-        hash = sha256.ComputeHash(data);
-      }
-
-      // Encode hash as Base64URL
-      return ToBase64Url(hash);
-    }
-
-    // Converts the given byte array to Base64URL - https://base64.guru/standards/base64url
-    private static string ToBase64Url(byte[] bytes) {
-      return Convert.ToBase64String(bytes).TrimEnd('=').Replace('+', '-').Replace('/', '_');
     }
   }
 }

@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.0] - 2026-10-23
+
+### Added
+
+- `Avnfs.GetFileAsync`, a platform-agnostic AVNFS download
+- `Avnfs.UploadAsync`, uploading to AVNFS without associating the file with an organisation, with the same overloads as `FileUploader.UploadToAvnfs`
+- `AvnfsUri`, which parses AVNFS URLs and converts between their `https://` and `content://` forms
+- `ContentProviderClient.HasProvider`, and a `ContentProviderClient.GetFileAsync` overload that writes to a caller-supplied path
+
+### Changed
+
+- Upgraded CVR Unity Java Plugin to version 10, adding the ContentProvider probe and retrieval to a caller-supplied path
+- `AvnfsUploader` is hidden from code completion. It was never meant to be called directly
+
+### Deprecated
+
+- `FileUploader.UploadToAvnfs`. Use `Avnfs.UploadAsync`, which has the same overloads. Behaviour is otherwise unchanged
+
 ## [3.1.0] - 2026-08-11
 
 ### Added

@@ -10,8 +10,9 @@ namespace ClassVR.Network.AvnCloud.Tests {
   /// <summary>
   /// EditMode unit tests for <see cref="FileUploader"/>. Three groups, all network-free: the file-path
   /// validation guards, which run before any authentication or gRPC/HTTP call and so complete
-  /// synchronously — exercised through both <see cref="FileUploader"/> and the <see cref="CloudFiles.Upload"/>
-  /// entry point that shares the same core; <see cref="FileUploader.AddFileToSharedCloud(string, Authorization, int, AddCloudFilesFetch)"/>,
+  /// synchronously — exercised through <see cref="Avnfs.UploadAsync(string, string, EndpointServer, string)"/>, the
+  /// obsolete <see cref="FileUploader"/> shims and the <see cref="CloudFiles.Upload"/> entry point, which all share
+  /// the same core; <see cref="FileUploader.AddFileToSharedCloud(string, Authorization, int, AddCloudFilesFetch)"/>,
   /// which builds the org-association request and extracts the entity ID from the response behind a test seam;
   /// and <see cref="FileUploader.EnsureFileNameParameter"/>, which is pure string logic.
   /// The actual AVNFS upload and the association round-trip against a real cloud must be manually verified.
@@ -35,7 +36,32 @@ namespace ClassVR.Network.AvnCloud.Tests {
       return path;
     }
 
-    // --- UploadToAvnfs (file path overload) guards ---------------------------
+    // --- Avnfs.UploadAsync (file path overload) guards -----------------------
+
+    [Test]
+    public void AvnfsUploadAsync_NullFilePath_ReturnsNull() {
+      LogAssert.ignoreFailingMessages = true;
+      Assert.IsNull(Result(Avnfs.UploadAsync(null, TestMediaType)));
+    }
+
+    [Test]
+    public void AvnfsUploadAsync_EmptyFilePath_ReturnsNull() {
+      LogAssert.ignoreFailingMessages = true;
+      Assert.IsNull(Result(Avnfs.UploadAsync("", TestMediaType)));
+    }
+
+    [Test]
+    public void AvnfsUploadAsync_MissingFile_ReturnsNull() {
+      LogAssert.ignoreFailingMessages = true;
+      Assert.IsNull(Result(Avnfs.UploadAsync(MissingPath(), TestMediaType)));
+    }
+
+    // --- UploadToAvnfs (file path overload) shares the same guards -----------
+    //
+    // UploadToAvnfs is obsolete in favour of Avnfs.UploadAsync, but it remains supported as a thin shim over
+    // the same core. These tests are the regression check that the shim still behaves identically, so they
+    // deliberately keep calling it — hence the CS0618 suppression.
+#pragma warning disable 618
 
     [Test]
     public void UploadToAvnfs_NullFilePath_ReturnsNull() {
@@ -54,6 +80,8 @@ namespace ClassVR.Network.AvnCloud.Tests {
       LogAssert.ignoreFailingMessages = true;
       Assert.IsNull(Result(FileUploader.UploadToAvnfs(MissingPath(), TestMediaType)));
     }
+
+#pragma warning restore 618
 
     // --- UploadToSharedCloud (file path overload) shares the same guards -----
     //
